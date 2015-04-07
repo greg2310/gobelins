@@ -1,0 +1,8 @@
+<% for ( var i in params ) { %>
+  <% if ( typeof params[i] == 'string' ) { %>
+    <%= include(params[i]) %>
+  <% } else { %>
+    <%= include(params[i].template, params[i].params) %>
+  <% } %>
+<% } %>
+

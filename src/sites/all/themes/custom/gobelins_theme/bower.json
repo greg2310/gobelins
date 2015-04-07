@@ -1,0 +1,24 @@
+{
+  "name": "grunt-base-template",
+  "version": "0.2.0",
+  "authors": [
+    "tocab"
+  ],
+  "description": "Grunt base template for HTML integration",
+  "main": "Gruntfile.js",
+  "license": "BSD",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "modernizr": "~2.8.3",
+    "jquery": "~1.11.2",
+    "normalize.css": "~3.0.2"
+  }
+}

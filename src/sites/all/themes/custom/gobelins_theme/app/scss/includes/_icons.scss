@@ -1,0 +1,14 @@
+/* Icon directory. */
+$icon-dir: icons;
+
+/* Icon list. */
+$icon-list: ();
+
+/* Icon ratio (1 for classic icons, 2 for retina icons) */
+$icon-ratio: 1;
+
+/* Generate  sprite */
+@include generate-icon($icon-dir, $icon-list, $icon-ratio);
+
+/* Specific rules */
+

@@ -1,0 +1,37 @@
+$spriteMapMap : ();
+$spriteUrlMap : ();
+
+@mixin generate-icon-style($dir, $icon, $ratio: 1) {
+  $map    : map-get($spriteMapMap, $dir);
+  $url    : map-get($spriteUrlMap, $dir);
+  $name   : "#{$dir}/#{$icon}.png";
+  $sizeX  : round(image-width(sprite-path($map)) / $ratio);
+  $sizeY  : round(image-height(sprite-path($map)) / $ratio);
+  $width  : round(image-width($name) / $ratio);
+  $height : round(image-height($name) / $ratio);
+  $pos    : sprite-position($map, $icon);
+  $posx   : round(nth($pos, 1) / $ratio);
+  $posy   : round(nth($pos, 2) / $ratio);
+
+  background      : $url $posx $posy no-repeat;
+  background-size : $sizeX $sizeY;
+  display         : inline-block;
+  width           : $width;
+  height          : $height;
+}
+
+@mixin generate-icon($dir, $list, $ratio: 1) {
+  @if length($list) > 0 {
+    $map : sprite-map("#{$dir}/*.png"); /**/
+    $url : sprite-url($map);
+    $spriteMapMap : map-merge($spriteMapMap, ($dir: $map)) !global;
+    $spriteUrlMap : map-merge($spriteUrlMap, ($dir: $url)) !global;
+
+    @each $icon in $list {
+      .#{$dir}-#{$icon} {
+        @include generate-icon-style($dir, $icon, $ratio);
+      }
+    }
+  }
+}
+
