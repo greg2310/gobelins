@@ -7,7 +7,7 @@
 
 #Drupal files
 .htaccess
-#data/files/
+data/files/
 
 #Front-end dependecies
 node_modules/
