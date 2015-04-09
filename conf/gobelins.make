@@ -6,4 +6,34 @@ api = 2
 projects[drupal][version] = "7.36"
 
 ; Modules
+projects[libraries][subdir] = "contrib"
+projects[libraries][version] = "2.2"
 
+projects[module_filter][subdir] = "contrib"
+projects[module_filter][version] = "2.0"
+
+projects[redis][subdir] = "contrib"
+projects[redis][version] = "2.12"
+
+; Themes
+projects[adminimal_theme][version] = "1.21"
+projects[adminimal_theme][subdir] = "contrib"
+
+projects[navbar][version] = "1.6"
+projects[navbar][subdir] = "contrib"
+
+; Libraries
+libraries[backbone][download][type] = "get"
+libraries[backbone][download][url] = "http://backbonejs.org/backbone-min.js"
+libraries[backbone][directory_name] = "backbone"
+libraries[backbone][type] = "library"
+
+libraries[underscore][download][type] = "get"
+libraries[underscore][download][url] = "https://github.com/jashkenas/underscore/archive/1.5.2.zip"
+libraries[underscore][directory_name] = "underscore"
+libraries[underscore][type] = "library"
+
+libraries[modernizr][download][type] = "get"
+libraries[modernizr][download][url] = "https://github.com/Modernizr/Modernizr/archive/v2.8.3.zip"
+libraries[modernizr][directory_name] = "modernizr"
+libraries[modernizr][type] = "library"

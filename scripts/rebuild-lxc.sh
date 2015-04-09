@@ -26,6 +26,8 @@ if [ -d "$TMP_REBUILD" ]; then
   # RobotsTxt module works only after removing the Drupal robots.txt file.
   rm -rf $WWW_PATH/robots.txt
 
+  rm -rf $WWW_PATH/install.php
+
   # Fix perms.
   chown -R smile:apache $WWW_PATH
 

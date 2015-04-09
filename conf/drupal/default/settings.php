@@ -213,9 +213,9 @@
  * @endcode
  */
 $databases = array (
-  'default' => 
+  'default' =>
   array (
-    'default' => 
+    'default' =>
     array (
       'database' => 'gobelins',
       'username' => 'root',
@@ -579,3 +579,23 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
  * Remove the leading hash signs to disable.
  */
 # $conf['allow_authorize_operations'] = FALSE;
+
+$conf['redis_client_interface']      = 'PhpRedis';
+$conf['lock_inc']                    = 'sites/all/modules/contrib/redis/redis.lock.inc';
+$conf['cache_backends'][]            = 'sites/all/modules/contrib/redis/redis.autoload.inc';
+$conf['cache_default_class']         = 'Redis_Cache';
+$conf['cache_class_cache']           = 'Redis_Cache';
+$conf['cache_class_cache_bootstrap'] = 'Redis_Cache';
+$conf['cache_class_cache_menu']      = 'Redis_Cache';
+$conf['cache_class_cache_block']     = 'Redis_Cache';
+$conf['cache_class_cache_content']   = 'Redis_Cache';
+$conf['cache_class_cache_filter']    = 'Redis_Cache';
+$conf['cache_class_cache_form']      = 'Redis_Cache';
+$conf['cache_class_cache_page']      = 'Redis_Cache';
+$conf['cache_class_cache_views']     = 'Redis_Cache';
+
+// The following can be omitted unless you changed the default
+$conf['redis_client_host']     = '127.0.0.1'; // default is localhost
+$conf['redis_client_port']     = 6379; // default is 6379
+$conf['redis_client_base']     = 0; // default database is 0
+$conf['redis_client_password'] = ""; // default is no password
