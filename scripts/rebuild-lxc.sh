@@ -36,6 +36,9 @@ if [ -d "$TMP_REBUILD" ]; then
 
   # Restart apache.
   /etc/init.d/httpd restart
+
+  # Restart redis.
+  /etc/init.d/redis restart
 else
   echo "Drush make ended with error(s). You need to check it before trying to rebuild your project."
 fi
