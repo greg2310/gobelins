@@ -42,4 +42,3 @@ if [ -d "$TMP_REBUILD" ]; then
 else
   echo "Drush make ended with error(s). You need to check it before trying to rebuild your project."
 fi
-

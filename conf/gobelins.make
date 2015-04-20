@@ -6,14 +6,32 @@ api = 2
 projects[drupal][version] = "7.36"
 
 ; Modules
+projects[context][subdir] = "contrib"
+projects[context][version] = "3.6"
+
+projects[ctools][subdir] = "contrib"
+projects[ctools][version] = "1.7"
+
+projects[date][subdir] = "contrib"
+projects[date][version] = "2.8"
+
 projects[date_ical][subdir] = "contrib"
 projects[date_ical][version] = "3.3"
+
+projects[entity][subdir] = "contrib"
+projects[entity][version] = "1.6"
 
 projects[entityreference][subdir] = "contrib"
 projects[entityreference][version] = "1.1"
 
 projects[flag][subdir] = "contrib"
 projects[flag][version] = "3.6"
+
+projects[i18n][subdir] = "contrib"
+projects[i18n][version] = "1.12"
+
+projects[l10n_update][subdir] = "contrib"
+projects[l10n_update][version] = "2.0"
 
 projects[libraries][subdir] = "contrib"
 projects[libraries][version] = "2.2"
@@ -41,6 +59,12 @@ projects[scheduler][version] = "1.3"
 
 projects[transliteration][subdir] = "contrib"
 projects[transliteration][version] = "3.2"
+
+projects[token][subdir] = "contrib"
+projects[token][version] = "1.6"
+
+projects[variable][subdir] = "contrib"
+projects[variable][version] = "2.5"
 
 projects[views][subdir] = "contrib"
 projects[views][version] = "3.10"
