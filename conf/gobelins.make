@@ -6,8 +6,17 @@ api = 2
 projects[drupal][version] = "7.36"
 
 ; Modules
+projects[admin_views][subdir] = "contrib"
+projects[admin_views][version] = "1.4"
+
+projects[ckeditor][subdir] = "contrib"
+projects[ckeditor][version] = "1.16"
+
 projects[context][subdir] = "contrib"
 projects[context][version] = "3.6"
+
+projects[content_menu][subdir] = "contrib"
+projects[content_menu][version] = "1.0"
 
 projects[ctools][subdir] = "contrib"
 projects[ctools][version] = "1.7"
@@ -24,11 +33,20 @@ projects[entity][version] = "1.6"
 projects[entityreference][subdir] = "contrib"
 projects[entityreference][version] = "1.1"
 
+projects[entity_translation][subdir] = "contrib"
+projects[entity_translation][version] = "1.0-beta4"
+
+projects[features][subdir] = "contrib"
+projects[features][version] = "2.5"
+
 projects[flag][subdir] = "contrib"
 projects[flag][version] = "3.6"
 
 projects[i18n][subdir] = "contrib"
 projects[i18n][version] = "1.12"
+
+projects[jquery_update][subdir] = "contrib"
+projects[jquery_update][version] = "2.5"
 
 projects[l10n_update][subdir] = "contrib"
 projects[l10n_update][version] = "2.0"
@@ -38,6 +56,9 @@ projects[libraries][version] = "2.2"
 
 projects[linkchecker][subdir] = "contrib"
 projects[linkchecker][version] = "1.2"
+
+projects[metatag][subdir] = "contrib"
+projects[metatag][version] = "1.4"
 
 projects[migrate][subdir] = "contrib"
 projects[migrate][version] = "2.7"
@@ -50,6 +71,9 @@ projects[pathauto][version] = "1.2"
 
 projects[redis][subdir] = "contrib"
 projects[redis][version] = "2.12"
+
+projects[robotstxt][subdir] = "contrib"
+projects[robotstxt][version] = "1.3"
 
 projects[scald][subdir] = "contrib"
 projects[scald][version] = "1.3"
@@ -68,6 +92,9 @@ projects[variable][version] = "2.5"
 
 projects[views][subdir] = "contrib"
 projects[views][version] = "3.10"
+
+projects[views_bulk_operations][subdir] = "contrib"
+projects[views_bulk_operations][version] = "3.2"
 
 projects[webform][subdir] = "contrib"
 projects[webform][version] = "4.7"
