@@ -14,7 +14,7 @@ function gobelins_formation_domain_node_info() {
       'base' => 'node_content',
       'description' => t('Manage content domain for Formation entities'),
       'has_title' => '1',
-      'title_label' => t('Title (Back Office)'),
+      'title_label' => t('Title'),
       'help' => '',
     ),
   );

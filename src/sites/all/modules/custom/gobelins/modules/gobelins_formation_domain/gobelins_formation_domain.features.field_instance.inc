@@ -10,6 +10,92 @@
 function gobelins_formation_domain_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'node-formation_domain-field_banner'
+  $field_instances['node-formation_domain-field_banner'] = array(
+    'bundle' => 'formation_domain',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'atom_reference',
+        'settings' => array(
+          'link' => 0,
+        ),
+        'type' => 'title',
+        'weight' => 9,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_banner',
+    'label' => 'Banner',
+    'required' => 0,
+    'settings' => array(
+      'referencable_types' => array(
+        'image' => 'image',
+        'video' => 0,
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'atom_reference',
+      'settings' => array(
+        'context' => 'sdl_editor_representation',
+      ),
+      'type' => 'atom_reference_textfield',
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance: 'node-formation_domain-field_color'
+  $field_instances['node-formation_domain-field_color'] = array(
+    'bundle' => 'formation_domain',
+    'default_value' => array(
+      0 => array(
+        'rgb' => '#ffffff',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'color_field',
+        'settings' => array(),
+        'type' => 'color_field_default_formatter',
+        'weight' => 5,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_color',
+    'label' => 'Color',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'color_field',
+      'settings' => array(),
+      'type' => 'color_field_spectrum_widget',
+      'weight' => 7,
+    ),
+  );
+
   // Exported field_instance: 'node-formation_domain-field_description'
   $field_instances['node-formation_domain-field_description'] = array(
     'bundle' => 'formation_domain',
@@ -46,12 +132,86 @@ function gobelins_formation_domain_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'node-formation_domain-field_domain_types'
+  $field_instances['node-formation_domain-field_domain_types'] = array(
+    'bundle' => 'formation_domain',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 7,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_domain_types',
+    'label' => 'Domain types / Flags',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
       'weight' => 3,
     ),
   );
 
-  // Exported field_instance: 'node-formation_domain-field_medias'
-  $field_instances['node-formation_domain-field_medias'] = array(
+  // Exported field_instance: 'node-formation_domain-field_jobs'
+  $field_instances['node-formation_domain-field_jobs'] = array(
+    'bundle' => 'formation_domain',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 8,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_jobs',
+    'label' => 'Jobs',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance: 'node-formation_domain-field_media'
+  $field_instances['node-formation_domain-field_media'] = array(
     'bundle' => 'formation_domain',
     'default_value' => NULL,
     'deleted' => 0,
@@ -64,7 +224,7 @@ function gobelins_formation_domain_field_default_field_instances() {
           'link' => 0,
         ),
         'type' => 'title',
-        'weight' => 4,
+        'weight' => 13,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -74,8 +234,8 @@ function gobelins_formation_domain_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_medias',
-    'label' => 'Medias',
+    'field_name' => 'field_media',
+    'label' => 'Media',
     'required' => 0,
     'settings' => array(
       'referencable_types' => array(
@@ -88,10 +248,95 @@ function gobelins_formation_domain_field_default_field_instances() {
       'active' => 1,
       'module' => 'atom_reference',
       'settings' => array(
-        'context' => 'debug',
+        'context' => 'sdl_editor_representation',
       ),
       'type' => 'atom_reference_textfield',
-      'weight' => 4,
+      'weight' => 10,
+    ),
+  );
+
+  // Exported field_instance: 'node-formation_domain-field_media_cover'
+  $field_instances['node-formation_domain-field_media_cover'] = array(
+    'bundle' => 'formation_domain',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'atom_reference',
+        'settings' => array(
+          'link' => 0,
+        ),
+        'type' => 'title',
+        'weight' => 12,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_media_cover',
+    'label' => 'Media cover',
+    'required' => 0,
+    'settings' => array(
+      'referencable_types' => array(
+        'image' => 'image',
+        'video' => 0,
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'atom_reference',
+      'settings' => array(
+        'context' => 'sdl_editor_representation',
+      ),
+      'type' => 'atom_reference_textfield',
+      'weight' => 9,
+    ),
+  );
+
+  // Exported field_instance: 'node-formation_domain-field_presentation'
+  $field_instances['node-formation_domain-field_presentation'] = array(
+    'bundle' => 'formation_domain',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 11,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_presentation',
+    'label' => 'Presentation',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 8,
     ),
   );
 
@@ -135,8 +380,8 @@ function gobelins_formation_domain_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-formation_domain-field_title_front'
-  $field_instances['node-formation_domain-field_title_front'] = array(
+  // Exported field_instance: 'node-formation_domain-field_sticker'
+  $field_instances['node-formation_domain-field_sticker'] = array(
     'bundle' => 'formation_domain',
     'default_value' => NULL,
     'deleted' => 0,
@@ -144,10 +389,12 @@ function gobelins_formation_domain_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 2,
+        'module' => 'atom_reference',
+        'settings' => array(
+          'link' => 0,
+        ),
+        'type' => 'title',
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -157,30 +404,39 @@ function gobelins_formation_domain_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_title_front',
-    'label' => 'Title (Front Office)',
+    'field_name' => 'field_sticker',
+    'label' => 'Sticker',
     'required' => 0,
     'settings' => array(
-      'text_processing' => 0,
+      'referencable_types' => array(
+        'image' => 'image',
+        'video' => 0,
+      ),
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'text',
+      'module' => 'atom_reference',
       'settings' => array(
-        'size' => 60,
+        'context' => 'sdl_editor_representation',
       ),
-      'type' => 'text_textfield',
-      'weight' => 2,
+      'type' => 'atom_reference_textfield',
+      'weight' => 6,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Banner');
+  t('Color');
   t('Description');
-  t('Medias');
+  t('Domain types / Flags');
+  t('Jobs');
+  t('Media');
+  t('Media cover');
+  t('Presentation');
   t('Reference');
-  t('Title (Front Office)');
+  t('Sticker');
 
   return $field_instances;
 }

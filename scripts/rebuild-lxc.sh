@@ -16,6 +16,8 @@ if [ -d "$TMP_REBUILD" ]; then
   cp -R $TMP_REBUILD/* $WWW_PATH
   rm -rf $TMP_REBUILD
 
+  rsync -r $WWW_PATH/* $PROJECT_PATH/drupal-core
+
   # Create project symlinks.
   ln -s $PROJECT_PATH/conf/drupal/default/settings.php     $WWW_PATH/sites/default/settings.php
   ln -s $PROJECT_PATH/src/sites/all/modules/custom         $WWW_PATH/sites/all/modules/custom

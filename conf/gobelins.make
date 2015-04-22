@@ -9,8 +9,14 @@ projects[drupal][version] = "7.36"
 projects[admin_views][subdir] = "contrib"
 projects[admin_views][version] = "1.4"
 
+projects[bean][subdir] = "contrib"
+projects[bean][version] = "1.9"
+
 projects[ckeditor][subdir] = "contrib"
 projects[ckeditor][version] = "1.16"
+
+projects[color_field][subdir] = "contrib"
+projects[color_field][version] = "1.7"
 
 projects[context][subdir] = "contrib"
 projects[context][version] = "3.6"
@@ -117,16 +123,21 @@ projects[navbar][subdir] = "contrib"
 
 ; Libraries
 libraries[backbone][download][type] = "get"
-libraries[backbone][download][url] = "http://backbonejs.org/backbone-min.js"
+libraries[backbone][download][url]  = "http://backbonejs.org/backbone-min.js"
 libraries[backbone][directory_name] = "backbone"
-libraries[backbone][type] = "library"
+libraries[backbone][type]           = "library"
 
 libraries[underscore][download][type] = "get"
-libraries[underscore][download][url] = "https://github.com/jashkenas/underscore/archive/1.5.2.zip"
+libraries[underscore][download][url]  = "https://github.com/jashkenas/underscore/archive/1.5.2.zip"
 libraries[underscore][directory_name] = "underscore"
-libraries[underscore][type] = "library"
+libraries[underscore][type]           = "library"
 
 libraries[modernizr][download][type] = "get"
-libraries[modernizr][download][url] = "https://github.com/Modernizr/Modernizr/archive/v2.8.3.zip"
+libraries[modernizr][download][url]  = "https://github.com/Modernizr/Modernizr/archive/v2.8.3.zip"
 libraries[modernizr][directory_name] = "modernizr"
-libraries[modernizr][type] = "library"
+libraries[modernizr][type]           = "library"
+
+libraries[spectrum][download][type] = "get"
+libraries[spectrum][download][url]  = "https://github.com/bgrins/spectrum/archive/1.6.2.zip"
+libraries[spectrum][directory_name] = "bgrins-spectrum"
+libraries[spectrum][type]           = "library"

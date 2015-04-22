@@ -5,6 +5,9 @@
 .project
 .settings/
 
+#Drupal core
+drupal-core/
+
 #Drupal files
 .htaccess
 data/files/
