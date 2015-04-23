@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Component feature.
+ */
+
+include_once 'gobelins_component.features.inc';

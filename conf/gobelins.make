@@ -33,6 +33,9 @@ projects[date][version] = "2.8"
 projects[date_ical][subdir] = "contrib"
 projects[date_ical][version] = "3.3"
 
+projects[email][subdir] = "contrib"
+projects[email][version] = "1.3"
+
 projects[entity][subdir] = "contrib"
 projects[entity][version] = "1.6"
 
@@ -48,6 +51,9 @@ projects[features][version] = "2.5"
 projects[flag][subdir] = "contrib"
 projects[flag][version] = "3.6"
 
+projects[field_group][subdir] = "contrib"
+projects[field_group][version] = "1.4"
+
 projects[i18n][subdir] = "contrib"
 projects[i18n][version] = "1.12"
 
@@ -59,6 +65,9 @@ projects[l10n_update][version] = "2.0"
 
 projects[libraries][subdir] = "contrib"
 projects[libraries][version] = "2.2"
+
+projects[link][subdir] = "contrib"
+projects[link][version] = "1.3"
 
 projects[linkchecker][subdir] = "contrib"
 projects[linkchecker][version] = "1.2"

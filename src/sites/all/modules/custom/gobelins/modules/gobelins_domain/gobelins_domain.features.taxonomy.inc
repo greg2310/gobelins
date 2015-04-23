@@ -1,21 +1,21 @@
 <?php
 /**
  * @file
- * gobelins_formation_domain.features.taxonomy.inc
+ * gobelins_domain.features.taxonomy.inc
  */
 
 /**
  * Implements hook_taxonomy_default_vocabularies().
  */
-function gobelins_formation_domain_taxonomy_default_vocabularies() {
+function gobelins_domain_taxonomy_default_vocabularies() {
   return array(
     'domain_types' => array(
-      'name' => 'Domain types / Flags',
+      'name' => 'Domain types',
       'machine_name' => 'domain_types',
       'description' => '',
       'hierarchy' => 0,
       'module' => 'taxonomy',
-      'weight' => 0,
+      'weight' => -10,
     ),
     'jobs' => array(
       'name' => 'Jobs',
@@ -23,7 +23,15 @@ function gobelins_formation_domain_taxonomy_default_vocabularies() {
       'description' => '',
       'hierarchy' => 0,
       'module' => 'taxonomy',
-      'weight' => 0,
+      'weight' => -7,
+    ),
+    'thematic' => array(
+      'name' => 'Thematic',
+      'machine_name' => 'thematic',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => -6,
     ),
   );
 }

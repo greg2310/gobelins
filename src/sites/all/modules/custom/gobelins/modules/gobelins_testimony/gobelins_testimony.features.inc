@@ -1,18 +1,18 @@
 <?php
 /**
  * @file
- * gobelins_formation_domain.features.inc
+ * gobelins_testimony.features.inc
  */
 
 /**
  * Implements hook_node_info().
  */
-function gobelins_formation_domain_node_info() {
+function gobelins_testimony_node_info() {
   $items = array(
-    'formation_domain' => array(
-      'name' => t('Formation Domain'),
+    'testimony' => array(
+      'name' => t('Testimony'),
       'base' => 'node_content',
-      'description' => t('Manage content domain for Formation entities'),
+      'description' => '',
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',

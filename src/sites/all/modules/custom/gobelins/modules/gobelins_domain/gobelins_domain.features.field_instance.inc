@@ -1,18 +1,18 @@
 <?php
 /**
  * @file
- * gobelins_formation_domain.features.field_instance.inc
+ * gobelins_domain.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function gobelins_formation_domain_field_default_field_instances() {
+function gobelins_domain_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-formation_domain-field_banner'
-  $field_instances['node-formation_domain-field_banner'] = array(
-    'bundle' => 'formation_domain',
+  // Exported field_instance: 'node-domain-field_banner'
+  $field_instances['node-domain-field_banner'] = array(
+    'bundle' => 'domain',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -51,13 +51,13 @@ function gobelins_formation_domain_field_default_field_instances() {
         'context' => 'sdl_editor_representation',
       ),
       'type' => 'atom_reference_textfield',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
-  // Exported field_instance: 'node-formation_domain-field_color'
-  $field_instances['node-formation_domain-field_color'] = array(
-    'bundle' => 'formation_domain',
+  // Exported field_instance: 'node-domain-field_color'
+  $field_instances['node-domain-field_color'] = array(
+    'bundle' => 'domain',
     'default_value' => array(
       0 => array(
         'rgb' => '#ffffff',
@@ -92,13 +92,13 @@ function gobelins_formation_domain_field_default_field_instances() {
       'module' => 'color_field',
       'settings' => array(),
       'type' => 'color_field_spectrum_widget',
-      'weight' => 7,
+      'weight' => 8,
     ),
   );
 
-  // Exported field_instance: 'node-formation_domain-field_description'
-  $field_instances['node-formation_domain-field_description'] = array(
-    'bundle' => 'formation_domain',
+  // Exported field_instance: 'node-domain-field_description'
+  $field_instances['node-domain-field_description'] = array(
+    'bundle' => 'domain',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -136,9 +136,9 @@ function gobelins_formation_domain_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-formation_domain-field_domain_types'
-  $field_instances['node-formation_domain-field_domain_types'] = array(
-    'bundle' => 'formation_domain',
+  // Exported field_instance: 'node-domain-field_domain_types'
+  $field_instances['node-domain-field_domain_types'] = array(
+    'bundle' => 'domain',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -159,7 +159,7 @@ function gobelins_formation_domain_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_domain_types',
-    'label' => 'Domain types / Flags',
+    'label' => 'Domain types',
     'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -173,9 +173,9 @@ function gobelins_formation_domain_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-formation_domain-field_jobs'
-  $field_instances['node-formation_domain-field_jobs'] = array(
-    'bundle' => 'formation_domain',
+  // Exported field_instance: 'node-domain-field_jobs'
+  $field_instances['node-domain-field_jobs'] = array(
+    'bundle' => 'domain',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -210,9 +210,9 @@ function gobelins_formation_domain_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-formation_domain-field_media'
-  $field_instances['node-formation_domain-field_media'] = array(
-    'bundle' => 'formation_domain',
+  // Exported field_instance: 'node-domain-field_media'
+  $field_instances['node-domain-field_media'] = array(
+    'bundle' => 'domain',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -251,13 +251,13 @@ function gobelins_formation_domain_field_default_field_instances() {
         'context' => 'sdl_editor_representation',
       ),
       'type' => 'atom_reference_textfield',
-      'weight' => 10,
+      'weight' => 11,
     ),
   );
 
-  // Exported field_instance: 'node-formation_domain-field_media_cover'
-  $field_instances['node-formation_domain-field_media_cover'] = array(
-    'bundle' => 'formation_domain',
+  // Exported field_instance: 'node-domain-field_media_cover'
+  $field_instances['node-domain-field_media_cover'] = array(
+    'bundle' => 'domain',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -296,13 +296,13 @@ function gobelins_formation_domain_field_default_field_instances() {
         'context' => 'sdl_editor_representation',
       ),
       'type' => 'atom_reference_textfield',
-      'weight' => 9,
+      'weight' => 10,
     ),
   );
 
-  // Exported field_instance: 'node-formation_domain-field_presentation'
-  $field_instances['node-formation_domain-field_presentation'] = array(
-    'bundle' => 'formation_domain',
+  // Exported field_instance: 'node-domain-field_presentation'
+  $field_instances['node-domain-field_presentation'] = array(
+    'bundle' => 'domain',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -336,13 +336,13 @@ function gobelins_formation_domain_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 8,
+      'weight' => 9,
     ),
   );
 
-  // Exported field_instance: 'node-formation_domain-field_reference'
-  $field_instances['node-formation_domain-field_reference'] = array(
-    'bundle' => 'formation_domain',
+  // Exported field_instance: 'node-domain-field_reference'
+  $field_instances['node-domain-field_reference'] = array(
+    'bundle' => 'domain',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -380,9 +380,9 @@ function gobelins_formation_domain_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-formation_domain-field_sticker'
-  $field_instances['node-formation_domain-field_sticker'] = array(
-    'bundle' => 'formation_domain',
+  // Exported field_instance: 'node-domain-field_sticker'
+  $field_instances['node-domain-field_sticker'] = array(
+    'bundle' => 'domain',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -421,7 +421,44 @@ function gobelins_formation_domain_field_default_field_instances() {
         'context' => 'sdl_editor_representation',
       ),
       'type' => 'atom_reference_textfield',
-      'weight' => 6,
+      'weight' => 7,
+    ),
+  );
+
+  // Exported field_instance: 'node-domain-field_thematics'
+  $field_instances['node-domain-field_thematics'] = array(
+    'bundle' => 'domain',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 14,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_thematics',
+    'label' => 'Thematics',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 5,
     ),
   );
 
@@ -430,13 +467,14 @@ function gobelins_formation_domain_field_default_field_instances() {
   t('Banner');
   t('Color');
   t('Description');
-  t('Domain types / Flags');
+  t('Domain types');
   t('Jobs');
   t('Media');
   t('Media cover');
   t('Presentation');
   t('Reference');
   t('Sticker');
+  t('Thematics');
 
   return $field_instances;
 }

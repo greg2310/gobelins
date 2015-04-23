@@ -1,0 +1,17 @@
+name = FAQ Item
+description = Module which manage FAQ
+core = 7.x
+package = Gobelins
+version = 7.x-1.0
+project = gobelins_faq
+dependencies[] = features
+dependencies[] = gobelins_domain
+dependencies[] = node
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = field_answer
+features[field_base][] = field_question
+features[field_instance][] = node-faq-field_answer
+features[field_instance][] = node-faq-field_question
+features[field_instance][] = node-faq-field_reference
+features[node][] = faq

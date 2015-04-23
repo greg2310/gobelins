@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * gobelins_formation_domain.features.field_base.inc
+ * gobelins_domain.features.field_base.inc
  */
 
 /**
  * Implements hook_field_default_field_bases().
  */
-function gobelins_formation_domain_field_default_field_bases() {
+function gobelins_domain_field_default_field_bases() {
   $field_bases = array();
 
   // Exported field_base: 'field_banner'
@@ -103,7 +103,7 @@ function gobelins_formation_domain_field_default_field_bases() {
   // Exported field_base: 'field_jobs'
   $field_bases['field_jobs'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_jobs',
@@ -223,25 +223,30 @@ function gobelins_formation_domain_field_default_field_bases() {
     'type' => 'atom_reference',
   );
 
-  // Exported field_base: 'field_title_front'
-  $field_bases['field_title_front'] = array(
+  // Exported field_base: 'field_thematics'
+  $field_bases['field_thematics'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_title_front',
+    'field_name' => 'field_thematics',
     'indexes' => array(
-      'format' => array(
-        0 => 'format',
+      'tid' => array(
+        0 => 'tid',
       ),
     ),
     'locked' => 0,
-    'module' => 'text',
+    'module' => 'taxonomy',
     'settings' => array(
-      'max_length' => 255,
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'thematic',
+          'parent' => 0,
+        ),
+      ),
     ),
     'translatable' => 0,
-    'type' => 'text',
+    'type' => 'taxonomy_term_reference',
   );
 
   return $field_bases;
