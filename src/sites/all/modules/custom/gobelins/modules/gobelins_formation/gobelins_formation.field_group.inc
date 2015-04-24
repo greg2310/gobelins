@@ -69,8 +69,7 @@ function gobelins_formation_field_group_info() {
     'label' => 'Links',
     'weight' => '9',
     'children' => array(
-      0 => 'field_components',
-      1 => 'field_formations',
+      0 => 'field_formations',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -154,9 +153,11 @@ function gobelins_formation_field_group_info() {
   $field_group->parent_name = 'group_tabs';
   $field_group->data = array(
     'label' => 'Search & classification',
-    'weight' => '12',
+    'weight' => '11',
     'children' => array(
       0 => 'field_flags',
+      1 => 'field_jobs',
+      2 => 'field_thematics',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -189,6 +190,8 @@ function gobelins_formation_field_group_info() {
       2 => 'field_testimonies',
       3 => 'field_persons',
       4 => 'field_projects',
+      5 => 'field_faq_items',
+      6 => 'field_news',
     ),
     'format_type' => 'htab',
     'format_settings' => array(

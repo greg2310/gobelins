@@ -50,45 +50,6 @@ function gobelins_formation_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-formation-field_components'
-  $field_instances['node-formation-field_components'] = array(
-    'bundle' => 'formation',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 29,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_components',
-    'label' => 'Components',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 39,
-    ),
-  );
-
   // Exported field_instance: 'node-formation-field_course_material'
   $field_instances['node-formation-field_course_material'] = array(
     'bundle' => 'formation',
@@ -292,6 +253,49 @@ function gobelins_formation_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-formation-field_faq_items'
+  $field_instances['node-formation-field_faq_items'] = array(
+    'bundle' => 'formation',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 36,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_faq_items',
+    'label' => 'FAQ items',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 40,
+    ),
+  );
+
   // Exported field_instance: 'node-formation-field_flags'
   $field_instances['node-formation-field_flags'] = array(
     'bundle' => 'formation',
@@ -354,7 +358,7 @@ function gobelins_formation_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_formations',
-    'label' => 'Additional sormations',
+    'label' => 'Additional formations',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -409,6 +413,43 @@ function gobelins_formation_field_default_field_instances() {
       ),
       'type' => 'text_textarea',
       'weight' => 26,
+    ),
+  );
+
+  // Exported field_instance: 'node-formation-field_jobs'
+  $field_instances['node-formation-field_jobs'] = array(
+    'bundle' => 'formation',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 34,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_jobs',
+    'label' => 'Jobs',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 39,
     ),
   );
 
@@ -534,6 +575,49 @@ function gobelins_formation_field_default_field_instances() {
       ),
       'type' => 'atom_reference_textfield',
       'weight' => 32,
+    ),
+  );
+
+  // Exported field_instance: 'node-formation-field_news'
+  $field_instances['node-formation-field_news'] = array(
+    'bundle' => 'formation',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 37,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_news',
+    'label' => 'News',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 41,
     ),
   );
 
@@ -1143,6 +1227,43 @@ function gobelins_formation_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-formation-field_thematics'
+  $field_instances['node-formation-field_thematics'] = array(
+    'bundle' => 'formation',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 35,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_thematics',
+    'label' => 'Thematics',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 40,
+    ),
+  );
+
   // Exported field_instance: 'node-formation-field_url'
   $field_instances['node-formation-field_url'] = array(
     'bundle' => 'formation',
@@ -1242,19 +1363,21 @@ function gobelins_formation_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Additional sormations');
+  t('Additional formations');
   t('Aptitudes');
   t('CPF code');
-  t('Components');
   t('Course material');
   t('Documents');
   t('Evaluation');
   t('Exam');
+  t('FAQ items');
   t('Flags');
   t('Hours');
+  t('Jobs');
   t('Learning');
   t('Material');
   t('Medias');
+  t('News');
   t('Objectives');
   t('Persons');
   t('Prerequisite');
@@ -1271,6 +1394,7 @@ function gobelins_formation_field_default_field_instances() {
   t('Terms');
   t('Testimonies');
   t('The more');
+  t('Thematics');
   t('Validation');
 
   return $field_instances;
