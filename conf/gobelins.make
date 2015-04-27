@@ -51,6 +51,12 @@ projects[features][version] = "2.5"
 projects[flag][subdir] = "contrib"
 projects[flag][version] = "3.6"
 
+projects[field_collection][type] = "module"
+projects[field_collection][subdir] = "contrib"
+projects[field_collection][download][type] = "git"
+projects[field_collection][download][url]  = "https://git.smile.fr/david.tripont/field-collection.git"
+projects[field_collection][download][branch]  = "7.x-1.x"
+
 projects[field_group][subdir] = "contrib"
 projects[field_group][version] = "1.4"
 
