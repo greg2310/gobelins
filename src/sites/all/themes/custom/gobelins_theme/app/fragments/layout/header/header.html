@@ -1,3 +1,15 @@
-<header class="header">
+﻿<header class="header">
+    <div class="header__bar-top">
+      <%= include('menu-sup') %>
+      <a href="#" class="btn-search"><span class="icon-search"></span></a>
+    </div>
+    <h1 class="header__logo">
+      <a href="#">
+        <img class="no-display--tab-mob" src="images/logo-gobelins.png"/>
+        <img class="logo-sticky display--tab-mob" src="images/logo-header--mini.png"/>
+      </a>
+    </h1>
+    <a href="#" class="btn-menu icons-btn-menu js-btn-wrapper-move"></a>
+    <%= include('menu-desktop') %>
 </header>
 

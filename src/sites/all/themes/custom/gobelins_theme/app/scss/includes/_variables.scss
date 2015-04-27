@@ -1,0 +1,47 @@
+/*************\
+*** Colors. ***
+\*************/
+
+$color__blue-gobelins : rgba(0, 69, 229, 1); /*#0045e5*/
+$color__blue-gobelins--08 : rgba(0, 69, 229, 0.8);
+$color__bg-gray--darck     : rgba(25, 25, 25, 1); /*#191919*/
+$color__bg-gray--light:#f3f3f3;
+$color__bg-gray:#e6e6e6;
+$color__border-gray--light:/*#e5e5e5;*/#ccc;
+$color__border-gray:/*#cbcbcb;*/#666666;
+$color__bg-white:#fff;
+
+$color__training--animation: rgba(0, 225, 150, 1);/*#00e196*/
+$color__training--animation--08: rgba(0, 225, 150, 0.8);
+$color__training--graphic-design:   rgba(58, 242, 206, 1); /*#3af2ce*/
+$color__training--graphic-design--8:   rgba(58, 242, 206, 0.8);
+$color__training--web-design: rgba(99, 0, 255, 1); /*#6300ff*/
+$color__training--web-design--8: rgba(99, 0, 255, 0.8);
+$color__training--photography: rgba(255, 224, 66, 1); /*#ffe042*/
+$color__training--photography--8: rgba(255, 224, 66, 0.8);
+$color__training--game: rgba(24, 64, 232, 1); /*#1840e8*/
+$color__training--game--8: rgba(24, 64, 232, 0.8);
+$color__training--video-audio: rgba(255, 0, 0, 1); /*#ff0000*/
+$color__training--video-audio--8: rgba(255, 0, 0, 0.7);
+$color__training--cross-media: rgba(233, 11, 81, 1); /*#e90b51*/
+$color__training--cross-media--8: rgba(233, 11, 81, 0.8);
+$color__text : #656565;
+$color__text-dark:#323232;
+$color__text-light : #B3B3B3;
+
+
+/******************/
+
+$animation__params: .2s ease-out;
+
+/*****************\
+*** Fonts. ***
+\*****************/
+$font__platform--medium : "Platform-Medium";
+$font__platform--light : "Platform-Light";
+$font__neuzeit : "Neuzeit";;
+
+/*****************\
+*** Font sizes. ***
+\*****************/
+$font-size__base : 16px;

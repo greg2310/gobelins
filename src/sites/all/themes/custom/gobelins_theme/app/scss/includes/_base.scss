@@ -1,0 +1,64 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary,
+div,
+button,
+input,
+optgroup,
+select,
+textarea,
+fieldset,
+ul, ol, li ,
+a,
+span,
+p,
+label,
+h1, h2, h3, h4{
+  box-sizing: border-box;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+body{
+  font-size:$font-size__base;
+  color:$color__text;
+  line-height:1.5em;
+}
+a{
+  text-decoration:none;
+  color:$color__text;
+  
+  &:hover{
+    text-decoration:underline;
+  }
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  line-height:1.5em;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  font-weight:normal;
+  line-height:1.5em;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+button{
+  border:none;
+}

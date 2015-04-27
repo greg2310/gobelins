@@ -1,0 +1,110 @@
+.btn-like{
+  border:1px solid $color__border-gray;
+  background-color:transparent;
+  color:$color__border-gray--light;
+  border-radius:3px;
+  padding:8px 12px;
+  display:inline-block;
+  font-size:0.875rem;
+  transition: background-color, color $animation__params;
+  
+  & > span{
+    margin-left:3px;
+    color:$color__border-gray--light;
+    transition: color $animation__params;
+  }
+
+  &:hover{
+    background-color:$color__bg-white;
+    border-color:$color__bg-white;
+    color:$color__text-dark;
+    text-decoration:none;
+    
+    .text-highlight{
+      color:$color__blue-gobelins;
+    }
+    .text{
+      color:$color__text-dark;
+    }
+  }
+  @media screen and (max-width: 767px){
+    padding:8px 5px;
+    
+    & > span{
+      margin-left:0;
+    }
+  }
+}
+.btn-like--mini,
+.btn-higlight{
+  border:1px solid $color__border-gray--light;
+  color:$color__blue-gobelins;
+  text-transform:uppercase;
+  padding:10px 15px;
+  transition: background-color $animation__params;
+  font-size:0.875rem;
+  font-family:$font__platform--medium;
+  display:inline-block;
+  
+  &:hover{
+    background-color:$color__blue-gobelins;
+    color:#fff;
+    text-decoration:none;
+  }
+}
+.btn-like--mini{
+  padding:10px 12px;
+}
+.btn-mail{
+  display:inline-block;
+  border:1px solid $color__border-gray;
+  background-color:transparent;
+  color:#fff;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-family:$font__platform--medium;
+  font-size:0.875rem;
+  padding:12px 20px;
+  transition: background-color $animation__params;
+  
+  &:after{
+    content: '\e800';
+    font-family:"fontello";
+    margin-left:10px;
+  }
+  
+  &:hover{
+    background-color:$color__bg-white;
+    color:$color__text-dark;
+  }
+  
+}
+
+.link-localisation{
+  color:#fff;
+  display:inline-block;
+  
+  .icon-location{
+    font-size:0.8rem;
+    padding-left:8px;
+  }
+}
+.link-more{
+  text-transform:uppercase;
+  font-family:$font__platform--medium;
+  
+  .icon-right-small{
+    font-size: 20px;
+    margin-left: 2px;
+    vertical-align: top;
+  }
+}
+
+
+.title-h2{
+  font-size:2rem;
+  font-family:$font__platform--light;
+  text-align:center;
+  margin-bottom:30px;
+  text-transform:uppercase;
+}

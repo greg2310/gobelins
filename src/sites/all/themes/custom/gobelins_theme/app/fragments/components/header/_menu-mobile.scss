@@ -1,0 +1,35 @@
+.main-menu--mobile{
+  & > ul > li{
+    text-transform:uppercase;
+    font-size:1.125rem;
+    margin-bottom:25px;
+    font-family: $font__platform--light;
+    
+    & > a{
+      color:#fff;
+    }
+  }
+  .lev2{
+    display:none !important;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    height:100%;
+    background:#fff;
+    z-index:3;
+    padding-left:288px;
+    
+    li > a{
+      display:table;
+      width:100%;
+      
+      rubric__img, 
+      p{
+        display:table-cell;
+      }
+    }
+    
+  }
+  
+}

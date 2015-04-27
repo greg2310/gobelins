@@ -1,0 +1,5 @@
+/* line 1, ../../app/scss/print.scss */
+.header,
+.footer {
+  display: none;
+}

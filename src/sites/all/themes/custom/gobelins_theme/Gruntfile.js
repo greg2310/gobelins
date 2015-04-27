@@ -81,7 +81,8 @@ module.exports = function(grunt) {
         'box-model'                   : false,
         'floats'                      : false,
         'adjoining-classes'           : false,
-        'ids'                         : false
+        'ids'                         : false,
+        'fallback-colors'             : false
       },
       app : {
         src : [options.stagingPath + '/css/*.css', '!' + options.stagingPath + '/css/*.min.css']

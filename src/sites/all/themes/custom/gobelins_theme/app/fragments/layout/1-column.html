@@ -1,25 +1,28 @@
-<%= include('header') %>
+<%= include('aside-tab-mob') %>
+<div class="main-wrapper js-wrapper-move">
+  <%= include('header') %>
 
-<section class="clearfix l-main">
+  <section class="clearfix l-main">
 
-  <% if (typeof contentTop == 'object') { %>
-    <section class="l-content-top">
-      <%= include('list', {params: contentTop}) %>
+    <% if (typeof contentTop == 'object') { %>
+      <section class="l-content-top">
+        <%= include('list', {params: contentTop}) %>
+      </section>
+    <% } %>
+
+    <section class="l-content-main">
+      <%= include('list', {params: content}) %>
     </section>
-  <% } %>
 
-  <section class="l-content-main">
-    <%= include('list', {params: content}) %>
+    <% if (typeof contentBottom == 'object') { %>
+      <section class="l-content-bottom">
+        <%= include('list', {params: contentBottom}) %>
+      </section>
+    <% } %>
+
   </section>
 
-  <% if (typeof contentBottom == 'object') { %>
-    <section class="l-content-bottom">
-      <%= include('list', {params: contentBottom}) %>
-    </section>
-  <% } %>
-
-</section>
-
-<%= include('footer') %>
+  <%= include('footer') %>
+</div>
 <%= include('body-end') %>
 

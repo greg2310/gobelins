@@ -1,0 +1,224 @@
+.main-menu--desktop{
+  position:relative;
+  margin-top:48px;
+  
+  @media screen and (max-width: 1140px){
+    display:none;
+  }
+  
+  a{
+    text-decoration:none;
+  }
+  
+  & > ul{
+    text-align:center;
+
+    & > li{
+      display:inline-block;
+      text-transform:uppercase;
+      margin:0 25px;
+      
+      &:nth-child(3){
+        margin-right:133px;
+      }
+      &:nth-child(4){
+        margin-left:133px;
+      }
+      
+      & > a{
+        color:#fff;
+        display:inline-block;
+        padding-bottom:28px;
+      }
+      
+    }
+  }
+  .lev2{
+    display:none;
+    position:absolute;
+    z-index:3;
+    left:0;
+    right:0;
+    top:43px;
+    border:1px solid red;
+    text-align:left;
+    background-color:$color__bg-gray;
+    color:$color__text-dark;
+    
+    a{
+      color:$color__text-dark;
+    }
+    
+    & > ul{
+      width:1100px;
+      margin:0 auto;
+       
+      & > li{
+        width:243px;
+        display:inline-block;
+        text-align:center;
+        
+        &:hover{
+          background-color:$color__bg-white;
+        }
+        
+        & > a{
+          display:block;
+          padding:18px 10px;
+        }
+      }
+    }
+  }
+  .lev3{
+    display:none;
+    position:absolute;
+    left:0;
+    right:0;
+    top:60px;
+    border:1px solid red;
+    background-color:$color__bg-white;
+  }
+  .list-rubric{
+    border-bottom:1px solid green;
+    ul{
+      width:1140px;
+      margin:0 auto;
+      font-size:0;
+      text-align:left;
+    }
+    
+    li{
+      padding:20px;
+      display:inline-block;
+      vertical-align:top;
+      width:25%;
+      
+      p{
+        margin-bottom:10px;
+        font-size:1.125rem;
+        text-align:center;
+        padding-top:20px;
+      }
+      a{
+        text-transform:none;
+      }
+    }
+    
+    a:hover .rubric__img:after{
+      opacity:1;
+    }
+  }
+  .rubric__img{
+    position:relative;
+    display:block;
+    /*margin-bottom:20px;*/
+    
+    img{
+      display:block;
+      width:100%;
+    }
+    
+    &:before{
+      content:"";
+      position:absolute;
+      top:0;
+      bottom:0;
+      left:0;
+      right:0;
+      transition: background-color $animation__params;
+       background-color : transparent;
+    }
+    &:after{
+      content:"";
+      position:absolute;
+      top:50%;
+      left:50%;
+      @extend .icons-bg__rubric--hover;
+      margin:-15px 0 0 -15px;
+      opacity:0;
+      transition: opacity $animation__params;
+    }
+    
+  }
+  .rubric__gobelins{
+    a:hover .rubric__img:before{
+      background-color:$color__blue-gobelins--08;
+    }
+  }
+  .rubric__animation{
+    a:hover .rubric__img:before{
+      background-color:$color__training--animation--08;
+    }
+  }
+  .rubric__graphic-design{
+    a:hover .rubric__img:before{
+      background-color:$color__training--graphic-design--8;
+    }
+  }
+  .rubric__web-design{
+    a:hover .rubric__img:before{
+      background-color:$color__training--web-design--8;
+    }
+  }
+  .rubric__photography{
+    a:hover .rubric__img:before{
+      background-color:$color__training--photography--8;
+    }
+  }
+  .rubric__game{
+    a:hover .rubric__img:before{
+      background-color:$color__training--game--8;
+    }
+  }
+  .rubric__video-audio{
+    a:hover .rubric__img:before{
+      background-color:$color__training--video-audio--8;
+    }
+  }
+  .rubric__cross-media{
+    a:hover .rubric__img:before{
+      background-color:$color__training--cross-media--8;
+    }
+  }
+  .menu-extra{
+    width:1140px;
+    margin:0 auto;
+    padding:25px 0;
+    
+    li{
+      display:inline-block;
+      
+      & + li{
+        margin-left:30px;
+      }
+      
+      &:last-child{
+        margin-left:20px;
+      }
+    }
+  }
+}
+
+.btn-menu{
+  color:#fff;
+  font-size:28px;
+  position:absolute;
+  top:50%;
+  margin-top:-10px;
+  left:40px;
+  display:none;
+  
+  @media screen and (max-width: 1140px){
+    display:block;
+  }
+}
+.header--sticky .main-menu--desktop{
+  margin:30px 0 0 0;
+  
+  & > ul{
+    text-align:left;
+    & > li + li{
+      margin:0 20px;
+    }
+  }
+}

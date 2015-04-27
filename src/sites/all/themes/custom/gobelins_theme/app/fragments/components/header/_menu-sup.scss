@@ -1,0 +1,41 @@
+.menu-sup{
+  font-family: $font__neuzeit;
+  
+  li{
+    display:inline-block;
+    margin-left:30px;
+  }
+  
+  a{
+    color:#fff;
+  }
+  .icons-press{
+    margin-right:10px;
+  }
+}
+.aside-tab-mob{
+  .menu-sup{
+    border-top:1px solid $color__border-gray;
+    padding-top:30px;
+    
+    li{
+      display:block;
+      margin:0 0 17px 0;    
+      
+      &:first-child{
+        margin-bottom:10px;
+      }
+      &:last-child{
+        border-top:1px solid $color__border-gray;
+        padding-top:20px;
+      }
+    }
+    .btn-like{
+      display:block;
+      
+      .text-highlight{
+        float:right;
+      }
+    }
+  }
+}

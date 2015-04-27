@@ -2,10 +2,16 @@
 $icon-dir: icons;
 
 /* Icon list. */
-$icon-list: ();
+$icon-list: (
+bg__rubric--hover,
+like-gray, like-blue,
+press,
+btn-menu,
+calendar-blue
+);
 
 /* Icon ratio (1 for classic icons, 2 for retina icons) */
-$icon-ratio: 1;
+$icon-ratio: 2;
 
 /* Generate  sprite */
 @include generate-icon($icon-dir, $icon-list, $icon-ratio);

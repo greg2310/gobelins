@@ -7,4 +7,26 @@
 /* Includes imports */
 @import "includes/mixins";
 @import "includes/icons";
+@import "includes/variables";
+@import "includes/base";
+@import "includes/fonts";
+@import "includes/fontello";
+@import "includes/helpers";
+
+/* Layout blocks partials */
+/*@import "../fragments/layout/layout";*/
+@import "../fragments/layout/layout";
+@import "../fragments/layout/header/header";
+@import "../fragments/layout/footer/footer";
+
+/* Components partials */
+@import "../fragments/components/header/menu";
+@import "../fragments/components/header/menu-mobile";
+@import "../fragments/components/header/menu-sup";
+@import "../fragments/components/aside-tab-mob/aside-tab-mob";
+@import "../fragments/components/widgets/widget-shared-icons";
+
+/* Content partials */
+@import "../fragments/content/list-formations/list-formations";
+@import "../fragments/content/list-news/list-news";
 
