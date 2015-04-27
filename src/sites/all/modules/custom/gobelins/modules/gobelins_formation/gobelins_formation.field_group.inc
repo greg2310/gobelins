@@ -158,6 +158,7 @@ function gobelins_formation_field_group_info() {
       0 => 'field_flags',
       1 => 'field_jobs',
       2 => 'field_thematics',
+      3 => 'field_domains',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -192,6 +193,9 @@ function gobelins_formation_field_group_info() {
       4 => 'field_projects',
       5 => 'field_faq_items',
       6 => 'field_news',
+      7 => 'field_duration',
+      8 => 'field_price',
+      9 => 'field_site',
     ),
     'format_type' => 'htab',
     'format_settings' => array(

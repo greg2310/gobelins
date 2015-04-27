@@ -10,6 +10,254 @@
 function gobelins_formation_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance:
+  // 'field_collection_item-field_duration-field_description'
+  $field_instances['field_collection_item-field_duration-field_description'] = array(
+    'bundle' => 'field_duration',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 3,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_description',
+    'label' => 'Description',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'field_collection_item-field_duration-field_formation_duration'
+  $field_instances['field_collection_item-field_duration-field_formation_duration'] = array(
+    'bundle' => 'field_duration',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_integer',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_formation_duration',
+    'label' => 'Duration',
+    'required' => 1,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'field_collection_item-field_duration-field_formation_duration_unit'
+  $field_instances['field_collection_item-field_duration-field_formation_duration_unit'] = array(
+    'bundle' => 'field_duration',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 2,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_formation_duration_unit',
+    'label' => 'Unit',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'field_collection_item-field_duration-field_formation_type'
+  $field_instances['field_collection_item-field_duration-field_formation_type'] = array(
+    'bundle' => 'field_duration',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_formation_type',
+    'label' => 'Type',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'field_collection_item-field_price-field_description'
+  $field_instances['field_collection_item-field_price-field_description'] = array(
+    'bundle' => 'field_price',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_description',
+    'label' => 'Description',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'field_collection_item-field_price-field_formation_price'
+  $field_instances['field_collection_item-field_price-field_formation_price'] = array(
+    'bundle' => 'field_price',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_integer',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_formation_price',
+    'label' => 'Price',
+    'required' => 1,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '€',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'field_collection_item-field_price-field_formation_type'
+  $field_instances['field_collection_item-field_price-field_formation_type'] = array(
+    'bundle' => 'field_price',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_formation_type',
+    'label' => 'Type',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 2,
+    ),
+  );
+
   // Exported field_instance: 'node-formation-field_aptitudes'
   $field_instances['node-formation-field_aptitudes'] = array(
     'bundle' => 'formation',
@@ -173,6 +421,93 @@ function gobelins_formation_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-formation-field_domains'
+  $field_instances['node-formation-field_domains'] = array(
+    'bundle' => 'formation',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 41,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_domains',
+    'label' => 'Domains',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 39,
+    ),
+  );
+
+  // Exported field_instance: 'node-formation-field_duration'
+  $field_instances['node-formation-field_duration'] = array(
+    'bundle' => 'formation',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'field_collection',
+        'settings' => array(
+          'add' => 'Ajouter',
+          'delete' => 'Supprimer',
+          'description' => TRUE,
+          'edit' => 'Modifier',
+          'translate' => 'Traduire',
+          'view_mode' => 'full',
+        ),
+        'type' => 'field_collection_view',
+        'weight' => 38,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_duration',
+    'label' => 'Duration',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'field_collection',
+      'settings' => array(),
+      'type' => 'field_collection_embed',
+      'weight' => 37,
+    ),
+  );
+
   // Exported field_instance: 'node-formation-field_evaluation'
   $field_instances['node-formation-field_evaluation'] = array(
     'bundle' => 'formation',
@@ -292,7 +627,7 @@ function gobelins_formation_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 40,
+      'weight' => 43,
     ),
   );
 
@@ -449,7 +784,7 @@ function gobelins_formation_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 39,
+      'weight' => 40,
     ),
   );
 
@@ -617,7 +952,7 @@ function gobelins_formation_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 41,
+      'weight' => 44,
     ),
   );
 
@@ -700,7 +1035,7 @@ function gobelins_formation_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 37,
+      'weight' => 40,
     ),
   );
 
@@ -784,6 +1119,50 @@ function gobelins_formation_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-formation-field_price'
+  $field_instances['node-formation-field_price'] = array(
+    'bundle' => 'formation',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'field_collection',
+        'settings' => array(
+          'add' => 'Ajouter',
+          'delete' => 'Supprimer',
+          'description' => TRUE,
+          'edit' => 'Modifier',
+          'translate' => 'Traduire',
+          'view_mode' => 'full',
+        ),
+        'type' => 'field_collection_view',
+        'weight' => 39,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_price',
+    'label' => 'Price',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'field_collection',
+      'settings' => array(),
+      'type' => 'field_collection_embed',
+      'weight' => 38,
+    ),
+  );
+
   // Exported field_instance: 'node-formation-field_program'
   $field_instances['node-formation-field_program'] = array(
     'bundle' => 'formation',
@@ -863,7 +1242,7 @@ function gobelins_formation_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 39,
+      'weight' => 42,
     ),
   );
 
@@ -1021,6 +1400,49 @@ function gobelins_formation_field_default_field_instances() {
       ),
       'type' => 'text_textarea',
       'weight' => 28,
+    ),
+  );
+
+  // Exported field_instance: 'node-formation-field_site'
+  $field_instances['node-formation-field_site'] = array(
+    'bundle' => 'formation',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 42,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_site',
+    'label' => 'Site',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'options_select',
+      'weight' => 39,
     ),
   );
 
@@ -1183,7 +1605,7 @@ function gobelins_formation_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 38,
+      'weight' => 41,
     ),
   );
 
@@ -1260,7 +1682,7 @@ function gobelins_formation_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 40,
+      'weight' => 41,
     ),
   );
 
@@ -1367,7 +1789,10 @@ function gobelins_formation_field_default_field_instances() {
   t('Aptitudes');
   t('CPF code');
   t('Course material');
+  t('Description');
   t('Documents');
+  t('Domains');
+  t('Duration');
   t('Evaluation');
   t('Exam');
   t('FAQ items');
@@ -1382,6 +1807,7 @@ function gobelins_formation_field_default_field_instances() {
   t('Persons');
   t('Prerequisite');
   t('Presentation');
+  t('Price');
   t('Program');
   t('Projects');
   t('Public');
@@ -1389,12 +1815,15 @@ function gobelins_formation_field_default_field_instances() {
   t('Registration URL');
   t('Registration mode');
   t('Selection');
+  t('Site');
   t('Skills');
   t('Subtitle');
   t('Terms');
   t('Testimonies');
   t('The more');
   t('Thematics');
+  t('Type');
+  t('Unit');
   t('Validation');
 
   return $field_instances;

@@ -16,6 +16,8 @@ if [ -d "$TMP_REBUILD" ]; then
   cp -R $TMP_REBUILD/* $WWW_PATH
   rm -rf $TMP_REBUILD
 
+  rsync -r $WWW_PATH/* $PROJECT_PATH/drupal-core
+
   # Create project symlinks.
   ln -s $PROJECT_PATH/conf/drupal/default/settings.php     $WWW_PATH/sites/default/settings.php
   ln -s $PROJECT_PATH/src/sites/all/modules/custom         $WWW_PATH/sites/all/modules/custom
@@ -26,6 +28,8 @@ if [ -d "$TMP_REBUILD" ]; then
   # RobotsTxt module works only after removing the Drupal robots.txt file.
   rm -rf $WWW_PATH/robots.txt
 
+  rm -rf $WWW_PATH/install.php
+
   # Fix perms.
   chown -R smile:apache $WWW_PATH
 
@@ -34,7 +38,9 @@ if [ -d "$TMP_REBUILD" ]; then
 
   # Restart apache.
   /etc/init.d/httpd restart
+
+  # Restart redis.
+  /etc/init.d/redis restart
 else
   echo "Drush make ended with error(s). You need to check it before trying to rebuild your project."
 fi
-
