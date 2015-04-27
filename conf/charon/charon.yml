@@ -1,0 +1,25 @@
+{
+
+  'environments': {
+    'integ': {
+      'front1': {
+        'host': 'root@gobelins.eqx.intranet',
+        'src_path': '/var/www/gobelins',
+        'release_path': '/root/releases'
+      }
+    }
+  },
+
+  'build': {
+    'makefile': '/home/smile/gobelins/conf/gobelins.make',
+    'build_path': '/home/smile/releases'
+  },
+
+  'scm': {
+    'type': 'git',
+    'host': 'git.smile.fr',
+    'path': 'david.tripont/gobelins',
+    'git-dir': '/home/smile/gobelins'
+  }
+
+}

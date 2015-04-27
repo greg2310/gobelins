@@ -1,0 +1,14 @@
+name = Project
+description = Module which manage project
+core = 7.x
+package = Gobelins
+version = 7.x-1.0
+project = gobelins_project
+dependencies[] = features
+dependencies[] = gobelins_domain
+dependencies[] = node
+dependencies[] = text
+features[features_api][] = api:2
+features[field_instance][] = node-project-field_description
+features[field_instance][] = node-project-field_reference
+features[node][] = project

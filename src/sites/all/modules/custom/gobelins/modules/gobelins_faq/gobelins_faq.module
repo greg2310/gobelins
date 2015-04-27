@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the FAQ Item feature.
+ */
+
+include_once 'gobelins_faq.features.inc';

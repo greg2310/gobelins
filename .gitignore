@@ -1,0 +1,14 @@
+#Gobelins .gitignore:
+
+#IDE files
+.buildpath
+.project
+.settings/
+
+#Drupal files
+.htaccess
+data/files/
+
+#Front-end dependecies
+node_modules/
+.sass-cache
