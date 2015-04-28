@@ -134,6 +134,9 @@ projects[adminimal_theme][subdir] = "contrib"
 projects[navbar][version] = "1.6"
 projects[navbar][subdir] = "contrib"
 
+projects[zen][version] = "5.5"
+projects[zen][subdir] = "contrib"
+
 ; Libraries
 libraries[backbone][download][type] = "get"
 libraries[backbone][download][url]  = "http://backbonejs.org/backbone-min.js"
