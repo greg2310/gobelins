@@ -801,8 +801,10 @@ button {
 
 /* line 38, ../../app/scss/includes/_helpers.scss */
 .btn-like--mini,
-.btn-higlight {
+.btn-higlight,
+.main-menu--search button {
   border: 1px solid #ccc;
+  background-color: #fff;
   color: #0045e5;
   text-transform: uppercase;
   padding: 10px 15px;
@@ -812,20 +814,30 @@ button {
   font-family: "Platform-Medium";
   display: inline-block;
 }
-/* line 49, ../../app/scss/includes/_helpers.scss */
+/* line 50, ../../app/scss/includes/_helpers.scss */
 .btn-like--mini:hover,
-.btn-higlight:hover {
+.btn-higlight:hover,
+.main-menu--search button:hover {
   background-color: #0045e5;
   color: #fff;
   text-decoration: none;
 }
 
-/* line 55, ../../app/scss/includes/_helpers.scss */
+/* line 56, ../../app/scss/includes/_helpers.scss */
+.btn-higlight .icon-right-small, .main-menu--search button .icon-right-small {
+  font-size: 20px;
+  margin-left: 2px;
+  vertical-align: top;
+  width: 20px;
+  display: inline-block;
+}
+
+/* line 63, ../../app/scss/includes/_helpers.scss */
 .btn-like--mini {
   padding: 10px 12px;
 }
 
-/* line 58, ../../app/scss/includes/_helpers.scss */
+/* line 66, ../../app/scss/includes/_helpers.scss */
 .btn-mail {
   display: inline-block;
   border: 1px solid #666666;
@@ -839,42 +851,44 @@ button {
   -webkit-transition: background-color 0.2s ease-out;
           transition: background-color 0.2s ease-out;
 }
-/* line 70, ../../app/scss/includes/_helpers.scss */
+/* line 78, ../../app/scss/includes/_helpers.scss */
 .btn-mail:after {
   content: '\e800';
   font-family: "fontello";
   margin-left: 10px;
 }
-/* line 76, ../../app/scss/includes/_helpers.scss */
+/* line 84, ../../app/scss/includes/_helpers.scss */
 .btn-mail:hover {
   background-color: #fff;
   color: #323232;
 }
 
-/* line 83, ../../app/scss/includes/_helpers.scss */
+/* line 91, ../../app/scss/includes/_helpers.scss */
 .link-localisation {
   color: #fff;
   display: inline-block;
 }
-/* line 87, ../../app/scss/includes/_helpers.scss */
+/* line 95, ../../app/scss/includes/_helpers.scss */
 .link-localisation .icon-location {
   font-size: 0.8rem;
   padding-left: 8px;
 }
 
-/* line 92, ../../app/scss/includes/_helpers.scss */
+/* line 100, ../../app/scss/includes/_helpers.scss */
 .link-more {
   text-transform: uppercase;
   font-family: "Platform-Medium";
 }
-/* line 96, ../../app/scss/includes/_helpers.scss */
+/* line 104, ../../app/scss/includes/_helpers.scss */
 .link-more .icon-right-small {
   font-size: 20px;
   margin-left: 2px;
   vertical-align: top;
+  width: 20px;
+  display: inline-block;
 }
 
-/* line 104, ../../app/scss/includes/_helpers.scss */
+/* line 114, ../../app/scss/includes/_helpers.scss */
 .title-h2 {
   font-size: 2rem;
   font-family: "Platform-Light";
@@ -1406,7 +1420,7 @@ button {
   color: #323232;
 }
 /* line 48, ../../app/fragments/components/header/_menu.scss */
-.main-menu--desktop .lev2 a {
+.main-menu--desktop .lev2 > ul > li > a {
   color: #323232;
 }
 /* line 52, ../../app/fragments/components/header/_menu.scss */
@@ -1467,23 +1481,24 @@ button {
 /* line 102, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .list-rubric li a {
   text-transform: none;
+  color: #323232;
 }
-/* line 107, ../../app/fragments/components/header/_menu.scss */
+/* line 108, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .list-rubric a:hover .rubric__img:after {
   opacity: 1;
 }
-/* line 111, ../../app/fragments/components/header/_menu.scss */
+/* line 112, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .rubric__img {
   position: relative;
   display: block;
   /*margin-bottom:20px;*/
 }
-/* line 116, ../../app/fragments/components/header/_menu.scss */
+/* line 117, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .rubric__img img {
   display: block;
   width: 100%;
 }
-/* line 121, ../../app/fragments/components/header/_menu.scss */
+/* line 122, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .rubric__img:before {
   content: "";
   position: absolute;
@@ -1495,7 +1510,7 @@ button {
           transition: background-color 0.2s ease-out;
   background-color: transparent;
 }
-/* line 131, ../../app/fragments/components/header/_menu.scss */
+/* line 132, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .rubric__img:after {
   content: "";
   position: absolute;
@@ -1506,58 +1521,92 @@ button {
   -webkit-transition: opacity 0.2s ease-out;
           transition: opacity 0.2s ease-out;
 }
-/* line 144, ../../app/fragments/components/header/_menu.scss */
+/* line 145, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .rubric__gobelins a:hover .rubric__img:before {
   background-color: rgba(0, 69, 229, 0.8);
 }
-/* line 149, ../../app/fragments/components/header/_menu.scss */
+/* line 150, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .rubric__animation a:hover .rubric__img:before {
   background-color: rgba(0, 225, 150, 0.8);
 }
-/* line 154, ../../app/fragments/components/header/_menu.scss */
+/* line 155, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .rubric__graphic-design a:hover .rubric__img:before {
   background-color: rgba(58, 242, 206, 0.8);
 }
-/* line 159, ../../app/fragments/components/header/_menu.scss */
+/* line 160, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .rubric__web-design a:hover .rubric__img:before {
   background-color: rgba(99, 0, 255, 0.8);
 }
-/* line 164, ../../app/fragments/components/header/_menu.scss */
+/* line 165, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .rubric__photography a:hover .rubric__img:before {
   background-color: rgba(255, 224, 66, 0.8);
 }
-/* line 169, ../../app/fragments/components/header/_menu.scss */
+/* line 170, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .rubric__game a:hover .rubric__img:before {
   background-color: rgba(24, 64, 232, 0.8);
 }
-/* line 174, ../../app/fragments/components/header/_menu.scss */
+/* line 175, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .rubric__video-audio a:hover .rubric__img:before {
   background-color: rgba(255, 0, 0, 0.7);
 }
-/* line 179, ../../app/fragments/components/header/_menu.scss */
+/* line 180, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .rubric__cross-media a:hover .rubric__img:before {
   background-color: rgba(233, 11, 81, 0.8);
 }
-/* line 183, ../../app/fragments/components/header/_menu.scss */
+/* line 184, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .menu-extra {
   width: 1140px;
   margin: 0 auto;
   padding: 25px 0;
 }
-/* line 188, ../../app/fragments/components/header/_menu.scss */
+/* line 189, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .menu-extra li {
   display: inline-block;
 }
-/* line 191, ../../app/fragments/components/header/_menu.scss */
+/* line 192, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .menu-extra li + li {
   margin-left: 30px;
 }
-/* line 195, ../../app/fragments/components/header/_menu.scss */
+/* line 196, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .menu-extra li:last-child {
   margin-left: 20px;
 }
+/* line 200, ../../app/fragments/components/header/_menu.scss */
+.main-menu--desktop .menu-extra li a {
+  color: #323232;
+}
+/* line 203, ../../app/fragments/components/header/_menu.scss */
+.main-menu--desktop .menu-extra li .btn-higlight, .main-menu--desktop .menu-extra li .main-menu--search button, .main-menu--search .main-menu--desktop .menu-extra li button {
+  color: #0045e5;
+  font-size: 1rem;
+}
+/* line 207, ../../app/fragments/components/header/_menu.scss */
+.main-menu--desktop .menu-extra li .btn-higlight:hover, .main-menu--desktop .menu-extra li .main-menu--search button:hover, .main-menu--search .main-menu--desktop .menu-extra li button:hover {
+  color: #fff;
+}
 
-/* line 202, ../../app/fragments/components/header/_menu.scss */
+/* line 214, ../../app/fragments/components/header/_menu.scss */
+.main-menu--search {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 25px 0;
+}
+/* line 219, ../../app/fragments/components/header/_menu.scss */
+.main-menu--search label {
+  text-transform: uppercase;
+  display: inline-block;
+  width: 45%;
+}
+/* line 224, ../../app/fragments/components/header/_menu.scss */
+.main-menu--search input[type="text"] {
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+  height: 46px;
+  font-family: Arial;
+  padding-left: 30px;
+}
+
+/* line 236, ../../app/fragments/components/header/_menu.scss */
 .btn-menu {
   color: #fff;
   font-size: 28px;
@@ -1568,21 +1617,21 @@ button {
   display: none;
 }
 @media screen and (max-width: 1140px) {
-  /* line 202, ../../app/fragments/components/header/_menu.scss */
+  /* line 236, ../../app/fragments/components/header/_menu.scss */
   .btn-menu {
     display: block;
   }
 }
 
-/* line 215, ../../app/fragments/components/header/_menu.scss */
+/* line 249, ../../app/fragments/components/header/_menu.scss */
 .header--sticky .main-menu--desktop {
   margin: 30px 0 0 0;
 }
-/* line 218, ../../app/fragments/components/header/_menu.scss */
+/* line 252, ../../app/fragments/components/header/_menu.scss */
 .header--sticky .main-menu--desktop > ul {
   text-align: left;
 }
-/* line 220, ../../app/fragments/components/header/_menu.scss */
+/* line 254, ../../app/fragments/components/header/_menu.scss */
 .header--sticky .main-menu--desktop > ul > li + li {
   margin: 0 20px;
 }
