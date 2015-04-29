@@ -38,6 +38,7 @@
 .btn-like--mini,
 .btn-higlight{
   border:1px solid $color__border-gray--light;
+  background-color:#fff;
   color:$color__blue-gobelins;
   text-transform:uppercase;
   padding:10px 15px;
@@ -51,6 +52,13 @@
     color:#fff;
     text-decoration:none;
   }
+}
+.btn-higlight .icon-right-small {
+  font-size: 20px;
+  margin-left: 2px;
+  vertical-align: top;
+  width:20px;
+  display:inline-block;
 }
 .btn-like--mini{
   padding:10px 12px;
@@ -97,6 +105,8 @@
     font-size: 20px;
     margin-left: 2px;
     vertical-align: top;
+    width:20px;
+    display:inline-block;
   }
 }
 
