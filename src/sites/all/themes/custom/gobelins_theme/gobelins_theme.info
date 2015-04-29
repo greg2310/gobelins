@@ -53,7 +53,7 @@ stylesheets[all][] = system.theme.css
 ;stylesheets[all][] = css/styles.css
 stylesheets[all][] = build/css/all.css
 ;stylesheets[all][] = build/css/all.min.css
-stylesheets[all][] = build/css/print.css
+stylesheets[print][] = build/css/print.css
 ;stylesheets[all][] = build/css/print.min.css
 
 
@@ -72,8 +72,9 @@ stylesheets[all][] = build/css/print.css
 ; Optionally add some JavaScripts to your theme.
 
 ;scripts[] = js/script.js
-
-
+scripts[] = build/js/app.js
+scripts[] = build/js/jquery.js
+scripts[] = build/js/modernizr.js
 
 ; This section lists the regions defined in Zen's default page.tpl.php and
 ; maintenance-page.tpl.php files. The name in brackets is the machine name of
