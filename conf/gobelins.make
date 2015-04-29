@@ -52,7 +52,7 @@ projects[flag][version] = "3.6"
 projects[field_collection][type] = "module"
 projects[field_collection][subdir] = "contrib"
 projects[field_collection][download][type] = "git"
-projects[field_collection][download][url]  = "https://git.smile.fr/david.tripont/field-collection.git"
+projects[field_collection][download][url]  = "https://git.smile.fr/drupal/field-collection.git"
 projects[field_collection][download][branch]  = "7.x-1.x"
 
 projects[field_group][subdir] = "contrib"
@@ -133,6 +133,9 @@ projects[adminimal_theme][subdir] = "contrib"
 
 projects[navbar][version] = "1.6"
 projects[navbar][subdir] = "contrib"
+
+projects[zen][version] = "5.5"
+projects[zen][subdir] = "contrib"
 
 ; Libraries
 libraries[backbone][download][type] = "get"

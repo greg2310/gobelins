@@ -6,6 +6,7 @@
 .settings/
 
 #Drupal files
+drupal-core
 .htaccess
 data/files/
 
