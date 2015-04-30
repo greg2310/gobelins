@@ -1,3 +1,4 @@
+/***************** btns blue ****************/
 .btn-like{
   border:1px solid $color__border-gray;
   background-color:transparent;
@@ -35,8 +36,11 @@
     }
   }
 }
+
 .btn-like--mini,
-.btn-higlight{
+.btn-higlight,
+.btn-download,
+.btn-more{
   border:1px solid $color__border-gray--light;
   background-color:#fff;
   color:$color__blue-gobelins;
@@ -53,9 +57,11 @@
     text-decoration:none;
   }
 }
-.btn-higlight .icon-right-small {
+.btn-more:after{
+  content: '\e806';
+  font-family: 'fontello';
   font-size: 20px;
-  margin-left: 2px;
+  margin-left: 6px;
   vertical-align: top;
   width:20px;
   display:inline-block;
@@ -63,6 +69,13 @@
 .btn-like--mini{
   padding:10px 12px;
 }
+.btn-download:after{
+  content: '\e804';
+  font-family:'fontello';
+  margin-left:10px;
+}
+
+/***************** btns white ****************/
 .btn-mail{
   display:inline-block;
   border:1px solid $color__border-gray;
@@ -85,9 +98,18 @@
     background-color:$color__bg-white;
     color:$color__text-dark;
   }
-  
 }
 
+/***************** other btns ****************/
+.btn-close:before{
+  content:"\2715";
+  color:$color__text-dark;
+  display:block;
+  font-size:30px;
+  cursor:pointer;
+}
+
+/***************** links ****************/
 .link-localisation{
   color:#fff;
   display:inline-block;
@@ -101,7 +123,9 @@
   text-transform:uppercase;
   font-family:$font__platform--medium;
   
-  .icon-right-small{
+  &:after{
+    content: '\e806';
+    font-family: 'fontello';
     font-size: 20px;
     margin-left: 2px;
     vertical-align: top;
@@ -110,11 +134,28 @@
   }
 }
 
-
+/***************** titles ****************/
+.title-h1{
+  font-size:3.375rem;
+  font-family:$font__platform--light;
+  text-align:center;
+  margin-bottom:30px;
+  text-transform:uppercase;
+  color:$color__text-dark;
+}
 .title-h2{
   font-size:2rem;
   font-family:$font__platform--light;
   text-align:center;
   margin-bottom:30px;
   text-transform:uppercase;
+  color:$color__text-dark;
+}
+
+/**/
+.search-message{
+  color:#fff;
+  font-size:2rem;
+  padding:0 0 20px;
+  font-family:$font__platform--light;
 }

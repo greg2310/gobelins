@@ -1,6 +1,10 @@
 .list-formations{
   background-color:$color__bg-gray--darck;
   padding:40px 0 35px;
+  
+  .search-message{
+    margin:0 95px;
+  }
 }  
 .item-formation{
   margin:0 95px 30px;

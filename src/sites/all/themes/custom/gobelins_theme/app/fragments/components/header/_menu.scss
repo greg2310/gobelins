@@ -40,7 +40,6 @@
     left:0;
     right:0;
     top:43px;
-    border:1px solid red;
     text-align:left;
     background-color:$color__bg-gray;
     color:$color__text-dark;
@@ -75,7 +74,6 @@
     left:0;
     right:0;
     top:60px;
-    border:1px solid red;
     background-color:$color__bg-white;
   }
   .list-rubric{
@@ -92,6 +90,10 @@
       display:inline-block;
       vertical-align:top;
       width:25%;
+      
+      img{
+        display:block;
+      }
       
       p{
         margin-bottom:10px;
@@ -181,20 +183,6 @@
       background-color:$color__training--cross-media--8;
     }
   }
-  .lev4{
-    font-size:1rem;
-    text-transform:uppercase;
-    margin-top:-10px;
-    
-    li{
-      border-bottom:1px solid $color__border-gray--light;
-      padding:7px 0;
-    }
-    
-    a{
-      color:$color__text-dark;
-    }
-  }
   .menu-extra{
     width:1140px;
     margin:0 auto;
@@ -214,7 +202,7 @@
       a{
         color:$color__text-dark;
       }
-      .btn-higlight{
+      .btn-more{
         color:$color__blue-gobelins;
         font-size:1rem;
         
@@ -223,33 +211,6 @@
         }
       }
     }
-  }
-}
-.main-menu--search{
-  width:1140px;
-  margin:0 auto;
-  padding:25px 20px;
-  text-align:left;
-  
-  label{
-    text-transform:uppercase;
-    display:inline-block;
-    width:45%;
-  }
-  input[type="text"]{
-    background:$color__bg-gray--light url(../images/icons/icon-search.png) no-repeat 15px center;
-    border:1px solid $color__border-gray--light;
-    height:46px;
-    font-family:Arial;
-    padding-left:45px;
-    vertical-align:middle;
-    width:450px;
-    margin-right:15px;
-    font-size:0.875rem;    
-  }
-  button{
-    @extend .btn-higlight;
-    vertical-align:middle;
   }
 }
 

@@ -1,0 +1,51 @@
+.main-menu--search{
+  width:1140px;
+  margin:0 auto;
+  padding:25px 20px;
+  text-align:left;
+  
+  @media screen and (max-width: 1140px) {
+    width:auto;
+    padding:20px 0;
+  }
+  
+  label{
+    text-transform:uppercase;
+    display:inline-block;
+    width:45%;
+    
+    @media screen and (max-width: 1140px) {
+      display:block;
+      width:auto;
+      font-family:$font__platform--medium;
+      margin-bottom:25px;
+    }
+  }
+  input[type="text"]{
+    background:$color__bg-gray--light url(../images/icons/icon-search.png) no-repeat 15px center;
+    border:1px solid $color__border-gray--light;
+    height:46px;
+    font-family:Arial;
+    padding-left:45px;
+    vertical-align:middle;
+    width:450px;
+    margin-right:15px;
+    font-size:0.875rem;
+    
+    
+    @media screen and (max-width: 1140px) {
+      display:block;
+      width:100%;
+      margin-bottom:20px;
+    }    
+  }
+  button{
+    @extend .btn-higlight;
+    vertical-align:middle;
+    
+    @media screen and (max-width: 1140px) {
+      display:block;
+      width:100%;
+    }  
+  }
+}

@@ -10,26 +10,48 @@
     }
   }
   .lev2{
-    display:none !important;
+    display:none;
     position:absolute;
     top:0;
-    left:0;
+    left:268px;
     right:0;
-    height:100%;
+    width:500px;
     background:#fff;
     z-index:3;
-    padding-left:288px;
+    padding:30px 20px;
+    color:$color__text-dark;
     
-    li > a{
-      display:table;
-      width:100%;
-      
-      rubric__img, 
-      p{
-        display:table-cell;
-      }
+    .btn-close{
+      position:absolute;
+      top:20px;
+      right:20px;
     }
     
+    li{
+      padding-top:20px;
+      text-transform:none;
+      font-family:$font__platform--medium;
+      
+      & > a{
+        display:table;
+        width:100%;
+        table-layout:fixed;
+        color:$color__text-dark;
+
+        .rubric__img, 
+        p{
+          display:table-cell;
+        }
+        .rubric__img{
+          width:245px;
+          line-height:1rem;
+        }
+        p{
+          padding-left:30px;
+          vertical-align:middle;
+          
+        }
+      }
+    }
   }
-  
 }

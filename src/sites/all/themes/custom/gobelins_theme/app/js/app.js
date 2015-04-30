@@ -14,62 +14,21 @@
     $('.js-contentToggle--nav').contentToggle({
       globalClose: true,
       beforeCallback: function() {
-        return this.isOpen || !this.$contents.is(':visible');
+        $('.js-contentToggle--nav-lev3').trigger('close');
+        return true;
       },
       toggleOptions: {
-        duration: 200,
-        complete: function() {
-          var $this = $(this);
-          if (!$this.is(':visible')) {
-            console.log('no visible');
-            $(this).css({display: ''});
-          }else{
-            console.log('visible'); 
-            
-          }
-        }
-      }
-    });
-    $('.js-contentToggle--nav-mob').contentToggle({
-      globalClose: true,
-      beforeCallback: function() {
-        return this.isOpen || !this.$contents.is(':visible');
-      },
-      toggleOptions: {
-        duration: 200,
-        complete: function() {
-          var $this = $(this);
-          if (!$this.is(':visible')) {
-            console.log('no visible');
-            $(this).css({display: ''});
-          }else{
-            console.log('visible'); 
-            
-          }
-        }
+        duration: 200
       }
     });
     $('.js-contentToggle--nav-lev3').contentToggle({
       contentSelector: '.js-contentToggle__content-lev3',
       elementClass :'is-open-lev3',
-      
       toggleOptions: {
-        duration: 200,
-        complete: function() {
-          var $this = $(this);
-          if (!$this.is(':visible')) {
-            $(this).css({display: ''});
-          }
-        }
+        duration: 200
       }
     });
-
-    // FAQ contentToggle initialization.
-    /*$('.js-contentToggle--faq').contentToggle({
-      independent: true,
-      contentSelector: '+ .js-contentToggle__content'
-    });*/
-
+    
     /**********menu hover*************/
     $('.main-menu--desktop').find('.lev1').hover(function(){
       $(this).siblings().children('a').stop().animate({'opacity' : '0.5'}, 300);
@@ -106,21 +65,38 @@
     
     /*************menu mob move*************************/
     var menuWidth = $('.js-aside-move').innerWidth();
-    $('.js-btn-wrapper-move').click(function(){
-      if($(this).hasClass('js-menu-mob-open')){
-        $(this).removeClass('js-menu-mob-open');
+    var menuLev2Width = $(window).width() - menuWidth;
+    $('.lev2').css({'width': menuLev2Width + 'px' });
+    
+    $('.js-btn-menu-mob').click(function(){
+      if($(this).closest('.header').hasClass('is-moved')){
+        $(this).closest('.header').removeClass('is-moved').next().removeClass('is-locked');
         $('.js-aside-move')
         .animate({'left': - menuWidth + 'px'}, 300)
         .next()
         .animate({'left': 0 + 'px'}, 300);
       }else{
-        $(this).addClass('js-menu-mob-open');
+        $(this).closest('.header').addClass('is-moved').next().addClass('is-locked');
         $('.js-aside-move')
           .animate({'left': 0 + 'px'}, 300)
           .next()
           .css({'position' : 'relative'})
           .animate({'left': menuWidth + 'px'}, 300);
       }
+    });
+    
+    // Nav mob contentToggle initialization.
+    $('.js-contentToggle--nav-mob').contentToggle({
+      //globalClose: true,
+      toggleOptions: {
+        duration: 300
+      },
+      toggleProperties: {
+        width: 'toggle'        
+      }
+    });
+    $('.js-menu-lev2-close').click(function(){
+      $(this).closest('.js-contentToggle--nav-mob').trigger('close');
     });
   });
 

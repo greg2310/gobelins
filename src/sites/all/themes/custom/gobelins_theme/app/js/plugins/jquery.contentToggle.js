@@ -154,6 +154,7 @@
    *   The event object.
    */
   Plugin.prototype.toggle = function(state, event) {
+    event.stopPropagation();
     if (typeof state != 'boolean') {
       state = !this.isOpen;
     }

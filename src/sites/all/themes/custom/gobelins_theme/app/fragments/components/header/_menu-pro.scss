@@ -1,0 +1,26 @@
+.menu-pro{
+  font-size:1rem;
+  text-transform:uppercase;
+  margin-top:-10px;
+  
+  li{
+    border-bottom:1px solid $color__border-gray--light;
+    padding:7px 0;
+  }
+  
+  a{
+    color:$color__text-dark;
+  }
+}
+
+.main-menu--mobile .menu-pro{
+  border-top:1px solid $color__border-gray--light;
+  padding-top:7px;
+  margin-bottom:10px;
+  margin-top:30px;
+  
+  li{
+    text-transform:uppercase;
+    padding:15px 0;
+  }
+}

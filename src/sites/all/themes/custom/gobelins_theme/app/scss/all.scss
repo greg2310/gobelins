@@ -23,10 +23,15 @@
 @import "../fragments/components/header/menu";
 @import "../fragments/components/header/menu-mobile";
 @import "../fragments/components/header/menu-sup";
+@import "../fragments/components/header/menu__search";
+@import "../fragments/components/header/menu-pro";
 @import "../fragments/components/aside-tab-mob/aside-tab-mob";
+@import "../fragments/components/breadcrumb/breadcrumb";
 @import "../fragments/components/widgets/widget-shared-icons";
 
 /* Content partials */
 @import "../fragments/content/list-formations/list-formations";
 @import "../fragments/content/list-news/list-news";
+@import "../fragments/content/list-docs/list-docs";
+@import "../fragments/content/filter-trainings/filter-trainings";
 

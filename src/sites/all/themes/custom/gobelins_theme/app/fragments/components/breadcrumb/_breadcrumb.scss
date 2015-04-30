@@ -1,0 +1,23 @@
+.breadcrumb{
+  font-size:0.875rem;
+  
+  ul{
+    padding:20px;
+    width:1140px;
+    margin:0 auto;
+    
+    li{
+      display:inline-block;
+      margin-right:7px;
+      position:relative;
+      padding-left:24px;
+    }
+    li + li:before{
+      content:"\2192";
+      display:inline-block;
+      position:absolute;
+      left:0;
+      top:-1px;
+    }
+  }
+}

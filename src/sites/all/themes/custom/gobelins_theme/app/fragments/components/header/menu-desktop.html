@@ -65,8 +65,8 @@
                   <li><a href="#">carrefour de l’orientation</a></li>
                   <li><a href="#">Vie étudiante</a></li>
                   <li><a href="#">Nous rencontrer</a></li>
-                  <li><a href="#" class="btn-higlight">résultats d’admission<span class="icon-right-small"></span></a></li>
-                  <li><a href="#" class="btn-higlight">inscription<span class="icon-right-small"></span></a></li>
+                  <li><a href="#" class="btn-more">résultats d’admission</span></a></li>
+                  <li><a href="#" class="btn-more">inscription</a></li>
                 </ul>
               </div>
             </div>
@@ -119,20 +119,11 @@
                     </a>
                   </li>
                   <li>
-                    <ul class="lev4">
-                      <li><a href="">Reconversions</a></li>
-                      <li><a href="">Éligibles cpf</a></li>
-                      <li><a href="">formations afdas</a></li>
-                      <li><a href="">Formations diplomantes/certifiantes</a></li>
-                    </ul>
+                    <%= include('menu-pro') %>
                   </li>
                 </ul>
               </div>
-              <form action="" class="main-menu--search">
-                <label>rechercher parmi toutes nos formations professionnelles</label>
-                <input type="text" placeholder="Tapez un mot-clé"/>
-                <button type="submit">Chercher<span class="icon-right-small"></span></button>
-              </form>
+              <%= include('menu__search') %>
             </div>
           </li>
         </ul>
@@ -142,8 +133,43 @@
       <a href="#">Formations</a>
       <div class="lev2 js-contentToggle__content">
         <ul>
-          <li>
+          <li class="js-contentToggle--nav-lev3">
             <a href="#">pour étudiants</a>
+            <div class="lev3 js-contentToggle__content-lev3">
+              <div class="list-rubric">
+                <ul>
+                  <li class="rubric__gobelins">
+                    <a href="#">
+                      <span class="rubric__img"><img src="images/img1.jpg"/></span>
+                      <p>Cinéma d’animation</p>
+                    </a>
+                  </li>
+                  <li class="rubric__animation">
+                    <a href="#">
+                      <span class="rubric__img"><img src="images/img2.jpg"/></span>
+                      <p>Design graphique</p>
+                    </a>
+                  </li>
+                  <li class="rubric__graphic-design">
+                    <a href="#">
+                      <span class="rubric__img"><img src="images/img3.jpg"/></span>
+                      <p>Design interactif/web</p>
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+              <div class="menu-extra">
+                <ul>
+                  <li><a href="#">Guide des métiers</a></li>
+                  <li><a href="#">carrefour de l’orientation</a></li>
+                  <li><a href="#">Vie étudiante</a></li>
+                  <li><a href="#">Nous rencontrer</a></li>
+                  <li><a href="#" class="btn-more">résultats d’admission</span></a></li>
+                  <li><a href="#" class="btn-more">inscription</a></li>
+                </ul>
+              </div>
+            </div>
           </li>
         </ul>
     </li>
