@@ -66,7 +66,11 @@
     /*************menu mob move*************************/
     var menuWidth = $('.js-aside-move').innerWidth();
     var menuLev2Width = $(window).width() - menuWidth;
-    $('.lev2').css({'width': menuLev2Width + 'px' });
+    
+    $( window ).resize(function() {
+      $('.main-menu--mobile').find('.lev2').css({'width': menuLev2Width + 'px' });
+    });
+    
     
     $('.js-btn-menu-mob').click(function(){
       if($(this).closest('.header').hasClass('is-moved')){

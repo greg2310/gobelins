@@ -21,10 +21,21 @@
     padding:30px 20px;
     color:$color__text-dark;
     
+    @media screen and (max-width: 767px) {
+      left:0;
+      width:410px;
+      padding:20px 40px;
+    }
+    
     .btn-close{
       position:absolute;
       top:20px;
       right:20px;
+      
+      @media screen and (max-width: 767px) {
+        top:15px;
+        right:15px;
+      }
     }
     
     li{
@@ -34,9 +45,13 @@
       
       & > a{
         display:table;
-        width:100%;
+        width:460px;
         table-layout:fixed;
         color:$color__text-dark;
+        
+        @media screen and (max-width: 767px) {
+          width:330px;
+        }
 
         .rubric__img, 
         p{
@@ -45,11 +60,15 @@
         .rubric__img{
           width:245px;
           line-height:1rem;
+          
+           @media screen and (max-width: 767px) {
+            width:100px;
+            overflow:hidden;
+          }
         }
         p{
           padding-left:30px;
           vertical-align:middle;
-          
         }
       }
     }

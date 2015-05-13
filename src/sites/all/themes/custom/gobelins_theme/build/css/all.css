@@ -534,6 +534,10 @@ th {
 /*****************\
 *** Font sizes. ***
 \*****************/
+/*****************\
+*** Bootstrap ***
+\*****************/
+/*$gridGutterWidth1200: 40px;*/
 /* line 1, ../../app/scss/includes/_base.scss */
 article,
 aside,
@@ -965,6 +969,8 @@ button {
   font-family: "Platform-Light";
 }
 
+/* Bootstrap imports */
+/*@import "bower/bootstrap";*/
 /* Layout blocks partials */
 /*@import "../fragments/layout/layout";*/
 /* line 1, ../../app/fragments/layout/_layout.scss */
@@ -1114,6 +1120,13 @@ button {
     bottom: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.5);
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 107, ../../app/fragments/layout/_layout.scss */
+  .aside-tab-mob {
+    width: 410px;
+    left: -410px;
   }
 }
 /**/
@@ -1733,36 +1746,64 @@ button {
   padding: 30px 20px;
   color: #323232;
 }
-/* line 24, ../../app/fragments/components/header/_menu-mobile.scss */
+@media screen and (max-width: 767px) {
+  /* line 12, ../../app/fragments/components/header/_menu-mobile.scss */
+  .main-menu--mobile .lev2 {
+    left: 0;
+    width: 410px;
+    padding: 20px 40px;
+  }
+}
+/* line 30, ../../app/fragments/components/header/_menu-mobile.scss */
 .main-menu--mobile .lev2 .btn-close {
   position: absolute;
   top: 20px;
   right: 20px;
 }
-/* line 30, ../../app/fragments/components/header/_menu-mobile.scss */
+@media screen and (max-width: 767px) {
+  /* line 30, ../../app/fragments/components/header/_menu-mobile.scss */
+  .main-menu--mobile .lev2 .btn-close {
+    top: 15px;
+    right: 15px;
+  }
+}
+/* line 41, ../../app/fragments/components/header/_menu-mobile.scss */
 .main-menu--mobile .lev2 li {
   padding-top: 20px;
   text-transform: none;
   font-family: "Platform-Medium";
 }
-/* line 35, ../../app/fragments/components/header/_menu-mobile.scss */
+/* line 46, ../../app/fragments/components/header/_menu-mobile.scss */
 .main-menu--mobile .lev2 li > a {
   display: table;
-  width: 100%;
+  width: 460px;
   table-layout: fixed;
   color: #323232;
 }
-/* line 41, ../../app/fragments/components/header/_menu-mobile.scss */
+@media screen and (max-width: 767px) {
+  /* line 46, ../../app/fragments/components/header/_menu-mobile.scss */
+  .main-menu--mobile .lev2 li > a {
+    width: 330px;
+  }
+}
+/* line 56, ../../app/fragments/components/header/_menu-mobile.scss */
 .main-menu--mobile .lev2 li > a .rubric__img,
 .main-menu--mobile .lev2 li > a p {
   display: table-cell;
 }
-/* line 45, ../../app/fragments/components/header/_menu-mobile.scss */
+/* line 60, ../../app/fragments/components/header/_menu-mobile.scss */
 .main-menu--mobile .lev2 li > a .rubric__img {
   width: 245px;
   line-height: 1rem;
 }
-/* line 49, ../../app/fragments/components/header/_menu-mobile.scss */
+@media screen and (max-width: 767px) {
+  /* line 60, ../../app/fragments/components/header/_menu-mobile.scss */
+  .main-menu--mobile .lev2 li > a .rubric__img {
+    width: 100px;
+    overflow: hidden;
+  }
+}
+/* line 69, ../../app/fragments/components/header/_menu-mobile.scss */
 .main-menu--mobile .lev2 li > a p {
   padding-left: 30px;
   vertical-align: middle;

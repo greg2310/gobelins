@@ -103,4 +103,10 @@
     }
   }
 }
+@media screen and (max-width: 767px) {
+  .aside-tab-mob{
+    width:410px;
+    left:-410px;
+  }
+}
 /**/
