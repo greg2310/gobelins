@@ -1,23 +1,22 @@
 /* Needed imports */
 @import "compass";
 
+/* Variables imports */
+@import "includes/variables";
+
 /* Vendor imports */
 @import "bower/normalize";
+/*@import "bootstrap/bootstrap";*/
 
 /* Includes imports */
 @import "includes/mixins";
 @import "includes/icons";
-@import "includes/variables";
 @import "includes/base";
 @import "includes/fonts";
 @import "includes/fontello";
 @import "includes/helpers";
 
-/* Bootstrap imports */
-/*@import "bower/bootstrap";*/
-
 /* Layout blocks partials */
-/*@import "../fragments/layout/layout";*/
 @import "../fragments/layout/layout";
 @import "../fragments/layout/header/header";
 @import "../fragments/layout/footer/footer";
@@ -37,4 +36,7 @@
 @import "../fragments/content/list-news/list-news";
 @import "../fragments/content/list-docs/list-docs";
 @import "../fragments/content/filter-trainings/filter-trainings";
+@import "../fragments/content/block-presentation/block-presentation";
+@import "../fragments/content/block-banner/block-banner";
+@import "../fragments/content/block-training-details/block-training-details";
 

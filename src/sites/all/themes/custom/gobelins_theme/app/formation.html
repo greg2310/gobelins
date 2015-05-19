@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9 ie8" lang=""> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10 ie9" lang=""> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+  <head>
+    <%= include('head', {title: 'Formation'}) %>
+  </head>
+  <body class="training-animation">
+    <%= include(
+      '1-column',
+      {
+        content      : ['block-presentation', 'block-training-details', 'list-docs'],
+        contentTop   : ['breadcrumb', 'block-banner'],
+        contentBottom : []
+      }
+    ) %>
+  </body>
+</html>
+

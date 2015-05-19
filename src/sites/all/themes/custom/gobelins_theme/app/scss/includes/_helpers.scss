@@ -48,8 +48,10 @@
   padding:10px 15px;
   transition: background-color $animation__params;
   font-size:0.875rem;
+  letter-spacing:2px;
   font-family:$font__platform--medium;
   display:inline-block;
+  text-align:center;
   
   &:hover{
     background-color:$color__blue-gobelins;
@@ -69,10 +71,16 @@
 .btn-like--mini{
   padding:10px 12px;
 }
-.btn-download:after{
-  content: '\e804';
-  font-family:'fontello';
-  margin-left:10px;
+.btn-download{
+  &:after{
+    content:'';
+    @extend .icons-download;
+    margin:-2px 0 0 10px;
+    vertical-align:middle;
+  }
+  &:hover:after{
+    @extend .icons-download-white;
+  }
 }
 
 /***************** btns white ****************/
@@ -85,6 +93,7 @@
   text-transform:uppercase;
   font-family:$font__platform--medium;
   font-size:0.875rem;
+  letter-spacing:2px;
   padding:12px 20px;
   transition: background-color $animation__params;
   
@@ -138,6 +147,7 @@
 .title-h1{
   font-size:3.375rem;
   font-family:$font__platform--light;
+  letter-spacing:1px;
   text-align:center;
   margin-bottom:30px;
   text-transform:uppercase;
@@ -146,6 +156,7 @@
 .title-h2{
   font-size:2rem;
   font-family:$font__platform--light;
+  letter-spacing:1px;
   text-align:center;
   margin-bottom:30px;
   text-transform:uppercase;
@@ -158,4 +169,19 @@
   font-size:2rem;
   padding:0 0 20px;
   font-family:$font__platform--light;
+}
+
+/*list style*/
+.ul-styled{
+  li{
+    padding-left:10px;
+    position:relative;
+  }
+  li:before{
+    content:'\2022';
+    position:absolute;
+    left:0;
+    top:1px;
+    font-size:50%;
+  }
 }

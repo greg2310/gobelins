@@ -5,9 +5,9 @@
 $color__blue-gobelins : rgba(0, 69, 229, 1); /*#0045e5*/
 $color__blue-gobelins--08 : rgba(0, 69, 229, 0.8);
 $color__bg-gray--darck     : rgba(25, 25, 25, 1); /*#191919*/
-$color__bg-gray--light:#f3f3f3;
+$color__bg-gray--light:#f2f2f2;
 $color__bg-gray:#e6e6e6;
-$color__border-gray--light:/*#e5e5e5;*/#ccc;
+$color__border-gray--light:#e5e5e5;/*#ccc;*/
 $color__border-gray:/*#cbcbcb;*/#666666;
 $color__bg-white:#fff;
 
@@ -39,7 +39,7 @@ $animation__params: .2s ease-out;
 \*****************/
 $font__platform--medium : "Platform-Medium";
 $font__platform--light : "Platform-Light";
-$font__neuzeit : "Neuzeit";;
+$font__neuzeit : "Neuzeit";
 
 /*****************\
 *** Font sizes. ***
@@ -49,4 +49,9 @@ $font-size__base : 16px;
 /*****************\
 *** Bootstrap ***
 \*****************/
-/*$gridGutterWidth1200: 40px;*/
+$screen-md: 1100px;
+/** Padding between columns. Gets divided in half for the left and right.*/
+$grid-gutter-width-lg: 40px;
+$grid-gutter-width-md: 30px;
+$grid-gutter-width-sm: 20px;
+$grid-gutter-width-xs: 10px;

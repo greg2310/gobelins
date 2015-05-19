@@ -2,6 +2,15 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
 (function(){
   'use strict';
 
+  /* require app plugins */
+  require('./app/menu.js');
+
+})();
+
+},{"./app/menu.js":2}],2:[function(require,module,exports){
+(function(){
+  'use strict';
+
   /* require jQuery plugins */
   var $ = require('jquery');
 
@@ -9,7 +18,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
     //var hash = window.location.hash;
 
     // Init contentToggle plugin.
-    require('./plugins/jquery.contentToggle.js');
+    require('../plugins/jquery.contentToggle.js');
 
     // Main nav contentToggle initialization.
     $('.js-contentToggle--nav').contentToggle({
@@ -40,6 +49,9 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
     });
     
     /**************** main menu sticky ********************/
+    
+    /*utiliser jquery.unevent*/
+    
     /*var headerHeight = $('.header').height();
     var headerStickyHeight = $('.header--sticky').height();
     console.log(headerHeight);
@@ -61,8 +73,6 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
       }
       lastScrollPos = scrollPos;
     });*/
-    
-    
     
     /*************menu mob move*************************/
     var menuWidth = $('.js-aside-move').innerWidth();
@@ -107,7 +117,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
 
 })();
 
-},{"./plugins/jquery.contentToggle.js":2,"jquery":"jquery"}],2:[function(require,module,exports){
+},{"../plugins/jquery.contentToggle.js":3,"jquery":"jquery"}],3:[function(require,module,exports){
 (function($){
   'use strict';
 

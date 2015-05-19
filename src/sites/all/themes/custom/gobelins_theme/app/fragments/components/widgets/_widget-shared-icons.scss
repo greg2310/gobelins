@@ -67,3 +67,34 @@
     }
   }
 }
+
+.block-sharing{
+  background:#fff;
+  border-radius:3px;
+  text-align:center;
+  border-bottom:2px solid $color__border-gray--light;
+  
+  li{
+    a{
+      text-decoration:none;
+      display:block;
+      padding:13px 15px;
+      color:#7f7f7f;
+    }
+  }
+  li + li{
+    border-top:1px solid $color__border-gray--light;
+  }
+  .icon-facebook:hover{
+    color:#3b5998;
+  }
+  .icon-twitter:hover{
+    color:#3cf;
+  }
+  .icon-gplus:hover{
+    color:#d34836;
+  }
+  .icon-mail:hover{
+    color:$color__blue-gobelins;
+  }
+}

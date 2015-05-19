@@ -1,5 +1,30 @@
 @charset "UTF-8";
 /* Needed imports */
+/* Variables imports */
+/*************\
+*** Colors. ***
+\*************/
+/*#0045e5*/
+/*#191919*/
+/*#ccc;*/
+/*#00e196*/
+/*#3af2ce*/
+/*#6300ff*/
+/*#ffe042*/
+/*#1840e8*/
+/*#ff0000*/
+/*#e90b51*/
+/******************/
+/*****************\
+*** Fonts. ***
+\*****************/
+/*****************\
+*** Font sizes. ***
+\*****************/
+/*****************\
+*** Bootstrap ***
+\*****************/
+/** Padding between columns. Gets divided in half for the left and right.*/
 /* Vendor imports */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -436,6 +461,7 @@ th {
   padding: 0;
 }
 
+/*@import "bootstrap/bootstrap";*/
 /* Includes imports */
 /* Icon directory. */
 /* Icon list. */
@@ -444,8 +470,8 @@ th {
 /**/
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-bg__rubric--hover, .main-menu--desktop .rubric__img:after {
-  background: url('../images/icons-sc05f862b0a.png') 0 0 no-repeat;
-  background-size: 29px 346px;
+  background: url('../images/icons-s0a8611f138.png') 0 0 no-repeat;
+  background-size: 29px 300px;
   display: inline-block;
   width: 29px;
   height: 29px;
@@ -453,8 +479,8 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-like-gray {
-  background: url('../images/icons-sc05f862b0a.png') 0 -210px no-repeat;
-  background-size: 29px 346px;
+  background: url('../images/icons-s0a8611f138.png') 0 -190px no-repeat;
+  background-size: 29px 300px;
   display: inline-block;
   width: 11px;
   height: 9px;
@@ -462,8 +488,8 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-like-blue {
-  background: url('../images/icons-sc05f862b0a.png') 0 -201px no-repeat;
-  background-size: 29px 346px;
+  background: url('../images/icons-s0a8611f138.png') 0 -181px no-repeat;
+  background-size: 29px 300px;
   display: inline-block;
   width: 11px;
   height: 9px;
@@ -471,8 +497,8 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-press {
-  background: url('../images/icons-sc05f862b0a.png') 0 -265px no-repeat;
-  background-size: 29px 346px;
+  background: url('../images/icons-s0a8611f138.png') 0 -230px no-repeat;
+  background-size: 29px 300px;
   display: inline-block;
   width: 12px;
   height: 14px;
@@ -480,26 +506,71 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-btn-menu {
-  background: url('../images/icons-sc05f862b0a.png') 0 -29px no-repeat;
-  background-size: 29px 346px;
+  background: url('../images/icons-s0a8611f138.png') 0 -29px no-repeat;
+  background-size: 29px 300px;
   display: inline-block;
   width: 20px;
   height: 18px;
 }
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
-.icons-calendar-blue {
-  background: url('../images/icons-sc05f862b0a.png') 0 -47px no-repeat;
-  background-size: 29px 346px;
+.icons-calendar {
+  background: url('../images/icons-s0a8611f138.png') 0 -47px no-repeat;
+  background-size: 29px 300px;
   display: inline-block;
   width: 16px;
   height: 16px;
 }
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
+.icons-list {
+  background: url('../images/icons-s0a8611f138.png') 0 -199px no-repeat;
+  background-size: 29px 300px;
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+}
+
+/* line 31, ../../app/scss/includes/_mixins.scss */
+.icons-public {
+  background: url('../images/icons-s0a8611f138.png') 0 -258px no-repeat;
+  background-size: 29px 300px;
+  display: inline-block;
+  width: 17px;
+  height: 14px;
+}
+
+/* line 31, ../../app/scss/includes/_mixins.scss */
+.icons-checked {
+  background: url('../images/icons-s0a8611f138.png') 0 -91px no-repeat;
+  background-size: 29px 300px;
+  display: inline-block;
+  width: 13px;
+  height: 9px;
+}
+
+/* line 31, ../../app/scss/includes/_mixins.scss */
+.icons-euro {
+  background: url('../images/icons-s0a8611f138.png') 0 -132px no-repeat;
+  background-size: 29px 300px;
+  display: inline-block;
+  width: 12px;
+  height: 13px;
+}
+
+/* line 31, ../../app/scss/includes/_mixins.scss */
+.icons-location {
+  background: url('../images/icons-s0a8611f138.png') 0 -214px no-repeat;
+  background-size: 29px 300px;
+  display: inline-block;
+  width: 12px;
+  height: 16px;
+}
+
+/* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-home-white {
-  background: url('../images/icons-sc05f862b0a.png') 0 -136px no-repeat;
-  background-size: 29px 346px;
+  background: url('../images/icons-s0a8611f138.png') 0 -158px no-repeat;
+  background-size: 29px 300px;
   display: inline-block;
   width: 12px;
   height: 13px;
@@ -507,37 +578,64 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-home-gray {
-  background: url('../images/icons-sc05f862b0a.png') 0 -123px no-repeat;
-  background-size: 29px 346px;
+  background: url('../images/icons-s0a8611f138.png') 0 -145px no-repeat;
+  background-size: 29px 300px;
   display: inline-block;
   width: 12px;
   height: 13px;
 }
 
+/* line 31, ../../app/scss/includes/_mixins.scss */
+.icons-download, .btn-download:after {
+  background: url('../images/icons-s0a8611f138.png') 0 -116px no-repeat;
+  background-size: 29px 300px;
+  display: inline-block;
+  width: 14px;
+  height: 16px;
+}
+
+/* line 31, ../../app/scss/includes/_mixins.scss */
+.icons-download-white, .btn-download:hover:after {
+  background: url('../images/icons-s0a8611f138.png') 0 -100px no-repeat;
+  background-size: 29px 300px;
+  display: inline-block;
+  width: 14px;
+  height: 16px;
+}
+
+/* line 31, ../../app/scss/includes/_mixins.scss */
+.icons-print {
+  background: url('../images/icons-s0a8611f138.png') 0 -244px no-repeat;
+  background-size: 29px 300px;
+  display: inline-block;
+  width: 16px;
+  height: 14px;
+}
+
 /* Specific rules */
-/*************\
-*** Colors. ***
-\*************/
-/*#0045e5*/
-/*#191919*/
-/*#00e196*/
-/*#3af2ce*/
-/*#6300ff*/
-/*#ffe042*/
-/*#1840e8*/
-/*#ff0000*/
-/*#e90b51*/
-/******************/
-/*****************\
-*** Fonts. ***
-\*****************/
-/*****************\
-*** Font sizes. ***
-\*****************/
-/*****************\
-*** Bootstrap ***
-\*****************/
-/*$gridGutterWidth1200: 40px;*/
+/* line 23, ../../app/scss/includes/_icons.scss */
+.icon-users,
+.icon-euro,
+.icon-location,
+.icon-check {
+  color: #0045e5;
+}
+
+/* line 29, ../../app/scss/includes/_icons.scss */
+.icons-calendar,
+.icons-list,
+.icons-public,
+.icons-checked,
+.icons-euro,
+.icons-location {
+  margin-right: 10px;
+}
+
+/* line 37, ../../app/scss/includes/_icons.scss */
+.icons-location {
+  vertical-align: middle;
+}
+
 /* line 1, ../../app/scss/includes/_base.scss */
 article,
 aside,
@@ -578,19 +676,21 @@ body {
   font-size: 16px;
   color: #656565;
   line-height: 1.5em;
+  background-color: #D1D1D1;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* line 37, ../../app/scss/includes/_base.scss */
+/* line 39, ../../app/scss/includes/_base.scss */
 a {
   text-decoration: none;
   color: #656565;
 }
-/* line 41, ../../app/scss/includes/_base.scss */
+/* line 43, ../../app/scss/includes/_base.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 45, ../../app/scss/includes/_base.scss */
+/* line 47, ../../app/scss/includes/_base.scss */
 ul {
   padding: 0;
   margin: 0;
@@ -598,23 +698,33 @@ ul {
   line-height: 1.5em;
 }
 
-/* line 52, ../../app/scss/includes/_base.scss */
+/* line 54, ../../app/scss/includes/_base.scss */
 h1, h2, h3, h4, h5, p {
   margin: 0;
   font-weight: normal;
   line-height: 1.5em;
 }
 
-/* line 58, ../../app/scss/includes/_base.scss */
+/* line 60, ../../app/scss/includes/_base.scss */
 fieldset {
   border: none;
   padding: 0;
   margin: 0;
 }
 
-/* line 63, ../../app/scss/includes/_base.scss */
+/* line 65, ../../app/scss/includes/_base.scss */
 button {
   border: none;
+}
+
+/* line 69, ../../app/scss/includes/_base.scss */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
 }
 
 @font-face {
@@ -631,8 +741,8 @@ button {
 }
 @font-face {
   font-family: 'fontello';
-  src: url("../fonts/fontello.eot?27000395");
-  src: url("../fonts/fontello.eot?27000395#iefix") format("embedded-opentype"), url("../fonts/fontello.woff?27000395") format("woff"), url("../fonts/fontello.ttf?27000395") format("truetype"), url("../fonts/fontello.svg?27000395#fontello") format("svg");
+  src: url("../fonts/fontello.eot?35327745");
+  src: url("../fonts/fontello.eot?35327745#iefix") format("embedded-opentype"), url("../fonts/fontello.woff?35327745") format("woff"), url("../fonts/fontello.ttf?35327745") format("truetype"), url("../fonts/fontello.svg?35327745#fontello") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -642,7 +752,7 @@ button {
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../fonts/fontello.svg?27000395#fontello') format('svg');
+    src: url('../fonts/fontello.svg?35327745#fontello') format('svg');
   }
 }
 */
@@ -682,96 +792,102 @@ button {
 
 /* '¯áÇ' */
 /* line 58, ../../app/scss/includes/_fontello.scss */
+.icon-check:before {
+  content: '\e801';
+}
+
+/* '¯áü' */
+/* line 59, ../../app/scss/includes/_fontello.scss */
 .icon-menu:before {
   content: '\e802';
 }
 
 /* '¯áé' */
-/* line 59, ../../app/scss/includes/_fontello.scss */
+/* line 60, ../../app/scss/includes/_fontello.scss */
 .icon-search:before {
   content: '\e803';
 }
 
 /* '¯áâ' */
-/* line 60, ../../app/scss/includes/_fontello.scss */
+/* line 61, ../../app/scss/includes/_fontello.scss */
 .icon-download:before {
   content: '\e804';
 }
 
 /* '¯áä' */
-/* line 61, ../../app/scss/includes/_fontello.scss */
+/* line 62, ../../app/scss/includes/_fontello.scss */
 .icon-euro:before {
   content: '\e805';
 }
 
 /* '¯áà' */
-/* line 62, ../../app/scss/includes/_fontello.scss */
+/* line 63, ../../app/scss/includes/_fontello.scss */
 .icon-right-small:before {
   content: '\e806';
 }
 
 /* '¯áå' */
-/* line 63, ../../app/scss/includes/_fontello.scss */
+/* line 64, ../../app/scss/includes/_fontello.scss */
 .icon-location:before {
   content: '\e807';
 }
 
 /* '¯áç' */
-/* line 64, ../../app/scss/includes/_fontello.scss */
+/* line 65, ../../app/scss/includes/_fontello.scss */
 .icon-users:before {
   content: '\e808';
 }
 
 /* '¯áê' */
-/* line 65, ../../app/scss/includes/_fontello.scss */
+/* line 66, ../../app/scss/includes/_fontello.scss */
 .icon-linkedin:before {
   content: '\e80a';
 }
 
 /* '¯áè' */
-/* line 66, ../../app/scss/includes/_fontello.scss */
+/* line 67, ../../app/scss/includes/_fontello.scss */
 .icon-facebook:before {
   content: '\e80b';
 }
 
 /* '¯áï' */
-/* line 67, ../../app/scss/includes/_fontello.scss */
+/* line 68, ../../app/scss/includes/_fontello.scss */
 .icon-twitter:before {
   content: '\e80c';
 }
 
 /* '¯áî' */
-/* line 68, ../../app/scss/includes/_fontello.scss */
+/* line 69, ../../app/scss/includes/_fontello.scss */
 .icon-gplus:before {
   content: '\e80d';
 }
 
 /* '¯áì' */
-/* line 69, ../../app/scss/includes/_fontello.scss */
+/* line 70, ../../app/scss/includes/_fontello.scss */
 .icon-pinterest-circled:before {
   content: '\e80e';
 }
 
 /* '¯áÄ' */
-/* line 70, ../../app/scss/includes/_fontello.scss */
+/* line 71, ../../app/scss/includes/_fontello.scss */
 .icon-vimeo:before {
   content: '\e80f';
 }
 
 /* '¯áÅ' */
-/* line 71, ../../app/scss/includes/_fontello.scss */
+/* line 72, ../../app/scss/includes/_fontello.scss */
 .icon-instagramm:before {
   content: '\e810';
 }
 
 /* '¯áÉ' */
-/* line 72, ../../app/scss/includes/_fontello.scss */
+/* line 73, ../../app/scss/includes/_fontello.scss */
 .icon-youtube-play:before {
   content: '\e811';
 }
 
 /* '¯áæ' */
-/* line 73, ../../app/scss/includes/_fontello.scss */
+/* line 74, ../../app/scss/includes/_fontello.scss */
 .icon-heart:before {
   content: '\e813';
 }
@@ -782,7 +898,7 @@ button {
 .btn-like {
   border: 1px solid #666666;
   background-color: transparent;
-  color: #ccc;
+  color: #e5e5e5;
   border-radius: 3px;
   padding: 8px 12px;
   display: inline-block;
@@ -793,7 +909,7 @@ button {
 /* line 12, ../../app/scss/includes/_helpers.scss */
 .btn-like > span {
   margin-left: 3px;
-  color: #ccc;
+  color: #e5e5e5;
   -webkit-transition: color 0.2s ease-out;
           transition: color 0.2s ease-out;
 }
@@ -829,7 +945,7 @@ button {
 .main-menu--search button,
 .btn-download,
 .btn-more {
-  border: 1px solid #ccc;
+  border: 1px solid #e5e5e5;
   background-color: #fff;
   color: #0045e5;
   text-transform: uppercase;
@@ -837,10 +953,12 @@ button {
   -webkit-transition: background-color 0.2s ease-out;
           transition: background-color 0.2s ease-out;
   font-size: 0.875rem;
+  letter-spacing: 2px;
   font-family: "Platform-Medium";
   display: inline-block;
+  text-align: center;
 }
-/* line 54, ../../app/scss/includes/_helpers.scss */
+/* line 56, ../../app/scss/includes/_helpers.scss */
 .btn-like--mini:hover,
 .btn-higlight:hover,
 .main-menu--search button:hover,
@@ -851,7 +969,7 @@ button {
   text-decoration: none;
 }
 
-/* line 60, ../../app/scss/includes/_helpers.scss */
+/* line 62, ../../app/scss/includes/_helpers.scss */
 .btn-more:after {
   content: '\e806';
   font-family: 'fontello';
@@ -862,20 +980,20 @@ button {
   display: inline-block;
 }
 
-/* line 69, ../../app/scss/includes/_helpers.scss */
+/* line 71, ../../app/scss/includes/_helpers.scss */
 .btn-like--mini {
   padding: 10px 12px;
 }
 
-/* line 72, ../../app/scss/includes/_helpers.scss */
+/* line 75, ../../app/scss/includes/_helpers.scss */
 .btn-download:after {
-  content: '\e804';
-  font-family: 'fontello';
-  margin-left: 10px;
+  content: '';
+  margin: -2px 0 0 10px;
+  vertical-align: middle;
 }
 
 /***************** btns white ****************/
-/* line 79, ../../app/scss/includes/_helpers.scss */
+/* line 87, ../../app/scss/includes/_helpers.scss */
 .btn-mail {
   display: inline-block;
   border: 1px solid #666666;
@@ -885,24 +1003,25 @@ button {
   text-transform: uppercase;
   font-family: "Platform-Medium";
   font-size: 0.875rem;
+  letter-spacing: 2px;
   padding: 12px 20px;
   -webkit-transition: background-color 0.2s ease-out;
           transition: background-color 0.2s ease-out;
 }
-/* line 91, ../../app/scss/includes/_helpers.scss */
+/* line 100, ../../app/scss/includes/_helpers.scss */
 .btn-mail:after {
   content: '\e800';
   font-family: "fontello";
   margin-left: 10px;
 }
-/* line 97, ../../app/scss/includes/_helpers.scss */
+/* line 106, ../../app/scss/includes/_helpers.scss */
 .btn-mail:hover {
   background-color: #fff;
   color: #323232;
 }
 
 /***************** other btns ****************/
-/* line 104, ../../app/scss/includes/_helpers.scss */
+/* line 113, ../../app/scss/includes/_helpers.scss */
 .btn-close:before {
   content: "\2715";
   color: #323232;
@@ -912,23 +1031,23 @@ button {
 }
 
 /***************** links ****************/
-/* line 113, ../../app/scss/includes/_helpers.scss */
+/* line 122, ../../app/scss/includes/_helpers.scss */
 .link-localisation {
   color: #fff;
   display: inline-block;
 }
-/* line 117, ../../app/scss/includes/_helpers.scss */
+/* line 126, ../../app/scss/includes/_helpers.scss */
 .link-localisation .icon-location {
   font-size: 0.8rem;
   padding-left: 8px;
 }
 
-/* line 122, ../../app/scss/includes/_helpers.scss */
+/* line 131, ../../app/scss/includes/_helpers.scss */
 .link-more {
   text-transform: uppercase;
   font-family: "Platform-Medium";
 }
-/* line 126, ../../app/scss/includes/_helpers.scss */
+/* line 135, ../../app/scss/includes/_helpers.scss */
 .link-more:after {
   content: '\e806';
   font-family: 'fontello';
@@ -940,20 +1059,22 @@ button {
 }
 
 /***************** titles ****************/
-/* line 138, ../../app/scss/includes/_helpers.scss */
+/* line 147, ../../app/scss/includes/_helpers.scss */
 .title-h1 {
   font-size: 3.375rem;
   font-family: "Platform-Light";
+  letter-spacing: 1px;
   text-align: center;
   margin-bottom: 30px;
   text-transform: uppercase;
   color: #323232;
 }
 
-/* line 146, ../../app/scss/includes/_helpers.scss */
+/* line 156, ../../app/scss/includes/_helpers.scss */
 .title-h2 {
   font-size: 2rem;
   font-family: "Platform-Light";
+  letter-spacing: 1px;
   text-align: center;
   margin-bottom: 30px;
   text-transform: uppercase;
@@ -961,7 +1082,7 @@ button {
 }
 
 /**/
-/* line 156, ../../app/scss/includes/_helpers.scss */
+/* line 167, ../../app/scss/includes/_helpers.scss */
 .search-message {
   color: #fff;
   font-size: 2rem;
@@ -969,10 +1090,22 @@ button {
   font-family: "Platform-Light";
 }
 
-/* Bootstrap imports */
-/*@import "bower/bootstrap";*/
+/*list style*/
+/* line 176, ../../app/scss/includes/_helpers.scss */
+.ul-styled li, .item-formation__description .info__detailes li, .training-summary__description ul li {
+  padding-left: 10px;
+  position: relative;
+}
+/* line 180, ../../app/scss/includes/_helpers.scss */
+.ul-styled li:before, .item-formation__description .info__detailes li:before, .training-summary__description ul li:before {
+  content: '\2022';
+  position: absolute;
+  left: 0;
+  top: 1px;
+  font-size: 50%;
+}
+
 /* Layout blocks partials */
-/*@import "../fragments/layout/layout";*/
 /* line 1, ../../app/fragments/layout/_layout.scss */
 .grid-container {
   font-size: 0;
@@ -1012,44 +1145,35 @@ button {
   .header__bar-top,
   .l-row__inner {
     width: auto;
-    padding: 0 4%;
-  }
-}
-@media screen and (max-width: 1024px) {
-  /* line 22, ../../app/fragments/layout/_layout.scss */
-  .footer__inner,
-  .header__bar-top,
-  .l-row__inner {
-    /* padding:0 22px;*/
-  }
-}
-@media screen and (max-width: 767px) {
-  /* line 22, ../../app/fragments/layout/_layout.scss */
-  .footer__inner,
-  .header__bar-top,
-  .l-row__inner {
-    /* padding:0 10px;*/
-    padding: 0 8%;
   }
 }
 
-/* line 41, ../../app/fragments/layout/_layout.scss */
+/* line 33, ../../app/fragments/layout/_layout.scss */
 .l-row {
   padding: 70px 0;
 }
 @media screen and (max-width: 1140px) {
-  /* line 41, ../../app/fragments/layout/_layout.scss */
+  /* line 33, ../../app/fragments/layout/_layout.scss */
   .l-row {
     padding: 50px 0;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 41, ../../app/fragments/layout/_layout.scss */
+  /* line 33, ../../app/fragments/layout/_layout.scss */
   .l-row {
     padding: 40px 0;
   }
 }
 
+@media screen and (min-width: 1401px) {
+  /* line 44, ../../app/fragments/layout/_layout.scss */
+  .l-row,
+  .footer,
+  .header {
+    width: 1400px;
+    margin: 0 auto;
+  }
+}
 /* line 51, ../../app/fragments/layout/_layout.scss */
 .display--tab-mob {
   display: none;
@@ -1066,31 +1190,37 @@ button {
     display: block;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) and (min-width: 768px) {
   /* line 63, ../../app/fragments/layout/_layout.scss */
+  .no-display--tab {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 68, ../../app/fragments/layout/_layout.scss */
   .no-display--mob {
     display: none !important;
   }
 }
 /*layout mobile*/
-/* line 69, ../../app/fragments/layout/_layout.scss */
+/* line 74, ../../app/fragments/layout/_layout.scss */
 .aside-tab-mob {
   display: none;
 }
 
 @media screen and (max-width: 1140px) {
-  /* line 73, ../../app/fragments/layout/_layout.scss */
+  /* line 78, ../../app/fragments/layout/_layout.scss */
   .container-overflow {
     overflow: hidden;
     position: relative;
   }
 
-  /* line 77, ../../app/fragments/layout/_layout.scss */
+  /* line 82, ../../app/fragments/layout/_layout.scss */
   .main-wrapper {
     position: relative;
   }
 
-  /* line 80, ../../app/fragments/layout/_layout.scss */
+  /* line 85, ../../app/fragments/layout/_layout.scss */
   .aside-tab-mob {
     width: 268px;
     position: absolute;
@@ -1102,16 +1232,16 @@ button {
     display: block;
   }
 
-  /* line 90, ../../app/fragments/layout/_layout.scss */
+  /* line 95, ../../app/fragments/layout/_layout.scss */
   .main-wrapper {
     margin-left: 0;
   }
 
-  /* line 93, ../../app/fragments/layout/_layout.scss */
+  /* line 98, ../../app/fragments/layout/_layout.scss */
   .is-locked {
     position: relative;
   }
-  /* line 95, ../../app/fragments/layout/_layout.scss */
+  /* line 100, ../../app/fragments/layout/_layout.scss */
   .is-locked:after {
     content: "";
     position: absolute;
@@ -1123,7 +1253,7 @@ button {
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 107, ../../app/fragments/layout/_layout.scss */
+  /* line 112, ../../app/fragments/layout/_layout.scss */
   .aside-tab-mob {
     width: 410px;
     left: -410px;
@@ -1397,75 +1527,79 @@ button {
   margin-top: 5px;
   display: inline-block;
 }
+/* line 100, ../../app/fragments/layout/footer/_footer.scss */
+.footer__info .link-localisation .icon-location {
+  color: #fff;
+}
 
-/* line 101, ../../app/fragments/layout/footer/_footer.scss */
+/* line 105, ../../app/fragments/layout/footer/_footer.scss */
 .footer__menu {
   padding: 20px 0 30px;
 }
 @media screen and (max-width: 1140px) {
-  /* line 101, ../../app/fragments/layout/footer/_footer.scss */
+  /* line 105, ../../app/fragments/layout/footer/_footer.scss */
   .footer__menu {
     text-align: center;
     padding: 40px 30px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 101, ../../app/fragments/layout/footer/_footer.scss */
+  /* line 105, ../../app/fragments/layout/footer/_footer.scss */
   .footer__menu {
     padding: 40px 0 30px;
   }
 }
-/* line 112, ../../app/fragments/layout/footer/_footer.scss */
+/* line 116, ../../app/fragments/layout/footer/_footer.scss */
 .footer__menu .logo-cci {
   float: left;
 }
 @media screen and (max-width: 1140px) {
-  /* line 112, ../../app/fragments/layout/footer/_footer.scss */
+  /* line 116, ../../app/fragments/layout/footer/_footer.scss */
   .footer__menu .logo-cci {
     float: none;
   }
 }
-/* line 119, ../../app/fragments/layout/footer/_footer.scss */
+/* line 123, ../../app/fragments/layout/footer/_footer.scss */
 .footer__menu ul {
   padding-top: 25px;
   text-align: right;
 }
 @media screen and (max-width: 1140px) {
-  /* line 119, ../../app/fragments/layout/footer/_footer.scss */
+  /* line 123, ../../app/fragments/layout/footer/_footer.scss */
   .footer__menu ul {
     font-size: 1.19rem;
     text-align: center;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 119, ../../app/fragments/layout/footer/_footer.scss */
+  /* line 123, ../../app/fragments/layout/footer/_footer.scss */
   .footer__menu ul {
     text-align: left;
   }
 }
-/* line 131, ../../app/fragments/layout/footer/_footer.scss */
+/* line 135, ../../app/fragments/layout/footer/_footer.scss */
 .footer__menu li {
   display: inline-block;
 }
 @media screen and (max-width: 767px) {
-  /* line 131, ../../app/fragments/layout/footer/_footer.scss */
+  /* line 135, ../../app/fragments/layout/footer/_footer.scss */
   .footer__menu li {
     width: 49%;
     margin-bottom: 10px;
   }
 }
-/* line 139, ../../app/fragments/layout/footer/_footer.scss */
+/* line 143, ../../app/fragments/layout/footer/_footer.scss */
 .footer__menu li + li {
   margin-left: 45px;
 }
 @media screen and (max-width: 1140px) {
-  /* line 139, ../../app/fragments/layout/footer/_footer.scss */
+  /* line 143, ../../app/fragments/layout/footer/_footer.scss */
   .footer__menu li + li {
     margin-left: 20px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 139, ../../app/fragments/layout/footer/_footer.scss */
+  /* line 143, ../../app/fragments/layout/footer/_footer.scss */
   .footer__menu li + li {
     margin-left: 0;
   }
@@ -1558,7 +1692,7 @@ button {
 }
 /* line 79, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .list-rubric {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #e5e5e5;
 }
 /* line 81, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .list-rubric > ul {
@@ -1886,8 +2020,8 @@ button {
 }
 /* line 24, ../../app/fragments/components/header/_menu__search.scss */
 .main-menu--search input[type="text"] {
-  background: #f3f3f3 url(../images/icons/icon-search.png) no-repeat 15px center;
-  border: 1px solid #ccc;
+  background: #f2f2f2 url(../images/icons/icon-search.png) no-repeat 15px center;
+  border: 1px solid #e5e5e5;
   height: 46px;
   font-family: Arial;
   padding-left: 45px;
@@ -1924,7 +2058,7 @@ button {
 }
 /* line 6, ../../app/fragments/components/header/_menu-pro.scss */
 .menu-pro li {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #e5e5e5;
   padding: 7px 0;
 }
 /* line 11, ../../app/fragments/components/header/_menu-pro.scss */
@@ -1934,7 +2068,7 @@ button {
 
 /* line 16, ../../app/fragments/components/header/_menu-pro.scss */
 .main-menu--mobile .menu-pro {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #e5e5e5;
   padding-top: 7px;
   margin-bottom: 10px;
   margin-top: 30px;
@@ -2070,6 +2204,41 @@ button {
   margin: 0 15px 25px;
 }
 
+/* line 71, ../../app/fragments/components/widgets/_widget-shared-icons.scss */
+.block-sharing {
+  background: #fff;
+  border-radius: 3px;
+  text-align: center;
+  border-bottom: 2px solid #e5e5e5;
+}
+/* line 78, ../../app/fragments/components/widgets/_widget-shared-icons.scss */
+.block-sharing li a {
+  text-decoration: none;
+  display: block;
+  padding: 13px 15px;
+  color: #7f7f7f;
+}
+/* line 85, ../../app/fragments/components/widgets/_widget-shared-icons.scss */
+.block-sharing li + li {
+  border-top: 1px solid #e5e5e5;
+}
+/* line 88, ../../app/fragments/components/widgets/_widget-shared-icons.scss */
+.block-sharing .icon-facebook:hover {
+  color: #3b5998;
+}
+/* line 91, ../../app/fragments/components/widgets/_widget-shared-icons.scss */
+.block-sharing .icon-twitter:hover {
+  color: #3cf;
+}
+/* line 94, ../../app/fragments/components/widgets/_widget-shared-icons.scss */
+.block-sharing .icon-gplus:hover {
+  color: #d34836;
+}
+/* line 97, ../../app/fragments/components/widgets/_widget-shared-icons.scss */
+.block-sharing .icon-mail:hover {
+  color: #0045e5;
+}
+
 /* Content partials */
 /* line 1, ../../app/fragments/content/list-formations/_list-formations.scss */
 .list-formations {
@@ -2080,89 +2249,101 @@ button {
 .list-formations .search-message {
   margin: 0 95px;
 }
+@media screen and (max-width: 1024px) {
+  /* line 5, ../../app/fragments/content/list-formations/_list-formations.scss */
+  .list-formations .search-message {
+    margin: 0 0 30px;
+  }
+}
 
-/* line 9, ../../app/fragments/content/list-formations/_list-formations.scss */
+/* line 13, ../../app/fragments/content/list-formations/_list-formations.scss */
 .item-formation {
   margin: 0 95px 30px;
   background: #fff;
   border-top: 2px solid #0045e5;
 }
+@media screen and (max-width: 1024px) {
+  /* line 13, ../../app/fragments/content/list-formations/_list-formations.scss */
+  .item-formation {
+    margin: 0 0 30px;
+  }
+}
 
-/* line 15, ../../app/fragments/content/list-formations/_list-formations.scss */
+/* line 23, ../../app/fragments/content/list-formations/_list-formations.scss */
 .item-formation--gobelins {
   border-top: 2px solid #0045e5;
 }
-/* line 18, ../../app/fragments/content/list-formations/_list-formations.scss */
+/* line 26, ../../app/fragments/content/list-formations/_list-formations.scss */
 .item-formation--gobelins .item-formation__type:before {
   background-color: #0045e5;
 }
 
-/* line 22, ../../app/fragments/content/list-formations/_list-formations.scss */
+/* line 30, ../../app/fragments/content/list-formations/_list-formations.scss */
 .item-formation--animation {
   border-top: 2px solid #00e196;
 }
-/* line 25, ../../app/fragments/content/list-formations/_list-formations.scss */
+/* line 33, ../../app/fragments/content/list-formations/_list-formations.scss */
 .item-formation--animation .item-formation__type:before {
   background-color: #00e196;
 }
 
-/* line 29, ../../app/fragments/content/list-formations/_list-formations.scss */
+/* line 37, ../../app/fragments/content/list-formations/_list-formations.scss */
 .item-formation--graphic-design {
   border-top: 2px solid #3af2ce;
 }
-/* line 32, ../../app/fragments/content/list-formations/_list-formations.scss */
+/* line 40, ../../app/fragments/content/list-formations/_list-formations.scss */
 .item-formation--graphic-design .item-formation__type:before {
   background-color: #3af2ce;
 }
 
-/* line 36, ../../app/fragments/content/list-formations/_list-formations.scss */
+/* line 44, ../../app/fragments/content/list-formations/_list-formations.scss */
 .item-formation--web-design {
   border-top: 2px solid #6300ff;
 }
-/* line 39, ../../app/fragments/content/list-formations/_list-formations.scss */
+/* line 47, ../../app/fragments/content/list-formations/_list-formations.scss */
 .item-formation--web-design .item-formation__type:before {
   background-color: #6300ff;
 }
 
-/* line 43, ../../app/fragments/content/list-formations/_list-formations.scss */
+/* line 51, ../../app/fragments/content/list-formations/_list-formations.scss */
 .item-formation--photography {
   border-top: 2px solid #ffe042;
 }
-/* line 46, ../../app/fragments/content/list-formations/_list-formations.scss */
+/* line 54, ../../app/fragments/content/list-formations/_list-formations.scss */
 .item-formation--photography .item-formation__type:before {
   background-color: #ffe042;
 }
 
-/* line 50, ../../app/fragments/content/list-formations/_list-formations.scss */
+/* line 58, ../../app/fragments/content/list-formations/_list-formations.scss */
 .item-formation--game {
   border-top: 2px solid #1840e8;
 }
-/* line 53, ../../app/fragments/content/list-formations/_list-formations.scss */
+/* line 61, ../../app/fragments/content/list-formations/_list-formations.scss */
 .item-formation--game .item-formation__type:before {
   background-color: #1840e8;
 }
 
-/* line 57, ../../app/fragments/content/list-formations/_list-formations.scss */
+/* line 65, ../../app/fragments/content/list-formations/_list-formations.scss */
 .item-formation--video-audio {
   border-top: 2px solid red;
 }
-/* line 60, ../../app/fragments/content/list-formations/_list-formations.scss */
+/* line 68, ../../app/fragments/content/list-formations/_list-formations.scss */
 .item-formation--video-audio .item-formation__type:before {
   background-color: red;
 }
 
-/* line 64, ../../app/fragments/content/list-formations/_list-formations.scss */
+/* line 72, ../../app/fragments/content/list-formations/_list-formations.scss */
 .item-formation--cross-media {
   border-top: 2px solid #e90b51;
 }
-/* line 67, ../../app/fragments/content/list-formations/_list-formations.scss */
+/* line 75, ../../app/fragments/content/list-formations/_list-formations.scss */
 .item-formation--cross-media .item-formation__type:before {
   background-color: #e90b51;
 }
 
-/* line 72, ../../app/fragments/content/list-formations/_list-formations.scss */
+/* line 80, ../../app/fragments/content/list-formations/_list-formations.scss */
 .item-formation__bar-top {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #e5e5e5;
   padding: 10px 20px;
   text-transform: uppercase;
   font-family: "Platform-Medium";
@@ -2170,22 +2351,22 @@ button {
   color: #323232;
 }
 
-/* line 80, ../../app/fragments/content/list-formations/_list-formations.scss */
+/* line 88, ../../app/fragments/content/list-formations/_list-formations.scss */
 .item-formation__date {
   float: right;
 }
-/* line 83, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation__date .icons-calendar-blue {
-  margin-right: 8px;
+/* line 91, ../../app/fragments/content/list-formations/_list-formations.scss */
+.item-formation__date .icons-calendar {
+  margin-right: 10px;
   vertical-align: text-top;
 }
 
-/* line 88, ../../app/fragments/content/list-formations/_list-formations.scss */
+/* line 96, ../../app/fragments/content/list-formations/_list-formations.scss */
 .item-formation__type {
   position: relative;
   padding-left: 25px;
 }
-/* line 92, ../../app/fragments/content/list-formations/_list-formations.scss */
+/* line 100, ../../app/fragments/content/list-formations/_list-formations.scss */
 .item-formation__type:before {
   content: '';
   display: block;
@@ -2199,7 +2380,7 @@ button {
   background-color: #0045e5;
 }
 
-/* line 105, ../../app/fragments/content/list-formations/_list-formations.scss */
+/* line 113, ../../app/fragments/content/list-formations/_list-formations.scss */
 .item-formation__content {
   display: table;
   width: 100%;
@@ -2207,74 +2388,88 @@ button {
   padding-bottom: 25px;
 }
 
-/* line 111, ../../app/fragments/content/list-formations/_list-formations.scss */
+/* line 119, ../../app/fragments/content/list-formations/_list-formations.scss */
 .item-formation__description,
 .item-formation__image {
   display: table-cell;
   padding: 0 0 0 20px;
   vertical-align: top;
 }
+@media screen and (max-width: 767px) {
+  /* line 119, ../../app/fragments/content/list-formations/_list-formations.scss */
+  .item-formation__description,
+  .item-formation__image {
+    display: block;
+    width: auto;
+  }
+}
 
-/* line 117, ../../app/fragments/content/list-formations/_list-formations.scss */
+/* line 130, ../../app/fragments/content/list-formations/_list-formations.scss */
 .item-formation__image {
-  width: 245px;
+  width: 285px;
   padding: 5px 20px;
 }
-/* line 121, ../../app/fragments/content/list-formations/_list-formations.scss */
+@media screen and (max-width: 767px) {
+  /* line 130, ../../app/fragments/content/list-formations/_list-formations.scss */
+  .item-formation__image {
+    width: auto;
+  }
+}
+/* line 138, ../../app/fragments/content/list-formations/_list-formations.scss */
 .item-formation__image img {
   display: block;
   width: 100%;
   height: auto;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 767px) {
+  /* line 138, ../../app/fragments/content/list-formations/_list-formations.scss */
+  .item-formation__image img {
+    display: none;
+  }
+}
+/* line 149, ../../app/fragments/content/list-formations/_list-formations.scss */
+.item-formation__image .btn-like--mini {
+  float: right;
+}
+/* line 152, ../../app/fragments/content/list-formations/_list-formations.scss */
+.item-formation__image .btn-higlight, .item-formation__image .main-menu--search button, .main-menu--search .item-formation__image button {
+  display: block;
+  margin-right: 50px;
+}
+@media screen and (max-width: 1024px) {
+  /* line 152, ../../app/fragments/content/list-formations/_list-formations.scss */
+  .item-formation__image .btn-higlight, .item-formation__image .main-menu--search button, .main-menu--search .item-formation__image button {
+    margin-right: 65px;
+  }
+}
 
-/* line 128, ../../app/fragments/content/list-formations/_list-formations.scss */
+/* line 161, ../../app/fragments/content/list-formations/_list-formations.scss */
 .item-formation__description {
   font-family: "Neuzeit";
 }
-/* line 131, ../../app/fragments/content/list-formations/_list-formations.scss */
+/* line 164, ../../app/fragments/content/list-formations/_list-formations.scss */
 .item-formation__description .title {
   font-family: "Platform-Medium";
   font-size: 1.375rem;
   color: #323232;
 }
-/* line 136, ../../app/fragments/content/list-formations/_list-formations.scss */
+/* line 169, ../../app/fragments/content/list-formations/_list-formations.scss */
 .item-formation__description .location {
   margin-bottom: 5px;
 }
-/* line 139, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation__description .icon-location {
-  color: #0045e5;
-  margin-right: 3px;
-}
-/* line 143, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation__description .icon-location:before {
-  text-align: left;
-}
-/* line 147, ../../app/fragments/content/list-formations/_list-formations.scss */
+/* line 172, ../../app/fragments/content/list-formations/_list-formations.scss */
 .item-formation__description .info {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #e5e5e5;
   padding-top: 15px;
   margin-top: 18px;
 }
-/* line 152, ../../app/fragments/content/list-formations/_list-formations.scss */
+/* line 177, ../../app/fragments/content/list-formations/_list-formations.scss */
 .item-formation__description .info__title {
   text-transform: uppercase;
   font-family: "Platform-Medium";
   color: #323232;
   margin-bottom: 5px;
-}
-/* line 158, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation__description .info__title .icon-users {
-  color: #0045e5;
-  margin-right: 8px;
-}
-/* line 164, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation__description .info__detailes li:before {
-  content: '\2022';
-  margin-right: 3px;
-  font-size: 50%;
-  vertical-align: middle;
 }
 
 /* line 1, ../../app/fragments/content/list-news/_list-news.scss */
@@ -2382,34 +2577,34 @@ button {
 
 /* line 1, ../../app/fragments/content/list-docs/_list-docs.scss */
 .list-docs {
-  background-color: #e6e6e6;
+  background-color: #f2f2f2;
 }
 
-/* line 6, ../../app/fragments/content/list-docs/_list-docs.scss */
+/* line 4, ../../app/fragments/content/list-docs/_list-docs.scss */
 .item-doc {
   background-color: #fff;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid #e5e5e5;
   padding: 30px 40px 40px;
   text-align: center;
 }
-/* line 12, ../../app/fragments/content/list-docs/_list-docs.scss */
+/* line 10, ../../app/fragments/content/list-docs/_list-docs.scss */
 .item-doc + .item-doc {
-  border-left: 1px solid #ccc;
+  border-left: 1px solid #e5e5e5;
 }
-/* line 16, ../../app/fragments/content/list-docs/_list-docs.scss */
+/* line 14, ../../app/fragments/content/list-docs/_list-docs.scss */
 .item-doc .item-doc__img {
   display: block;
   margin: 0 auto 20px;
   width: 130px;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid #e5e5e5;
 }
-/* line 22, ../../app/fragments/content/list-docs/_list-docs.scss */
+/* line 20, ../../app/fragments/content/list-docs/_list-docs.scss */
 .item-doc .item-doc__img img {
   display: block;
   width: 100%;
   height: auto;
 }
-/* line 28, ../../app/fragments/content/list-docs/_list-docs.scss */
+/* line 26, ../../app/fragments/content/list-docs/_list-docs.scss */
 .item-doc p {
   margin-bottom: 20px;
   min-height: 3em;
@@ -2439,6 +2634,245 @@ button {
 
 /* line 20, ../../app/fragments/content/filter-trainings/_filter-trainings.scss */
 .filter-trainings__form {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #e5e5e5;
   padding-top: 40px;
+}
+
+/* line 1, ../../app/fragments/content/block-presentation/_block-presentation.scss */
+.block-presentation {
+  background-color: #f2f2f2;
+}
+/* line 4, ../../app/fragments/content/block-presentation/_block-presentation.scss */
+.block-presentation .block-sharing {
+  width: 50px;
+  float: left;
+}
+
+/* line 9, ../../app/fragments/content/block-presentation/_block-presentation.scss */
+.block-presentation__description {
+  margin-left: 45px;
+  width: 430px;
+  float: left;
+}
+/* line 14, ../../app/fragments/content/block-presentation/_block-presentation.scss */
+.block-presentation__description .title-h2 {
+  text-align: left;
+  margin-bottom: 25px;
+}
+/* line 18, ../../app/fragments/content/block-presentation/_block-presentation.scss */
+.block-presentation__description p {
+  margin-bottom: 20px;
+}
+
+/* line 22, ../../app/fragments/content/block-presentation/_block-presentation.scss */
+.block-presentation__media {
+  float: right;
+}
+
+/* line 1, ../../app/fragments/content/block-banner/_block-banner.scss */
+.block-banner {
+  padding: 50px 0 40px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 8, ../../app/fragments/content/block-banner/_block-banner.scss */
+.training-name {
+  color: #fff;
+  text-align: right;
+  padding-right: 30px;
+  position: relative;
+  font-family: "Platform-Medium";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 45px;
+}
+/* line 18, ../../app/fragments/content/block-banner/_block-banner.scss */
+.training-name:after {
+  background-color: transparent;
+  border: 8px solid #0045e5;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 4px;
+  right: 0;
+  margin-top: -10px;
+  position: absolute;
+  top: 50%;
+  width: 4px;
+}
+
+/* line 32, ../../app/fragments/content/block-banner/_block-banner.scss */
+.training-animation .training-name:after {
+  border-color: #00e196;
+}
+
+/* line 35, ../../app/fragments/content/block-banner/_block-banner.scss */
+.training-graphic-design .training-name:after {
+  border-color: #3af2ce;
+}
+
+/* line 38, ../../app/fragments/content/block-banner/_block-banner.scss */
+.training-web-design .training-name:after {
+  border-color: #6300ff;
+}
+
+/* line 41, ../../app/fragments/content/block-banner/_block-banner.scss */
+.training-photography .training-name:after {
+  border-color: #ffe042;
+}
+
+/* line 44, ../../app/fragments/content/block-banner/_block-banner.scss */
+.training-game .training-name:after {
+  border-color: #1840e8;
+}
+
+/* line 47, ../../app/fragments/content/block-banner/_block-banner.scss */
+.training-video-audio .training-name:after {
+  border-color: red;
+}
+
+/* line 50, ../../app/fragments/content/block-banner/_block-banner.scss */
+.training-cross-media .training-name:after {
+  border-color: #e90b51;
+}
+
+/* line 53, ../../app/fragments/content/block-banner/_block-banner.scss */
+.training-summary {
+  background: #fff;
+  font-family: "Neuzeit";
+}
+
+/* line 57, ../../app/fragments/content/block-banner/_block-banner.scss */
+.training-summary__title {
+  padding: 30px 30px 25px 30px;
+  color: #323232;
+}
+/* line 61, ../../app/fragments/content/block-banner/_block-banner.scss */
+.training-summary__title p {
+  font-family: "Platform-Medium";
+  letter-spacing: 1px;
+}
+/* line 65, ../../app/fragments/content/block-banner/_block-banner.scss */
+.training-summary__title p span {
+  text-transform: uppercase;
+}
+/* line 69, ../../app/fragments/content/block-banner/_block-banner.scss */
+.training-summary__title h1 {
+  font-size: 2.5rem;
+  font-family: "Platform-Light";
+  line-height: 1em;
+  margin-bottom: 10px;
+}
+/* line 75, ../../app/fragments/content/block-banner/_block-banner.scss */
+.training-summary__title .ref {
+  float: right;
+  color: #656565;
+  font-family: "Neuzeit";
+}
+
+/* line 81, ../../app/fragments/content/block-banner/_block-banner.scss */
+.training-summary__duration {
+  padding-left: 25px;
+  position: relative;
+}
+/* line 85, ../../app/fragments/content/block-banner/_block-banner.scss */
+.training-summary__duration:before {
+  background-color: #0045e5;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 10px;
+  left: 0;
+  margin-top: -5px;
+  position: absolute;
+  top: 50%;
+  width: 10px;
+}
+
+/* line 98, ../../app/fragments/content/block-banner/_block-banner.scss */
+.training-animation .training-summary__duration:before {
+  background-color: #00e196;
+}
+
+/* line 101, ../../app/fragments/content/block-banner/_block-banner.scss */
+.training-graphic-design .training-summary__duration:before {
+  background-color: #3af2ce;
+}
+
+/* line 104, ../../app/fragments/content/block-banner/_block-banner.scss */
+.training-web-design .training-summary__duration:before {
+  background-color: #6300ff;
+}
+
+/* line 107, ../../app/fragments/content/block-banner/_block-banner.scss */
+.training-photography .training-summary__duration:before {
+  background-color: #ffe042;
+}
+
+/* line 110, ../../app/fragments/content/block-banner/_block-banner.scss */
+.training-game .training-summary__duration:before {
+  background-color: #1840e8;
+}
+
+/* line 113, ../../app/fragments/content/block-banner/_block-banner.scss */
+.training-video-audio .training-summary__duration:before {
+  background-color: red;
+}
+
+/* line 116, ../../app/fragments/content/block-banner/_block-banner.scss */
+.training-cross-media .training-summary__duration:before {
+  background-color: #e90b51;
+}
+
+/* line 120, ../../app/fragments/content/block-banner/_block-banner.scss */
+.training-summary__description {
+  border-top: 1px solid #e5e5e5;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+/* line 126, ../../app/fragments/content/block-banner/_block-banner.scss */
+.training-summary__description .col1 {
+  width: 44%;
+  display: table-cell;
+  padding: 0 20px 25px 30px;
+}
+/* line 131, ../../app/fragments/content/block-banner/_block-banner.scss */
+.training-summary__description .col2,
+.training-summary__description .col3 {
+  width: 28%;
+  display: table-cell;
+  border-left: 1px solid #e5e5e5;
+}
+/* line 137, ../../app/fragments/content/block-banner/_block-banner.scss */
+.training-summary__description .col2 {
+  padding: 0 20px;
+}
+/* line 140, ../../app/fragments/content/block-banner/_block-banner.scss */
+.training-summary__description .col3-1,
+.training-summary__description .col3-2 {
+  padding: 0 20px;
+}
+/* line 144, ../../app/fragments/content/block-banner/_block-banner.scss */
+.training-summary__description .col3-1 {
+  padding-bottom: 20px;
+}
+/* line 147, ../../app/fragments/content/block-banner/_block-banner.scss */
+.training-summary__description .col3-2 {
+  border-top: 1px solid #e5e5e5;
+}
+/* line 151, ../../app/fragments/content/block-banner/_block-banner.scss */
+.training-summary__description .sub-title {
+  font-family: "Platform-Medium";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323232;
+  margin: 20px 0 5px;
+}
+
+/* line 1, ../../app/fragments/content/block-training-details/_block-training-details.scss */
+.block-training-details {
+  background-color: #f2f2f2;
 }

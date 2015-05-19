@@ -1,0 +1,24 @@
+.block-presentation{
+  background-color:$color__bg-gray--light;
+  
+  .block-sharing{
+    width:50px;
+    float:left;
+  }
+}
+.block-presentation__description{
+  margin-left:45px;
+  width:430px;
+  float:left;
+  
+  .title-h2{
+    text-align:left;
+    margin-bottom:25px;
+  }
+  p{
+    margin-bottom:20px;
+  }
+}
+.block-presentation__media{
+  float:right;
+}

@@ -4,12 +4,20 @@
   
   .search-message{
     margin:0 95px;
+    
+    @media screen and (max-width: 1024px) {
+      margin:0 0 30px;
+    }
   }
 }  
 .item-formation{
   margin:0 95px 30px;
   background:#fff;
   border-top:2px solid $color__blue-gobelins;
+  
+  @media screen and (max-width: 1024px) {
+    margin:0 0 30px;
+  }
 }
 
 .item-formation--gobelins{
@@ -80,8 +88,8 @@
 .item-formation__date{
   float:right;
   
-  .icons-calendar-blue{
-    margin-right:8px;
+  .icons-calendar{
+    margin-right:10px;
     vertical-align:text-top;
   }
 }
@@ -113,16 +121,41 @@
   display:table-cell;
   padding:0 0 0 20px;
   vertical-align:top;
+  
+  @media screen and (max-width: 767px) {
+    display:block;
+    width:auto;
+  }
 }
 .item-formation__image{
-  width:245px;
+  width:285px;
   padding:5px 20px;
+  
+  @media screen and (max-width: 767px) {
+    width:auto;
+  }
   
   img{
     display:block;
     width:100%;
     height:auto;
     margin-bottom:20px;
+    
+    @media screen and (max-width: 767px) {
+      display:none;
+    }
+  }
+  
+  .btn-like--mini{
+    float:right;
+  }
+  .btn-higlight{
+    display:block;
+    margin-right:50px;
+    
+    @media screen and (max-width: 1024px) {
+      margin-right:65px;
+    }
   }
 }
 .item-formation__description{
@@ -136,14 +169,6 @@
   .location{
     margin-bottom:5px;
   }
-  .icon-location{
-    color:$color__blue-gobelins;
-    margin-right:3px;
-    
-    &:before{
-      text-align:left;
-    }
-  }
   .info{
     border-top:1px solid $color__border-gray--light;
     padding-top:15px;
@@ -154,19 +179,9 @@
     font-family:$font__platform--medium;
     color:$color__text-dark;
     margin-bottom:5px;
-    
-    .icon-users{
-      color:$color__blue-gobelins;
-      margin-right:8px;
-    }
   }
   .info__detailes{
-    li:before{
-      content:'\2022';
-      margin-right:3px;
-      font-size:50%;
-      vertical-align:middle;
-    }
+    @extend .ul-styled;
   }
 }
 

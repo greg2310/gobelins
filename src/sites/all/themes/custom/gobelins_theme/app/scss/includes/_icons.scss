@@ -7,8 +7,10 @@ bg__rubric--hover,
 like-gray, like-blue,
 press,
 btn-menu,
-calendar-blue,
-home-white, home-gray
+calendar, list, public, checked, euro, location, 
+home-white, home-gray,
+download, download-white,
+print
 );
 
 /* Icon ratio (1 for classic icons, 2 for retina icons) */
@@ -18,4 +20,20 @@ $icon-ratio: 2;
 @include generate-icon($icon-dir, $icon-list, $icon-ratio);
 
 /* Specific rules */
-
+.icon-users,
+.icon-euro,
+.icon-location,
+.icon-check{
+  color:$color__blue-gobelins;
+}
+.icons-calendar, 
+.icons-list, 
+.icons-public, 
+.icons-checked, 
+.icons-euro, 
+.icons-location{
+  margin-right:10px;
+}
+.icons-location{
+  vertical-align:middle;
+}
