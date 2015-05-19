@@ -159,3 +159,6 @@
     @extend .ul-styled;
   }
 }
+.breadcrumb + .block-banner{
+  margin-top:-55px;
+}

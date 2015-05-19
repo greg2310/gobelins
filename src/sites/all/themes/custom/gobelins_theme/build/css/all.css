@@ -470,8 +470,8 @@ th {
 /**/
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-bg__rubric--hover, .main-menu--desktop .rubric__img:after {
-  background: url('../images/icons-s0a8611f138.png') 0 0 no-repeat;
-  background-size: 29px 300px;
+  background: url('../images/icons-s6077af56d9.png') 0 0 no-repeat;
+  background-size: 29px 328px;
   display: inline-block;
   width: 29px;
   height: 29px;
@@ -479,8 +479,8 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-like-gray {
-  background: url('../images/icons-s0a8611f138.png') 0 -190px no-repeat;
-  background-size: 29px 300px;
+  background: url('../images/icons-s6077af56d9.png') 0 -190px no-repeat;
+  background-size: 29px 328px;
   display: inline-block;
   width: 11px;
   height: 9px;
@@ -488,8 +488,8 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-like-blue {
-  background: url('../images/icons-s0a8611f138.png') 0 -181px no-repeat;
-  background-size: 29px 300px;
+  background: url('../images/icons-s6077af56d9.png') 0 -181px no-repeat;
+  background-size: 29px 328px;
   display: inline-block;
   width: 11px;
   height: 9px;
@@ -497,8 +497,8 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-press {
-  background: url('../images/icons-s0a8611f138.png') 0 -230px no-repeat;
-  background-size: 29px 300px;
+  background: url('../images/icons-s6077af56d9.png') 0 -246px no-repeat;
+  background-size: 29px 328px;
   display: inline-block;
   width: 12px;
   height: 14px;
@@ -506,8 +506,8 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-btn-menu {
-  background: url('../images/icons-s0a8611f138.png') 0 -29px no-repeat;
-  background-size: 29px 300px;
+  background: url('../images/icons-s6077af56d9.png') 0 -29px no-repeat;
+  background-size: 29px 328px;
   display: inline-block;
   width: 20px;
   height: 18px;
@@ -515,8 +515,8 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-calendar {
-  background: url('../images/icons-s0a8611f138.png') 0 -47px no-repeat;
-  background-size: 29px 300px;
+  background: url('../images/icons-s6077af56d9.png') 0 -47px no-repeat;
+  background-size: 29px 328px;
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -524,8 +524,8 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-list {
-  background: url('../images/icons-s0a8611f138.png') 0 -199px no-repeat;
-  background-size: 29px 300px;
+  background: url('../images/icons-s6077af56d9.png') 0 -199px no-repeat;
+  background-size: 29px 328px;
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -533,8 +533,8 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-public {
-  background: url('../images/icons-s0a8611f138.png') 0 -258px no-repeat;
-  background-size: 29px 300px;
+  background: url('../images/icons-s6077af56d9.png') 0 -274px no-repeat;
+  background-size: 29px 328px;
   display: inline-block;
   width: 17px;
   height: 14px;
@@ -542,8 +542,8 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-checked {
-  background: url('../images/icons-s0a8611f138.png') 0 -91px no-repeat;
-  background-size: 29px 300px;
+  background: url('../images/icons-s6077af56d9.png') 0 -91px no-repeat;
+  background-size: 29px 328px;
   display: inline-block;
   width: 13px;
   height: 9px;
@@ -551,8 +551,8 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-euro {
-  background: url('../images/icons-s0a8611f138.png') 0 -132px no-repeat;
-  background-size: 29px 300px;
+  background: url('../images/icons-s6077af56d9.png') 0 -132px no-repeat;
+  background-size: 29px 328px;
   display: inline-block;
   width: 12px;
   height: 13px;
@@ -560,17 +560,23 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-location {
-  background: url('../images/icons-s0a8611f138.png') 0 -214px no-repeat;
-  background-size: 29px 300px;
+  background: url('../images/icons-s6077af56d9.png') 0 -214px no-repeat;
+  background-size: 29px 328px;
   display: inline-block;
   width: 12px;
   height: 16px;
 }
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
-.icons-home-white {
-  background: url('../images/icons-s0a8611f138.png') 0 -158px no-repeat;
-  background-size: 29px 300px;
+.icons-home-white, .training-animation .breadcrumb .icons-home-gray,
+.training-graphic-design .breadcrumb .icons-home-gray,
+.training-web-design .breadcrumb .icons-home-gray,
+.training-photography .breadcrumb .icons-home-gray,
+.training-game .breadcrumb .icons-home-gray,
+.training-video-audio .breadcrumb .icons-home-gray,
+.training-cross-media .breadcrumb .icons-home-gray {
+  background: url('../images/icons-s6077af56d9.png') 0 -158px no-repeat;
+  background-size: 29px 328px;
   display: inline-block;
   width: 12px;
   height: 13px;
@@ -578,8 +584,8 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-home-gray {
-  background: url('../images/icons-s0a8611f138.png') 0 -145px no-repeat;
-  background-size: 29px 300px;
+  background: url('../images/icons-s6077af56d9.png') 0 -145px no-repeat;
+  background-size: 29px 328px;
   display: inline-block;
   width: 12px;
   height: 13px;
@@ -587,8 +593,8 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-download, .btn-download:after {
-  background: url('../images/icons-s0a8611f138.png') 0 -116px no-repeat;
-  background-size: 29px 300px;
+  background: url('../images/icons-s6077af56d9.png') 0 -116px no-repeat;
+  background-size: 29px 328px;
   display: inline-block;
   width: 14px;
   height: 16px;
@@ -596,8 +602,8 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-download-white, .btn-download:hover:after {
-  background: url('../images/icons-s0a8611f138.png') 0 -100px no-repeat;
-  background-size: 29px 300px;
+  background: url('../images/icons-s6077af56d9.png') 0 -100px no-repeat;
+  background-size: 29px 328px;
   display: inline-block;
   width: 14px;
   height: 16px;
@@ -605,8 +611,8 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-print {
-  background: url('../images/icons-s0a8611f138.png') 0 -244px no-repeat;
-  background-size: 29px 300px;
+  background: url('../images/icons-s6077af56d9.png') 0 -260px no-repeat;
+  background-size: 29px 328px;
   display: inline-block;
   width: 16px;
   height: 14px;
@@ -1092,12 +1098,12 @@ button {
 
 /*list style*/
 /* line 176, ../../app/scss/includes/_helpers.scss */
-.ul-styled li, .item-formation__description .info__detailes li, .training-summary__description ul li {
+.ul-styled li, .item-trainings__description .info__detailes li, .training-summary__description ul li {
   padding-left: 10px;
   position: relative;
 }
 /* line 180, ../../app/scss/includes/_helpers.scss */
-.ul-styled li:before, .item-formation__description .info__detailes li:before, .training-summary__description ul li:before {
+.ul-styled li:before, .item-trainings__description .info__detailes li:before, .training-summary__description ul li:before {
   content: '\2022';
   position: absolute;
   left: 0;
@@ -2102,7 +2108,7 @@ button {
 }
 /* line 4, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
 .breadcrumb ul {
-  padding: 20px;
+  padding: 17px 20px;
   width: 1140px;
   margin: 0 auto;
 }
@@ -2120,6 +2126,27 @@ button {
   position: absolute;
   left: 0;
   top: -1px;
+}
+
+/* line 24, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+.training-animation .breadcrumb,
+.training-graphic-design .breadcrumb,
+.training-web-design .breadcrumb,
+.training-photography .breadcrumb,
+.training-game .breadcrumb,
+.training-video-audio .breadcrumb,
+.training-cross-media .breadcrumb {
+  color: #fff;
+}
+/* line 32, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+.training-animation .breadcrumb a,
+.training-graphic-design .breadcrumb a,
+.training-web-design .breadcrumb a,
+.training-photography .breadcrumb a,
+.training-game .breadcrumb a,
+.training-video-audio .breadcrumb a,
+.training-cross-media .breadcrumb a {
+  color: #fff;
 }
 
 /* line 2, ../../app/fragments/components/widgets/_widget-shared-icons.scss */
@@ -2240,109 +2267,109 @@ button {
 }
 
 /* Content partials */
-/* line 1, ../../app/fragments/content/list-formations/_list-formations.scss */
-.list-formations {
+/* line 1, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+.list-trainings {
   background-color: #191919;
   padding: 40px 0 35px;
 }
-/* line 5, ../../app/fragments/content/list-formations/_list-formations.scss */
-.list-formations .search-message {
+/* line 5, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+.list-trainings .search-message {
   margin: 0 95px;
 }
 @media screen and (max-width: 1024px) {
-  /* line 5, ../../app/fragments/content/list-formations/_list-formations.scss */
-  .list-formations .search-message {
+  /* line 5, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+  .list-trainings .search-message {
     margin: 0 0 30px;
   }
 }
 
-/* line 13, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation {
+/* line 13, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+.item-trainings {
   margin: 0 95px 30px;
   background: #fff;
   border-top: 2px solid #0045e5;
 }
 @media screen and (max-width: 1024px) {
-  /* line 13, ../../app/fragments/content/list-formations/_list-formations.scss */
-  .item-formation {
+  /* line 13, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+  .item-trainings {
     margin: 0 0 30px;
   }
 }
 
-/* line 23, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation--gobelins {
+/* line 23, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+.item-trainings--gobelins {
   border-top: 2px solid #0045e5;
 }
-/* line 26, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation--gobelins .item-formation__type:before {
+/* line 26, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+.item-trainings--gobelins .item-trainings__type:before {
   background-color: #0045e5;
 }
 
-/* line 30, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation--animation {
+/* line 30, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+.item-trainings--animation {
   border-top: 2px solid #00e196;
 }
-/* line 33, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation--animation .item-formation__type:before {
+/* line 33, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+.item-trainings--animation .item-trainings__type:before {
   background-color: #00e196;
 }
 
-/* line 37, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation--graphic-design {
+/* line 37, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+.item-trainings--graphic-design {
   border-top: 2px solid #3af2ce;
 }
-/* line 40, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation--graphic-design .item-formation__type:before {
+/* line 40, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+.item-trainings--graphic-design .item-trainings__type:before {
   background-color: #3af2ce;
 }
 
-/* line 44, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation--web-design {
+/* line 44, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+.item-trainings--web-design {
   border-top: 2px solid #6300ff;
 }
-/* line 47, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation--web-design .item-formation__type:before {
+/* line 47, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+.item-trainings--web-design .item-trainings__type:before {
   background-color: #6300ff;
 }
 
-/* line 51, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation--photography {
+/* line 51, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+.item-trainings--photography {
   border-top: 2px solid #ffe042;
 }
-/* line 54, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation--photography .item-formation__type:before {
+/* line 54, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+.item-trainings--photography .item-trainings__type:before {
   background-color: #ffe042;
 }
 
-/* line 58, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation--game {
+/* line 58, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+.item-trainings--game {
   border-top: 2px solid #1840e8;
 }
-/* line 61, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation--game .item-formation__type:before {
+/* line 61, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+.item-trainings--game .item-trainings__type:before {
   background-color: #1840e8;
 }
 
-/* line 65, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation--video-audio {
+/* line 65, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+.item-trainings--video-audio {
   border-top: 2px solid red;
 }
-/* line 68, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation--video-audio .item-formation__type:before {
+/* line 68, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+.item-trainings--video-audio .item-trainings__type:before {
   background-color: red;
 }
 
-/* line 72, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation--cross-media {
+/* line 72, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+.item-trainings--cross-media {
   border-top: 2px solid #e90b51;
 }
-/* line 75, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation--cross-media .item-formation__type:before {
+/* line 75, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+.item-trainings--cross-media .item-trainings__type:before {
   background-color: #e90b51;
 }
 
-/* line 80, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation__bar-top {
+/* line 80, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+.item-trainings__bar-top {
   border-bottom: 1px solid #e5e5e5;
   padding: 10px 20px;
   text-transform: uppercase;
@@ -2351,23 +2378,23 @@ button {
   color: #323232;
 }
 
-/* line 88, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation__date {
+/* line 88, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+.item-trainings__date {
   float: right;
 }
-/* line 91, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation__date .icons-calendar {
+/* line 91, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+.item-trainings__date .icons-calendar {
   margin-right: 10px;
   vertical-align: text-top;
 }
 
-/* line 96, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation__type {
+/* line 96, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+.item-trainings__type {
   position: relative;
   padding-left: 25px;
 }
-/* line 100, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation__type:before {
+/* line 100, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+.item-trainings__type:before {
   content: '';
   display: block;
   width: 10px;
@@ -2380,92 +2407,92 @@ button {
   background-color: #0045e5;
 }
 
-/* line 113, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation__content {
+/* line 113, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+.item-trainings__content {
   display: table;
   width: 100%;
   table-layout: fixed;
   padding-bottom: 25px;
 }
 
-/* line 119, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation__description,
-.item-formation__image {
+/* line 119, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+.item-trainings__description,
+.item-trainings__image {
   display: table-cell;
   padding: 0 0 0 20px;
   vertical-align: top;
 }
 @media screen and (max-width: 767px) {
-  /* line 119, ../../app/fragments/content/list-formations/_list-formations.scss */
-  .item-formation__description,
-  .item-formation__image {
+  /* line 119, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+  .item-trainings__description,
+  .item-trainings__image {
     display: block;
     width: auto;
   }
 }
 
-/* line 130, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation__image {
+/* line 130, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+.item-trainings__image {
   width: 285px;
   padding: 5px 20px;
 }
 @media screen and (max-width: 767px) {
-  /* line 130, ../../app/fragments/content/list-formations/_list-formations.scss */
-  .item-formation__image {
+  /* line 130, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+  .item-trainings__image {
     width: auto;
   }
 }
-/* line 138, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation__image img {
+/* line 138, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+.item-trainings__image img {
   display: block;
   width: 100%;
   height: auto;
   margin-bottom: 20px;
 }
 @media screen and (max-width: 767px) {
-  /* line 138, ../../app/fragments/content/list-formations/_list-formations.scss */
-  .item-formation__image img {
+  /* line 138, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+  .item-trainings__image img {
     display: none;
   }
 }
-/* line 149, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation__image .btn-like--mini {
+/* line 149, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+.item-trainings__image .btn-like--mini {
   float: right;
 }
-/* line 152, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation__image .btn-higlight, .item-formation__image .main-menu--search button, .main-menu--search .item-formation__image button {
+/* line 152, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+.item-trainings__image .btn-higlight, .item-trainings__image .main-menu--search button, .main-menu--search .item-trainings__image button {
   display: block;
   margin-right: 50px;
 }
 @media screen and (max-width: 1024px) {
-  /* line 152, ../../app/fragments/content/list-formations/_list-formations.scss */
-  .item-formation__image .btn-higlight, .item-formation__image .main-menu--search button, .main-menu--search .item-formation__image button {
+  /* line 152, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+  .item-trainings__image .btn-higlight, .item-trainings__image .main-menu--search button, .main-menu--search .item-trainings__image button {
     margin-right: 65px;
   }
 }
 
-/* line 161, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation__description {
+/* line 161, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+.item-trainings__description {
   font-family: "Neuzeit";
 }
-/* line 164, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation__description .title {
+/* line 164, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+.item-trainings__description .title {
   font-family: "Platform-Medium";
   font-size: 1.375rem;
   color: #323232;
 }
-/* line 169, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation__description .location {
+/* line 169, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+.item-trainings__description .location {
   margin-bottom: 5px;
 }
-/* line 172, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation__description .info {
+/* line 172, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+.item-trainings__description .info {
   border-top: 1px solid #e5e5e5;
   padding-top: 15px;
   margin-top: 18px;
 }
-/* line 177, ../../app/fragments/content/list-formations/_list-formations.scss */
-.item-formation__description .info__title {
+/* line 177, ../../app/fragments/content/list-trainings/_list-trainings.scss */
+.item-trainings__description .info__title {
   text-transform: uppercase;
   font-family: "Platform-Medium";
   color: #323232;
@@ -2575,37 +2602,37 @@ button {
   background-color: #e90b51;
 }
 
-/* line 1, ../../app/fragments/content/list-docs/_list-docs.scss */
-.list-docs {
+/* line 1, ../../app/fragments/content/list-downloads/_list-downloads.scss */
+.list-downloads {
   background-color: #f2f2f2;
 }
 
-/* line 4, ../../app/fragments/content/list-docs/_list-docs.scss */
-.item-doc {
+/* line 4, ../../app/fragments/content/list-downloads/_list-downloads.scss */
+.item-downloads {
   background-color: #fff;
   border-bottom: 2px solid #e5e5e5;
   padding: 30px 40px 40px;
   text-align: center;
 }
-/* line 10, ../../app/fragments/content/list-docs/_list-docs.scss */
-.item-doc + .item-doc {
+/* line 10, ../../app/fragments/content/list-downloads/_list-downloads.scss */
+.item-downloads + .item-downloads {
   border-left: 1px solid #e5e5e5;
 }
-/* line 14, ../../app/fragments/content/list-docs/_list-docs.scss */
-.item-doc .item-doc__img {
+/* line 14, ../../app/fragments/content/list-downloads/_list-downloads.scss */
+.item-downloads .item-downloads__img {
   display: block;
   margin: 0 auto 20px;
   width: 130px;
   border-bottom: 2px solid #e5e5e5;
 }
-/* line 20, ../../app/fragments/content/list-docs/_list-docs.scss */
-.item-doc .item-doc__img img {
+/* line 20, ../../app/fragments/content/list-downloads/_list-downloads.scss */
+.item-downloads .item-downloads__img img {
   display: block;
   width: 100%;
   height: auto;
 }
-/* line 26, ../../app/fragments/content/list-docs/_list-docs.scss */
-.item-doc p {
+/* line 26, ../../app/fragments/content/list-downloads/_list-downloads.scss */
+.item-downloads p {
   margin-bottom: 20px;
   min-height: 3em;
 }
@@ -2638,38 +2665,38 @@ button {
   padding-top: 40px;
 }
 
-/* line 1, ../../app/fragments/content/block-presentation/_block-presentation.scss */
-.block-presentation {
+/* line 1, ../../app/fragments/content/block-training-presentation/_block-training-presentation.scss */
+.block-training-presentation {
   background-color: #f2f2f2;
 }
-/* line 4, ../../app/fragments/content/block-presentation/_block-presentation.scss */
-.block-presentation .block-sharing {
+/* line 4, ../../app/fragments/content/block-training-presentation/_block-training-presentation.scss */
+.block-training-presentation .block-sharing {
   width: 50px;
   float: left;
 }
 
-/* line 9, ../../app/fragments/content/block-presentation/_block-presentation.scss */
-.block-presentation__description {
+/* line 9, ../../app/fragments/content/block-training-presentation/_block-training-presentation.scss */
+.block-training-presentation__description {
   margin-left: 45px;
   width: 430px;
   float: left;
 }
-/* line 14, ../../app/fragments/content/block-presentation/_block-presentation.scss */
-.block-presentation__description .title-h2 {
+/* line 14, ../../app/fragments/content/block-training-presentation/_block-training-presentation.scss */
+.block-training-presentation__description .title-h2 {
   text-align: left;
   margin-bottom: 25px;
 }
-/* line 18, ../../app/fragments/content/block-presentation/_block-presentation.scss */
-.block-presentation__description p {
+/* line 18, ../../app/fragments/content/block-training-presentation/_block-training-presentation.scss */
+.block-training-presentation__description p {
   margin-bottom: 20px;
 }
 
-/* line 22, ../../app/fragments/content/block-presentation/_block-presentation.scss */
-.block-presentation__media {
+/* line 22, ../../app/fragments/content/block-training-presentation/_block-training-presentation.scss */
+.block-training-presentation__media {
   float: right;
 }
 
-/* line 1, ../../app/fragments/content/block-banner/_block-banner.scss */
+/* line 1, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .block-banner {
   padding: 50px 0 40px;
   background-position: center;
@@ -2677,7 +2704,7 @@ button {
   background-repeat: no-repeat;
 }
 
-/* line 8, ../../app/fragments/content/block-banner/_block-banner.scss */
+/* line 8, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-name {
   color: #fff;
   text-align: right;
@@ -2688,7 +2715,7 @@ button {
   text-transform: uppercase;
   margin-bottom: 45px;
 }
-/* line 18, ../../app/fragments/content/block-banner/_block-banner.scss */
+/* line 18, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-name:after {
   background-color: transparent;
   border: 8px solid #0045e5;
@@ -2703,81 +2730,81 @@ button {
   width: 4px;
 }
 
-/* line 32, ../../app/fragments/content/block-banner/_block-banner.scss */
+/* line 32, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-animation .training-name:after {
   border-color: #00e196;
 }
 
-/* line 35, ../../app/fragments/content/block-banner/_block-banner.scss */
+/* line 35, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-graphic-design .training-name:after {
   border-color: #3af2ce;
 }
 
-/* line 38, ../../app/fragments/content/block-banner/_block-banner.scss */
+/* line 38, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-web-design .training-name:after {
   border-color: #6300ff;
 }
 
-/* line 41, ../../app/fragments/content/block-banner/_block-banner.scss */
+/* line 41, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-photography .training-name:after {
   border-color: #ffe042;
 }
 
-/* line 44, ../../app/fragments/content/block-banner/_block-banner.scss */
+/* line 44, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-game .training-name:after {
   border-color: #1840e8;
 }
 
-/* line 47, ../../app/fragments/content/block-banner/_block-banner.scss */
+/* line 47, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-video-audio .training-name:after {
   border-color: red;
 }
 
-/* line 50, ../../app/fragments/content/block-banner/_block-banner.scss */
+/* line 50, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-cross-media .training-name:after {
   border-color: #e90b51;
 }
 
-/* line 53, ../../app/fragments/content/block-banner/_block-banner.scss */
+/* line 53, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-summary {
   background: #fff;
   font-family: "Neuzeit";
 }
 
-/* line 57, ../../app/fragments/content/block-banner/_block-banner.scss */
+/* line 57, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-summary__title {
   padding: 30px 30px 25px 30px;
   color: #323232;
 }
-/* line 61, ../../app/fragments/content/block-banner/_block-banner.scss */
+/* line 61, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-summary__title p {
   font-family: "Platform-Medium";
   letter-spacing: 1px;
 }
-/* line 65, ../../app/fragments/content/block-banner/_block-banner.scss */
+/* line 65, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-summary__title p span {
   text-transform: uppercase;
 }
-/* line 69, ../../app/fragments/content/block-banner/_block-banner.scss */
+/* line 69, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-summary__title h1 {
   font-size: 2.5rem;
   font-family: "Platform-Light";
   line-height: 1em;
   margin-bottom: 10px;
 }
-/* line 75, ../../app/fragments/content/block-banner/_block-banner.scss */
+/* line 75, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-summary__title .ref {
   float: right;
   color: #656565;
   font-family: "Neuzeit";
 }
 
-/* line 81, ../../app/fragments/content/block-banner/_block-banner.scss */
+/* line 81, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-summary__duration {
   padding-left: 25px;
   position: relative;
 }
-/* line 85, ../../app/fragments/content/block-banner/_block-banner.scss */
+/* line 85, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-summary__duration:before {
   background-color: #0045e5;
   border-radius: 50%;
@@ -2791,85 +2818,90 @@ button {
   width: 10px;
 }
 
-/* line 98, ../../app/fragments/content/block-banner/_block-banner.scss */
+/* line 98, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-animation .training-summary__duration:before {
   background-color: #00e196;
 }
 
-/* line 101, ../../app/fragments/content/block-banner/_block-banner.scss */
+/* line 101, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-graphic-design .training-summary__duration:before {
   background-color: #3af2ce;
 }
 
-/* line 104, ../../app/fragments/content/block-banner/_block-banner.scss */
+/* line 104, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-web-design .training-summary__duration:before {
   background-color: #6300ff;
 }
 
-/* line 107, ../../app/fragments/content/block-banner/_block-banner.scss */
+/* line 107, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-photography .training-summary__duration:before {
   background-color: #ffe042;
 }
 
-/* line 110, ../../app/fragments/content/block-banner/_block-banner.scss */
+/* line 110, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-game .training-summary__duration:before {
   background-color: #1840e8;
 }
 
-/* line 113, ../../app/fragments/content/block-banner/_block-banner.scss */
+/* line 113, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-video-audio .training-summary__duration:before {
   background-color: red;
 }
 
-/* line 116, ../../app/fragments/content/block-banner/_block-banner.scss */
+/* line 116, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-cross-media .training-summary__duration:before {
   background-color: #e90b51;
 }
 
-/* line 120, ../../app/fragments/content/block-banner/_block-banner.scss */
+/* line 120, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-summary__description {
   border-top: 1px solid #e5e5e5;
   display: table;
   width: 100%;
   table-layout: fixed;
 }
-/* line 126, ../../app/fragments/content/block-banner/_block-banner.scss */
+/* line 126, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-summary__description .col1 {
   width: 44%;
   display: table-cell;
   padding: 0 20px 25px 30px;
 }
-/* line 131, ../../app/fragments/content/block-banner/_block-banner.scss */
+/* line 131, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-summary__description .col2,
 .training-summary__description .col3 {
   width: 28%;
   display: table-cell;
   border-left: 1px solid #e5e5e5;
 }
-/* line 137, ../../app/fragments/content/block-banner/_block-banner.scss */
+/* line 137, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-summary__description .col2 {
   padding: 0 20px;
 }
-/* line 140, ../../app/fragments/content/block-banner/_block-banner.scss */
+/* line 140, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-summary__description .col3-1,
 .training-summary__description .col3-2 {
   padding: 0 20px;
 }
-/* line 144, ../../app/fragments/content/block-banner/_block-banner.scss */
+/* line 144, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-summary__description .col3-1 {
   padding-bottom: 20px;
 }
-/* line 147, ../../app/fragments/content/block-banner/_block-banner.scss */
+/* line 147, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-summary__description .col3-2 {
   border-top: 1px solid #e5e5e5;
 }
-/* line 151, ../../app/fragments/content/block-banner/_block-banner.scss */
+/* line 151, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-summary__description .sub-title {
   font-family: "Platform-Medium";
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #323232;
   margin: 20px 0 5px;
+}
+
+/* line 162, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+.breadcrumb + .block-banner {
+  margin-top: -55px;
 }
 
 /* line 1, ../../app/fragments/content/block-training-details/_block-training-details.scss */

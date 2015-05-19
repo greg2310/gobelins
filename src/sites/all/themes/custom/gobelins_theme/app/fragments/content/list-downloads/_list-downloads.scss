@@ -1,17 +1,17 @@
-.list-docs{
+.list-downloads{
   background-color:$color__bg-gray--light;
 }
-.item-doc{
+.item-downloads{
   background-color:#fff;
   border-bottom: 2px solid $color__border-gray--light;
   padding:30px 40px 40px;
   text-align:center;
    
-  & + .item-doc{
+  & + .item-downloads{
     border-left:1px solid $color__border-gray--light;
   }
   
-  .item-doc__img{
+  .item-downloads__img{
     display:block;
     margin:0 auto 20px;
     width:130px;

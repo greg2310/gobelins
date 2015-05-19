@@ -1,4 +1,4 @@
-.block-presentation{
+.block-training-presentation{
   background-color:$color__bg-gray--light;
   
   .block-sharing{
@@ -6,7 +6,7 @@
     float:left;
   }
 }
-.block-presentation__description{
+.block-training-presentation__description{
   margin-left:45px;
   width:430px;
   float:left;
@@ -19,6 +19,6 @@
     margin-bottom:20px;
   }
 }
-.block-presentation__media{
+.block-training-presentation__media{
   float:right;
 }

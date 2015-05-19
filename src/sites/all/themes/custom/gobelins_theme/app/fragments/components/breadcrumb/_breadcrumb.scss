@@ -2,7 +2,7 @@
   font-size:0.875rem;
   
   ul{
-    padding:20px;
+    padding:17px 20px;
     width:1140px;
     margin:0 auto;
     
@@ -19,5 +19,20 @@
       left:0;
       top:-1px;
     }
+  }
+}
+.training-animation .breadcrumb,
+.training-graphic-design .breadcrumb,
+.training-web-design .breadcrumb,
+.training-photography .breadcrumb,
+.training-game .breadcrumb,
+.training-video-audio .breadcrumb,
+.training-cross-media .breadcrumb{
+  color:#fff;
+  a{
+    color:#fff;
+  }
+  .icons-home-gray{
+    @extend .icons-home-white;
   }
 }
