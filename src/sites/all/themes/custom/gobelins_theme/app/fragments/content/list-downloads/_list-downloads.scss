@@ -6,6 +6,7 @@
   border-bottom: 2px solid $color__border-gray--light;
   padding:30px 40px 40px;
   text-align:center;
+  font-family:$font__neuzeit;
    
   & + .item-downloads{
     border-left:1px solid $color__border-gray--light;
@@ -23,7 +24,7 @@
       height:auto;
     }
   }
-  p{
+  h3{
     margin-bottom:20px;
     min-height:3em;
   }

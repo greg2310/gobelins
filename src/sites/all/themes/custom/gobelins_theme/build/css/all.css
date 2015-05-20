@@ -709,21 +709,22 @@ h1, h2, h3, h4, h5, p {
   margin: 0;
   font-weight: normal;
   line-height: 1.5em;
+  font-size: 1rem;
 }
 
-/* line 60, ../../app/scss/includes/_base.scss */
+/* line 61, ../../app/scss/includes/_base.scss */
 fieldset {
   border: none;
   padding: 0;
   margin: 0;
 }
 
-/* line 65, ../../app/scss/includes/_base.scss */
+/* line 66, ../../app/scss/includes/_base.scss */
 button {
   border: none;
 }
 
-/* line 69, ../../app/scss/includes/_base.scss */
+/* line 70, ../../app/scss/includes/_base.scss */
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -2715,26 +2716,27 @@ button {
   border-bottom: 2px solid #e5e5e5;
   padding: 30px 40px 40px;
   text-align: center;
+  font-family: "Neuzeit";
 }
-/* line 10, ../../app/fragments/content/list-downloads/_list-downloads.scss */
+/* line 11, ../../app/fragments/content/list-downloads/_list-downloads.scss */
 .item-downloads + .item-downloads {
   border-left: 1px solid #e5e5e5;
 }
-/* line 14, ../../app/fragments/content/list-downloads/_list-downloads.scss */
+/* line 15, ../../app/fragments/content/list-downloads/_list-downloads.scss */
 .item-downloads .item-downloads__img {
   display: block;
   margin: 0 auto 20px;
   width: 130px;
   border-bottom: 2px solid #e5e5e5;
 }
-/* line 20, ../../app/fragments/content/list-downloads/_list-downloads.scss */
+/* line 21, ../../app/fragments/content/list-downloads/_list-downloads.scss */
 .item-downloads .item-downloads__img img {
   display: block;
   width: 100%;
   height: auto;
 }
-/* line 26, ../../app/fragments/content/list-downloads/_list-downloads.scss */
-.item-downloads p {
+/* line 27, ../../app/fragments/content/list-downloads/_list-downloads.scss */
+.item-downloads h3 {
   margin-bottom: 20px;
   min-height: 3em;
 }
