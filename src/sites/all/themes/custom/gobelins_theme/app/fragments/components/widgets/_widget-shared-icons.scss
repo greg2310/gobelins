@@ -69,10 +69,12 @@
 }
 
 .block-sharing{
-  background:#fff;
-  border-radius:3px;
-  text-align:center;
-  border-bottom:2px solid $color__border-gray--light;
+  ul{
+    background:#fff;
+    border-radius:3px;
+    text-align:center;
+    border-bottom:2px solid $color__border-gray--light;
+  }
   
   li{
     a{
@@ -81,9 +83,19 @@
       padding:13px 15px;
       color:#7f7f7f;
     }
+    
+    @media screen and (max-width: 767px){
+      float:left;
+      width:20%;
+    }
   }
   li + li{
     border-top:1px solid $color__border-gray--light;
+    
+    @media screen and (max-width: 767px){
+      border-top:none;
+      border-left:1px solid $color__border-gray--light;
+    }
   }
   .icon-facebook:hover{
     color:#3b5998;

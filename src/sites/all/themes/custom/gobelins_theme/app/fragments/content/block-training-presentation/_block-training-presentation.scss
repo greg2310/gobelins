@@ -1,15 +1,43 @@
 .block-training-presentation{
   background-color:$color__bg-gray--light;
   
+  .l-row__inner{
+    display:table;
+    
+    @media screen and (max-width: 1140px) {
+      display:block;
+    }
+  }
+
   .block-sharing{
     width:50px;
-    float:left;
+    display:table-cell;
+    vertical-align:top;
+    
+    @media screen and (max-width: 1140px) {
+      display:block;
+      float:left;
+    }
+    @media screen and (max-width: 767px) {
+      float:none;
+      width:auto;
+      margin-bottom:20px;
+    }
   }
 }
 .block-training-presentation__description{
-  margin-left:45px;
-  width:430px;
-  float:left;
+  display:table-cell;
+  vertical-align:top;
+  padding:0 45px;
+  
+  @media screen and (max-width: 1140px) {
+    display:block;
+    margin:0 125px;
+    padding:0;
+  }
+  @media screen and (max-width: 767px) {
+    margin:0;
+  }
   
   .title-h2{
     text-align:left;
@@ -20,5 +48,21 @@
   }
 }
 .block-training-presentation__media{
-  float:right;
+  display:table-cell;
+  vertical-align:top;
+  width:435px;
+  
+  img{
+    width:100%;
+    height:auto;
+  }
+  
+  @media screen and (max-width: 1140px) {
+    display:block;
+    width:auto;
+    margin:30px 125px;
+  }
+  @media screen and (max-width: 767px) {
+    margin:30px 0;
+  }
 }

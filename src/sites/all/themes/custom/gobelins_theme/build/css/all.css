@@ -1098,12 +1098,12 @@ button {
 
 /*list style*/
 /* line 176, ../../app/scss/includes/_helpers.scss */
-.ul-styled li, .item-trainings__description .info__detailes li, .training-summary__description ul li {
+.ul-styled li, .tabs-accordion .content ul li, .item-trainings__description .info__detailes li, .training-summary__description ul li {
   padding-left: 10px;
   position: relative;
 }
 /* line 180, ../../app/scss/includes/_helpers.scss */
-.ul-styled li:before, .item-trainings__description .info__detailes li:before, .training-summary__description ul li:before {
+.ul-styled li:before, .tabs-accordion .content ul li:before, .item-trainings__description .info__detailes li:before, .training-summary__description ul li:before {
   content: '\2022';
   position: absolute;
   left: 0;
@@ -1127,8 +1127,15 @@ button {
   font-size: 1rem;
   text-align: left;
 }
+@media screen and (max-width: 1140px) {
+  /* line 6, ../../app/fragments/layout/_layout.scss */
+  .grid-3 {
+    display: block;
+    width: auto;
+  }
+}
 
-/* line 13, ../../app/fragments/layout/_layout.scss */
+/* line 18, ../../app/fragments/layout/_layout.scss */
 .grid-4 {
   width: 25%;
   display: inline-block;
@@ -1137,7 +1144,7 @@ button {
   text-align: left;
 }
 
-/* line 22, ../../app/fragments/layout/_layout.scss */
+/* line 27, ../../app/fragments/layout/_layout.scss */
 .footer__inner,
 .header__bar-top,
 .l-row__inner {
@@ -1146,7 +1153,7 @@ button {
   padding: 0 20px;
 }
 @media screen and (max-width: 1140px) {
-  /* line 22, ../../app/fragments/layout/_layout.scss */
+  /* line 27, ../../app/fragments/layout/_layout.scss */
   .footer__inner,
   .header__bar-top,
   .l-row__inner {
@@ -1154,25 +1161,25 @@ button {
   }
 }
 
-/* line 33, ../../app/fragments/layout/_layout.scss */
+/* line 38, ../../app/fragments/layout/_layout.scss */
 .l-row {
   padding: 70px 0;
 }
 @media screen and (max-width: 1140px) {
-  /* line 33, ../../app/fragments/layout/_layout.scss */
+  /* line 38, ../../app/fragments/layout/_layout.scss */
   .l-row {
     padding: 50px 0;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 33, ../../app/fragments/layout/_layout.scss */
+  /* line 38, ../../app/fragments/layout/_layout.scss */
   .l-row {
     padding: 40px 0;
   }
 }
 
 @media screen and (min-width: 1401px) {
-  /* line 44, ../../app/fragments/layout/_layout.scss */
+  /* line 49, ../../app/fragments/layout/_layout.scss */
   .l-row,
   .footer,
   .header {
@@ -1180,53 +1187,53 @@ button {
     margin: 0 auto;
   }
 }
-/* line 51, ../../app/fragments/layout/_layout.scss */
+/* line 56, ../../app/fragments/layout/_layout.scss */
 .display--tab-mob {
   display: none;
 }
 
 @media screen and (max-width: 1140px) {
-  /* line 55, ../../app/fragments/layout/_layout.scss */
+  /* line 60, ../../app/fragments/layout/_layout.scss */
   .no-display--tab-mob {
     display: none !important;
   }
 
-  /* line 58, ../../app/fragments/layout/_layout.scss */
+  /* line 63, ../../app/fragments/layout/_layout.scss */
   .display--tab-mob {
     display: block;
   }
 }
 @media screen and (max-width: 1024px) and (min-width: 768px) {
-  /* line 63, ../../app/fragments/layout/_layout.scss */
+  /* line 68, ../../app/fragments/layout/_layout.scss */
   .no-display--tab {
     display: none !important;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 68, ../../app/fragments/layout/_layout.scss */
+  /* line 73, ../../app/fragments/layout/_layout.scss */
   .no-display--mob {
     display: none !important;
   }
 }
 /*layout mobile*/
-/* line 74, ../../app/fragments/layout/_layout.scss */
+/* line 79, ../../app/fragments/layout/_layout.scss */
 .aside-tab-mob {
   display: none;
 }
 
 @media screen and (max-width: 1140px) {
-  /* line 78, ../../app/fragments/layout/_layout.scss */
+  /* line 83, ../../app/fragments/layout/_layout.scss */
   .container-overflow {
     overflow: hidden;
     position: relative;
   }
 
-  /* line 82, ../../app/fragments/layout/_layout.scss */
+  /* line 87, ../../app/fragments/layout/_layout.scss */
   .main-wrapper {
     position: relative;
   }
 
-  /* line 85, ../../app/fragments/layout/_layout.scss */
+  /* line 90, ../../app/fragments/layout/_layout.scss */
   .aside-tab-mob {
     width: 268px;
     position: absolute;
@@ -1238,16 +1245,16 @@ button {
     display: block;
   }
 
-  /* line 95, ../../app/fragments/layout/_layout.scss */
+  /* line 100, ../../app/fragments/layout/_layout.scss */
   .main-wrapper {
     margin-left: 0;
   }
 
-  /* line 98, ../../app/fragments/layout/_layout.scss */
+  /* line 103, ../../app/fragments/layout/_layout.scss */
   .is-locked {
     position: relative;
   }
-  /* line 100, ../../app/fragments/layout/_layout.scss */
+  /* line 105, ../../app/fragments/layout/_layout.scss */
   .is-locked:after {
     content: "";
     position: absolute;
@@ -1259,7 +1266,7 @@ button {
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 112, ../../app/fragments/layout/_layout.scss */
+  /* line 117, ../../app/fragments/layout/_layout.scss */
   .aside-tab-mob {
     width: 410px;
     left: -410px;
@@ -2149,6 +2156,87 @@ button {
   color: #fff;
 }
 
+/* line 2, ../../app/fragments/components/tabs-accordion/_tabs-accordion.scss */
+.tabs-accordion .tabs-title {
+  background-color: #e6e6e6;
+}
+@media screen and (max-width: 767px) {
+  /* line 2, ../../app/fragments/components/tabs-accordion/_tabs-accordion.scss */
+  .tabs-accordion .tabs-title {
+    display: none;
+  }
+}
+/* line 9, ../../app/fragments/components/tabs-accordion/_tabs-accordion.scss */
+.tabs-accordion .tabs-title li {
+  display: inline-block;
+  width: 32.5%;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Platform-Medium";
+  letter-spacing: 1px;
+}
+/* line 18, ../../app/fragments/components/tabs-accordion/_tabs-accordion.scss */
+.tabs-accordion .tabs-title li a {
+  padding: 30px 0;
+  display: block;
+  text-decoration: none;
+}
+/* line 24, ../../app/fragments/components/tabs-accordion/_tabs-accordion.scss */
+.tabs-accordion .tabs-title .active {
+  border-top: 2px solid #0045e5;
+  background-color: #fff;
+}
+/* line 28, ../../app/fragments/components/tabs-accordion/_tabs-accordion.scss */
+.tabs-accordion .tabs-title .active a {
+  color: #323232;
+}
+/* line 34, ../../app/fragments/components/tabs-accordion/_tabs-accordion.scss */
+.tabs-accordion .accordion-title {
+  display: none;
+  text-transform: uppercase;
+  background-color: #e6e6e6;
+  font-family: "Platform-Medium";
+  letter-spacing: 1px;
+}
+/* line 41, ../../app/fragments/components/tabs-accordion/_tabs-accordion.scss */
+.tabs-accordion .accordion-title a {
+  padding: 30px 40px;
+  display: block;
+  text-decoration: none;
+}
+/* line 47, ../../app/fragments/components/tabs-accordion/_tabs-accordion.scss */
+.tabs-accordion .accordion-title.active {
+  border-top: 2px solid #0045e5;
+  background-color: #fff;
+}
+/* line 51, ../../app/fragments/components/tabs-accordion/_tabs-accordion.scss */
+.tabs-accordion .accordion-title.active a {
+  color: #323232;
+}
+@media screen and (max-width: 767px) {
+  /* line 34, ../../app/fragments/components/tabs-accordion/_tabs-accordion.scss */
+  .tabs-accordion .accordion-title {
+    display: block;
+  }
+}
+/* line 60, ../../app/fragments/components/tabs-accordion/_tabs-accordion.scss */
+.tabs-accordion .tabs-container {
+  background-color: #fff;
+}
+/* line 63, ../../app/fragments/components/tabs-accordion/_tabs-accordion.scss */
+.tabs-accordion .content {
+  padding: 40px;
+  font-size: 0.875rem;
+  font-family: "Neuzeit";
+}
+@media screen and (max-width: 767px) {
+  /* line 63, ../../app/fragments/components/tabs-accordion/_tabs-accordion.scss */
+  .tabs-accordion .content {
+    padding: 0 40px 40px;
+  }
+}
+
 /* line 2, ../../app/fragments/components/widgets/_widget-shared-icons.scss */
 .list-shared-icons li {
   display: inline-block;
@@ -2231,37 +2319,51 @@ button {
   margin: 0 15px 25px;
 }
 
-/* line 71, ../../app/fragments/components/widgets/_widget-shared-icons.scss */
-.block-sharing {
+/* line 72, ../../app/fragments/components/widgets/_widget-shared-icons.scss */
+.block-sharing ul {
   background: #fff;
   border-radius: 3px;
   text-align: center;
   border-bottom: 2px solid #e5e5e5;
 }
-/* line 78, ../../app/fragments/components/widgets/_widget-shared-icons.scss */
+/* line 80, ../../app/fragments/components/widgets/_widget-shared-icons.scss */
 .block-sharing li a {
   text-decoration: none;
   display: block;
   padding: 13px 15px;
   color: #7f7f7f;
 }
-/* line 85, ../../app/fragments/components/widgets/_widget-shared-icons.scss */
+@media screen and (max-width: 767px) {
+  /* line 79, ../../app/fragments/components/widgets/_widget-shared-icons.scss */
+  .block-sharing li {
+    float: left;
+    width: 20%;
+  }
+}
+/* line 92, ../../app/fragments/components/widgets/_widget-shared-icons.scss */
 .block-sharing li + li {
   border-top: 1px solid #e5e5e5;
 }
-/* line 88, ../../app/fragments/components/widgets/_widget-shared-icons.scss */
+@media screen and (max-width: 767px) {
+  /* line 92, ../../app/fragments/components/widgets/_widget-shared-icons.scss */
+  .block-sharing li + li {
+    border-top: none;
+    border-left: 1px solid #e5e5e5;
+  }
+}
+/* line 100, ../../app/fragments/components/widgets/_widget-shared-icons.scss */
 .block-sharing .icon-facebook:hover {
   color: #3b5998;
 }
-/* line 91, ../../app/fragments/components/widgets/_widget-shared-icons.scss */
+/* line 103, ../../app/fragments/components/widgets/_widget-shared-icons.scss */
 .block-sharing .icon-twitter:hover {
   color: #3cf;
 }
-/* line 94, ../../app/fragments/components/widgets/_widget-shared-icons.scss */
+/* line 106, ../../app/fragments/components/widgets/_widget-shared-icons.scss */
 .block-sharing .icon-gplus:hover {
   color: #d34836;
 }
-/* line 97, ../../app/fragments/components/widgets/_widget-shared-icons.scss */
+/* line 109, ../../app/fragments/components/widgets/_widget-shared-icons.scss */
 .block-sharing .icon-mail:hover {
   color: #0045e5;
 }
@@ -2670,30 +2772,91 @@ button {
   background-color: #f2f2f2;
 }
 /* line 4, ../../app/fragments/content/block-training-presentation/_block-training-presentation.scss */
+.block-training-presentation .l-row__inner {
+  display: table;
+}
+@media screen and (max-width: 1140px) {
+  /* line 4, ../../app/fragments/content/block-training-presentation/_block-training-presentation.scss */
+  .block-training-presentation .l-row__inner {
+    display: block;
+  }
+}
+/* line 12, ../../app/fragments/content/block-training-presentation/_block-training-presentation.scss */
 .block-training-presentation .block-sharing {
   width: 50px;
-  float: left;
+  display: table-cell;
+  vertical-align: top;
+}
+@media screen and (max-width: 1140px) {
+  /* line 12, ../../app/fragments/content/block-training-presentation/_block-training-presentation.scss */
+  .block-training-presentation .block-sharing {
+    display: block;
+    float: left;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 12, ../../app/fragments/content/block-training-presentation/_block-training-presentation.scss */
+  .block-training-presentation .block-sharing {
+    float: none;
+    width: auto;
+    margin-bottom: 20px;
+  }
 }
 
-/* line 9, ../../app/fragments/content/block-training-presentation/_block-training-presentation.scss */
+/* line 28, ../../app/fragments/content/block-training-presentation/_block-training-presentation.scss */
 .block-training-presentation__description {
-  margin-left: 45px;
-  width: 430px;
-  float: left;
+  display: table-cell;
+  vertical-align: top;
+  padding: 0 45px;
 }
-/* line 14, ../../app/fragments/content/block-training-presentation/_block-training-presentation.scss */
+@media screen and (max-width: 1140px) {
+  /* line 28, ../../app/fragments/content/block-training-presentation/_block-training-presentation.scss */
+  .block-training-presentation__description {
+    display: block;
+    margin: 0 125px;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 28, ../../app/fragments/content/block-training-presentation/_block-training-presentation.scss */
+  .block-training-presentation__description {
+    margin: 0;
+  }
+}
+/* line 42, ../../app/fragments/content/block-training-presentation/_block-training-presentation.scss */
 .block-training-presentation__description .title-h2 {
   text-align: left;
   margin-bottom: 25px;
 }
-/* line 18, ../../app/fragments/content/block-training-presentation/_block-training-presentation.scss */
+/* line 46, ../../app/fragments/content/block-training-presentation/_block-training-presentation.scss */
 .block-training-presentation__description p {
   margin-bottom: 20px;
 }
 
-/* line 22, ../../app/fragments/content/block-training-presentation/_block-training-presentation.scss */
+/* line 50, ../../app/fragments/content/block-training-presentation/_block-training-presentation.scss */
 .block-training-presentation__media {
-  float: right;
+  display: table-cell;
+  vertical-align: top;
+  width: 435px;
+}
+/* line 55, ../../app/fragments/content/block-training-presentation/_block-training-presentation.scss */
+.block-training-presentation__media img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 1140px) {
+  /* line 50, ../../app/fragments/content/block-training-presentation/_block-training-presentation.scss */
+  .block-training-presentation__media {
+    display: block;
+    width: auto;
+    margin: 30px 125px;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 50, ../../app/fragments/content/block-training-presentation/_block-training-presentation.scss */
+  .block-training-presentation__media {
+    margin: 30px 0;
+  }
 }
 
 /* line 1, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
@@ -2907,4 +3070,32 @@ button {
 /* line 1, ../../app/fragments/content/block-training-details/_block-training-details.scss */
 .block-training-details {
   background-color: #f2f2f2;
+}
+/* line 4, ../../app/fragments/content/block-training-details/_block-training-details.scss */
+.block-training-details .tabs-accordion {
+  width: 70%;
+  float: left;
+  padding-right: 40px;
+}
+@media screen and (max-width: 1140px) {
+  /* line 4, ../../app/fragments/content/block-training-details/_block-training-details.scss */
+  .block-training-details .tabs-accordion {
+    float: none;
+    width: auto;
+    padding-right: 0;
+  }
+}
+/* line 15, ../../app/fragments/content/block-training-details/_block-training-details.scss */
+.block-training-details .item-downloads {
+  margin-left: 70%;
+}
+@media screen and (max-width: 1140px) {
+  /* line 15, ../../app/fragments/content/block-training-details/_block-training-details.scss */
+  .block-training-details .item-downloads {
+    display: none;
+  }
+}
+/* line 22, ../../app/fragments/content/block-training-details/_block-training-details.scss */
+.block-training-details .title-h2 {
+  text-align: left;
 }
