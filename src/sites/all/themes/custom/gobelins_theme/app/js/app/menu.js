@@ -1,15 +1,11 @@
 (function(){
   'use strict';
 
-  /* require jQuery plugins */
+  /* require plugins */
   var $ = require('jquery');
+  require('../bower/jquery.contenttoggle.js');
 
   $(function(){
-    //var hash = window.location.hash;
-
-    // Init contentToggle plugin.
-    require('../plugins/jquery.contentToggle.js');
-
     // Main nav contentToggle initialization.
     $('.js-contentToggle--nav').contentToggle({
       globalClose: true,
@@ -32,16 +28,13 @@
     /**********menu hover*************/
     $('.main-menu--desktop').find('.lev1').hover(function(){
       $(this).siblings().children('a').stop().animate({'opacity' : '0.5'}, 300);
-      
     }, function(){
-        $(this).siblings().children('a').stop().animate({'opacity' : '1'}, 300);
-      
+      $(this).siblings().children('a').stop().animate({'opacity' : '1'}, 300);
     });
     
     /**************** main menu sticky ********************/
     
     /*utiliser jquery.unevent*/
-    
     /*var headerHeight = $('.header').height();
     var headerStickyHeight = $('.header--sticky').height();
     console.log(headerHeight);

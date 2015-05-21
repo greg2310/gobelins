@@ -1,0 +1,12 @@
+{
+  "copyFiles": [
+    {
+      "src": "bower_components/jquery-contenttoggle/jquery.contenttoggle.js",
+      "dest": "<%= devPath %>/js/bower/jquery.contenttoggle.js"
+    },
+    {
+      "src": "bower_components/sticky/jquery.sticky.js",
+      "dest": "<%= devPath %>/js/bower/jquery.sticky.js"
+    }
+  ]
+}
