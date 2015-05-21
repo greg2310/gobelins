@@ -11,8 +11,8 @@ module.exports = function(grunt) {
   defaultOptions = {
     devPath        : 'app',
     stagingPath    : 'build',
-    livereloadPort : '35729',
-    connectPort    : '9001',
+    livereloadPort : 35729,
+    connectPort    : 9001,
     siteDomain     : 'localhost',
     modernizrPath  : 'bower_components/modernizr/modernizr.js',
     copyFiles      : []
