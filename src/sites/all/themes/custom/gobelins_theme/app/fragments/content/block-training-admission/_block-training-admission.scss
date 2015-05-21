@@ -1,0 +1,44 @@
+.block-training-admission{
+  background-color:$color__bg-gray--light;
+  
+  .title-h2{
+    text-align:left;
+  }
+  .btn-agenda{
+    float:right;
+  }
+}
+.item-admission{
+  margin-bottom:40px;
+}
+.item-admission__title{
+  text-transform:uppercase;
+  font-family:$font__platform--medium;
+  letter-spacing:1px;
+  margin-bottom:15px;
+  color:$color__text-dark;
+}
+.item-admission__description{
+  background-color:#fff;
+  border-bottom:2px solid $color__border-gray--light;
+  padding:20px 30px 30px;
+  font-family:$font__neuzeit;
+  
+  .list-modalities{
+    margin:0 -30px;
+    
+    li{
+      padding:0 30px;
+    }
+    li + li{
+      border-top:1px solid $color__border-gray--light;
+      padding-top:20px;
+    }
+  }
+  .btn-higlight{
+    margin:20px 0;
+  }
+  .list-downloads--mini{
+    margin:-20px -30px;
+  }
+}

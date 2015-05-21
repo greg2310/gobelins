@@ -1,0 +1,64 @@
+.block-training-professions{
+  background-color:#fff;
+  text-align:center;
+  color:$color__text-dark;
+  
+  p{
+    font-size:1.375rem;
+    font-family:$font__platform--medium;
+    letter-spacing:1px;
+  }
+  
+  .title-h2{
+    margin-bottom:5px;
+  }
+}
+
+.list-professions{
+  font-size:1.25rem;
+  font-family:$font__platform--medium;
+  letter-spacing:1px;
+  padding:20px 0;
+  
+  li{
+    display:inline-block;
+    margin:10px 8px;
+  } 
+  a{
+    display:block;
+    border-radius:8px;
+    border:1px solid #999;
+    padding:8px 14px;
+    background-color:#fff;
+    transition: background-color $animation__params, border-color $animation__params, color $animation__params;
+    color:$color__text-dark;
+    
+    &:hover{
+      text-decoration:none;
+      background-color:$color__blue-gobelins;
+      color:#fff;
+    }
+  }
+}
+.training-animation .list-professions a:hover{
+  background-color:$color__training--animation;
+  border-color:$color__training--animation;
+}
+.training-graphic-design .list-professions a:hover{
+  background-color:$color__training--graphic-design;
+}
+.training-web-design .list-professions a:hover{
+  background-color:$color__training--web-design;
+}
+.training-photography .list-professions a:hover{
+  background-color:$color__training--photography;
+}
+.training-game .list-professions a:hover{
+  background-color:$color__training--game;
+}
+.training-video-audio .list-professions a:hover{
+  background-color:$color__training--video-audio;
+}
+.training-cross-media .list-professions a:hover{
+  background-color:$color__training--cross-media;
+}
