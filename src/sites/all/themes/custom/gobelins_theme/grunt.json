@@ -1,0 +1,8 @@
+{
+  "copyFiles": [
+    {
+      "src": "bower_components/jquery.contenttoggle/jquery.contenttoggle.js",
+      "dest": "<%= devPath %>/js/bower/jquery.contenttoggle.js"
+    }
+  ]
+}
