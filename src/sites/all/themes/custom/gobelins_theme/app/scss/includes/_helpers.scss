@@ -108,6 +108,32 @@
     color:$color__text-dark;
   }
 }
+/***************** btns transparent ****************/
+.btn-agenda{
+  display:inline-block;
+  border:1px solid #CBCBCB;
+  background-color:transparent;
+  color:$color__blue-gobelins;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-family:$font__platform--medium;
+  font-size:0.875rem;
+  letter-spacing:2px;
+  padding:12px 20px;
+  transition: background-color $animation__params;
+  
+  &:before{
+    content:"";
+    @extend .icons-calendar;
+    vertical-align:middle;
+    margin-top:-2px;
+  }
+  
+  &:hover{
+    background-color:#fff;
+    text-decoration:none;
+  }
+}
 
 /***************** other btns ****************/
 .btn-close:before{

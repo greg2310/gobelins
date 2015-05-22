@@ -44,6 +44,12 @@ a{
     text-decoration:underline;
   }
 }
+a[href*="mailto:"],
+a[href^="mailto:"],
+a[href*="http:"],
+a[href^="http:"]{
+  color:$color__blue-gobelins;
+}
 ul {
   padding: 0;
   margin: 0;
