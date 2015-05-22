@@ -4,10 +4,11 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
 
   /* require app plugins */
   require('./app/menu.js');
+  require('./app/tabs-accordion.js');
 
 })();
 
-},{"./app/menu.js":2}],2:[function(require,module,exports){
+},{"./app/menu.js":2,"./app/tabs-accordion.js":3}],2:[function(require,module,exports){
 (function(){
   'use strict';
 
@@ -83,7 +84,26 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   });
 })();
 
-},{"../bower/jquery.contenttoggle.js":3,"../bower/jquery.sticky.js":4,"jquery":"jquery"}],3:[function(require,module,exports){
+},{"../bower/jquery.contenttoggle.js":4,"../bower/jquery.sticky.js":5,"jquery":"jquery"}],3:[function(require,module,exports){
+(function(){
+  'use strict';
+
+  /* require plugins */
+  var $ = require('jquery');
+  require('../bower/jquery.contenttoggle.js');
+
+  $(function(){
+    $('.js-contenttoggle--tabs-accordion').contentToggle({
+      triggerSelectorContext: false,
+      contentSelectorContext: false,
+      beforeCallback: function(event) {
+        return !(this.isOpen && event.type == 'click');
+      }
+    });
+  });
+})();
+
+},{"../bower/jquery.contenttoggle.js":4,"jquery":"jquery"}],4:[function(require,module,exports){
 (function($){
   'use strict';
 
@@ -414,7 +434,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
 })(jQuery);
 
 
-},{}],4:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 // Sticky Plugin v1.0.0 for jQuery
 // =============
 // Author: Anthony Garand

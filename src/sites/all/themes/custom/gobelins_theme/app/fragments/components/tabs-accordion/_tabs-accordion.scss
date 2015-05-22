@@ -24,7 +24,7 @@
         text-decoration:none;
       }
     }
-    .active{
+    .is-open{
       border-top:2px solid $color__blue-gobelins;
       background-color:#fff;
       
@@ -47,7 +47,7 @@
       text-decoration:none;
     }
     
-    &.active{
+    &.is-open{
       border-top:2px solid $color__blue-gobelins;
       background-color:#fff;
       
