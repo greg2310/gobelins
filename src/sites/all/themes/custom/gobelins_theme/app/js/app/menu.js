@@ -4,98 +4,71 @@
   /* require plugins */
   var $ = require('jquery');
   require('../bower/jquery.contenttoggle.js');
+  require('../bower/jquery.sticky.js');
 
   $(function(){
-    // Main nav contentToggle initialization.
+     var $body = $('body');
+     var $subMenu;
+     
+     /********** Menu sub-menu. **********/
+    $subMenu = $('.js-contentToggle--nav-lev3').contentToggle({
+      contentSelector: '.js-contentToggle__content-lev3',
+      elementClass:'is-open-lev3',
+      toggleOptions: {
+        duration: 200
+      }
+    });
     $('.js-contentToggle--nav').contentToggle({
       globalClose: true,
       beforeCallback: function() {
-        $('.js-contentToggle--nav-lev3').trigger('close');
+        $subMenu.trigger('close');
         return true;
       },
       toggleOptions: {
         duration: 200
       }
     });
-    $('.js-contentToggle--nav-lev3').contentToggle({
-      contentSelector: '.js-contentToggle__content-lev3',
-      elementClass :'is-open-lev3',
-      toggleOptions: {
-        duration: 200
-      }
-    });
     
-    /**********menu hover*************/
+    
+    /********** Menu hover. **********/
     $('.main-menu--desktop').find('.lev1').hover(function(){
       $(this).siblings().children('a').stop().animate({'opacity' : '0.5'}, 300);
     }, function(){
       $(this).siblings().children('a').stop().animate({'opacity' : '1'}, 300);
     });
     
-    /**************** main menu sticky ********************/
     
-    /*utiliser jquery.unevent*/
-    /*var headerHeight = $('.header').height();
-    var headerStickyHeight = $('.header--sticky').height();
-    console.log(headerHeight);
+    /********** Menu sticky. **********/
+    $('.js-header-sticky').sticky();
     
-    var scrollPos;
-    var lastScrollPos = $(window).scrollTop();
     
-    $(window).scroll(function(){ 
-      scrollPos = $(window).scrollTop();
-      if($(window).scrollTop() > headerHeight){
-        console.log('go');
-        $('.header').addClass('header--sticky').stop().animate({'top' : - headerHeight + 'px'}, 200);
-      }
-      if(lastScrollPos > scrollPos){
-        console.log('scrol To Top');
-        $('.header').stop().animate({'top' : 0}, 300);
-      }else{
-        $('.header').stop().animate({'top' : - headerStickyHeight + 'px'}, 100);
-      }
-      lastScrollPos = scrollPos;
-    });*/
-    
-    /*************menu mob move*************************/
-    var menuWidth = $('.js-aside-move').innerWidth();
-    var menuLev2Width = $(window).width() - menuWidth;
-    
-    $( window ).resize(function() {
-      $('.main-menu--mobile').find('.lev2').css({'width': menuLev2Width + 'px' });
+    /********** Menu mobile. **********/
+    $('body').contentToggle({
+      defaultState: 'close',
+      globalClose: true,
+      triggerSelector: '.js-btn-menu-mob',
+      contentSelector: '.js-aside-move',
+      toggleProperties: {}
     });
     
     
-    $('.js-btn-menu-mob').click(function(){
-      if($(this).closest('.header').hasClass('is-moved')){
-        $(this).closest('.header').removeClass('is-moved').next().removeClass('is-locked');
-        $('.js-aside-move')
-        .animate({'left': - menuWidth + 'px'}, 300)
-        .next()
-        .animate({'left': 0 + 'px'}, 300);
-      }else{
-        $(this).closest('.header').addClass('is-moved').next().addClass('is-locked');
-        $('.js-aside-move')
-          .animate({'left': 0 + 'px'}, 300)
-          .next()
-          .css({'position' : 'relative'})
-          .animate({'left': menuWidth + 'px'}, 300);
-      }
-    });
-    
-    // Nav mob contentToggle initialization.
+    /********** Menu mobile sub-menu. **********/
     $('.js-contentToggle--nav-mob').contentToggle({
-      //globalClose: true,
+      globalClose: true,
       toggleOptions: {
-        duration: 300
+        duration: 0,
+        complete: function() {
+          var isOpen = $(this).triggerHandler('isOpen');
+          $body.toggleClass('is-open__lev2', isOpen);
+        }
       },
       toggleProperties: {
-        width: 'toggle'        
+        width: 'toggle'
       }
     });
     $('.js-menu-lev2-close').click(function(){
       $(this).closest('.js-contentToggle--nav-mob').trigger('close');
     });
+    
   });
-
 })();

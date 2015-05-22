@@ -1,5 +1,34 @@
+/* Global styles. */
+body:after{
+  content:"";
+  position:fixed;
+  top:80px;
+  left:0;
+  background: #000;
+  transition: left 300ms, opacity 300ms;
+  opacity: 0;
+}
+
+.main-wrapper{
+  position:relative;
+  left: 0;
+  transition: left 300ms;
+  margin-left:0;
+}
+.aside-tab-mob__wrapper{
+  display:none;
+  overflow: auto;
+  height: 100%;
+  position: fixed;
+  top:0;
+  background-color:$color__bg-gray--darck;
+  transition: left 300ms, width 300ms;
+}
 .aside-tab-mob{
   padding:0 20px;
+  background-color:$color__bg-gray--darck;
+  color:#fff;
+  transition: width 300ms;
 }
 .aside__logo{
   width:130px;
@@ -9,5 +38,89 @@
   img{
     width:100%;
     height:auto;
+  }
+}
+.header{
+  left: 0;
+  transition: left 300ms;
+}
+@media screen and (max-width: 1140px) {
+  .aside-tab-mob__wrapper{
+    display:block;
+    left:-268px;
+  }
+  .aside-tab-mob{
+    width:268px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .aside-tab-mob__wrapper{
+    display:block;
+    left:-410px;
+  }
+  .aside-tab-mob{
+    width:410px;
+  }
+}
+
+/* Menu opened styles. */
+body.is-open{
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 1140px) {
+  .is-open {
+    &:after{
+      left: 268px;
+      opacity: 0.5;
+      bottom:0;
+      right:0;
+    }
+    .aside-tab-mob__wrapper {
+      left: 0;
+      width: 283px;
+    }
+    .main-wrapper {
+      left: 268px;
+    }
+    .header {
+      position: fixed;
+      left: 268px;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .is-open {
+    &:after{
+      left: 410px;
+    }
+    .aside-tab-mob__wrapper {
+      left: 0;
+      width: 425px;
+    }
+    .main-wrapper {
+      left: 410px;
+    }
+    .header {
+      position: fixed;
+      left: 410px;
+    }
+  }
+}
+@media screen and (max-width: 1140px) and (min-width: 768px){
+  .is-open__lev2 {
+    &:after{
+      left: 768px;
+    }
+    .aside-tab-mob__wrapper {
+      width: 783px;
+    }
+    .main-wrapper {
+      left: 768px;
+    }
+    .header {
+      position: fixed;
+      left: 768px;
+    }
   }
 }
