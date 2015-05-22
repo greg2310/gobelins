@@ -8,10 +8,11 @@
 
   $(function(){
      var $body = $('body');
-     var $subMenu;
+     var $subMenu = $('.js-contentToggle--nav-lev3');
+     var $mobileSubMenu = $('.js-contentToggle--nav-mob');
      
      /********** Menu sub-menu. **********/
-    $subMenu = $('.js-contentToggle--nav-lev3').contentToggle({
+    $subMenu.contentToggle({
       contentSelector: '.js-contentToggle__content-lev3',
       elementClass:'is-open-lev3',
       toggleOptions: {
@@ -42,18 +43,8 @@
     $('.js-header-sticky').sticky();
     
     
-    /********** Menu mobile. **********/
-    $('body').contentToggle({
-      defaultState: 'close',
-      globalClose: true,
-      triggerSelector: '.js-btn-menu-mob',
-      contentSelector: '.js-aside-move',
-      toggleProperties: {}
-    });
-    
-    
     /********** Menu mobile sub-menu. **********/
-    $('.js-contentToggle--nav-mob').contentToggle({
+    $mobileSubMenu.contentToggle({
       globalClose: true,
       toggleOptions: {
         duration: 0,
@@ -68,6 +59,20 @@
     });
     $('.js-menu-lev2-close').click(function(){
       $(this).closest('.js-contentToggle--nav-mob').trigger('close');
+    });
+    
+    
+    /********** Menu mobile. **********/
+    $('body').contentToggle({
+      defaultState: 'close',
+      globalClose: true,
+      triggerSelector: '.js-btn-menu-mob',
+      contentSelector: '.js-aside-move',
+      toggleProperties: {},
+      beforeCallback: function() {
+        $mobileSubMenu.trigger('close');
+        return true;
+      }
     });
     
   });
