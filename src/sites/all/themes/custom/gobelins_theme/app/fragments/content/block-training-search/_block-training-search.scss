@@ -1,0 +1,15 @@
+.block-training-search{
+	padding:0;
+	background:$color__bg-white;
+	.main-menu--search{
+		input[type="text"]{
+			border:1px solid $color__training--search--border;
+			background-color:$color__bg-gray--light;
+		}
+		button{
+			border:1px solid $color__training--search--border;
+		}
+	}
+	
+
+}
