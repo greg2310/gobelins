@@ -1,0 +1,14 @@
+.aside-gallery {
+  position: fixed;
+  background-color: $color__bg-white;
+  top: 0;
+  bottom: 0;
+  left: calc(100% - 80px);
+  width: 100%;
+}
+
+@media screen and (max-width: 1140px) {
+  .aside-gallery {
+    left: calc(100% - 40px);
+  }
+}

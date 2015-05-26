@@ -14,17 +14,22 @@
 /*#1840e8*/
 /*#ff0000*/
 /*#e90b51*/
-/******************/
-/*****************\
+/************\
 *** Fonts. ***
-\*****************/
+\************/
 /*****************\
 *** Font sizes. ***
 \*****************/
+/***********\
+*** Width ***
+\***********/
 /*****************\
 *** Bootstrap ***
 \*****************/
 /** Padding between columns. Gets divided in half for the left and right.*/
+/**********\
+*** Misc ***
+\**********/
 /* Vendor imports */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -1433,7 +1438,7 @@ select {
   margin: 0 auto;
   padding: 0 20px;
 }
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1220px) {
   /* line 37, ../../app/fragments/layout/_layout.scss */
   .footer__inner,
   .header__bar-top,
@@ -1468,8 +1473,17 @@ select {
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 1140px) {
+@media screen and (min-width: 1221px) {
   /* line 67, ../../app/fragments/layout/_layout.scss */
+  .l-row,
+  .footer,
+  .header {
+    width: auto;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1140px) {
+  /* line 75, ../../app/fragments/layout/_layout.scss */
   .container-overflow {
     overflow: hidden;
     position: relative;
@@ -1943,45 +1957,51 @@ select {
   font-size: 0;
   text-align: left;
 }
-/* line 88, ../../app/fragments/components/header/_menu.scss */
+@media screen and (max-width: 1220px) {
+  /* line 81, ../../app/fragments/components/header/_menu.scss */
+  .main-menu--desktop .list-rubric > ul {
+    width: auto;
+  }
+}
+/* line 92, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .list-rubric > ul > li {
   padding: 20px;
   display: inline-block;
   vertical-align: top;
   width: 25%;
 }
-/* line 94, ../../app/fragments/components/header/_menu.scss */
+/* line 98, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .list-rubric > ul > li img {
   display: block;
 }
-/* line 98, ../../app/fragments/components/header/_menu.scss */
+/* line 102, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .list-rubric > ul > li p {
   margin-bottom: 10px;
   font-size: 1.125rem;
   text-align: center;
   padding-top: 20px;
 }
-/* line 104, ../../app/fragments/components/header/_menu.scss */
+/* line 108, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .list-rubric > ul > li > a {
   text-transform: none;
   color: #323232;
 }
-/* line 110, ../../app/fragments/components/header/_menu.scss */
+/* line 114, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .list-rubric a:hover .rubric__img:after {
   opacity: 1;
 }
-/* line 114, ../../app/fragments/components/header/_menu.scss */
+/* line 118, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .rubric__img {
   position: relative;
   display: block;
   /*margin-bottom:20px;*/
 }
-/* line 119, ../../app/fragments/components/header/_menu.scss */
+/* line 123, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .rubric__img img {
   display: block;
   width: 100%;
 }
-/* line 124, ../../app/fragments/components/header/_menu.scss */
+/* line 128, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .rubric__img:before {
   content: "";
   position: absolute;
@@ -1993,7 +2013,7 @@ select {
           transition: background-color 0.2s ease-out;
   background-color: transparent;
 }
-/* line 134, ../../app/fragments/components/header/_menu.scss */
+/* line 138, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .rubric__img:after {
   content: "";
   position: absolute;
@@ -2004,71 +2024,77 @@ select {
   -webkit-transition: opacity 0.2s ease-out;
           transition: opacity 0.2s ease-out;
 }
-/* line 147, ../../app/fragments/components/header/_menu.scss */
+/* line 151, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .rubric__gobelins a:hover .rubric__img:before {
   background-color: rgba(0, 69, 229, 0.8);
 }
-/* line 152, ../../app/fragments/components/header/_menu.scss */
+/* line 156, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .rubric__animation a:hover .rubric__img:before {
   background-color: rgba(0, 225, 150, 0.8);
 }
-/* line 157, ../../app/fragments/components/header/_menu.scss */
+/* line 161, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .rubric__graphic-design a:hover .rubric__img:before {
   background-color: rgba(58, 242, 206, 0.8);
 }
-/* line 162, ../../app/fragments/components/header/_menu.scss */
+/* line 166, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .rubric__web-design a:hover .rubric__img:before {
   background-color: rgba(99, 0, 255, 0.8);
 }
-/* line 167, ../../app/fragments/components/header/_menu.scss */
+/* line 171, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .rubric__photography a:hover .rubric__img:before {
   background-color: rgba(255, 224, 66, 0.8);
 }
-/* line 172, ../../app/fragments/components/header/_menu.scss */
+/* line 176, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .rubric__game a:hover .rubric__img:before {
   background-color: rgba(24, 64, 232, 0.8);
 }
-/* line 177, ../../app/fragments/components/header/_menu.scss */
+/* line 181, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .rubric__video-audio a:hover .rubric__img:before {
   background-color: rgba(255, 0, 0, 0.7);
 }
-/* line 182, ../../app/fragments/components/header/_menu.scss */
+/* line 186, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .rubric__cross-media a:hover .rubric__img:before {
   background-color: rgba(233, 11, 81, 0.8);
 }
-/* line 186, ../../app/fragments/components/header/_menu.scss */
+/* line 190, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .menu-extra {
   width: 1140px;
   margin: 0 auto;
   padding: 25px 0;
 }
-/* line 191, ../../app/fragments/components/header/_menu.scss */
+@media screen and (max-width: 1220px) {
+  /* line 190, ../../app/fragments/components/header/_menu.scss */
+  .main-menu--desktop .menu-extra {
+    width: auto;
+  }
+}
+/* line 199, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .menu-extra li {
   display: inline-block;
 }
-/* line 194, ../../app/fragments/components/header/_menu.scss */
+/* line 202, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .menu-extra li + li {
   margin-left: 30px;
 }
-/* line 198, ../../app/fragments/components/header/_menu.scss */
+/* line 206, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .menu-extra li:last-child {
   margin-left: 20px;
 }
-/* line 202, ../../app/fragments/components/header/_menu.scss */
+/* line 210, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .menu-extra li a {
   color: #323232;
 }
-/* line 205, ../../app/fragments/components/header/_menu.scss */
+/* line 213, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .menu-extra li .btn-more {
   color: #0045e5;
   font-size: 1rem;
 }
-/* line 209, ../../app/fragments/components/header/_menu.scss */
+/* line 217, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .menu-extra li .btn-more:hover {
   color: #fff;
 }
 
-/* line 217, ../../app/fragments/components/header/_menu.scss */
+/* line 225, ../../app/fragments/components/header/_menu.scss */
 .btn-menu {
   color: #fff;
   font-size: 28px;
@@ -2079,7 +2105,7 @@ select {
   display: none;
 }
 @media screen and (max-width: 1140px) {
-  /* line 217, ../../app/fragments/components/header/_menu.scss */
+  /* line 225, ../../app/fragments/components/header/_menu.scss */
   .btn-menu {
     display: block;
   }
@@ -2225,14 +2251,13 @@ select {
   padding: 25px 20px;
   text-align: left;
 }
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1220px) {
   /* line 1, ../../app/fragments/components/header/_menu__search.scss */
   .main-menu--search {
     width: auto;
-    padding: 20px 0;
   }
 }
-/* line 12, ../../app/fragments/components/header/_menu__search.scss */
+/* line 11, ../../app/fragments/components/header/_menu__search.scss */
 .main-menu--search label {
   text-transform: uppercase;
   display: inline-block;
@@ -2240,7 +2265,7 @@ select {
   vertical-align: top;
 }
 @media screen and (max-width: 1140px) {
-  /* line 12, ../../app/fragments/components/header/_menu__search.scss */
+  /* line 11, ../../app/fragments/components/header/_menu__search.scss */
   .main-menu--search label {
     display: block;
     width: auto;
@@ -2248,7 +2273,7 @@ select {
     margin-bottom: 25px;
   }
 }
-/* line 25, ../../app/fragments/components/header/_menu__search.scss */
+/* line 24, ../../app/fragments/components/header/_menu__search.scss */
 .main-menu--search input[type="text"] {
   background: #f2f2f2 url(../images/icons/icon-search.png) no-repeat 15px center;
   border: 1px solid #e5e5e5;
@@ -2256,24 +2281,24 @@ select {
   font-family: Arial;
   padding-left: 45px;
   vertical-align: middle;
-  width: 450px;
+  width: 400px;
   margin-right: 15px;
   font-size: 0.875rem;
 }
 @media screen and (max-width: 1140px) {
-  /* line 25, ../../app/fragments/components/header/_menu__search.scss */
+  /* line 24, ../../app/fragments/components/header/_menu__search.scss */
   .main-menu--search input[type="text"] {
     display: block;
     width: 100%;
     margin-bottom: 20px;
   }
 }
-/* line 43, ../../app/fragments/components/header/_menu__search.scss */
+/* line 42, ../../app/fragments/components/header/_menu__search.scss */
 .main-menu--search button {
   vertical-align: middle;
 }
 @media screen and (max-width: 1140px) {
-  /* line 43, ../../app/fragments/components/header/_menu__search.scss */
+  /* line 42, ../../app/fragments/components/header/_menu__search.scss */
   .main-menu--search button {
     display: block;
     width: 100%;
@@ -2329,9 +2354,10 @@ body:after {
   -webkit-transition: left 300ms;
           transition: left 300ms;
   margin-left: 0;
+  margin-right: 80px;
 }
 
-/* line 18, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+/* line 19, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
 .aside-tab-mob__wrapper {
   display: none;
   overflow: auto;
@@ -2343,7 +2369,7 @@ body:after {
           transition: left 300ms, width 300ms;
 }
 
-/* line 27, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+/* line 28, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
 .aside-tab-mob {
   padding: 0 20px;
   background-color: #191919;
@@ -2352,19 +2378,19 @@ body:after {
           transition: width 300ms;
 }
 
-/* line 33, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+/* line 34, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
 .aside__logo {
   width: 130px;
   margin: 0 auto;
   padding: 30px 0 40px;
 }
-/* line 38, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+/* line 39, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
 .aside__logo img {
   width: 100%;
   height: auto;
 }
 
-/* line 43, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+/* line 44, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
 .header {
   left: 0;
   -webkit-transition: left 300ms;
@@ -2372,95 +2398,116 @@ body:after {
 }
 
 @media screen and (max-width: 1140px) {
-  /* line 48, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+  /* line 49, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
   .aside-tab-mob__wrapper {
     display: block;
     left: -268px;
   }
 
-  /* line 52, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+  /* line 53, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
   .aside-tab-mob {
     width: 268px;
   }
+
+  /* line 56, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+  .main-wrapper {
+    margin-right: 40px;
+  }
 }
 @media screen and (max-width: 767px) {
-  /* line 57, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+  /* line 61, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
   .aside-tab-mob__wrapper {
     display: block;
     left: -410px;
   }
 
-  /* line 61, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+  /* line 65, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
   .aside-tab-mob {
     width: 410px;
   }
 }
 /* Menu opened styles. */
-/* line 67, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+/* line 71, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
 body.is-open {
   overflow-x: hidden;
 }
 
 @media screen and (max-width: 1140px) {
-  /* line 73, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+  /* line 77, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
   .is-open:after {
     left: 268px;
     opacity: 0.5;
     bottom: 0;
     right: 0;
   }
-  /* line 79, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+  /* line 83, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
   .is-open .aside-tab-mob__wrapper {
     left: 0;
     width: 283px;
   }
-  /* line 83, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+  /* line 87, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
   .is-open .main-wrapper {
     left: 268px;
   }
-  /* line 86, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+  /* line 90, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
   .is-open .header {
     position: fixed;
     left: 268px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 94, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+  /* line 98, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
   .is-open:after {
     left: 410px;
   }
-  /* line 97, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+  /* line 101, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
   .is-open .aside-tab-mob__wrapper {
     left: 0;
     width: 425px;
   }
-  /* line 101, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+  /* line 105, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
   .is-open .main-wrapper {
     left: 410px;
   }
-  /* line 104, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+  /* line 108, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
   .is-open .header {
     position: fixed;
     left: 410px;
   }
 }
 @media screen and (max-width: 1140px) and (min-width: 768px) {
-  /* line 112, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+  /* line 116, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
   .is-open__lev2:after {
     left: 768px;
   }
-  /* line 115, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+  /* line 119, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
   .is-open__lev2 .aside-tab-mob__wrapper {
     width: 783px;
   }
-  /* line 118, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+  /* line 122, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
   .is-open__lev2 .main-wrapper {
     left: 768px;
   }
-  /* line 121, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+  /* line 125, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
   .is-open__lev2 .header {
     position: fixed;
     left: 768px;
+  }
+}
+/* line 1, ../../app/fragments/components/aside-gallery/_aside-gallery.scss */
+.aside-gallery {
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  bottom: 0;
+  left: calc(100% - 80px);
+  width: 100%;
+}
+
+@media screen and (max-width: 1140px) {
+  /* line 11, ../../app/fragments/components/aside-gallery/_aside-gallery.scss */
+  .aside-gallery {
+    left: calc(100% - 40px);
   }
 }
 /* line 4, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
@@ -2495,20 +2542,27 @@ body.is-open {
     margin: 0 auto;
   }
 }
-/* line 34, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+@media screen and (min-width: 1221px) {
+  /* line 24, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+  .breadcrumb {
+    width: auto;
+    margin: 0 auto;
+  }
+}
+/* line 40, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
 .breadcrumb ul {
   padding: 17px 20px;
   width: 1140px;
   margin: 0 auto;
 }
-/* line 39, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+/* line 45, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
 .breadcrumb ul li {
   display: inline-block;
   margin-right: 7px;
   position: relative;
   padding-left: 24px;
 }
-/* line 45, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+/* line 51, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
 .breadcrumb ul li + li:before {
   content: "\2192";
   display: inline-block;
@@ -2517,7 +2571,7 @@ body.is-open {
   top: -1px;
 }
 
-/* line 54, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+/* line 60, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
 .training-animation .breadcrumb,
 .training-graphic-design .breadcrumb,
 .training-web-design .breadcrumb,
@@ -2527,7 +2581,7 @@ body.is-open {
 .training-cross-media .breadcrumb {
   color: #fff;
 }
-/* line 62, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+/* line 68, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
 .training-animation .breadcrumb a,
 .training-graphic-design .breadcrumb a,
 .training-web-design .breadcrumb a,
