@@ -7,7 +7,7 @@
     display:inline-block;
     text-transform:uppercase;
     border-bottom:4px solid $color__text-dark;
-    padding-bottom:5px;
+    padding-bottom:2px;
     margin-bottom:6px;
     font-size:1.0625rem;
     font-family:$font__platform--medium;
@@ -20,4 +20,36 @@
 .filter-trainings__form{
   border-top:1px solid $color__border-gray--light;
   padding-top:40px;
+  
+  .title{
+    text-transform:uppercase;
+    color:$color__text-dark;
+    margin-bottom:10px;
+    font-family:$font__platform--medium;
+    letter-spacing:1px;
+  }
+  .btn-higlight{
+    margin-top:20px;
+  }
+  
+  .col1,
+  .col2,
+  .col3{
+    display:inline-block;
+    vertical-align:top;
+    text-align:left;
+  }
+  .col1,
+  .col2{
+    width:20%;
+  }
+  .col3{
+    width:55%;
+    
+    .col{
+      display:inline-block;
+      width:30%;
+      vertical-align:top;
+    }
+  }
 }

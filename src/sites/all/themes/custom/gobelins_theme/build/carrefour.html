@@ -16,9 +16,10 @@
   </head>
   <body>
     <div class="container-overflow">
-  <aside class="aside-tab-mob js-aside-move">
-  <div class="aside__logo"><img src="images/logo-gobelins.png" alt=""/></div>
-  <nav class="main-menu--mobile">
+  <div class="aside-tab-mob__wrapper js-aside-move">
+  <aside class="aside-tab-mob">
+    <div class="aside__logo"><img src="images/logo-gobelins.png" alt=""/></div>
+    <nav class="main-menu--mobile">
   <ul>
     <li><a href="#">L'école</a></li>
     <li class="js-contentToggle--nav-mob">
@@ -94,12 +95,12 @@
     <li><a href="#">Innovation</a></li>
   </ul>
 </nav>
-  <ul class="menu-sup">
+    <ul class="menu-sup">
   <li class="link-press"><a href="#"><span class="icons-press"></span>Presse</a></li>
   <li class="link-lang"><a href="#">Englih site</a></li>
   <li><a href="#" class="btn-like"><span class="text">Ma sélection </span><span class="text-highlight">3 <span class="icon-heart"></span></span></a></li>
 </ul>
-  <div class="list-shared-icons">
+    <div class="list-shared-icons">
   <h3>nous suivre</h3>
   <ul>
     <li><a href="#" class="icon-facebook"></a></li>
@@ -112,9 +113,10 @@
     <li><a href="#" class="icon-youtube-play"></a></li>
   </ul>
 </div>
-</aside>
+  </aside>
+</div>
   <div class="main-wrapper">
-    <header class="header">
+    <header class="header js-header-sticky">
     <div class="header__bar-top">
       <ul class="menu-sup">
   <li class="link-press"><a href="#"><span class="icons-press"></span>Presse</a></li>
@@ -345,12 +347,71 @@
     <p class="title-category">formations  étudiantes</p>
     <h1 class="title-h1">carrefour dé l’orientation</h1>
     <form action="action" class="filter-trainings__form">
-      <div class="">
-        <select></select>
+      <div class="col1">
+        <p class="title">niveau d’entrée</p>
+        <div class="item-form">
+          <span class="styled-select">
+            <select>
+              <option>op1</option>
+              <option>op2</option>
+              <option>op3</option>
+            </select>
+          </span>
+        </div>
       </div>
-      <div>
-        
+      <div class="col2">
+        <p class="title">statut</p>
+        <div class="item-form">
+          <input type="radio" name="statut" id="radio1" /> 
+          <label for="radio1">Temps plein</label>
+        </div>
+        <div class="item-form">
+          <input type="radio" name="statut" id="radio2" /> 
+          <label for="radio2">Alternance</label>
+        </div>
+        <div class="item-form">
+          <input type="radio" name="statut" id="radio3" /> 
+          <label for="radio3">Indifférent</label>
+        </div>
       </div>
+      <div class="col3">
+        <p class="title">domaines de formation</p>
+        <div class="col">
+          <div class="item-form">
+            <input type="checkbox" name="" id="checkbox1" /> 
+            <label for="checkbox1">Toutes les domaines</label>
+          </div>
+          <div class="item-form">
+            <input type="checkbox" name="" id="checkbox2" /> 
+            <label for="checkbox2">Design graphique</label>
+          </div>
+          <div class="item-form">
+            <input type="checkbox" name="" id="checkbox3" /> 
+            <label for="checkbox3">Design interactif / web</label>
+          </div>
+        </div>
+        <div class="col">
+          <div class="item-form">
+            <input type="checkbox" name="" id="checkbox4" /> 
+            <label for="checkbox4">Cinéma d'animation</label>
+          </div>
+          <div class="item-form">
+            <input type="checkbox" name="" id="checkbox5" /> 
+            <label for="checkbox5">Photographie</label>
+          </div>
+          <div class="item-form">
+            <input type="checkbox" name="" id="checkbox6" /> 
+            <label for="checkbox6">Communication & Industries graphiques</label>
+          </div>
+        </div>
+        <div class="col">
+          <div class="item-form">
+            <input type="checkbox" name="" id="checkbox7" /> 
+            <label for="checkbox7">Vidéo / Son</label>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn-higlight">voir les formations</button>
     </form>
   </div>
 </div>

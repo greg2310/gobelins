@@ -4,128 +4,123 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
 
   /* require app plugins */
   require('./app/menu.js');
+  require('./app/tabs-accordion.js');
 
 })();
 
-},{"./app/menu.js":2}],2:[function(require,module,exports){
+},{"./app/menu.js":2,"./app/tabs-accordion.js":3}],2:[function(require,module,exports){
 (function(){
   'use strict';
 
-  /* require jQuery plugins */
+  /* require plugins */
   var $ = require('jquery');
+  require('../bower/jquery.contenttoggle.js');
+  require('../bower/jquery.sticky.js');
 
   $(function(){
-    //var hash = window.location.hash;
-
-    // Init contentToggle plugin.
-    require('../plugins/jquery.contentToggle.js');
-
-    // Main nav contentToggle initialization.
+     var $body = $('body');
+     var $subMenu = $('.js-contentToggle--nav-lev3');
+     var $mobileSubMenu = $('.js-contentToggle--nav-mob');
+     
+     /********** Menu sub-menu. **********/
+    $subMenu.contentToggle({
+      contentSelector: '.js-contentToggle__content-lev3',
+      elementClass:'is-open-lev3',
+      toggleOptions: {
+        duration: 200
+      }
+    });
     $('.js-contentToggle--nav').contentToggle({
       globalClose: true,
       beforeCallback: function() {
-        $('.js-contentToggle--nav-lev3').trigger('close');
+        $subMenu.trigger('close');
         return true;
       },
       toggleOptions: {
         duration: 200
       }
     });
-    $('.js-contentToggle--nav-lev3').contentToggle({
-      contentSelector: '.js-contentToggle__content-lev3',
-      elementClass :'is-open-lev3',
-      toggleOptions: {
-        duration: 200
-      }
-    });
     
-    /**********menu hover*************/
+    
+    /********** Menu hover. **********/
     $('.main-menu--desktop').find('.lev1').hover(function(){
       $(this).siblings().children('a').stop().animate({'opacity' : '0.5'}, 300);
-      
     }, function(){
-        $(this).siblings().children('a').stop().animate({'opacity' : '1'}, 300);
-      
-    });
-    
-    /**************** main menu sticky ********************/
-    
-    /*utiliser jquery.unevent*/
-    
-    /*var headerHeight = $('.header').height();
-    var headerStickyHeight = $('.header--sticky').height();
-    console.log(headerHeight);
-    
-    var scrollPos;
-    var lastScrollPos = $(window).scrollTop();
-    
-    $(window).scroll(function(){ 
-      scrollPos = $(window).scrollTop();
-      if($(window).scrollTop() > headerHeight){
-        console.log('go');
-        $('.header').addClass('header--sticky').stop().animate({'top' : - headerHeight + 'px'}, 200);
-      }
-      if(lastScrollPos > scrollPos){
-        console.log('scrol To Top');
-        $('.header').stop().animate({'top' : 0}, 300);
-      }else{
-        $('.header').stop().animate({'top' : - headerStickyHeight + 'px'}, 100);
-      }
-      lastScrollPos = scrollPos;
-    });*/
-    
-    /*************menu mob move*************************/
-    var menuWidth = $('.js-aside-move').innerWidth();
-    var menuLev2Width = $(window).width() - menuWidth;
-    
-    $( window ).resize(function() {
-      $('.main-menu--mobile').find('.lev2').css({'width': menuLev2Width + 'px' });
+      $(this).siblings().children('a').stop().animate({'opacity' : '1'}, 300);
     });
     
     
-    $('.js-btn-menu-mob').click(function(){
-      if($(this).closest('.header').hasClass('is-moved')){
-        $(this).closest('.header').removeClass('is-moved').next().removeClass('is-locked');
-        $('.js-aside-move')
-        .animate({'left': - menuWidth + 'px'}, 300)
-        .next()
-        .animate({'left': 0 + 'px'}, 300);
-      }else{
-        $(this).closest('.header').addClass('is-moved').next().addClass('is-locked');
-        $('.js-aside-move')
-          .animate({'left': 0 + 'px'}, 300)
-          .next()
-          .css({'position' : 'relative'})
-          .animate({'left': menuWidth + 'px'}, 300);
-      }
-    });
+    /********** Menu sticky. **********/
+    $('.js-header-sticky').sticky();
     
-    // Nav mob contentToggle initialization.
-    $('.js-contentToggle--nav-mob').contentToggle({
-      //globalClose: true,
+    
+    /********** Menu mobile sub-menu. **********/
+    $mobileSubMenu.contentToggle({
+      globalClose: true,
       toggleOptions: {
-        duration: 300
+        duration: 0,
+        complete: function() {
+          var isOpen = $(this).triggerHandler('isOpen');
+          $body.toggleClass('is-open__lev2', isOpen);
+        }
       },
       toggleProperties: {
-        width: 'toggle'        
+        width: 'toggle'
       }
     });
     $('.js-menu-lev2-close').click(function(){
       $(this).closest('.js-contentToggle--nav-mob').trigger('close');
     });
+    
+    
+    /********** Menu mobile. **********/
+    $('body').contentToggle({
+      defaultState: 'close',
+      globalClose: true,
+      triggerSelector: '.js-btn-menu-mob',
+      contentSelector: '.js-aside-move',
+      toggleProperties: {},
+      beforeCallback: function() {
+        $mobileSubMenu.trigger('close');
+        return true;
+      }
+    });
+    
   });
-
 })();
 
-},{"../plugins/jquery.contentToggle.js":3,"jquery":"jquery"}],3:[function(require,module,exports){
+},{"../bower/jquery.contenttoggle.js":4,"../bower/jquery.sticky.js":5,"jquery":"jquery"}],3:[function(require,module,exports){
+(function(){
+  'use strict';
+
+  /* require plugins */
+  var $ = require('jquery');
+  require('../bower/jquery.contenttoggle.js');
+
+  $(function(){
+    $('.js-contenttoggle--tabs-accordion').contentToggle({
+      triggerSelectorContext: false,
+      contentSelectorContext: false,
+      beforeCallback: function(event) {
+        return !(this.isOpen && event.type == 'click');
+      }
+    });
+  });
+})();
+
+},{"../bower/jquery.contenttoggle.js":4,"jquery":"jquery"}],4:[function(require,module,exports){
 (function($){
   'use strict';
+
+  /* Plugin constants. */
+  var ENTER_KEY_CODE = 13;
+  var SPACE_KEY_CODE = 32;
 
   /* Plugin variables. */
   var pluginName;
   var defaultOptions = {};
   var $global = $(document);
-  var globalEvent = navigator.userAgent.match(/iPad|iPhone/i)? 'touchstart' : 'click';
+  var isIthing = navigator.userAgent.match(/iPad|iPhone/i);
   var uid = 0;
 
   /**
@@ -163,6 +158,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
 
   /* Plugin default options. */
   defaultOptions = {
+    defaultState: null,
     globalClose: false,
     independent: false,
     beforeCallback: null,
@@ -186,6 +182,14 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
    */
   Plugin.prototype.setup = function() {
     this.setupDataOptions();
+
+    // Parse JSON options.
+    if (typeof this.options.toggleProperties == 'string') {
+      this.options.toggleProperties = JSON.parse(this.options.toggleProperties);
+    }
+    if (typeof this.options.toggleOptions == 'string') {
+      this.options.toggleOptions = JSON.parse(this.options.toggleOptions);
+    }
 
     // Get trigger elements.
     if (this.options.triggerSelectorContext) {
@@ -233,36 +237,71 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
    * Bind events.
    */
   Plugin.prototype.bind = function() {
-    // Bind custom events.
-    this.$element.on('toggle.' + pluginName, $.proxy(this.toggle, this, null));
-    this.$element.on('open.' + pluginName, $.proxy(this.toggle, this, true));
-    this.$element.on('close.' + pluginName, $.proxy(this.toggle, this, false));
-    this.$element.on('destroy.' + pluginName, this.destroy.bind(this));
+    var eventName = (isIthing && this.options.globalClose)? 'touchstart': 'click';
+    var $all = this.$element.add(this.$triggers).add(this.$contents);
 
-    // Bind native events.
-    this.$triggers.on('click.' + pluginName, function(event){
+    // Bind custom events on all elements.
+    $all.on('destroy.' + pluginName, this.destroy.bind(this));
+    $all.on('toggle.' + pluginName, $.proxy(this.toggle, this, null));
+    $all.on('close.' + pluginName, $.proxy(this.toggle, this, false));
+    $all.on('open.' + pluginName, $.proxy(this.toggle, this, true));
+    $all.on('isOpen.' + pluginName, function(){
+      return this.isOpen;
+    }.bind(this));
+
+    // Bind native events on triggers.
+    this.$triggers.on(eventName + '.' + pluginName, function(event){
       event.preventDefault();
-      event.stopPropagation();
       this.toggle(null, event);
     }.bind(this));
-    this.$triggers.on('dblclick.' + pluginName, function(event){
-      event.preventDefault();
-    });
-    this.$contents.on('click.' + pluginName, function(event){
+    this.$triggers.on('keydown.' + pluginName, function(event){
+      if (event.keyCode == ENTER_KEY_CODE || event.keyCode == SPACE_KEY_CODE) {
+        event.preventDefault();
+        this.toggle(null, event);
+      }
+    }.bind(this));
+
+    // Bind native events on contents (avoid triggers click event).
+    this.$contents.on(eventName + '.' + pluginName, function(event){
       event.stopPropagation();
     });
-    if (this.options.globalClose) {
-      this.$element.on(globalEvent + '.' + pluginName, function(event){
-        event.stopPropagation();
-      });
-    }
   };
 
   /**
    * Initialize default plugin state.
    */
   Plugin.prototype.init = function() {
-    this.isOpen = this.$contents.is(':visible');
+    // Init triggers id atttribute.
+    this.tid = [];
+    this.$triggers.each($.proxy(this.initId, this, this.tid, 'contentToggle__trigger'));
+
+    // Init contents id atttribute.
+    this.cid = [];
+    this.$contents.each($.proxy(this.initId, this, this.cid, 'contentToggle__content'));
+
+    // Init ariacontrols atttribute.
+    this.$triggers.attr('role', 'button');
+    this.$triggers.attr('aria-controls', this.cid.join(' '));
+
+    // Default plugin state.
+    if ($.inArray(this.options.defaultState, ['open', 'close']) !== -1) {
+      this.$element.trigger(this.options.defaultState + '.' + pluginName);
+    } else {
+      this.isOpen = this.$contents.is(':visible');
+      this.update();
+    }
+  };
+
+  /**
+   * Initialize element id.
+   */
+  Plugin.prototype.initId = function(ids, prefix, index, element) {
+    var $element = $(element);
+    ids[index] = $element.attr('id');
+    if (!ids[index]) {
+      ids[index] = prefix + '-' + this.uid + '-' + index;
+      $element.attr('id', ids[index]);
+    }
   };
 
   /**
@@ -275,6 +314,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
    */
   Plugin.prototype.toggle = function(state, event) {
     event.stopPropagation();
+    
     if (typeof state != 'boolean') {
       state = !this.isOpen;
     }
@@ -282,8 +322,6 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
     this.$currentTrigger = null;
     if (this.$triggers.is(event.currentTarget)) {
       this.$currentTrigger = $(event.currentTarget);
-    } else if(this.$triggers.is(event.target)) {
-      this.$currentTrigger = $(event.target);
     }
 
     if (!this.options.beforeCallback ||
@@ -301,12 +339,14 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
    * Open content.
    */
   Plugin.prototype.open = function() {
-    if (!this.isOpen) {
+    var eventName;
+    if (this.isOpen !== true) {
       this.isOpen = true;
       this.do();
       this.closeAll(true);
       if (this.options.globalClose) {
-        $global.on(globalEvent + '.' + pluginName + this.uid, function(){
+        eventName = isIthing? 'touchstart': 'click';
+        $global.on(eventName + '.' + pluginName + this.uid, function(){
           this.closeAll();
         }.bind(this));
       }
@@ -317,7 +357,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
    * Close content.
    */
   Plugin.prototype.close = function() {
-    if (this.isOpen) {
+    if (this.isOpen !== false) {
       this.isOpen = false;
       this.do();
       $global.off('.' + pluginName + this.uid);
@@ -343,25 +383,45 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
    * Perform toggle action.
    */
   Plugin.prototype.do = function() {
-    if (this.options.elementClass) {
-      this.$element.toggleClass(this.options.elementClass, this.isOpen);
+    this.update();
+    if (this.isOpen ^ this.$contents.is(':visible')) {
+      this.$contents.stop().animate(
+        this.options.toggleProperties,
+        this.options.toggleOptions
+      );
     }
-    if (this.options.triggerClass && this.$currentTrigger) {
-      this.$currentTrigger.toggleClass(this.options.triggerClass, this.isOpen);
+  };
+
+  /**
+   * Update classes and aria data.
+   */
+  Plugin.prototype.update = function() {
+    if (this.isOpen) {
+      this.$element.addClass(this.options.elementClass);
+      this.$contents.attr('aria-hidden', false);
+      this.$triggers.attr('aria-expanded', true);
+      if (this.$currentTrigger) {
+        this.$currentTrigger.addClass(this.options.triggerClass);
+      } else {
+        this.$triggers.addClass(this.options.triggerClass);
+      }
+    } else {
+      this.$element.removeClass(this.options.elementClass);
+      this.$contents.attr('aria-hidden', true);
+      this.$triggers.attr('aria-expanded', false);
+      this.$triggers.removeClass(this.options.triggerClass);
     }
-    this.$contents.stop().animate(
-      this.options.toggleProperties,
-      this.options.toggleOptions
-    );
   };
 
   /**
    * Destroy events.
    */
   Plugin.prototype.destroy = function() {
+    this.$element.removeData(pluginName);
     this.$element.off('.' + pluginName);
     this.$triggers.off('.' + pluginName);
     this.$contents.off('.' + pluginName);
+    $global.off('.' + pluginName + this.uid);
   };
 
   /********** End plugin specific code **********/
@@ -376,6 +436,179 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
       }
     });
   };
+})(jQuery);
+
+
+},{}],5:[function(require,module,exports){
+// Sticky Plugin v1.0.0 for jQuery
+// =============
+// Author: Anthony Garand
+// Improvements by German M. Bravo (Kronuz) and Ruud Kamphuis (ruudk)
+// Improvements by Leonardo C. Daronco (daronco)
+// Created: 2/14/2011
+// Date: 2/12/2012
+// Website: http://labs.anthonygarand.com/sticky
+// Description: Makes an element on the page stick on the screen as you scroll
+//       It will only set the 'top' and 'position' of your element, you
+//       might need to adjust the width in some cases.
+
+(function($) {
+  var defaults = {
+      topSpacing: 0,
+      bottomSpacing: 0,
+      className: 'is-sticky',
+      wrapperClassName: 'sticky-wrapper',
+      center: false,
+      getWidthFrom: '',
+      responsiveWidth: false
+    },
+    $window = $(window),
+    $document = $(document),
+    sticked = [],
+    windowHeight = $window.height(),
+    scroller = function() {
+      var scrollTop = $window.scrollTop(),
+        documentHeight = $document.height(),
+        dwh = documentHeight - windowHeight,
+        extra = (scrollTop > dwh) ? dwh - scrollTop : 0;
+
+      for (var i = 0; i < sticked.length; i++) {
+        var s = sticked[i],
+          elementTop = s.stickyWrapper.offset().top,
+          etse = elementTop - s.topSpacing - extra;
+
+        if (scrollTop <= etse) {
+          if (s.currentTop !== null) {
+            s.stickyElement
+              .css('position', '')
+              .css('top', '');
+            s.stickyElement.trigger('sticky-end', [s]).parent().removeClass(s.className);
+            s.currentTop = null;
+          }
+        }
+        else {
+          var newTop = documentHeight - s.stickyElement.outerHeight()
+            - s.topSpacing - s.bottomSpacing - scrollTop - extra;
+          if (newTop < 0) {
+            newTop = newTop + s.topSpacing;
+          } else {
+            newTop = s.topSpacing;
+          }
+          if (s.currentTop != newTop) {
+            s.stickyElement
+              .css('position', 'fixed')
+              .css('top', newTop);
+
+            if (typeof s.getWidthFrom !== 'undefined') {
+              s.stickyElement.css('width', $(s.getWidthFrom).width());
+            }
+
+            s.stickyElement.trigger('sticky-start', [s]).parent().addClass(s.className);
+            s.currentTop = newTop;
+          }
+        }
+      }
+    },
+    resizer = function() {
+      windowHeight = $window.height();
+
+      for (var i = 0; i < sticked.length; i++) {
+        var s = sticked[i];
+        if (typeof s.getWidthFrom !== 'undefined' && s.responsiveWidth === true) {
+          s.stickyElement.css('width', $(s.getWidthFrom).width());
+        }
+      }
+    },
+    methods = {
+      init: function(options) {
+        var o = $.extend({}, defaults, options);
+        return this.each(function() {
+          var stickyElement = $(this);
+
+          var stickyId = stickyElement.attr('id');
+          var wrapperId = stickyId ? stickyId + '-' + defaults.wrapperClassName : defaults.wrapperClassName 
+          var wrapper = $('<div></div>')
+            .attr('id', stickyId + '-sticky-wrapper')
+            .addClass(o.wrapperClassName);
+          stickyElement.wrapAll(wrapper);
+
+          if (o.center) {
+            stickyElement.parent().css({width:stickyElement.outerWidth(),marginLeft:"auto",marginRight:"auto"});
+          }
+
+          if (stickyElement.css("float") == "right") {
+            stickyElement.css({"float":"none"}).parent().css({"float":"right"});
+          }
+
+          var stickyWrapper = stickyElement.parent();
+          stickyWrapper.css('height', stickyElement.outerHeight());
+          sticked.push({
+            topSpacing: o.topSpacing,
+            bottomSpacing: o.bottomSpacing,
+            stickyElement: stickyElement,
+            currentTop: null,
+            stickyWrapper: stickyWrapper,
+            className: o.className,
+            getWidthFrom: o.getWidthFrom,
+            responsiveWidth: o.responsiveWidth
+          });
+        });
+      },
+      update: scroller,
+      unstick: function(options) {
+        return this.each(function() {
+          var unstickyElement = $(this);
+
+          var removeIdx = -1;
+          for (var i = 0; i < sticked.length; i++)
+          {
+            if (sticked[i].stickyElement.get(0) == unstickyElement.get(0))
+            {
+                removeIdx = i;
+            }
+          }
+          if(removeIdx != -1)
+          {
+            sticked.splice(removeIdx,1);
+            unstickyElement.unwrap();
+            unstickyElement.removeAttr('style');
+          }
+        });
+      }
+    };
+
+  // should be more efficient than using $window.scroll(scroller) and $window.resize(resizer):
+  if (window.addEventListener) {
+    window.addEventListener('scroll', scroller, false);
+    window.addEventListener('resize', resizer, false);
+  } else if (window.attachEvent) {
+    window.attachEvent('onscroll', scroller);
+    window.attachEvent('onresize', resizer);
+  }
+
+  $.fn.sticky = function(method) {
+    if (methods[method]) {
+      return methods[method].apply(this, Array.prototype.slice.call(arguments, 1));
+    } else if (typeof method === 'object' || !method ) {
+      return methods.init.apply( this, arguments );
+    } else {
+      $.error('Method ' + method + ' does not exist on jQuery.sticky');
+    }
+  };
+
+  $.fn.unstick = function(method) {
+    if (methods[method]) {
+      return methods[method].apply(this, Array.prototype.slice.call(arguments, 1));
+    } else if (typeof method === 'object' || !method ) {
+      return methods.unstick.apply( this, arguments );
+    } else {
+      $.error('Method ' + method + ' does not exist on jQuery.sticky');
+    }
+
+  };
+  $(function() {
+    setTimeout(scroller, 0);
+  });
 })(jQuery);
 
 },{}],"jquery":[function(require,module,exports){

@@ -1,11 +1,15 @@
 (function($){
   'use strict';
 
+  /* Plugin constants. */
+  var ENTER_KEY_CODE = 13;
+  var SPACE_KEY_CODE = 32;
+
   /* Plugin variables. */
   var pluginName;
   var defaultOptions = {};
   var $global = $(document);
-  var globalEvent = navigator.userAgent.match(/iPad|iPhone/i)? 'touchstart' : 'click';
+  var isIthing = navigator.userAgent.match(/iPad|iPhone/i);
   var uid = 0;
 
   /**
@@ -43,6 +47,7 @@
 
   /* Plugin default options. */
   defaultOptions = {
+    defaultState: null,
     globalClose: false,
     independent: false,
     beforeCallback: null,
@@ -66,6 +71,14 @@
    */
   Plugin.prototype.setup = function() {
     this.setupDataOptions();
+
+    // Parse JSON options.
+    if (typeof this.options.toggleProperties == 'string') {
+      this.options.toggleProperties = JSON.parse(this.options.toggleProperties);
+    }
+    if (typeof this.options.toggleOptions == 'string') {
+      this.options.toggleOptions = JSON.parse(this.options.toggleOptions);
+    }
 
     // Get trigger elements.
     if (this.options.triggerSelectorContext) {
@@ -113,36 +126,71 @@
    * Bind events.
    */
   Plugin.prototype.bind = function() {
-    // Bind custom events.
-    this.$element.on('toggle.' + pluginName, $.proxy(this.toggle, this, null));
-    this.$element.on('open.' + pluginName, $.proxy(this.toggle, this, true));
-    this.$element.on('close.' + pluginName, $.proxy(this.toggle, this, false));
-    this.$element.on('destroy.' + pluginName, this.destroy.bind(this));
+    var eventName = (isIthing && this.options.globalClose)? 'touchstart': 'click';
+    var $all = this.$element.add(this.$triggers).add(this.$contents);
 
-    // Bind native events.
-    this.$triggers.on('click.' + pluginName, function(event){
+    // Bind custom events on all elements.
+    $all.on('destroy.' + pluginName, this.destroy.bind(this));
+    $all.on('toggle.' + pluginName, $.proxy(this.toggle, this, null));
+    $all.on('close.' + pluginName, $.proxy(this.toggle, this, false));
+    $all.on('open.' + pluginName, $.proxy(this.toggle, this, true));
+    $all.on('isOpen.' + pluginName, function(){
+      return this.isOpen;
+    }.bind(this));
+
+    // Bind native events on triggers.
+    this.$triggers.on(eventName + '.' + pluginName, function(event){
       event.preventDefault();
-      event.stopPropagation();
       this.toggle(null, event);
     }.bind(this));
-    this.$triggers.on('dblclick.' + pluginName, function(event){
-      event.preventDefault();
-    });
-    this.$contents.on('click.' + pluginName, function(event){
+    this.$triggers.on('keydown.' + pluginName, function(event){
+      if (event.keyCode == ENTER_KEY_CODE || event.keyCode == SPACE_KEY_CODE) {
+        event.preventDefault();
+        this.toggle(null, event);
+      }
+    }.bind(this));
+
+    // Bind native events on contents (avoid triggers click event).
+    this.$contents.on(eventName + '.' + pluginName, function(event){
       event.stopPropagation();
     });
-    if (this.options.globalClose) {
-      this.$element.on(globalEvent + '.' + pluginName, function(event){
-        event.stopPropagation();
-      });
-    }
   };
 
   /**
    * Initialize default plugin state.
    */
   Plugin.prototype.init = function() {
-    this.isOpen = this.$contents.is(':visible');
+    // Init triggers id atttribute.
+    this.tid = [];
+    this.$triggers.each($.proxy(this.initId, this, this.tid, 'contentToggle__trigger'));
+
+    // Init contents id atttribute.
+    this.cid = [];
+    this.$contents.each($.proxy(this.initId, this, this.cid, 'contentToggle__content'));
+
+    // Init ariacontrols atttribute.
+    this.$triggers.attr('role', 'button');
+    this.$triggers.attr('aria-controls', this.cid.join(' '));
+
+    // Default plugin state.
+    if ($.inArray(this.options.defaultState, ['open', 'close']) !== -1) {
+      this.$element.trigger(this.options.defaultState + '.' + pluginName);
+    } else {
+      this.isOpen = this.$contents.is(':visible');
+      this.update();
+    }
+  };
+
+  /**
+   * Initialize element id.
+   */
+  Plugin.prototype.initId = function(ids, prefix, index, element) {
+    var $element = $(element);
+    ids[index] = $element.attr('id');
+    if (!ids[index]) {
+      ids[index] = prefix + '-' + this.uid + '-' + index;
+      $element.attr('id', ids[index]);
+    }
   };
 
   /**
@@ -155,6 +203,7 @@
    */
   Plugin.prototype.toggle = function(state, event) {
     event.stopPropagation();
+    
     if (typeof state != 'boolean') {
       state = !this.isOpen;
     }
@@ -162,8 +211,6 @@
     this.$currentTrigger = null;
     if (this.$triggers.is(event.currentTarget)) {
       this.$currentTrigger = $(event.currentTarget);
-    } else if(this.$triggers.is(event.target)) {
-      this.$currentTrigger = $(event.target);
     }
 
     if (!this.options.beforeCallback ||
@@ -181,12 +228,14 @@
    * Open content.
    */
   Plugin.prototype.open = function() {
-    if (!this.isOpen) {
+    var eventName;
+    if (this.isOpen !== true) {
       this.isOpen = true;
       this.do();
       this.closeAll(true);
       if (this.options.globalClose) {
-        $global.on(globalEvent + '.' + pluginName + this.uid, function(){
+        eventName = isIthing? 'touchstart': 'click';
+        $global.on(eventName + '.' + pluginName + this.uid, function(){
           this.closeAll();
         }.bind(this));
       }
@@ -197,7 +246,7 @@
    * Close content.
    */
   Plugin.prototype.close = function() {
-    if (this.isOpen) {
+    if (this.isOpen !== false) {
       this.isOpen = false;
       this.do();
       $global.off('.' + pluginName + this.uid);
@@ -223,25 +272,45 @@
    * Perform toggle action.
    */
   Plugin.prototype.do = function() {
-    if (this.options.elementClass) {
-      this.$element.toggleClass(this.options.elementClass, this.isOpen);
+    this.update();
+    if (this.isOpen ^ this.$contents.is(':visible')) {
+      this.$contents.stop().animate(
+        this.options.toggleProperties,
+        this.options.toggleOptions
+      );
     }
-    if (this.options.triggerClass && this.$currentTrigger) {
-      this.$currentTrigger.toggleClass(this.options.triggerClass, this.isOpen);
+  };
+
+  /**
+   * Update classes and aria data.
+   */
+  Plugin.prototype.update = function() {
+    if (this.isOpen) {
+      this.$element.addClass(this.options.elementClass);
+      this.$contents.attr('aria-hidden', false);
+      this.$triggers.attr('aria-expanded', true);
+      if (this.$currentTrigger) {
+        this.$currentTrigger.addClass(this.options.triggerClass);
+      } else {
+        this.$triggers.addClass(this.options.triggerClass);
+      }
+    } else {
+      this.$element.removeClass(this.options.elementClass);
+      this.$contents.attr('aria-hidden', true);
+      this.$triggers.attr('aria-expanded', false);
+      this.$triggers.removeClass(this.options.triggerClass);
     }
-    this.$contents.stop().animate(
-      this.options.toggleProperties,
-      this.options.toggleOptions
-    );
   };
 
   /**
    * Destroy events.
    */
   Plugin.prototype.destroy = function() {
+    this.$element.removeData(pluginName);
     this.$element.off('.' + pluginName);
     this.$triggers.off('.' + pluginName);
     this.$contents.off('.' + pluginName);
+    $global.off('.' + pluginName + this.uid);
   };
 
   /********** End plugin specific code **********/
@@ -257,3 +326,4 @@
     });
   };
 })(jQuery);
+

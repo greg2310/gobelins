@@ -15,6 +15,8 @@
 @import "includes/fonts";
 @import "includes/fontello";
 @import "includes/helpers";
+@import "includes/forms";
+@import "includes/display";
 
 /* Layout blocks partials */
 @import "../fragments/layout/layout";
@@ -41,9 +43,10 @@
 @import "../fragments/content/block-training-presentation/block-training-presentation";
 @import "../fragments/content/block-training-banner/block-training-banner";
 @import "../fragments/content/block-training-details/block-training-details";
+@import "../fragments/content/block-training-admission/block-training-admission";
+@import "../fragments/content/block-training-professions/block-training-professions";
 @import "../fragments/content/block-training-search/block-training-search";
 @import "../fragments/content/block-training-type/block-training-type";
 @import "../fragments/content/block-training-results/block-training-results";
 @import "../fragments/content/results-filter-training/results-filter-training";
 @import "../fragments/content/block-rapid-access/block-rapid-access";
-

@@ -11,8 +11,8 @@ module.exports = function(grunt) {
   defaultOptions = {
     devPath        : 'app',
     stagingPath    : 'build',
-    livereloadPort : '35729',
-    connectPort    : '9001',
+    livereloadPort : 35729,
+    connectPort    : 9001,
     siteDomain     : 'localhost',
     modernizrPath  : 'bower_components/modernizr/modernizr.js',
     copyFiles      : []
@@ -82,7 +82,8 @@ module.exports = function(grunt) {
         'floats'                      : false,
         'adjoining-classes'           : false,
         'ids'                         : false,
-        'fallback-colors'             : false
+        'fallback-colors'             : false,
+        'important'                   : false
       },
       app : {
         src : [options.stagingPath + '/css/*.css', '!' + options.stagingPath + '/css/*.min.css']
@@ -139,7 +140,7 @@ module.exports = function(grunt) {
       },
       app : {
         files: {
-          src: [options.devPath + '/js/**/*.js', options.devPath + '/js/*.js', '!' + options.devPath + '/js/vendor/*.js', '!' + options.devPath + '/js/jstemplates/*.js']
+          src: [options.devPath + '/js/**/*.js', options.devPath + '/js/*.js', '!' + options.devPath + '/js/vendor/*.js', '!' + options.devPath + '/js/jstemplates/*.js', '!' + options.devPath + '/js/bower/*.js']
         }
       }
     },
