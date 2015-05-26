@@ -2,7 +2,7 @@
   position:relative;
   margin-top:48px;
   
-  @media screen and (max-width: 1140px){
+  @media screen and (max-width: $width__m){
     display:none;
   }
   
@@ -79,10 +79,14 @@
   .list-rubric{
     border-bottom:1px solid $color__border-gray--light;
     & > ul{
-      width:1140px;
+      width:$width__m;
       margin:0 auto;
       font-size:0;
       text-align:left;
+      
+      @media screen and (max-width: $width__l){
+        width: auto;
+      }
     }
     
     & > ul > li{
@@ -184,9 +188,13 @@
     }
   }
   .menu-extra{
-    width:1140px;
+    width:$width__m;
     margin:0 auto;
     padding:25px 0;
+    
+    @media screen and (max-width: $width__l){
+      width: auto;
+    }
     
     li{
       display:inline-block;
@@ -223,7 +231,7 @@
   left:40px;
   display:none;
   
-  @media screen and (max-width: 1140px){
+  @media screen and (max-width: $width__m){
     display:block;
   }
 }

@@ -22,7 +22,7 @@
   font-size:1rem;
   text-align:left;
   
-  @media screen and (max-width: 1140px) {
+  @media screen and (max-width: $width__m) {
     display:block;
     width:auto;
   }
@@ -37,33 +37,41 @@
 .footer__inner,
 .header__bar-top,
 .l-row__inner{
-  width:1140px;
+  width:$width__m;
   margin:0 auto;
   padding:0 20px;
   
-  @media screen and (max-width: 1140px) {
+  @media screen and (max-width: $width__l) {
     width:auto;
   }
 }
 .l-row{
   padding:70px 0;
   
-  @media screen and (max-width: 1140px) {
+  @media screen and (max-width: $width__m) {
     padding:50px 0;
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $width__xs - 1px) {
     padding:40px 0;
   }
 }
-@media screen and (min-width: 1401px) {
+@media screen and (min-width: $width__xl + 1px) {
   .l-row,
   .footer,
   .header{
-    width:1400px;
+    width:$width__xl;
     margin:0 auto;
   }
 }
-@media screen and (max-width: 1140px) {
+@media screen and (min-width: $width__l + 1px) {
+  .l-row,
+  .footer,
+  .header{
+    width:auto;
+    margin:0 auto;
+  }
+}
+@media screen and (max-width: $width__m) {
   .container-overflow{
     overflow:hidden;
     position:relative;

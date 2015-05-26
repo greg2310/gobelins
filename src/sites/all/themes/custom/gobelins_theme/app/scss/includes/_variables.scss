@@ -1,7 +1,6 @@
 /*************\
 *** Colors. ***
 \*************/
-
 $color__blue-gobelins : rgba(0, 69, 229, 1); /*#0045e5*/
 $color__blue-gobelins--08 : rgba(0, 69, 229, 0.8);
 $color__bg-gray--darck     : rgba(25, 25, 25, 1); /*#191919*/
@@ -38,21 +37,33 @@ $color__slideshow--training:#333333;
 $color__border__slide:#07d38f;
 
 
-/******************/
 
-$animation__params: .2s ease-out;
-
-/*****************\
+/************\
 *** Fonts. ***
-\*****************/
+\************/
 $font__platform--medium : "Platform-Medium";
 $font__platform--light : "Platform-Light";
 $font__neuzeit : "Neuzeit";
+
+
 
 /*****************\
 *** Font sizes. ***
 \*****************/
 $font-size__base : 16px;
+
+
+
+/***********\
+*** Width ***
+\***********/
+$width__xl: 1400px;
+$width__l: 1220px;
+$width__m: 1140px;
+$width__s: 1024px;
+$width__xs: 768px;
+
+
 
 /*****************\
 *** Bootstrap ***
@@ -63,3 +74,11 @@ $grid-gutter-width-lg: 40px;
 $grid-gutter-width-md: 30px;
 $grid-gutter-width-sm: 20px;
 $grid-gutter-width-xs: 10px;
+
+
+
+/**********\
+*** Misc ***
+\**********/
+
+$animation__params: .2s ease-out;
