@@ -510,9 +510,6 @@ th {
 /* line 43, ../../app/scss/bower/_owl.carousel.scss */
 .owl-height {
   -webkit-transition: height 500ms ease-in-out;
-  -moz-transition: height 500ms ease-in-out;
-  -ms-transition: height 500ms ease-in-out;
-  -o-transition: height 500ms ease-in-out;
   transition: height 500ms ease-in-out;
 }
 
@@ -648,15 +645,13 @@ th {
 .owl-carousel .owl-item .owl-lazy {
   opacity: 0;
   -webkit-transition: opacity 400ms ease;
-  -moz-transition: opacity 400ms ease;
-  -ms-transition: opacity 400ms ease;
-  -o-transition: opacity 400ms ease;
   transition: opacity 400ms ease;
 }
 
 /* line 157, ../../app/scss/bower/_owl.carousel.scss */
 .owl-carousel .owl-item img {
-  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 
 /* 
@@ -683,18 +678,12 @@ th {
   z-index: 1;
   -webkit-backface-visibility: hidden;
   -webkit-transition: scale 100ms ease;
-  -moz-transition: scale 100ms ease;
-  -ms-transition: scale 100ms ease;
-  -o-transition: scale 100ms ease;
   transition: scale 100ms ease;
 }
 
 /* line 187, ../../app/scss/bower/_owl.carousel.scss */
 .owl-carousel .owl-video-play-icon:hover {
   -webkit-transition: scale(1.3, 1.3);
-  -moz-transition: scale(1.3, 1.3);
-  -ms-transition: scale(1.3, 1.3);
-  -o-transition: scale(1.3, 1.3);
   transition: scale(1.3, 1.3);
 }
 
@@ -710,14 +699,8 @@ th {
   height: 100%;
   background-position: center center;
   background-repeat: no-repeat;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
   -webkit-transition: opacity 400ms ease;
-  -moz-transition: opacity 400ms ease;
-  -ms-transition: opacity 400ms ease;
-  -o-transition: opacity 400ms ease;
   transition: opacity 400ms ease;
 }
 
@@ -982,7 +965,10 @@ label,
 h1, h2, h3, h4 {
   box-sizing: border-box;
   word-wrap: break-word;
-  hyphens: auto;
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
 
 /* line 32, ../../app/scss/includes/_base.scss */
@@ -1113,97 +1099,97 @@ button {
   content: '\e800';
 }
 
-/* '¯áÇ' */
+/* '' */
 /* line 58, ../../app/scss/includes/_fontello.scss */
 .icon-left-small:before {
   content: '\e801';
 }
 
-/* '¯áü' */
+/* '' */
 /* line 59, ../../app/scss/includes/_fontello.scss */
 .icon-menu:before {
   content: '\e802';
 }
 
-/* '¯áé' */
+/* '' */
 /* line 60, ../../app/scss/includes/_fontello.scss */
 .icon-search:before {
   content: '\e803';
 }
 
-/* '¯áâ' */
+/* '' */
 /* line 61, ../../app/scss/includes/_fontello.scss */
 .icon-down-small:before {
   content: '\e804';
 }
 
-/* '¯áä' */
+/* '' */
 /* line 62, ../../app/scss/includes/_fontello.scss */
 .icon-up-small:before {
   content: '\e805';
 }
 
-/* '¯áà' */
+/* '' */
 /* line 63, ../../app/scss/includes/_fontello.scss */
 .icon-right-small:before {
   content: '\e806';
 }
 
-/* '¯áå' */
+/* '' */
 /* line 64, ../../app/scss/includes/_fontello.scss */
 .icon-linkedin:before {
   content: '\e80a';
 }
 
-/* '¯áè' */
+/* '' */
 /* line 65, ../../app/scss/includes/_fontello.scss */
 .icon-facebook:before {
   content: '\e80b';
 }
 
-/* '¯áï' */
+/* '' */
 /* line 66, ../../app/scss/includes/_fontello.scss */
 .icon-twitter:before {
   content: '\e80c';
 }
 
-/* '¯áî' */
+/* '' */
 /* line 67, ../../app/scss/includes/_fontello.scss */
 .icon-gplus:before {
   content: '\e80d';
 }
 
-/* '¯áì' */
+/* '' */
 /* line 68, ../../app/scss/includes/_fontello.scss */
 .icon-pinterest-circled:before {
   content: '\e80e';
 }
 
-/* '¯áÄ' */
+/* '' */
 /* line 69, ../../app/scss/includes/_fontello.scss */
 .icon-vimeo:before {
   content: '\e80f';
 }
 
-/* '¯áÅ' */
+/* '' */
 /* line 70, ../../app/scss/includes/_fontello.scss */
 .icon-instagramm:before {
   content: '\e810';
 }
 
-/* '¯áÉ' */
+/* '' */
 /* line 71, ../../app/scss/includes/_fontello.scss */
 .icon-youtube-play:before {
   content: '\e811';
 }
 
-/* '¯áæ' */
+/* '' */
 /* line 72, ../../app/scss/includes/_fontello.scss */
 .icon-heart:before {
   content: '\e813';
 }
 
-/* '¯áô' */
+/* '' */
 /***************** btns blue ****************/
 /* line 2, ../../app/scss/includes/_helpers.scss */
 .btn-like {
@@ -1214,13 +1200,15 @@ button {
   padding: 8px 12px;
   display: inline-block;
   font-size: 0.875rem;
-  transition: background-color, color 0.2s ease-out;
+  -webkit-transition: background-color, color 0.2s ease-out;
+          transition: background-color, color 0.2s ease-out;
 }
 /* line 12, ../../app/scss/includes/_helpers.scss */
 .btn-like > span {
   margin-left: 3px;
   color: #e5e5e5;
-  transition: color 0.2s ease-out;
+  -webkit-transition: color 0.2s ease-out;
+          transition: color 0.2s ease-out;
 }
 /* line 18, ../../app/scss/includes/_helpers.scss */
 .btn-like:hover {
@@ -1259,7 +1247,8 @@ button {
   color: #0045e5;
   text-transform: uppercase;
   padding: 10px 15px;
-  transition: background-color 0.2s ease-out;
+  -webkit-transition: background-color 0.2s ease-out;
+          transition: background-color 0.2s ease-out;
   font-size: 0.875rem;
   letter-spacing: 2px;
   font-family: "Platform-Medium";
@@ -1312,8 +1301,12 @@ button {
   border-radius: 20px;
   cursor: pointer;
   background-color: transparent;
-  transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
-  user-select: none;
+  -webkit-transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+          transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 /* line 100, ../../app/scss/includes/_helpers.scss */
@@ -1372,7 +1365,8 @@ button {
   font-size: 0.875rem;
   letter-spacing: 2px;
   padding: 12px 20px;
-  transition: background-color 0.2s ease-out;
+  -webkit-transition: background-color 0.2s ease-out;
+          transition: background-color 0.2s ease-out;
 }
 /* line 146, ../../app/scss/includes/_helpers.scss */
 .btn-mail:after {
@@ -1399,7 +1393,8 @@ button {
   font-size: 0.875rem;
   letter-spacing: 2px;
   padding: 12px 20px;
-  transition: background-color 0.2s ease-out;
+  -webkit-transition: background-color 0.2s ease-out;
+          transition: background-color 0.2s ease-out;
 }
 /* line 171, ../../app/scss/includes/_helpers.scss */
 .btn-agenda:before {
@@ -2228,7 +2223,8 @@ select {
   bottom: 0;
   left: 0;
   right: 0;
-  transition: background-color 0.2s ease-out;
+  -webkit-transition: background-color 0.2s ease-out;
+          transition: background-color 0.2s ease-out;
   background-color: transparent;
 }
 /* line 134, ../../app/fragments/components/header/_menu.scss */
@@ -2239,7 +2235,8 @@ select {
   left: 50%;
   margin: -15px 0 0 -15px;
   opacity: 0;
-  transition: opacity 0.2s ease-out;
+  -webkit-transition: opacity 0.2s ease-out;
+          transition: opacity 0.2s ease-out;
 }
 /* line 147, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .rubric__gobelins a:hover .rubric__img:before {
@@ -2554,7 +2551,8 @@ body:after {
   top: 80px;
   left: 0;
   background: #000;
-  transition: left 300ms, opacity 300ms;
+  -webkit-transition: left 300ms, opacity 300ms;
+          transition: left 300ms, opacity 300ms;
   opacity: 0;
 }
 
@@ -2562,7 +2560,8 @@ body:after {
 .main-wrapper {
   position: relative;
   left: 0;
-  transition: left 300ms;
+  -webkit-transition: left 300ms;
+          transition: left 300ms;
   margin-left: 0;
 }
 
@@ -2574,7 +2573,8 @@ body:after {
   position: fixed;
   top: 0;
   background-color: #191919;
-  transition: left 300ms, width 300ms;
+  -webkit-transition: left 300ms, width 300ms;
+          transition: left 300ms, width 300ms;
 }
 
 /* line 27, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
@@ -2582,7 +2582,8 @@ body:after {
   padding: 0 20px;
   background-color: #191919;
   color: #fff;
-  transition: width 300ms;
+  -webkit-transition: width 300ms;
+          transition: width 300ms;
 }
 
 /* line 33, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
@@ -2600,7 +2601,8 @@ body:after {
 /* line 43, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
 .header {
   left: 0;
-  transition: left 300ms;
+  -webkit-transition: left 300ms;
+          transition: left 300ms;
 }
 
 @media screen and (max-width: 1140px) {
@@ -2986,36 +2988,121 @@ body.is-open {
   color: #0045e5;
 }
 
-/* line 1, ../../app/fragments/components/block-slider/_block-slider.scss */
-.block-slider-4 {
-  background-color: #fff;
+/* Bloc styles. */
+/* line 2, ../../app/fragments/components/block-slider/_block-slider.scss */
+.training-animation .block-slider--1 {
+  background-color: #00e196;
 }
 
-/* line 4, ../../app/fragments/components/block-slider/_block-slider.scss */
-.block-slider-3 {
+/* line 5, ../../app/fragments/components/block-slider/_block-slider.scss */
+.training-graphic-design .block-slider--1 {
+  background-color: #3af2ce;
+}
+
+/* line 8, ../../app/fragments/components/block-slider/_block-slider.scss */
+.training-web-design .block-slider--1 {
+  background-color: #6300ff;
+}
+
+/* line 11, ../../app/fragments/components/block-slider/_block-slider.scss */
+.training-photography .block-slider--1 {
+  background-color: #ffe042;
+}
+
+/* line 14, ../../app/fragments/components/block-slider/_block-slider.scss */
+.training-game .block-slider--1 {
+  background-color: #1840e8;
+}
+
+/* line 17, ../../app/fragments/components/block-slider/_block-slider.scss */
+.training-video-audio .block-slider--1 {
+  background-color: red;
+}
+
+/* line 20, ../../app/fragments/components/block-slider/_block-slider.scss */
+.training-cross-media .block-slider--1 {
+  background-color: #e90b51;
+}
+
+/* line 23, ../../app/fragments/components/block-slider/_block-slider.scss */
+.block-slider--3 {
   background-color: #191919;
   color: #fff;
 }
-/* line 8, ../../app/fragments/components/block-slider/_block-slider.scss */
-.block-slider-3 h2 {
+/* line 27, ../../app/fragments/components/block-slider/_block-slider.scss */
+.block-slider--3 h2 {
   color: #fff;
 }
 
-/* line 12, ../../app/fragments/components/block-slider/_block-slider.scss */
+/* line 31, ../../app/fragments/components/block-slider/_block-slider.scss */
+.block-slider--4 {
+  background-color: #fff;
+}
+
+/* Owl styles. */
+/* line 36, ../../app/fragments/components/block-slider/_block-slider.scss */
+.owl-carousel .owl-item {
+  display: inline-block;
+  float: none;
+}
+
+/* line 40, ../../app/fragments/components/block-slider/_block-slider.scss */
 .owl-nav {
   text-align: center;
   margin-top: 30px;
 }
 
-/* line 16, ../../app/fragments/components/block-slider/_block-slider.scss */
+/* line 44, ../../app/fragments/components/block-slider/_block-slider.scss */
 .owl-nav > div {
   margin: 0 10px;
 }
 
-/* line 19, ../../app/fragments/components/block-slider/_block-slider.scss */
-.owl-carousel .owl-item {
+/* line 47, ../../app/fragments/components/block-slider/_block-slider.scss */
+.owl-dots {
+  text-align: center;
+  margin-top: 30px;
+  line-height: 6px;
+}
+
+/* line 52, ../../app/fragments/components/block-slider/_block-slider.scss */
+.owl-dot {
   display: inline-block;
-  float: none;
+}
+
+/* line 55, ../../app/fragments/components/block-slider/_block-slider.scss */
+.owl-dot > span {
+  width: 6px;
+  height: 6px;
+  margin: 0 7px;
+  background: #323232;
+  display: block;
+  -webkit-transition: opacity 0.2s ease-out;
+          transition: opacity 0.2s ease-out;
+  border-radius: 30px;
+  opacity: 0.5;
+}
+
+/* line 65, ../../app/fragments/components/block-slider/_block-slider.scss */
+.owl-dot.active > span {
+  opacity: 1;
+}
+
+/* Owl styles rewrites. */
+/* line 70, ../../app/fragments/components/block-slider/_block-slider.scss */
+.block-slider--1 .owl-dots {
+  position: absolute;
+  width: 100%;
+}
+
+/* line 74, ../../app/fragments/components/block-slider/_block-slider.scss */
+.block-slider--1 .owl-nav {
+  display: none;
+}
+
+/* line 77, ../../app/fragments/components/block-slider/_block-slider.scss */
+.block-slider--3 .owl-dots,
+.block-slider--4 .owl-dots {
+  display: none;
 }
 
 /* Content partials */
@@ -3896,7 +3983,8 @@ body.is-open {
   border: 1px solid #999;
   padding: 8px 14px;
   background-color: #fff;
-  transition: background-color 0.2s ease-out, border-color 0.2s ease-out, color 0.2s ease-out;
+  -webkit-transition: background-color 0.2s ease-out, border-color 0.2s ease-out, color 0.2s ease-out;
+          transition: background-color 0.2s ease-out, border-color 0.2s ease-out, color 0.2s ease-out;
   color: #323232;
 }
 /* line 36, ../../app/fragments/content/block-training-professions/_block-training-professions.scss */
