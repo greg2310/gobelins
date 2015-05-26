@@ -2488,20 +2488,27 @@ body.is-open {
   background: #fff;
   padding: 0;
 }
-/* line 29, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+@media screen and (min-width: 1401px) {
+  /* line 24, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+  .breadcrumb {
+    width: 1400px;
+    margin: 0 auto;
+  }
+}
+/* line 34, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
 .breadcrumb ul {
   padding: 17px 20px;
   width: 1140px;
   margin: 0 auto;
 }
-/* line 34, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+/* line 39, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
 .breadcrumb ul li {
   display: inline-block;
   margin-right: 7px;
   position: relative;
   padding-left: 24px;
 }
-/* line 40, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+/* line 45, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
 .breadcrumb ul li + li:before {
   content: "\2192";
   display: inline-block;
@@ -2510,7 +2517,7 @@ body.is-open {
   top: -1px;
 }
 
-/* line 49, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+/* line 54, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
 .training-animation .breadcrumb,
 .training-graphic-design .breadcrumb,
 .training-web-design .breadcrumb,
@@ -2520,7 +2527,7 @@ body.is-open {
 .training-cross-media .breadcrumb {
   color: #fff;
 }
-/* line 57, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+/* line 62, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
 .training-animation .breadcrumb a,
 .training-graphic-design .breadcrumb a,
 .training-web-design .breadcrumb a,
@@ -3775,6 +3782,81 @@ body.is-open {
 /* line 62, ../../app/fragments/content/block-training-professions/_block-training-professions.scss */
 .training-cross-media .list-professions a:hover {
   background-color: #e90b51;
+}
+
+/* line 1, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings {
+  background: #fff;
+  text-align: center;
+  padding: 5px 0 40px;
+}
+/* line 6, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal {
+  float: left;
+  width: 27%;
+  text-align: left;
+}
+/* line 12, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form {
+  border-top: none;
+  padding-top: 40px;
+}
+/* line 16, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form .filter-training-field {
+  border-top: 1px solid #cccccc;
+  padding: 15px 0 20px 0;
+  width: 75%;
+  position: relative;
+}
+/* line 22, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form .filter-training-field:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+/* line 27, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form .filter-training-field .item-form {
+  margin: 15px 0 0 0;
+}
+/* line 29, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form .filter-training-field .item-form:first-child {
+  margin: 0;
+}
+/* line 36, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form .remove-all-themes {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* line 42, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form .title {
+  text-transform: uppercase;
+  color: #333333;
+  margin-bottom: 10px;
+  font-family: "Platform-Medium";
+  letter-spacing: 1px;
+}
+/* line 49, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form .btn-higlight, .filter-trainings.professionnal .filter-trainings__form .main-menu--search button, .main-menu--search .filter-trainings.professionnal .filter-trainings__form button {
+  margin-top: 20px;
+}
+/* line 54, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form .list-themes li {
+  display: inline-block;
+  margin: 0 7px 10px 0;
+}
+/* line 57, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form .list-themes li a {
+  font-size: 0.875rem;
+  color: #fff;
+  background: #cccccc;
+  border-radius: 20px;
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+}
+/* line 66, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form .list-themes li:nth-child(2) {
+  margin-right: 0;
 }
 
 /* line 1, ../../app/fragments/content/block-training-search/_block-training-search.scss */
