@@ -7,7 +7,12 @@
 	float:left;
 	width:27%;
 	text-align:left;
+	background:none;
 	
+	@media screen and (max-width: 1140px) {
+		width:100%;
+	
+	}
 	
 	.filter-trainings__form{
 	  border-top:none;
@@ -54,7 +59,12 @@
 		li{
 			display:inline-block;
 			margin:0 7px 10px 0;
-			a{
+			
+			input[type="checkbox"]:checked ~ label{
+				background:$color__border-gray;
+			}
+		
+			label{
 				font-size:0.875rem;
 				color:$color__bg-white;
 				background:$color__training--search--border;
@@ -62,6 +72,9 @@
 				padding:10px 15px;
 				display:block;
 				text-decoration:none;
+				&:before{
+					display:none;
+				}
 			}
 			&:nth-child(2){
 				margin-right:0;

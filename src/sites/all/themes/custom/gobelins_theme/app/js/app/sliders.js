@@ -55,7 +55,8 @@
         // Breakpoint from 0 up to 767.
         0 : {
           items: 1,
-          margin: 20
+          margin: 20,
+		  nav:false
         },
         // Breakpoint from 768 up 1139.
         768 : {
@@ -65,7 +66,8 @@
         // Breakpoint from 1140 up.
         1140 : {
           items: 3,
-          margin: 40
+          margin: 40,
+		  dots:false
         }
       }
     });
