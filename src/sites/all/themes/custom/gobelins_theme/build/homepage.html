@@ -16,9 +16,10 @@
   </head>
   <body>
     <div class="container-overflow">
-  <aside class="aside-tab-mob js-aside-move">
-  <div class="aside__logo"><img src="images/logo-gobelins.png" alt=""/></div>
-  <nav class="main-menu--mobile">
+  <div class="aside-tab-mob__wrapper js-aside-move">
+  <aside class="aside-tab-mob">
+    <div class="aside__logo"><img src="images/logo-gobelins.png" alt=""/></div>
+    <nav class="main-menu--mobile">
   <ul>
     <li><a href="#">L'école</a></li>
     <li class="js-contentToggle--nav-mob">
@@ -94,12 +95,12 @@
     <li><a href="#">Innovation</a></li>
   </ul>
 </nav>
-  <ul class="menu-sup">
+    <ul class="menu-sup">
   <li class="link-press"><a href="#"><span class="icons-press"></span>Presse</a></li>
   <li class="link-lang"><a href="#">Englih site</a></li>
   <li><a href="#" class="btn-like"><span class="text">Ma sélection </span><span class="text-highlight">3 <span class="icon-heart"></span></span></a></li>
 </ul>
-  <div class="list-shared-icons">
+    <div class="list-shared-icons">
   <h3>nous suivre</h3>
   <ul>
     <li><a href="#" class="icon-facebook"></a></li>
@@ -112,9 +113,10 @@
     <li><a href="#" class="icon-youtube-play"></a></li>
   </ul>
 </div>
-</aside>
+  </aside>
+</div>
   <div class="main-wrapper">
-    <header class="header">
+    <header class="header js-header-sticky">
     <div class="header__bar-top">
       <ul class="menu-sup">
   <li class="link-press"><a href="#"><span class="icons-press"></span>Presse</a></li>
@@ -498,13 +500,21 @@
     <h2 class="title-h2">contenus de la formation</h2>
     <div class="tabs-accordion">
   <ul class="tabs-title">
-    <li class="active"><a href="#">matières enseignées</a></li>
-    <li><a href="#">compétences</a></li>
-    <li><a href="#">les plus</a></li>
+    <li class="js-contenttoggle--tabs-accordion" data-content-selector="#ta-content1" data-trigger-selector=".ta-trigger1">
+      <a href="#tab1" class="ta-trigger1">matières enseignées</a>
+    </li>
+    <li class="js-contenttoggle--tabs-accordion" data-content-selector="#ta-content2" data-trigger-selector=".ta-trigger2">
+      <a href="#tab2" class="ta-trigger2">compétences</a>
+    </li>
+    <li class="js-contenttoggle--tabs-accordion" data-content-selector="#ta-content3" data-trigger-selector=".ta-trigger3">
+      <a href="#tab3" class="ta-trigger3">les plus</a>
+    </li>
   </ul>
   <div class="tabs-container">
-    <div class="accordion-title active"><a href="#">matières enseignées</a></div>
-    <div class="content">
+    <div class="accordion-title">
+      <a href="#tab1" class="ta-trigger1">matières enseignées</a>
+    </div>
+    <div class="content" id="ta-content1">
       <ul>
         <li>Le dessin d’animation : croquis d’après modèle vivant, morphologie, perspective, analyse du mouvement, construction en volume.</li>
         <li>Le design de personnage et de décor.</li>
@@ -521,10 +531,30 @@
         <li>Projets : Production de courts métrages : films de commande dont un pour le Festival International du Film d’Animation d’Annecy (2ème année) et film de fin d’étude 2D et/ou 3D sur plus d’un an.</li>
       </ul>
     </div>
-    <div class="accordion-title"><a href="#">compétences</a></div>
-    <div class="content"></div>
-    <div class="accordion-title"><a href="#">les plus</a></div>
-    <div class="content"></div>
+    <div class="accordion-title">
+      <a href="#tab2" class="ta-trigger2">compétences</a>
+    </div>
+    <div class="content is-hidden" id="ta-content2">
+      <ul>
+        <li>Le dessin d’animation : croquis d’après modèle vivant, morphologie, perspective, analyse du mouvement, construction en volume.</li>
+        <li>Le design de personnage et de décor.</li>
+        <li>L’animation : l’analyse de l’acting, l’animation traditionnelle et l’animation numérique 2D et 3D.</li>
+      </ul>
+    </div>
+    <div class="accordion-title">
+      <a href="#tab3" class="ta-trigger3">les plus</a>
+    </div>
+    <div class="content is-hidden" id="ta-content3">
+      <ul>
+        <li>Le dessin d’animation : croquis d’après modèle vivant, morphologie, perspective, analyse du mouvement, construction en volume.</li>
+        <li>Le design de personnage et de décor.</li>
+        <li>L’animation : l’analyse de l’acting, l’animation traditionnelle et l’animation numérique 2D et 3D.</li>
+        <li>La mise en scène : le langage cinématographique et dramaturgique, le storyboard, le layout, le montage.</li>
+        <li>La recherche couleur et l’analyse de la lumière et des ambiances.</li>
+        <li>Les techniques spécifiques à la chaîne 3D : layout, modélisation, set up, rendu.</li>
+        <li>Les différentes techniques de prise de vue et d’intégration.</li>
+      </ul>
+    </div>
   </div>
 </div>
     

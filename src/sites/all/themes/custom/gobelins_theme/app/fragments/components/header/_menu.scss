@@ -227,13 +227,3 @@
     display:block;
   }
 }
-.header--sticky .main-menu--desktop{
-  margin:30px 0 0 0;
-  
-  & > ul{
-    text-align:left;
-    & > li + li{
-      margin:0 20px;
-    }
-  }
-}

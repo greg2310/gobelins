@@ -1,0 +1,26 @@
+.is-hidden{
+  display:none;
+}
+.display--tab-mob{
+  display:none;
+}
+@media screen and (max-width: 1140px) {
+  .no-display--tab-mob{
+    display:none !important;
+  }
+  .display--tab-mob{
+    display:block;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px){
+  .no-display--tab{
+    display:none !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .no-display--mob{
+    display:none !important;
+  }
+}

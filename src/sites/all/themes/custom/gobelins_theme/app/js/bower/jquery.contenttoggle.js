@@ -9,7 +9,7 @@
   var pluginName;
   var defaultOptions = {};
   var $global = $(document);
-  var globalEvent = navigator.userAgent.match(/iPad|iPhone/i)? 'touchstart' : 'click';
+  var isIthing = navigator.userAgent.match(/iPad|iPhone/i);
   var uid = 0;
 
   /**
@@ -126,14 +126,20 @@
    * Bind events.
    */
   Plugin.prototype.bind = function() {
-    // Bind custom events on main element.
-    this.$element.on('destroy.' + pluginName, this.destroy.bind(this));
-    this.$element.on('toggle.' + pluginName, $.proxy(this.toggle, this, null));
-    this.$element.on('close.' + pluginName, $.proxy(this.toggle, this, false));
-    this.$element.on('open.' + pluginName, $.proxy(this.toggle, this, true));
+    var eventName = (isIthing && this.options.globalClose)? 'touchstart': 'click';
+    var $all = this.$element.add(this.$triggers).add(this.$contents);
+
+    // Bind custom events on all elements.
+    $all.on('destroy.' + pluginName, this.destroy.bind(this));
+    $all.on('toggle.' + pluginName, $.proxy(this.toggle, this, null));
+    $all.on('close.' + pluginName, $.proxy(this.toggle, this, false));
+    $all.on('open.' + pluginName, $.proxy(this.toggle, this, true));
+    $all.on('isOpen.' + pluginName, function(){
+      return this.isOpen;
+    }.bind(this));
 
     // Bind native events on triggers.
-    this.$triggers.on('click.' + pluginName, function(event){
+    this.$triggers.on(eventName + '.' + pluginName, function(event){
       event.preventDefault();
       this.toggle(null, event);
     }.bind(this));
@@ -145,7 +151,7 @@
     }.bind(this));
 
     // Bind native events on contents (avoid triggers click event).
-    this.$contents.on('click.' + pluginName, function(event){
+    this.$contents.on(eventName + '.' + pluginName, function(event){
       event.stopPropagation();
     });
   };
@@ -222,12 +228,14 @@
    * Open content.
    */
   Plugin.prototype.open = function() {
+    var eventName;
     if (this.isOpen !== true) {
       this.isOpen = true;
       this.do();
       this.closeAll(true);
       if (this.options.globalClose) {
-        $global.on(globalEvent + '.' + pluginName + this.uid, function(){
+        eventName = isIthing? 'touchstart': 'click';
+        $global.on(eventName + '.' + pluginName + this.uid, function(){
           this.closeAll();
         }.bind(this));
       }
