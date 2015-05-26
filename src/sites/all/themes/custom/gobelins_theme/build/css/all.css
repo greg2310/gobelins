@@ -1040,8 +1040,71 @@ button {
   vertical-align: middle;
 }
 
+/* line 86, ../../app/scss/includes/_helpers.scss */
+.btn-round, .btn-round--dark, .btn-round--light {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  -webkit-transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+          transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* line 100, ../../app/scss/includes/_helpers.scss */
+.btn-round.is-disabled, .is-disabled.btn-round--dark, .is-disabled.btn-round--light {
+  opacity: 0.5;
+  cursor: auto;
+}
+
+/* line 104, ../../app/scss/includes/_helpers.scss */
+.btn-round:hover, .btn-round--dark:hover, .btn-round--light:hover {
+  color: #FFFFFF;
+  border-color: #0045e5;
+  background-color: #0045e5;
+}
+
+/* line 109, ../../app/scss/includes/_helpers.scss */
+.btn-round.is-disabled:hover, .is-disabled.btn-round--dark:hover, .is-disabled.btn-round--light:hover {
+  opacity: 0.5;
+  background-color: transparent;
+}
+
+/* line 113, ../../app/scss/includes/_helpers.scss */
+.btn-round--dark {
+  color: #4D4D4D;
+  border-color: #4D4D4D;
+}
+
+/* line 118, ../../app/scss/includes/_helpers.scss */
+.btn-round--light {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+/* line 123, ../../app/scss/includes/_helpers.scss */
+.btn-round--dark.is-disabled:hover {
+  color: #4D4D4D;
+  border-color: #4D4D4D;
+}
+
+/* line 127, ../../app/scss/includes/_helpers.scss */
+.btn-round--light.is-disabled:hover {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
 /***************** btns white ****************/
-/* line 87, ../../app/scss/includes/_helpers.scss */
+/* line 133, ../../app/scss/includes/_helpers.scss */
 .btn-mail {
   display: inline-block;
   border: 1px solid #666666;
@@ -1056,20 +1119,20 @@ button {
   -webkit-transition: background-color 0.2s ease-out;
           transition: background-color 0.2s ease-out;
 }
-/* line 100, ../../app/scss/includes/_helpers.scss */
+/* line 146, ../../app/scss/includes/_helpers.scss */
 .btn-mail:after {
   content: '\e800';
   font-family: "fontello";
   margin-left: 10px;
 }
-/* line 106, ../../app/scss/includes/_helpers.scss */
+/* line 152, ../../app/scss/includes/_helpers.scss */
 .btn-mail:hover {
   background-color: #fff;
   color: #323232;
 }
 
 /***************** btns transparent ****************/
-/* line 112, ../../app/scss/includes/_helpers.scss */
+/* line 158, ../../app/scss/includes/_helpers.scss */
 .btn-agenda {
   display: inline-block;
   border: 1px solid #CBCBCB;
@@ -1084,20 +1147,20 @@ button {
   -webkit-transition: background-color 0.2s ease-out;
           transition: background-color 0.2s ease-out;
 }
-/* line 125, ../../app/scss/includes/_helpers.scss */
+/* line 171, ../../app/scss/includes/_helpers.scss */
 .btn-agenda:before {
   content: "";
   vertical-align: middle;
   margin-top: -2px;
 }
-/* line 132, ../../app/scss/includes/_helpers.scss */
+/* line 178, ../../app/scss/includes/_helpers.scss */
 .btn-agenda:hover {
   background-color: #fff;
   text-decoration: none;
 }
 
 /***************** other btns ****************/
-/* line 139, ../../app/scss/includes/_helpers.scss */
+/* line 185, ../../app/scss/includes/_helpers.scss */
 .btn-close:before {
   content: "\2715";
   color: #323232;
@@ -1107,23 +1170,23 @@ button {
 }
 
 /***************** links ****************/
-/* line 148, ../../app/scss/includes/_helpers.scss */
+/* line 194, ../../app/scss/includes/_helpers.scss */
 .link-localisation {
   color: #fff;
   display: inline-block;
 }
-/* line 152, ../../app/scss/includes/_helpers.scss */
+/* line 198, ../../app/scss/includes/_helpers.scss */
 .link-localisation .icon-location {
   font-size: 0.8rem;
   padding-left: 8px;
 }
 
-/* line 157, ../../app/scss/includes/_helpers.scss */
+/* line 203, ../../app/scss/includes/_helpers.scss */
 .link-more {
   text-transform: uppercase;
   font-family: "Platform-Medium";
 }
-/* line 161, ../../app/scss/includes/_helpers.scss */
+/* line 207, ../../app/scss/includes/_helpers.scss */
 .link-more:after {
   content: '\e806';
   font-family: 'fontello';
@@ -1134,7 +1197,7 @@ button {
   display: inline-block;
 }
 
-/* line 172, ../../app/scss/includes/_helpers.scss */
+/* line 218, ../../app/scss/includes/_helpers.scss */
 .link-more-training {
   text-transform: uppercase;
   font-family: "Platform-Medium";
@@ -1149,7 +1212,7 @@ button {
 }
 
 /***************** titles ****************/
-/* line 186, ../../app/scss/includes/_helpers.scss */
+/* line 232, ../../app/scss/includes/_helpers.scss */
 .title-h1 {
   font-size: 3.375rem;
   font-family: "Platform-Light";
@@ -1160,7 +1223,7 @@ button {
   color: #323232;
 }
 
-/* line 195, ../../app/scss/includes/_helpers.scss */
+/* line 241, ../../app/scss/includes/_helpers.scss */
 .title-h2 {
   font-size: 2rem;
   font-family: "Platform-Light";
@@ -1172,13 +1235,13 @@ button {
 }
 
 /***************** reset ****************/
-/* line 206, ../../app/scss/includes/_helpers.scss */
+/* line 252, ../../app/scss/includes/_helpers.scss */
 .btn-remove {
   color: #666666;
   font-size: 0.875rem;
   padding: 0;
 }
-/* line 211, ../../app/scss/includes/_helpers.scss */
+/* line 257, ../../app/scss/includes/_helpers.scss */
 .btn-remove:before {
   content: 'x';
   display: inline-block;
@@ -1187,7 +1250,7 @@ button {
 }
 
 /**/
-/* line 220, ../../app/scss/includes/_helpers.scss */
+/* line 266, ../../app/scss/includes/_helpers.scss */
 .search-message {
   color: #fff;
   font-size: 2rem;
@@ -1196,12 +1259,12 @@ button {
 }
 
 /*list style*/
-/* line 229, ../../app/scss/includes/_helpers.scss */
+/* line 275, ../../app/scss/includes/_helpers.scss */
 .ul-styled li, .tabs-accordion .content ul li, .item-trainings__description .info__detailes li, .training-summary__description ul li {
   padding-left: 10px;
   position: relative;
 }
-/* line 233, ../../app/scss/includes/_helpers.scss */
+/* line 279, ../../app/scss/includes/_helpers.scss */
 .ul-styled li:before, .tabs-accordion .content ul li:before, .item-trainings__description .info__detailes li:before, .training-summary__description ul li:before {
   content: '\2022';
   position: absolute;
@@ -2685,26 +2748,25 @@ body.is-open {
 }
 
 /* line 1, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
-.slideshow-training {
-  padding: 0;
+.block-slider-3 {
   background: #333333;
 }
 /* line 5, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
-.slideshow-training .title-h2 {
+.block-slider-3 .title-h2 {
   color: #fff;
   padding: 20px 0;
   margin: 0;
 }
 /* line 12, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
-.slideshow-training .owl-carousel .item {
+.block-slider-3 .owl-carousel .item {
   float: left;
   margin-right: 40px;
   position: relative;
-  width: 31%;
+  width: 100%;
   border-top: 2px solid #07d38f;
 }
 /* line 18, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
-.slideshow-training .owl-carousel .item .new {
+.block-slider-3 .owl-carousel .item .new {
   position: absolute;
   background: #0045e5;
   color: #fff;
@@ -2715,39 +2777,79 @@ body.is-open {
   text-transform: uppercase;
 }
 /* line 30, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
-.slideshow-training .owl-carousel .item .item-slide__image img {
+.block-slider-3 .owl-carousel .item .item-slide__image img {
   width: 100%;
   display: block;
 }
 /* line 35, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
-.slideshow-training .owl-carousel .item .item-slide__description {
+.block-slider-3 .owl-carousel .item .item-slide__description {
   background: #fff;
   padding: 20px;
   height: 190px;
   box-sizing: border-box;
 }
 /* line 41, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
-.slideshow-training .owl-carousel .item .item-slide__description h3 {
+.block-slider-3 .owl-carousel .item .item-slide__description h3 {
   height: 50px;
   overflow: hidden;
   color: #333333;
   margin-bottom: 20px;
 }
 /* line 46, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
-.slideshow-training .owl-carousel .item .item-slide__description h3 a {
+.block-slider-3 .owl-carousel .item .item-slide__description h3 a {
   color: inherit;
 }
 /* line 51, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
-.slideshow-training .owl-carousel .item .item-slide__description .calendar {
+.block-slider-3 .owl-carousel .item .item-slide__description .calendar {
   margin-bottom: 20px;
+  color: #666666;
 }
-/* line 55, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
-.slideshow-training .owl-carousel .item .item-slide__description .btn-higlight, .slideshow-training .owl-carousel .item .item-slide__description .main-menu--search button, .main-menu--search .slideshow-training .owl-carousel .item .item-slide__description button {
-  padding: 10px 80px;
+/* line 56, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
+.block-slider-3 .owl-carousel .item .item-slide__description .btn-higlight, .block-slider-3 .owl-carousel .item .item-slide__description .main-menu--search button, .main-menu--search .block-slider-3 .owl-carousel .item .item-slide__description button {
+  padding: 10px 79px;
 }
-/* line 59, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
-.slideshow-training .owl-carousel .item .item-slide__description .btn-like--mini {
+/* line 60, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
+.block-slider-3 .owl-carousel .item .item-slide__description .btn-like--mini {
   margin-left: 2px;
+}
+
+/* line 1, ../../app/fragments/components/block-slider/_block-slider.scss */
+.block-slider-4 {
+  background-color: #fff;
+}
+
+/* line 4, ../../app/fragments/components/block-slider/_block-slider.scss */
+.block-slider-3 {
+  background-color: #191919;
+  color: #fff;
+  overflow: hidden;
+  padding-top: 0;
+}
+/* line 10, ../../app/fragments/components/block-slider/_block-slider.scss */
+.block-slider-3 h2 {
+  color: #fff;
+}
+
+/* line 14, ../../app/fragments/components/block-slider/_block-slider.scss */
+.owl-nav {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* line 18, ../../app/fragments/components/block-slider/_block-slider.scss */
+.owl-nav > div {
+  margin: 0 10px;
+}
+
+/* line 21, ../../app/fragments/components/block-slider/_block-slider.scss */
+.owl-carousel .owl-item {
+  display: inline-block;
+  float: none;
+  opacity: 0.5;
+}
+/* line 26, ../../app/fragments/components/block-slider/_block-slider.scss */
+.owl-carousel .owl-item.active {
+  opacity: 1;
 }
 
 /* Content partials */
