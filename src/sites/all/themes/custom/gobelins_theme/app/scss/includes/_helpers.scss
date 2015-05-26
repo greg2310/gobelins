@@ -83,6 +83,52 @@
   }
 }
 
+.btn-round {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: background-color $animation__params, border-color $animation__params;
+  user-select: none;
+}
+.btn-round.is-disabled {
+  opacity: 0.5;
+  cursor: auto;
+}
+.btn-round:hover {
+  color: #FFFFFF;
+  border-color: $color__blue-gobelins;
+  background-color: $color__blue-gobelins;
+}
+.btn-round.is-disabled:hover {
+  opacity: 0.5;
+  background-color: transparent;
+}
+.btn-round--dark {
+  @extend .btn-round;
+  color: $color__btn--dark;
+  border-color: $color__btn--dark;
+}
+.btn-round--light {
+  @extend .btn-round;
+  color: $color__btn--light;
+  border-color: $color__btn--light;
+}
+.btn-round--dark.is-disabled:hover {
+  color: $color__btn--dark;
+  border-color: $color__btn--dark;
+}
+.btn-round--light.is-disabled:hover {
+  color: $color__btn--light;
+  border-color: $color__btn--light;
+}
+
 /***************** btns white ****************/
 .btn-mail{
   display:inline-block;
