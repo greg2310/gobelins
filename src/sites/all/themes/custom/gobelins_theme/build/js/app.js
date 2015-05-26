@@ -5,10 +5,11 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   /* require app plugins */
   require('./app/menu.js');
   require('./app/tabs-accordion.js');
+  require('./app/select-themes-filter.js');
 
 })();
 
-},{"./app/menu.js":2,"./app/tabs-accordion.js":3}],2:[function(require,module,exports){
+},{"./app/menu.js":2,"./app/select-themes-filter.js":3,"./app/tabs-accordion.js":4}],2:[function(require,module,exports){
 (function(){
   'use strict';
 
@@ -89,7 +90,29 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   });
 })();
 
-},{"../bower/jquery.contenttoggle.js":4,"../bower/jquery.sticky.js":5,"jquery":"jquery"}],3:[function(require,module,exports){
+},{"../bower/jquery.contenttoggle.js":5,"../bower/jquery.sticky.js":6,"jquery":"jquery"}],3:[function(require,module,exports){
+(function(){
+  'use strict';
+
+  /* require plugins */
+  var $ = require('jquery');
+
+  $(function(){
+    /*$('.filter-trainings .list-themes li a').each(function(){
+      $(this).click(function)(){
+		  alert('ok');
+		  
+	  });
+    });*/
+	$('.main-menu--desktop fff').find('.lev1').hover(function(){
+      $(this).siblings().children('a').stop().animate({'opacity' : '0.5'}, 300);
+    }, function(){
+      $(this).siblings().children('a').stop().animate({'opacity' : '1'}, 300);
+    });
+  });
+})();
+
+},{"jquery":"jquery"}],4:[function(require,module,exports){
 (function(){
   'use strict';
 
@@ -108,7 +131,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   });
 })();
 
-},{"../bower/jquery.contenttoggle.js":4,"jquery":"jquery"}],4:[function(require,module,exports){
+},{"../bower/jquery.contenttoggle.js":5,"jquery":"jquery"}],5:[function(require,module,exports){
 (function($){
   'use strict';
 
@@ -439,7 +462,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
 })(jQuery);
 
 
-},{}],5:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 // Sticky Plugin v1.0.0 for jQuery
 // =============
 // Author: Anthony Garand

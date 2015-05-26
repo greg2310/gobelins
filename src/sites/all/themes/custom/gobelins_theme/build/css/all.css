@@ -1171,8 +1171,23 @@ button {
   color: #323232;
 }
 
-/**/
+/***************** reset ****************/
 /* line 206, ../../app/scss/includes/_helpers.scss */
+.btn-remove {
+  color: #666666;
+  font-size: 0.875rem;
+  padding: 0;
+}
+/* line 211, ../../app/scss/includes/_helpers.scss */
+.btn-remove:before {
+  content: 'x';
+  display: inline-block;
+  padding-right: 5px;
+  font-size: 1rem;
+}
+
+/**/
+/* line 220, ../../app/scss/includes/_helpers.scss */
 .search-message {
   color: #fff;
   font-size: 2rem;
@@ -1181,12 +1196,12 @@ button {
 }
 
 /*list style*/
-/* line 215, ../../app/scss/includes/_helpers.scss */
+/* line 229, ../../app/scss/includes/_helpers.scss */
 .ul-styled li, .tabs-accordion .content ul li, .item-trainings__description .info__detailes li, .training-summary__description ul li {
   padding-left: 10px;
   position: relative;
 }
-/* line 219, ../../app/scss/includes/_helpers.scss */
+/* line 233, ../../app/scss/includes/_helpers.scss */
 .ul-styled li:before, .tabs-accordion .content ul li:before, .item-trainings__description .info__detailes li:before, .training-summary__description ul li:before {
   content: '\2022';
   position: absolute;
@@ -3996,55 +4011,77 @@ body.is-open {
   margin-top: 15px;
 }
 
-/* line 1, ../../app/fragments/content/filter-training-pro/_filter-trainings-pro.scss */
+/* line 1, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings {
   background: #fff;
   text-align: center;
   padding: 5px 0 40px;
 }
-/* line 6, ../../app/fragments/content/filter-training-pro/_filter-trainings-pro.scss */
+/* line 6, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal {
   float: left;
-  width: 30%;
+  width: 27%;
   text-align: left;
 }
-/* line 12, ../../app/fragments/content/filter-training-pro/_filter-trainings-pro.scss */
+/* line 12, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form {
   border-top: none;
   padding-top: 40px;
 }
-/* line 16, ../../app/fragments/content/filter-training-pro/_filter-trainings-pro.scss */
+/* line 16, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form .filter-training-field {
+  border-top: 1px solid #cccccc;
+  padding: 15px 0 20px 0;
+  width: 75%;
+  position: relative;
+}
+/* line 22, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form .filter-training-field:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+/* line 27, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form .filter-training-field .item-form {
+  margin: 15px 0 0 0;
+}
+/* line 29, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form .filter-training-field .item-form:first-child {
+  margin: 0;
+}
+/* line 36, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form .remove-all-themes {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* line 42, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .title {
   text-transform: uppercase;
-  color: #323232;
+  color: #333333;
   margin-bottom: 10px;
   font-family: "Platform-Medium";
   letter-spacing: 1px;
 }
-/* line 23, ../../app/fragments/content/filter-training-pro/_filter-trainings-pro.scss */
+/* line 49, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .btn-higlight, .filter-trainings.professionnal .filter-trainings__form .main-menu--search button, .main-menu--search .filter-trainings.professionnal .filter-trainings__form button {
   margin-top: 20px;
 }
-/* line 27, ../../app/fragments/content/filter-training-pro/_filter-trainings-pro.scss */
-.filter-trainings.professionnal .filter-trainings__form .col1,
-.filter-trainings.professionnal .filter-trainings__form .col2,
-.filter-trainings.professionnal .filter-trainings__form .col3 {
+/* line 54, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form .list-themes li {
   display: inline-block;
-  vertical-align: top;
-  text-align: left;
+  margin: 0 7px 10px 0;
 }
-/* line 34, ../../app/fragments/content/filter-training-pro/_filter-trainings-pro.scss */
-.filter-trainings.professionnal .filter-trainings__form .col1,
-.filter-trainings.professionnal .filter-trainings__form .col2 {
-  width: 20%;
+/* line 57, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form .list-themes li a {
+  font-size: 0.875rem;
+  color: #fff;
+  background: #cccccc;
+  border-radius: 20px;
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
 }
-/* line 38, ../../app/fragments/content/filter-training-pro/_filter-trainings-pro.scss */
-.filter-trainings.professionnal .filter-trainings__form .col3 {
-  width: 55%;
-}
-/* line 41, ../../app/fragments/content/filter-training-pro/_filter-trainings-pro.scss */
-.filter-trainings.professionnal .filter-trainings__form .col3 .col {
-  display: inline-block;
-  width: 30%;
-  vertical-align: top;
+/* line 66, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form .list-themes li:nth-child(2) {
+  margin-right: 0;
 }

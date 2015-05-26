@@ -7,65 +7,51 @@
           <span class="styled-select">
             <select>
               <option>durée 1</option>
-              <option>durée2</option>
+              <option>durée2</option> 
               <option>durée3</option>
             </select>
           </span>
         </div>
       </div>
        <div class="filter-training-field">
-        <p class="title">statut</p>
+        <p class="title">Conditions</p>
         <div class="item-form">
-          <input type="radio" name="statut" id="radio1" /> 
-          <label for="radio1">Temps plein</label>
+          <input type="radio" name="conditions" id="radio1" /> 
+          <label for="radio1">Éligible CPF</label>
         </div>
         <div class="item-form">
-          <input type="radio" name="statut" id="radio2" /> 
-          <label for="radio2">Alternance</label>
+          <input type="radio" name="conditions" id="radio2" /> 
+          <label for="radio2">Formations AFDAS</label>
         </div>
         <div class="item-form">
-          <input type="radio" name="statut" id="radio3" /> 
-          <label for="radio3">Indifférent</label>
+          <input type="radio" name="conditions" id="radio3" /> 
+          <label for="radio3">Formations diplomantes/certifiantes</label>
+        </div>
+		<div class="item-form">
+          <input type="radio" name="conditions" id="radio4" /> 
+          <label for="radio4">Reconversion</label>
         </div>
       </div>
        <div class="filter-training-field">
-        <p class="title">domaines de formation</p>
-        <div class="col">
-          <div class="item-form">
-            <input type="checkbox" name="" id="checkbox1" /> 
-            <label for="checkbox1">Toutes les domaines</label>
-          </div>
-          <div class="item-form">
-            <input type="checkbox" name="" id="checkbox2" /> 
-            <label for="checkbox2">Design graphique</label>
-          </div>
-          <div class="item-form">
-            <input type="checkbox" name="" id="checkbox3" /> 
-            <label for="checkbox3">Design interactif / web</label>
-          </div>
-        </div>
-        <div class="col">
-          <div class="item-form">
-            <input type="checkbox" name="" id="checkbox4" /> 
-            <label for="checkbox4">Cinéma d'animation</label>
-          </div>
-          <div class="item-form">
-            <input type="checkbox" name="" id="checkbox5" /> 
-            <label for="checkbox5">Photographie</label>
-          </div>
-          <div class="item-form">
-            <input type="checkbox" name="" id="checkbox6" /> 
-            <label for="checkbox6">Communication & Industries graphiques</label>
-          </div>
-        </div>
-        <div class="col">
-          <div class="item-form">
-            <input type="checkbox" name="" id="checkbox7" /> 
-            <label for="checkbox7">Vidéo / Son</label>
-          </div>
-        </div>
-      </div>
-      <button type="submit" class="btn-higlight">voir les formations</button>
+			<p class="title">Thématiques</p>
+			<a href="#" class="remove-all-themes">> Déselectionner tout</a>
+			<div class="item-form">
+				<ul class="list-themes">
+					<li><a href="#">Storyboard</a></li>
+					<li><a href="#">Lumière</a></li>
+					<li><a href="#">Captation</a></li>
+					<li><a href="#">Marionnette</a></li>
+					<li><a href="#">Décor</a></li>
+					<li><a href="#">Tracking</a></li>
+					<li><a href="#">Expression</a></li>
+					<li><a href="#">Marionnette</a></li>
+				
+				</ul>
+
+			</div>
+
+		</div>
+      <button type="reset" class="btn-remove">Réinitialiser</button>
     </form>
 
 </div>
