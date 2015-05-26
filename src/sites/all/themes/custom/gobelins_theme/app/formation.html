@@ -9,7 +9,15 @@
     <%= include(
       '1-column',
       {
-        content      : ['block-training-presentation', 'block-training-details', 'block-training-professions', 'block-training-admission', 'list-downloads'],
+        content      : [
+          'block-training-presentation',
+          'block-training-details',
+          'block-training-professions',
+          {template: 'block-slider-3', params: {slides: ['lipsum', 'lipsum', 'lipsum', 'lipsum', 'lipsum', 'lipsum', 'lipsum', 'lipsum']}},
+          {template: 'block-slider-4', params: {slides: ['lipsum', 'lipsum', 'lipsum', 'lipsum', 'lipsum', 'lipsum', 'lipsum', 'lipsum']}},
+          'block-training-admission',
+          'list-downloads'
+        ],
         contentTop   : ['breadcrumb', 'block-training-banner'],
         contentBottom : []
       }

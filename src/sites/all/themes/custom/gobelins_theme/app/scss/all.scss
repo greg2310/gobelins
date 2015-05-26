@@ -6,6 +6,7 @@
 
 /* Vendor imports */
 @import "bower/normalize";
+@import "bower/owl.carousel";
 /*@import "bootstrap/bootstrap";*/
 
 /* Includes imports */
@@ -33,7 +34,7 @@
 @import "../fragments/components/breadcrumb/breadcrumb";
 @import "../fragments/components/tabs-accordion/tabs-accordion";
 @import "../fragments/components/widgets/widget-shared-icons";
-@import "../fragments/components/slideshow-training/slideshow-training"; 
+@import "../fragments/components/block-slider/block-slider";
 
 /* Content partials */
 @import "../fragments/content/list-trainings/list-trainings";
@@ -50,4 +51,4 @@
 @import "../fragments/content/block-training-results/block-training-results";
 @import "../fragments/content/results-filter-training/results-filter-training";
 @import "../fragments/content/block-rapid-access/block-rapid-access";
-@import "../fragments/content/filter-training-pro/filter-trainings-pro";
+@import "../fragments/content/filter-trainings-pro/filter-trainings-pro";

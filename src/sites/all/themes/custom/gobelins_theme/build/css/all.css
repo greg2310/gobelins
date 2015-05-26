@@ -461,6 +461,255 @@ th {
   padding: 0;
 }
 
+/* 
+ *  Owl Carousel - Animate Plugin
+ */
+/* line 4, ../../app/scss/bower/_owl.carousel.scss */
+.owl-carousel .animated {
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* line 10, ../../app/scss/bower/_owl.carousel.scss */
+.owl-carousel .owl-animated-in {
+  z-index: 0;
+}
+
+/* line 13, ../../app/scss/bower/_owl.carousel.scss */
+.owl-carousel .owl-animated-out {
+  z-index: 1;
+}
+
+/* line 16, ../../app/scss/bower/_owl.carousel.scss */
+.owl-carousel .fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* 
+ * 	Owl Carousel - Auto Height Plugin
+ */
+/* line 43, ../../app/scss/bower/_owl.carousel.scss */
+.owl-height {
+  -webkit-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out;
+}
+
+/* 
+ *  Core Owl Carousel CSS File
+ */
+/* line 54, ../../app/scss/bower/_owl.carousel.scss */
+.owl-carousel {
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  /* position relative and z-index fix webkit rendering fonts issue */
+  position: relative;
+  z-index: 1;
+}
+
+/* line 62, ../../app/scss/bower/_owl.carousel.scss */
+.owl-carousel .owl-stage {
+  position: relative;
+  -ms-touch-action: pan-Y;
+}
+
+/* line 66, ../../app/scss/bower/_owl.carousel.scss */
+.owl-carousel .owl-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* line 74, ../../app/scss/bower/_owl.carousel.scss */
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  /* fix for flashing background */
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+/* line 80, ../../app/scss/bower/_owl.carousel.scss */
+.owl-carousel .owl-controls .owl-nav .owl-prev,
+.owl-carousel .owl-controls .owl-nav .owl-next,
+.owl-carousel .owl-controls .owl-dot {
+  cursor: pointer;
+  cursor: hand;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 91, ../../app/scss/bower/_owl.carousel.scss */
+.owl-carousel.owl-loaded {
+  display: block;
+}
+
+/* line 94, ../../app/scss/bower/_owl.carousel.scss */
+.owl-carousel.owl-loading {
+  opacity: 0;
+  display: block;
+}
+
+/* line 98, ../../app/scss/bower/_owl.carousel.scss */
+.owl-carousel.owl-hidden {
+  opacity: 0;
+}
+
+/* line 101, ../../app/scss/bower/_owl.carousel.scss */
+.owl-carousel .owl-refresh .owl-item {
+  display: none;
+}
+
+/* line 104, ../../app/scss/bower/_owl.carousel.scss */
+.owl-carousel .owl-item {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 116, ../../app/scss/bower/_owl.carousel.scss */
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+}
+
+/* line 121, ../../app/scss/bower/_owl.carousel.scss */
+.owl-carousel.owl-text-select-on .owl-item {
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+}
+
+/* line 127, ../../app/scss/bower/_owl.carousel.scss */
+.owl-carousel .owl-grab {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: -o-grab;
+  cursor: -ms-grab;
+  cursor: grab;
+}
+
+/* line 134, ../../app/scss/bower/_owl.carousel.scss */
+.owl-carousel .owl-rtl {
+  direction: rtl;
+}
+
+/* line 137, ../../app/scss/bower/_owl.carousel.scss */
+.owl-carousel .owl-rtl .owl-item {
+  float: right;
+}
+
+/* No Js */
+/* line 142, ../../app/scss/bower/_owl.carousel.scss */
+.no-js .owl-carousel {
+  display: block;
+}
+
+/* 
+ * 	Owl Carousel - Lazy Load Plugin
+ */
+/* line 149, ../../app/scss/bower/_owl.carousel.scss */
+.owl-carousel .owl-item .owl-lazy {
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease;
+  transition: opacity 400ms ease;
+}
+
+/* line 157, ../../app/scss/bower/_owl.carousel.scss */
+.owl-carousel .owl-item img {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+/* 
+ * 	Owl Carousel - Video Plugin
+ */
+/* line 164, ../../app/scss/bower/_owl.carousel.scss */
+.owl-carousel .owl-video-wrapper {
+  position: relative;
+  height: 100%;
+  background: #000;
+}
+
+/* line 169, ../../app/scss/bower/_owl.carousel.scss */
+.owl-carousel .owl-video-play-icon {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: 50%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  background: url("owl.video.play.png") no-repeat;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: scale 100ms ease;
+  transition: scale 100ms ease;
+}
+
+/* line 187, ../../app/scss/bower/_owl.carousel.scss */
+.owl-carousel .owl-video-play-icon:hover {
+  -webkit-transition: scale(1.3, 1.3);
+  transition: scale(1.3, 1.3);
+}
+
+/* line 194, ../../app/scss/bower/_owl.carousel.scss */
+.owl-carousel .owl-video-playing .owl-video-tn,
+.owl-carousel .owl-video-playing .owl-video-play-icon {
+  display: none;
+}
+
+/* line 198, ../../app/scss/bower/_owl.carousel.scss */
+.owl-carousel .owl-video-tn {
+  opacity: 0;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transition: opacity 400ms ease;
+  transition: opacity 400ms ease;
+}
+
+/* line 213, ../../app/scss/bower/_owl.carousel.scss */
+.owl-carousel .owl-video-frame {
+  position: relative;
+  z-index: 1;
+}
+
 /*@import "bootstrap/bootstrap";*/
 /* Includes imports */
 /* Icon directory. */
@@ -470,7 +719,7 @@ th {
 /**/
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-bg__rubric--hover, .main-menu--desktop .rubric__img:after {
-  background: url('../images/icons-s17107489f9.png') 0 0 no-repeat;
+  background: url('../images/icons-s23fb2ee162.png') 0 0 no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 29px;
@@ -479,7 +728,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-like-gray {
-  background: url('../images/icons-s17107489f9.png') 0 -208px no-repeat;
+  background: url('../images/icons-s23fb2ee162.png') 0 -208px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 11px;
@@ -488,7 +737,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-like-blue {
-  background: url('../images/icons-s17107489f9.png') 0 -199px no-repeat;
+  background: url('../images/icons-s23fb2ee162.png') 0 -199px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 11px;
@@ -497,7 +746,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-press {
-  background: url('../images/icons-s17107489f9.png') 0 -248px no-repeat;
+  background: url('../images/icons-s23fb2ee162.png') 0 -248px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 12px;
@@ -506,7 +755,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-btn-menu {
-  background: url('../images/icons-s17107489f9.png') 0 -29px no-repeat;
+  background: url('../images/icons-s23fb2ee162.png') 0 -29px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 20px;
@@ -515,7 +764,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-calendar, .btn-agenda:before {
-  background: url('../images/icons-s17107489f9.png') 0 -47px no-repeat;
+  background: url('../images/icons-s23fb2ee162.png') 0 -47px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 16px;
@@ -524,7 +773,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-list {
-  background: url('../images/icons-s17107489f9.png') 0 -217px no-repeat;
+  background: url('../images/icons-s23fb2ee162.png') 0 -217px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 16px;
@@ -533,7 +782,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-public {
-  background: url('../images/icons-s17107489f9.png') 0 -276px no-repeat;
+  background: url('../images/icons-s23fb2ee162.png') 0 -276px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 17px;
@@ -542,7 +791,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-checked {
-  background: url('../images/icons-s17107489f9.png') 0 -91px no-repeat;
+  background: url('../images/icons-s23fb2ee162.png') 0 -91px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 13px;
@@ -551,7 +800,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-euro {
-  background: url('../images/icons-s17107489f9.png') 0 -150px no-repeat;
+  background: url('../images/icons-s23fb2ee162.png') 0 -150px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 12px;
@@ -560,7 +809,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-location {
-  background: url('../images/icons-s17107489f9.png') 0 -232px no-repeat;
+  background: url('../images/icons-s23fb2ee162.png') 0 -232px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 12px;
@@ -569,7 +818,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-doc, .list-downloads--mini li:before {
-  background: url('../images/icons-s17107489f9.png') 0 -100px no-repeat;
+  background: url('../images/icons-s23fb2ee162.png') 0 -100px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 14px;
@@ -584,7 +833,7 @@ th {
 .training-game .breadcrumb .icons-home-gray,
 .training-video-audio .breadcrumb .icons-home-gray,
 .training-cross-media .breadcrumb .icons-home-gray {
-  background: url('../images/icons-s17107489f9.png') 0 -176px no-repeat;
+  background: url('../images/icons-s23fb2ee162.png') 0 -176px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 12px;
@@ -593,7 +842,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-home-gray {
-  background: url('../images/icons-s17107489f9.png') 0 -163px no-repeat;
+  background: url('../images/icons-s23fb2ee162.png') 0 -163px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 12px;
@@ -602,7 +851,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-download, .btn-download:after {
-  background: url('../images/icons-s17107489f9.png') 0 -134px no-repeat;
+  background: url('../images/icons-s23fb2ee162.png') 0 -134px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 14px;
@@ -611,7 +860,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-download-white, .btn-download:hover:after {
-  background: url('../images/icons-s17107489f9.png') 0 -118px no-repeat;
+  background: url('../images/icons-s23fb2ee162.png') 0 -118px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 14px;
@@ -620,7 +869,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-print {
-  background: url('../images/icons-s17107489f9.png') 0 -262px no-repeat;
+  background: url('../images/icons-s23fb2ee162.png') 0 -262px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 16px;
@@ -629,7 +878,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-checkbox, input[type="checkbox"] + label::before {
-  background: url('../images/icons-s17107489f9.png') 0 -77px no-repeat;
+  background: url('../images/icons-s23fb2ee162.png') 0 -77px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 14px;
@@ -638,7 +887,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-checkbox-checked, input[type="checkbox"]:checked + label::before {
-  background: url('../images/icons-s17107489f9.png') 0 -63px no-repeat;
+  background: url('../images/icons-s23fb2ee162.png') 0 -63px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 14px;
@@ -647,7 +896,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-radio, input[type="radio"] + label::before {
-  background: url('../images/icons-s17107489f9.png') 0 -304px no-repeat;
+  background: url('../images/icons-s23fb2ee162.png') 0 -304px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 14px;
@@ -656,7 +905,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-radio-checked, input[type="radio"]:checked + label::before {
-  background: url('../images/icons-s17107489f9.png') 0 -290px no-repeat;
+  background: url('../images/icons-s23fb2ee162.png') 0 -290px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 14px;
@@ -850,97 +1099,97 @@ button {
   content: '\e800';
 }
 
-/* '¯áÇ' */
+/* '' */
 /* line 58, ../../app/scss/includes/_fontello.scss */
 .icon-left-small:before {
   content: '\e801';
 }
 
-/* '¯áü' */
+/* '' */
 /* line 59, ../../app/scss/includes/_fontello.scss */
 .icon-menu:before {
   content: '\e802';
 }
 
-/* '¯áé' */
+/* '' */
 /* line 60, ../../app/scss/includes/_fontello.scss */
 .icon-search:before {
   content: '\e803';
 }
 
-/* '¯áâ' */
+/* '' */
 /* line 61, ../../app/scss/includes/_fontello.scss */
 .icon-down-small:before {
   content: '\e804';
 }
 
-/* '¯áä' */
+/* '' */
 /* line 62, ../../app/scss/includes/_fontello.scss */
 .icon-up-small:before {
   content: '\e805';
 }
 
-/* '¯áà' */
+/* '' */
 /* line 63, ../../app/scss/includes/_fontello.scss */
 .icon-right-small:before {
   content: '\e806';
 }
 
-/* '¯áå' */
+/* '' */
 /* line 64, ../../app/scss/includes/_fontello.scss */
 .icon-linkedin:before {
   content: '\e80a';
 }
 
-/* '¯áè' */
+/* '' */
 /* line 65, ../../app/scss/includes/_fontello.scss */
 .icon-facebook:before {
   content: '\e80b';
 }
 
-/* '¯áï' */
+/* '' */
 /* line 66, ../../app/scss/includes/_fontello.scss */
 .icon-twitter:before {
   content: '\e80c';
 }
 
-/* '¯áî' */
+/* '' */
 /* line 67, ../../app/scss/includes/_fontello.scss */
 .icon-gplus:before {
   content: '\e80d';
 }
 
-/* '¯áì' */
+/* '' */
 /* line 68, ../../app/scss/includes/_fontello.scss */
 .icon-pinterest-circled:before {
   content: '\e80e';
 }
 
-/* '¯áÄ' */
+/* '' */
 /* line 69, ../../app/scss/includes/_fontello.scss */
 .icon-vimeo:before {
   content: '\e80f';
 }
 
-/* '¯áÅ' */
+/* '' */
 /* line 70, ../../app/scss/includes/_fontello.scss */
 .icon-instagramm:before {
   content: '\e810';
 }
 
-/* '¯áÉ' */
+/* '' */
 /* line 71, ../../app/scss/includes/_fontello.scss */
 .icon-youtube-play:before {
   content: '\e811';
 }
 
-/* '¯áæ' */
+/* '' */
 /* line 72, ../../app/scss/includes/_fontello.scss */
 .icon-heart:before {
   content: '\e813';
 }
 
-/* '¯áô' */
+/* '' */
 /***************** btns blue ****************/
 /* line 2, ../../app/scss/includes/_helpers.scss */
 .btn-like {
@@ -1040,8 +1289,71 @@ button {
   vertical-align: middle;
 }
 
+/* line 86, ../../app/scss/includes/_helpers.scss */
+.btn-round, .btn-round--dark, .btn-round--light {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  -webkit-transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+          transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* line 100, ../../app/scss/includes/_helpers.scss */
+.btn-round.is-disabled, .is-disabled.btn-round--dark, .is-disabled.btn-round--light {
+  opacity: 0.5;
+  cursor: auto;
+}
+
+/* line 104, ../../app/scss/includes/_helpers.scss */
+.btn-round:hover, .btn-round--dark:hover, .btn-round--light:hover {
+  color: #FFFFFF;
+  border-color: #0045e5;
+  background-color: #0045e5;
+}
+
+/* line 109, ../../app/scss/includes/_helpers.scss */
+.btn-round.is-disabled:hover, .is-disabled.btn-round--dark:hover, .is-disabled.btn-round--light:hover {
+  opacity: 0.5;
+  background-color: transparent;
+}
+
+/* line 113, ../../app/scss/includes/_helpers.scss */
+.btn-round--dark {
+  color: #4D4D4D;
+  border-color: #4D4D4D;
+}
+
+/* line 118, ../../app/scss/includes/_helpers.scss */
+.btn-round--light {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+/* line 123, ../../app/scss/includes/_helpers.scss */
+.btn-round--dark.is-disabled:hover {
+  color: #4D4D4D;
+  border-color: #4D4D4D;
+}
+
+/* line 127, ../../app/scss/includes/_helpers.scss */
+.btn-round--light.is-disabled:hover {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
 /***************** btns white ****************/
-/* line 87, ../../app/scss/includes/_helpers.scss */
+/* line 133, ../../app/scss/includes/_helpers.scss */
 .btn-mail {
   display: inline-block;
   border: 1px solid #666666;
@@ -1056,20 +1368,20 @@ button {
   -webkit-transition: background-color 0.2s ease-out;
           transition: background-color 0.2s ease-out;
 }
-/* line 100, ../../app/scss/includes/_helpers.scss */
+/* line 146, ../../app/scss/includes/_helpers.scss */
 .btn-mail:after {
   content: '\e800';
   font-family: "fontello";
   margin-left: 10px;
 }
-/* line 106, ../../app/scss/includes/_helpers.scss */
+/* line 152, ../../app/scss/includes/_helpers.scss */
 .btn-mail:hover {
   background-color: #fff;
   color: #323232;
 }
 
 /***************** btns transparent ****************/
-/* line 112, ../../app/scss/includes/_helpers.scss */
+/* line 158, ../../app/scss/includes/_helpers.scss */
 .btn-agenda {
   display: inline-block;
   border: 1px solid #CBCBCB;
@@ -1084,20 +1396,20 @@ button {
   -webkit-transition: background-color 0.2s ease-out;
           transition: background-color 0.2s ease-out;
 }
-/* line 125, ../../app/scss/includes/_helpers.scss */
+/* line 171, ../../app/scss/includes/_helpers.scss */
 .btn-agenda:before {
   content: "";
   vertical-align: middle;
   margin-top: -2px;
 }
-/* line 132, ../../app/scss/includes/_helpers.scss */
+/* line 178, ../../app/scss/includes/_helpers.scss */
 .btn-agenda:hover {
   background-color: #fff;
   text-decoration: none;
 }
 
 /***************** other btns ****************/
-/* line 139, ../../app/scss/includes/_helpers.scss */
+/* line 185, ../../app/scss/includes/_helpers.scss */
 .btn-close:before {
   content: "\2715";
   color: #323232;
@@ -1107,23 +1419,23 @@ button {
 }
 
 /***************** links ****************/
-/* line 148, ../../app/scss/includes/_helpers.scss */
+/* line 194, ../../app/scss/includes/_helpers.scss */
 .link-localisation {
   color: #fff;
   display: inline-block;
 }
-/* line 152, ../../app/scss/includes/_helpers.scss */
+/* line 198, ../../app/scss/includes/_helpers.scss */
 .link-localisation .icon-location {
   font-size: 0.8rem;
   padding-left: 8px;
 }
 
-/* line 157, ../../app/scss/includes/_helpers.scss */
+/* line 203, ../../app/scss/includes/_helpers.scss */
 .link-more {
   text-transform: uppercase;
   font-family: "Platform-Medium";
 }
-/* line 161, ../../app/scss/includes/_helpers.scss */
+/* line 207, ../../app/scss/includes/_helpers.scss */
 .link-more:after {
   content: '\e806';
   font-family: 'fontello';
@@ -1134,7 +1446,7 @@ button {
   display: inline-block;
 }
 
-/* line 172, ../../app/scss/includes/_helpers.scss */
+/* line 218, ../../app/scss/includes/_helpers.scss */
 .link-more-training {
   text-transform: uppercase;
   font-family: "Platform-Medium";
@@ -1149,7 +1461,7 @@ button {
 }
 
 /***************** titles ****************/
-/* line 186, ../../app/scss/includes/_helpers.scss */
+/* line 232, ../../app/scss/includes/_helpers.scss */
 .title-h1 {
   font-size: 3.375rem;
   font-family: "Platform-Light";
@@ -1160,7 +1472,7 @@ button {
   color: #323232;
 }
 
-/* line 195, ../../app/scss/includes/_helpers.scss */
+/* line 241, ../../app/scss/includes/_helpers.scss */
 .title-h2 {
   font-size: 2rem;
   font-family: "Platform-Light";
@@ -1172,7 +1484,7 @@ button {
 }
 
 /**/
-/* line 206, ../../app/scss/includes/_helpers.scss */
+/* line 252, ../../app/scss/includes/_helpers.scss */
 .search-message {
   color: #fff;
   font-size: 2rem;
@@ -1181,12 +1493,12 @@ button {
 }
 
 /*list style*/
-/* line 215, ../../app/scss/includes/_helpers.scss */
+/* line 261, ../../app/scss/includes/_helpers.scss */
 .ul-styled li, .tabs-accordion .content ul li, .item-trainings__description .info__detailes li, .training-summary__description ul li {
   padding-left: 10px;
   position: relative;
 }
-/* line 219, ../../app/scss/includes/_helpers.scss */
+/* line 265, ../../app/scss/includes/_helpers.scss */
 .ul-styled li:before, .tabs-accordion .content ul li:before, .item-trainings__description .info__detailes li:before, .training-summary__description ul li:before {
   content: '\2022';
   position: absolute;
@@ -2669,70 +2981,36 @@ body.is-open {
   color: #0045e5;
 }
 
-/* line 1, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
-.slideshow-training {
-  padding: 0;
-  background: #333333;
+/* line 1, ../../app/fragments/components/block-slider/_block-slider.scss */
+.block-slider-4 {
+  background-color: #fff;
 }
-/* line 5, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
-.slideshow-training .title-h2 {
+
+/* line 4, ../../app/fragments/components/block-slider/_block-slider.scss */
+.block-slider-3 {
+  background-color: #191919;
   color: #fff;
-  padding: 20px 0;
-  margin: 0;
 }
-/* line 12, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
-.slideshow-training .owl-carousel .item {
-  float: left;
-  margin-right: 40px;
-  position: relative;
-  width: 31%;
-  border-top: 2px solid #07d38f;
-}
-/* line 18, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
-.slideshow-training .owl-carousel .item .new {
-  position: absolute;
-  background: #0045e5;
+/* line 8, ../../app/fragments/components/block-slider/_block-slider.scss */
+.block-slider-3 h2 {
   color: #fff;
-  top: 7px;
-  right: 0;
-  padding: 1px 4px;
-  font-size: 0.6875rem;
-  text-transform: uppercase;
 }
-/* line 30, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
-.slideshow-training .owl-carousel .item .item-slide__image img {
-  width: 100%;
-  display: block;
+
+/* line 12, ../../app/fragments/components/block-slider/_block-slider.scss */
+.owl-nav {
+  text-align: center;
+  margin-top: 30px;
 }
-/* line 35, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
-.slideshow-training .owl-carousel .item .item-slide__description {
-  background: #fff;
-  padding: 20px;
-  height: 190px;
-  box-sizing: border-box;
+
+/* line 16, ../../app/fragments/components/block-slider/_block-slider.scss */
+.owl-nav > div {
+  margin: 0 10px;
 }
-/* line 41, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
-.slideshow-training .owl-carousel .item .item-slide__description h3 {
-  height: 50px;
-  overflow: hidden;
-  color: #333333;
-  margin-bottom: 20px;
-}
-/* line 46, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
-.slideshow-training .owl-carousel .item .item-slide__description h3 a {
-  color: inherit;
-}
-/* line 51, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
-.slideshow-training .owl-carousel .item .item-slide__description .calendar {
-  margin-bottom: 20px;
-}
-/* line 55, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
-.slideshow-training .owl-carousel .item .item-slide__description .btn-higlight, .slideshow-training .owl-carousel .item .item-slide__description .main-menu--search button, .main-menu--search .slideshow-training .owl-carousel .item .item-slide__description button {
-  padding: 10px 80px;
-}
-/* line 59, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
-.slideshow-training .owl-carousel .item .item-slide__description .btn-like--mini {
-  margin-left: 2px;
+
+/* line 19, ../../app/fragments/components/block-slider/_block-slider.scss */
+.owl-carousel .owl-item {
+  display: inline-block;
+  float: none;
 }
 
 /* Content partials */
@@ -3996,24 +4274,24 @@ body.is-open {
   margin-top: 15px;
 }
 
-/* line 1, ../../app/fragments/content/filter-training-pro/_filter-trainings-pro.scss */
+/* line 1, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings {
   background: #fff;
   text-align: center;
   padding: 5px 0 40px;
 }
-/* line 6, ../../app/fragments/content/filter-training-pro/_filter-trainings-pro.scss */
+/* line 6, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal {
   float: left;
   width: 30%;
   text-align: left;
 }
-/* line 12, ../../app/fragments/content/filter-training-pro/_filter-trainings-pro.scss */
+/* line 12, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form {
   border-top: none;
   padding-top: 40px;
 }
-/* line 16, ../../app/fragments/content/filter-training-pro/_filter-trainings-pro.scss */
+/* line 16, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .title {
   text-transform: uppercase;
   color: #323232;
@@ -4021,11 +4299,11 @@ body.is-open {
   font-family: "Platform-Medium";
   letter-spacing: 1px;
 }
-/* line 23, ../../app/fragments/content/filter-training-pro/_filter-trainings-pro.scss */
+/* line 23, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .btn-higlight, .filter-trainings.professionnal .filter-trainings__form .main-menu--search button, .main-menu--search .filter-trainings.professionnal .filter-trainings__form button {
   margin-top: 20px;
 }
-/* line 27, ../../app/fragments/content/filter-training-pro/_filter-trainings-pro.scss */
+/* line 27, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .col1,
 .filter-trainings.professionnal .filter-trainings__form .col2,
 .filter-trainings.professionnal .filter-trainings__form .col3 {
@@ -4033,16 +4311,16 @@ body.is-open {
   vertical-align: top;
   text-align: left;
 }
-/* line 34, ../../app/fragments/content/filter-training-pro/_filter-trainings-pro.scss */
+/* line 34, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .col1,
 .filter-trainings.professionnal .filter-trainings__form .col2 {
   width: 20%;
 }
-/* line 38, ../../app/fragments/content/filter-training-pro/_filter-trainings-pro.scss */
+/* line 38, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .col3 {
   width: 55%;
 }
-/* line 41, ../../app/fragments/content/filter-training-pro/_filter-trainings-pro.scss */
+/* line 41, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .col3 .col {
   display: inline-block;
   width: 30%;
