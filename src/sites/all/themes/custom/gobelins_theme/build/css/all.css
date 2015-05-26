@@ -461,255 +461,6 @@ th {
   padding: 0;
 }
 
-/* 
- *  Owl Carousel - Animate Plugin
- */
-/* line 4, ../../app/scss/bower/_owl.carousel.scss */
-.owl-carousel .animated {
-  -webkit-animation-duration: 1000ms;
-  animation-duration: 1000ms;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-/* line 10, ../../app/scss/bower/_owl.carousel.scss */
-.owl-carousel .owl-animated-in {
-  z-index: 0;
-}
-
-/* line 13, ../../app/scss/bower/_owl.carousel.scss */
-.owl-carousel .owl-animated-out {
-  z-index: 1;
-}
-
-/* line 16, ../../app/scss/bower/_owl.carousel.scss */
-.owl-carousel .fadeOut {
-  -webkit-animation-name: fadeOut;
-  animation-name: fadeOut;
-}
-
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-/* 
- * 	Owl Carousel - Auto Height Plugin
- */
-/* line 43, ../../app/scss/bower/_owl.carousel.scss */
-.owl-height {
-  -webkit-transition: height 500ms ease-in-out;
-  transition: height 500ms ease-in-out;
-}
-
-/* 
- *  Core Owl Carousel CSS File
- */
-/* line 54, ../../app/scss/bower/_owl.carousel.scss */
-.owl-carousel {
-  display: none;
-  width: 100%;
-  -webkit-tap-highlight-color: transparent;
-  /* position relative and z-index fix webkit rendering fonts issue */
-  position: relative;
-  z-index: 1;
-}
-
-/* line 62, ../../app/scss/bower/_owl.carousel.scss */
-.owl-carousel .owl-stage {
-  position: relative;
-  -ms-touch-action: pan-Y;
-}
-
-/* line 66, ../../app/scss/bower/_owl.carousel.scss */
-.owl-carousel .owl-stage:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
-}
-
-/* line 74, ../../app/scss/bower/_owl.carousel.scss */
-.owl-carousel .owl-stage-outer {
-  position: relative;
-  overflow: hidden;
-  /* fix for flashing background */
-  -webkit-transform: translate3d(0px, 0px, 0px);
-}
-
-/* line 80, ../../app/scss/bower/_owl.carousel.scss */
-.owl-carousel .owl-controls .owl-nav .owl-prev,
-.owl-carousel .owl-controls .owl-nav .owl-next,
-.owl-carousel .owl-controls .owl-dot {
-  cursor: pointer;
-  cursor: hand;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* line 91, ../../app/scss/bower/_owl.carousel.scss */
-.owl-carousel.owl-loaded {
-  display: block;
-}
-
-/* line 94, ../../app/scss/bower/_owl.carousel.scss */
-.owl-carousel.owl-loading {
-  opacity: 0;
-  display: block;
-}
-
-/* line 98, ../../app/scss/bower/_owl.carousel.scss */
-.owl-carousel.owl-hidden {
-  opacity: 0;
-}
-
-/* line 101, ../../app/scss/bower/_owl.carousel.scss */
-.owl-carousel .owl-refresh .owl-item {
-  display: none;
-}
-
-/* line 104, ../../app/scss/bower/_owl.carousel.scss */
-.owl-carousel .owl-item {
-  position: relative;
-  min-height: 1px;
-  float: left;
-  -webkit-backface-visibility: hidden;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* line 116, ../../app/scss/bower/_owl.carousel.scss */
-.owl-carousel .owl-item img {
-  display: block;
-  width: 100%;
-  -webkit-transform-style: preserve-3d;
-}
-
-/* line 121, ../../app/scss/bower/_owl.carousel.scss */
-.owl-carousel.owl-text-select-on .owl-item {
-  -webkit-user-select: auto;
-  -moz-user-select: auto;
-  -ms-user-select: auto;
-  user-select: auto;
-}
-
-/* line 127, ../../app/scss/bower/_owl.carousel.scss */
-.owl-carousel .owl-grab {
-  cursor: move;
-  cursor: -webkit-grab;
-  cursor: -o-grab;
-  cursor: -ms-grab;
-  cursor: grab;
-}
-
-/* line 134, ../../app/scss/bower/_owl.carousel.scss */
-.owl-carousel .owl-rtl {
-  direction: rtl;
-}
-
-/* line 137, ../../app/scss/bower/_owl.carousel.scss */
-.owl-carousel .owl-rtl .owl-item {
-  float: right;
-}
-
-/* No Js */
-/* line 142, ../../app/scss/bower/_owl.carousel.scss */
-.no-js .owl-carousel {
-  display: block;
-}
-
-/* 
- * 	Owl Carousel - Lazy Load Plugin
- */
-/* line 149, ../../app/scss/bower/_owl.carousel.scss */
-.owl-carousel .owl-item .owl-lazy {
-  opacity: 0;
-  -webkit-transition: opacity 400ms ease;
-  transition: opacity 400ms ease;
-}
-
-/* line 157, ../../app/scss/bower/_owl.carousel.scss */
-.owl-carousel .owl-item img {
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-}
-
-/* 
- * 	Owl Carousel - Video Plugin
- */
-/* line 164, ../../app/scss/bower/_owl.carousel.scss */
-.owl-carousel .owl-video-wrapper {
-  position: relative;
-  height: 100%;
-  background: #000;
-}
-
-/* line 169, ../../app/scss/bower/_owl.carousel.scss */
-.owl-carousel .owl-video-play-icon {
-  position: absolute;
-  height: 80px;
-  width: 80px;
-  left: 50%;
-  top: 50%;
-  margin-left: -40px;
-  margin-top: -40px;
-  background: url("owl.video.play.png") no-repeat;
-  cursor: pointer;
-  z-index: 1;
-  -webkit-backface-visibility: hidden;
-  -webkit-transition: scale 100ms ease;
-  transition: scale 100ms ease;
-}
-
-/* line 187, ../../app/scss/bower/_owl.carousel.scss */
-.owl-carousel .owl-video-play-icon:hover {
-  -webkit-transition: scale(1.3, 1.3);
-  transition: scale(1.3, 1.3);
-}
-
-/* line 194, ../../app/scss/bower/_owl.carousel.scss */
-.owl-carousel .owl-video-playing .owl-video-tn,
-.owl-carousel .owl-video-playing .owl-video-play-icon {
-  display: none;
-}
-
-/* line 198, ../../app/scss/bower/_owl.carousel.scss */
-.owl-carousel .owl-video-tn {
-  opacity: 0;
-  height: 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: opacity 400ms ease;
-  transition: opacity 400ms ease;
-}
-
-/* line 213, ../../app/scss/bower/_owl.carousel.scss */
-.owl-carousel .owl-video-frame {
-  position: relative;
-  z-index: 1;
-}
-
 /*@import "bootstrap/bootstrap";*/
 /* Includes imports */
 /* Icon directory. */
@@ -1483,8 +1234,23 @@ button {
   color: #323232;
 }
 
-/**/
+/***************** reset ****************/
 /* line 252, ../../app/scss/includes/_helpers.scss */
+.btn-remove {
+  color: #666666;
+  font-size: 0.875rem;
+  padding: 0;
+}
+/* line 257, ../../app/scss/includes/_helpers.scss */
+.btn-remove:before {
+  content: 'x';
+  display: inline-block;
+  padding-right: 5px;
+  font-size: 1rem;
+}
+
+/**/
+/* line 266, ../../app/scss/includes/_helpers.scss */
 .search-message {
   color: #fff;
   font-size: 2rem;
@@ -1493,12 +1259,12 @@ button {
 }
 
 /*list style*/
-/* line 261, ../../app/scss/includes/_helpers.scss */
+/* line 275, ../../app/scss/includes/_helpers.scss */
 .ul-styled li, .tabs-accordion .content ul li, .item-trainings__description .info__detailes li, .training-summary__description ul li {
   padding-left: 10px;
   position: relative;
 }
-/* line 265, ../../app/scss/includes/_helpers.scss */
+/* line 279, ../../app/scss/includes/_helpers.scss */
 .ul-styled li:before, .tabs-accordion .content ul li:before, .item-trainings__description .info__detailes li:before, .training-summary__description ul li:before {
   content: '\2022';
   position: absolute;
@@ -2988,6 +2754,72 @@ body.is-open {
   color: #0045e5;
 }
 
+/* line 1, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
+.slideshow-training {
+  padding: 0;
+  background: #333333;
+}
+/* line 5, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
+.slideshow-training .title-h2 {
+  color: #fff;
+  padding: 20px 0;
+  margin: 0;
+}
+/* line 12, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
+.slideshow-training .owl-carousel .item {
+  float: left;
+  margin-right: 40px;
+  position: relative;
+  width: 31%;
+  border-top: 2px solid #07d38f;
+}
+/* line 18, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
+.slideshow-training .owl-carousel .item .new {
+  position: absolute;
+  background: #0045e5;
+  color: #fff;
+  top: 7px;
+  right: 0;
+  padding: 1px 4px;
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+}
+/* line 30, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
+.slideshow-training .owl-carousel .item .item-slide__image img {
+  width: 100%;
+  display: block;
+}
+/* line 35, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
+.slideshow-training .owl-carousel .item .item-slide__description {
+  background: #fff;
+  padding: 20px;
+  height: 190px;
+  box-sizing: border-box;
+}
+/* line 41, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
+.slideshow-training .owl-carousel .item .item-slide__description h3 {
+  height: 50px;
+  overflow: hidden;
+  color: #333333;
+  margin-bottom: 20px;
+}
+/* line 46, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
+.slideshow-training .owl-carousel .item .item-slide__description h3 a {
+  color: inherit;
+}
+/* line 51, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
+.slideshow-training .owl-carousel .item .item-slide__description .calendar {
+  margin-bottom: 20px;
+}
+/* line 55, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
+.slideshow-training .owl-carousel .item .item-slide__description .btn-higlight, .slideshow-training .owl-carousel .item .item-slide__description .main-menu--search button, .main-menu--search .slideshow-training .owl-carousel .item .item-slide__description button {
+  padding: 10px 80px;
+}
+/* line 59, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
+.slideshow-training .owl-carousel .item .item-slide__description .btn-like--mini {
+  margin-left: 2px;
+}
+
 /* Bloc styles. */
 /* line 2, ../../app/fragments/components/block-slider/_block-slider.scss */
 .training-animation .block-slider--1 {
@@ -4039,7 +3871,7 @@ body.is-open {
 /* line 6, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal {
   float: left;
-  width: 30%;
+  width: 27%;
   text-align: left;
 }
 /* line 12, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
@@ -4048,39 +3880,61 @@ body.is-open {
   padding-top: 40px;
 }
 /* line 16, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form .filter-training-field {
+  border-top: 1px solid #cccccc;
+  padding: 15px 0 20px 0;
+  width: 75%;
+  position: relative;
+}
+/* line 22, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form .filter-training-field:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+/* line 27, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form .filter-training-field .item-form {
+  margin: 15px 0 0 0;
+}
+/* line 29, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form .filter-training-field .item-form:first-child {
+  margin: 0;
+}
+/* line 36, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form .remove-all-themes {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* line 42, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .title {
   text-transform: uppercase;
-  color: #323232;
+  color: #333333;
   margin-bottom: 10px;
   font-family: "Platform-Medium";
   letter-spacing: 1px;
 }
-/* line 23, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+/* line 49, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .btn-higlight, .filter-trainings.professionnal .filter-trainings__form .main-menu--search button, .main-menu--search .filter-trainings.professionnal .filter-trainings__form button {
   margin-top: 20px;
 }
-/* line 27, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
-.filter-trainings.professionnal .filter-trainings__form .col1,
-.filter-trainings.professionnal .filter-trainings__form .col2,
-.filter-trainings.professionnal .filter-trainings__form .col3 {
+/* line 54, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form .list-themes li {
   display: inline-block;
-  vertical-align: top;
-  text-align: left;
+  margin: 0 7px 10px 0;
 }
-/* line 34, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
-.filter-trainings.professionnal .filter-trainings__form .col1,
-.filter-trainings.professionnal .filter-trainings__form .col2 {
-  width: 20%;
+/* line 57, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form .list-themes li a {
+  font-size: 0.875rem;
+  color: #fff;
+  background: #cccccc;
+  border-radius: 20px;
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
 }
-/* line 38, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
-.filter-trainings.professionnal .filter-trainings__form .col3 {
-  width: 55%;
-}
-/* line 41, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
-.filter-trainings.professionnal .filter-trainings__form .col3 .col {
-  display: inline-block;
-  width: 30%;
-  vertical-align: top;
+/* line 66, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form .list-themes li:nth-child(2) {
+  margin-right: 0;
 }
 
 /* line 1, ../../app/fragments/content/block-training-search/_block-training-search.scss */
@@ -4417,4 +4271,79 @@ body.is-open {
 .list-rapid-access .item-rapid-access .btn-higlight, .list-rapid-access .item-rapid-access .main-menu--search button, .main-menu--search .list-rapid-access .item-rapid-access button {
   display: none;
   margin-top: 15px;
+}
+
+/* line 1, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings {
+  background: #fff;
+  text-align: center;
+  padding: 5px 0 40px;
+}
+/* line 6, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal {
+  float: left;
+  width: 27%;
+  text-align: left;
+}
+/* line 12, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form {
+  border-top: none;
+  padding-top: 40px;
+}
+/* line 16, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form .filter-training-field {
+  border-top: 1px solid #cccccc;
+  padding: 15px 0 20px 0;
+  width: 75%;
+  position: relative;
+}
+/* line 22, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form .filter-training-field:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+/* line 27, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form .filter-training-field .item-form {
+  margin: 15px 0 0 0;
+}
+/* line 29, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form .filter-training-field .item-form:first-child {
+  margin: 0;
+}
+/* line 36, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form .remove-all-themes {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* line 42, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form .title {
+  text-transform: uppercase;
+  color: #333333;
+  margin-bottom: 10px;
+  font-family: "Platform-Medium";
+  letter-spacing: 1px;
+}
+/* line 49, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form .btn-higlight, .filter-trainings.professionnal .filter-trainings__form .main-menu--search button, .main-menu--search .filter-trainings.professionnal .filter-trainings__form button {
+  margin-top: 20px;
+}
+/* line 54, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form .list-themes li {
+  display: inline-block;
+  margin: 0 7px 10px 0;
+}
+/* line 57, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form .list-themes li a {
+  font-size: 0.875rem;
+  color: #fff;
+  background: #cccccc;
+  border-radius: 20px;
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+}
+/* line 66, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+.filter-trainings.professionnal .filter-trainings__form .list-themes li:nth-child(2) {
+  margin-right: 0;
 }

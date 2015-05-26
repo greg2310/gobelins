@@ -248,6 +248,20 @@
   color:$color__text-dark;
 }
 
+/***************** reset ****************/
+.btn-remove{
+	color:$color__border-gray;
+	font-size:0.875rem;
+	padding:0;
+	
+	&:before{
+		content:'x';
+		display:inline-block;
+		padding-right:5px;
+		font-size:1rem;
+	}
+}
+
 /**/
 .search-message{
   color:#fff;

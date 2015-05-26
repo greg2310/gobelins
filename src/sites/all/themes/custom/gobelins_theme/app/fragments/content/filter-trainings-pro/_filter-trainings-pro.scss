@@ -5,17 +5,43 @@
   
   &.professionnal{
 	float:left;
-	width:30%;
+	width:27%;
 	text-align:left;
 	
 	
 	.filter-trainings__form{
 	  border-top:none;
 	  padding-top:40px;
+	  
+	  .filter-training-field{
+		border-top:1px solid $color__training--search--border;
+		padding:15px 0 20px 0;
+		width:75%;
+		position:relative;
+		
+		&:first-child{
+			border-top:none;
+			padding-top:0;
+		}
+		
+		.item-form{
+			margin:15px 0 0 0;
+			&:first-child{
+				margin:0;
+			}
+			
+		}
+	  }
+	  
+	  .remove-all-themes{
+		position:absolute;
+		right:0;
+		top:0;
+	  }
   
 	  .title{
 		text-transform:uppercase;
-		color:$color__text-dark;
+		color:$color__slideshow--training;
 		margin-bottom:10px;
 		font-family:$font__platform--medium;
 		letter-spacing:1px;
@@ -23,27 +49,27 @@
 	  .btn-higlight{
 		margin-top:20px;
 	  }
-  
-	  .col1,
-	  .col2,
-	  .col3{
-		display:inline-block;
-		vertical-align:top;
-		text-align:left;
-	  }
-	  .col1,
-	  .col2{
-		width:20%;
-	  }
-	  .col3{
-		width:55%;
-		
-		.col{
-		  display:inline-block;
-		  width:30%;
-		  vertical-align:top;
+	  
+	  .list-themes{
+		li{
+			display:inline-block;
+			margin:0 7px 10px 0;
+			a{
+				font-size:0.875rem;
+				color:$color__bg-white;
+				background:$color__training--search--border;
+				border-radius:20px;
+				padding:10px 15px;
+				display:block;
+				text-decoration:none;
+			}
+			&:nth-child(2){
+				margin-right:0;
+			}
 		}
 	  }
+  
+	 
 	}
 	
   }
