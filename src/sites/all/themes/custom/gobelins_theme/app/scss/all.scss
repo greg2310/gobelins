@@ -31,6 +31,7 @@
 @import "../fragments/components/breadcrumb/breadcrumb";
 @import "../fragments/components/tabs-accordion/tabs-accordion";
 @import "../fragments/components/widgets/widget-shared-icons";
+@import "../fragments/components/slideshow-training/slideshow-training"; 
 
 /* Content partials */
 @import "../fragments/content/list-trainings/list-trainings";
@@ -40,4 +41,9 @@
 @import "../fragments/content/block-training-presentation/block-training-presentation";
 @import "../fragments/content/block-training-banner/block-training-banner";
 @import "../fragments/content/block-training-details/block-training-details";
+@import "../fragments/content/block-training-search/block-training-search";
+@import "../fragments/content/block-training-type/block-training-type";
+@import "../fragments/content/block-training-results/block-training-results";
+@import "../fragments/content/results-filter-training/results-filter-training";
+@import "../fragments/content/block-rapid-access/block-rapid-access";
 

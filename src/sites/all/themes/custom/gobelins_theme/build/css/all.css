@@ -1065,8 +1065,22 @@ button {
   display: inline-block;
 }
 
+/* line 146, ../../app/scss/includes/_helpers.scss */
+.link-more-training {
+  text-transform: uppercase;
+  font-family: "Platform-Medium";
+  font-size: 0.875rem;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  padding: 10px 15px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
 /***************** titles ****************/
-/* line 147, ../../app/scss/includes/_helpers.scss */
+/* line 160, ../../app/scss/includes/_helpers.scss */
 .title-h1 {
   font-size: 3.375rem;
   font-family: "Platform-Light";
@@ -1077,7 +1091,7 @@ button {
   color: #323232;
 }
 
-/* line 156, ../../app/scss/includes/_helpers.scss */
+/* line 169, ../../app/scss/includes/_helpers.scss */
 .title-h2 {
   font-size: 2rem;
   font-family: "Platform-Light";
@@ -1089,7 +1103,7 @@ button {
 }
 
 /**/
-/* line 167, ../../app/scss/includes/_helpers.scss */
+/* line 180, ../../app/scss/includes/_helpers.scss */
 .search-message {
   color: #fff;
   font-size: 2rem;
@@ -1098,12 +1112,12 @@ button {
 }
 
 /*list style*/
-/* line 176, ../../app/scss/includes/_helpers.scss */
+/* line 189, ../../app/scss/includes/_helpers.scss */
 .ul-styled li, .tabs-accordion .content ul li, .item-trainings__description .info__detailes li, .training-summary__description ul li {
   padding-left: 10px;
   position: relative;
 }
-/* line 180, ../../app/scss/includes/_helpers.scss */
+/* line 193, ../../app/scss/includes/_helpers.scss */
 .ul-styled li:before, .tabs-accordion .content ul li:before, .item-trainings__description .info__detailes li:before, .training-summary__description ul li:before {
   content: '\2022';
   position: absolute;
@@ -2022,6 +2036,7 @@ button {
   text-transform: uppercase;
   display: inline-block;
   width: 45%;
+  vertical-align: top;
 }
 @media screen and (max-width: 1140px) {
   /* line 12, ../../app/fragments/components/header/_menu__search.scss */
@@ -2032,7 +2047,7 @@ button {
     margin-bottom: 25px;
   }
 }
-/* line 24, ../../app/fragments/components/header/_menu__search.scss */
+/* line 25, ../../app/fragments/components/header/_menu__search.scss */
 .main-menu--search input[type="text"] {
   background: #f2f2f2 url(../images/icons/icon-search.png) no-repeat 15px center;
   border: 1px solid #e5e5e5;
@@ -2045,19 +2060,19 @@ button {
   font-size: 0.875rem;
 }
 @media screen and (max-width: 1140px) {
-  /* line 24, ../../app/fragments/components/header/_menu__search.scss */
+  /* line 25, ../../app/fragments/components/header/_menu__search.scss */
   .main-menu--search input[type="text"] {
     display: block;
     width: 100%;
     margin-bottom: 20px;
   }
 }
-/* line 42, ../../app/fragments/components/header/_menu__search.scss */
+/* line 43, ../../app/fragments/components/header/_menu__search.scss */
 .main-menu--search button {
   vertical-align: middle;
 }
 @media screen and (max-width: 1140px) {
-  /* line 42, ../../app/fragments/components/header/_menu__search.scss */
+  /* line 43, ../../app/fragments/components/header/_menu__search.scss */
   .main-menu--search button {
     display: block;
     width: 100%;
@@ -2110,24 +2125,43 @@ button {
   height: auto;
 }
 
-/* line 1, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+/* line 4, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+.training-type .breadcrumb ul li {
+  color: #fff;
+}
+/* line 7, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+.training-type .breadcrumb ul li:first-child {
+  padding-left: 0;
+}
+/* line 11, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+.training-type .breadcrumb ul li a,
+.training-type .breadcrumb ul li span {
+  color: inherit;
+}
+/* line 15, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+.training-type .breadcrumb ul li .icons-home-gray {
+  background-position: 0 -158px;
+  background-size: 29px 327px;
+}
+
+/* line 24, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
 .breadcrumb {
   font-size: 0.875rem;
 }
-/* line 4, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+/* line 27, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
 .breadcrumb ul {
   padding: 17px 20px;
   width: 1140px;
   margin: 0 auto;
 }
-/* line 9, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+/* line 32, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
 .breadcrumb ul li {
   display: inline-block;
   margin-right: 7px;
   position: relative;
   padding-left: 24px;
 }
-/* line 15, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+/* line 38, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
 .breadcrumb ul li + li:before {
   content: "\2192";
   display: inline-block;
@@ -2136,7 +2170,7 @@ button {
   top: -1px;
 }
 
-/* line 24, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+/* line 47, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
 .training-animation .breadcrumb,
 .training-graphic-design .breadcrumb,
 .training-web-design .breadcrumb,
@@ -2146,7 +2180,7 @@ button {
 .training-cross-media .breadcrumb {
   color: #fff;
 }
-/* line 32, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+/* line 55, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
 .training-animation .breadcrumb a,
 .training-graphic-design .breadcrumb a,
 .training-web-design .breadcrumb a,
@@ -2367,6 +2401,72 @@ button {
 /* line 109, ../../app/fragments/components/widgets/_widget-shared-icons.scss */
 .block-sharing .icon-mail:hover {
   color: #0045e5;
+}
+
+/* line 1, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
+.slideshow-training {
+  padding: 0;
+  background: #333333;
+}
+/* line 5, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
+.slideshow-training .title-h2 {
+  color: #fff;
+  padding: 20px 0;
+  margin: 0;
+}
+/* line 12, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
+.slideshow-training .owl-carousel .item {
+  float: left;
+  margin-right: 40px;
+  position: relative;
+  width: 31%;
+  border-top: 2px solid #07d38f;
+}
+/* line 18, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
+.slideshow-training .owl-carousel .item .new {
+  position: absolute;
+  background: #0045e5;
+  color: #fff;
+  top: 7px;
+  right: 0;
+  padding: 1px 4px;
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+}
+/* line 30, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
+.slideshow-training .owl-carousel .item .item-slide__image img {
+  width: 100%;
+  display: block;
+}
+/* line 35, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
+.slideshow-training .owl-carousel .item .item-slide__description {
+  background: #fff;
+  padding: 20px;
+  height: 190px;
+  box-sizing: border-box;
+}
+/* line 41, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
+.slideshow-training .owl-carousel .item .item-slide__description h3 {
+  height: 50px;
+  overflow: hidden;
+  color: #333333;
+  margin-bottom: 20px;
+}
+/* line 46, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
+.slideshow-training .owl-carousel .item .item-slide__description h3 a {
+  color: inherit;
+}
+/* line 51, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
+.slideshow-training .owl-carousel .item .item-slide__description .calendar {
+  margin-bottom: 20px;
+}
+/* line 55, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
+.slideshow-training .owl-carousel .item .item-slide__description .btn-higlight, .slideshow-training .owl-carousel .item .item-slide__description .main-menu--search button, .main-menu--search .slideshow-training .owl-carousel .item .item-slide__description button {
+  padding: 10px 80px;
+}
+/* line 59, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
+.slideshow-training .owl-carousel .item .item-slide__description .btn-like--mini {
+  margin-left: 2px;
 }
 
 /* Content partials */
@@ -3100,4 +3200,340 @@ button {
 /* line 22, ../../app/fragments/content/block-training-details/_block-training-details.scss */
 .block-training-details .title-h2 {
   text-align: left;
+}
+
+/* line 1, ../../app/fragments/content/block-training-search/_block-training-search.scss */
+.block-training-search {
+  padding: 0;
+  background: #fff;
+}
+/* line 5, ../../app/fragments/content/block-training-search/_block-training-search.scss */
+.block-training-search .main-menu--search input[type="text"] {
+  border: 1px solid #cccccc;
+  background-color: #f2f2f2;
+}
+/* line 9, ../../app/fragments/content/block-training-search/_block-training-search.scss */
+.block-training-search .main-menu--search button {
+  border: 1px solid #cccccc;
+}
+
+/* line 2, ../../app/fragments/content/block-training-type/block-training-type.scss */
+.block-banner.type {
+  margin-top: -55px;
+}
+
+/* line 6, ../../app/fragments/content/block-training-type/block-training-type.scss */
+.training-type-name {
+  color: #fff;
+  position: relative;
+  font-family: "Platform-Medium";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 12px 0 0 0;
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+  font-size: 1.0625rem;
+}
+
+/* line 19, ../../app/fragments/content/block-training-type/block-training-type.scss */
+.training-type-summary {
+  padding-left: 70px;
+}
+/* line 23, ../../app/fragments/content/block-training-type/block-training-type.scss */
+.training-type-summary .training-type-summary__title .title-h1 {
+  color: #fff;
+  text-align: left;
+  position: relative;
+  margin: 0;
+}
+/* line 28, ../../app/fragments/content/block-training-type/block-training-type.scss */
+.training-type-summary .training-type-summary__title .title-h1:before {
+  background-color: transparent;
+  border: 22px solid #00e196;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 15px;
+  position: absolute;
+  left: -7%;
+  top: 12%;
+  width: 15px;
+}
+
+/* line 44, ../../app/fragments/content/block-training-type/block-training-type.scss */
+.training-summary__title {
+  padding: 30px 30px 25px 30px;
+  color: #323232;
+}
+/* line 48, ../../app/fragments/content/block-training-type/block-training-type.scss */
+.training-summary__title p {
+  font-family: "Platform-Medium";
+  letter-spacing: 1px;
+}
+/* line 52, ../../app/fragments/content/block-training-type/block-training-type.scss */
+.training-summary__title p span {
+  text-transform: uppercase;
+}
+
+/* line 58, ../../app/fragments/content/block-training-type/block-training-type.scss */
+.training-summary__introduction {
+  max-width: 55%;
+  font-size: 1.375rem;
+  color: #fff;
+}
+
+/* line 65, ../../app/fragments/content/block-training-type/block-training-type.scss */
+.training-summary__description {
+  border-top: 1px solid #e5e5e5;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+/* line 71, ../../app/fragments/content/block-training-type/block-training-type.scss */
+.training-summary__description .col1 {
+  width: 44%;
+  display: table-cell;
+  padding: 0 20px 25px 30px;
+}
+/* line 76, ../../app/fragments/content/block-training-type/block-training-type.scss */
+.training-summary__description .col2,
+.training-summary__description .col3 {
+  width: 28%;
+  display: table-cell;
+  border-left: 1px solid #e5e5e5;
+}
+/* line 82, ../../app/fragments/content/block-training-type/block-training-type.scss */
+.training-summary__description .col2 {
+  padding: 0 20px;
+}
+/* line 85, ../../app/fragments/content/block-training-type/block-training-type.scss */
+.training-summary__description .col3-1,
+.training-summary__description .col3-2 {
+  padding: 0 20px;
+}
+/* line 89, ../../app/fragments/content/block-training-type/block-training-type.scss */
+.training-summary__description .col3-1 {
+  padding-bottom: 20px;
+}
+/* line 92, ../../app/fragments/content/block-training-type/block-training-type.scss */
+.training-summary__description .col3-2 {
+  border-top: 1px solid #e5e5e5;
+}
+/* line 96, ../../app/fragments/content/block-training-type/block-training-type.scss */
+.training-summary__description .sub-title {
+  font-family: "Platform-Medium";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323232;
+  margin: 20px 0 5px;
+}
+
+/* line 107, ../../app/fragments/content/block-training-type/block-training-type.scss */
+.breadcrumb + .block-banner {
+  margin-top: -55px;
+}
+
+/* line 1, ../../app/fragments/content/block-training-results/_block-training-results.scss */
+.block-training-results {
+  background-color: #f2f2f2;
+}
+
+/* line 1, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.results-filter-training {
+  float: right;
+  width: 70%;
+}
+/* line 4, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.results-filter-training .title-h2 {
+  text-align: left;
+  font-size: 2rem;
+  text-transform: none;
+}
+/* line 10, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.results-filter-training .option-filter {
+  text-transform: uppercase;
+  color: #333333;
+  margin-bottom: 15px;
+}
+/* line 14, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.results-filter-training .option-filter .date,
+.results-filter-training .option-filter .price {
+  text-transform: capitalize;
+  color: #666666;
+  font-family: "Neuzeit";
+  padding-bottom: 2px;
+  margin-left: 15px;
+  text-decoration: none;
+}
+/* line 23, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.results-filter-training .option-filter .date.active,
+.results-filter-training .option-filter .price.active {
+  border-bottom: 2px solid #1a1a1a;
+  color: #333333;
+}
+/* line 29, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.results-filter-training .list-results-training {
+  border-bottom: 2px solid #d9d9d9;
+  margin-bottom: 25px;
+}
+/* line 32, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.results-filter-training .list-results-training .list-item {
+  float: left;
+  width: 100%;
+  background-color: #fff;
+  margin-top: 1px;
+  padding: 15px;
+}
+/* line 38, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.results-filter-training .list-results-training .list-item:first-child {
+  margin-top: 0;
+}
+/* line 43, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.results-filter-training .list-results-training .list-item .item-result__detail {
+  width: 64%;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 47, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.results-filter-training .list-results-training .list-item .item-result__detail h3 {
+  color: #333333;
+  font-size: 1.25;
+  font-family: "Platform-Medium";
+  letter-spacing: 1px;
+  position: relative;
+}
+/* line 55, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.results-filter-training .list-results-training .list-item .item-result__detail h3.new:after {
+  content: 'new';
+  display: inline-block;
+  background: #0045e5;
+  color: #fff;
+  padding: 0px 4px;
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  height: 15px;
+  line-height: 15px;
+  margin: 4px 0 0 10px;
+  vertical-align: top;
+}
+/* line 71, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.results-filter-training .list-results-training .list-item .item-result__detail p {
+  display: inline-block;
+  margin-top: 10px;
+}
+/* line 74, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.results-filter-training .list-results-training .list-item .item-result__detail p.ref {
+  margin-left: 20px;
+}
+/* line 77, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.results-filter-training .list-results-training .list-item .item-result__detail p.subtitle {
+  display: block;
+  margin: 0;
+}
+/* line 84, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.results-filter-training .list-results-training .list-item .item-result__info {
+  width: 35%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+}
+/* line 90, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.results-filter-training .list-results-training .list-item .item-result__info .price-training {
+  color: #666666;
+  margin-right: 20px;
+}
+/* line 99, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.results-filter-training .other-training {
+  background: #1a1a1a;
+  padding: 14px 0;
+}
+/* line 102, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.results-filter-training .other-training a {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 0.875rem;
+  font-family: "Platform-Medium";
+  letter-spacing: 1px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* line 1, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
+.list-rapid-access {
+  background-color: #f2f2f2;
+}
+/* line 4, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
+.list-rapid-access .item-rapid-access {
+  background-color: #fff;
+  border-bottom: 2px solid #e5e5e5;
+  padding: 30px 40px 40px;
+  text-align: center;
+  font-family: "Neuzeit";
+  height: 300px;
+  cursor: pointer;
+}
+/* line 13, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
+.list-rapid-access .item-rapid-access + .item-rapid-access {
+  border-left: 1px solid #e5e5e5;
+}
+/* line 17, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
+.list-rapid-access .item-rapid-access:hover {
+  background: #0045e5;
+}
+/* line 21, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
+.list-rapid-access .item-rapid-access:hover .item-rapid-access__img img.off {
+  display: none;
+}
+/* line 24, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
+.list-rapid-access .item-rapid-access:hover .item-rapid-access__img img.on {
+  display: inline-block;
+}
+/* line 29, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
+.list-rapid-access .item-rapid-access:hover h3 {
+  color: #fff;
+}
+/* line 33, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
+.list-rapid-access .item-rapid-access:hover .description {
+  display: none;
+}
+/* line 37, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
+.list-rapid-access .item-rapid-access:hover .btn-higlight, .list-rapid-access .item-rapid-access:hover .main-menu--search button, .main-menu--search .list-rapid-access .item-rapid-access:hover button {
+  display: inline-block;
+  background: #0045e5;
+  color: #fff;
+}
+/* line 41, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
+.list-rapid-access .item-rapid-access:hover .btn-higlight:hover, .list-rapid-access .item-rapid-access:hover .main-menu--search button:hover, .main-menu--search .list-rapid-access .item-rapid-access:hover button:hover {
+  background: #fff;
+  color: #0045e5;
+}
+/* line 49, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
+.list-rapid-access .item-rapid-access .item-rapid-access__img {
+  display: table-cell;
+  text-align: center;
+  height: 115px;
+  vertical-align: bottom;
+  width: 300px;
+}
+/* line 56, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
+.list-rapid-access .item-rapid-access .item-rapid-access__img img {
+  display: inline-block;
+}
+/* line 58, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
+.list-rapid-access .item-rapid-access .item-rapid-access__img img.on {
+  display: none;
+}
+/* line 63, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
+.list-rapid-access .item-rapid-access h3 {
+  margin: 15px 0;
+  text-transform: uppercase;
+  color: #333333;
+  font-family: "Platform-Medium";
+  letter-spacing: 1px;
+}
+/* line 71, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
+.list-rapid-access .item-rapid-access .btn-higlight, .list-rapid-access .item-rapid-access .main-menu--search button, .main-menu--search .list-rapid-access .item-rapid-access button {
+  display: none;
+  margin-top: 15px;
 }
