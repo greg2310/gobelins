@@ -1,0 +1,22 @@
+.block-slider-4 {
+  background-color: $color__bg-white
+}
+.block-slider-3 {
+  background-color: $color__bg-gray--darck;
+  color: #fff;
+  
+  h2 {
+    color: #fff;
+  }
+}
+.owl-nav {
+  text-align: center;
+  margin-top: 30px;
+}
+.owl-nav > div {
+  margin: 0 10px;
+}
+.owl-carousel .owl-item {
+  display: inline-block;
+  float: none;
+}
