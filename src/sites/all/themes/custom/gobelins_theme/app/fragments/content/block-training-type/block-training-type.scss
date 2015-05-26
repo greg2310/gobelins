@@ -17,29 +17,40 @@
 }
 
 .training-type-summary{
-	padding-left:70px;
-  .training-type-summary__title{
+	padding-left:6%;
+	padding-top:4%;
+	 @media screen and (max-width: 1140px) {
+      padding-left:9%;
+    }
+    
+	.training-type-summary__title{
 	
-	.title-h1{
-		color:$color__bg-white;
-		text-align:left;
-		position:relative;
-		margin:0;
-		&:before {
-			background-color: transparent;
-			border: 22px solid $color__training--animation;
-			border-radius: 50%;
-			content: "";
-			display: block;
-			height: 15px;
-			position: absolute;
-			left: -7%;
-			top: 12%;
-			width: 15px;
-			
+		.title-h1{
+			color:$color__bg-white;
+			text-align:left;
+			position:relative;
+			margin:0;
+			&:before {
+				background-color: transparent;
+				border: 22px solid $color__training--animation;
+				border-radius: 50%;
+				content: "";
+				display: block;
+				height: 15px;
+				position: absolute;
+				left: -7%;
+				top: 12%;
+				width: 15px;
+				 @media screen and (max-width: 1140px) {
+				  border: 20px solid $color__training--animation;
+				  left:-10%;
+				  width:12px;
+				  height:12px;
+				}
+				
+			}
 		}
 	}
-  }
 }
 .training-summary__title{
   padding:30px 30px 25px 30px;

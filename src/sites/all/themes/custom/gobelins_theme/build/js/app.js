@@ -114,39 +114,6 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
       }
     };
     
-    /* 1 item slider. */
-    $sliders = $('.js-slider--1').owlCarousel({
-      nav: true,
-      items: 1,
-      margin: 40
-    });
-    $sliders.on('translate.owl.carousel', callback);
-    
-    /* 3 items slider. */
-    $sliders = $('.js-slider--3').owlCarousel({
-      nav: true,
-      navText: ['', ''],
-      navClass: ['js-slider--left icon-left-small btn-round--light is-disabled', 'js-slider--right icon-right-small btn-round--light'],
-      responsive : {
-        // Breakpoint from 0 up to 767.
-        0 : {
-          items: 1,
-          margin: 20
-        },
-        // Breakpoint from 768 up 1139.
-        768 : {
-          items: 2,
-          margin: 34
-        },
-        // Breakpoint from 1140 up.
-        1140 : {
-          items: 3,
-          margin: 40
-        }
-      }
-    });
-    $sliders.on('translate.owl.carousel', callback);
-    
     /* 4 items slider. */
     $sliders = $('.js-slider--4').owlCarousel({
       nav: true,
@@ -167,6 +134,33 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
         1140 : {
           items: 4,
           margin: 40
+        }
+      }
+    });
+    $sliders.on('translate.owl.carousel', callback);
+    
+    /* 3 items slider. */
+    $sliders = $('.js-slider--3').owlCarousel({
+      nav: true,
+      navText: ['', ''],
+      navClass: ['js-slider--left icon-left-small btn-round--light is-disabled', 'js-slider--right icon-right-small btn-round--light'],
+      responsive : {
+        // Breakpoint from 0 up to 767.
+        0 : {
+          items: 1,
+          margin: 20,
+		  nav:false
+        },
+        // Breakpoint from 768 up 1139.
+        768 : {
+          items: 2,
+          margin: 34
+        },
+        // Breakpoint from 1140 up.
+        1140 : {
+          items: 3,
+          margin: 40,
+		  dots:false
         }
       }
     });
