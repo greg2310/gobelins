@@ -1,20 +1,16 @@
 {
   "copyFiles": [
     {
-      "src": "bower_components/jquery-contenttoggle/jquery.contenttoggle.js",
-      "dest": "<%= devPath %>/js/bower/jquery.contenttoggle.js"
-    },
-    {
-      "src": "bower_components/sticky/jquery.sticky.js",
-      "dest": "<%= devPath %>/js/bower/jquery.sticky.js"
-    },
-    {
-      "src": "bower_components/owl.carousel/dist/owl.carousel.js",
-      "dest": "<%= devPath %>/js/bower/owl.carousel.js"
-    },
-    {
       "src": "bower_components/owl.carousel/dist/assets/owl.carousel.css",
       "dest": "<%= devPath %>/scss/bower/_owl.carousel.scss"
+    },
+    {
+      "src": "bower_components/imagesloaded/imagesloaded.pkgd.js",
+      "dest": "<%= stagingPath %>/js/imagesloaded.js"
+    },
+    {
+      "src": "bower_components/masonry/dist/masonry.pkgd.js",
+      "dest": "<%= stagingPath %>/js/masonry.js"
     }
   ]
 }

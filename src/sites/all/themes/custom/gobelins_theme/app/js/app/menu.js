@@ -3,8 +3,8 @@
 
   /* require plugins */
   var $ = require('jquery');
-  require('../bower/jquery.contenttoggle.js');
-  require('../bower/jquery.sticky.js');
+  require('../../../bower_components/jquery-contenttoggle/jquery.contenttoggle.js');
+  require('../../../bower_components/sticky/jquery.sticky.js');
 
   $(function(){
      var $body = $('body');

@@ -3,7 +3,7 @@
 
   /* require plugins */
   var $ = require('jquery');
-  require('../bower/owl.carousel.js');
+  require('../../../bower_components/owl.carousel/dist/owl.carousel.js');
 
   $(function(){
     var $sliders, callback;
