@@ -14,7 +14,6 @@ body:after{
   left: 0;
   transition: left 300ms;
   margin-left:0;
-  margin-right: 80px
 }
 .aside-tab-mob__wrapper{
   display:none;
@@ -52,9 +51,6 @@ body:after{
   }
   .aside-tab-mob{
     width:268px;
-  }
-  .main-wrapper{
-  margin-right: 40px
   }
 }
 @media screen and (max-width: $width__xs - 1px) {
