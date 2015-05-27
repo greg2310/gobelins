@@ -5,5 +5,6 @@
   require('./app/menu.js');
   require('./app/tabs-accordion.js');
   require('./app/sliders.js');
+  require('./app/aside-gallery.js');
 
 })();
