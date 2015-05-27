@@ -7,6 +7,9 @@
   padding:30px 40px 40px;
   text-align:center;
   font-family:$font__neuzeit;
+  @media screen and (max-width: 1140px) {
+    text-align:left;
+  }
    
   & + .item-downloads{
     border-left:1px solid $color__border-gray--light;
@@ -17,6 +20,12 @@
     margin:0 auto 20px;
     width:130px;
     border-bottom: 2px solid $color__border-gray--light;
+    @media screen and (max-width: 1140px) {
+      display:inline-block;
+      vertical-align:middle;
+      width:15%;
+      margin-bottom:0;      
+    }
     
     img{
       display:block;
@@ -27,7 +36,31 @@
   h3{
     margin-bottom:20px;
     min-height:3em;
+    
+    @media screen and (max-width: 1140px) {
+      display:inline-block;
+      vertical-align:middle;
+      margin-left:20px;
+      width:47%;
+    }
   }
+  
+   @media screen and (max-width: 1140px) {
+    .btn-download{
+      width:30%;
+      font-size:0;
+      margin-left:15px;
+      &:before{
+        content:'Telecharger';
+        display:inline-block;
+        font-size:1rem;
+        vertical-align:middle;
+      }
+      &:after{
+        margin-left:-15px;
+      }
+    }
+   }
 }
 .list-downloads--mini{
   li{

@@ -46,10 +46,19 @@
 			display:inline-block;
 			vertical-align:top;
 			text-align:right;
+   @media screen and (max-width: 767px) {
+    width:100%;
+    margin-top:20px;
+   }
 			
 			.price-training{
 				color:$color__border-gray;
 				margin-right:20px;
+    @media screen and (max-width: 767px) {
+     float:left;
+     padding-top:10px;
+     margin-left:-5px;
+    }
 			}
 		}
 		
@@ -57,6 +66,11 @@
 			width:64%;
 			display:inline-block;
 			vertical-align:top;
+   @media screen and (max-width: 767px) {
+    width:100%;
+    padding-bottom:22px;
+    border-bottom:1px solid $color__bg-gray;
+   }
 			h3{
 				color:$color__slideshow--training;
 				font-size:1.25;
@@ -91,6 +105,11 @@
 					display:block;
 					margin:0;
 				}
+    @media screen and (max-width: 767px) {
+     &.item-trainings__type{
+      display:inline-block;
+     }
+    }
 			}
 		}
 	

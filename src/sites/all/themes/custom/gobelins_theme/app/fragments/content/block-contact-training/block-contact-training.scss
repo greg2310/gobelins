@@ -22,25 +22,56 @@
 		@media screen and (max-width: 1140px) {
 			width:100%;
 		}
+  
+  @media screen and (max-width: 767px) {
+   text-align:center;
+   font-size:1rem;
+   font-family:"Platform-Medium";
+   color:$color__slideshow--training;
+   
+   span{
+    text-transform:lowercase;
+    font-family:"Platform-Light";
+    margin-top:12px;
+   }
+  }
 	}
 	
 	
 	.infos-contact{
 		@media screen and (max-width: 1140px) {
-			width:67%;
+			width:65%;
 			margin-left:0;
+      vertical-align:middle;
 		}
+  
+  @media screen and (max-width: 767px) {
+   width:100%;
+  }
 		figure{
 			display:table;
 			margin:0;
+   @media screen and (max-width: 767px) {
+    display:block;
+    text-align:center;
+   }
 			img{
 				float:left;
+    @media screen and (max-width: 767px) {
+     float:none;
+    }
 			}
 			figcaption{
 				display:table-cell;
 				height:75px;
 				vertical-align:middle;
 				padding-left:15px;
+    @media screen and (max-width: 767px) {
+     display:block;
+     height:auto;
+     margin:12px 0;
+     line-height:35px;
+    }
 			}
 			
 			.tel,
@@ -58,8 +89,18 @@
 	}
 	.btn-action{
 		text-align:right;
-		width:29%;
+		width:31%;
 		margin-top:2%;
+  vertical-align:middle;
+  margin-left:0;
+  @media screen and (max-width: 1140px) {
+   width:34%;
+  }
+  
+  @media screen and (max-width: 767px) {
+   width:100%;
+   text-align:center;
+  }
 		.btn-mail{
 			color:$color__text-dark;
 		}
