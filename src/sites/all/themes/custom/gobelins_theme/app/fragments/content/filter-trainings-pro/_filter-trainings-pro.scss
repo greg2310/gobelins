@@ -8,24 +8,46 @@
   width:27%;
   text-align:left;
   background:none;
-  @media screen and (max-width: 1140px) {
+  @media screen and (max-width: $width__m) {
    width:100%;
   }
   .filter-trainings__form{
    border-top:none;
    padding-top:40px;
+   @media screen and (max-width: $width__m) {
+    padding:0;
+   }
    .filter-training-field{
      border-top:1px solid $color__training--search--border;
      padding:15px 0 20px 0;
      width:75%;
      position:relative;
-
+     
      &:first-child{
       border-top:none;
       padding-top:0;
      }
+     
+     @media screen and (max-width: $width__m) {
+      display:inline-block;
+      vertical-align:top;
+      border:none;
+      padding-top:0;
+      padding-left:30px;
+      &:first-child{
+       width:25%;
+       padding-left:0;
+      }
+      &:nth-child(2){
+       width:30%;
+      }
+      &:nth-child(3){
+       width:43%;
+      }
+     }
+     
 
-     .item-form{
+     .form-item{
       margin:15px 0 0 0;
        &:first-child{
         margin:0;
@@ -52,6 +74,10 @@
    margin-bottom:10px;
    font-family:$font__platform--medium;
    letter-spacing:1px;
+    @media screen and (max-width: $width__m) {
+     border-bottom:1px dotted $color__training--search--border;
+    }
+   
   }
   .btn-higlight{
    margin-top:20px;

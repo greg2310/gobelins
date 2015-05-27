@@ -11,17 +11,18 @@
 	  height:300px;
 	  cursor:pointer;
     
-    @media screen and (max-width: 1140px){
+    @media screen and (max-width: $width__m){
       text-align:left;
       height:auto;
       padding:30px 40px;
+      cursor:auto;
     } 
 	   
 	  & + .item-rapid-access{
       border-left:1px solid $color__border-gray--light;
 	  }
     
-    @media screen and (min-width: 1140px){
+    @media screen and (min-width: $width__m){
 	  
       &:hover{
         background:$color__blue-gobelins;
@@ -56,46 +57,55 @@
 	  }
 	  
 	  .item-rapid-access__img{
-		display:table-cell;
-		text-align:center;
-		height:115px;
-		vertical-align:bottom;
-		width:300px;
-    @media screen and (max-width: 1140px){
+    display:table-cell;
+    text-align:center;
+    height:115px;
+    vertical-align:bottom;
+    width:300px;
+    @media screen and (max-width: $width__m){
       display:inline-block;
       vertical-align:top;
       width:198px;
     }
+    
+    @media screen and (max-width: $width__xs - 1px){
+     display:none;
+    }
 			
-		img{
-		  display:inline-block;
-      max-width:100%;
-		  &.on{
-			display:none;
-		  }
-		}
+    img{
+      display:inline-block;
+        max-width:100%;
+      &.on{
+     display:none;
+      }
+    }
     
 	  }
     
-    @media screen and (max-width: 1140px){
+    @media screen and (max-width: $width__m){
       .item-rapid-access__description{
         display:inline-block;
         text-align:left;
         vertical-align:top;
         width:66%;
       }
-     
+    }
+    
+    @media screen and (max-width: $width__xs - 1px){
+     .item-rapid-access__description{
+      width:100%;
+     }
     }
     
     
 	  h3{
-		margin:15px 0;
-		text-transform:uppercase;
-		color:$color__slideshow--training;
-		font-family:$font__platform--medium;
-		letter-spacing:1px;
+    margin:15px 0;
+    text-transform:uppercase;
+    color:$color__slideshow--training;
+    font-family:$font__platform--medium;
+    letter-spacing:1px;
     
-    @media screen and (max-width: 1140px){
+    @media screen and (max-width: $width__m){
        margin:0 0 20px 0;
     }
     
@@ -104,7 +114,7 @@
 	  .btn-higlight{
       display:none;
       margin-top:15px;
-      @media screen and (max-width: 1140px){
+      @media screen and (max-width: $width__m){
         display:inline-block;
         &:after{
           content: '\e806';
