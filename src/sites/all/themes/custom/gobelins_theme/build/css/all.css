@@ -510,9 +510,6 @@ th {
 /* line 43, ../../app/scss/bower/_owl.carousel.scss */
 .owl-height {
   -webkit-transition: height 500ms ease-in-out;
-  -moz-transition: height 500ms ease-in-out;
-  -ms-transition: height 500ms ease-in-out;
-  -o-transition: height 500ms ease-in-out;
   transition: height 500ms ease-in-out;
 }
 
@@ -648,15 +645,13 @@ th {
 .owl-carousel .owl-item .owl-lazy {
   opacity: 0;
   -webkit-transition: opacity 400ms ease;
-  -moz-transition: opacity 400ms ease;
-  -ms-transition: opacity 400ms ease;
-  -o-transition: opacity 400ms ease;
   transition: opacity 400ms ease;
 }
 
 /* line 157, ../../app/scss/bower/_owl.carousel.scss */
 .owl-carousel .owl-item img {
-  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 
 /* 
@@ -683,18 +678,12 @@ th {
   z-index: 1;
   -webkit-backface-visibility: hidden;
   -webkit-transition: scale 100ms ease;
-  -moz-transition: scale 100ms ease;
-  -ms-transition: scale 100ms ease;
-  -o-transition: scale 100ms ease;
   transition: scale 100ms ease;
 }
 
 /* line 187, ../../app/scss/bower/_owl.carousel.scss */
 .owl-carousel .owl-video-play-icon:hover {
   -webkit-transition: scale(1.3, 1.3);
-  -moz-transition: scale(1.3, 1.3);
-  -ms-transition: scale(1.3, 1.3);
-  -o-transition: scale(1.3, 1.3);
   transition: scale(1.3, 1.3);
 }
 
@@ -710,14 +699,8 @@ th {
   height: 100%;
   background-position: center center;
   background-repeat: no-repeat;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
   -webkit-transition: opacity 400ms ease;
-  -moz-transition: opacity 400ms ease;
-  -ms-transition: opacity 400ms ease;
-  -o-transition: opacity 400ms ease;
   transition: opacity 400ms ease;
 }
 
@@ -736,7 +719,7 @@ th {
 /**/
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-bg__rubric--hover, .main-menu--desktop .rubric__img:after {
-  background: url('../images/icons-s23fb2ee162.png') 0 0 no-repeat;
+  background: url('../images/icons-s17107489f9.png') 0 0 no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 29px;
@@ -745,7 +728,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-like-gray {
-  background: url('../images/icons-s23fb2ee162.png') 0 -208px no-repeat;
+  background: url('../images/icons-s17107489f9.png') 0 -208px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 11px;
@@ -754,7 +737,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-like-blue {
-  background: url('../images/icons-s23fb2ee162.png') 0 -199px no-repeat;
+  background: url('../images/icons-s17107489f9.png') 0 -199px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 11px;
@@ -763,7 +746,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-press {
-  background: url('../images/icons-s23fb2ee162.png') 0 -248px no-repeat;
+  background: url('../images/icons-s17107489f9.png') 0 -248px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 12px;
@@ -772,7 +755,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-btn-menu {
-  background: url('../images/icons-s23fb2ee162.png') 0 -29px no-repeat;
+  background: url('../images/icons-s17107489f9.png') 0 -29px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 20px;
@@ -781,7 +764,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-calendar, .btn-agenda:before {
-  background: url('../images/icons-s23fb2ee162.png') 0 -47px no-repeat;
+  background: url('../images/icons-s17107489f9.png') 0 -47px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 16px;
@@ -790,7 +773,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-list {
-  background: url('../images/icons-s23fb2ee162.png') 0 -217px no-repeat;
+  background: url('../images/icons-s17107489f9.png') 0 -217px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 16px;
@@ -799,7 +782,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-public {
-  background: url('../images/icons-s23fb2ee162.png') 0 -276px no-repeat;
+  background: url('../images/icons-s17107489f9.png') 0 -276px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 17px;
@@ -808,7 +791,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-checked {
-  background: url('../images/icons-s23fb2ee162.png') 0 -91px no-repeat;
+  background: url('../images/icons-s17107489f9.png') 0 -91px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 13px;
@@ -817,7 +800,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-euro {
-  background: url('../images/icons-s23fb2ee162.png') 0 -150px no-repeat;
+  background: url('../images/icons-s17107489f9.png') 0 -150px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 12px;
@@ -826,7 +809,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-location {
-  background: url('../images/icons-s23fb2ee162.png') 0 -232px no-repeat;
+  background: url('../images/icons-s17107489f9.png') 0 -232px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 12px;
@@ -835,7 +818,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-doc, .list-downloads--mini li:before {
-  background: url('../images/icons-s23fb2ee162.png') 0 -100px no-repeat;
+  background: url('../images/icons-s17107489f9.png') 0 -100px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 14px;
@@ -850,7 +833,7 @@ th {
 .training-game .breadcrumb .icons-home-gray,
 .training-video-audio .breadcrumb .icons-home-gray,
 .training-cross-media .breadcrumb .icons-home-gray {
-  background: url('../images/icons-s23fb2ee162.png') 0 -176px no-repeat;
+  background: url('../images/icons-s17107489f9.png') 0 -176px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 12px;
@@ -859,7 +842,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-home-gray {
-  background: url('../images/icons-s23fb2ee162.png') 0 -163px no-repeat;
+  background: url('../images/icons-s17107489f9.png') 0 -163px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 12px;
@@ -868,7 +851,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-download, .btn-download:after {
-  background: url('../images/icons-s23fb2ee162.png') 0 -134px no-repeat;
+  background: url('../images/icons-s17107489f9.png') 0 -134px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 14px;
@@ -877,7 +860,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-download-white, .btn-download:hover:after {
-  background: url('../images/icons-s23fb2ee162.png') 0 -118px no-repeat;
+  background: url('../images/icons-s17107489f9.png') 0 -118px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 14px;
@@ -886,7 +869,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-print {
-  background: url('../images/icons-s23fb2ee162.png') 0 -262px no-repeat;
+  background: url('../images/icons-s17107489f9.png') 0 -262px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 16px;
@@ -895,7 +878,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-checkbox, input[type="checkbox"] + label::before {
-  background: url('../images/icons-s23fb2ee162.png') 0 -77px no-repeat;
+  background: url('../images/icons-s17107489f9.png') 0 -77px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 14px;
@@ -904,7 +887,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-checkbox-checked, input[type="checkbox"]:checked + label::before {
-  background: url('../images/icons-s23fb2ee162.png') 0 -63px no-repeat;
+  background: url('../images/icons-s17107489f9.png') 0 -63px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 14px;
@@ -913,7 +896,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-radio, input[type="radio"] + label::before {
-  background: url('../images/icons-s23fb2ee162.png') 0 -304px no-repeat;
+  background: url('../images/icons-s17107489f9.png') 0 -304px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 14px;
@@ -922,7 +905,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-radio-checked, input[type="radio"]:checked + label::before {
-  background: url('../images/icons-s23fb2ee162.png') 0 -290px no-repeat;
+  background: url('../images/icons-s17107489f9.png') 0 -290px no-repeat;
   background-size: 29px 318px;
   display: inline-block;
   width: 14px;
@@ -982,7 +965,10 @@ label,
 h1, h2, h3, h4 {
   box-sizing: border-box;
   word-wrap: break-word;
-  hyphens: auto;
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
 
 /* line 32, ../../app/scss/includes/_base.scss */
@@ -1051,16 +1037,16 @@ button {
 }
 
 @font-face {
-  font-family: "Platform-Light";
-  src: url("../fonts/Platform-Light.otf") format("opentype");
+  font-family: 'Platform-Light';
+  src: url("../fonts/Platform-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Platform-Light.woff") format("woff"), url("../fonts/Platform-Light.ttf") format("truetype"), url("../fonts/Platform-Light.svg#svgFontName") format("svg");
 }
 @font-face {
-  font-family: "Platform-Medium";
-  src: url("../fonts/Platform-Medium.otf") format("opentype");
+  font-family: 'Platform-Medium';
+  src: url("../fonts/Platform-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Platform-Medium.woff") format("woff"), url("../fonts/Platform-Medium.ttf") format("truetype"), url("../fonts/Platform-Medium.svg#svgFontName") format("svg");
 }
 @font-face {
-  font-family: "Neuzeit";
-  src: url("../fonts/NeuzeitSLTW01-Book.otf") format("opentype");
+  font-family: 'Neuzeit';
+  src: url("../fonts/NeuzeitSLTW01-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/NeuzeitSLTW01-Book.woff") format("woff"), url("../fonts/NeuzeitSLTW01-Book.ttf") format("truetype"), url("../fonts/NeuzeitSLTW01-Book.svg#svgFontName") format("svg");
 }
 @font-face {
   font-family: 'fontello';
@@ -1214,13 +1200,15 @@ button {
   padding: 8px 12px;
   display: inline-block;
   font-size: 0.875rem;
-  transition: background-color, color 0.2s ease-out;
+  -webkit-transition: background-color, color 0.2s ease-out;
+          transition: background-color, color 0.2s ease-out;
 }
 /* line 12, ../../app/scss/includes/_helpers.scss */
 .btn-like > span {
   margin-left: 3px;
   color: #e5e5e5;
-  transition: color 0.2s ease-out;
+  -webkit-transition: color 0.2s ease-out;
+          transition: color 0.2s ease-out;
 }
 /* line 18, ../../app/scss/includes/_helpers.scss */
 .btn-like:hover {
@@ -1259,7 +1247,8 @@ button {
   color: #0045e5;
   text-transform: uppercase;
   padding: 10px 15px;
-  transition: background-color 0.2s ease-out;
+  -webkit-transition: background-color 0.2s ease-out;
+          transition: background-color 0.2s ease-out;
   font-size: 0.875rem;
   letter-spacing: 2px;
   font-family: "Platform-Medium";
@@ -1312,8 +1301,12 @@ button {
   border-radius: 20px;
   cursor: pointer;
   background-color: transparent;
-  transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
-  user-select: none;
+  -webkit-transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+          transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 /* line 100, ../../app/scss/includes/_helpers.scss */
@@ -1372,7 +1365,8 @@ button {
   font-size: 0.875rem;
   letter-spacing: 2px;
   padding: 12px 20px;
-  transition: background-color 0.2s ease-out;
+  -webkit-transition: background-color 0.2s ease-out;
+          transition: background-color 0.2s ease-out;
 }
 /* line 146, ../../app/scss/includes/_helpers.scss */
 .btn-mail:after {
@@ -1399,7 +1393,8 @@ button {
   font-size: 0.875rem;
   letter-spacing: 2px;
   padding: 12px 20px;
-  transition: background-color 0.2s ease-out;
+  -webkit-transition: background-color 0.2s ease-out;
+          transition: background-color 0.2s ease-out;
 }
 /* line 171, ../../app/scss/includes/_helpers.scss */
 .btn-agenda:before {
@@ -1415,7 +1410,7 @@ button {
 
 /***************** other btns ****************/
 /* line 185, ../../app/scss/includes/_helpers.scss */
-.btn-close:before {
+.btn-close:before, #cboxClose:before {
   content: "\2715";
   color: #323232;
   display: block;
@@ -1617,6 +1612,77 @@ select {
     display: none !important;
   }
 }
+/* line 1, ../../app/scss/includes/_popins.scss */
+#cboxClose {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  background: transparent;
+}
+
+/* line 11, ../../app/scss/includes/_popins.scss */
+#cboxOverlay {
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  overflow: hidden;
+  top: 0;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 21, ../../app/scss/includes/_popins.scss */
+#colorbox {
+  z-index: 9999;
+  background-color: #fff;
+}
+
+/*popin--text-img*/
+/* line 26, ../../app/scss/includes/_popins.scss */
+.popin--text-img {
+  display: none;
+  padding: 50px 40px;
+}
+
+/* line 30, ../../app/scss/includes/_popins.scss */
+#colorbox .popin--text-img {
+  display: block;
+}
+
+/* line 33, ../../app/scss/includes/_popins.scss */
+.popin--text-img__img {
+  width: 200px;
+  float: left;
+}
+/* line 37, ../../app/scss/includes/_popins.scss */
+.popin--text-img__img img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 42, ../../app/scss/includes/_popins.scss */
+.popin--text-img__text {
+  margin-left: 245px;
+}
+/* line 45, ../../app/scss/includes/_popins.scss */
+.popin--text-img__text p {
+  margin-bottom: 20px;
+}
+
+/* line 49, ../../app/scss/includes/_popins.scss */
+.popin--text-img__title {
+  font-size: 1.375rem;
+  font-family: "Platform-Medium";
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+  color: #323232;
+}
+
+/*popin--media*/
 /* Layout blocks partials */
 /* line 1, ../../app/fragments/layout/_layout.scss */
 .grid-container {
@@ -2228,7 +2294,8 @@ select {
   bottom: 0;
   left: 0;
   right: 0;
-  transition: background-color 0.2s ease-out;
+  -webkit-transition: background-color 0.2s ease-out;
+          transition: background-color 0.2s ease-out;
   background-color: transparent;
 }
 /* line 134, ../../app/fragments/components/header/_menu.scss */
@@ -2239,7 +2306,8 @@ select {
   left: 50%;
   margin: -15px 0 0 -15px;
   opacity: 0;
-  transition: opacity 0.2s ease-out;
+  -webkit-transition: opacity 0.2s ease-out;
+          transition: opacity 0.2s ease-out;
 }
 /* line 147, ../../app/fragments/components/header/_menu.scss */
 .main-menu--desktop .rubric__gobelins a:hover .rubric__img:before {
@@ -2355,14 +2423,14 @@ select {
   }
 }
 /* line 30, ../../app/fragments/components/header/_menu-mobile.scss */
-.main-menu--mobile .lev2 .btn-close {
+.main-menu--mobile .lev2 .btn-close, .main-menu--mobile .lev2 #cboxClose {
   position: absolute;
   top: 20px;
   right: 20px;
 }
 @media screen and (max-width: 767px) {
   /* line 30, ../../app/fragments/components/header/_menu-mobile.scss */
-  .main-menu--mobile .lev2 .btn-close {
+  .main-menu--mobile .lev2 .btn-close, .main-menu--mobile .lev2 #cboxClose {
     top: 15px;
     right: 15px;
   }
@@ -2554,7 +2622,8 @@ body:after {
   top: 80px;
   left: 0;
   background: #000;
-  transition: left 300ms, opacity 300ms;
+  -webkit-transition: left 300ms, opacity 300ms;
+          transition: left 300ms, opacity 300ms;
   opacity: 0;
 }
 
@@ -2562,7 +2631,8 @@ body:after {
 .main-wrapper {
   position: relative;
   left: 0;
-  transition: left 300ms;
+  -webkit-transition: left 300ms;
+          transition: left 300ms;
   margin-left: 0;
 }
 
@@ -2574,7 +2644,8 @@ body:after {
   position: fixed;
   top: 0;
   background-color: #191919;
-  transition: left 300ms, width 300ms;
+  -webkit-transition: left 300ms, width 300ms;
+          transition: left 300ms, width 300ms;
 }
 
 /* line 27, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
@@ -2582,7 +2653,8 @@ body:after {
   padding: 0 20px;
   background-color: #191919;
   color: #fff;
-  transition: width 300ms;
+  -webkit-transition: width 300ms;
+          transition: width 300ms;
 }
 
 /* line 33, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
@@ -2600,7 +2672,8 @@ body:after {
 /* line 43, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
 .header {
   left: 0;
-  transition: left 300ms;
+  -webkit-transition: left 300ms;
+          transition: left 300ms;
 }
 
 @media screen and (max-width: 1140px) {
@@ -3896,7 +3969,8 @@ body.is-open {
   border: 1px solid #999;
   padding: 8px 14px;
   background-color: #fff;
-  transition: background-color 0.2s ease-out, border-color 0.2s ease-out, color 0.2s ease-out;
+  -webkit-transition: background-color 0.2s ease-out, border-color 0.2s ease-out, color 0.2s ease-out;
+          transition: background-color 0.2s ease-out, border-color 0.2s ease-out, color 0.2s ease-out;
   color: #323232;
 }
 /* line 36, ../../app/fragments/content/block-training-professions/_block-training-professions.scss */

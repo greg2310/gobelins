@@ -1,13 +1,21 @@
-
 @font-face {
-    font-family: "Platform-Light";
-    src: url("../fonts/Platform-Light.otf") format("opentype");
+  font-family: 'Platform-Light';
+  src: url("../fonts/Platform-Light.eot?#iefix") format("embedded-opentype"), 
+       url("../fonts/Platform-Light.woff") format("woff"), 
+       url("../fonts/Platform-Light.ttf")  format("truetype"),
+       url("../fonts/Platform-Light.svg#svgFontName") format("svg");
 }
 @font-face {
-    font-family: "Platform-Medium";
-    src: url("../fonts/Platform-Medium.otf") format("opentype");
+  font-family: 'Platform-Medium';
+  src: url("../fonts/Platform-Medium.eot?#iefix") format("embedded-opentype"), 
+       url("../fonts/Platform-Medium.woff") format("woff"), 
+       url("../fonts/Platform-Medium.ttf")  format("truetype"),
+       url("../fonts/Platform-Medium.svg#svgFontName") format("svg");
 }
 @font-face {
-    font-family: "Neuzeit";
-    src: url("../fonts/NeuzeitSLTW01-Book.otf") format("opentype");
+  font-family: 'Neuzeit';
+  src: url("../fonts/NeuzeitSLTW01-Book.eot?#iefix") format("embedded-opentype"), 
+       url("../fonts/NeuzeitSLTW01-Book.woff") format("woff"), 
+       url("../fonts/NeuzeitSLTW01-Book.ttf")  format("truetype"),
+       url("../fonts/NeuzeitSLTW01-Book.svg#svgFontName") format("svg");
 }
