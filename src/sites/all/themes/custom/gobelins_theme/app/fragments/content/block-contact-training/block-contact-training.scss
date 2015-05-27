@@ -1,0 +1,67 @@
+.block-contact-training{
+	background:$color__bg-white;
+	.title-h2,
+	.infos-contact,
+	.btn-action{
+		display:inline-block;
+		vertical-align:top;
+		width:33%;
+		margin-left:20px;
+	}
+	
+	.title-h2{
+		text-align:left;
+		margin-left:0;
+		line-height:normal;
+		
+		span{
+			display:block;
+			font-size:0.875rem;
+		}
+		
+		@media screen and (max-width: 1140px) {
+			width:100%;
+		}
+	}
+	
+	
+	.infos-contact{
+		@media screen and (max-width: 1140px) {
+			width:67%;
+			margin-left:0;
+		}
+		figure{
+			display:table;
+			margin:0;
+			img{
+				float:left;
+			}
+			figcaption{
+				display:table-cell;
+				height:75px;
+				vertical-align:middle;
+				padding-left:15px;
+			}
+			
+			.tel,
+			.name{
+				display:block;
+			}
+			
+			.tel{
+				color:$color__blue-gobelins;
+				font-size:1.5rem;
+			}
+			
+		}
+		
+	}
+	.btn-action{
+		text-align:right;
+		width:29%;
+		margin-top:2%;
+		.btn-mail{
+			color:$color__text-dark;
+		}
+	}
+}
