@@ -2816,12 +2816,12 @@ body.is-open {
 ** Layout styles. **
 \******************/
 /* line 7, ../../app/fragments/components/aside-gallery/_aside-gallery.scss */
-.main-wrapper {
+.with-gallery .main-wrapper {
   margin-right: 80px;
 }
 
 /* line 10, ../../app/fragments/components/aside-gallery/_aside-gallery.scss */
-.is-sticky .header {
+.with-gallery .is-sticky .header {
   padding-right: 80px;
 }
 
@@ -3013,12 +3013,12 @@ body.is-open {
 }
 
 /* line 162, ../../app/fragments/components/aside-gallery/_aside-gallery.scss */
-body.is-open--gallery {
+.with-gallery.is-open--gallery {
   overflow: hidden;
 }
 
 /* line 165, ../../app/fragments/components/aside-gallery/_aside-gallery.scss */
-body.is-open .aside-gallery__container {
+.with-gallery.is-open .aside-gallery__container {
   left: 0;
 }
 
@@ -3027,12 +3027,12 @@ body.is-open .aside-gallery__container {
 \******************/
 @media screen and (max-width: 1140px) {
   /* line 173, ../../app/fragments/components/aside-gallery/_aside-gallery.scss */
-  .main-wrapper {
+  .with-gallery .main-wrapper {
     margin-right: 40px;
   }
 
   /* line 176, ../../app/fragments/components/aside-gallery/_aside-gallery.scss */
-  .is-sticky .header {
+  .with-gallery .is-sticky .header {
     padding-right: 40px;
   }
 
@@ -3056,7 +3056,7 @@ body.is-open .aside-gallery__container {
 \******************/
 @media screen and (max-width: 767px) {
   /* line 194, ../../app/fragments/components/aside-gallery/_aside-gallery.scss */
-  .main-wrapper {
+  .with-gallery .main-wrapper {
     margin-right: 0;
   }
 

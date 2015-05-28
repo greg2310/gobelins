@@ -4,10 +4,10 @@ $aside-gallery__tablet-width: 40px;
 /******************\
 ** Layout styles. **
 \******************/
-.main-wrapper {
+.with-gallery .main-wrapper {
   margin-right: 80px
 }
-.is-sticky .header {
+.with-gallery .is-sticky .header {
   padding-right: $aside-gallery__desktop-width;
 }
 
@@ -159,10 +159,10 @@ $aside-gallery__tablet-width: 40px;
 .is-open--gallery .aside-gallery__trigger {
   width: 40px;
 }
-body.is-open--gallery {
+.with-gallery.is-open--gallery {
   overflow: hidden;
 }
-body.is-open .aside-gallery__container {
+.with-gallery.is-open .aside-gallery__container {
   left: 0;
 }
 
@@ -170,10 +170,10 @@ body.is-open .aside-gallery__container {
 ** Tablet styles. **
 \******************/
 @media screen and (max-width: $width__m) {
-  .main-wrapper{
+  .with-gallery .main-wrapper{
     margin-right: $aside-gallery__tablet-width;
   }
-  .is-sticky .header {
+  .with-gallery .is-sticky .header {
     padding-right: $aside-gallery__tablet-width;
   }
   .aside-gallery__container {
@@ -191,7 +191,7 @@ body.is-open .aside-gallery__container {
 ** Mobile styles. **
 \******************/
 @media screen and (max-width: $width__xs - 1px) {
-  .main-wrapper{
+  .with-gallery .main-wrapper{
     margin-right: 0
   }
   .aside-gallery__container {

@@ -20,11 +20,10 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   require('../../../bower_components/jquery-contenttoggle/jquery.contenttoggle.js');
 
   $(function(){
-    var $body, $gallery;
+    var $gallery;
     
     /* Open/close gallery. */
-    $body = $('body');
-    $body.contentToggle({
+    $('.with-gallery').contentToggle({
       group: 'aside-gallery',
       defaultState: 'close',
       elementClass: 'is-open--gallery',
