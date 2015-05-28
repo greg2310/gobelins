@@ -56,7 +56,7 @@ $aside-gallery__tablet-width: 40px;
     margin-right: 10px;
   }
 }
-.aside-gallery__more {
+.aside-gallery__discover {
   display: block;
   float: right;
   margin: 64px 10px 0 0;
@@ -75,10 +75,17 @@ $aside-gallery__tablet-width: 40px;
   max-width: $width__m;
   margin: 0 auto;
 }
+.aside-gallery__item {
+  display: block;
+}
 .aside-gallery__item > img {
   display: block;
   width: 100%;
   height: auto;
+}
+.aside-gallery__footer {
+  text-align: center;
+  padding: 20px 0 40px;
 }
 .aside-gallery__trigger {
   position: absolute;
