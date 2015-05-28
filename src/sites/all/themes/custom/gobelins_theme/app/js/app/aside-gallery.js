@@ -6,13 +6,13 @@
   require('../../../bower_components/jquery-contenttoggle/jquery.contenttoggle.js');
 
   $(function(){
-    var $gallery;
+    var $body, $gallery;
     
     /* Open/close gallery. */
-    $('body').contentToggle({
+    $body = $('body');
+    $body.contentToggle({
       group: 'aside-gallery',
       defaultState: 'close',
-      globalClose: true,
       elementClass: 'is-open--gallery',
       triggerSelector: '.js-contentToggle--gallery__trigger',
       contentSelector: '.js-contentToggle--gallery__content',
@@ -24,8 +24,7 @@
     $gallery.imagesLoaded( function() {
       $gallery.masonry({
         itemSelector: '.js-masonry--aside-gallery__item',
-        columnWidth: 245,
-        gutter: 40,
+        columnWidth: '.aside-gallery__item--1'
       });
     });
   });
