@@ -1,13 +1,41 @@
-.block-slider-4 {
-  background-color: $color__bg-white
+/* Bloc styles. */
+.training-animation .block-slider--1 {
+  background-color:$color__training--animation;
 }
-.block-slider-3 {
+.training-graphic-design .block-slider--1{
+  background-color:$color__training--graphic-design;
+}
+.training-web-design .block-slider--1 {
+  background-color:$color__training--web-design;
+}
+.training-photography .block-slider--1 {
+  background-color:$color__training--photography;
+}
+.training-game .block-slider--1 {
+  background-color:$color__training--game;
+}
+.training-video-audio .block-slider--1 {
+  background-color:$color__training--video-audio;
+}
+.training-cross-media .block-slider--1 {
+  background-color:$color__training--cross-media;
+}
+.block-slider--3 {
   background-color: $color__bg-gray--darck;
   color: #fff;
   
   h2 {
     color: #fff;
   }
+}
+.block-slider--4 {
+  background-color: $color__bg-white;
+}
+
+/* Owl styles. */
+.owl-carousel .owl-item {
+  display: inline-block;
+  float: none;
 }
 .owl-nav {
   text-align: center;
@@ -16,7 +44,33 @@
 .owl-nav > div {
   margin: 0 10px;
 }
-.owl-carousel .owl-item {
+.owl-dots {
+  text-align: center;
+  margin-top: 30px;
+  line-height: 6px;
+}
+.owl-dot {
   display: inline-block;
-  float: none;
+}
+.owl-dot > span {
+  width: 6px;
+  height: 6px;
+  margin: 0 7px;
+  background: $color__text-dark;
+  display: block;
+  transition: opacity $animation__params;
+  border-radius: 30px;
+  opacity: 0.5;
+}
+.owl-dot.active > span {
+  opacity: 1;
+}
+
+/* Owl styles rewrites. */
+.block-slider--1 .owl-dots {
+  position: absolute;
+  width: 100%;
+}
+.block-slider--1 .owl-nav {
+  display: none;
 }

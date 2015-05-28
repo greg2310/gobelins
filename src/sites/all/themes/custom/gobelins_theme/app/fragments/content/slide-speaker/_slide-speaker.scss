@@ -1,0 +1,38 @@
+.slide-speaker{
+  font-family:$font__neuzeit; 
+  
+  .slide-speaker__name{
+    text-transform:uppercase;
+    font-family:$font__platform--medium;
+    letter-spacing:1px;
+    color:$color__text-dark;
+    margin-bottom:5px;
+    font-size:1.25rem;
+  }
+  .slide-speaker__info{
+    margin-bottom:15px;
+  }
+  .slide-speaker__photo{
+    margin-bottom:18px;
+    img{
+      border-radius:50%;
+    }
+  }
+  .links a{
+    color:$color__blue-gobelins;
+  }
+  
+  .icon-linkedin{
+    color:#fff;
+    background:#cbcbcb;
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    display:inline-block;
+    text-align:center;
+    line-height:28px;
+    font-size:10px;
+    vertical-align:middle;
+    margin-left:20px;
+  }
+}

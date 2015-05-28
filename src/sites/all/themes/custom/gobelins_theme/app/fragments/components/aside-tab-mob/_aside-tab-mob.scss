@@ -44,7 +44,7 @@ body:after{
   left: 0;
   transition: left 300ms;
 }
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: $width__m) {
   .aside-tab-mob__wrapper{
     display:block;
     left:-268px;
@@ -53,7 +53,7 @@ body:after{
     width:268px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $width__xs - 1px) {
   .aside-tab-mob__wrapper{
     display:block;
     left:-410px;
@@ -68,7 +68,7 @@ body.is-open{
   overflow-x: hidden;
 }
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: $width__m) {
   .is-open {
     &:after{
       left: 268px;
@@ -89,7 +89,7 @@ body.is-open{
     }
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $width__xs - 1px) {
   .is-open {
     &:after{
       left: 410px;
@@ -107,20 +107,20 @@ body.is-open{
     }
   }
 }
-@media screen and (max-width: 1140px) and (min-width: 768px){
+@media screen and (max-width: $width__m) and (min-width: $width__xs){
   .is-open__lev2 {
     &:after{
-      left: 768px;
+      left: $width__xs;
     }
     .aside-tab-mob__wrapper {
-      width: 783px;
+      width: $width__xs + 15px;
     }
     .main-wrapper {
-      left: 768px;
+      left: $width__xs;
     }
     .header {
       position: fixed;
-      left: 768px;
+      left: $width__xs;
     }
   }
 }

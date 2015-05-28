@@ -1,5 +1,6 @@
 .list-rapid-access {
   background-color:$color__bg-gray--light;
+  padding-top:0;
 
 	.item-rapid-access{
 	  background-color:#fff;
@@ -9,41 +10,49 @@
 	  font-family:$font__neuzeit;
 	  height:300px;
 	  cursor:pointer;
+    
+    @media screen and (max-width: 1140px){
+      text-align:left;
+      height:auto;
+      padding:30px 40px;
+    } 
 	   
 	  & + .item-rapid-access{
-		border-left:1px solid $color__border-gray--light;
+      border-left:1px solid $color__border-gray--light;
 	  }
+    
+    @media screen and (min-width: 1140px){
 	  
-	  &:hover{
-		background:$color__blue-gobelins;
-		.item-rapid-access__img{
-			img{
-				&.off{
-					display:none;
-				}
-				&.on{
-					display:inline-block;
-				}
-			}
-		}
-		h3{
-			color:$color__bg-white;
-		}
-		
-		.description{
-			display:none;
-		}
-		
-		.btn-higlight{
-			display:inline-block;
-			background:$color__blue-gobelins;
-			color:$color__bg-white;
-			&:hover{
-				background:$color__bg-white;
-				color:$color__blue-gobelins;
-			}
-		}
-		
+      &:hover{
+        background:$color__blue-gobelins;
+        .item-rapid-access__img{
+          img{
+            &.off{
+              display:none;
+            }
+            &.on{
+              display:inline-block;
+            }
+          }
+        }
+        h3{
+          color:$color__bg-white;
+        }
+        
+        .description{
+          display:none;
+        }
+        
+        .btn-higlight{
+          display:inline-block;
+          background:$color__blue-gobelins;
+          color:$color__bg-white;
+          &:hover{
+            background:$color__bg-white;
+            color:$color__blue-gobelins;
+          }
+        }
+      }
 	  }
 	  
 	  .item-rapid-access__img{
@@ -52,25 +61,61 @@
 		height:115px;
 		vertical-align:bottom;
 		width:300px;
+    @media screen and (max-width: 1140px){
+      display:inline-block;
+      vertical-align:top;
+      width:198px;
+    }
 			
 		img{
 		  display:inline-block;
+      max-width:100%;
 		  &.on{
 			display:none;
 		  }
 		}
+    
 	  }
+    
+    @media screen and (max-width: 1140px){
+      .item-rapid-access__description{
+        display:inline-block;
+        text-align:left;
+        vertical-align:top;
+        width:66%;
+      }
+     
+    }
+    
+    
 	  h3{
 		margin:15px 0;
 		text-transform:uppercase;
 		color:$color__slideshow--training;
 		font-family:$font__platform--medium;
 		letter-spacing:1px;
+    
+    @media screen and (max-width: 1140px){
+       margin:0 0 20px 0;
+    }
+    
 	  }
 	  
 	  .btn-higlight{
-		display:none;
-		margin-top:15px;
+      display:none;
+      margin-top:15px;
+      @media screen and (max-width: 1140px){
+        display:inline-block;
+        &:after{
+          content: '\e806';
+          font-family: 'fontello';
+          font-size: 20px;
+          margin-left: 6px;
+          vertical-align: top;
+          width:20px;
+          display:inline-block;
+        }
+      }
 	  }
 	}
 }	

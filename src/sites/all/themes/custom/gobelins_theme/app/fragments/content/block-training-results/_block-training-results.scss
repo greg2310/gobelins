@@ -1,4 +1,12 @@
 .block-training-results{
   background-color:$color__bg-gray--light;
-  
+  .title-h2{
+		text-align:left;
+		font-size:2rem;
+		text-transform:none;
+		 @media screen and (min-width: 1140px) {
+			float:right;
+			width:70%;
+		}
+	}
  }
