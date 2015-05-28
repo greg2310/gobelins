@@ -15,10 +15,6 @@
     {
       "src": "bower_components/owl.carousel/dist/assets/owl.carousel.css",
       "dest": "<%= devPath %>/scss/bower/_owl.carousel.scss"
-    },
-    {
-      "src": "bower_components/colorbox/jquery.colorbox.js",
-      "dest": "<%= devPath %>/js/bower/jquery.colorbox.js"
     }
   ]
 }
