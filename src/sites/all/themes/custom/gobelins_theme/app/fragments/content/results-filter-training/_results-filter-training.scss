@@ -80,8 +80,6 @@
 			}
 			
 			.new{
-				&:after{
-					content:'new';
 					display:inline-block;
 					background:$color__blue-gobelins;
 					color:$color__bg-white;
@@ -92,8 +90,6 @@
 					line-height: 15px;
 					margin: 4px 0 0 10px;
 					vertical-align:top;
-				}
-				
 			}
 			p{
 				display:inline-block;
@@ -117,7 +113,7 @@
 	
 	.other-training{
 		background:#1a1a1a;
-		padding:14px 0;
+		padding:14px;
 		a{
 			text-transform:uppercase;
 			color:$color__bg-white;

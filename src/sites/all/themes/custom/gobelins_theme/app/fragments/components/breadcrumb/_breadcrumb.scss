@@ -36,6 +36,10 @@
     width:auto;
     margin:0 auto;
   }
+  
+  @media screen and (max-width:$width__xs - 1px) {
+   display:none;
+  }
 
   ul{
     padding:17px 20px;
