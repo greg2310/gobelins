@@ -49,28 +49,26 @@
     background-color:$color__blue-gobelins;
   }
 }
-.item-news--gobelins  .item-news__type:before{
-  background-color:$color__blue-gobelins;
-}
-.item-news--animation  .item-news__type:before{
+
+.training-animation  .item-news__type:before{
   background-color:$color__training--animation;
 }
-.item-news--graphic-design  .item-news__type:before{
+.training-graphic-design  .item-news__type:before{
   background-color:$color__training--graphic-design;
 }
-.item-news--web-design  .item-news__type:before{
+.training-web-design  .item-news__type:before{
   background-color:$color__training--web-design;
 }
-.item-news--photography  .item-news__type:before{
+.training-photography  .item-news__type:before{
   background-color:$color__training--photography;
 }
-.item-news--game  .item-news__type:before{
+.training-game  .item-news__type:before{
   background-color:$color__training--game;
 }
-.item-news--video-audio  .item-news__type:before{
+.training-video-audio  .item-news__type:before{
   background-color:$color__training--video-audio;
 }
-.item-news--cross-media  .item-news__type:before{
+.training-cross-media  .item-news__type:before{
   background-color:$color__training--cross-media;
 }
 

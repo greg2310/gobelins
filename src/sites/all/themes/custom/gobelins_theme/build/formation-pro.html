@@ -199,7 +199,7 @@
                   <li><a href="#">carrefour de l’orientation</a></li>
                   <li><a href="#">Vie étudiante</a></li>
                   <li><a href="#">Nous rencontrer</a></li>
-                  <li><a href="#" class="btn-more">résultats d’admission</span></a></li>
+                  <li><a href="#" class="btn-more">résultats d’admission</a></li>
                   <li><a href="#" class="btn-more">inscription</a></li>
                 </ul>
               </div>
@@ -308,13 +308,14 @@
                   <li><a href="#">carrefour de l’orientation</a></li>
                   <li><a href="#">Vie étudiante</a></li>
                   <li><a href="#">Nous rencontrer</a></li>
-                  <li><a href="#" class="btn-more">résultats d’admission</span></a></li>
+                  <li><a href="#" class="btn-more">résultats d’admission</a></li>
                   <li><a href="#" class="btn-more">inscription</a></li>
                 </ul>
               </div>
             </div>
           </li>
         </ul>
+      </div>
     </li>
     <li class="lev1"><a href="#">Enterprises</a></li>
     <li class="lev1"><a href="#">Galerie</a></li>
@@ -363,15 +364,16 @@
   <div class="l-row__inner">
     
     <div class="training-type-summary">
-		<p class="training-type-name">Cinéma d'animation</p>
+     <p class="training-type-name">Cinéma d'animation</p>
       <div class="training-type-summary__title">
-		
-        <h1 class="title-h1">Cinéma d’animation</h1>
-        <div class="clearfix">
-          <p class="training-summary__introduction">En plus de 30 ans d'existence les formations au cinéma d'animation de GOBELINS, l'école de l'image sont devenues des références de ce secteur d'activité.</p>
-		  <a href="#" class="link-more-training">En savoir plus</a>
-        </div>
+	        <h1 class="title-h1">Cinéma d’animation</h1>
       </div>
+     </div>
+     <div class="clearfix">
+       <p class="training-summary__introduction">En plus de 30 ans d'existence les formations au cinéma d'animation de GOBELINS, l'école de l'image sont devenues des références de ce secteur d'activité.</p>
+       <a href="#" class="link-more-training">En savoir plus</a>
+     </div>
+      
       <!--<div class="training-summary__description">
         <div class="col1">
           <p class="sub-title"><span class="icons-public"></span>Public concerné</p>
@@ -401,7 +403,7 @@
           </div>
         </div>
       </div>-->
-    </div>
+   
   </div>
 </div>
   
@@ -716,7 +718,7 @@
     <form action="action" class="filter-trainings__form">
       <div class="filter-training-field">
         <p class="title">Durée</p>
-        <div class="item-form">
+        <div class="form-item">
           <span class="styled-select">
             <select>
               <option>durée 1</option>
@@ -728,26 +730,26 @@
       </div>
        <div class="filter-training-field">
         <p class="title">Conditions</p>
-        <div class="item-form">
+        <div class="form-item">
           <input type="radio" name="conditions" id="radio1" /> 
           <label for="radio1">Éligible CPF</label>
         </div>
-        <div class="item-form">
+        <div class="form-item">
           <input type="radio" name="conditions" id="radio2" /> 
           <label for="radio2">Formations AFDAS</label>
         </div>
-        <div class="item-form">
+        <div class="form-item">
           <input type="radio" name="conditions" id="radio3" /> 
           <label for="radio3">Formations diplomantes/certifiantes</label>
         </div>
-		<div class="item-form">
+		<div class="form-item">
           <input type="radio" name="conditions" id="radio4" /> 
           <label for="radio4">Reconversion</label>
         </div>
       </div>
        <div class="filter-training-field">
 			<p class="title">Thématiques</p>
-			<div class="item-form">
+			<div class="form-item">
 				<ul class="list-themes">
 					<li>
 						<input type="checkbox" name="" id="checkbox1" /> 
@@ -845,7 +847,7 @@
 		
 		<div class="list-item">
 			<div class="item-result__detail">
-				<h3 class="new">Houdini effets spéciaux</h3>
+				<h3>Houdini effets spéciaux<span class="new">New</span></h3>
 				<p class="subtitle">Une entrée dans le monde de 3ds Max</p>
 				<p class="item-trainings__type">7 semaines</p>
 				<p class="ref">AD01</p>
@@ -872,7 +874,7 @@
 		
 		<div class="list-item">
 			<div class="item-result__detail">
-				<h3 class="new">Animateur 3D</h3>
+				<h3>Animateur 3D<span class="new">New</span></h3>
 				<p class="item-trainings__type">7 semaines</p>
 				<p class="ref">AD01</p>
 			</div>
@@ -933,21 +935,33 @@
     <h2 class="title-h2">documents utiles</h2>
     <div class="grid-container">
       <div class="grid-3 item-downloads">
-        <a href="#" class="item-downloads__img"><img src="images/img10.jpg" alt="formation Cinéma d'animation" /></a>
-<h3>Fiche de présentation de la formation Cinéma d’animation</h3>
-<a href="#" class="btn-download">Télécharger le pdf</a>
+        <a href="#" class="item-downloads__img">
+ <img src="images/img10.jpg" alt="formation Cinéma d'animation" />
+</a>
+<div class="item-downloads__details">
+ <h3>Fiche de présentation de la formation Cinéma d’animation</h3>
+ <a href="#" class="btn-download">Télécharger <span class="extension">le pdf</span></a>
+</div> 
 
       </div>
       <div class="grid-3 item-downloads">
-        <a href="#" class="item-downloads__img"><img src="images/img10.jpg" alt="formation Cinéma d'animation" /></a>
-<h3>Fiche de présentation de la formation Cinéma d’animation</h3>
-<a href="#" class="btn-download">Télécharger le pdf</a>
+        <a href="#" class="item-downloads__img">
+ <img src="images/img10.jpg" alt="formation Cinéma d'animation" />
+</a>
+<div class="item-downloads__details">
+ <h3>Fiche de présentation de la formation Cinéma d’animation</h3>
+ <a href="#" class="btn-download">Télécharger <span class="extension">le pdf</span></a>
+</div> 
 
       </div>
       <div class="grid-3 item-downloads">
-        <a href="#" class="item-downloads__img"><img src="images/img10.jpg" alt="formation Cinéma d'animation" /></a>
-<h3>Fiche de présentation de la formation Cinéma d’animation</h3>
-<a href="#" class="btn-download">Télécharger le pdf</a>
+        <a href="#" class="item-downloads__img">
+ <img src="images/img10.jpg" alt="formation Cinéma d'animation" />
+</a>
+<div class="item-downloads__details">
+ <h3>Fiche de présentation de la formation Cinéma d’animation</h3>
+ <a href="#" class="btn-download">Télécharger <span class="extension">le pdf</span></a>
+</div> 
 
       </div>
     </div>
@@ -1112,8 +1126,22 @@
 
 
   </div>
-  <aside class="aside-gallery js-contentToggle--gallery">
-  <div class="aside-gallery__container js-contentToggle--gallery__content">
+  <aside class="aside-gallery js-contentToggle--gallery__content">
+  <div class="aside-gallery__container">
+    <div class="aside-gallery__masonry js-masonry--aside-gallery">
+      <img class="aside-gallery__item js-masonry--aside-gallery__item" src="images/img1.jpg">
+      <img class="aside-gallery__item js-masonry--aside-gallery__item" src="images/img2.jpg">
+      <img class="aside-gallery__item js-masonry--aside-gallery__item" src="images/img3.jpg">
+      <img class="aside-gallery__item js-masonry--aside-gallery__item" src="images/img4.jpg">
+      <img class="aside-gallery__item js-masonry--aside-gallery__item" src="images/img5.jpg">
+      <img class="aside-gallery__item js-masonry--aside-gallery__item" src="images/img6.jpg">
+      <img class="aside-gallery__item js-masonry--aside-gallery__item" src="images/img7.jpg">
+      <img class="aside-gallery__item js-masonry--aside-gallery__item" src="images/img8.jpg">
+      <img class="aside-gallery__item js-masonry--aside-gallery__item" src="images/img9.jpg">
+      <img class="aside-gallery__item js-masonry--aside-gallery__item" src="images/img10.jpg">
+      <img class="aside-gallery__item js-masonry--aside-gallery__item" src="images/img11.jpg">
+      <img class="aside-gallery__item js-masonry--aside-gallery__item" src="images/img12.jpg">
+    </div>
     <div class="aside-gallery__trigger js-contentToggle--gallery__trigger"></div>
   </div>
 </aside>
@@ -1125,6 +1153,8 @@
 <!-- END : This code part should not be integrated in your Application ! -->
 
 <script src="js/jquery.js"></script>
+<script src="js/imagesloaded.js"></script>
+<script src="js/masonry.js"></script>
 <script src="js/app.js"></script>
 
 

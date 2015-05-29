@@ -1,6 +1,63 @@
 .slide-project{
-  
+  a{
+    color:#fff;
+  }
 }
 .slide-project__media{
-  margin-bottom:20px;
+  margin-bottom:15px;
+}
+.slide-project__description{
+  font-family:$font__neuzeit;
+  height:8rem;
+  overflow:hidden;
+}
+.slide-project__title{
+  text-transform:uppercase;
+  color:#fff;
+  font-family:$font__platform--medium;
+  letter-spacing:1px;
+  font-size:1.25rem;
+  line-height:1.2em;
+  margin-bottom:5px;
+}
+.slide-project__type{
+  text-transform:uppercase;
+  font-family:$font__platform--medium;
+  letter-spacing:1px;
+  position:relative;
+  padding-left:20px;
+  
+  &:before{
+    content:'';
+    display:block;
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    position:absolute;
+    left:0;
+    top:50%;
+    margin-top:-6px;
+    background-color:$color__blue-gobelins;
+  }
+}
+.training-animation .slide-project__type:before{
+  background-color:$color__training--animation;
+}
+.training-graphic-design .slide-project__type:before{
+  background-color:$color__training--graphic-design;
+}
+.training-web-design .slide-project__type:before{
+  background-color:$color__training--web-design;
+}
+.training-photography .slide-project__type:before{
+  background-color:$color__training--photography;
+}
+.training-game .slide-project__type:before{
+  background-color:$color__training--game;
+}
+.training-video-audio .slide-project__type:before{
+  background-color:$color__training--video-audio;
+}
+.training-cross-media .slide-project__type:before{
+  background-color:$color__training--cross-media;
 }

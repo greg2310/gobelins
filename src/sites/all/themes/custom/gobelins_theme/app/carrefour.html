@@ -9,7 +9,12 @@
     <%= include(
       '1-column',
       {
-        content      : ['list-trainings', 'list-news', 'list-downloads'],
+        content      : [
+          'list-trainings', 
+          {template: 'block-slider-3', params: {slides: ['slide-project', 'slide-project2', 'lipsum', 'lipsum', 'lipsum', 'lipsum', 'lipsum', 'lipsum']}},
+          'list-news', 
+          'list-downloads'
+        ],
         contentTop   : ['breadcrumb', 'filter-trainings'],
         contentBottom : []
       }
