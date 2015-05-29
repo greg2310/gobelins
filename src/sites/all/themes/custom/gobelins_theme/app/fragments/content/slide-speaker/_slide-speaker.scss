@@ -1,6 +1,11 @@
 .slide-speaker{
   font-family:$font__neuzeit; 
   
+  .slide-speaker__description{
+    height:14rem;
+    overflow:hidden;
+  }
+  
   .slide-speaker__name{
     text-transform:uppercase;
     font-family:$font__platform--medium;
@@ -20,19 +25,5 @@
   }
   .links a{
     color:$color__blue-gobelins;
-  }
-  
-  .icon-linkedin{
-    color:#fff;
-    background:#cbcbcb;
-    width:30px;
-    height:30px;
-    border-radius:50%;
-    display:inline-block;
-    text-align:center;
-    line-height:28px;
-    font-size:10px;
-    vertical-align:middle;
-    margin-left:20px;
   }
 }

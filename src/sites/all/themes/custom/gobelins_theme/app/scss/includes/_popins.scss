@@ -23,28 +23,16 @@
   background-color:#fff;
 }
 /*popin--text-img*/
-.popin--text-img{
+.popin--text{
   display:none;
   padding:50px 40px;
-}
-#colorbox .popin--text-img{
-  display:block;
-}
-.popin--text-img__img{
-  width:200px;
-  float:left;
-  
-  img{
-    max-width:100%;
-    height:auto;
-  }
-}
-.popin--text-img__text{
-  margin-left:245px;
   
   p{
     margin-bottom:20px;
   }
+}
+#colorbox .popin--text{
+  display:block;
 }
 .popin--text-img__title{
   font-size:1.375rem;

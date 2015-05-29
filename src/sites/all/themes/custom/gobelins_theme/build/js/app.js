@@ -90,12 +90,18 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   $(function(){
     $('.close-themes').click(function(){
      $('.filter-training-field').find('.list-themes').parent('.form-item').toggle();
+<<<<<<< HEAD
     });
     
     
     $('.block-banner.type .link-more-training').click(function(){
      
     });
+=======
+     
+    });
+    
+>>>>>>> 91081d0e54b249b9b92bc7a74ab11b19b0de7b29
   });
 })();
 
@@ -306,17 +312,17 @@ var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments
 with(obj||{}){
 __p+='';
  for (var i=0; i < items.length; i++) { 
-__p+='\n  <a\n    href="'+
+__p+='\r\n  <a\r\n    href="'+
 ((__t=( items[i].href ))==null?'':__t)+
-'"\n    title="'+
+'"\r\n    title="'+
 ((__t=( items[i].title ))==null?'':__t)+
-'"\n    class="aside-gallery__item aside-gallery__item--'+
+'"\r\n    class="aside-gallery__item aside-gallery__item--'+
 ((__t=( items[i].columns ))==null?'':__t)+
-' js-masonry--aside-gallery__item"\n  >\n    <img src="'+
+' js-masonry--aside-gallery__item"\r\n  >\r\n    <img src="'+
 ((__t=( items[i].src ))==null?'':__t)+
 '" alt="'+
 ((__t=( items[i].title ))==null?'':__t)+
-'">\n  </a>\n';
+'">\r\n  </a>\r\n';
  } 
 __p+='';
 }
@@ -1438,32 +1444,11 @@ return __p;
   var SPACE_KEY_CODE = 32;
 
   /* Plugin variables. */
-  var pluginName  = 'contentToggle';
-  var instances = {};
+  var pluginName;
   var defaultOptions = {};
   var $global = $(document);
   var isIthing = navigator.userAgent.match(/iPad|iPhone/i);
-  var sanitize = /[^a-z0-9_-]/gi;
   var uid = 0;
-  var gid = 0;
-  
-  /* Plugin default options. */
-  defaultOptions = {
-    defaultState: null,
-    globalClose: false,
-    independent: false,
-    beforeCallback: null,
-    triggerSelector: '.js-contentToggle__trigger',
-    triggerSelectorContext: true,
-    contentSelector: '.js-contentToggle__content',
-    contentSelectorContext: true,
-    elementClass: 'is-open',
-    triggerClass: 'is-active',
-    toggleProperties: ['height'],
-    toggleOptions: {
-      duration: 0
-    }
-  };
 
   /**
    * Plugin Constructor.
@@ -1476,42 +1461,47 @@ return __p;
    *   Instance specific options.
    */
   function Plugin(element, selector, options) {
-    var data;
-    
     // Merge specific and default options.
-    this.options = {
-      group: selector
-    };
-    $.extend(this.options, defaultOptions, options);
+    this.options = $.extend({}, defaultOptions, options);
 
     // Initialize data.
     this.$element = (element instanceof $)? element: $(element);
+    this.selector = selector;
     this.uid = ++uid;
 
-    // Data initialization.
+    // Save the instance reference into the DOM element.
+    this.$element.data(pluginName, this);
+
+    // Object initialization.
     this.setup();
-    
-    // Empty object initialization.
-    data = this.$element.data(pluginName);
-    if (!instances[this.options.group]) {
-      instances[this.options.group] = {};
-    }
-    if (!data) {
-      data = {};
-    }
-    
-    // Check if instance has not been already initialized.
-    if (!data[this.options.group]) {
-      // Save the new instance.
-      instances[this.options.group][this.uid] = this;
-      data[this.options.group] = this;
-      this.$element.data(pluginName, data);
-      
-      // Plugin initialization.
-      this.bind();
-      this.init();
-    }
+    this.bind();
+    this.init();
   }
+
+  /********** Start plugin specific code **********/
+
+    /* Plugin name. */
+  pluginName = 'contentToggle';
+
+  /* Plugin default options. */
+  defaultOptions = {
+    defaultState: null,
+    globalClose: false,
+    independent: false,
+    beforeCallback: null,
+    triggerSelector: '.js-contentToggle__trigger',
+    triggerSelectorContext: true,
+    contentSelector: '.js-contentToggle__content',
+    contentSelectorContext: true,
+    elementClass: 'is-open',
+    triggerClass: 'is-active',
+    toggleProperties: {
+      height: 'toggle'
+    },
+    toggleOptions: {
+      duration: 0
+    }
+  };
 
   /**
    * Setup plugin.
@@ -1519,11 +1509,6 @@ return __p;
    */
   Plugin.prototype.setup = function() {
     this.setupDataOptions();
-    
-    // Sanitize group name.
-    if (this.options.group) {
-      this.options.group = this.options.group.toString().replace(sanitize, '');
-    }
 
     // Parse JSON options.
     if (typeof this.options.toggleProperties == 'string') {
@@ -1579,25 +1564,24 @@ return __p;
    * Bind events.
    */
   Plugin.prototype.bind = function() {
-    var namespaces = '.' + pluginName + '.' + this.options.group;
     var eventName = (isIthing && this.options.globalClose)? 'touchstart': 'click';
     var $all = this.$element.add(this.$triggers).add(this.$contents);
 
     // Bind custom events on all elements.
-    $all.on('destroy' + namespaces, this.destroy.bind(this));
-    $all.on('toggle' + namespaces, $.proxy(this.toggle, this, null));
-    $all.on('close' + namespaces, $.proxy(this.toggle, this, false));
-    $all.on('open' + namespaces, $.proxy(this.toggle, this, true));
-    $all.on('isOpen' + namespaces, function(){
+    $all.on('destroy.' + pluginName, this.destroy.bind(this));
+    $all.on('toggle.' + pluginName, $.proxy(this.toggle, this, null));
+    $all.on('close.' + pluginName, $.proxy(this.toggle, this, false));
+    $all.on('open.' + pluginName, $.proxy(this.toggle, this, true));
+    $all.on('isOpen.' + pluginName, function(){
       return this.isOpen;
     }.bind(this));
 
     // Bind native events on triggers.
-    this.$triggers.on(eventName + namespaces, function(event){
+    this.$triggers.on(eventName + '.' + pluginName, function(event){
       event.preventDefault();
       this.toggle(null, event);
     }.bind(this));
-    this.$triggers.on('keydown' + namespaces, function(event){
+    this.$triggers.on('keydown.' + pluginName, function(event){
       if (event.keyCode == ENTER_KEY_CODE || event.keyCode == SPACE_KEY_CODE) {
         event.preventDefault();
         this.toggle(null, event);
@@ -1605,7 +1589,7 @@ return __p;
     }.bind(this));
 
     // Bind native events on contents (avoid triggers click event).
-    this.$contents.on(eventName + namespaces, function(event){
+    this.$contents.on(eventName + '.' + pluginName, function(event){
       event.stopPropagation();
     });
   };
@@ -1715,11 +1699,7 @@ return __p;
    */
   Plugin.prototype.closeAll = function(butItself) {
     if (!this.options.independent) {
-      $.each(instances[this.options.group], function(uid, instance){
-        if (uid != this.uid) {
-          instance.close();
-        }
-      }.bind(this));
+      $(this.selector).not(this.$element).trigger('close.' + pluginName);
     }
     if (!butItself) {
       this.close();
@@ -1730,6 +1710,7 @@ return __p;
    * Perform toggle action.
    */
   Plugin.prototype.do = function() {
+<<<<<<< HEAD
     var toggleProperties = {};
     var action = this.isOpen? 'show': 'hide';
     
@@ -1746,6 +1727,15 @@ return __p;
       toggleProperties,
       this.options.toggleOptions
     );
+=======
+    this.update();
+    if (this.isOpen ^ this.$contents.is(':visible')) {
+      this.$contents.stop().animate(
+        this.options.toggleProperties,
+        this.options.toggleOptions
+      );
+    }
+>>>>>>> 91081d0e54b249b9b92bc7a74ab11b19b0de7b29
   };
 
   /**
@@ -1780,15 +1770,31 @@ return __p;
     $global.off('.' + pluginName + this.uid);
   };
 
+<<<<<<< HEAD
+=======
+  /********** End plugin specific code **********/
+
+>>>>>>> 91081d0e54b249b9b92bc7a74ab11b19b0de7b29
   /* Expose jQuery plugin. */
   $.fn[pluginName] = function(options) {
     var selector = this.selector;
     return this.each(function() {
+<<<<<<< HEAD
       new Plugin(this, selector, options);
+=======
+      var $this = $(this);
+      if (!$this.data(pluginName)) {
+        new Plugin($this, selector, options);
+      }
+>>>>>>> 91081d0e54b249b9b92bc7a74ab11b19b0de7b29
     });
   };
 })(jQuery);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 91081d0e54b249b9b92bc7a74ab11b19b0de7b29
 },{}],11:[function(require,module,exports){
 /**
  * Owl carousel
