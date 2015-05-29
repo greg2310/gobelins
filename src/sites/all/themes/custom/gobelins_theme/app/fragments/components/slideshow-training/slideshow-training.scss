@@ -28,6 +28,7 @@
 				padding:1px 4px;
 				font-size:0.6875rem;
 				text-transform:uppercase;
+    z-index:1;
 				
 			}
 			
@@ -77,5 +78,9 @@
 		}
 	}
 }
+
+/****color training***/
+
+.training-animation .owl-carousel .item{border-color:$color__border__slide;}
 
 

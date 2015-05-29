@@ -92,6 +92,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
      $('.filter-training-field').find('.list-themes').parent('.form-item').toggle();
     });
     
+    
     $('.block-banner.type .link-more-training').click(function(){
      
     });
