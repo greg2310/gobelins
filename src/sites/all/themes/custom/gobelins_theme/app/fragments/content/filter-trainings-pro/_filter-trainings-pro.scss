@@ -73,9 +73,18 @@
    color:$color__slideshow--training;
    margin-bottom:10px;
    font-family:$font__platform--medium;
+   position:relative;
    letter-spacing:1px;
     @media screen and (max-width: $width__m) {
      border-bottom:1px dotted $color__training--search--border;
+    }
+    
+    .close-themes{
+     position:absolute;
+     right:0;
+     top:0;
+     cursor:pointer;
+    
     }
    
   }

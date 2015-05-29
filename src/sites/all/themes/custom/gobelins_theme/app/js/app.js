@@ -6,5 +6,6 @@
   require('./app/tabs-accordion.js');
   require('./app/sliders.js');
   require('./app/aside-gallery.js');
+  require('./app/filter-trainings-pro.js');
 
 })();
