@@ -3,7 +3,7 @@
 
   /* require plugins */
   var $ = require('jquery');
-  require('../bower/jquery.contenttoggle.js');
+  require('../../../bower_components/jquery-contenttoggle/jquery.contenttoggle.js');
 
   $(function(){
     $('.js-contenttoggle--tabs-accordion').contentToggle({

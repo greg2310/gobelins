@@ -18,6 +18,7 @@
 @import "includes/helpers";
 @import "includes/forms";
 @import "includes/display";
+@import "includes/popins";
 
 /* Layout blocks partials */
 @import "../fragments/layout/layout";
@@ -56,3 +57,6 @@
 @import "../fragments/content/block-rapid-access/block-rapid-access";
 @import "../fragments/content/filter-trainings-pro/filter-trainings-pro";
 @import "../fragments/content/block-contact-training/block-contact-training";
+@import "../fragments/content/slide-witness/slide-witness";
+@import "../fragments/content/slide-speaker/slide-speaker";
+@import "../fragments/content/slide-project/slide-project";

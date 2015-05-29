@@ -1,0 +1,39 @@
+.slide-witness{
+  background:#fff;
+  box-shadow: 0 2px rgba(0,0,0,0.2);
+  margin-bottom:2px;
+  padding:30px 190px;
+  text-align:center;
+  
+  .author-photo{
+    width:100px;
+    height:100px;
+    display:block;
+    margin:0 auto 15px;
+    
+    img{
+      border-radius:50%;
+      width:100%;
+      height:auto;
+    }
+  }
+  
+  .author-name{
+    text-transform:uppercase;
+    font-family:$font__platform--medium;
+    letter-spacing:1px;
+    color:$color__text-dark;
+    margin-bottom:15px;
+  }
+  .author-info{
+    font-family:$font__neuzeit;
+    margin:0 100px;
+  }
+  .witness{
+    font-family:$font__platform--medium;
+    letter-spacing:1px;
+    font-size:1.5rem;
+    line-height:1.2em;
+    margin-bottom:15px;
+  }
+}
