@@ -2,12 +2,6 @@
   font-size:0.875rem;
   background:#fff;
   padding:0;
- 
-  
-  @media screen and (min-width: $width__xl + 1px) {
-    width:$width__xl;
-    margin:0 auto;
-  }
   
   @media screen and (min-width: $width__l + 1px) {
     width:auto;
@@ -20,6 +14,11 @@
   
   @media screen and (max-width:$width__m){
    display:none;
+  }
+  
+  @media screen and (min-width: $width__xl + 1px) {
+    width:$width__xl;
+    margin:0 auto;
   }
 
   ul{

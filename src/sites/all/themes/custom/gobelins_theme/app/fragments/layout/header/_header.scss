@@ -1,8 +1,7 @@
 .header{
-  background-color:$color__bg-gray--darck;
+  width:100%;
   color:#fff;
   height:144px;
-  width:100%;
   position:relative;
   font-family: $font__platform--medium;
   z-index:1;
@@ -10,6 +9,11 @@
   @media screen and (max-width: 1140px){
     height:98px;
   }
+}
+.header__inner {
+  background-color: $color__bg-gray--darck;
+  padding-top: 1px;
+  height: 100%;
 }
 .header__bar-top{
   text-align:right;

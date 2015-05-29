@@ -55,18 +55,10 @@
     padding:40px 0;
   }
 }
-@media screen and (min-width: $width__xl + 1px) {
-  .l-row,
-  .footer,
-  .header{
-    width:$width__xl;
-    margin:0 auto;
-  }
-}
 @media screen and (min-width: $width__l + 1px) {
   .l-row,
   .footer,
-  .header{
+  .header__inner{
     width:auto;
     margin:0 auto;
   }
@@ -75,5 +67,13 @@
   .container-overflow{
     overflow:hidden;
     position:relative;
+  }
+}
+@media screen and (min-width: $width__xl + 1px) {
+  .l-row,
+  .footer,
+  .header__inner{
+    width:$width__xl;
+    margin:0 auto;
   }
 }
