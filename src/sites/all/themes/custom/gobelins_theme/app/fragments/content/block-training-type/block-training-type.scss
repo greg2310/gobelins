@@ -165,3 +165,13 @@
 .breadcrumb + .block-banner{
   margin-top:-55px;
 }
+
+/*** Color training****/
+
+.training-animation .training-type-summary__title .title-h1:before{border-color:$color__training--animation;}
+.training-graphic-design .training-type-summary__title .title-h1:before{border-color:$color__training--graphic-design;}
+.training-web-design .training-type-summary__title .title-h1:before{border-color:$color__training--web-design;}
+.training-photography .training-type-summary__title .title-h1:before{border-color:$color__training--photography;}
+.training-game .training-type-summary__title .title-h1:before{border-color:$color__training--game;}
+.training-video-audio .training-type-summary__title .title-h1:before{border-color:$color__training--video-audio;}
+.training-cross-media .training-type-summary__title .title-h1:before{border-color:$color__training--cross-media;}

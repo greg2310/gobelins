@@ -2597,13 +2597,21 @@ select {
     width: auto;
     font-family: "Platform-Medium";
     margin-bottom: 25px;
+    float: none;
   }
 }
-/* line 31, ../../app/fragments/components/header/_menu__search.scss */
+/* line 32, ../../app/fragments/components/header/_menu__search.scss */
 .main-menu--search .form-item {
   margin-left: 50%;
+  margin-bottom: 0;
 }
-/* line 34, ../../app/fragments/components/header/_menu__search.scss */
+@media screen and (max-width: 1140px) {
+  /* line 32, ../../app/fragments/components/header/_menu__search.scss */
+  .main-menu--search .form-item {
+    margin-left: 0;
+  }
+}
+/* line 39, ../../app/fragments/components/header/_menu__search.scss */
 .main-menu--search input[type="text"] {
   background: #f2f2f2 url(../images/icons/icon-search.png) no-repeat 15px center;
   border: 1px solid #e5e5e5;
@@ -2616,19 +2624,19 @@ select {
   font-size: 0.875rem;
 }
 @media screen and (max-width: 1140px) {
-  /* line 34, ../../app/fragments/components/header/_menu__search.scss */
+  /* line 39, ../../app/fragments/components/header/_menu__search.scss */
   .main-menu--search input[type="text"] {
     display: block;
     width: 100%;
     margin-bottom: 20px;
   }
 }
-/* line 52, ../../app/fragments/components/header/_menu__search.scss */
+/* line 57, ../../app/fragments/components/header/_menu__search.scss */
 .main-menu--search button {
   vertical-align: middle;
 }
 @media screen and (max-width: 1140px) {
-  /* line 52, ../../app/fragments/components/header/_menu__search.scss */
+  /* line 57, ../../app/fragments/components/header/_menu__search.scss */
   .main-menu--search button {
     display: block;
     width: 100%;
@@ -3474,6 +3482,36 @@ body.is-open {
   border-color: #07d38f;
 }
 
+/* line 86, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
+.training-graphic-design .owl-carousel .item {
+  border-color: #3af2ce;
+}
+
+/* line 88, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
+.training-web-design .owl-carousel .item {
+  border-color: #6300ff;
+}
+
+/* line 90, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
+.training-photography .owl-carousel .item {
+  border-color: #ffe042;
+}
+
+/* line 92, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
+.training-game .owl-carousel .item {
+  border-color: #1840e8;
+}
+
+/* line 94, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
+.training-video-audio .owl-carousel .item {
+  border-color: red;
+}
+
+/* line 96, ../../app/fragments/components/slideshow-training/slideshow-training.scss */
+.training-cross-media .owl-carousel .item {
+  border-color: #e90b51;
+}
+
 /* Bloc styles. */
 /* line 2, ../../app/fragments/components/block-slider/_block-slider.scss */
 .training-animation .block-slider--1 {
@@ -3530,32 +3568,33 @@ body.is-open {
 .owl-carousel .owl-item {
   display: inline-block;
   float: none;
+  vertical-align: bottom;
 }
 
-/* line 40, ../../app/fragments/components/block-slider/_block-slider.scss */
+/* line 41, ../../app/fragments/components/block-slider/_block-slider.scss */
 .owl-nav {
   text-align: center;
   margin-top: 30px;
 }
 
-/* line 44, ../../app/fragments/components/block-slider/_block-slider.scss */
+/* line 45, ../../app/fragments/components/block-slider/_block-slider.scss */
 .owl-nav > div {
   margin: 0 10px;
 }
 
-/* line 47, ../../app/fragments/components/block-slider/_block-slider.scss */
+/* line 48, ../../app/fragments/components/block-slider/_block-slider.scss */
 .owl-dots {
   text-align: center;
   margin-top: 30px;
   line-height: 6px;
 }
 
-/* line 52, ../../app/fragments/components/block-slider/_block-slider.scss */
+/* line 53, ../../app/fragments/components/block-slider/_block-slider.scss */
 .owl-dot {
   display: inline-block;
 }
 
-/* line 55, ../../app/fragments/components/block-slider/_block-slider.scss */
+/* line 56, ../../app/fragments/components/block-slider/_block-slider.scss */
 .owl-dot > span {
   width: 6px;
   height: 6px;
@@ -3568,19 +3607,31 @@ body.is-open {
   opacity: 0.5;
 }
 
-/* line 65, ../../app/fragments/components/block-slider/_block-slider.scss */
+/* line 66, ../../app/fragments/components/block-slider/_block-slider.scss */
 .owl-dot.active > span {
   opacity: 1;
 }
 
+@media screen and (max-width: 1140px) {
+  /* line 70, ../../app/fragments/components/block-slider/_block-slider.scss */
+  .owl-dots {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 75, ../../app/fragments/components/block-slider/_block-slider.scss */
+  .owl-dots {
+    margin-top: 15px;
+  }
+}
 /* Owl styles rewrites. */
-/* line 70, ../../app/fragments/components/block-slider/_block-slider.scss */
+/* line 81, ../../app/fragments/components/block-slider/_block-slider.scss */
 .block-slider--1 .owl-dots {
   position: absolute;
   width: 100%;
 }
 
-/* line 74, ../../app/fragments/components/block-slider/_block-slider.scss */
+/* line 85, ../../app/fragments/components/block-slider/_block-slider.scss */
 .block-slider--1 .owl-nav {
   display: none;
 }
@@ -4625,33 +4676,34 @@ body.is-open {
   /* line 6, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
   .filter-trainings.professionnal {
     width: 100%;
+    float: none;
   }
 }
-/* line 14, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+/* line 15, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form {
   border-top: none;
   padding-top: 40px;
 }
 @media screen and (max-width: 1140px) {
-  /* line 14, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+  /* line 15, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
   .filter-trainings.professionnal .filter-trainings__form {
     padding: 0;
   }
 }
-/* line 20, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+/* line 21, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .filter-training-field {
   border-top: 1px solid #cccccc;
   padding: 15px 0 20px 0;
   width: 75%;
   position: relative;
 }
-/* line 26, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+/* line 27, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .filter-training-field:first-child {
   border-top: none;
   padding-top: 0;
 }
 @media screen and (max-width: 1140px) {
-  /* line 20, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+  /* line 21, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
   .filter-trainings.professionnal .filter-trainings__form .filter-training-field {
     display: inline-block;
     vertical-align: top;
@@ -4659,39 +4711,50 @@ body.is-open {
     padding-top: 0;
     padding-left: 30px;
   }
-  /* line 37, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+  /* line 38, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
   .filter-trainings.professionnal .filter-trainings__form .filter-training-field:first-child {
     width: 25%;
     padding-left: 0;
   }
-  /* line 41, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+  /* line 42, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
   .filter-trainings.professionnal .filter-trainings__form .filter-training-field:nth-child(2) {
     width: 30%;
   }
-  /* line 44, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+  /* line 45, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
   .filter-trainings.professionnal .filter-trainings__form .filter-training-field:nth-child(3) {
     width: 43%;
   }
 }
-/* line 50, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+@media screen and (max-width: 767px) {
+  /* line 21, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+  .filter-trainings.professionnal .filter-trainings__form .filter-training-field {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  /* line 51, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+  .filter-trainings.professionnal .filter-trainings__form .filter-training-field:first-child, .filter-trainings.professionnal .filter-trainings__form .filter-training-field:nth-child(2), .filter-trainings.professionnal .filter-trainings__form .filter-training-field:nth-child(3) {
+    width: 100%;
+  }
+}
+/* line 61, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .filter-training-field .form-item {
   margin: 15px 0 0 0;
 }
-/* line 52, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+/* line 63, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .filter-training-field .form-item:first-child {
   margin: 0;
 }
-/* line 60, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+/* line 71, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .btn-remove:hover {
   text-decoration: underline;
 }
-/* line 65, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+/* line 76, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .remove-all-themes {
   position: absolute;
   right: 0;
   top: 0;
 }
-/* line 71, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+/* line 82, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .title {
   text-transform: uppercase;
   color: #333333;
@@ -4701,32 +4764,32 @@ body.is-open {
   letter-spacing: 1px;
 }
 @media screen and (max-width: 1140px) {
-  /* line 71, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+  /* line 82, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
   .filter-trainings.professionnal .filter-trainings__form .title {
     border-bottom: 1px dotted #cccccc;
   }
 }
-/* line 82, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+/* line 93, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .title .close-themes {
   position: absolute;
   right: 0;
   top: 0;
   cursor: pointer;
 }
-/* line 91, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+/* line 102, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .btn-higlight, .filter-trainings.professionnal .filter-trainings__form input[type="submit"], .filter-trainings.professionnal .filter-trainings__form .main-menu--search button, .main-menu--search .filter-trainings.professionnal .filter-trainings__form button {
   margin-top: 20px;
 }
-/* line 96, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+/* line 107, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .list-themes li {
   display: inline-block;
   margin: 0 7px 10px 0;
 }
-/* line 100, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+/* line 111, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .list-themes li input[type="checkbox"]:checked ~ label {
   background: #656565;
 }
-/* line 104, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+/* line 115, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .list-themes li label {
   font-size: 0.875rem;
   color: #fff;
@@ -4736,15 +4799,15 @@ body.is-open {
   display: block;
   text-decoration: none;
 }
-/* line 112, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+/* line 123, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .list-themes li label:before {
   display: none;
 }
-/* line 115, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+/* line 126, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .list-themes li label:hover {
   background: #999999;
 }
-/* line 119, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+/* line 130, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .list-themes li:nth-child(2) {
   margin-right: 0;
 }
@@ -4968,6 +5031,42 @@ body.is-open {
   margin-top: -55px;
 }
 
+/*** Color training****/
+/* line 171, ../../app/fragments/content/block-training-type/block-training-type.scss */
+.training-animation .training-type-summary__title .title-h1:before {
+  border-color: #00e196;
+}
+
+/* line 172, ../../app/fragments/content/block-training-type/block-training-type.scss */
+.training-graphic-design .training-type-summary__title .title-h1:before {
+  border-color: #3af2ce;
+}
+
+/* line 173, ../../app/fragments/content/block-training-type/block-training-type.scss */
+.training-web-design .training-type-summary__title .title-h1:before {
+  border-color: #6300ff;
+}
+
+/* line 174, ../../app/fragments/content/block-training-type/block-training-type.scss */
+.training-photography .training-type-summary__title .title-h1:before {
+  border-color: #ffe042;
+}
+
+/* line 175, ../../app/fragments/content/block-training-type/block-training-type.scss */
+.training-game .training-type-summary__title .title-h1:before {
+  border-color: #1840e8;
+}
+
+/* line 176, ../../app/fragments/content/block-training-type/block-training-type.scss */
+.training-video-audio .training-type-summary__title .title-h1:before {
+  border-color: red;
+}
+
+/* line 177, ../../app/fragments/content/block-training-type/block-training-type.scss */
+.training-cross-media .training-type-summary__title .title-h1:before {
+  border-color: #e90b51;
+}
+
 /* line 1, ../../app/fragments/content/block-training-results/_block-training-results.scss */
 .block-training-results {
   background-color: #f2f2f2;
@@ -4976,6 +5075,7 @@ body.is-open {
 .block-training-results .title-h2 {
   text-align: left;
   font-size: 2rem;
+  line-height: normal;
   text-transform: none;
 }
 @media screen and (min-width: 1140px) {
@@ -4994,15 +5094,16 @@ body.is-open {
   /* line 1, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
   .results-filter-training {
     width: 100%;
+    margin-left: 0;
   }
 }
-/* line 9, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 10, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training .option-filter {
   text-transform: uppercase;
   color: #333333;
   margin-bottom: 15px;
 }
-/* line 13, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 14, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training .option-filter .date,
 .results-filter-training .option-filter .price {
   text-transform: capitalize;
@@ -5012,28 +5113,29 @@ body.is-open {
   margin-left: 15px;
   text-decoration: none;
 }
-/* line 22, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 23, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training .option-filter .active {
   border-bottom: 2px solid #1a1a1a;
   color: #333333;
 }
-/* line 27, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 28, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training .list-results-training {
   border-bottom: 2px solid #d9d9d9;
   margin-bottom: 25px;
+  border-top: 2px solid #00e196;
 }
-/* line 30, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 32, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training .list-results-training .list-item {
   display: block;
   background-color: #fff;
   margin-top: 1px;
   padding: 15px;
 }
-/* line 35, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 37, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training .list-results-training .list-item:first-child {
   margin-top: 0;
 }
-/* line 42, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 44, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training .list-results-training .item-result__info {
   width: 35%;
   display: inline-block;
@@ -5041,40 +5143,40 @@ body.is-open {
   text-align: right;
 }
 @media screen and (max-width: 767px) {
-  /* line 42, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+  /* line 44, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
   .results-filter-training .list-results-training .item-result__info {
     width: 100%;
     margin-top: 20px;
   }
 }
-/* line 52, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 54, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training .list-results-training .item-result__info .price-training {
   color: #666666;
   margin-right: 20px;
 }
 @media screen and (max-width: 767px) {
-  /* line 52, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+  /* line 54, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
   .results-filter-training .list-results-training .item-result__info .price-training {
     float: left;
     padding-top: 10px;
     margin-left: -5px;
   }
 }
-/* line 63, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 65, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training .list-results-training .item-result__detail {
   width: 64%;
   display: inline-block;
   vertical-align: top;
 }
 @media screen and (max-width: 767px) {
-  /* line 63, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+  /* line 65, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
   .results-filter-training .list-results-training .item-result__detail {
     width: 100%;
     padding-bottom: 22px;
     border-bottom: 1px solid #e6e6e6;
   }
 }
-/* line 72, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 74, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training .list-results-training .item-result__detail h3 {
   color: #333333;
   font-size: 1.25;
@@ -5082,7 +5184,7 @@ body.is-open {
   letter-spacing: 1px;
   position: relative;
 }
-/* line 80, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 82, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training .list-results-training .item-result__detail .new {
   display: inline-block;
   background: #0045e5;
@@ -5095,31 +5197,31 @@ body.is-open {
   margin: 4px 0 0 10px;
   vertical-align: top;
 }
-/* line 92, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 94, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training .list-results-training .item-result__detail p {
   display: inline-block;
   margin-top: 10px;
 }
-/* line 95, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 97, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training .list-results-training .item-result__detail p.ref {
   margin-left: 20px;
 }
-/* line 98, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 100, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training .list-results-training .item-result__detail p.subtitle {
   display: block;
   margin: 0;
 }
 @media screen and (max-width: 767px) {
-  /* line 103, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+  /* line 105, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
   .results-filter-training .list-results-training .item-result__detail p.item-trainings__type {
     display: inline-block;
   }
 }
-/* line 112, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 114, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training .other-training {
   background: #1a1a1a;
 }
-/* line 114, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 116, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training .other-training a {
   text-transform: uppercase;
   color: #fff;
@@ -5130,6 +5232,77 @@ body.is-open {
   text-align: center;
   text-decoration: none;
   padding: 14px;
+}
+
+/***Color training***/
+/* line 133, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.training-animation .item-trainings__type:before {
+  background-color: #00e196;
+}
+
+/* line 136, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.training-graphic-design .item-trainings__type:before {
+  background-color: #3af2ce;
+}
+
+/* line 139, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.training-web-design .item-trainings__type:before {
+  background-color: #6300ff;
+}
+
+/* line 142, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.training-photography .item-trainings__type:before {
+  background-color: #ffe042;
+}
+
+/* line 145, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.training-game .item-trainings__type:before {
+  background-color: #1840e8;
+}
+
+/* line 148, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.training-video-audio .item-trainings__type:before {
+  background-color: red;
+}
+
+/* line 151, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.training-cross-media .item-trainings__type:before {
+  background-color: #e90b51;
+}
+
+/* line 155, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.training-animation .list-results-training {
+  border-top-color: #00e196;
+}
+
+/* line 156, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.training-graphic-design .list-results-training {
+  border-top-color: #3af2ce;
+}
+
+/* line 157, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.training-web-design .list-results-training {
+  border-top-color: #6300ff;
+}
+
+/* line 158, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.training-photography .list-results-training {
+  border-top-color: #ffe042;
+}
+
+/* line 159, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.training-game .list-results-training {
+  border-top-color: #1840e8;
+}
+
+/* line 160, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.training-video-audio .list-results-training {
+  border-top-color: red;
+}
+
+/* line 161, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.training-cross-media .list-results-training {
+  border-top-color: #e90b51;
 }
 
 /* line 1, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
@@ -5295,33 +5468,34 @@ body.is-open {
   /* line 6, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
   .filter-trainings.professionnal {
     width: 100%;
+    float: none;
   }
 }
-/* line 14, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+/* line 15, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form {
   border-top: none;
   padding-top: 40px;
 }
 @media screen and (max-width: 1140px) {
-  /* line 14, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+  /* line 15, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
   .filter-trainings.professionnal .filter-trainings__form {
     padding: 0;
   }
 }
-/* line 20, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+/* line 21, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .filter-training-field {
   border-top: 1px solid #cccccc;
   padding: 15px 0 20px 0;
   width: 75%;
   position: relative;
 }
-/* line 26, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+/* line 27, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .filter-training-field:first-child {
   border-top: none;
   padding-top: 0;
 }
 @media screen and (max-width: 1140px) {
-  /* line 20, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+  /* line 21, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
   .filter-trainings.professionnal .filter-trainings__form .filter-training-field {
     display: inline-block;
     vertical-align: top;
@@ -5329,39 +5503,50 @@ body.is-open {
     padding-top: 0;
     padding-left: 30px;
   }
-  /* line 37, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+  /* line 38, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
   .filter-trainings.professionnal .filter-trainings__form .filter-training-field:first-child {
     width: 25%;
     padding-left: 0;
   }
-  /* line 41, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+  /* line 42, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
   .filter-trainings.professionnal .filter-trainings__form .filter-training-field:nth-child(2) {
     width: 30%;
   }
-  /* line 44, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+  /* line 45, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
   .filter-trainings.professionnal .filter-trainings__form .filter-training-field:nth-child(3) {
     width: 43%;
   }
 }
-/* line 50, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+@media screen and (max-width: 767px) {
+  /* line 21, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+  .filter-trainings.professionnal .filter-trainings__form .filter-training-field {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  /* line 51, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+  .filter-trainings.professionnal .filter-trainings__form .filter-training-field:first-child, .filter-trainings.professionnal .filter-trainings__form .filter-training-field:nth-child(2), .filter-trainings.professionnal .filter-trainings__form .filter-training-field:nth-child(3) {
+    width: 100%;
+  }
+}
+/* line 61, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .filter-training-field .form-item {
   margin: 15px 0 0 0;
 }
-/* line 52, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+/* line 63, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .filter-training-field .form-item:first-child {
   margin: 0;
 }
-/* line 60, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+/* line 71, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .btn-remove:hover {
   text-decoration: underline;
 }
-/* line 65, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+/* line 76, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .remove-all-themes {
   position: absolute;
   right: 0;
   top: 0;
 }
-/* line 71, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+/* line 82, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .title {
   text-transform: uppercase;
   color: #333333;
@@ -5371,32 +5556,32 @@ body.is-open {
   letter-spacing: 1px;
 }
 @media screen and (max-width: 1140px) {
-  /* line 71, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+  /* line 82, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
   .filter-trainings.professionnal .filter-trainings__form .title {
     border-bottom: 1px dotted #cccccc;
   }
 }
-/* line 82, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+/* line 93, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .title .close-themes {
   position: absolute;
   right: 0;
   top: 0;
   cursor: pointer;
 }
-/* line 91, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+/* line 102, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .btn-higlight, .filter-trainings.professionnal .filter-trainings__form input[type="submit"], .filter-trainings.professionnal .filter-trainings__form .main-menu--search button, .main-menu--search .filter-trainings.professionnal .filter-trainings__form button {
   margin-top: 20px;
 }
-/* line 96, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+/* line 107, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .list-themes li {
   display: inline-block;
   margin: 0 7px 10px 0;
 }
-/* line 100, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+/* line 111, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .list-themes li input[type="checkbox"]:checked ~ label {
   background: #656565;
 }
-/* line 104, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+/* line 115, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .list-themes li label {
   font-size: 0.875rem;
   color: #fff;
@@ -5406,15 +5591,15 @@ body.is-open {
   display: block;
   text-decoration: none;
 }
-/* line 112, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+/* line 123, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .list-themes li label:before {
   display: none;
 }
-/* line 115, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+/* line 126, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .list-themes li label:hover {
   background: #999999;
 }
-/* line 119, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
+/* line 130, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form .list-themes li:nth-child(2) {
   margin-right: 0;
 }
@@ -5495,7 +5680,6 @@ body.is-open {
   float: left;
   border-radius: 50%;
   height: auto;
-  width: 100%;
 }
 @media screen and (max-width: 767px) {
   /* line 58, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
@@ -5503,7 +5687,7 @@ body.is-open {
     float: none;
   }
 }
-/* line 67, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
+/* line 66, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
 .block-contact-training .infos-contact figure figcaption {
   display: table-cell;
   height: 75px;
@@ -5511,7 +5695,7 @@ body.is-open {
   padding-left: 15px;
 }
 @media screen and (max-width: 767px) {
-  /* line 67, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
+  /* line 66, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
   .block-contact-training .infos-contact figure figcaption {
     display: block;
     height: auto;
@@ -5519,17 +5703,17 @@ body.is-open {
     line-height: 35px;
   }
 }
-/* line 80, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
+/* line 79, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
 .block-contact-training .infos-contact figure .tel,
 .block-contact-training .infos-contact figure .name {
   display: block;
 }
-/* line 85, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
+/* line 84, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
 .block-contact-training .infos-contact figure .tel {
   color: #0045e5;
   font-size: 1.5rem;
 }
-/* line 93, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
+/* line 92, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
 .block-contact-training .btn-action {
   text-align: right;
   width: 31%;
@@ -5538,19 +5722,19 @@ body.is-open {
   margin-left: 0;
 }
 @media screen and (max-width: 1140px) {
-  /* line 93, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
+  /* line 92, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
   .block-contact-training .btn-action {
     width: 34%;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 93, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
+  /* line 92, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
   .block-contact-training .btn-action {
     width: 100%;
     text-align: center;
   }
 }
-/* line 107, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
+/* line 106, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
 .block-contact-training .btn-action .btn-mail {
   color: #323232;
 }

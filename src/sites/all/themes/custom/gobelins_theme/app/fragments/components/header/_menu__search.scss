@@ -26,10 +26,15 @@
    width:auto;
    font-family:$font__platform--medium;
    margin-bottom:25px;
+   float:none;
   }
  }
  .form-item{
   margin-left:50%;
+  margin-bottom:0;
+  @media screen and (max-width: $width__m) {
+   margin-left:0;
+  }
  }
  input[type="text"]{
   background:$color__bg-gray--light url(../images/icons/icon-search.png) no-repeat 15px center;

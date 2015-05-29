@@ -89,19 +89,28 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   var $ = require('jquery');
   $(function(){
     $('.close-themes').click(function(){
-     $('.filter-training-field').find('.list-themes').parent('.form-item').toggle();
-<<<<<<< HEAD
-    });
-    
-    
-    $('.block-banner.type .link-more-training').click(function(){
+     $('.filter-training-field').find('.list-themes').parent('.form-item').slideToggle( "slow" );
      
-    });
-=======
-     
+     if($(this).hasClass('icon-minus')){
+      $(this).removeClass('icon-minus');
+      $(this).addClass('icon-plus');
+     }
+     else if($(this).hasClass('icon-plus')){
+      $(this).removeClass('icon-plus');
+      $(this).addClass('icon-minus');
+     }
     });
     
->>>>>>> 91081d0e54b249b9b92bc7a74ab11b19b0de7b29
+    
+    if($('.block-banner.type').length > 0){
+     $('.block-training-presentation').hide();
+     $(this).find('.link-more-training').click(function(e){
+      e.preventDefault();
+      $('.block-training-presentation').slideToggle( "slow" );
+     });
+     
+    }
+    
   });
 })();
 
@@ -209,18 +218,38 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   require('../../../bower_components/owl.carousel/dist/owl.carousel.js');
 
   $(function(){
-    var $sliders, callback;
+    var $sliders, initCallback, translateCallback;
+    
+    /* Function called when slider initilazes. */
+    initCallback = function() {
+      var $slider = this.dom.$el;
+      $slider.find('.js-slider--left').addClass('is-disabled');
+      if (this.num.active >= this.num.items) {
+        $slider.find('.js-slider--right').addClass('is-disabled');
+        $slider.find('.owl-nav').css({opacity: 0});
+      }
+    };
     
     /* Function called when slider moves. */
-    callback = function(event) {
+    translateCallback = function(event) {
       var $slider = $(event.target);
-      if (event.item.index === 0) {
+      var hiddenNav = 0;
+      if (event.item.index <= 0) {
         $slider.find('.js-slider--left').addClass('is-disabled');
-      } else if (event.item.index + event.page.size === event.item.count) {
-        $slider.find('.js-slider--right').addClass('is-disabled');
+        hiddenNav++;
       } else {
         $slider.find('.js-slider--left').removeClass('is-disabled');
+      }
+      if (event.item.index + event.page.size >= event.item.count) {
+        $slider.find('.js-slider--right').addClass('is-disabled');
+        hiddenNav++;
+      } else {
         $slider.find('.js-slider--right').removeClass('is-disabled');
+      }
+      if (hiddenNav === 2) {
+        $slider.find('.owl-nav').css({opacity: 0});
+      } else {
+        $slider.find('.owl-nav').css({opacity: 1});
       }
     };
     
@@ -229,16 +258,18 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
       nav: false,
       dots: true,
       items: 1,
-      margin: 40
+      margin: 40,
+      onInitialized: initCallback
     });
-    $sliders.on('translate.owl.carousel', callback);
+    $sliders.on('translate.owl.carousel', translateCallback);
     
     /* 3 items slider. */
     $sliders = $('.js-slider--3').owlCarousel({
       nav: true,
       dots: false,
       navText: ['', ''],
-      navClass: ['js-slider--left icon-left-small btn-round--light is-disabled', 'js-slider--right icon-right-small btn-round--light'],
+      navClass: ['js-slider--left icon-left-small btn-round--light', 'js-slider--right icon-right-small btn-round--light'],
+      onInitialized: initCallback,
       responsive : {
         // Breakpoint from 0 up to 767.
         0 : {
@@ -257,14 +288,15 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
         }
       }
     });
-    $sliders.on('translate.owl.carousel', callback);
+    $sliders.on('translate.owl.carousel', translateCallback);
     
     /* 4 items slider. */
     $sliders = $('.js-slider--4').owlCarousel({
       nav: true,
       dots: false,
       navText: ['', ''],
-      navClass: ['js-slider--left icon-left-small btn-round--dark is-disabled', 'js-slider--right icon-right-small btn-round--dark'],
+      navClass: ['js-slider--left icon-left-small btn-round--dark', 'js-slider--right icon-right-small btn-round--dark'],
+      onInitialized: initCallback,
       responsive : {
         // Breakpoint from 0 up to 767.
         0 : {
@@ -283,7 +315,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
         }
       }
     });
-    $sliders.on('translate.owl.carousel', callback);
+    $sliders.on('translate.owl.carousel', translateCallback);
   });
 })();
 },{"../../../bower_components/owl.carousel/dist/owl.carousel.js":11,"jquery":"jquery"}],7:[function(require,module,exports){
@@ -312,17 +344,17 @@ var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments
 with(obj||{}){
 __p+='';
  for (var i=0; i < items.length; i++) { 
-__p+='\r\n  <a\r\n    href="'+
+__p+='\n  <a\n    href="'+
 ((__t=( items[i].href ))==null?'':__t)+
-'"\r\n    title="'+
+'"\n    title="'+
 ((__t=( items[i].title ))==null?'':__t)+
-'"\r\n    class="aside-gallery__item aside-gallery__item--'+
+'"\n    class="aside-gallery__item aside-gallery__item--'+
 ((__t=( items[i].columns ))==null?'':__t)+
-' js-masonry--aside-gallery__item"\r\n  >\r\n    <img src="'+
+' js-masonry--aside-gallery__item"\n  >\n    <img src="'+
 ((__t=( items[i].src ))==null?'':__t)+
 '" alt="'+
 ((__t=( items[i].title ))==null?'':__t)+
-'">\r\n  </a>\r\n';
+'">\n  </a>\n';
  } 
 __p+='';
 }
@@ -1444,45 +1476,15 @@ return __p;
   var SPACE_KEY_CODE = 32;
 
   /* Plugin variables. */
-  var pluginName;
+  var pluginName  = 'contentToggle';
+  var instances = {};
   var defaultOptions = {};
   var $global = $(document);
   var isIthing = navigator.userAgent.match(/iPad|iPhone/i);
+  var sanitize = /[^a-z0-9_-]/gi;
   var uid = 0;
-
-  /**
-   * Plugin Constructor.
-   *
-   * @param {Node|jQuery} element
-   *   Main DOM element.
-   * @param {string} selector
-   *   Element initial selector.
-   * @param {object} options
-   *   Instance specific options.
-   */
-  function Plugin(element, selector, options) {
-    // Merge specific and default options.
-    this.options = $.extend({}, defaultOptions, options);
-
-    // Initialize data.
-    this.$element = (element instanceof $)? element: $(element);
-    this.selector = selector;
-    this.uid = ++uid;
-
-    // Save the instance reference into the DOM element.
-    this.$element.data(pluginName, this);
-
-    // Object initialization.
-    this.setup();
-    this.bind();
-    this.init();
-  }
-
-  /********** Start plugin specific code **********/
-
-    /* Plugin name. */
-  pluginName = 'contentToggle';
-
+  var gid = 0;
+  
   /* Plugin default options. */
   defaultOptions = {
     defaultState: null,
@@ -1495,13 +1497,59 @@ return __p;
     contentSelectorContext: true,
     elementClass: 'is-open',
     triggerClass: 'is-active',
-    toggleProperties: {
-      height: 'toggle'
-    },
+    toggleProperties: ['height'],
     toggleOptions: {
       duration: 0
     }
   };
+
+  /**
+   * Plugin Constructor.
+   *
+   * @param {Node|jQuery} element
+   *   Main DOM element.
+   * @param {string} selector
+   *   Element initial selector.
+   * @param {object} options
+   *   Instance specific options.
+   */
+  function Plugin(element, selector, options) {
+    var data;
+    
+    // Merge specific and default options.
+    this.options = {
+      group: selector
+    };
+    $.extend(this.options, defaultOptions, options);
+
+    // Initialize data.
+    this.$element = (element instanceof $)? element: $(element);
+    this.uid = ++uid;
+
+    // Data initialization.
+    this.setup();
+    
+    // Empty object initialization.
+    data = this.$element.data(pluginName);
+    if (!instances[this.options.group]) {
+      instances[this.options.group] = {};
+    }
+    if (!data) {
+      data = {};
+    }
+    
+    // Check if instance has not been already initialized.
+    if (!data[this.options.group]) {
+      // Save the new instance.
+      instances[this.options.group][this.uid] = this;
+      data[this.options.group] = this;
+      this.$element.data(pluginName, data);
+      
+      // Plugin initialization.
+      this.bind();
+      this.init();
+    }
+  }
 
   /**
    * Setup plugin.
@@ -1509,6 +1557,11 @@ return __p;
    */
   Plugin.prototype.setup = function() {
     this.setupDataOptions();
+    
+    // Sanitize group name.
+    if (this.options.group) {
+      this.options.group = this.options.group.toString().replace(sanitize, '');
+    }
 
     // Parse JSON options.
     if (typeof this.options.toggleProperties == 'string') {
@@ -1564,24 +1617,25 @@ return __p;
    * Bind events.
    */
   Plugin.prototype.bind = function() {
+    var namespaces = '.' + pluginName + '.' + this.options.group;
     var eventName = (isIthing && this.options.globalClose)? 'touchstart': 'click';
     var $all = this.$element.add(this.$triggers).add(this.$contents);
 
     // Bind custom events on all elements.
-    $all.on('destroy.' + pluginName, this.destroy.bind(this));
-    $all.on('toggle.' + pluginName, $.proxy(this.toggle, this, null));
-    $all.on('close.' + pluginName, $.proxy(this.toggle, this, false));
-    $all.on('open.' + pluginName, $.proxy(this.toggle, this, true));
-    $all.on('isOpen.' + pluginName, function(){
+    $all.on('destroy' + namespaces, this.destroy.bind(this));
+    $all.on('toggle' + namespaces, $.proxy(this.toggle, this, null));
+    $all.on('close' + namespaces, $.proxy(this.toggle, this, false));
+    $all.on('open' + namespaces, $.proxy(this.toggle, this, true));
+    $all.on('isOpen' + namespaces, function(){
       return this.isOpen;
     }.bind(this));
 
     // Bind native events on triggers.
-    this.$triggers.on(eventName + '.' + pluginName, function(event){
+    this.$triggers.on(eventName + namespaces, function(event){
       event.preventDefault();
       this.toggle(null, event);
     }.bind(this));
-    this.$triggers.on('keydown.' + pluginName, function(event){
+    this.$triggers.on('keydown' + namespaces, function(event){
       if (event.keyCode == ENTER_KEY_CODE || event.keyCode == SPACE_KEY_CODE) {
         event.preventDefault();
         this.toggle(null, event);
@@ -1589,7 +1643,7 @@ return __p;
     }.bind(this));
 
     // Bind native events on contents (avoid triggers click event).
-    this.$contents.on(eventName + '.' + pluginName, function(event){
+    this.$contents.on(eventName + namespaces, function(event){
       event.stopPropagation();
     });
   };
@@ -1699,7 +1753,11 @@ return __p;
    */
   Plugin.prototype.closeAll = function(butItself) {
     if (!this.options.independent) {
-      $(this.selector).not(this.$element).trigger('close.' + pluginName);
+      $.each(instances[this.options.group], function(uid, instance){
+        if (uid != this.uid) {
+          instance.close();
+        }
+      }.bind(this));
     }
     if (!butItself) {
       this.close();
@@ -1710,7 +1768,6 @@ return __p;
    * Perform toggle action.
    */
   Plugin.prototype.do = function() {
-<<<<<<< HEAD
     var toggleProperties = {};
     var action = this.isOpen? 'show': 'hide';
     
@@ -1727,15 +1784,6 @@ return __p;
       toggleProperties,
       this.options.toggleOptions
     );
-=======
-    this.update();
-    if (this.isOpen ^ this.$contents.is(':visible')) {
-      this.$contents.stop().animate(
-        this.options.toggleProperties,
-        this.options.toggleOptions
-      );
-    }
->>>>>>> 91081d0e54b249b9b92bc7a74ab11b19b0de7b29
   };
 
   /**
@@ -1770,31 +1818,15 @@ return __p;
     $global.off('.' + pluginName + this.uid);
   };
 
-<<<<<<< HEAD
-=======
-  /********** End plugin specific code **********/
-
->>>>>>> 91081d0e54b249b9b92bc7a74ab11b19b0de7b29
   /* Expose jQuery plugin. */
   $.fn[pluginName] = function(options) {
     var selector = this.selector;
     return this.each(function() {
-<<<<<<< HEAD
       new Plugin(this, selector, options);
-=======
-      var $this = $(this);
-      if (!$this.data(pluginName)) {
-        new Plugin($this, selector, options);
-      }
->>>>>>> 91081d0e54b249b9b92bc7a74ab11b19b0de7b29
     });
   };
 })(jQuery);
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 91081d0e54b249b9b92bc7a74ab11b19b0de7b29
 },{}],11:[function(require,module,exports){
 /**
  * Owl carousel
