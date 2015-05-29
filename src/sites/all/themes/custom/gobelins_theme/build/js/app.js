@@ -8,25 +8,27 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   require('./app/sliders.js');
   require('./app/aside-gallery.js');
   require('./app/popins.js');
+  require('./app/filter-trainings-pro.js');
 
 })();
 
-},{"./app/aside-gallery.js":2,"./app/menu.js":3,"./app/popins.js":4,"./app/sliders.js":5,"./app/tabs-accordion.js":6}],2:[function(require,module,exports){
+},{"./app/aside-gallery.js":2,"./app/filter-trainings-pro.js":3,"./app/menu.js":4,"./app/popins.js":5,"./app/sliders.js":6,"./app/tabs-accordion.js":7}],2:[function(require,module,exports){
 (function(){
   'use strict';
 
   /* Require plugins */
   var $ = require('jquery');
+  var tmpl = require('../jstemplates/aside-gallery__ajax.js');
   require('../../../bower_components/jquery-contenttoggle/jquery.contenttoggle.js');
 
   $(function(){
-    var $gallery;
+    var $gallery, doneCallback;
+    var $more = $('.js-masonry--aside-gallery__more');
     
     /* Open/close gallery. */
-    $('body').contentToggle({
+    $('.with-gallery').contentToggle({
       group: 'aside-gallery',
       defaultState: 'close',
-      globalClose: true,
       elementClass: 'is-open--gallery',
       triggerSelector: '.js-contentToggle--gallery__trigger',
       contentSelector: '.js-contentToggle--gallery__content',
@@ -38,14 +40,63 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
     $gallery.imagesLoaded( function() {
       $gallery.masonry({
         itemSelector: '.js-masonry--aside-gallery__item',
-        columnWidth: 245,
-        gutter: 40,
+        columnWidth: '.aside-gallery__item--1'
       });
     });
+    
+    /* AJAX call */
+    if (window.gobelinsSettings &&
+        window.gobelinsSettings.asideGallery &&
+        window.gobelinsSettings.asideGallery.url &&
+        $more.length > 0) {
+      
+      doneCallback = function(data){
+        var html, $items;
+        
+        if (!data.more) {
+          $more.hide();
+          $more.off('click');
+        }
+        
+        if (typeof data.items == 'object') {
+          html = tmpl['aside-gallery__ajax.html'](data);
+          $items = $(html).filter('.js-masonry--aside-gallery__item');
+          
+          $gallery.append($items);
+          $gallery.masonry('appended', $items);
+          
+          $items.imagesLoaded(function() {
+            $gallery.masonry();
+          });
+        }
+      };
+
+      $more.on('click', function(){
+        $.ajax({
+          url: window.gobelinsSettings.asideGallery.url,
+          dataType: 'json'
+        }).done(doneCallback);
+      });
+    }
   });
 })();
 
-},{"../../../bower_components/jquery-contenttoggle/jquery.contenttoggle.js":8,"jquery":"jquery"}],3:[function(require,module,exports){
+},{"../../../bower_components/jquery-contenttoggle/jquery.contenttoggle.js":10,"../jstemplates/aside-gallery__ajax.js":8,"jquery":"jquery"}],3:[function(require,module,exports){
+(function(){
+  'use strict';
+
+  /* require plugins */
+  var $ = require('jquery');
+  $(function(){
+    $('.close-themes').click(function(){
+     $('.filter-training-field').find('.list-themes').parent('.form-item').toggle();
+     
+    });
+    
+  });
+})();
+
+},{"jquery":"jquery"}],4:[function(require,module,exports){
 (function(){
   'use strict';
 
@@ -126,7 +177,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   });
 })();
 
-},{"../../../bower_components/jquery-contenttoggle/jquery.contenttoggle.js":8,"../../../bower_components/sticky/jquery.sticky.js":10,"jquery":"jquery"}],4:[function(require,module,exports){
+},{"../../../bower_components/jquery-contenttoggle/jquery.contenttoggle.js":10,"../../../bower_components/sticky/jquery.sticky.js":12,"jquery":"jquery"}],5:[function(require,module,exports){
 (function(){
   'use strict';
 
@@ -140,7 +191,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   
 })();
 
-},{"../../../bower_components/colorbox/jquery.colorbox.js":7,"jquery":"jquery"}],5:[function(require,module,exports){
+},{"../../../bower_components/colorbox/jquery.colorbox.js":9,"jquery":"jquery"}],6:[function(require,module,exports){
 (function(){
   'use strict';
 
@@ -226,7 +277,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
     $sliders.on('translate.owl.carousel', callback);
   });
 })();
-},{"../../../bower_components/owl.carousel/dist/owl.carousel.js":9,"jquery":"jquery"}],6:[function(require,module,exports){
+},{"../../../bower_components/owl.carousel/dist/owl.carousel.js":11,"jquery":"jquery"}],7:[function(require,module,exports){
 (function(){
   'use strict';
 
@@ -245,7 +296,30 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   });
 })();
 
-},{"../../../bower_components/jquery-contenttoggle/jquery.contenttoggle.js":8,"jquery":"jquery"}],7:[function(require,module,exports){
+},{"../../../bower_components/jquery-contenttoggle/jquery.contenttoggle.js":10,"jquery":"jquery"}],8:[function(require,module,exports){
+var _ = require('underscore');
+exports["aside-gallery__ajax.html"] = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='';
+ for (var i=0; i < items.length; i++) { 
+__p+='\r\n  <a\r\n    href="'+
+((__t=( items[i].href ))==null?'':__t)+
+'"\r\n    title="'+
+((__t=( items[i].title ))==null?'':__t)+
+'"\r\n    class="aside-gallery__item aside-gallery__item--'+
+((__t=( items[i].columns ))==null?'':__t)+
+' js-masonry--aside-gallery__item"\r\n  >\r\n    <img src="'+
+((__t=( items[i].src ))==null?'':__t)+
+'" alt="'+
+((__t=( items[i].title ))==null?'':__t)+
+'">\r\n  </a>\r\n';
+ } 
+__p+='';
+}
+return __p;
+};
+},{"underscore":"underscore"}],9:[function(require,module,exports){
 /*!
 	Colorbox 1.6.1
 	license: MIT
@@ -1352,7 +1426,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
 
 }(jQuery, document, window));
 
-},{}],8:[function(require,module,exports){
+},{}],10:[function(require,module,exports){
 (function($){
   'use strict';
 
@@ -1683,7 +1757,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
 })(jQuery);
 
 
-},{}],9:[function(require,module,exports){
+},{}],11:[function(require,module,exports){
 /**
  * Owl carousel
  * @version 2.0.0
@@ -4910,7 +4984,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
 
 })(window.Zepto || window.jQuery, window, document);
 
-},{}],10:[function(require,module,exports){
+},{}],12:[function(require,module,exports){
 // Sticky Plugin v1.0.0 for jQuery
 // =============
 // Author: Anthony Garand

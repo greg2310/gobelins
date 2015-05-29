@@ -1,11 +1,13 @@
 $aside-gallery__desktop-width: 80px;
 $aside-gallery__tablet-width: 40px;
 
-/* Layout styles. */
-.main-wrapper {
+/******************\
+** Layout styles. **
+\******************/
+.with-gallery .main-wrapper {
   margin-right: 80px
 }
-.is-sticky .header {
+.with-gallery .is-sticky .header {
   padding-right: $aside-gallery__desktop-width;
 }
 
@@ -19,6 +21,14 @@ $aside-gallery__tablet-width: 40px;
   z-index: 11;
   transition: left $animation__params;
 }
+.aside-gallery__content {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 70px 0 40px;
+  height: 100%;
+  opacity: 0.5;
+  transition: opacity $animation__params;
+}
 .aside-gallery__container {
   position: relative;
   left: -$aside-gallery__desktop-width;
@@ -27,9 +37,55 @@ $aside-gallery__tablet-width: 40px;
   background-color: $color__bg-white;
   border-left: 5px solid $color__blue-gobelins;
 }
+.aside-gallery__header {
+  max-width: $width__m;
+  margin: 0 auto;
+  height: 175px;
+}
+.aside-gallery__main-title {
+  display: block;
+  float: left;
+  margin: 32px 0 0 40px;
+  color: $color__text-dark;
+  font-size: 2rem;
+  font-family: $font__platform--light;
+  letter-spacing: 1px;
+  
+  > img {
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+}
+.aside-gallery__discover {
+  display: block;
+  float: right;
+  margin: 64px 10px 0 0;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: $color__text-dark;
+  font-size: 0.9em;
+  font-family: $font__platform--medium;
+  letter-spacing: 1px;
+  
+  .icon-right-small {
+    font-size: 1rem;
+  }
+}
 .aside-gallery__masonry {
-  overflow: auto;
-  padding: 187px 90px 0 84px;
+  max-width: $width__m;
+  margin: 0 auto;
+}
+.aside-gallery__item {
+  display: block;
+}
+.aside-gallery__item > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.aside-gallery__footer {
+  text-align: center;
+  padding: 20px 0 40px;
 }
 .aside-gallery__trigger {
   position: absolute;
@@ -37,25 +93,94 @@ $aside-gallery__tablet-width: 40px;
   bottom: 0;
   left: 0;
   width: $aside-gallery__desktop-width;
+  cursor: pointer;
+}
+.aside-gallery__close {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  margin-top: -12px;
+  cursor: pointer;
+}
+.aside-gallery__title {
+  position: absolute;
+  top: 50%;
+  left: 13px;
+  
+  > span {
+    transform: rotateZ(-90deg);
+    display: block;
+    position: relative;
+    left: -50%;
+    text-align: center;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: $color__text-dark;
+    font-size: 0.9em;
+    font-family: $font__platform--medium;
+    letter-spacing: 1px;
+  }
 }
 
-/* Open styles. */
+/*****************\
+** Column sizes. **
+\*****************/
+/* 2 columns. */
+.aside-gallery__item {
+  width: 50%;
+  padding: 3.77%;
+}
+.aside-gallery__item--2 {
+  width: 100%;
+}
+/* 3 columns. */
+@media screen and (min-width: 700px) {
+  .aside-gallery__item {
+    width: 33.33%;
+    padding: 2.45%;
+  }
+  .aside-gallery__item--2 {
+    width: 66.67%;
+  }
+}
+/* 4 columns. */
+@media screen and (min-width: 975px) {
+  .aside-gallery__item {
+    width: 25%;
+    padding: 1.75%;
+  }
+  .aside-gallery__item--2 {
+    width: 50%;
+  }
+}
+
+/****************\
+** Open styles. **
+\****************/
 .is-open--gallery .aside-gallery {
   left: $aside-gallery__desktop-width;
 }
-body.is-open--gallery {
+.is-open--gallery .aside-gallery__content {
+  opacity: 1;
+}
+.is-open--gallery .aside-gallery__trigger {
+  width: 40px;
+}
+.with-gallery.is-open--gallery {
   overflow: hidden;
 }
-body.is-open .aside-gallery__container {
+.with-gallery.is-open .aside-gallery__container {
   left: 0;
 }
 
-/* Tablet styles. */
+/******************\
+** Tablet styles. **
+\******************/
 @media screen and (max-width: $width__m) {
-  .main-wrapper{
+  .with-gallery .main-wrapper{
     margin-right: $aside-gallery__tablet-width;
   }
-  .is-sticky .header {
+  .with-gallery .is-sticky .header {
     padding-right: $aside-gallery__tablet-width;
   }
   .aside-gallery__container {
@@ -69,9 +194,11 @@ body.is-open .aside-gallery__container {
   }
 }
 
-/* Mobile styles. */
+/******************\
+** Mobile styles. **
+\******************/
 @media screen and (max-width: $width__xs - 1px) {
-  .main-wrapper{
+  .with-gallery .main-wrapper{
     margin-right: 0
   }
   .aside-gallery__container {

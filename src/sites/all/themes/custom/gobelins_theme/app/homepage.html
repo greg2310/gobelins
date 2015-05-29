@@ -5,13 +5,13 @@
   <head>
     <%= include('head', {title: 'Homepage'}) %>
   </head>
-  <body>
+  <body class="with-gallery">
     <%= include(
       '1-column',
       {
         content      : ['block-training-banner', 'block-training-presentation', 'block-training-details', 'list-formations', 'list-news', 'list-downloads'],
         contentTop   : ['breadcrumb', 'filter-trainings'],
-        contentBottom : []
+        contentBottom : ['aside-gallery']
       }
     ) %>
   </body>
