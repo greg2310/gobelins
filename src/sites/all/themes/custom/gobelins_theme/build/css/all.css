@@ -3091,60 +3091,52 @@ body.is-open {
     left: 0;
   }
 }
-/* line 4, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
-.training-type .breadcrumb ul li {
-  color: #fff;
-}
-/* line 7, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
-.training-type .breadcrumb ul li:first-child {
-  padding-left: 0;
-}
-/* line 11, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
-.training-type .breadcrumb ul li a,
-.training-type .breadcrumb ul li span {
-  color: inherit;
-}
-
-/* line 21, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+/* line 1, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
 .breadcrumb {
   font-size: 0.875rem;
   background: #fff;
   padding: 0;
 }
 @media screen and (min-width: 1401px) {
-  /* line 21, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+  /* line 1, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
   .breadcrumb {
     width: 1400px;
     margin: 0 auto;
   }
 }
 @media screen and (min-width: 1221px) {
-  /* line 21, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+  /* line 1, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
   .breadcrumb {
     width: auto;
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 21, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+  /* line 1, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
   .breadcrumb {
     display: none;
   }
 }
-/* line 41, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+@media screen and (max-width: 1140px) {
+  /* line 1, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+  .breadcrumb {
+    display: none;
+  }
+}
+/* line 25, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
 .breadcrumb ul {
   padding: 17px 20px;
   width: 1140px;
   margin: 0 auto;
 }
-/* line 46, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+/* line 30, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
 .breadcrumb ul li {
   display: inline-block;
   margin-right: 7px;
   position: relative;
   padding-left: 24px;
 }
-/* line 52, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+/* line 36, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
 .breadcrumb ul li + li:before {
   content: "\2192";
   display: inline-block;
@@ -3153,7 +3145,7 @@ body.is-open {
   top: -1px;
 }
 
-/* line 61, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+/* line 45, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
 .training-animation .breadcrumb,
 .training-graphic-design .breadcrumb,
 .training-web-design .breadcrumb,
@@ -3163,7 +3155,7 @@ body.is-open {
 .training-cross-media .breadcrumb {
   color: #fff;
 }
-/* line 69, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+/* line 53, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
 .training-animation .breadcrumb a,
 .training-graphic-design .breadcrumb a,
 .training-web-design .breadcrumb a,
@@ -4834,31 +4826,41 @@ body.is-open {
 @media screen and (max-width: 767px) {
   /* line 2, ../../app/fragments/content/block-training-type/block-training-type.scss */
   .block-banner.type {
-    background-size: auto 205px;
-    background-position: left top;
     margin: 0;
     padding-top: 0;
     background-color: #191919;
   }
 }
-/* line 12, ../../app/fragments/content/block-training-type/block-training-type.scss */
+@media screen and (max-width: 1140px) {
+  /* line 2, ../../app/fragments/content/block-training-type/block-training-type.scss */
+  .block-banner.type {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 2, ../../app/fragments/content/block-training-type/block-training-type.scss */
+  .block-banner.type {
+    height: 205px;
+  }
+}
+/* line 19, ../../app/fragments/content/block-training-type/block-training-type.scss */
 .block-banner.type .link-more-training {
   margin-left: 6%;
 }
 @media screen and (max-width: 1140px) {
-  /* line 12, ../../app/fragments/content/block-training-type/block-training-type.scss */
+  /* line 19, ../../app/fragments/content/block-training-type/block-training-type.scss */
   .block-banner.type .link-more-training {
     margin-left: 9%;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 12, ../../app/fragments/content/block-training-type/block-training-type.scss */
+  /* line 19, ../../app/fragments/content/block-training-type/block-training-type.scss */
   .block-banner.type .link-more-training {
     margin-left: 0;
   }
 }
 
-/* line 23, ../../app/fragments/content/block-training-type/block-training-type.scss */
+/* line 30, ../../app/fragments/content/block-training-type/block-training-type.scss */
 .training-type-name {
   color: #fff;
   position: relative;
@@ -4871,25 +4873,26 @@ body.is-open {
   font-size: 1.0625rem;
 }
 @media screen and (max-width: 767px) {
-  /* line 23, ../../app/fragments/content/block-training-type/block-training-type.scss */
+  /* line 30, ../../app/fragments/content/block-training-type/block-training-type.scss */
   .training-type-name {
     margin-top: 0;
   }
 }
 
-/* line 39, ../../app/fragments/content/block-training-type/block-training-type.scss */
+/* line 46, ../../app/fragments/content/block-training-type/block-training-type.scss */
 .training-type-summary {
   padding-left: 6%;
   padding-top: 4%;
 }
 @media screen and (max-width: 1140px) {
-  /* line 39, ../../app/fragments/content/block-training-type/block-training-type.scss */
+  /* line 46, ../../app/fragments/content/block-training-type/block-training-type.scss */
   .training-type-summary {
     padding-left: 9%;
+    padding-top: 0;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 39, ../../app/fragments/content/block-training-type/block-training-type.scss */
+  /* line 46, ../../app/fragments/content/block-training-type/block-training-type.scss */
   .training-type-summary {
     padding: 50px 0;
     text-align: center;
@@ -4897,7 +4900,7 @@ body.is-open {
     margin-bottom: 40px;
   }
 }
-/* line 55, ../../app/fragments/content/block-training-type/block-training-type.scss */
+/* line 63, ../../app/fragments/content/block-training-type/block-training-type.scss */
 .training-type-summary .training-type-summary__title .title-h1 {
   color: #fff;
   text-align: left;
@@ -4905,14 +4908,14 @@ body.is-open {
   margin: 0;
 }
 @media screen and (max-width: 767px) {
-  /* line 55, ../../app/fragments/content/block-training-type/block-training-type.scss */
+  /* line 63, ../../app/fragments/content/block-training-type/block-training-type.scss */
   .training-type-summary .training-type-summary__title .title-h1 {
     font-size: 1.55rem;
-    padding-left: 65px;
+    text-align: center;
     margin-top: 20px;
   }
 }
-/* line 65, ../../app/fragments/content/block-training-type/block-training-type.scss */
+/* line 73, ../../app/fragments/content/block-training-type/block-training-type.scss */
 .training-type-summary .training-type-summary__title .title-h1:before {
   background-color: transparent;
   border: 22px solid #00e196;
@@ -4926,7 +4929,7 @@ body.is-open {
   width: 15px;
 }
 @media screen and (max-width: 1140px) {
-  /* line 65, ../../app/fragments/content/block-training-type/block-training-type.scss */
+  /* line 73, ../../app/fragments/content/block-training-type/block-training-type.scss */
   .training-type-summary .training-type-summary__title .title-h1:before {
     border: 20px solid #00e196;
     left: -10%;
@@ -4935,29 +4938,32 @@ body.is-open {
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 65, ../../app/fragments/content/block-training-type/block-training-type.scss */
+  /* line 73, ../../app/fragments/content/block-training-type/block-training-type.scss */
   .training-type-summary .training-type-summary__title .title-h1:before {
-    top: -20%;
-    left: 0;
+    top: -8%;
+    left: -20px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
   }
 }
 
-/* line 92, ../../app/fragments/content/block-training-type/block-training-type.scss */
+/* line 103, ../../app/fragments/content/block-training-type/block-training-type.scss */
 .training-summary__title {
   padding: 30px 30px 25px 30px;
   color: #323232;
 }
-/* line 96, ../../app/fragments/content/block-training-type/block-training-type.scss */
+/* line 107, ../../app/fragments/content/block-training-type/block-training-type.scss */
 .training-summary__title p {
   font-family: "Platform-Medium";
   letter-spacing: 1px;
 }
-/* line 100, ../../app/fragments/content/block-training-type/block-training-type.scss */
+/* line 111, ../../app/fragments/content/block-training-type/block-training-type.scss */
 .training-summary__title p span {
   text-transform: uppercase;
 }
 
-/* line 106, ../../app/fragments/content/block-training-type/block-training-type.scss */
+/* line 117, ../../app/fragments/content/block-training-type/block-training-type.scss */
 .training-summary__introduction {
   max-width: 55%;
   font-size: 1.375rem;
@@ -4965,13 +4971,14 @@ body.is-open {
   padding-left: 6%;
 }
 @media screen and (max-width: 1140px) {
-  /* line 106, ../../app/fragments/content/block-training-type/block-training-type.scss */
+  /* line 117, ../../app/fragments/content/block-training-type/block-training-type.scss */
   .training-summary__introduction {
-    padding-left: 9%;
+    padding: 0 9%;
+    max-width: none;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 106, ../../app/fragments/content/block-training-type/block-training-type.scss */
+  /* line 117, ../../app/fragments/content/block-training-type/block-training-type.scss */
   .training-summary__introduction {
     width: 100%;
     text-align: left;
@@ -4980,44 +4987,44 @@ body.is-open {
   }
 }
 
-/* line 123, ../../app/fragments/content/block-training-type/block-training-type.scss */
+/* line 135, ../../app/fragments/content/block-training-type/block-training-type.scss */
 .training-summary__description {
   border-top: 1px solid #e5e5e5;
   display: table;
   width: 100%;
   table-layout: fixed;
 }
-/* line 129, ../../app/fragments/content/block-training-type/block-training-type.scss */
+/* line 141, ../../app/fragments/content/block-training-type/block-training-type.scss */
 .training-summary__description .col1 {
   width: 44%;
   display: table-cell;
   padding: 0 20px 25px 30px;
 }
-/* line 134, ../../app/fragments/content/block-training-type/block-training-type.scss */
+/* line 146, ../../app/fragments/content/block-training-type/block-training-type.scss */
 .training-summary__description .col2,
 .training-summary__description .col3 {
   width: 28%;
   display: table-cell;
   border-left: 1px solid #e5e5e5;
 }
-/* line 140, ../../app/fragments/content/block-training-type/block-training-type.scss */
+/* line 152, ../../app/fragments/content/block-training-type/block-training-type.scss */
 .training-summary__description .col2 {
   padding: 0 20px;
 }
-/* line 143, ../../app/fragments/content/block-training-type/block-training-type.scss */
+/* line 155, ../../app/fragments/content/block-training-type/block-training-type.scss */
 .training-summary__description .col3-1,
 .training-summary__description .col3-2 {
   padding: 0 20px;
 }
-/* line 147, ../../app/fragments/content/block-training-type/block-training-type.scss */
+/* line 159, ../../app/fragments/content/block-training-type/block-training-type.scss */
 .training-summary__description .col3-1 {
   padding-bottom: 20px;
 }
-/* line 150, ../../app/fragments/content/block-training-type/block-training-type.scss */
+/* line 162, ../../app/fragments/content/block-training-type/block-training-type.scss */
 .training-summary__description .col3-2 {
   border-top: 1px solid #e5e5e5;
 }
-/* line 154, ../../app/fragments/content/block-training-type/block-training-type.scss */
+/* line 166, ../../app/fragments/content/block-training-type/block-training-type.scss */
 .training-summary__description .sub-title {
   font-family: "Platform-Medium";
   letter-spacing: 1px;
@@ -5026,43 +5033,50 @@ body.is-open {
   margin: 20px 0 5px;
 }
 
-/* line 165, ../../app/fragments/content/block-training-type/block-training-type.scss */
+/* line 177, ../../app/fragments/content/block-training-type/block-training-type.scss */
 .breadcrumb + .block-banner {
   margin-top: -55px;
 }
 
+@media screen and (max-width: 767px) {
+  /* line 182, ../../app/fragments/content/block-training-type/block-training-type.scss */
+  .intro-link {
+    background-color: #191919;
+    padding: 30px;
+  }
+}
 /*** Color training****/
-/* line 171, ../../app/fragments/content/block-training-type/block-training-type.scss */
+/* line 190, ../../app/fragments/content/block-training-type/block-training-type.scss */
 .training-animation .training-type-summary__title .title-h1:before {
   border-color: #00e196;
 }
 
-/* line 172, ../../app/fragments/content/block-training-type/block-training-type.scss */
+/* line 191, ../../app/fragments/content/block-training-type/block-training-type.scss */
 .training-graphic-design .training-type-summary__title .title-h1:before {
   border-color: #3af2ce;
 }
 
-/* line 173, ../../app/fragments/content/block-training-type/block-training-type.scss */
+/* line 192, ../../app/fragments/content/block-training-type/block-training-type.scss */
 .training-web-design .training-type-summary__title .title-h1:before {
   border-color: #6300ff;
 }
 
-/* line 174, ../../app/fragments/content/block-training-type/block-training-type.scss */
+/* line 193, ../../app/fragments/content/block-training-type/block-training-type.scss */
 .training-photography .training-type-summary__title .title-h1:before {
   border-color: #ffe042;
 }
 
-/* line 175, ../../app/fragments/content/block-training-type/block-training-type.scss */
+/* line 194, ../../app/fragments/content/block-training-type/block-training-type.scss */
 .training-game .training-type-summary__title .title-h1:before {
   border-color: #1840e8;
 }
 
-/* line 176, ../../app/fragments/content/block-training-type/block-training-type.scss */
+/* line 195, ../../app/fragments/content/block-training-type/block-training-type.scss */
 .training-video-audio .training-type-summary__title .title-h1:before {
   border-color: red;
 }
 
-/* line 177, ../../app/fragments/content/block-training-type/block-training-type.scss */
+/* line 196, ../../app/fragments/content/block-training-type/block-training-type.scss */
 .training-cross-media .training-type-summary__title .title-h1:before {
   border-color: #e90b51;
 }

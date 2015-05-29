@@ -8,11 +8,11 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   require('./app/sliders.js');
   require('./app/aside-gallery.js');
   require('./app/popins.js');
-  require('./app/filter-trainings-pro.js');
+  require('./app/trainings-pro.js');
 
 })();
 
-},{"./app/aside-gallery.js":2,"./app/filter-trainings-pro.js":3,"./app/menu.js":4,"./app/popins.js":5,"./app/sliders.js":6,"./app/tabs-accordion.js":7}],2:[function(require,module,exports){
+},{"./app/aside-gallery.js":2,"./app/menu.js":3,"./app/popins.js":4,"./app/sliders.js":5,"./app/tabs-accordion.js":6,"./app/trainings-pro.js":7}],2:[function(require,module,exports){
 (function(){
   'use strict';
 
@@ -24,6 +24,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   $(function(){
     var $gallery, doneCallback;
     var $more = $('.js-masonry--aside-gallery__more');
+    var page = 0;
     
     /* Open/close gallery. */
     $('.with-gallery').contentToggle({
@@ -74,7 +75,10 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
       $more.on('click', function(){
         $.ajax({
           url: window.gobelinsSettings.asideGallery.url,
-          dataType: 'json'
+          dataType: 'json',
+          data: {
+            page: ++page
+          }
         }).done(doneCallback);
       });
     }
@@ -82,39 +86,6 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
 })();
 
 },{"../../../bower_components/jquery-contenttoggle/jquery.contenttoggle.js":10,"../jstemplates/aside-gallery__ajax.js":8,"jquery":"jquery"}],3:[function(require,module,exports){
-(function(){
-  'use strict';
-
-  /* require plugins */
-  var $ = require('jquery');
-  $(function(){
-    $('.close-themes').click(function(){
-     $('.filter-training-field').find('.list-themes').parent('.form-item').slideToggle( "slow" );
-     
-     if($(this).hasClass('icon-minus')){
-      $(this).removeClass('icon-minus');
-      $(this).addClass('icon-plus');
-     }
-     else if($(this).hasClass('icon-plus')){
-      $(this).removeClass('icon-plus');
-      $(this).addClass('icon-minus');
-     }
-    });
-    
-    
-    if($('.block-banner.type').length > 0){
-     $('.block-training-presentation').hide();
-     $(this).find('.link-more-training').click(function(e){
-      e.preventDefault();
-      $('.block-training-presentation').slideToggle( "slow" );
-     });
-     
-    }
-    
-  });
-})();
-
-},{"jquery":"jquery"}],4:[function(require,module,exports){
 (function(){
   'use strict';
 
@@ -195,7 +166,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   });
 })();
 
-},{"../../../bower_components/jquery-contenttoggle/jquery.contenttoggle.js":10,"../../../bower_components/sticky/jquery.sticky.js":12,"jquery":"jquery"}],5:[function(require,module,exports){
+},{"../../../bower_components/jquery-contenttoggle/jquery.contenttoggle.js":10,"../../../bower_components/sticky/jquery.sticky.js":12,"jquery":"jquery"}],4:[function(require,module,exports){
 (function(){
   'use strict';
 
@@ -209,7 +180,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   
 })();
 
-},{"../../../bower_components/colorbox/jquery.colorbox.js":9,"jquery":"jquery"}],6:[function(require,module,exports){
+},{"../../../bower_components/colorbox/jquery.colorbox.js":9,"jquery":"jquery"}],5:[function(require,module,exports){
 (function(){
   'use strict';
 
@@ -318,7 +289,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
     $sliders.on('translate.owl.carousel', translateCallback);
   });
 })();
-},{"../../../bower_components/owl.carousel/dist/owl.carousel.js":11,"jquery":"jquery"}],7:[function(require,module,exports){
+},{"../../../bower_components/owl.carousel/dist/owl.carousel.js":11,"jquery":"jquery"}],6:[function(require,module,exports){
 (function(){
   'use strict';
 
@@ -337,7 +308,61 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   });
 })();
 
-},{"../../../bower_components/jquery-contenttoggle/jquery.contenttoggle.js":10,"jquery":"jquery"}],8:[function(require,module,exports){
+},{"../../../bower_components/jquery-contenttoggle/jquery.contenttoggle.js":10,"jquery":"jquery"}],7:[function(require,module,exports){
+(function(){
+  'use strict';
+
+  /* require plugins */
+  var $ = require('jquery');
+  $(function(){
+   // Afficher masquer themes dans les filtres
+    $('.close-themes').click(function(){
+     $('.filter-training-field').find('.list-themes').parent('.form-item').slideToggle( "slow" );
+     
+     if($(this).hasClass('icon-minus')){
+      $(this).removeClass('icon-minus');
+      $(this).addClass('icon-plus');
+     }
+     else if($(this).hasClass('icon-plus')){
+      $(this).removeClass('icon-plus');
+      $(this).addClass('icon-minus');
+     }
+    });
+    
+    // Afficher masquer block en savoir plus banner type
+    if($('.block-banner.type').length > 0){
+     $('.block-training-presentation').hide();
+     $(this).find('.link-more-training').click(function(e){
+      e.preventDefault();
+      $('.block-training-presentation').slideToggle( "slow" );
+     });
+    }
+    
+    // Changement position bloc banner type sur mobile
+    if(window.matchMedia("(max-width:767px)").matches) {
+       $('.intro-link').insertAfter('.block-banner.type');
+     } else{
+      $('.intro-link').insertAfter('.training-type-summary');
+     }
+    
+  });
+  
+  // Changement position bloc banner type sur mobile
+ window.addEventListener("resize", redimensionnement,false);
+
+ function redimensionnement() {
+   if("matchMedia" in window) { // Détection
+     if(window.matchMedia("(max-width:767px)").matches) {
+       $('.intro-link').insertAfter('.block-banner.type');
+     } else{
+      $('.intro-link').insertAfter('.training-type-summary');
+     }
+   }
+ }
+   
+})();
+
+},{"jquery":"jquery"}],8:[function(require,module,exports){
 var _ = require('underscore');
 exports["aside-gallery__ajax.html"] = function(obj){
 var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};

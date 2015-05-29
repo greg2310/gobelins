@@ -7,7 +7,7 @@
 		padding:0 0 50px 0;
 		margin:0;
 		
-		@media screen and (max-width: 767px) {
+		@media screen and (max-width: $width__xs - 1px) {
 			font-size:1.5rem;
 		}
 	}
@@ -52,7 +52,7 @@
 			overflow:hidden;
 			color:$color__slideshow--training;
 			margin-bottom:20px;
-			@media screen and (max-width: 767px) {
+			@media screen and (max-width: $width__xs - 1px) {
 				height:40px;
 			}
 			a{
@@ -68,7 +68,7 @@
 		.btn-higlight{
 			display:block;
    margin-right:50px;
-			@media screen and (max-width: 767px) {
+			@media screen and (max-width: $width__xs - 1px) {
 				padding:10px 20%;
 			}
 		}

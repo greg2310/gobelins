@@ -2,12 +2,19 @@
 	&.type{
 		margin-top:-55px;
   @media screen and (max-width: $width__xs - 1px){
-   background-size:auto 205px;
-   background-position:left top;
    margin:0;
    padding-top:0;
    background-color:$color__bg-gray--darck;
   }
+  
+  @media screen and (max-width: $width__m){
+   margin:0;
+  }
+  
+  @media screen and (max-width: $width__xs - 1px) {
+   height:205px;
+  }
+  
   
   .link-more-training{
     margin-left:6%;
@@ -41,6 +48,7 @@
 	padding-top:4%;
 	 @media screen and (max-width: $width__m) {
    padding-left:9%;
+   padding-top:0;
   }
   
   @media screen and (max-width: $width__xs - 1px) {
@@ -59,7 +67,7 @@
 			margin:0;
    @media screen and (max-width: $width__xs - 1px){
     font-size:1.55rem;
-    padding-left:65px;
+    text-align:center;
     margin-top:20px;
    }
 			&:before {
@@ -81,8 +89,11 @@
 				}
     
     @media screen and (max-width: $width__xs - 1px){
-     top:-20%;
-     left:0;
+     top:-8%;
+     left:-20px;
+     display:inline-block;
+     vertical-align:middle;
+     position:relative;
     }
 				
 			}
@@ -109,7 +120,8 @@
   color:$color__bg-white;
   padding-left:6%;
   @media screen and (max-width: $width__m) {
-   padding-left:9%;
+   padding:0 9%;
+   max-width:none;
   }
   @media screen and (max-width: $width__xs - 1px){
    width:100%;
@@ -165,6 +177,13 @@
 .breadcrumb + .block-banner{
   margin-top:-55px;
 }
+
+@media screen and (max-width: $width__xs - 1px) {
+  .intro-link{
+   background-color:$color__bg-gray--darck;
+   padding:30px;
+  }
+ }
 
 /*** Color training****/
 

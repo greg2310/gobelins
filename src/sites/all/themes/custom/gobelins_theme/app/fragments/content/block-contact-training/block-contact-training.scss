@@ -19,11 +19,11 @@
 			font-size:0.875rem;
 		}
 		
-		@media screen and (max-width: 1140px) {
+		@media screen and (max-width: $width__m) {
 			width:100%;
 		}
   
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $width__xs - 1px) {
    text-align:center;
    font-size:1rem;
    font-family:"Platform-Medium";
@@ -39,19 +39,19 @@
 	
 	
 	.infos-contact{
-		@media screen and (max-width: 1140px) {
+		@media screen and (max-width: $width__m) {
 			width:65%;
 			margin-left:0;
       vertical-align:middle;
 		}
   
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $width__xs - 1px) {
    width:100%;
   }
 		figure{
 			display:table;
 			margin:0;
-   @media screen and (max-width: 767px) {
+   @media screen and (max-width: $width__xs - 1px) {
     display:block;
     text-align:center;
    }
@@ -59,7 +59,7 @@
 				float:left;
     border-radius: 50%;
     height: auto;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $width__xs - 1px) {
      float:none;
     }
 			}
@@ -68,7 +68,7 @@
 				height:75px;
 				vertical-align:middle;
 				padding-left:15px;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $width__xs - 1px) {
      display:block;
      height:auto;
      margin:12px 0;
@@ -95,11 +95,11 @@
 		margin-top:2%;
   vertical-align:middle;
   margin-left:0;
-  @media screen and (max-width: 1140px) {
+  @media screen and (max-width: $width__m) {
    width:34%;
   }
   
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $width__xs - 1px) {
    width:100%;
    text-align:center;
   }
