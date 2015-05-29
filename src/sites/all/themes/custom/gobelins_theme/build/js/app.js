@@ -6,10 +6,46 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   require('./app/menu.js');
   require('./app/tabs-accordion.js');
   require('./app/sliders.js');
+  require('./app/aside-gallery.js');
+  require('./app/filter-trainings-pro.js');
 
 })();
 
-},{"./app/menu.js":2,"./app/sliders.js":3,"./app/tabs-accordion.js":4}],2:[function(require,module,exports){
+},{"./app/aside-gallery.js":2,"./app/filter-trainings-pro.js":3,"./app/menu.js":4,"./app/sliders.js":5,"./app/tabs-accordion.js":6}],2:[function(require,module,exports){
+(function(){
+  'use strict';
+
+  /* require plugins */
+  var $ = require('jquery');
+  require('../bower/jquery.contenttoggle.js');
+
+  $(function(){
+    $('.js-contentToggle--gallery').contentToggle({
+      defaultState: 'close',
+      globalClose: true,
+      triggerSelector: '.js-contentToggle--gallery__trigger',
+      contentSelector: '.js-contentToggle--gallery__content',
+      toggleProperties: {}
+    });
+  });
+})();
+
+},{"../bower/jquery.contenttoggle.js":7,"jquery":"jquery"}],3:[function(require,module,exports){
+(function(){
+  'use strict';
+
+  /* require plugins */
+  var $ = require('jquery');
+  $(function(){
+    $('.close-themes').click(function(){
+     $('.filter-training-field').find('.list-themes').parent('.form-item').toggle();
+     
+    });
+    
+  });
+})();
+
+},{"jquery":"jquery"}],4:[function(require,module,exports){
 (function(){
   'use strict';
 
@@ -90,7 +126,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   });
 })();
 
-},{"../bower/jquery.contenttoggle.js":5,"../bower/jquery.sticky.js":6,"jquery":"jquery"}],3:[function(require,module,exports){
+},{"../bower/jquery.contenttoggle.js":7,"../bower/jquery.sticky.js":8,"jquery":"jquery"}],5:[function(require,module,exports){
 (function(){
   'use strict';
 
@@ -114,9 +150,45 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
       }
     };
     
+    /* 1 item slider. */
+    $sliders = $('.js-slider--1').owlCarousel({
+      nav: false,
+      dots: true,
+      items: 1,
+      margin: 40
+    });
+    $sliders.on('translate.owl.carousel', callback);
+    
+    /* 3 items slider. */
+    $sliders = $('.js-slider--3').owlCarousel({
+      nav: true,
+      dots: false,
+      navText: ['', ''],
+      navClass: ['js-slider--left icon-left-small btn-round--light is-disabled', 'js-slider--right icon-right-small btn-round--light'],
+      responsive : {
+        // Breakpoint from 0 up to 767.
+        0 : {
+          items: 1,
+          margin: 20
+        },
+        // Breakpoint from 768 up 1139.
+        768 : {
+          items: 2,
+          margin: 34
+        },
+        // Breakpoint from 1140 up.
+        1140 : {
+          items: 3,
+          margin: 40
+        }
+      }
+    });
+    $sliders.on('translate.owl.carousel', callback);
+    
     /* 4 items slider. */
     $sliders = $('.js-slider--4').owlCarousel({
       nav: true,
+      dots: false,
       navText: ['', ''],
       navClass: ['js-slider--left icon-left-small btn-round--dark is-disabled', 'js-slider--right icon-right-small btn-round--dark'],
       responsive : {
@@ -138,37 +210,9 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
       }
     });
     $sliders.on('translate.owl.carousel', callback);
-    
-    /* 3 items slider. */
-    $sliders = $('.js-slider--3').owlCarousel({
-      nav: true,
-      navText: ['', ''],
-      navClass: ['js-slider--left icon-left-small btn-round--light is-disabled', 'js-slider--right icon-right-small btn-round--light'],
-      responsive : {
-        // Breakpoint from 0 up to 767.
-        0 : {
-          items: 1,
-          margin: 20,
-		  nav:false
-        },
-        // Breakpoint from 768 up 1139.
-        768 : {
-          items: 2,
-          margin: 34
-        },
-        // Breakpoint from 1140 up.
-        1140 : {
-          items: 3,
-          margin: 40,
-		  dots:false
-        }
-      }
-    });
-    $sliders.on('translate.owl.carousel', callback);
   });
 })();
-
-},{"../bower/owl.carousel.js":7,"jquery":"jquery"}],4:[function(require,module,exports){
+},{"../bower/owl.carousel.js":9,"jquery":"jquery"}],6:[function(require,module,exports){
 (function(){
   'use strict';
 
@@ -187,7 +231,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   });
 })();
 
-},{"../bower/jquery.contenttoggle.js":5,"jquery":"jquery"}],5:[function(require,module,exports){
+},{"../bower/jquery.contenttoggle.js":7,"jquery":"jquery"}],7:[function(require,module,exports){
 (function($){
   'use strict';
 
@@ -518,7 +562,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
 })(jQuery);
 
 
-},{}],6:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
 // Sticky Plugin v1.0.0 for jQuery
 // =============
 // Author: Anthony Garand
@@ -690,7 +734,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   });
 })(jQuery);
 
-},{}],7:[function(require,module,exports){
+},{}],9:[function(require,module,exports){
 /**
  * Owl carousel
  * @version 2.0.0
