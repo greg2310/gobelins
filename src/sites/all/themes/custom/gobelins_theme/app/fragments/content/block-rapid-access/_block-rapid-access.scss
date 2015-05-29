@@ -10,6 +10,7 @@
 	  font-family:$font__neuzeit;
 	  height:300px;
 	  cursor:pointer;
+   transition:background-color 0.2s ease-out 0s;
     
     @media screen and (max-width: $width__m){
       text-align:left;
@@ -60,7 +61,7 @@
     display:table-cell;
     text-align:center;
     height:115px;
-    vertical-align:bottom;
+    vertical-align:middle;
     width:300px;
     @media screen and (max-width: $width__m){
       display:inline-block;
@@ -104,13 +105,15 @@
     color:$color__slideshow--training;
     font-family:$font__platform--medium;
     letter-spacing:1px;
+    line-height:normal;
     
     @media screen and (max-width: $width__m){
        margin:0 0 20px 0;
     }
     
 	  }
-	  
+   
+   
 	  .btn-higlight{
       display:none;
       margin-top:15px;

@@ -7,29 +7,12 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   require('./app/tabs-accordion.js');
   require('./app/sliders.js');
   require('./app/aside-gallery.js');
-<<<<<<< HEAD
+  require('./app/popins.js');
   require('./app/filter-trainings-pro.js');
 
 })();
 
-},{"./app/aside-gallery.js":2,"./app/filter-trainings-pro.js":3,"./app/menu.js":4,"./app/sliders.js":5,"./app/tabs-accordion.js":6}],2:[function(require,module,exports){
-(function(){
-  'use strict';
-
-  /* require plugins */
-  var $ = require('jquery');
-  require('../bower/jquery.contenttoggle.js');
-
-  $(function(){
-    $('.js-contentToggle--gallery').contentToggle({
-      defaultState: 'close',
-      globalClose: true,
-=======
-  require('./app/popins.js');
-
-})();
-
-},{"./app/aside-gallery.js":2,"./app/menu.js":3,"./app/popins.js":4,"./app/sliders.js":5,"./app/tabs-accordion.js":6}],2:[function(require,module,exports){
+},{"./app/aside-gallery.js":2,"./app/filter-trainings-pro.js":3,"./app/menu.js":4,"./app/popins.js":5,"./app/sliders.js":6,"./app/tabs-accordion.js":7}],2:[function(require,module,exports){
 (function(){
   'use strict';
 
@@ -47,32 +30,10 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
       group: 'aside-gallery',
       defaultState: 'close',
       elementClass: 'is-open--gallery',
->>>>>>> f0b671dae63706f021ccb11a0f51cdb7ae833439
       triggerSelector: '.js-contentToggle--gallery__trigger',
       contentSelector: '.js-contentToggle--gallery__content',
       toggleProperties: {}
     });
-<<<<<<< HEAD
-  });
-})();
-
-},{"../bower/jquery.contenttoggle.js":7,"jquery":"jquery"}],3:[function(require,module,exports){
-(function(){
-  'use strict';
-
-  /* require plugins */
-  var $ = require('jquery');
-  $(function(){
-    $('.close-themes').click(function(){
-     $('.filter-training-field').find('.list-themes').parent('.form-item').toggle();
-     
-    });
-    
-  });
-})();
-
-},{"jquery":"jquery"}],4:[function(require,module,exports){
-=======
     
     /* Initialize gallery.*/
     $gallery = $('.js-masonry--aside-gallery');
@@ -120,8 +81,24 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   });
 })();
 
-},{"../../../bower_components/jquery-contenttoggle/jquery.contenttoggle.js":9,"../jstemplates/aside-gallery__ajax.js":7,"jquery":"jquery"}],3:[function(require,module,exports){
->>>>>>> f0b671dae63706f021ccb11a0f51cdb7ae833439
+},{"../../../bower_components/jquery-contenttoggle/jquery.contenttoggle.js":10,"../jstemplates/aside-gallery__ajax.js":8,"jquery":"jquery"}],3:[function(require,module,exports){
+(function(){
+  'use strict';
+
+  /* require plugins */
+  var $ = require('jquery');
+  $(function(){
+    $('.close-themes').click(function(){
+     $('.filter-training-field').find('.list-themes').parent('.form-item').toggle();
+    });
+    
+    $('.block-banner.type .link-more-training').click(function(){
+     
+    });
+  });
+})();
+
+},{"jquery":"jquery"}],4:[function(require,module,exports){
 (function(){
   'use strict';
 
@@ -202,11 +179,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   });
 })();
 
-<<<<<<< HEAD
-},{"../bower/jquery.contenttoggle.js":7,"../bower/jquery.sticky.js":8,"jquery":"jquery"}],5:[function(require,module,exports){
-=======
-},{"../../../bower_components/jquery-contenttoggle/jquery.contenttoggle.js":9,"../../../bower_components/sticky/jquery.sticky.js":11,"jquery":"jquery"}],4:[function(require,module,exports){
->>>>>>> f0b671dae63706f021ccb11a0f51cdb7ae833439
+},{"../../../bower_components/jquery-contenttoggle/jquery.contenttoggle.js":10,"../../../bower_components/sticky/jquery.sticky.js":12,"jquery":"jquery"}],5:[function(require,module,exports){
 (function(){
   'use strict';
 
@@ -220,7 +193,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   
 })();
 
-},{"../../../bower_components/colorbox/jquery.colorbox.js":8,"jquery":"jquery"}],5:[function(require,module,exports){
+},{"../../../bower_components/colorbox/jquery.colorbox.js":9,"jquery":"jquery"}],6:[function(require,module,exports){
 (function(){
   'use strict';
 
@@ -306,12 +279,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
     $sliders.on('translate.owl.carousel', callback);
   });
 })();
-<<<<<<< HEAD
-},{"../bower/owl.carousel.js":9,"jquery":"jquery"}],6:[function(require,module,exports){
-(function(){
-  'use strict';
-=======
-},{"../../../bower_components/owl.carousel/dist/owl.carousel.js":10,"jquery":"jquery"}],6:[function(require,module,exports){
+},{"../../../bower_components/owl.carousel/dist/owl.carousel.js":11,"jquery":"jquery"}],7:[function(require,module,exports){
 (function(){
   'use strict';
 
@@ -330,7 +298,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   });
 })();
 
-},{"../../../bower_components/jquery-contenttoggle/jquery.contenttoggle.js":9,"jquery":"jquery"}],7:[function(require,module,exports){
+},{"../../../bower_components/jquery-contenttoggle/jquery.contenttoggle.js":10,"jquery":"jquery"}],8:[function(require,module,exports){
 var _ = require('underscore');
 exports["aside-gallery__ajax.html"] = function(obj){
 var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
@@ -353,7 +321,7 @@ __p+='';
 }
 return __p;
 };
-},{"underscore":"underscore"}],8:[function(require,module,exports){
+},{"underscore":"underscore"}],9:[function(require,module,exports){
 /*!
 	Colorbox 1.6.1
 	license: MIT
@@ -1366,7 +1334,6 @@ return __p;
 					if (settings.h) {
 						photo.style.marginTop = Math.max(settings.mh - photo.height, 0) / 2 + 'px';
 					}
->>>>>>> f0b671dae63706f021ccb11a0f51cdb7ae833439
 
 					if ($related[1] && (settings.get('loop') || $related[index + 1])) {
 						photo.style.cursor = 'pointer';
@@ -1459,13 +1426,9 @@ return __p;
 
 	publicMethod.settings = defaults;
 
-<<<<<<< HEAD
-},{"../bower/jquery.contenttoggle.js":7,"jquery":"jquery"}],7:[function(require,module,exports){
-=======
 }(jQuery, document, window));
 
-},{}],9:[function(require,module,exports){
->>>>>>> f0b671dae63706f021ccb11a0f51cdb7ae833439
+},{}],10:[function(require,module,exports){
 (function($){
   'use strict';
 
@@ -1766,188 +1729,10 @@ return __p;
    * Perform toggle action.
    */
   Plugin.prototype.do = function() {
-<<<<<<< HEAD
-    this.update();
-    if (this.isOpen ^ this.$contents.is(':visible')) {
-      this.$contents.stop().animate(
-        this.options.toggleProperties,
-        this.options.toggleOptions
-      );
-    }
-  };
-
-  /**
-   * Update classes and aria data.
-   */
-  Plugin.prototype.update = function() {
-    if (this.isOpen) {
-      this.$element.addClass(this.options.elementClass);
-      this.$contents.attr('aria-hidden', false);
-      this.$triggers.attr('aria-expanded', true);
-      if (this.$currentTrigger) {
-        this.$currentTrigger.addClass(this.options.triggerClass);
-      } else {
-        this.$triggers.addClass(this.options.triggerClass);
-      }
-    } else {
-      this.$element.removeClass(this.options.elementClass);
-      this.$contents.attr('aria-hidden', true);
-      this.$triggers.attr('aria-expanded', false);
-      this.$triggers.removeClass(this.options.triggerClass);
-    }
-  };
-
-  /**
-   * Destroy events.
-   */
-  Plugin.prototype.destroy = function() {
-    this.$element.removeData(pluginName);
-    this.$element.off('.' + pluginName);
-    this.$triggers.off('.' + pluginName);
-    this.$contents.off('.' + pluginName);
-    $global.off('.' + pluginName + this.uid);
-  };
-
-  /********** End plugin specific code **********/
-
-  /* Expose jQuery plugin. */
-  $.fn[pluginName] = function(options) {
-    var selector = this.selector;
-    return this.each(function() {
-      var $this = $(this);
-      if (!$this.data(pluginName)) {
-        new Plugin($this, selector, options);
-      }
-    });
-  };
-})(jQuery);
-
-
-},{}],8:[function(require,module,exports){
-// Sticky Plugin v1.0.0 for jQuery
-// =============
-// Author: Anthony Garand
-// Improvements by German M. Bravo (Kronuz) and Ruud Kamphuis (ruudk)
-// Improvements by Leonardo C. Daronco (daronco)
-// Created: 2/14/2011
-// Date: 2/12/2012
-// Website: http://labs.anthonygarand.com/sticky
-// Description: Makes an element on the page stick on the screen as you scroll
-//       It will only set the 'top' and 'position' of your element, you
-//       might need to adjust the width in some cases.
-
-(function($) {
-  var defaults = {
-      topSpacing: 0,
-      bottomSpacing: 0,
-      className: 'is-sticky',
-      wrapperClassName: 'sticky-wrapper',
-      center: false,
-      getWidthFrom: '',
-      responsiveWidth: false
-    },
-    $window = $(window),
-    $document = $(document),
-    sticked = [],
-    windowHeight = $window.height(),
-    scroller = function() {
-      var scrollTop = $window.scrollTop(),
-        documentHeight = $document.height(),
-        dwh = documentHeight - windowHeight,
-        extra = (scrollTop > dwh) ? dwh - scrollTop : 0;
-
-      for (var i = 0; i < sticked.length; i++) {
-        var s = sticked[i],
-          elementTop = s.stickyWrapper.offset().top,
-          etse = elementTop - s.topSpacing - extra;
-
-        if (scrollTop <= etse) {
-          if (s.currentTop !== null) {
-            s.stickyElement
-              .css('position', '')
-              .css('top', '');
-            s.stickyElement.trigger('sticky-end', [s]).parent().removeClass(s.className);
-            s.currentTop = null;
-          }
-        }
-        else {
-          var newTop = documentHeight - s.stickyElement.outerHeight()
-            - s.topSpacing - s.bottomSpacing - scrollTop - extra;
-          if (newTop < 0) {
-            newTop = newTop + s.topSpacing;
-          } else {
-            newTop = s.topSpacing;
-          }
-          if (s.currentTop != newTop) {
-            s.stickyElement
-              .css('position', 'fixed')
-              .css('top', newTop);
-
-            if (typeof s.getWidthFrom !== 'undefined') {
-              s.stickyElement.css('width', $(s.getWidthFrom).width());
-            }
-
-            s.stickyElement.trigger('sticky-start', [s]).parent().addClass(s.className);
-            s.currentTop = newTop;
-          }
-        }
-      }
-    },
-    resizer = function() {
-      windowHeight = $window.height();
-
-      for (var i = 0; i < sticked.length; i++) {
-        var s = sticked[i];
-        if (typeof s.getWidthFrom !== 'undefined' && s.responsiveWidth === true) {
-          s.stickyElement.css('width', $(s.getWidthFrom).width());
-        }
-      }
-    },
-    methods = {
-      init: function(options) {
-        var o = $.extend({}, defaults, options);
-        return this.each(function() {
-          var stickyElement = $(this);
-
-          var stickyId = stickyElement.attr('id');
-          var wrapperId = stickyId ? stickyId + '-' + defaults.wrapperClassName : defaults.wrapperClassName 
-          var wrapper = $('<div></div>')
-            .attr('id', stickyId + '-sticky-wrapper')
-            .addClass(o.wrapperClassName);
-          stickyElement.wrapAll(wrapper);
-
-          if (o.center) {
-            stickyElement.parent().css({width:stickyElement.outerWidth(),marginLeft:"auto",marginRight:"auto"});
-          }
-
-          if (stickyElement.css("float") == "right") {
-            stickyElement.css({"float":"none"}).parent().css({"float":"right"});
-          }
-
-          var stickyWrapper = stickyElement.parent();
-          stickyWrapper.css('height', stickyElement.outerHeight());
-          sticked.push({
-            topSpacing: o.topSpacing,
-            bottomSpacing: o.bottomSpacing,
-            stickyElement: stickyElement,
-            currentTop: null,
-            stickyWrapper: stickyWrapper,
-            className: o.className,
-            getWidthFrom: o.getWidthFrom,
-            responsiveWidth: o.responsiveWidth
-          });
-        });
-      },
-      update: scroller,
-      unstick: function(options) {
-        return this.each(function() {
-          var unstickyElement = $(this);
-=======
     var toggleProperties = {};
     var action = this.isOpen? 'show': 'hide';
     
     this.update();
->>>>>>> f0b671dae63706f021ccb11a0f51cdb7ae833439
 
     $.each(
       this.options.toggleProperties,
@@ -2003,11 +1788,7 @@ return __p;
   };
 })(jQuery);
 
-<<<<<<< HEAD
-},{}],9:[function(require,module,exports){
-=======
-},{}],10:[function(require,module,exports){
->>>>>>> f0b671dae63706f021ccb11a0f51cdb7ae833439
+},{}],11:[function(require,module,exports){
 /**
  * Owl carousel
  * @version 2.0.0
@@ -5234,7 +5015,7 @@ return __p;
 
 })(window.Zepto || window.jQuery, window, document);
 
-},{}],11:[function(require,module,exports){
+},{}],12:[function(require,module,exports){
 // Sticky Plugin v1.0.0 for jQuery
 // =============
 // Author: Anthony Garand

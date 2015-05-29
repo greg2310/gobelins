@@ -57,6 +57,9 @@
    }
 			img{
 				float:left;
+    border-radius: 50%;
+    height: auto;
+    width: 100%;
     @media screen and (max-width: 767px) {
      float:none;
     }

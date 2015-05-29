@@ -65,14 +65,15 @@
 		}
 		
 		.btn-higlight{
-			padding:10px 25%;
+			display:block;
+   margin-right:50px;
 			@media screen and (max-width: 767px) {
 				padding:10px 20%;
 			}
 		}
 		
 		.btn-like--mini{
-			margin-left:2px;
+			float:right;
 		}
 	}
 }
