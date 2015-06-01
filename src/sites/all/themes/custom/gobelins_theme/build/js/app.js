@@ -348,17 +348,17 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   });
   
   // Changement position bloc banner type sur mobile
- window.addEventListener("resize", redimensionnement,false);
+  window.addEventListener("resize", redimensionnement,false);
 
- function redimensionnement() {
-   if("matchMedia" in window) { // Détection
-     if(window.matchMedia("(max-width:767px)").matches) {
-       $('.intro-link').insertAfter('.block-banner.type');
-     } else{
-      $('.intro-link').insertAfter('.training-type-summary');
-     }
-   }
- }
+  function redimensionnement() {
+    if("matchMedia" in window) { // Détection
+      if(window.matchMedia("(max-width:767px)").matches) {
+        $('.intro-link').insertAfter('.block-banner.type');
+      } else{
+       $('.intro-link').insertAfter('.training-type-summary');
+      }
+    }
+  }
    
 })();
 
