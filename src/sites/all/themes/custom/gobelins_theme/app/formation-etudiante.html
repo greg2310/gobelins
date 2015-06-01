@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9 ie8" lang=""> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10 ie9" lang=""> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+  <head>
+    <%= include('head', {title: 'formation étudiante'}) %>
+  </head>
+  <body class="training-animation">
+    <%= include( 
+      '1-column',
+      {
+        content      : [
+			'block-training-type',
+   'block-training-presentation',
+   'list-trainings',
+			{template: 'block-slider-3', params: {slides: ['slide-project', 'slide-project2', 'lipsum', 'lipsum', 'lipsum', 'lipsum', 'lipsum', 'lipsum']}},
+			'list-news', 
+			'list-downloads',
+			'block-rapid-access'
+		],
+        contentTop   : ['block-training-search','breadcrumb'],
+        contentBottom : []
+      }
+    ) %>
+  </body>
+</html>
+
+ 
