@@ -4,6 +4,14 @@
   margin-bottom:2px;
   padding:30px 190px;
   text-align:center;
+  
+  @media screen and (max-width: $width__m) {
+    padding:30px 80px;
+  }
+  
+  @media screen and (max-width: $width__s) {
+    padding:30px 60px;
+  }
  
   .author-name{
     text-transform:uppercase;

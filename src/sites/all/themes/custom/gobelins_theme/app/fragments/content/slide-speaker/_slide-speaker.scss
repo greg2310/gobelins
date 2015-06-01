@@ -19,6 +19,10 @@
   }
   .slide-speaker__photo{
     margin-bottom:18px;
+    
+    @media screen and (max-width: $width__m) {
+      margin-bottom:28px;
+    }
     img{
       border-radius:50%;
     }

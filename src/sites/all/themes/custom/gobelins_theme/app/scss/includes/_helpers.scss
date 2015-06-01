@@ -69,7 +69,7 @@
   display:inline-block;
 }
 .btn-like--mini{
-  padding:10px 12px;
+  padding:10px 11px 10px 13px;
 }
 .btn-download{
   &:after{
@@ -247,6 +247,10 @@
   margin-bottom:30px;
   text-transform:uppercase;
   color:$color__text-dark;
+  
+  @media screen and (max-width: $width__m) {
+    margin-bottom:20px;
+  }
 }
 
 /***************** reset ****************/
