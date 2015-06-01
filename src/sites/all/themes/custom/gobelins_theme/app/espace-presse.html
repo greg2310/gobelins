@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9 ie8" lang=""> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10 ie9" lang=""> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+  <head>
+    <%= include('head', {title: 'Espace presse'}) %>
+  </head>
+  <body class="press">
+    <%= include(
+      '1-column',
+      {
+        content      : [
+          'block-press-details',
+          'block-training-professions',
+          {template: 'block-slider-1', params: {slides: ['slide-witness', 'slide-witness', 'slide-witness', 'slide-witness']}},
+          {template: 'block-slider-4', params: {slides: ['slide-speaker', 'slide-speaker', 'slide-speaker']}},
+          {template: 'block-slider-3', params: {slides: ['slide-trainings', 'slide-trainings', 'slide-trainings', 'slide-trainings', 'slide-trainings', 'slide-trainings']}},
+          'block-training-admission',
+          'list-downloads'
+        ],
+        contentTop   : ['breadcrumb', 'block-banner-press'],
+        contentBottom : []
+      }
+    ) %>
+  </body>
+</html>
+

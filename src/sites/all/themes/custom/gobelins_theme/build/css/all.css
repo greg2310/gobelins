@@ -837,7 +837,8 @@ th {
 .training-photography .breadcrumb .icons-home-gray,
 .training-game .breadcrumb .icons-home-gray,
 .training-video-audio .breadcrumb .icons-home-gray,
-.training-cross-media .breadcrumb .icons-home-gray {
+.training-cross-media .breadcrumb .icons-home-gray,
+.press .breadcrumb .icons-home-gray {
   background: url('../images/icons-seaf67ec552.png') 0 -198px no-repeat;
   background-size: 30px 340px;
   display: inline-block;
@@ -1529,12 +1530,12 @@ input[type="submit"]:hover,
 
 /*list style*/
 /* line 276, ../../app/scss/includes/_helpers.scss */
-.ul-styled li, .tabs-accordion .content ul li, .item-trainings__description .info__detailes li, .training-summary__description ul li {
+.ul-styled li, .tabs-accordion .content ul li, .tabs-accordion-press .content ul li, .item-trainings__description .info__detailes li, .training-summary__description ul li {
   padding-left: 10px;
   position: relative;
 }
 /* line 280, ../../app/scss/includes/_helpers.scss */
-.ul-styled li:before, .tabs-accordion .content ul li:before, .item-trainings__description .info__detailes li:before, .training-summary__description ul li:before {
+.ul-styled li:before, .tabs-accordion .content ul li:before, .tabs-accordion-press .content ul li:before, .item-trainings__description .info__detailes li:before, .training-summary__description ul li:before {
   content: '\2022';
   position: absolute;
   left: 0;
@@ -3102,6 +3103,8 @@ body.is-open {
   font-size: 0.875rem;
   background: #fff;
   padding: 0;
+  position: relative;
+  z-index: 1;
 }
 @media screen and (min-width: 1221px) {
   /* line 1, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
@@ -3129,20 +3132,20 @@ body.is-open {
     margin: 0 auto;
   }
 }
-/* line 24, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+/* line 26, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
 .breadcrumb ul {
   padding: 17px 20px;
   width: 1140px;
   margin: 0 auto;
 }
-/* line 29, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+/* line 31, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
 .breadcrumb ul li {
   display: inline-block;
   margin-right: 7px;
   position: relative;
   padding-left: 24px;
 }
-/* line 35, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+/* line 37, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
 .breadcrumb ul li + li:before {
   content: "\2192";
   display: inline-block;
@@ -3151,24 +3154,27 @@ body.is-open {
   top: -1px;
 }
 
-/* line 44, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+/* line 46, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
 .training-animation .breadcrumb,
 .training-graphic-design .breadcrumb,
 .training-web-design .breadcrumb,
 .training-photography .breadcrumb,
 .training-game .breadcrumb,
 .training-video-audio .breadcrumb,
-.training-cross-media .breadcrumb {
+.training-cross-media .breadcrumb,
+.press .breadcrumb {
   color: #fff;
+  background: none;
 }
-/* line 52, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
+/* line 56, ../../app/fragments/components/breadcrumb/_breadcrumb.scss */
 .training-animation .breadcrumb a,
 .training-graphic-design .breadcrumb a,
 .training-web-design .breadcrumb a,
 .training-photography .breadcrumb a,
 .training-game .breadcrumb a,
 .training-video-audio .breadcrumb a,
-.training-cross-media .breadcrumb a {
+.training-cross-media .breadcrumb a,
+.press .breadcrumb a {
   color: #fff;
 }
 
@@ -3632,6 +3638,185 @@ body.is-open {
 /* line 85, ../../app/fragments/components/block-slider/_block-slider.scss */
 .block-slider--1 .owl-nav {
   display: none;
+}
+
+/* line 2, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.tabs-accordion-press .tabs-title {
+  background-color: #f2f2f2;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  /* line 2, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+  .tabs-accordion-press .tabs-title {
+    display: none;
+  }
+}
+/* line 12, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.tabs-accordion-press .tabs-title li {
+  display: table-cell;
+  width: 50%;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Platform-Medium";
+  letter-spacing: 1px;
+}
+/* line 21, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.tabs-accordion-press .tabs-title li a {
+  padding: 12px 0;
+  display: block;
+  text-decoration: none;
+  color: #676767;
+}
+/* line 28, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.tabs-accordion-press .tabs-title .is-open {
+  background-color: #fff;
+}
+/* line 31, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.tabs-accordion-press .tabs-title .is-open a {
+  color: #333333;
+}
+/* line 37, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.tabs-accordion-press .accordion-title {
+  display: none;
+  text-transform: uppercase;
+  background-color: #e6e6e6;
+  font-family: "Platform-Medium";
+  letter-spacing: 1px;
+}
+/* line 44, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.tabs-accordion-press .accordion-title a {
+  padding: 30px 40px;
+  display: block;
+  text-decoration: none;
+}
+/* line 50, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.tabs-accordion-press .accordion-title.is-open {
+  border-top: 2px solid #0045e5;
+  background-color: #fff;
+}
+/* line 54, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.tabs-accordion-press .accordion-title.is-open a {
+  color: #323232;
+}
+@media screen and (max-width: 767px) {
+  /* line 37, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+  .tabs-accordion-press .accordion-title {
+    display: block;
+  }
+}
+/* line 63, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.tabs-accordion-press .tabs-container {
+  background-color: #fff;
+  border-bottom: 2px solid #e5e5e5;
+}
+/* line 67, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.tabs-accordion-press .content {
+  padding: 40px 0;
+  font-size: 0.875rem;
+  font-family: "Neuzeit";
+}
+@media screen and (max-width: 767px) {
+  /* line 67, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+  .tabs-accordion-press .content {
+    padding: 0 40px 40px;
+  }
+}
+/* line 84, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.tabs-accordion-press .bloc-content .filter-actus {
+  font-family: 'Platform-Medium';
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+/* line 88, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.tabs-accordion-press .bloc-content .filter-actus .form-item {
+  display: inline-block;
+  margin-left: 40px;
+}
+/* line 91, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.tabs-accordion-press .bloc-content .filter-actus .form-item label {
+  font-family: 'Neuzeit';
+  text-transform: none;
+  margin-right: 10px;
+}
+/* line 96, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.tabs-accordion-press .bloc-content .filter-actus .form-item select {
+  font-family: arial;
+  font-size: 0.825rem;
+}
+/* line 101, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.tabs-accordion-press .bloc-content .filter-actus .form-item:first-child {
+  margin-left: 10px;
+}
+/* line 107, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.tabs-accordion-press .bloc-content .list-actus-press {
+  margin-top: 20px;
+}
+/* line 109, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.tabs-accordion-press .bloc-content .list-actus-press .line {
+  border-top: 1px solid #e6e6e6;
+  padding: 30px 0;
+}
+/* line 112, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.tabs-accordion-press .bloc-content .list-actus-press .line:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+/* line 118, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.tabs-accordion-press .bloc-content .list-actus-press .item-actus {
+  display: inline-block;
+  margin-left: 37px;
+  width: 30%;
+  vertical-align: top;
+}
+/* line 123, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.tabs-accordion-press .bloc-content .list-actus-press .item-actus:first-child {
+  margin-left: 0;
+}
+/* line 127, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.tabs-accordion-press .bloc-content .list-actus-press .item-actus .item-actus__image img {
+  width: 100%;
+}
+/* line 133, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.tabs-accordion-press .bloc-content .list-actus-press .item-actus .item-actus__description .name-rubrique {
+  font-size: 0.825rem;
+  font-family: 'Platform-Medium';
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #666666;
+  padding-top: 12px;
+}
+/* line 142, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.tabs-accordion-press .bloc-content .list-actus-press .item-actus .item-actus__description h3 {
+  font-family: 'Platform-Medium';
+  font-size: 1.125rem;
+  color: #323232;
+  letter-spacing: 1px;
+  line-height: normal;
+  padding-top: 5px;
+}
+/* line 149, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.tabs-accordion-press .bloc-content .list-actus-press .item-actus .item-actus__description h3 a {
+  color: inherit;
+  font-size: inherit;
+}
+/* line 155, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.tabs-accordion-press .bloc-content .list-actus-press .item-actus .item-actus__description .intro {
+  font-size: 0.875rem;
+  color: #666666;
+  font-family: 'Neuzeit';
+  padding-top: 7px;
+}
+/* line 164, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.tabs-accordion-press .bloc-content.small {
+  width: 76%;
+  float: left;
+}
+/* line 169, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.tabs-accordion-press .block-agenda-press {
+  margin-left: 79%;
 }
 
 /* Content partials */
@@ -5912,4 +6097,71 @@ body.is-open {
 /* line 61, ../../app/fragments/content/slide-project/_slide-project.scss */
 .training-cross-media .slide-project__type:before {
   background-color: #e90b51;
+}
+
+/* line 2, ../../app/fragments/content/block-banner-press/block-banner-press.scss */
+.block-banner.press {
+  background-position: left top;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  /* line 2, ../../app/fragments/content/block-banner-press/block-banner-press.scss */
+  .block-banner.press {
+    margin: 0;
+    padding-top: 0;
+    background-color: #191919;
+  }
+}
+@media screen and (max-width: 1140px) {
+  /* line 2, ../../app/fragments/content/block-banner-press/block-banner-press.scss */
+  .block-banner.press {
+    margin: 0;
+  }
+}
+/* line 15, ../../app/fragments/content/block-banner-press/block-banner-press.scss */
+.block-banner.press:before {
+  background: rgba(25, 25, 25, 0.95);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: '';
+}
+/* line 25, ../../app/fragments/content/block-banner-press/block-banner-press.scss */
+.block-banner.press .title-h1 {
+  color: #fff;
+  position: relative;
+}
+
+/* line 1, ../../app/fragments/content/block-press-details/_block-press-details.scss */
+.block-press-details {
+  background-color: #f2f2f2;
+  padding-top: 0;
+}
+/* line 5, ../../app/fragments/content/block-press-details/_block-press-details.scss */
+.block-press-details .tabs-accordion {
+  padding-right: 40px;
+}
+@media screen and (max-width: 1140px) {
+  /* line 5, ../../app/fragments/content/block-press-details/_block-press-details.scss */
+  .block-press-details .tabs-accordion {
+    float: none;
+    width: auto;
+    padding-right: 0;
+  }
+}
+/* line 14, ../../app/fragments/content/block-press-details/_block-press-details.scss */
+.block-press-details .item-downloads {
+  margin-left: 70%;
+}
+@media screen and (max-width: 1140px) {
+  /* line 14, ../../app/fragments/content/block-press-details/_block-press-details.scss */
+  .block-press-details .item-downloads {
+    display: none;
+  }
+}
+/* line 21, ../../app/fragments/content/block-press-details/_block-press-details.scss */
+.block-press-details .title-h2 {
+  text-align: left;
 }
