@@ -1,9 +1,9 @@
 .results-filter-training{
-	float:right;
-	width:70%;
+	margin-left:30%;
 	
-	@media screen and (max-width: 1140px) {
+	@media screen and (max-width: $width__m) {
 		width:100%;
+  margin-left:0;
 	}
 	
 	
@@ -28,9 +28,9 @@
 	.list-results-training{
 		border-bottom:2px solid #d9d9d9;
 		margin-bottom:25px;
+  border-top:2px solid $color__training--animation;
 		.list-item{
-			float:left;
-			width:100%;
+			display:block;
 			background-color:$color__bg-white;
 			margin-top:1px;
 			padding:15px;
@@ -46,7 +46,7 @@
 			display:inline-block;
 			vertical-align:top;
 			text-align:right;
-   @media screen and (max-width: 767px) {
+   @media screen and (max-width: $width__xs - 1px) {
     width:100%;
     margin-top:20px;
    }
@@ -54,7 +54,7 @@
 			.price-training{
 				color:$color__border-gray;
 				margin-right:20px;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $width__xs - 1px) {
      float:left;
      padding-top:10px;
      margin-left:-5px;
@@ -66,7 +66,7 @@
 			width:64%;
 			display:inline-block;
 			vertical-align:top;
-   @media screen and (max-width: 767px) {
+   @media screen and (max-width: $width__xs - 1px) {
     width:100%;
     padding-bottom:22px;
     border-bottom:1px solid $color__bg-gray;
@@ -101,7 +101,7 @@
 					display:block;
 					margin:0;
 				}
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $width__xs - 1px) {
      &.item-trainings__type{
       display:inline-block;
      }
@@ -113,7 +113,6 @@
 	
 	.other-training{
 		background:#1a1a1a;
-		padding:14px;
 		a{
 			text-transform:uppercase;
 			color:$color__bg-white;
@@ -123,7 +122,40 @@
 			display:block;
 			text-align:center;
 			text-decoration:none;
+   padding:14px;
 			
 		}
 	}
 }
+
+/***Color training***/
+
+.training-animation .item-trainings__type:before{
+  background-color:$color__training--animation;
+}
+.training-graphic-design .item-trainings__type:before{
+  background-color:$color__training--graphic-design;
+}
+.training-web-design .item-trainings__type:before{
+  background-color:$color__training--web-design;
+}
+.training-photography .item-trainings__type:before{
+  background-color:$color__training--photography;
+}
+.training-game .item-trainings__type:before{
+  background-color:$color__training--game;
+}
+.training-video-audio .item-trainings__type:before{
+  background-color:$color__training--video-audio;
+}
+.training-cross-media .item-trainings__type:before{
+  background-color:$color__training--cross-media;
+}
+
+.training-animation .list-results-training{border-top-color:$color__training--animation;}
+.training-graphic-design .list-results-training{border-top-color:$color__training--graphic-design;}
+.training-web-design .list-results-training{border-top-color:$color__training--web-design;}
+.training-photography .list-results-training{border-top-color:$color__training--photography;}
+.training-game .list-results-training{border-top-color:$color__training--game;}
+.training-video-audio .list-results-training{border-top-color:$color__training--video-audio;}
+.training-cross-media .list-results-training{border-top-color:$color__training--cross-media;}

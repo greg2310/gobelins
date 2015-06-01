@@ -3,8 +3,9 @@
   .title-h2{
 		text-align:left;
 		font-size:2rem;
+  line-height:normal;
 		text-transform:none;
-		 @media screen and (min-width: 1140px) {
+		 @media screen and (min-width: $width__m) {
 			float:right;
 			width:70%;
 		}

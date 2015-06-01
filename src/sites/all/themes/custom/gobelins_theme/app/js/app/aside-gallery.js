@@ -9,6 +9,7 @@
   $(function(){
     var $gallery, doneCallback;
     var $more = $('.js-masonry--aside-gallery__more');
+    var page = 0;
     
     /* Open/close gallery. */
     $('.with-gallery').contentToggle({
@@ -59,7 +60,10 @@
       $more.on('click', function(){
         $.ajax({
           url: window.gobelinsSettings.asideGallery.url,
-          dataType: 'json'
+          dataType: 'json',
+          data: {
+            page: ++page
+          }
         }).done(doneCallback);
       });
     }

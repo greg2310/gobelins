@@ -7,7 +7,7 @@
 		padding:0 0 50px 0;
 		margin:0;
 		
-		@media screen and (max-width: 767px) {
+		@media screen and (max-width: $width__xs - 1px) {
 			font-size:1.5rem;
 		}
 	}
@@ -28,6 +28,7 @@
 				padding:1px 4px;
 				font-size:0.6875rem;
 				text-transform:uppercase;
+    z-index:1;
 				
 			}
 			
@@ -51,7 +52,7 @@
 			overflow:hidden;
 			color:$color__slideshow--training;
 			margin-bottom:20px;
-			@media screen and (max-width: 767px) {
+			@media screen and (max-width: $width__xs - 1px) {
 				height:40px;
 			}
 			a{
@@ -65,16 +66,33 @@
 		}
 		
 		.btn-higlight{
-			padding:10px 25%;
-			@media screen and (max-width: 767px) {
+			display:block;
+   margin-right:50px;
+			@media screen and (max-width: $width__xs - 1px) {
 				padding:10px 20%;
 			}
 		}
 		
 		.btn-like--mini{
-			margin-left:2px;
+			float:right;
 		}
 	}
 }
+
+/****color training***/
+
+.training-animation .owl-carousel .item{border-color:$color__border__slide;}
+
+.training-graphic-design  .owl-carousel .item{border-color:$color__training--graphic-design;}
+
+.training-web-design  .owl-carousel .item{border-color:$color__training--web-design;}
+
+.training-photography  .owl-carousel .item{border-color:$color__training--photography;}
+
+.training-game  .owl-carousel .item{border-color:$color__training--game;}
+
+.training-video-audio  .owl-carousel .item{border-color:$color__training--video-audio;}
+
+.training-cross-media  .owl-carousel .item{border-color:$color__training--cross-media;}
 
 

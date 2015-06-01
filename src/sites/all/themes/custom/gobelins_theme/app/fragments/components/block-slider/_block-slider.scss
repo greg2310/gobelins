@@ -36,6 +36,7 @@
 .owl-carousel .owl-item {
   display: inline-block;
   float: none;
+  vertical-align: bottom;
 }
 .owl-nav {
   text-align: center;
@@ -64,6 +65,16 @@
 }
 .owl-dot.active > span {
   opacity: 1;
+}
+@media screen and (max-width: $width__m) {
+  .owl-dots {
+    margin-top: 20px;
+ }
+}
+@media screen and (max-width: $width__xs - 1px) {
+  .owl-dots {
+    margin-top: 15px;
+ }
 }
 
 /* Owl styles rewrites. */
