@@ -45,10 +45,9 @@
 		background:$color__bg-white;
 		padding:20px;
 		height:190px;
-		box-sizing:border-box;
 		
 		h3{
-			height:50px;
+			height:45px;
 			overflow:hidden;
 			color:$color__slideshow--training;
 			margin-bottom:20px;
@@ -61,13 +60,13 @@
 		}
 		
 		.calendar{
-			margin-bottom:20px;
+			margin-bottom:15px;
 			color:$color__border-gray;
 		}
 		
 		.btn-higlight{
 			display:block;
-   margin-right:50px;
+   margin-right:55px;
 			@media screen and (max-width: $width__xs - 1px) {
 				padding:10px 20%;
 			}

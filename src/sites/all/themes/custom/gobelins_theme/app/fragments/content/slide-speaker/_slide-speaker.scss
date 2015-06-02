@@ -29,5 +29,9 @@
   }
   .links a{
     color:$color__blue-gobelins;
+    
+    &:hover{
+      border-color: $color__blue-gobelins;
+    }
   }
 }

@@ -5,7 +5,7 @@
 	.item-rapid-access{
 	  background-color:#fff;
 	  border-bottom: 2px solid $color__border-gray--light;
-	  padding:30px 40px 40px;
+	  padding:30px 20px 40px;
 	  text-align:center;
 	  font-family:$font__neuzeit;
 	  height:300px;
@@ -62,7 +62,7 @@
     text-align:center;
     height:115px;
     vertical-align:middle;
-    width:300px;
+    width:330px;
     @media screen and (max-width: $width__m){
       display:inline-block;
       vertical-align:top;

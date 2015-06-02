@@ -4,6 +4,7 @@
   height:144px;
   position:relative;
   font-family: $font__platform--medium;
+  letter-spacing:1px;
   z-index:1;
   
   @media screen and (max-width: 1140px){
@@ -20,6 +21,10 @@
   padding-top:10px;
   position:relative;
   z-index:2;
+  
+  a:hover{
+    border-color:#fff;
+  }
   
   @media screen and (max-width: 1140px){
     padding-top:28px;

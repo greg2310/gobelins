@@ -47,10 +47,16 @@
 .training-photography .breadcrumb,
 .training-game .breadcrumb,
 .training-video-audio .breadcrumb,
-.training-cross-media .breadcrumb{
+.training-cross-media .breadcrumb,
+.press .breadcrumb{
   color:#fff;
+  background:none;
   a{
     color:#fff;
+    
+    &:hover{
+      border-color:#fff;
+    }
   }
   .icons-home-gray{
     @extend .icons-home-white;

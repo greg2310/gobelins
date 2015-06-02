@@ -15,6 +15,9 @@
   }
   a{
     text-decoration:none;
+    &:hover{
+      border-color:transparent;
+    }
   }
 }
 .footer__info{
@@ -86,6 +89,10 @@
       display:block;
       padding:13px 15px;
       color:#7f7f7f;
+      
+      &:hover{
+        border-color:transparent;
+      }
     }
     
     @media screen and (max-width: 767px){

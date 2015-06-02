@@ -8,6 +8,11 @@
   
   a{
     text-decoration:none;
+    cursor:pointer;
+    
+    &:hover{
+      border-color: transparent;
+    }
   }
   
   & > ul{
@@ -85,6 +90,7 @@
       width:$width__m;
       margin:0 auto;
       font-size:0;
+      letter-spacing:0;
       text-align:left;
       
       @media screen and (max-width: $width__l){
@@ -94,6 +100,7 @@
     
     & > ul > li{
       padding:20px;
+      letter-spacing:1px;
       display:inline-block;
       vertical-align:top;
       width:25%;
@@ -203,7 +210,7 @@
       display:inline-block;
       
       & + li{
-        margin-left:30px;
+        margin-left:20px;
       }
       
       &:last-child{

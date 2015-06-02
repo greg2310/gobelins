@@ -7,7 +7,7 @@
   padding:8px 12px;
   display:inline-block;
   font-size:0.875rem;
-  transition: background-color, color $animation__params;
+  transition: background-color, color $animation__params, border-color $animation__params;
   
   & > span{
     margin-left:3px;
@@ -41,12 +41,12 @@
 .btn-higlight,
 .btn-download,
 .btn-more{
-  border:1px solid $color__border-gray--light;
+  border:1px solid $color__training--search--border;
   background-color:#fff;
   color:$color__blue-gobelins;
   text-transform:uppercase;
   padding:10px 15px;
-  transition: background-color $animation__params;
+  transition: background-color $animation__params, border-color $animation__params;
   font-size:0.875rem;
   letter-spacing:1px;
   font-family:$font__platform--medium;
@@ -54,7 +54,8 @@
   text-align:center;
   
   &:hover{
-    background-color:$color__blue-gobelins;
+    background-color: $color__blue-gobelins;
+    border-color: $color__blue-gobelins;
     color:#fff;
     text-decoration:none;
   }
@@ -153,6 +154,8 @@
   &:hover{
     background-color:$color__bg-white;
     color:$color__text-dark;
+    text-decoration:none;
+    border:1px solid $color__bg-white;
   }
 }
 /***************** btns transparent ****************/
@@ -260,10 +263,11 @@
 	padding:0;
 	
 	&:before{
-		content:'x';
+		content:"\2715";
 		display:inline-block;
 		padding-right:5px;
-		font-size:1rem;
+		font-size:0.825rem;
+  font-weight:bold;
 	}
 }
 
