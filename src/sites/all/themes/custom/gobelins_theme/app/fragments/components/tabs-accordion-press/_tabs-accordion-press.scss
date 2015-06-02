@@ -81,7 +81,7 @@
  
   
   .bloc-content{
-   .filter-actus{
+   .filter-press{
     font-family: 'Platform-Medium';
     text-transform:uppercase;
     letter-spacing:1px;
@@ -162,8 +162,9 @@
     }
    }
    &.small{
-    width:73%;
+    width:76%;
     float:left;
+    padding-right:40px;
    }
   }  
 }
@@ -191,7 +192,7 @@
   .icon-left-small,
   .icon-right-small{
    position:absolute;
-   font-size:1rem;
+   font-size:1.125rem;
   }
   
   .icon-left-small{
@@ -216,16 +217,13 @@
    padding:20px 0;
    border-bottom:1px solid $color__border__gray;
    .date{
-    color:$color__blue-dark;
+    color:$color__blue-gobelins;
     font-size:1.625rem;
     font-family: 'Platform-Light';
     margin-bottom:12px;
-    &:after{
-     content:'';
-     border-bottom:1px solid $color__blue-dark;
-     width:20%;
-     display:block;
-    }
+    border-bottom:1px solid $color__blue-gobelins;
+    display:inline-block;
+   
    }
    
    .detail{
@@ -235,17 +233,71 @@
     letter-spacing:1px;
     padding-bottom:15px;
    }
-   
-   .btn-agenda{
-    color:$color__blue-dark;
-    font-family: 'Platform-Medium';
-    font-size:0.875rem;
-    .icons-calendar{
-     color:$color__blue-dark;
-    }
-   }
+  
   }
  
  }
+}
+
+/***Communiqués press****/
+
+.list-communique-press{
+ .item-communique{
+  padding:20px 0;
+  border-bottom:1px solid $color__border__gray;
+  .item-communique__image{
+   display:inline-block;
+   width:25%;
+   vertical-align:top;
+  }
+  
+  .item-communique__description{
+   display:inline-block;
+   width:71%;
+   margin-left:20px;
+   vertical-align:top;
+   h3{
+    font-family: 'Platform-Medium';
+    font-size:1.125rem;
+    color:$color__slideshow--training;
+    letter-spacing:1px;
+    padding-bottom:5px;
+   }
+   
+   .date{
+    color:$color__border-gray;
+    font-size:1rem;
+    padding-bottom:10px;
+   }
+   
+   .intro{
+    color:$color__border-gray;
+    font-size:0.875rem;
+    font-family: 'Neuzeit';
+   }
+  }
+ }
+ &.gobelins{
+   .item-communique__description{
+    width:100%;
+    margin:0;
+    .name-newspaper{
+     color:$color__blue-gobelins;
+     font-size:1rem;
+     display:inline-block;
+     text-decoration:underline;
+     &:after{
+      content:',';
+      color:$color__border-gray;
+      display:inline-block;
+      padding-left:2px;
+      
+     }
+    }
+    .date{
+     display:inline-block;
+    }
+   }
+  }
 }
 

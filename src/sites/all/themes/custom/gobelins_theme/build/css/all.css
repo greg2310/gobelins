@@ -3735,29 +3735,29 @@ body.is-open {
   }
 }
 /* line 84, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
-.tabs-accordion-press .bloc-content .filter-actus {
+.tabs-accordion-press .bloc-content .filter-press {
   font-family: 'Platform-Medium';
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 /* line 88, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
-.tabs-accordion-press .bloc-content .filter-actus .form-item {
+.tabs-accordion-press .bloc-content .filter-press .form-item {
   display: inline-block;
   margin-left: 40px;
 }
 /* line 91, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
-.tabs-accordion-press .bloc-content .filter-actus .form-item label {
+.tabs-accordion-press .bloc-content .filter-press .form-item label {
   font-family: 'Neuzeit';
   text-transform: none;
   margin-right: 10px;
 }
 /* line 96, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
-.tabs-accordion-press .bloc-content .filter-actus .form-item select {
+.tabs-accordion-press .bloc-content .filter-press .form-item select {
   font-family: arial;
   font-size: 0.825rem;
 }
 /* line 101, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
-.tabs-accordion-press .bloc-content .filter-actus .form-item:first-child {
+.tabs-accordion-press .bloc-content .filter-press .form-item:first-child {
   margin-left: 10px;
 }
 /* line 107, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
@@ -3821,16 +3821,17 @@ body.is-open {
 }
 /* line 164, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .tabs-accordion-press .bloc-content.small {
-  width: 73%;
+  width: 76%;
   float: left;
+  padding-right: 40px;
 }
 
 /** Agenda press***/
-/* line 172, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 173, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .block-agenda-press {
   margin-left: 76%;
 }
-/* line 175, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 176, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .block-agenda-press .title {
   font-family: 'Platform-Medium';
   text-transform: uppercase;
@@ -3839,7 +3840,7 @@ body.is-open {
   color: #323232;
   letter-spacing: 1px;
 }
-/* line 184, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 185, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .block-agenda-press .select-month {
   padding: 20px 0;
   text-transform: uppercase;
@@ -3848,47 +3849,42 @@ body.is-open {
   text-align: center;
   border-bottom: 1px solid #e7e8e8;
 }
-/* line 191, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 192, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .block-agenda-press .select-month .icon-left-small,
 .block-agenda-press .select-month .icon-right-small {
   position: absolute;
-  font-size: 1rem;
+  font-size: 1.125rem;
 }
-/* line 197, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 198, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .block-agenda-press .select-month .icon-left-small {
   left: 0;
 }
-/* line 201, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 202, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .block-agenda-press .select-month .icon-right-small {
   right: 0;
 }
-/* line 205, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 206, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .block-agenda-press .select-month .month {
   font-family: 'Platform-Light';
   font-size: 2rem;
   display: inline-block;
   vertical-align: middle;
 }
-/* line 215, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 216, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .block-agenda-press .list-events .item-event {
   padding: 20px 0;
   border-bottom: 1px solid #e7e8e8;
 }
-/* line 218, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 219, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .block-agenda-press .list-events .item-event .date {
-  color: #3D59A4;
+  color: #0045e5;
   font-size: 1.625rem;
   font-family: 'Platform-Light';
   margin-bottom: 12px;
+  border-bottom: 1px solid #0045e5;
+  display: inline-block;
 }
-/* line 223, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
-.block-agenda-press .list-events .item-event .date:after {
-  content: '';
-  border-bottom: 1px solid #3D59A4;
-  width: 20%;
-  display: block;
-}
-/* line 231, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 229, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .block-agenda-press .list-events .item-event .detail {
   font-family: 'Platform-Medium';
   color: #333333;
@@ -3896,15 +3892,68 @@ body.is-open {
   letter-spacing: 1px;
   padding-bottom: 15px;
 }
-/* line 239, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
-.block-agenda-press .list-events .item-event .btn-agenda {
-  color: #3D59A4;
-  font-family: 'Platform-Medium';
-  font-size: 0.875rem;
+
+/***Communiqu├®s press****/
+/* line 245, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.list-communique-press .item-communique {
+  padding: 20px 0;
+  border-bottom: 1px solid #e7e8e8;
 }
-/* line 243, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
-.block-agenda-press .list-events .item-event .btn-agenda .icons-calendar, .block-agenda-press .list-events .item-event .btn-agenda .btn-agenda:before {
-  color: #3D59A4;
+/* line 248, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.list-communique-press .item-communique .item-communique__image {
+  display: inline-block;
+  width: 25%;
+  vertical-align: top;
+}
+/* line 254, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.list-communique-press .item-communique .item-communique__description {
+  display: inline-block;
+  width: 71%;
+  margin-left: 20px;
+  vertical-align: top;
+}
+/* line 259, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.list-communique-press .item-communique .item-communique__description h3 {
+  font-family: 'Platform-Medium';
+  font-size: 1.125rem;
+  color: #333333;
+  letter-spacing: 1px;
+  padding-bottom: 5px;
+}
+/* line 267, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.list-communique-press .item-communique .item-communique__description .date {
+  color: #666666;
+  font-size: 1rem;
+  padding-bottom: 10px;
+}
+/* line 273, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.list-communique-press .item-communique .item-communique__description .intro {
+  color: #666666;
+  font-size: 0.875rem;
+  font-family: 'Neuzeit';
+}
+/* line 281, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.list-communique-press.gobelins .item-communique__description {
+  width: 100%;
+  margin: 0;
+}
+/* line 284, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.list-communique-press.gobelins .item-communique__description .name-newspaper {
+  color: #0045e5;
+  font-size: 1rem;
+  display: inline-block;
+  text-decoration: underline;
+}
+/* line 289, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.list-communique-press.gobelins .item-communique__description .name-newspaper:after {
+  content: ',';
+  color: #666666;
+  display: inline-block;
+  padding-left: 2px;
+}
+/* line 297, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.list-communique-press.gobelins .item-communique__description .date {
+  display: inline-block;
 }
 
 /* Content partials */
@@ -6358,7 +6407,7 @@ body.is-open {
 /* line 1, ../../app/fragments/content/block-press-details/_block-press-details.scss */
 .block-press-details {
   background-color: #f2f2f2;
-  padding-top: 0;
+  padding: 0;
 }
 /* line 5, ../../app/fragments/content/block-press-details/_block-press-details.scss */
 .block-press-details .tabs-accordion {
