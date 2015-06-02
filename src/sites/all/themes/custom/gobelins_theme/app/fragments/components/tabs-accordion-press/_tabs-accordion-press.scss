@@ -117,7 +117,7 @@
     
     .item-actus{
      display:inline-block;
-     margin-left:37px;
+     margin-left:35px;
      width:30%;
      vertical-align:top;
      &:first-child{
@@ -162,7 +162,7 @@
     }
    }
    &.small{
-    width:76%;
+    width:73%;
     float:left;
    }
   }  
@@ -170,7 +170,7 @@
 
 /** Agenda press***/
 .block-agenda-press{
- margin-left:79%;
+ margin-left:76%;
  
  .title{
   font-family: 'Platform-Medium';
@@ -220,6 +220,12 @@
     font-size:1.625rem;
     font-family: 'Platform-Light';
     margin-bottom:12px;
+    &:after{
+     content:'';
+     border-bottom:1px solid $color__blue-dark;
+     width:20%;
+     display:block;
+    }
    }
    
    .detail{
@@ -230,8 +236,9 @@
     padding-bottom:15px;
    }
    
-   .btn-higlight{
+   .btn-agenda{
     color:$color__blue-dark;
+    font-family: 'Platform-Medium';
     font-size:0.875rem;
     .icons-calendar{
      color:$color__blue-dark;
