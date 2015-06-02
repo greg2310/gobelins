@@ -174,9 +174,6 @@
     @extend .ul-styled;
   }
 }
-.breadcrumb + .block-banner{
-  margin-top:-55px;
-}
 
 @media screen and (max-width: $width__xs - 1px) {
   .intro-link{

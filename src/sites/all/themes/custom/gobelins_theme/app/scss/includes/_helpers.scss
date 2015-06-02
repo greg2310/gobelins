@@ -48,7 +48,7 @@
   padding:10px 15px;
   transition: background-color $animation__params;
   font-size:0.875rem;
-  letter-spacing:2px;
+  letter-spacing:1px;
   font-family:$font__platform--medium;
   display:inline-block;
   text-align:center;
@@ -140,7 +140,7 @@
   text-transform:uppercase;
   font-family:$font__platform--medium;
   font-size:0.875rem;
-  letter-spacing:2px;
+  letter-spacing:1px;
   padding:12px 20px;
   transition: background-color $animation__params;
   
@@ -165,7 +165,7 @@
   text-transform:uppercase;
   font-family:$font__platform--medium;
   font-size:0.875rem;
-  letter-spacing:2px;
+  letter-spacing:1px;
   padding:12px 20px;
   transition: background-color $animation__params;
   
@@ -224,7 +224,7 @@
   background-color:transparent;
   color:$color__bg-white;
   padding:10px 15px;
-  letter-spacing:2px;
+  letter-spacing:1px;
   margin-top:10px;
   display:inline-block;
 } 

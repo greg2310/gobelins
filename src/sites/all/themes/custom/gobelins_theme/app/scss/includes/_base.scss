@@ -39,9 +39,11 @@ body{
 a{
   text-decoration:none;
   color:$color__text;
+  border-bottom:1px solid transparent;
   
   &:hover{
-    text-decoration:underline;
+    text-decoration:none;
+    border-color:$color__text;
   }
 }
 a[href*="mailto:"],

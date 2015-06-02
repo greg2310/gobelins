@@ -6,7 +6,11 @@
   require('../../../bower_components/colorbox/jquery.colorbox.js');
 
   $(function(){
-    $('.js-popin--content').colorbox({inline:true, width: "910px"});
+    if (screen.width > 480){
+      $('.js-popin--content').colorbox({inline:true, width: "910px"});
+    }else{
+      $('.js-popin--content').colorbox({inline:true, width: "400px"});
+    }
   });
   
 })();
