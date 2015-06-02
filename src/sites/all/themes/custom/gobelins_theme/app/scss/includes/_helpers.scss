@@ -41,14 +41,14 @@
 .btn-higlight,
 .btn-download,
 .btn-more{
-  border:1px solid $color__border-gray--light;
+  border:1px solid $color__training--search--border;
   background-color:#fff;
   color:$color__blue-gobelins;
   text-transform:uppercase;
   padding:10px 15px;
   transition: background-color $animation__params;
   font-size:0.875rem;
-  letter-spacing:2px;
+  letter-spacing:1px;
   font-family:$font__platform--medium;
   display:inline-block;
   text-align:center;
@@ -140,7 +140,7 @@
   text-transform:uppercase;
   font-family:$font__platform--medium;
   font-size:0.875rem;
-  letter-spacing:2px;
+  letter-spacing:1px;
   padding:12px 20px;
   transition: background-color $animation__params;
   
@@ -153,6 +153,8 @@
   &:hover{
     background-color:$color__bg-white;
     color:$color__text-dark;
+    text-decoration:none;
+    border:1px solid $color__bg-white;
   }
 }
 /***************** btns transparent ****************/
@@ -224,7 +226,7 @@
   background-color:transparent;
   color:$color__bg-white;
   padding:10px 15px;
-  letter-spacing:2px;
+  letter-spacing:1px;
   margin-top:10px;
   display:inline-block;
 } 
@@ -260,10 +262,11 @@
 	padding:0;
 	
 	&:before{
-		content:'x';
+		content:"\2715";
 		display:inline-block;
 		padding-right:5px;
-		font-size:1rem;
+		font-size:0.825rem;
+  font-weight:bold;
 	}
 }
 

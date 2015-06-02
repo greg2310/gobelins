@@ -4,7 +4,7 @@
 	.infos-contact,
 	.btn-action{
 		display:inline-block;
-		vertical-align:top;
+		vertical-align:middle;
 		width:33%;
 		margin-left:20px;
 	}
@@ -13,14 +13,28 @@
 		text-align:left;
 		margin-left:0;
 		line-height:normal;
+  font-family: 'Platform-Medium';
+  letter-spacing:1px;
+  font-size:1.125rem;
+  display:inline-block;
+  vertical-align:middle;
+  margin:0;
 		
 		span{
 			display:block;
 			font-size:0.875rem;
+   color:$color__text;
+   text-transform:lowercase;
+   font-family:arial;
+   letter-spacing:0;
+   &:first-letter{
+    text-transform:capitalize;
+   }
 		}
 		
 		@media screen and (max-width: $width__m) {
 			width:100%;
+   margin-bottom:25px;
 		}
   
   @media screen and (max-width: $width__xs - 1px) {
@@ -42,7 +56,7 @@
 		@media screen and (max-width: $width__m) {
 			width:65%;
 			margin-left:0;
-      vertical-align:middle;
+   vertical-align:middle;
 		}
   
   @media screen and (max-width: $width__xs - 1px) {
@@ -79,6 +93,7 @@
 			.tel,
 			.name{
 				display:block;
+    padding-bottom:5px;
 			}
 			
 			.tel{
@@ -92,7 +107,6 @@
 	.btn-action{
 		text-align:right;
 		width:31%;
-		margin-top:2%;
   vertical-align:middle;
   margin-left:0;
   @media screen and (max-width: $width__m) {
@@ -104,7 +118,12 @@
    text-align:center;
   }
 		.btn-mail{
-			color:$color__text-dark;
+			/*color:$color__text-dark;*/
+   color:$color__blue-gobelins;
+   &:hover{
+    background:$color__blue-gobelins;
+    color:$color__bg-white;
+   }
 		}
 	}
 }
