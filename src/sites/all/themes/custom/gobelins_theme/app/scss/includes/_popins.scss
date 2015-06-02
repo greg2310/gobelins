@@ -1,3 +1,6 @@
+#cboxTitle {
+  display: none;
+}
 #cboxClose{
   @extend .btn-close;
   position:absolute;
@@ -7,6 +10,11 @@
   height:24px;
   overflow:hidden;
   background:transparent;
+  padding: 0;
+  
+  &:hover:before {
+    color: $color__blue-gobelins;
+  }
 }
 #cboxOverlay{
   height: 100%;
@@ -41,4 +49,60 @@
   margin-bottom:6px;
   color:$color__text-dark;
 }
-/*popin--media*/
+
+/*popin--video*/
+#cboxLoadedContent iframe {
+  width: 100%;
+  display: block;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+#colorbox.is-video #cboxClose {
+  top: -30px;
+  right: 0;
+  
+  &:before {
+    color: #fff;
+  }
+  
+  &:hover:before {
+    color: $color__blue-gobelins;
+  }
+}
+#colorbox.is-video .popin--text {
+  padding: 25px 30px 0;
+}
+#colorbox.is-video .training-summary__title {
+  padding-top: 0;
+}
+
+/*popin--gallery*/
+.cboxPhoto {
+  display: block;
+}
+#cboxCurrent {
+  display: none !important;
+}
+
+#cboxPrevious {
+  @extend [class^="icon-"];
+  @extend .icon-left-small;
+  @extend .btn-round--light;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: -50px;
+  margin-top: -20px;
+}
+
+#cboxNext {
+  @extend [class^="icon-"];
+  @extend .icon-right-small;
+  @extend .btn-round--light;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  right: -50px;
+  margin-top: -20px;
+}
