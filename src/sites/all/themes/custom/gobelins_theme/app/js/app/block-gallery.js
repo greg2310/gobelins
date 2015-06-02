@@ -75,7 +75,7 @@
       max.col = Math.max(max.col, data.width);
       max.line = Math.max(max.line, data.height);
     }.bind(this));
-    this.totalLines = totalBlocks / this.totalCols;
+    this.totalLines = Math.ceil(totalBlocks / this.totalCols);
     
     /* Write styles. */
     style = '';
