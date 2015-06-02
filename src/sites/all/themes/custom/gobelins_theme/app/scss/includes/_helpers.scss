@@ -131,7 +131,7 @@
 }
 
 /***************** btns white ****************/
-.btn-mail{
+.btn-invert{
   display:inline-block;
   border:1px solid $color__border-gray;
   background-color:transparent;
@@ -144,12 +144,6 @@
   padding:12px 20px;
   transition: background-color $animation__params;
   
-  &:after{
-    content: '\e800';
-    font-family:"fontello";
-    margin-left:10px;
-  }
-  
   &:hover{
     background-color:$color__bg-white;
     color:$color__text-dark;
@@ -157,6 +151,16 @@
     border:1px solid $color__bg-white;
   }
 }
+.btn-mail {
+  @extend .btn-invert;
+  
+  &:after{
+    content: '\e800';
+    font-family:"fontello";
+    margin-left:10px;
+  }
+}
+
 /***************** btns transparent ****************/
 .btn-agenda{
   display:inline-block;
@@ -257,17 +261,30 @@
 
 /***************** reset ****************/
 .btn-remove{
-	color:$color__border-gray;
-	font-size:0.875rem;
-	padding:0;
-	
-	&:before{
-		content:"\2715";
-		display:inline-block;
-		padding-right:5px;
-		font-size:0.825rem;
+<<<<<<< HEAD
+  color:$color__border-gray;
+  font-size:0.875rem;
+  padding:0;
+  
+  &:before{
+    content:"\2715";
+    display:inline-block;
+    padding-right:5px;
+    font-size:0.825rem;
   font-weight:bold;
-	}
+  }
+=======
+  color:$color__border-gray;
+  font-size:0.875rem;
+  padding:0;
+  
+  &:before{
+    content:'x';
+    display:inline-block;
+    padding-right:5px;
+    font-size:1rem;
+  }
+>>>>>>> block-galelry
 }
 
 /**/

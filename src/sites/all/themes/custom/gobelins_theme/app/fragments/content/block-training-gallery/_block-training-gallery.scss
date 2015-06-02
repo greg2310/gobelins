@@ -1,3 +1,63 @@
+/*******************\
+** Gallery styles. **
+\*******************/
 .block-training-gallery {
-  background-color:#D1D1D1;
+  background-color: #000;
+  padding: 0;
+}
+.block-gallery__wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.block-gallery__stamp--content {
+  color: #fff;
+  padding: 10% 12.5% 0 12.5%;
+  
+  h2 {
+    font-size: 2em;
+    font-family: $font__platform--light;
+    letter-spacing: 1px;
+    line-height: 1em;
+    text-transform: uppercase;
+  }
+  
+  p {
+    font-size: 1em;
+    margin: 8% 0;
+  }
+  
+  .btn-invert {
+    margin-bottom: 2em;
+    font-size: 0.8em;
+    padding: 5% 8%;
+  }
+  
+  .btn-round--light {
+    width: 19.05%;
+    height: 19.05%;
+    font-size: 1em;
+    height: 100%;
+    line-height: 220%;
+  }
+}
+.block-gallery__grid {
+  position: relative;
+  transition: left $animation__params;
+  left: 0;
+  width: 100%;
+  overflow: visible;
+}
+.block-gallery__item,
+.block-gallery__item {
+  display: block;
+  position: absolute;
+}
+.block-gallery__item > img,
+.block-gallery__item > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.block-gallery__stamp {
+  background-color: #000;
 }
