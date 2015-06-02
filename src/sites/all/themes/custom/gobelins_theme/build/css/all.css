@@ -724,8 +724,8 @@ th {
 /**/
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-bg__rubric--hover, .main-menu--desktop .rubric__img:after {
-  background: url('../images/icons-seaf67ec552.png') 0 0 no-repeat;
-  background-size: 30px 340px;
+  background: url('../images/icons-s1b8093b7dd.png') 0 0 no-repeat;
+  background-size: 30px 348px;
   display: inline-block;
   width: 29px;
   height: 29px;
@@ -733,8 +733,8 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-like-gray {
-  background: url('../images/icons-seaf67ec552.png') 0 -230px no-repeat;
-  background-size: 30px 340px;
+  background: url('../images/icons-s1b8093b7dd.png') 0 -238px no-repeat;
+  background-size: 30px 348px;
   display: inline-block;
   width: 11px;
   height: 9px;
@@ -742,8 +742,8 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-like-blue {
-  background: url('../images/icons-seaf67ec552.png') 0 -221px no-repeat;
-  background-size: 30px 340px;
+  background: url('../images/icons-s1b8093b7dd.png') 0 -229px no-repeat;
+  background-size: 30px 348px;
   display: inline-block;
   width: 11px;
   height: 9px;
@@ -751,8 +751,8 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-press {
-  background: url('../images/icons-seaf67ec552.png') 0 -270px no-repeat;
-  background-size: 30px 340px;
+  background: url('../images/icons-s1b8093b7dd.png') 0 -278px no-repeat;
+  background-size: 30px 348px;
   display: inline-block;
   width: 12px;
   height: 14px;
@@ -760,8 +760,8 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-btn-menu {
-  background: url('../images/icons-seaf67ec552.png') 0 -29px no-repeat;
-  background-size: 30px 340px;
+  background: url('../images/icons-s1b8093b7dd.png') 0 -29px no-repeat;
+  background-size: 30px 348px;
   display: inline-block;
   width: 20px;
   height: 18px;
@@ -769,8 +769,8 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-calendar, .btn-agenda:before {
-  background: url('../images/icons-seaf67ec552.png') 0 -47px no-repeat;
-  background-size: 30px 340px;
+  background: url('../images/icons-s1b8093b7dd.png') 0 -55px no-repeat;
+  background-size: 30px 348px;
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -778,8 +778,8 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-list {
-  background: url('../images/icons-seaf67ec552.png') 0 -239px no-repeat;
-  background-size: 30px 340px;
+  background: url('../images/icons-s1b8093b7dd.png') 0 -247px no-repeat;
+  background-size: 30px 348px;
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -787,8 +787,8 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-public {
-  background: url('../images/icons-seaf67ec552.png') 0 -298px no-repeat;
-  background-size: 30px 340px;
+  background: url('../images/icons-s1b8093b7dd.png') 0 -306px no-repeat;
+  background-size: 30px 348px;
   display: inline-block;
   width: 17px;
   height: 14px;
@@ -796,8 +796,8 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-checked {
-  background: url('../images/icons-seaf67ec552.png') 0 -91px no-repeat;
-  background-size: 30px 340px;
+  background: url('../images/icons-s1b8093b7dd.png') 0 -99px no-repeat;
+  background-size: 30px 348px;
   display: inline-block;
   width: 13px;
   height: 9px;
@@ -805,8 +805,8 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-euro {
-  background: url('../images/icons-seaf67ec552.png') 0 -150px no-repeat;
-  background-size: 30px 340px;
+  background: url('../images/icons-s1b8093b7dd.png') 0 -158px no-repeat;
+  background-size: 30px 348px;
   display: inline-block;
   width: 12px;
   height: 13px;
@@ -814,8 +814,8 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-location {
-  background: url('../images/icons-seaf67ec552.png') 0 -254px no-repeat;
-  background-size: 30px 340px;
+  background: url('../images/icons-s1b8093b7dd.png') 0 -262px no-repeat;
+  background-size: 30px 348px;
   display: inline-block;
   width: 12px;
   height: 16px;
@@ -823,8 +823,8 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-doc, .list-downloads--mini li:before {
-  background: url('../images/icons-seaf67ec552.png') 0 -100px no-repeat;
-  background-size: 30px 340px;
+  background: url('../images/icons-s1b8093b7dd.png') 0 -108px no-repeat;
+  background-size: 30px 348px;
   display: inline-block;
   width: 14px;
   height: 18px;
@@ -839,8 +839,8 @@ th {
 .training-video-audio .breadcrumb .icons-home-gray,
 .training-cross-media .breadcrumb .icons-home-gray,
 .press .breadcrumb .icons-home-gray {
-  background: url('../images/icons-seaf67ec552.png') 0 -198px no-repeat;
-  background-size: 30px 340px;
+  background: url('../images/icons-s1b8093b7dd.png') 0 -206px no-repeat;
+  background-size: 30px 348px;
   display: inline-block;
   width: 12px;
   height: 13px;
@@ -848,8 +848,8 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-home-gray {
-  background: url('../images/icons-seaf67ec552.png') 0 -185px no-repeat;
-  background-size: 30px 340px;
+  background: url('../images/icons-s1b8093b7dd.png') 0 -193px no-repeat;
+  background-size: 30px 348px;
   display: inline-block;
   width: 12px;
   height: 13px;
@@ -857,8 +857,8 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-download, .btn-download:after {
-  background: url('../images/icons-seaf67ec552.png') 0 -134px no-repeat;
-  background-size: 30px 340px;
+  background: url('../images/icons-s1b8093b7dd.png') 0 -142px no-repeat;
+  background-size: 30px 348px;
   display: inline-block;
   width: 14px;
   height: 16px;
@@ -866,8 +866,8 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-download-white, .btn-download:hover:after {
-  background: url('../images/icons-seaf67ec552.png') 0 -118px no-repeat;
-  background-size: 30px 340px;
+  background: url('../images/icons-s1b8093b7dd.png') 0 -126px no-repeat;
+  background-size: 30px 348px;
   display: inline-block;
   width: 14px;
   height: 16px;
@@ -875,8 +875,8 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-print {
-  background: url('../images/icons-seaf67ec552.png') 0 -284px no-repeat;
-  background-size: 30px 340px;
+  background: url('../images/icons-s1b8093b7dd.png') 0 -292px no-repeat;
+  background-size: 30px 348px;
   display: inline-block;
   width: 16px;
   height: 14px;
@@ -884,8 +884,8 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-checkbox, input[type="checkbox"] + label::before {
-  background: url('../images/icons-seaf67ec552.png') 0 -77px no-repeat;
-  background-size: 30px 340px;
+  background: url('../images/icons-s1b8093b7dd.png') 0 -85px no-repeat;
+  background-size: 30px 348px;
   display: inline-block;
   width: 14px;
   height: 14px;
@@ -893,8 +893,8 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-checkbox-checked, input[type="checkbox"]:checked + label::before {
-  background: url('../images/icons-seaf67ec552.png') 0 -63px no-repeat;
-  background-size: 30px 340px;
+  background: url('../images/icons-s1b8093b7dd.png') 0 -71px no-repeat;
+  background-size: 30px 348px;
   display: inline-block;
   width: 14px;
   height: 14px;
@@ -902,8 +902,8 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-radio, input[type="radio"] + label::before {
-  background: url('../images/icons-seaf67ec552.png') 0 -326px no-repeat;
-  background-size: 30px 340px;
+  background: url('../images/icons-s1b8093b7dd.png') 0 -334px no-repeat;
+  background-size: 30px 348px;
   display: inline-block;
   width: 14px;
   height: 14px;
@@ -911,8 +911,8 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-radio-checked, input[type="radio"]:checked + label::before {
-  background: url('../images/icons-seaf67ec552.png') 0 -312px no-repeat;
-  background-size: 30px 340px;
+  background: url('../images/icons-s1b8093b7dd.png') 0 -320px no-repeat;
+  background-size: 30px 348px;
   display: inline-block;
   width: 14px;
   height: 14px;
@@ -1535,23 +1535,13 @@ input[type="submit"]:hover,
 }
 
 /*list style*/
-<<<<<<< HEAD
-/* line 276, ../../app/scss/includes/_helpers.scss */
+/* line 280, ../../app/scss/includes/_helpers.scss */
 .ul-styled li, .tabs-accordion .content ul li, .tabs-accordion-press .content ul li, .item-trainings__description .info__detailes li, .training-summary__description ul li {
   padding-left: 10px;
   position: relative;
 }
-/* line 280, ../../app/scss/includes/_helpers.scss */
-.ul-styled li:before, .tabs-accordion .content ul li:before, .tabs-accordion-press .content ul li:before, .item-trainings__description .info__detailes li:before, .training-summary__description ul li:before {
-=======
-/* line 280, ../../app/scss/includes/_helpers.scss */
-.ul-styled li, .tabs-accordion .content ul li, .item-trainings__description .info__detailes li, .training-summary__description ul li {
-  padding-left: 10px;
-  position: relative;
-}
 /* line 284, ../../app/scss/includes/_helpers.scss */
-.ul-styled li:before, .tabs-accordion .content ul li:before, .item-trainings__description .info__detailes li:before, .training-summary__description ul li:before {
->>>>>>> bb70d2213abfdf6520d91fabbeffb0ecc2dc40de
+.ul-styled li:before, .tabs-accordion .content ul li:before, .tabs-accordion-press .content ul li:before, .item-trainings__description .info__detailes li:before, .training-summary__description ul li:before {
   content: '\2022';
   position: absolute;
   left: 0;
@@ -3830,9 +3820,79 @@ body.is-open {
   width: 76%;
   float: left;
 }
-/* line 169, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
-.tabs-accordion-press .block-agenda-press {
+
+/** Agenda press***/
+/* line 172, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.block-agenda-press {
   margin-left: 79%;
+}
+/* line 175, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.block-agenda-press .title {
+  font-family: 'Platform-Medium';
+  text-transform: uppercase;
+  border-bottom: 2px solid #040607;
+  padding-bottom: 7px;
+  color: #323232;
+  letter-spacing: 1px;
+}
+/* line 184, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.block-agenda-press .select-month {
+  padding: 20px 0;
+  text-transform: uppercase;
+  color: #323232;
+  position: relative;
+  text-align: center;
+  border-bottom: 1px solid #e7e8e8;
+}
+/* line 191, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.block-agenda-press .select-month .icon-left-small,
+.block-agenda-press .select-month .icon-right-small {
+  position: absolute;
+  font-size: 1rem;
+}
+/* line 197, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.block-agenda-press .select-month .icon-left-small {
+  left: 0;
+}
+/* line 201, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.block-agenda-press .select-month .icon-right-small {
+  right: 0;
+}
+/* line 205, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.block-agenda-press .select-month .month {
+  font-family: 'Platform-Light';
+  font-size: 2rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 215, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.block-agenda-press .list-events .item-event {
+  padding: 20px 0;
+  border-bottom: 1px solid #e7e8e8;
+}
+/* line 218, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.block-agenda-press .list-events .item-event .date {
+  color: #3D59A4;
+  font-size: 1.625rem;
+  font-family: 'Platform-Light';
+  margin-bottom: 12px;
+}
+/* line 225, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.block-agenda-press .list-events .item-event .detail {
+  font-family: 'Platform-Medium';
+  color: #333333;
+  font-size: 1.112rem;
+  letter-spacing: 1px;
+  padding-bottom: 15px;
+}
+/* line 233, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.block-agenda-press .list-events .item-event .btn-higlight, .block-agenda-press .list-events .item-event input[type="submit"], .block-agenda-press .list-events .item-event .main-menu--search button, .main-menu--search .block-agenda-press .list-events .item-event button {
+  color: #3D59A4;
+  font-size: 0.875rem;
+}
+/* line 236, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.block-agenda-press .list-events .item-event .btn-higlight .icons-calendar, .block-agenda-press .list-events .item-event input[type="submit"] .icons-calendar, .block-agenda-press .list-events .item-event .main-menu--search button .icons-calendar, .main-menu--search .block-agenda-press .list-events .item-event button .icons-calendar, .block-agenda-press .list-events .item-event .btn-higlight .btn-agenda:before, .block-agenda-press .list-events .item-event input[type="submit"] .btn-agenda:before, .block-agenda-press .list-events .item-event .main-menu--search button .btn-agenda:before, .main-menu--search .block-agenda-press .list-events .item-event button .btn-agenda:before {
+  color: #3D59A4;
 }
 
 /* Content partials */

@@ -165,9 +165,80 @@
     width:76%;
     float:left;
    }
-  }
-  .block-agenda-press{
-   margin-left:79%;
+  }  
+}
+
+/** Agenda press***/
+.block-agenda-press{
+ margin-left:79%;
+ 
+ .title{
+  font-family: 'Platform-Medium';
+  text-transform:uppercase;
+  border-bottom:2px solid $color__border__dark;
+  padding-bottom:7px;
+  color:$color__text-dark;
+  letter-spacing:1px;
+ }
+ 
+ .select-month{
+  padding:20px 0;
+  text-transform:uppercase;
+  color:$color__text-dark;
+  position:relative;
+  text-align:center;
+  border-bottom:1px solid $color__border__gray;
+  .icon-left-small,
+  .icon-right-small{
+   position:absolute;
+   font-size:1rem;
   }
   
+  .icon-left-small{
+   left:0;
+  }
+  
+  .icon-right-small{
+   right:0;
+  }
+  
+  .month{
+   font-family: 'Platform-Light';
+   font-size:2rem;
+   display:inline-block;
+   vertical-align:middle;
+  
+  }
+ }
+ 
+ .list-events{
+  .item-event{
+   padding:20px 0;
+   border-bottom:1px solid $color__border__gray;
+   .date{
+    color:$color__blue-dark;
+    font-size:1.625rem;
+    font-family: 'Platform-Light';
+    margin-bottom:12px;
+   }
+   
+   .detail{
+    font-family: 'Platform-Medium';
+    color:$color__slideshow--training;
+    font-size:1.112rem;
+    letter-spacing:1px;
+    padding-bottom:15px;
+   }
+   
+   .btn-higlight{
+    color:$color__blue-dark;
+    font-size:0.875rem;
+    .icons-calendar{
+     color:$color__blue-dark;
+    }
+   }
+  }
+ 
+ }
 }
+
