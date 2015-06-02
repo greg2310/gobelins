@@ -12,6 +12,9 @@
   @media screen and (max-width: $width__s) {
     padding:30px 60px;
   }
+  @media screen and (max-width: $width__xs) {
+    padding:30px 15px;
+  }
  
   .author-name{
     text-transform:uppercase;
@@ -23,6 +26,10 @@
   .author-info{
     font-family:$font__neuzeit;
     margin:0 100px;
+    
+    @media screen and (max-width: $width__xs) {
+      margin:0;
+    }
   }
   .witness{
     font-family:$font__platform--medium;
@@ -30,5 +37,6 @@
     font-size:1.5rem;
     line-height:1.2em;
     margin-bottom:15px;
+    color: $color__text-dark;
   }
 }

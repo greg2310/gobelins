@@ -26,7 +26,11 @@
         return true;
       },
       toggleOptions: {
-        duration: 200
+        duration: 200,
+        complete: function() {
+          var isOpen = $(this).triggerHandler('isOpen');
+          isOpen && $(this).find('.js-contentToggle__content-lev3').eq(0).trigger('open');
+        }
       }
     });
     
@@ -68,11 +72,7 @@
       globalClose: true,
       triggerSelector: '.js-btn-menu-mob',
       contentSelector: '.js-aside-move',
-      toggleProperties: {},
-      beforeCallback: function() {
-        $mobileSubMenu.trigger('close');
-        return true;
-      }
+      toggleProperties: {}
     });
     
   });

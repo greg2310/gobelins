@@ -461,7 +461,11 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
         return true;
       },
       toggleOptions: {
-        duration: 200
+        duration: 200,
+        complete: function() {
+          var isOpen = $(this).triggerHandler('isOpen');
+          isOpen && $(this).find('.js-contentToggle__content-lev3').eq(0).trigger('open');
+        }
       }
     });
     
@@ -503,11 +507,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
       globalClose: true,
       triggerSelector: '.js-btn-menu-mob',
       contentSelector: '.js-aside-move',
-      toggleProperties: {},
-      beforeCallback: function() {
-        $mobileSubMenu.trigger('close');
-        return true;
-      }
+      toggleProperties: {}
     });
     
   });
@@ -522,7 +522,11 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   require('../../../bower_components/colorbox/jquery.colorbox.js');
 
   $(function(){
-    $('.js-popin--content').colorbox({inline:true, width: "910px"});
+    if (screen.width > 480){
+      $('.js-popin--content').colorbox({inline:true, width: "910px"});
+    }else{
+      $('.js-popin--content').colorbox({inline:true, width: "400px"});
+    }
   });
   
 })();
@@ -716,17 +720,17 @@ var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments
 with(obj||{}){
 __p+='';
  for (var i=0; i < items.length; i++) { 
-__p+='\n  <a\n    href="'+
+__p+='\r\n  <a\r\n    href="'+
 ((__t=( items[i].href ))==null?'':__t)+
-'"\n    title="'+
+'"\r\n    title="'+
 ((__t=( items[i].title ))==null?'':__t)+
-'"\n    class="aside-gallery__item aside-gallery__item--'+
+'"\r\n    class="aside-gallery__item aside-gallery__item--'+
 ((__t=( items[i].columns ))==null?'':__t)+
-' js-masonry--aside-gallery__item"\n  >\n    <img src="'+
+' js-masonry--aside-gallery__item"\r\n  >\r\n    <img src="'+
 ((__t=( items[i].src ))==null?'':__t)+
 '" alt="'+
 ((__t=( items[i].title ))==null?'':__t)+
-'">\n  </a>\n';
+'">\r\n  </a>\r\n';
  } 
 __p+='';
 }

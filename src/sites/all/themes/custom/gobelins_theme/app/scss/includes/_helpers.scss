@@ -7,7 +7,7 @@
   padding:8px 12px;
   display:inline-block;
   font-size:0.875rem;
-  transition: background-color, color $animation__params;
+  transition: background-color, color $animation__params, border-color $animation__params;
   
   & > span{
     margin-left:3px;
@@ -46,7 +46,7 @@
   color:$color__blue-gobelins;
   text-transform:uppercase;
   padding:10px 15px;
-  transition: background-color $animation__params;
+  transition: background-color $animation__params, border-color $animation__params;
   font-size:0.875rem;
   letter-spacing:1px;
   font-family:$font__platform--medium;
@@ -54,7 +54,8 @@
   text-align:center;
   
   &:hover{
-    background-color:$color__blue-gobelins;
+    background-color: $color__blue-gobelins;
+    border-color: $color__blue-gobelins;
     color:#fff;
     text-decoration:none;
   }
@@ -171,7 +172,7 @@
   text-transform:uppercase;
   font-family:$font__platform--medium;
   font-size:0.875rem;
-  letter-spacing:2px;
+  letter-spacing:1px;
   padding:12px 20px;
   transition: background-color $animation__params;
   
@@ -266,13 +267,12 @@
   padding:0;
   
   &:before{
-   content:"\2715";
-   display:inline-block;
-   padding-right:5px;
-   font-size:0.825rem;
-  font-weight:bold;
+    content:"\2715";
+    display:inline-block;
+    padding-right:5px;
+    font-size:0.825rem;
+    font-weight:bold;
   }
-
 }
 
 /**/

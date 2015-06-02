@@ -1,9 +1,7 @@
 .breadcrumb{
   font-size:0.875rem;
   background:#fff;
-  padding:0; 
-  position:relative;
-  z-index:1;
+  padding:0;
   
   @media screen and (min-width: $width__l + 1px) {
     width:auto;
@@ -55,8 +53,20 @@
   background:none;
   a{
     color:#fff;
+    
+    &:hover{
+      border-color:#fff;
+    }
   }
   .icons-home-gray{
     @extend .icons-home-white;
+  }
+}
+
+.breadcrumb + .block-banner{
+  margin-top:-55px;
+  
+  @media screen and (max-width:$width__m){
+   margin-top:0;
   }
 }

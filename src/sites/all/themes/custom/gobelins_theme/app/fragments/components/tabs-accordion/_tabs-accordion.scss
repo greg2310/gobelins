@@ -17,19 +17,42 @@
       text-transform:uppercase;
       font-family:$font__platform--medium;
       letter-spacing:1px;
+      border-top:2px solid $color__bg-gray;
+      background-color:transparent;
+      transition: background-color $animation__params, border-color $animation__params;
+      
+      &:hover{
+          border-bottom-color:transparent;
+          background-color: $color__blue-gobelins;
+          border-top:2px solid $color__blue-gobelins;
+          color:#fff;
+        }
       
       a{
         padding:30px 0;
         display:block;
         text-decoration:none;
+        
+        &:hover{
+          border-color:transparent;
+          color:#fff;
+        }
       }
     }
     .is-open{
       border-top:2px solid $color__blue-gobelins;
       background-color:#fff;
       
+      &:hover{
+        background-color:#fff;
+      }
+      
       a{
         color:$color__text-dark;
+        
+        &:hover{
+          color:$color__text-dark;
+        }
       }
     }
     
@@ -71,7 +94,6 @@
       padding:0 40px 40px;
     }
     
-    font-size:0.875rem;
     font-family:$font__neuzeit;
     
     ul{
