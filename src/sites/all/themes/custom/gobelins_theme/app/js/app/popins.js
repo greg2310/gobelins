@@ -53,11 +53,11 @@
       $(this).find('.js-popin--gallery__item').colorbox({
         rel: ++groupId,
         className:'is-video',
-        maxWidth: '100%',
+        width: width,
         maxHeight: '90%',
         transition: 'none',
         title: false,
-        returnFocus: false,
+        returnFocus: false
       });
     });
   });
