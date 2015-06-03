@@ -46,16 +46,23 @@
   width: 100%;
   overflow: visible;
 }
-.block-gallery__item,
 .block-gallery__item {
   display: block;
   position: absolute;
-}
-.block-gallery__item > img,
-.block-gallery__item > img {
-  display: block;
-  width: 100%;
-  height: auto;
+  
+  > img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  > .icons-btn-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+  }
 }
 .block-gallery__stamp {
   background-color: #000;
