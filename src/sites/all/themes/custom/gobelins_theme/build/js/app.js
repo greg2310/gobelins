@@ -525,6 +525,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
 
   $(function(){
     var $element, $body, minScroll, scrollCallback;
+    var $window = $(window);
 
     /* Setup data. */
     $element = $('.js-gototop');
@@ -550,7 +551,8 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
       event.preventDefault();
       $body.animate({scrollTop: 0});
     });
-    $(window).on('scroll', scrollCallback);
+    $window.on('scroll', scrollCallback);
+    $window.on('resize', scrollCallback);
 
     /* Initialize. */
     scrollCallback();

@@ -7,6 +7,7 @@
 
   $(function(){
     var $element, $body, minScroll, scrollCallback;
+    var $window = $(window);
 
     /* Setup data. */
     $element = $('.js-gototop');
@@ -32,7 +33,8 @@
       event.preventDefault();
       $body.animate({scrollTop: 0});
     });
-    $(window).on('scroll', scrollCallback);
+    $window.on('scroll', scrollCallback);
+    $window.on('resize', scrollCallback);
 
     /* Initialize. */
     scrollCallback();

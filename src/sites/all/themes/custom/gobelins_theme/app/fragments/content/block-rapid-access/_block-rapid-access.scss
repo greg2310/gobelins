@@ -2,14 +2,14 @@
   background-color:$color__bg-gray--light;
   padding-top:0;
 
-	.item-rapid-access{
-	  background-color:#fff;
-	  border-bottom: 2px solid $color__border-gray--light;
-	  padding:30px 20px 40px;
-	  text-align:center;
-	  font-family:$font__neuzeit;
-	  height:300px;
-	  cursor:pointer;
+  .item-rapid-access{
+    background-color:#fff;
+    border-bottom: 2px solid $color__border-gray--light;
+    padding:30px 20px 40px;
+    text-align:center;
+    font-family:$font__neuzeit;
+    height:300px;
+    cursor:pointer;
    transition:background-color 0.2s ease-out 0s;
     
     @media screen and (max-width: $width__m){
@@ -18,23 +18,21 @@
       padding:30px 40px;
       cursor:auto;
     } 
-	   
-	  & + .item-rapid-access{
+    
+    & + .item-rapid-access{
       border-left:1px solid $color__border-gray--light;
-	  }
+    }
     
     @media screen and (min-width: $width__m){
-	  
+    
       &:hover{
         background:$color__blue-gobelins;
         .item-rapid-access__img{
-          img{
-            &.off{
-              display:none;
-            }
-            &.on{
-              display:inline-block;
-            }
+          .off{
+            display:none;
+          }
+          .on{
+            display:inline-block;
           }
         }
         h3{
@@ -55,9 +53,9 @@
           }
         }
       }
-	  }
-	  
-	  .item-rapid-access__img{
+    }
+    
+    .item-rapid-access__img{
     display:table-cell;
     text-align:center;
     height:115px;
@@ -72,7 +70,7 @@
     @media screen and (max-width: $width__xs - 1px){
      display:none;
     }
-			
+      
     img{
       display:inline-block;
         max-width:100%;
@@ -81,7 +79,7 @@
       }
     }
     
-	  }
+    }
     
     @media screen and (max-width: $width__m){
       .item-rapid-access__description{
@@ -99,7 +97,7 @@
     }
     
     
-	  h3{
+    h3{
     margin:15px 0;
     text-transform:uppercase;
     color:$color__slideshow--training;
@@ -111,10 +109,10 @@
        margin:0 0 20px 0;
     }
     
-	  }
+    }
    
    
-	  .btn-higlight{
+    .btn-higlight{
       display:none;
       margin-top:15px;
       @media screen and (max-width: $width__m){
@@ -129,6 +127,6 @@
           display:inline-block;
         }
       }
-	  }
-	}
+    }
+  }
 }	

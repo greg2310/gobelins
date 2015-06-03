@@ -4168,11 +4168,6 @@ body.is-open {
 .gototop:hover {
   box-shadow: 0 0 3px #000;
 }
-/* line 16, ../../app/fragments/components/gototop/_gototop.scss */
-.gototop > span {
-  text-indent: -9999px;
-  direction: rtl;
-}
 
 /* Content partials */
 /* line 1, ../../app/fragments/content/list-trainings/_list-trainings.scss */
@@ -5102,13 +5097,12 @@ body.is-open {
 /* line 35, ../../app/fragments/content/block-training-gallery/_block-training-gallery.scss */
 .block-gallery__stamp--content .btn-round--light, .block-gallery__stamp--content #cboxPrevious, .block-gallery__stamp--content #cboxNext {
   width: 19.05%;
-  height: 19.05%;
   font-size: 1em;
   height: 100%;
   line-height: 220%;
 }
 
-/* line 43, ../../app/fragments/content/block-training-gallery/_block-training-gallery.scss */
+/* line 42, ../../app/fragments/content/block-training-gallery/_block-training-gallery.scss */
 .block-gallery__grid {
   position: relative;
   -webkit-transition: left 0.2s ease-out;
@@ -5118,14 +5112,14 @@ body.is-open {
   overflow: visible;
 }
 
-/* line 50, ../../app/fragments/content/block-training-gallery/_block-training-gallery.scss */
+/* line 49, ../../app/fragments/content/block-training-gallery/_block-training-gallery.scss */
 .block-gallery__item,
 .block-gallery__item {
   display: block;
   position: absolute;
 }
 
-/* line 55, ../../app/fragments/content/block-training-gallery/_block-training-gallery.scss */
+/* line 54, ../../app/fragments/content/block-training-gallery/_block-training-gallery.scss */
 .block-gallery__item > img,
 .block-gallery__item > img {
   display: block;
@@ -5133,12 +5127,12 @@ body.is-open {
   height: auto;
 }
 
-/* line 61, ../../app/fragments/content/block-training-gallery/_block-training-gallery.scss */
+/* line 60, ../../app/fragments/content/block-training-gallery/_block-training-gallery.scss */
 .block-gallery__stamp {
   background-color: #000;
 }
 
-/* line 64, ../../app/fragments/content/block-training-gallery/_block-training-gallery.scss */
+/* line 63, ../../app/fragments/content/block-training-gallery/_block-training-gallery.scss */
 .block-gallery__grid.is-dragging {
   -webkit-transition: none;
           transition: none;
@@ -5311,7 +5305,7 @@ body.is-open {
 /* line 15, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form {
   border-top: none;
-  padding-top: 0px;
+  padding-top: 0;
 }
 @media screen and (max-width: 1140px) {
   /* line 15, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
@@ -5749,14 +5743,14 @@ body.is-open {
     margin-left: 0;
   }
 }
-/* line 10, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 7, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training .option-filter {
   text-transform: uppercase;
   color: #333333;
   margin-bottom: 15px;
   font-family: 'Neuzeit';
 }
-/* line 15, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 12, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training .option-filter .date,
 .results-filter-training .option-filter .price {
   text-transform: capitalize;
@@ -5766,29 +5760,29 @@ body.is-open {
   margin-left: 15px;
   text-decoration: none;
 }
-/* line 24, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 21, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training .option-filter .active {
   border-bottom: 2px solid #1a1a1a;
   color: #333333;
 }
-/* line 29, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 26, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training .list-results-training {
   border-bottom: 2px solid #d9d9d9;
   margin-bottom: 25px;
   border-top: 2px solid #00e196;
 }
-/* line 33, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 30, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training .list-results-training .list-item {
   display: block;
   background-color: #fff;
   margin-top: 2px;
   padding: 15px;
 }
-/* line 38, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 35, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training .list-results-training .list-item:first-child {
   margin-top: 0;
 }
-/* line 45, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 39, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training .list-results-training .item-result__info {
   width: 35%;
   display: inline-block;
@@ -5796,13 +5790,13 @@ body.is-open {
   text-align: right;
 }
 @media screen and (max-width: 767px) {
-  /* line 45, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+  /* line 39, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
   .results-filter-training .list-results-training .item-result__info {
     width: 100%;
     margin-top: 20px;
   }
 }
-/* line 55, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 48, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training .list-results-training .item-result__info .price-training {
   color: #666666;
   margin-right: 20px;
@@ -5810,32 +5804,32 @@ body.is-open {
   letter-spacing: 1px;
 }
 @media screen and (max-width: 767px) {
-  /* line 55, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+  /* line 48, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
   .results-filter-training .list-results-training .item-result__info .price-training {
     float: left;
     padding-top: 10px;
     margin-left: -5px;
   }
 }
-/* line 66, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 59, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training .list-results-training .item-result__info .btn-like--mini {
   margin-left: 10px;
 }
-/* line 71, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 63, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training .list-results-training .item-result__detail {
   width: 64%;
   display: inline-block;
   vertical-align: top;
 }
 @media screen and (max-width: 767px) {
-  /* line 71, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+  /* line 63, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
   .results-filter-training .list-results-training .item-result__detail {
     width: 100%;
     padding-bottom: 22px;
     border-bottom: 1px solid #e6e6e6;
   }
 }
-/* line 80, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 72, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training .list-results-training .item-result__detail h3 {
   color: #333333;
   font-size: 1.125rem;
@@ -5843,7 +5837,7 @@ body.is-open {
   letter-spacing: 1px;
   position: relative;
 }
-/* line 88, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 79, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training .list-results-training .item-result__detail .new {
   display: inline-block;
   background: #0045e5;
@@ -5856,32 +5850,32 @@ body.is-open {
   margin: 4px 0 0 10px;
   vertical-align: top;
 }
-/* line 100, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 91, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training .list-results-training .item-result__detail p {
   display: inline-block;
   margin-top: 10px;
   font-family: 'Neuzeit';
 }
-/* line 104, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
-.results-filter-training .list-results-training .item-result__detail p.ref {
-  margin-left: 20px;
-}
-/* line 107, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
-.results-filter-training .list-results-training .item-result__detail p.subtitle {
-  display: block;
-  margin: 0;
-}
 @media screen and (max-width: 767px) {
-  /* line 112, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+  /* line 96, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
   .results-filter-training .list-results-training .item-result__detail p.item-trainings__type {
     display: inline-block;
   }
 }
-/* line 121, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 101, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.results-filter-training .list-results-training .item-result__detail .ref {
+  margin-left: 20px;
+}
+/* line 104, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.results-filter-training .list-results-training .item-result__detail .subtitle {
+  display: block;
+  margin: 0;
+}
+/* line 110, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training .other-training {
   background: #1a1a1a;
 }
-/* line 123, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 112, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training .other-training a {
   text-transform: uppercase;
   color: #fff;
@@ -5895,47 +5889,47 @@ body.is-open {
 }
 
 /***Color training***/
-/* line 140, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 128, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .training-animation .item-trainings__type:before {
   background-color: #00e196;
 }
 
-/* line 143, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 132, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .training-graphic-design .item-trainings__type:before {
   background-color: #3af2ce;
 }
 
-/* line 146, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 136, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .training-web-design .item-trainings__type:before {
   background-color: #6300ff;
 }
 
-/* line 149, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 140, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .training-photography .item-trainings__type:before {
   background-color: #ffe042;
 }
 
-/* line 152, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 144, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .training-game .item-trainings__type:before {
   background-color: #1840e8;
 }
 
-/* line 155, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 148, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .training-video-audio .item-trainings__type:before {
   background-color: red;
 }
 
-/* line 158, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 152, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .training-cross-media .item-trainings__type:before {
   background-color: #e90b51;
 }
 
-/* line 162, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 156, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .training-animation .list-results-training {
   border-top-color: #00e196;
 }
 
-/* line 163, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 160, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .training-graphic-design .list-results-training {
   border-top-color: #3af2ce;
 }
@@ -5945,22 +5939,22 @@ body.is-open {
   border-top-color: #6300ff;
 }
 
-/* line 165, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 168, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .training-photography .list-results-training {
   border-top-color: #ffe042;
 }
 
-/* line 166, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 172, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .training-game .list-results-training {
   border-top-color: #1840e8;
 }
 
-/* line 167, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 176, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .training-video-audio .list-results-training {
   border-top-color: red;
 }
 
-/* line 168, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 180, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .training-cross-media .list-results-training {
   border-top-color: #e90b51;
 }
@@ -6000,35 +5994,35 @@ body.is-open {
   .list-rapid-access .item-rapid-access:hover {
     background: #0045e5;
   }
-  /* line 32, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
-  .list-rapid-access .item-rapid-access:hover .item-rapid-access__img img.off {
+  /* line 31, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
+  .list-rapid-access .item-rapid-access:hover .item-rapid-access__img .off {
     display: none;
   }
-  /* line 35, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
-  .list-rapid-access .item-rapid-access:hover .item-rapid-access__img img.on {
+  /* line 34, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
+  .list-rapid-access .item-rapid-access:hover .item-rapid-access__img .on {
     display: inline-block;
   }
-  /* line 40, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
+  /* line 38, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
   .list-rapid-access .item-rapid-access:hover h3 {
     color: #fff;
   }
-  /* line 44, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
+  /* line 42, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
   .list-rapid-access .item-rapid-access:hover .description {
     display: none;
   }
-  /* line 48, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
+  /* line 46, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
   .list-rapid-access .item-rapid-access:hover .btn-higlight, .list-rapid-access .item-rapid-access:hover input[type="submit"], .list-rapid-access .item-rapid-access:hover .main-menu--search button, .main-menu--search .list-rapid-access .item-rapid-access:hover button {
     display: inline-block;
     background: #0045e5;
     color: #fff;
   }
-  /* line 52, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
+  /* line 50, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
   .list-rapid-access .item-rapid-access:hover .btn-higlight:hover, .list-rapid-access .item-rapid-access:hover input[type="submit"]:hover, .list-rapid-access .item-rapid-access:hover .main-menu--search button:hover, .main-menu--search .list-rapid-access .item-rapid-access:hover button:hover {
     background: #fff;
     color: #0045e5;
   }
 }
-/* line 60, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
+/* line 58, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
 .list-rapid-access .item-rapid-access .item-rapid-access__img {
   display: table-cell;
   text-align: center;
@@ -6037,7 +6031,7 @@ body.is-open {
   width: 330px;
 }
 @media screen and (max-width: 1140px) {
-  /* line 60, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
+  /* line 58, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
   .list-rapid-access .item-rapid-access .item-rapid-access__img {
     display: inline-block;
     vertical-align: top;
@@ -6045,22 +6039,22 @@ body.is-open {
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 60, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
+  /* line 58, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
   .list-rapid-access .item-rapid-access .item-rapid-access__img {
     display: none;
   }
 }
-/* line 76, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
+/* line 74, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
 .list-rapid-access .item-rapid-access .item-rapid-access__img img {
   display: inline-block;
   max-width: 100%;
 }
-/* line 79, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
+/* line 77, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
 .list-rapid-access .item-rapid-access .item-rapid-access__img img.on {
   display: none;
 }
 @media screen and (max-width: 1140px) {
-  /* line 87, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
+  /* line 85, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
   .list-rapid-access .item-rapid-access .item-rapid-access__description {
     display: inline-block;
     text-align: left;
@@ -6069,12 +6063,12 @@ body.is-open {
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 96, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
+  /* line 94, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
   .list-rapid-access .item-rapid-access .item-rapid-access__description {
     width: 100%;
   }
 }
-/* line 102, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
+/* line 100, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
 .list-rapid-access .item-rapid-access h3 {
   margin: 15px 0;
   text-transform: uppercase;
@@ -6084,22 +6078,22 @@ body.is-open {
   line-height: normal;
 }
 @media screen and (max-width: 1140px) {
-  /* line 102, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
+  /* line 100, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
   .list-rapid-access .item-rapid-access h3 {
     margin: 0 0 20px 0;
   }
 }
-/* line 117, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
+/* line 115, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
 .list-rapid-access .item-rapid-access .btn-higlight, .list-rapid-access .item-rapid-access input[type="submit"], .list-rapid-access .item-rapid-access .main-menu--search button, .main-menu--search .list-rapid-access .item-rapid-access button {
   display: none;
   margin-top: 15px;
 }
 @media screen and (max-width: 1140px) {
-  /* line 117, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
+  /* line 115, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
   .list-rapid-access .item-rapid-access .btn-higlight, .list-rapid-access .item-rapid-access input[type="submit"], .list-rapid-access .item-rapid-access .main-menu--search button, .main-menu--search .list-rapid-access .item-rapid-access button {
     display: inline-block;
   }
-  /* line 122, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
+  /* line 120, ../../app/fragments/content/block-rapid-access/_block-rapid-access.scss */
   .list-rapid-access .item-rapid-access .btn-higlight:after, .list-rapid-access .item-rapid-access input[type="submit"]:after, .list-rapid-access .item-rapid-access .main-menu--search button:after, .main-menu--search .list-rapid-access .item-rapid-access button:after {
     content: '\e806';
     font-family: 'fontello';
@@ -6134,7 +6128,7 @@ body.is-open {
 /* line 15, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
 .filter-trainings.professionnal .filter-trainings__form {
   border-top: none;
-  padding-top: 0px;
+  padding-top: 0;
 }
 @media screen and (max-width: 1140px) {
   /* line 15, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
