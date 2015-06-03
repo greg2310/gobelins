@@ -1083,7 +1083,7 @@ button {
 }
 */
 /* line 22, ../../app/scss/includes/_fontello.scss */
-[class^="icon-"]:before, [class*=" icon-"]:before {
+[class^="icon-"]:before, #cboxPrevious:before, #cboxNext:before, [class*=" icon-"]:before {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
@@ -1118,7 +1118,7 @@ button {
 
 /* '¯áÇ' */
 /* line 58, ../../app/scss/includes/_fontello.scss */
-.icon-left-small:before {
+.icon-left-small:before, #cboxPrevious:before {
   content: '\e801';
 }
 
@@ -1148,7 +1148,7 @@ button {
 
 /* '¯áà' */
 /* line 63, ../../app/scss/includes/_fontello.scss */
-.icon-right-small:before {
+.icon-right-small:before, #cboxNext:before {
   content: '\e806';
 }
 
@@ -1322,7 +1322,7 @@ input[type="submit"]:hover,
 }
 
 /* line 87, ../../app/scss/includes/_helpers.scss */
-.btn-round, .btn-round--dark, .btn-round--light {
+.btn-round, .btn-round--dark, .btn-round--light, #cboxPrevious, #cboxNext {
   display: inline-block;
   width: 40px;
   height: 40px;
@@ -1343,20 +1343,20 @@ input[type="submit"]:hover,
 }
 
 /* line 102, ../../app/scss/includes/_helpers.scss */
-.btn-round.is-disabled, .is-disabled.btn-round--dark, .is-disabled.btn-round--light {
+.btn-round.is-disabled, .is-disabled.btn-round--dark, .is-disabled.btn-round--light, .is-disabled#cboxPrevious, .is-disabled#cboxNext {
   opacity: 0.5;
   cursor: auto;
 }
 
 /* line 106, ../../app/scss/includes/_helpers.scss */
-.btn-round:hover, .btn-round--dark:hover, .btn-round--light:hover {
+.btn-round:hover, .btn-round--dark:hover, .btn-round--light:hover, #cboxPrevious:hover, #cboxNext:hover {
   color: #FFFFFF;
   border-color: #0045e5;
   background-color: #0045e5;
 }
 
 /* line 111, ../../app/scss/includes/_helpers.scss */
-.btn-round.is-disabled:hover, .is-disabled.btn-round--dark:hover, .is-disabled.btn-round--light:hover {
+.btn-round.is-disabled:hover, .is-disabled.btn-round--dark:hover, .is-disabled.btn-round--light:hover, .is-disabled#cboxPrevious:hover, .is-disabled#cboxNext:hover {
   opacity: 0.5;
   background-color: transparent;
 }
@@ -1368,7 +1368,7 @@ input[type="submit"]:hover,
 }
 
 /* line 120, ../../app/scss/includes/_helpers.scss */
-.btn-round--light {
+.btn-round--light, #cboxPrevious, #cboxNext {
   color: #FFFFFF;
   border-color: #FFFFFF;
 }
@@ -1380,7 +1380,7 @@ input[type="submit"]:hover,
 }
 
 /* line 129, ../../app/scss/includes/_helpers.scss */
-.btn-round--light.is-disabled:hover {
+.btn-round--light.is-disabled:hover, .is-disabled#cboxPrevious:hover, .is-disabled#cboxNext:hover {
   color: #FFFFFF;
   border-color: #FFFFFF;
 }
@@ -1552,12 +1552,12 @@ input[type="submit"]:hover,
 
 /*list style*/
 /* line 288, ../../app/scss/includes/_helpers.scss */
-.ul-styled li, .tabs-accordion .content ul li, .tabs-accordion-press .content ul li, .item-trainings__description .info__detailes li, .training-summary__description ul li {
+.ul-styled li, .tabs-accordion .content ul li, .item-trainings__description .info__detailes li, .training-summary__description ul li {
   padding-left: 10px;
   position: relative;
 }
 /* line 292, ../../app/scss/includes/_helpers.scss */
-.ul-styled li:before, .tabs-accordion .content ul li:before, .tabs-accordion-press .content ul li:before, .item-trainings__description .info__detailes li:before, .training-summary__description ul li:before {
+.ul-styled li:before, .tabs-accordion .content ul li:before, .item-trainings__description .info__detailes li:before, .training-summary__description ul li:before {
   content: '\2022';
   position: absolute;
   left: 0;
@@ -1671,6 +1671,11 @@ select {
   }
 }
 /* line 1, ../../app/scss/includes/_popins.scss */
+#cboxTitle {
+  display: none;
+}
+
+/* line 4, ../../app/scss/includes/_popins.scss */
 #cboxClose {
   position: absolute;
   top: 20px;
@@ -1679,9 +1684,14 @@ select {
   height: 24px;
   overflow: hidden;
   background: transparent;
+  padding: 0;
+}
+/* line 15, ../../app/scss/includes/_popins.scss */
+#cboxClose:hover:before {
+  color: #0045e5;
 }
 
-/* line 11, ../../app/scss/includes/_popins.scss */
+/* line 19, ../../app/scss/includes/_popins.scss */
 #cboxOverlay {
   height: 100%;
   position: fixed;
@@ -1693,29 +1703,29 @@ select {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* line 21, ../../app/scss/includes/_popins.scss */
+/* line 29, ../../app/scss/includes/_popins.scss */
 #colorbox {
   z-index: 9999;
   background-color: #fff;
 }
 
 /*popin--text-img*/
-/* line 26, ../../app/scss/includes/_popins.scss */
+/* line 34, ../../app/scss/includes/_popins.scss */
 .popin--text {
   display: none;
   padding: 50px 40px;
 }
-/* line 30, ../../app/scss/includes/_popins.scss */
+/* line 38, ../../app/scss/includes/_popins.scss */
 .popin--text p {
   margin-bottom: 20px;
 }
 
-/* line 34, ../../app/scss/includes/_popins.scss */
+/* line 42, ../../app/scss/includes/_popins.scss */
 #colorbox .popin--text {
   display: block;
 }
 
-/* line 37, ../../app/scss/includes/_popins.scss */
+/* line 45, ../../app/scss/includes/_popins.scss */
 .popin--text-img__title {
   font-size: 1.375rem;
   font-family: "Platform-Medium";
@@ -1724,7 +1734,69 @@ select {
   color: #323232;
 }
 
-/*popin--media*/
+/*popin--video*/
+/* line 54, ../../app/scss/includes/_popins.scss */
+#cboxLoadedContent iframe {
+  width: 100%;
+  display: block;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 61, ../../app/scss/includes/_popins.scss */
+#colorbox.is-video #cboxClose {
+  top: -30px;
+  right: 0;
+}
+/* line 65, ../../app/scss/includes/_popins.scss */
+#colorbox.is-video #cboxClose:before {
+  color: #fff;
+}
+/* line 69, ../../app/scss/includes/_popins.scss */
+#colorbox.is-video #cboxClose:hover:before {
+  color: #0045e5;
+}
+
+/* line 73, ../../app/scss/includes/_popins.scss */
+#colorbox.is-video .popin--text {
+  padding: 25px 30px 0;
+}
+
+/* line 76, ../../app/scss/includes/_popins.scss */
+#colorbox.is-video .training-summary__title {
+  padding-top: 0;
+}
+
+/*popin--gallery*/
+/* line 81, ../../app/scss/includes/_popins.scss */
+.cboxPhoto {
+  display: block;
+}
+
+/* line 84, ../../app/scss/includes/_popins.scss */
+#cboxCurrent {
+  display: none !important;
+}
+
+/* line 88, ../../app/scss/includes/_popins.scss */
+#cboxPrevious {
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: -50px;
+  margin-top: -20px;
+}
+
+/* line 99, ../../app/scss/includes/_popins.scss */
+#cboxNext {
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  right: -50px;
+  margin-top: -20px;
+}
+
 /* Layout blocks partials */
 /* line 1, ../../app/fragments/layout/_layout.scss */
 .grid-container {
@@ -2995,7 +3067,7 @@ body.is-open {
   letter-spacing: 1px;
 }
 /* line 70, ../../app/fragments/components/aside-gallery/_aside-gallery.scss */
-.aside-gallery__discover .icon-right-small {
+.aside-gallery__discover .icon-right-small, .aside-gallery__discover #cboxNext {
   font-size: 1rem;
 }
 
@@ -3803,15 +3875,19 @@ body.is-open {
   text-decoration: none;
   color: #676767;
 }
-/* line 28, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 26, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.tabs-accordion-press .tabs-title li a:hover {
+  border-color: transparent;
+}
+/* line 31, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .tabs-accordion-press .tabs-title .is-open {
   background-color: #fff;
 }
-/* line 31, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 34, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .tabs-accordion-press .tabs-title .is-open a {
   color: #333333;
 }
-/* line 37, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 40, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .tabs-accordion-press .accordion-title {
   display: none;
   text-transform: uppercase;
@@ -3819,100 +3895,141 @@ body.is-open {
   font-family: "Platform-Medium";
   letter-spacing: 1px;
 }
-/* line 44, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 47, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .tabs-accordion-press .accordion-title a {
   padding: 30px 40px;
   display: block;
   text-decoration: none;
 }
-/* line 50, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 53, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .tabs-accordion-press .accordion-title.is-open {
   border-top: 2px solid #0045e5;
   background-color: #fff;
 }
-/* line 54, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 57, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .tabs-accordion-press .accordion-title.is-open a {
   color: #323232;
 }
 @media screen and (max-width: 767px) {
-  /* line 37, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+  /* line 40, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
   .tabs-accordion-press .accordion-title {
     display: block;
   }
 }
-/* line 63, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 66, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .tabs-accordion-press .tabs-container {
   background-color: #fff;
   border-bottom: 2px solid #e5e5e5;
 }
-/* line 67, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 70, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .tabs-accordion-press .content {
   padding: 40px 0;
   font-size: 0.875rem;
   font-family: "Neuzeit";
 }
+/* line 74, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.tabs-accordion-press .content#ta-content3 .title-h2 {
+  text-align: center;
+}
 @media screen and (max-width: 767px) {
-  /* line 67, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+  /* line 70, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
   .tabs-accordion-press .content {
     padding: 0 40px 40px;
   }
 }
-/* line 84, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 94, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .tabs-accordion-press .bloc-content .filter-press {
   font-family: 'Platform-Medium';
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-/* line 88, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 98, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .tabs-accordion-press .bloc-content .filter-press .form-item {
   display: inline-block;
   margin-left: 40px;
 }
-/* line 91, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 101, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .tabs-accordion-press .bloc-content .filter-press .form-item label {
   font-family: 'Neuzeit';
   text-transform: none;
   margin-right: 10px;
 }
-/* line 96, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 106, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .tabs-accordion-press .bloc-content .filter-press .form-item select {
   font-family: arial;
   font-size: 0.825rem;
 }
-/* line 101, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 111, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .tabs-accordion-press .bloc-content .filter-press .form-item:first-child {
   margin-left: 10px;
 }
-/* line 107, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 117, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.tabs-accordion-press .bloc-content .introduction-kit-media {
+  font-family: 'Platform-Medium';
+  letter-spacing: 1px;
+  font-size: 1.375rem;
+  color: #191919;
+  padding-bottom: 30px;
+  max-width: 55%;
+  margin: auto;
+  text-align: center;
+}
+/* line 128, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.tabs-accordion-press .bloc-content .presentation {
+  padding: 45px 0 25px 0;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+/* line 133, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.tabs-accordion-press .bloc-content .block-training-presentation__description {
+  padding-left: 0;
+}
+/* line 138, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.tabs-accordion-press .bloc-content .block-training-presentation__media figcaption {
+  font-family: 'Platform-Medium';
+  letter-spacing: 1px;
+  font-size: 1.125rem;
+  padding-top: 10px;
+  color: #333333;
+}
+/* line 147, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .tabs-accordion-press .bloc-content .list-actus-press {
   margin-top: 20px;
 }
-/* line 109, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 149, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .tabs-accordion-press .bloc-content .list-actus-press .line {
   border-top: 1px solid #e6e6e6;
   padding: 30px 0;
 }
-/* line 112, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 152, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .tabs-accordion-press .bloc-content .list-actus-press .line:first-child {
   border-top: none;
   padding-top: 0;
 }
-/* line 118, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 158, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .tabs-accordion-press .bloc-content .list-actus-press .item-actus {
   display: inline-block;
   margin-left: 35px;
   width: 30%;
   vertical-align: top;
 }
-/* line 123, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 163, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .tabs-accordion-press .bloc-content .list-actus-press .item-actus:first-child {
   margin-left: 0;
 }
-/* line 127, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 167, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .tabs-accordion-press .bloc-content .list-actus-press .item-actus .item-actus__image img {
   width: 100%;
 }
-/* line 133, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 169, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.tabs-accordion-press .bloc-content .list-actus-press .item-actus .item-actus__image img:hover {
+  opacity: 0.8;
+}
+/* line 175, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.tabs-accordion-press .bloc-content .list-actus-press .item-actus .item-actus__image a:hover {
+  border-color: transparent;
+}
+/* line 182, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .tabs-accordion-press .bloc-content .list-actus-press .item-actus .item-actus__description .name-rubrique {
   font-size: 0.825rem;
   font-family: 'Platform-Medium';
@@ -3921,7 +4038,7 @@ body.is-open {
   color: #666666;
   padding-top: 12px;
 }
-/* line 142, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 191, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .tabs-accordion-press .bloc-content .list-actus-press .item-actus .item-actus__description h3 {
   font-family: 'Platform-Medium';
   font-size: 1.125rem;
@@ -3930,19 +4047,19 @@ body.is-open {
   line-height: normal;
   padding-top: 5px;
 }
-/* line 149, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 198, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .tabs-accordion-press .bloc-content .list-actus-press .item-actus .item-actus__description h3 a {
   color: inherit;
   font-size: inherit;
 }
-/* line 155, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 204, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .tabs-accordion-press .bloc-content .list-actus-press .item-actus .item-actus__description .intro {
   font-size: 0.875rem;
   color: #666666;
   font-family: 'Neuzeit';
   padding-top: 7px;
 }
-/* line 164, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 215, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .tabs-accordion-press .bloc-content.small {
   width: 76%;
   float: left;
@@ -3950,11 +4067,11 @@ body.is-open {
 }
 
 /** Agenda press***/
-/* line 173, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 224, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .block-agenda-press {
   margin-left: 76%;
 }
-/* line 176, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 227, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .block-agenda-press .title {
   font-family: 'Platform-Medium';
   text-transform: uppercase;
@@ -3963,7 +4080,7 @@ body.is-open {
   color: #323232;
   letter-spacing: 1px;
 }
-/* line 185, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 236, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .block-agenda-press .select-month {
   padding: 20px 0;
   text-transform: uppercase;
@@ -3972,33 +4089,42 @@ body.is-open {
   text-align: center;
   border-bottom: 1px solid #e7e8e8;
 }
-/* line 192, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
-.block-agenda-press .select-month .icon-left-small,
-.block-agenda-press .select-month .icon-right-small {
+/* line 243, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.block-agenda-press .select-month .icon-left-small, .block-agenda-press .select-month #cboxPrevious,
+.block-agenda-press .select-month .icon-right-small,
+.block-agenda-press .select-month #cboxNext {
   position: absolute;
   font-size: 1.125rem;
+  cursor: pointer;
 }
-/* line 198, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
-.block-agenda-press .select-month .icon-left-small {
+/* line 248, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.block-agenda-press .select-month .icon-left-small:hover, .block-agenda-press .select-month #cboxPrevious:hover,
+.block-agenda-press .select-month .icon-right-small:hover,
+.block-agenda-press .select-month #cboxNext:hover {
+  color: #0045e5;
+  border-color: transparent;
+}
+/* line 254, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.block-agenda-press .select-month .icon-left-small, .block-agenda-press .select-month #cboxPrevious {
   left: 0;
 }
-/* line 202, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
-.block-agenda-press .select-month .icon-right-small {
+/* line 258, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.block-agenda-press .select-month .icon-right-small, .block-agenda-press .select-month #cboxNext {
   right: 0;
 }
-/* line 206, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 262, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .block-agenda-press .select-month .month {
   font-family: 'Platform-Light';
   font-size: 2rem;
   display: inline-block;
   vertical-align: middle;
 }
-/* line 216, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 272, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .block-agenda-press .list-events .item-event {
   padding: 20px 0;
   border-bottom: 1px solid #e7e8e8;
 }
-/* line 219, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 275, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .block-agenda-press .list-events .item-event .date {
   color: #0045e5;
   font-size: 1.625rem;
@@ -4007,35 +4133,53 @@ body.is-open {
   border-bottom: 1px solid #0045e5;
   display: inline-block;
 }
-/* line 229, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 285, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .block-agenda-press .list-events .item-event .detail {
   font-family: 'Platform-Medium';
   color: #333333;
   font-size: 1.112rem;
   letter-spacing: 1px;
   padding-bottom: 15px;
+  display: block;
+}
+/* line 292, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.block-agenda-press .list-events .item-event .detail:hover {
+  color: #0045e5;
+  border-color: transparent;
 }
 
 /***Communiqu├®s press****/
-/* line 245, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 306, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .list-communique-press .item-communique {
   padding: 20px 0;
-  border-bottom: 1px solid #e7e8e8;
+  border-top: 1px solid #e7e8e8;
 }
-/* line 248, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 309, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .list-communique-press .item-communique .item-communique__image {
   display: inline-block;
   width: 25%;
   vertical-align: top;
 }
-/* line 254, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 313, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.list-communique-press .item-communique .item-communique__image:hover {
+  opacity: 0.8;
+}
+/* line 316, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.list-communique-press .item-communique .item-communique__image a:hover {
+  border-color: transparent;
+}
+/* line 319, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.list-communique-press .item-communique .item-communique__image:first-child {
+  border-top: none;
+}
+/* line 324, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .list-communique-press .item-communique .item-communique__description {
   display: inline-block;
   width: 71%;
   margin-left: 20px;
   vertical-align: top;
 }
-/* line 259, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 329, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .list-communique-press .item-communique .item-communique__description h3 {
   font-family: 'Platform-Medium';
   font-size: 1.125rem;
@@ -4043,40 +4187,135 @@ body.is-open {
   letter-spacing: 1px;
   padding-bottom: 5px;
 }
-/* line 267, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 336, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.list-communique-press .item-communique .item-communique__description h3 a:hover {
+  color: #0045e5;
+  border-color: transparent;
+}
+/* line 343, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .list-communique-press .item-communique .item-communique__description .date {
   color: #666666;
   font-size: 1rem;
   padding-bottom: 10px;
 }
-/* line 273, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 349, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .list-communique-press .item-communique .item-communique__description .intro {
   color: #666666;
   font-size: 0.875rem;
   font-family: 'Neuzeit';
 }
-/* line 281, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 353, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.list-communique-press .item-communique .item-communique__description .intro a:hover {
+  color: #323232;
+  border-color: transparent;
+}
+/* line 361, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .list-communique-press.gobelins .item-communique__description {
   width: 100%;
   margin: 0;
 }
-/* line 284, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 364, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .list-communique-press.gobelins .item-communique__description .name-newspaper {
-  color: #0045e5;
   font-size: 1rem;
   display: inline-block;
-  text-decoration: underline;
 }
-/* line 289, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 367, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .list-communique-press.gobelins .item-communique__description .name-newspaper:after {
   content: ',';
   color: #666666;
   display: inline-block;
   padding-left: 2px;
 }
-/* line 297, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+/* line 373, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
+.list-communique-press.gobelins .item-communique__description .name-newspaper a:hover {
+  color: #0045e5;
+  border-color: transparent;
+}
+/* line 378, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .list-communique-press.gobelins .item-communique__description .date {
   display: inline-block;
+}
+
+/* line 1, ../../app/fragments/components/block-pagination/_block-pagination.scss */
+.pagination {
+  border: 1px solid #e7e8e8;
+  margin: 30px 0;
+}
+/* line 6, ../../app/fragments/components/block-pagination/_block-pagination.scss */
+.pagination li {
+  display: inline-block;
+  color: #666666;
+  font-family: 'Neuzeit';
+  font-size: 0.937rem;
+  padding: 0;
+}
+/* line 13, ../../app/fragments/components/block-pagination/_block-pagination.scss */
+.pagination li.off a,
+.pagination li.off span {
+  opacity: 0.5;
+}
+/* line 17, ../../app/fragments/components/block-pagination/_block-pagination.scss */
+.pagination li.off a:hover {
+  background: transparent;
+  color: inherit;
+}
+/* line 26, ../../app/fragments/components/block-pagination/_block-pagination.scss */
+.pagination .previous a,
+.pagination .previous span,
+.pagination .next a,
+.pagination .next span {
+  padding: 10px;
+  display: block;
+}
+/* line 31, ../../app/fragments/components/block-pagination/_block-pagination.scss */
+.pagination .previous a:hover,
+.pagination .next a:hover {
+  background: #0045e5;
+  color: #fff;
+  border-color: transparent;
+}
+/* line 39, ../../app/fragments/components/block-pagination/_block-pagination.scss */
+.pagination .previous {
+  border-right: 1px solid #e7e8e8;
+}
+/* line 41, ../../app/fragments/components/block-pagination/_block-pagination.scss */
+.pagination .previous a, .pagination .previous span {
+  padding-right: 20px;
+}
+/* line 44, ../../app/fragments/components/block-pagination/_block-pagination.scss */
+.pagination .next {
+  border-left: 1px solid #e7e8e8;
+  float: right;
+}
+/* line 47, ../../app/fragments/components/block-pagination/_block-pagination.scss */
+.pagination .next a, .pagination .next span {
+  padding-left: 20px;
+}
+/* line 50, ../../app/fragments/components/block-pagination/_block-pagination.scss */
+.pagination .icon-right-small:before, .pagination #cboxNext:before {
+  content: none;
+}
+/* line 52, ../../app/fragments/components/block-pagination/_block-pagination.scss */
+.pagination .icon-right-small:after, .pagination #cboxNext:after {
+  content: '\e806';
+  display: inline-block;
+  font-family: "fontello";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1em;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  width: 1em;
+}
+/* line 68, ../../app/fragments/components/block-pagination/_block-pagination.scss */
+.pagination .number-page {
+  padding: 10px 0;
+  width: 71%;
+  text-align: center;
 }
 
 /* Content partials */
@@ -5005,7 +5244,7 @@ body.is-open {
   padding: 5% 8%;
 }
 /* line 35, ../../app/fragments/content/block-training-gallery/_block-training-gallery.scss */
-.block-gallery__stamp--content .btn-round--light {
+.block-gallery__stamp--content .btn-round--light, .block-gallery__stamp--content #cboxPrevious, .block-gallery__stamp--content #cboxNext {
   width: 19.05%;
   height: 19.05%;
   font-size: 1em;

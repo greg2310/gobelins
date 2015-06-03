@@ -522,13 +522,62 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   require('../../../bower_components/colorbox/jquery.colorbox.js');
 
   $(function(){
+    var baseOptions;
+    var groupId = 0;
+    var width = 400;
     if (screen.width > 480){
-      $('.js-popin--content').colorbox({inline:true, width: "910px"});
-    }else{
-      $('.js-popin--content').colorbox({inline:true, width: "400px"});
+      width = 910;
     }
+    
+    baseOptions = {
+      width: width,
+      transition: 'none',
+      title: false
+    };
+    
+    // HTML content popin.
+    $('.js-popin--content').colorbox({
+      inline: true,
+      width: width,
+      transition: 'none',
+      title: false
+    });
+    
+    // Video popin.
+    $('.js-popin--video').colorbox({
+      inline: true,
+      className:'is-video',
+      width: width,
+      maxHeight: '90%',
+      transition: 'none',
+      title: false
+    });
+    $(document).on('cbox_complete', function(){
+      var $iframes = $('#cboxLoadedContent iframe');
+      $iframes.each(function(index){
+        var $iframe = $iframes.eq(index);
+        var width  = $iframe.attr('width');
+        var height = $iframe.attr('height');
+        var ratio = parseInt(width, 10) / parseInt(height, 10);
+        $iframe.height($iframe.width() / ratio);
+      });
+      $iframes.length && $.colorbox.resize();
+    });
+    
+    // Gallery popin.
+    $('.js-popin--gallery').each(function(){
+      $(this).find('.js-popin--gallery__item').colorbox({
+        rel: ++groupId,
+        className:'is-video',
+        maxWidth: '100%',
+        maxHeight: '90%',
+        transition: 'none',
+        title: false,
+        returnFocus: false,
+      });
+    });
   });
-  
+
 })();
 
 },{"../../../bower_components/colorbox/jquery.colorbox.js":11,"jquery":"jquery"}],6:[function(require,module,exports){
@@ -720,17 +769,17 @@ var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments
 with(obj||{}){
 __p+='';
  for (var i=0; i < items.length; i++) { 
-__p+='\r\n  <a\r\n    href="'+
+__p+='\n  <a\n    href="'+
 ((__t=( items[i].href ))==null?'':__t)+
-'"\r\n    title="'+
+'"\n    title="'+
 ((__t=( items[i].title ))==null?'':__t)+
-'"\r\n    class="aside-gallery__item aside-gallery__item--'+
+'"\n    class="aside-gallery__item aside-gallery__item--'+
 ((__t=( items[i].columns ))==null?'':__t)+
-' js-masonry--aside-gallery__item"\r\n  >\r\n    <img src="'+
+' js-masonry--aside-gallery__item"\n  >\n    <img src="'+
 ((__t=( items[i].src ))==null?'':__t)+
 '" alt="'+
 ((__t=( items[i].title ))==null?'':__t)+
-'">\r\n  </a>\r\n';
+'">\n  </a>\n';
  } 
 __p+='';
 }
