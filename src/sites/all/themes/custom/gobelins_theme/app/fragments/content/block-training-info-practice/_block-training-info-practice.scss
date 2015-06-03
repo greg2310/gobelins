@@ -1,0 +1,47 @@
+.block-training-info-practice{
+  background-color:$color__bg-gray--light;
+  
+  .title-h2{
+    text-align:left;
+  }
+  
+  .list-sessions{
+    padding:0;
+    
+    li{
+      padding:20px 10px 20px 30px;
+    }
+    
+    li + li{
+      border-top:1px solid $color__border-gray--light;
+    }
+    
+    .btn-agenda{
+      float:right;
+      margin: -10px 0;
+    }
+  }
+}
+.item-info-practice{
+  margin-bottom:35px;
+}
+.item-info-practice__title{
+  text-transform:uppercase;
+  color:$color__text-dark;
+  margin-bottom:15px;
+  font-family:$font__platform--medium;
+  letter-spacing:1px;
+}
+.item-info-practice__description{
+  background:#fff;
+  border-bottom:2px solid $color__border-gray--light;
+  padding:20px 30px;
+  font-family:$font__neuzeit;
+  
+  ul{
+    @extend .ul-styled;
+  }
+  .link-more{
+    margin-top:15px;
+  }
+}

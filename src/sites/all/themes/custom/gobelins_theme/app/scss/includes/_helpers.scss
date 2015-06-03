@@ -40,7 +40,8 @@
 .btn-like--mini,
 .btn-higlight,
 .btn-download,
-.btn-more{
+.btn-more,
+.btn-agenda{
   border:1px solid $color__training--search--border;
   background-color:#fff;
   color:$color__blue-gobelins;
@@ -164,17 +165,7 @@
 
 /***************** btns transparent ****************/
 .btn-agenda{
-  display:inline-block;
-  border:1px solid #CBCBCB;
   background-color:transparent;
-  color:$color__blue-gobelins;
-  text-decoration:none;
-  text-transform:uppercase;
-  font-family:$font__platform--medium;
-  font-size:0.875rem;
-  letter-spacing:1px;
-  padding:12px 20px;
-  transition: background-color $animation__params;
   
   &:before{
     content:"";
@@ -182,10 +173,8 @@
     vertical-align:middle;
     margin-top:-2px;
   }
-  
-  &:hover{
-    background-color:#fff;
-    text-decoration:none;
+  &:hover:before{
+    @extend .icons-calendar-white;
   }
 }
 
@@ -211,6 +200,7 @@
 .link-more{
   text-transform:uppercase;
   font-family:$font__platform--medium;
+  display:inline-block;
   
   &:after{
     content: '\e806';
@@ -220,6 +210,11 @@
     vertical-align: top;
     width:20px;
     display:inline-block;
+  }
+  
+  &:hover{
+    color:$color__blue-gobelins;
+    border-color:$color__blue-gobelins;
   }
 }
 
@@ -281,6 +276,13 @@
   font-size:2rem;
   padding:0 0 20px;
   font-family:$font__platform--light;
+}
+
+.text-higlight{
+  font-family:$font__platform--light;
+  font-size:1.25rem;
+  letter-spacing:1px;
+  color:$color__blue-gobelins;
 }
 
 /*list style*/

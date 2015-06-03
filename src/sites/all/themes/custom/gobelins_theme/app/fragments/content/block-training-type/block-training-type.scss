@@ -136,50 +136,6 @@
   }
 }
 
-
-.training-summary__description{
-  border-top:1px solid $color__border-gray--light;
-  display:table;
-  width:100%;
-  table-layout:fixed;
-  
-  .col1{
-    width:44%;
-    display:table-cell;
-    padding:0 20px 25px 30px;
-  }
-  .col2,
-  .col3{
-    width:28%;
-    display:table-cell;
-    border-left:1px solid $color__border-gray--light;
-  }
-  .col2{
-    padding:0 20px;
-  }
-  .col3-1,
-  .col3-2{
-    padding:0 20px;
-  }
-  .col3-1{
-    padding-bottom:20px;
-  }
-  .col3-2{
-    border-top:1px solid $color__border-gray--light;
-  }
-  
-  .sub-title{
-    font-family:$font__platform--medium;
-    letter-spacing:1px;
-    text-transform:uppercase;
-    color:$color__text-dark;
-    margin:20px 0 5px;
-  }
-  ul{
-    @extend .ul-styled;
-  }
-}
-
 @media screen and (max-width: $width__xs - 1px) {
   .intro-link{
    background-color:$color__bg-gray--darck;

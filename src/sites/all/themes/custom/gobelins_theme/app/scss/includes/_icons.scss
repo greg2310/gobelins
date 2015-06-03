@@ -7,7 +7,7 @@ bg__rubric--hover,
 like-gray, like-blue,
 press,
 btn-menu,
-calendar, list, public, checked, euro, location, location-white, doc,
+calendar, calendar-white, list, public, checked, euro, location, location-white, doc,
 home-white, home-gray,
 download, download-white,
 print,
@@ -27,7 +27,8 @@ $icon-ratio: 2;
 .icon-check{
   color:$color__blue-gobelins;
 }
-.icons-calendar, 
+.icons-calendar,
+.icons-calendar-white,
 .icons-list, 
 .icons-public, 
 .icons-checked, 
