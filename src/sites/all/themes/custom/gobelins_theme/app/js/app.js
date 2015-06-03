@@ -9,5 +9,6 @@
   require('./app/aside-gallery.js');
   require('./app/popins.js');
   require('./app/trainings-pro.js');
+  require('./app/gototop.js');
 
 })();
