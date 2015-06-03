@@ -23,6 +23,9 @@
         display:block;
         text-decoration:none;
         color:#676767;
+        &:hover{
+         border-color:transparent;
+        }
       }
     }
     .is-open{
@@ -67,6 +70,14 @@
   .content{
     padding:40px 0;
     
+    &#ta-content3{
+     .title-h2{
+      text-align:center;
+     }
+    }
+    
+    
+    
     @media screen and (max-width: 767px) {
       padding:0 40px 40px;
     }
@@ -74,14 +85,13 @@
     font-size:0.875rem;
     font-family:$font__neuzeit;
     
-    ul{
-      @extend .ul-styled;
-    }
+    
   }
  
   
   .bloc-content{
-   .filter-actus{
+   
+   .filter-press{
     font-family: 'Platform-Medium';
     text-transform:uppercase;
     letter-spacing:1px;
@@ -101,6 +111,36 @@
      &:first-child{
       margin-left:10px;
      }
+    }
+   }
+   
+   .introduction-kit-media{
+    font-family: 'Platform-Medium';
+    letter-spacing:1px;
+    font-size:1.375rem;
+    color:$color__bg-gray--darck;
+    padding-bottom:30px;
+    max-width:55%;
+    margin:auto;
+    text-align:center;
+   }
+   
+   .presentation{
+    padding:45px 0 25px 0;
+    border-top:1px solid $color__bg-gray;
+    border-bottom:1px solid $color__bg-gray;
+   }
+   .block-training-presentation__description{
+    padding-left:0;
+   }
+   
+   .block-training-presentation__media{
+    figcaption{
+     font-family: 'Platform-Medium';
+     letter-spacing:1px;
+     font-size:1.125rem;
+     padding-top:10px;
+     color:$color__slideshow--training;
     }
    }
    
@@ -126,6 +166,15 @@
      .item-actus__image{
       img{
        width:100%;
+       &:hover{
+        opacity: 0.8;
+       }
+      }
+      
+      a{
+       &:hover{
+        border-color:transparent;
+       }
       }
       
      }
@@ -159,11 +208,14 @@
         padding-top:7px;
        }
       }
+      
+      
     }
    }
    &.small{
-    width:73%;
+    width:76%;
     float:left;
+    padding-right:40px;
    }
   }  
 }
@@ -191,7 +243,12 @@
   .icon-left-small,
   .icon-right-small{
    position:absolute;
-   font-size:1rem;
+   font-size:1.125rem;
+   cursor:pointer;
+   &:hover{
+    color:$color__blue-gobelins;
+    border-color:transparent;
+   }
   }
   
   .icon-left-small{
@@ -216,16 +273,13 @@
    padding:20px 0;
    border-bottom:1px solid $color__border__gray;
    .date{
-    color:$color__blue-dark;
+    color:$color__blue-gobelins;
     font-size:1.625rem;
     font-family: 'Platform-Light';
     margin-bottom:12px;
-    &:after{
-     content:'';
-     border-bottom:1px solid $color__blue-dark;
-     width:20%;
-     display:block;
-    }
+    border-bottom:1px solid $color__blue-gobelins;
+    display:inline-block;
+   
    }
    
    .detail{
@@ -234,18 +288,97 @@
     font-size:1.112rem;
     letter-spacing:1px;
     padding-bottom:15px;
-   }
-   
-   .btn-agenda{
-    color:$color__blue-dark;
-    font-family: 'Platform-Medium';
-    font-size:0.875rem;
-    .icons-calendar{
-     color:$color__blue-dark;
+    display:block;
+    &:hover{
+     color:$color__blue-gobelins;
+     border-color:transparent;
     }
    }
+  
   }
  
  }
+}
+
+/***Communiqués press****/
+
+.list-communique-press{
+ .item-communique{
+  padding:20px 0;
+  border-top:1px solid $color__border__gray;
+  .item-communique__image{
+   display:inline-block;
+   width:25%;
+   vertical-align:top;
+   &:hover{
+    opacity: 0.8;
+   }
+   a:hover{
+    border-color:transparent;
+   }
+   &:first-child{
+    border-top:none;
+   }
+  }
+  
+  .item-communique__description{
+   display:inline-block;
+   width:71%;
+   margin-left:20px;
+   vertical-align:top;
+   h3{
+    font-family: 'Platform-Medium';
+    font-size:1.125rem;
+    color:$color__slideshow--training;
+    letter-spacing:1px;
+    padding-bottom:5px;
+    a{
+     &:hover{
+      color:$color__blue-gobelins;
+      border-color:transparent;
+     }
+    }
+   }
+   
+   .date{
+    color:$color__border-gray;
+    font-size:1rem;
+    padding-bottom:10px;
+   }
+   
+   .intro{
+    color:$color__border-gray;
+    font-size:0.875rem;
+    font-family: 'Neuzeit';
+    a:hover{
+     color:$color__text-dark;
+     border-color:transparent;
+    }
+   }
+  }
+ }
+ &.gobelins{
+   .item-communique__description{
+    width:100%;
+    margin:0;
+    .name-newspaper{
+     font-size:1rem;
+     display:inline-block;
+     &:after{
+      content:',';
+      color:$color__border-gray;
+      display:inline-block;
+      padding-left:2px;
+     }
+     a:hover{
+      color:$color__blue-gobelins;
+      border-color:transparent;
+     }
+    }
+    .date{
+     display:inline-block;
+    }
+   }
+  }
 }
 

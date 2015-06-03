@@ -10,10 +10,11 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   require('./app/aside-gallery.js');
   require('./app/popins.js');
   require('./app/trainings-pro.js');
+  require('./app/gototop.js');
 
 })();
 
-},{"./app/aside-gallery.js":2,"./app/block-gallery.js":3,"./app/menu.js":4,"./app/popins.js":5,"./app/sliders.js":6,"./app/tabs-accordion.js":7,"./app/trainings-pro.js":8}],2:[function(require,module,exports){
+},{"./app/aside-gallery.js":2,"./app/block-gallery.js":3,"./app/gototop.js":4,"./app/menu.js":5,"./app/popins.js":6,"./app/sliders.js":7,"./app/tabs-accordion.js":8,"./app/trainings-pro.js":9}],2:[function(require,module,exports){
 (function(){
   'use strict';
 
@@ -86,7 +87,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   });
 })();
 
-},{"../../../bower_components/jquery-contenttoggle/jquery.contenttoggle.js":12,"../jstemplates/aside-gallery__ajax.js":9,"jquery":"jquery"}],3:[function(require,module,exports){
+},{"../../../bower_components/jquery-contenttoggle/jquery.contenttoggle.js":13,"../jstemplates/aside-gallery__ajax.js":10,"jquery":"jquery"}],3:[function(require,module,exports){
 (function(){
   'use strict';
 
@@ -164,7 +165,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
       max.col = Math.max(max.col, data.width);
       max.line = Math.max(max.line, data.height);
     }.bind(this));
-    this.totalLines = totalBlocks / this.totalCols;
+    this.totalLines = Math.ceil(totalBlocks / this.totalCols);
     
     /* Write styles. */
     style = '';
@@ -192,9 +193,18 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
    * Bind events.
    */
   Plugin.prototype.bind = function() {
+    this.$element.on('touchstart.' + pluginName, this.startDrag.bind(this));
+    this.$element.on('touchmove.' + pluginName, this.drag.bind(this));
+    this.$element.on('touchend.' + pluginName, this.stopDrag.bind(this));
     this.$left.on('click.' + pluginName, this.prev.bind(this));
     this.$right.on('click.' + pluginName, this.next.bind(this));
     $(window).on('resize.' + pluginName, this.resize.bind(this));
+    this.$stamp.on('touchstart.' + pluginName, function(event){
+      event.stopPropagation();
+    });
+    this.$stamp.on('touchmove.' + pluginName, function(event){
+      event.stopPropagation();
+    });
   };
 
   /**
@@ -203,6 +213,79 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   Plugin.prototype.init = function() {
     this.buildGrid();
     this.resize();
+  };
+  
+  /**
+   * Start dragging.
+   */
+  Plugin.prototype.startDrag = function(event) {
+    var gridPosition = this.$grid.position();
+    var userPosition = {
+      x: event.originalEvent.changedTouches[0].pageX,
+      y: event.originalEvent.changedTouches[0].pageY
+    };
+    
+    this.previousPosition = userPosition;
+    this.$grid.addClass('is-dragging');
+    this.relativeStartPosition = {
+      left: gridPosition.left - userPosition.x,
+      top: gridPosition.top - userPosition.y
+    };
+  };
+  
+  /**
+   * Drag callback.
+   */
+  Plugin.prototype.drag = function(event) {
+    var gridPosition, distance, pull;
+    var userPosition = {
+      x: event.originalEvent.changedTouches[0].pageX,
+      y: event.originalEvent.changedTouches[0].pageY
+    };
+    
+    // Calculate direction.
+    if (!this.dragDirection) {
+      if (Math.abs(this.previousPosition.x - userPosition.x) > Math.abs(this.previousPosition.y - userPosition.y)) {
+        if (this.previousPosition.x > userPosition.x) {
+          this.dragDirection = 0; //'left';
+        } else {
+          this.dragDirection = 2; //'right';
+        }
+      } else {
+        if (this.previousPosition.y > userPosition.y) {
+          this.dragDirection = 1; //'top';
+        } else {
+          this.dragDirection = 3; //'bottom';
+        }
+      }
+    }
+    
+    // Drag if direction is horizontal.
+    if (this.dragDirection % 2 === 0) {
+      event.preventDefault();
+      gridPosition = this.relativeStartPosition.left + userPosition.x;
+      distance = this.previousPosition.x - userPosition.x;
+      pull = - distance / 5; // "Elastic" effect when dragging too far.
+      this.gridPosition = Math.max(Math.min(gridPosition, pull), - this.totalCols * this.currentColWidth + this.width + pull);
+      this.$grid.css({left: this.gridPosition + 'px'});
+    }
+  };
+  
+  /**
+   * Stop dragging.
+   */
+  Plugin.prototype.stopDrag = function() {
+    if (this.dragDirection !== null) {
+      this.dragDirection = null;
+      this.$grid.removeClass('is-dragging');
+      
+      // Calculate slider position.
+      if (this.dragDirection % 2 === 0) {
+        event.preventDefault();
+        this.currentColumn = Math.round(Math.abs(this.gridPosition / this.currentColWidth));
+        this.move();
+      }
+    }
   };
     
   /**
@@ -259,7 +342,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
     for (i = 1; i < this.items[index].width; i++) {
       if (this.gridColIndex + i >= this.totalCols ||
           this.grid[this.gridColIndex + i][this.gridLineIndex]) {
-         empty = false;
+        empty = false;
       }
     }
     
@@ -412,15 +495,15 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
    */
   Plugin.prototype.resize = function() {
     this.columnNumber = this.getColumns();
-    var colWidth = this.$element.width() / this.columnNumber;
-    var lineHeight = this.lineHeight / this.colWidth * colWidth;
-    var percentage = colWidth / this.colWidth;
+    this.width = this.$element.width();
+    this.currentColWidth = this.width / this.columnNumber;
+    this.currentLineHeight = this.lineHeight / this.colWidth * this.currentColWidth;
     
     this.$grid.css({
-      height: this.totalLines * lineHeight
+      height: this.totalLines * this.currentLineHeight
     });
     this.$stamp.css({
-      fontSize: percentage + 'em'
+      fontSize: (this.currentColWidth / this.colWidth) + 'em'
     });
     this.move();
   };
@@ -432,7 +515,52 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   });
 })();
 
-},{"../plugins/array.move.js":10,"jquery":"jquery","modernizr":"modernizr"}],4:[function(require,module,exports){
+},{"../plugins/array.move.js":11,"jquery":"jquery","modernizr":"modernizr"}],4:[function(require,module,exports){
+(function(){
+  'use strict';
+
+  /* require plugins */
+  var $ = require('jquery');
+  var Modernizr = require('modernizr');
+
+  $(function(){
+    var $element, $body, minScroll, scrollCallback;
+    var $window = $(window);
+
+    /* Setup data. */
+    $element = $('.js-gototop');
+    $body = $('body');
+    minScroll = screen.height;
+
+    scrollCallback = function() {
+      if (Modernizr.mq('(max-width: 1400px)')) {
+        $element.css({right: 27});
+      } else {
+        $element.css({right: ($body.width() - 1400) / 2 + 27});
+      }
+
+      if ($body.scrollTop() > minScroll) {
+        $element.show();
+      } else {
+        $element.hide();
+      }
+    };
+
+    /* Bind events. */
+    $element.on('click', function(event){
+      event.preventDefault();
+      $body.animate({scrollTop: 0});
+    });
+    $window.on('scroll', scrollCallback);
+    $window.on('resize', scrollCallback);
+
+    /* Initialize. */
+    scrollCallback();
+  });
+
+})();
+
+},{"jquery":"jquery","modernizr":"modernizr"}],5:[function(require,module,exports){
 (function(){
   'use strict';
 
@@ -513,7 +641,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   });
 })();
 
-},{"../../../bower_components/jquery-contenttoggle/jquery.contenttoggle.js":12,"../../../bower_components/sticky/jquery.sticky.js":14,"jquery":"jquery"}],5:[function(require,module,exports){
+},{"../../../bower_components/jquery-contenttoggle/jquery.contenttoggle.js":13,"../../../bower_components/sticky/jquery.sticky.js":15,"jquery":"jquery"}],6:[function(require,module,exports){
 (function(){
   'use strict';
 
@@ -522,16 +650,65 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   require('../../../bower_components/colorbox/jquery.colorbox.js');
 
   $(function(){
+    var baseOptions;
+    var groupId = 0;
+    var width = 400;
     if (screen.width > 480){
-      $('.js-popin--content').colorbox({inline:true, width: "910px"});
-    }else{
-      $('.js-popin--content').colorbox({inline:true, width: "400px"});
+      width = 910;
     }
+    
+    baseOptions = {
+      width: width,
+      transition: 'none',
+      title: false
+    };
+    
+    // HTML content popin.
+    $('.js-popin--content').colorbox({
+      inline: true,
+      width: width,
+      transition: 'none',
+      title: false
+    });
+    
+    // Video popin.
+    $('.js-popin--video').colorbox({
+      inline: true,
+      className:'is-video',
+      width: width,
+      maxHeight: '90%',
+      transition: 'none',
+      title: false
+    });
+    $(document).on('cbox_complete', function(){
+      var $iframes = $('#cboxLoadedContent iframe');
+      $iframes.each(function(index){
+        var $iframe = $iframes.eq(index);
+        var width  = $iframe.attr('width');
+        var height = $iframe.attr('height');
+        var ratio = parseInt(width, 10) / parseInt(height, 10);
+        $iframe.height($iframe.width() / ratio);
+      });
+      $iframes.length && $.colorbox.resize();
+    });
+    
+    // Gallery popin.
+    $('.js-popin--gallery').each(function(){
+      $(this).find('.js-popin--gallery__item').colorbox({
+        rel: ++groupId,
+        className:'is-video',
+        maxWidth: '100%',
+        maxHeight: '90%',
+        transition: 'none',
+        title: false,
+        returnFocus: false,
+      });
+    });
   });
-  
+
 })();
 
-},{"../../../bower_components/colorbox/jquery.colorbox.js":11,"jquery":"jquery"}],6:[function(require,module,exports){
+},{"../../../bower_components/colorbox/jquery.colorbox.js":12,"jquery":"jquery"}],7:[function(require,module,exports){
 (function(){
   'use strict';
 
@@ -640,7 +817,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
     $sliders.on('translate.owl.carousel', translateCallback);
   });
 })();
-},{"../../../bower_components/owl.carousel/dist/owl.carousel.js":13,"jquery":"jquery"}],7:[function(require,module,exports){
+},{"../../../bower_components/owl.carousel/dist/owl.carousel.js":14,"jquery":"jquery"}],8:[function(require,module,exports){
 (function(){
   'use strict';
 
@@ -659,7 +836,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   });
 })();
 
-},{"../../../bower_components/jquery-contenttoggle/jquery.contenttoggle.js":12,"jquery":"jquery"}],8:[function(require,module,exports){
+},{"../../../bower_components/jquery-contenttoggle/jquery.contenttoggle.js":13,"jquery":"jquery"}],9:[function(require,module,exports){
 (function(){
   'use strict';
 
@@ -713,7 +890,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
    
 })();
 
-},{"jquery":"jquery"}],9:[function(require,module,exports){
+},{"jquery":"jquery"}],10:[function(require,module,exports){
 var _ = require('underscore');
 exports["aside-gallery__ajax.html"] = function(obj){
 var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
@@ -736,7 +913,7 @@ __p+='';
 }
 return __p;
 };
-},{"underscore":"underscore"}],10:[function(require,module,exports){
+},{"underscore":"underscore"}],11:[function(require,module,exports){
 Array.prototype.move = function (oldIndex, newIndex) {
   if (newIndex >= this.length) {
     var k = newIndex - this.newIndex;
@@ -748,7 +925,7 @@ Array.prototype.move = function (oldIndex, newIndex) {
   return this; // for testing purposes
 };
 
-},{}],11:[function(require,module,exports){
+},{}],12:[function(require,module,exports){
 /*!
 	Colorbox 1.6.1
 	license: MIT
@@ -1855,7 +2032,7 @@ Array.prototype.move = function (oldIndex, newIndex) {
 
 }(jQuery, document, window));
 
-},{}],12:[function(require,module,exports){
+},{}],13:[function(require,module,exports){
 (function($){
   'use strict';
 
@@ -2215,7 +2392,7 @@ Array.prototype.move = function (oldIndex, newIndex) {
   };
 })(jQuery);
 
-},{}],13:[function(require,module,exports){
+},{}],14:[function(require,module,exports){
 /**
  * Owl carousel
  * @version 2.0.0
@@ -5442,7 +5619,7 @@ Array.prototype.move = function (oldIndex, newIndex) {
 
 })(window.Zepto || window.jQuery, window, document);
 
-},{}],14:[function(require,module,exports){
+},{}],15:[function(require,module,exports){
 // Sticky Plugin v1.0.0 for jQuery
 // =============
 // Author: Anthony Garand
