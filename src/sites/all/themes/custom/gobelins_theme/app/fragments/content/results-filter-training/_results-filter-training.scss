@@ -4,122 +4,125 @@
     width: 100%;
     margin-left: 0;
   }
-  .option-filter {
-    text-transform: uppercase;
-    color: $color__slideshow--training;
-    margin-bottom: 15px;
-    font-family: 'Neuzeit';
-    .date,
-    .price {
-      text-transform: capitalize;
-      color: $color__border-gray;
-      font-family: $font__neuzeit;
-      padding-bottom: 2px;
-      margin-left: 15px;
-      text-decoration: none;
-    }
-    .active {
+} 
+.results-filter-training__option-filter {
+  text-transform: uppercase;
+  color: $color__slideshow--training;
+  margin-bottom: 15px;
+  font-family: 'Neuzeit';
+  .date,
+  .price {
+    text-transform: capitalize;
+    color: $color__border-gray;
+    font-family: $font__neuzeit;
+    padding-bottom: 2px;
+    margin-left: 15px;
+    text-decoration: none;
+    &.active {
       border-bottom: 2px solid #1a1a1a;
       color: $color__slideshow--training;
     }
-  }
-  .list-results-training {
-    border-bottom: 2px solid #d9d9d9;
-    margin-bottom: 25px;
-    border-top: 2px solid $color__training--animation;
-    .list-item {
-      display: block;
-      background-color: $color__bg-white;
-      margin-top: 2px;
-      padding: 15px;
-      &:first-child {
-        margin-top: 0;
-      }
-    }
-    .item-result__info {
-      width: 35%;
-      display: inline-block;
-      vertical-align: top;
-      text-align: right;
-      @media screen and (max-width: $width__xs - 1px) {
-        width: 100%;
-        margin-top: 20px;
-      }
-      .price-training {
-        color: $color__border-gray;
-        margin-right: 20px;
-        font-family: 'Platform-Light';
-        letter-spacing: 1px;
-        @media screen and (max-width: $width__xs - 1px) {
-          float: left;
-          padding-top: 10px;
-          margin-left: -5px;
-        }
-      }
-      .btn-like--mini {
-        margin-left: 10px;
-      }
-    }
-    .item-result__detail {
-      width: 64%;
-      display: inline-block;
-      vertical-align: top;
-      @media screen and (max-width: $width__xs - 1px) {
-        width: 100%;
-        padding-bottom: 22px;
-        border-bottom: 1px solid $color__bg-gray;
-      }
-      h3 {
-        color: $color__slideshow--training;
-        font-size: 1.125rem;
-        font-family: $font__platform--medium;
-        letter-spacing: 1px;
-        position: relative;
-      }
-      .new {
-        display: inline-block;
-        background: $color__blue-gobelins;
-        color: $color__bg-white;
-        padding: 0 4px;
-        font-size: 0.6875rem;
-        text-transform: uppercase;
-        height: 15px;
-        line-height: 15px;
-        margin: 4px 0 0 10px;
-        vertical-align: top;
-      }
-      p {
-        display: inline-block;
-        margin-top: 10px;
-        font-family: 'Neuzeit';
-        @media screen and (max-width: $width__xs - 1px) {
-          &.item-trainings__type {
-            display: inline-block;
-          }
-        }
-      }
-      .ref {
-        margin-left: 20px;
-      }
-      .subtitle {
-        display: block;
-        margin: 0;
-      }
+  }  
+}
+.results-filter-training__list {
+  border-bottom: 2px solid #d9d9d9;
+  margin-bottom: 25px;
+  border-top: 2px solid $color__training--animation;
+  .list-item {
+    display: block;
+    background-color: $color__bg-white;
+    margin-top: 2px;
+    padding: 15px;
+    &:first-child {
+      margin-top: 0;
     }
   }
-  .other-training {
-    background: #1a1a1a;
-    a {
-      text-transform: uppercase;
-      color: $color__bg-white;
-      font-size: 0.875rem;
-      font-family: "Platform-Medium";
+  
+  .list-item__detail {
+    width: 64%;
+    display: inline-block;
+    vertical-align: top;
+    @media screen and (max-width: $width__xs - 1px) {
+      width: 100%;
+      padding-bottom: 22px;
+      border-bottom: 1px solid $color__bg-gray;
+    }
+    h3 {
+      color: $color__slideshow--training;
+      font-size: 1.125rem;
+      font-family: $font__platform--medium;
       letter-spacing: 1px;
-      display: block;
-      text-align: center;
-      text-decoration: none;
-      padding: 14px;
+      position: relative;
     }
+    .new {
+      display: inline-block;
+      background: $color__blue-gobelins;
+      color: $color__bg-white;
+      padding: 0 4px;
+      font-size: 0.6875rem;
+      text-transform: uppercase;
+      height: 15px;
+      line-height: 15px;
+      margin: 4px 0 0 10px;
+      vertical-align: top;
+    }
+    p {
+      display: inline-block;
+      margin-top: 10px;
+      font-family: 'Neuzeit';
+      @media screen and (max-width: $width__xs - 1px) {
+        &.item-trainings__type {
+          display: inline-block;
+        }
+      }
+    }
+    .ref {
+      margin-left: 20px;
+    }
+    .subtitle {
+      display: block;
+      margin: 0;
+    }
+  }
+  
+  .list-item__info {
+    width: 35%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+    @media screen and (max-width: $width__xs - 1px) {
+      width: 100%;
+      margin-top: 20px;
+    }
+    .price-training {
+      color: $color__border-gray;
+      margin-right: 20px;
+      font-family: 'Platform-Light';
+      letter-spacing: 1px;
+      @media screen and (max-width: $width__xs - 1px) {
+        float: left;
+        padding-top: 10px;
+        margin-left: -5px;
+      }
+    }
+    .btn-like--mini {
+      margin-left: 10px;
+    }
+  }
+}
+
+.results-filter-training__other-training {
+  background: #1a1a1a;
+  a {
+    text-transform: uppercase;
+    color: $color__bg-white;
+    font-size: 0.875rem;
+    font-family: "Platform-Medium";
+    letter-spacing: 1px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px;
   }
 }
 
