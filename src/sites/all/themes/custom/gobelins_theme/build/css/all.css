@@ -724,7 +724,7 @@ th {
 /**/
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-bg__rubric--hover, .main-menu--desktop .rubric__img:after {
-  background: url('../images/icons-sa18e0d0b9f.png') 0 0 no-repeat;
+  background: url('../images/icons-s659808fe85.png') 0 0 no-repeat;
   background-size: 50px 418px;
   display: inline-block;
   width: 29px;
@@ -733,7 +733,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-like-gray {
-  background: url('../images/icons-sa18e0d0b9f.png') 0 -297px no-repeat;
+  background: url('../images/icons-s659808fe85.png') 0 -297px no-repeat;
   background-size: 50px 418px;
   display: inline-block;
   width: 11px;
@@ -742,7 +742,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-like-blue {
-  background: url('../images/icons-sa18e0d0b9f.png') 0 -288px no-repeat;
+  background: url('../images/icons-s659808fe85.png') 0 -288px no-repeat;
   background-size: 50px 418px;
   display: inline-block;
   width: 11px;
@@ -751,7 +751,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-press {
-  background: url('../images/icons-sa18e0d0b9f.png') 0 -348px no-repeat;
+  background: url('../images/icons-s659808fe85.png') 0 -348px no-repeat;
   background-size: 50px 418px;
   display: inline-block;
   width: 12px;
@@ -760,7 +760,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-btn-menu {
-  background: url('../images/icons-sa18e0d0b9f.png') 0 -29px no-repeat;
+  background: url('../images/icons-s659808fe85.png') 0 -29px no-repeat;
   background-size: 50px 418px;
   display: inline-block;
   width: 20px;
@@ -768,8 +768,17 @@ th {
 }
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
+.icons-btn-play {
+  background: url('../images/icons-s659808fe85.png') 0 -47px no-repeat;
+  background-size: 50px 418px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+/* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-calendar, .btn-agenda:before {
-  background: url('../images/icons-sa18e0d0b9f.png') 0 -113px no-repeat;
+  background: url('../images/icons-s659808fe85.png') 0 -113px no-repeat;
   background-size: 50px 418px;
   display: inline-block;
   width: 16px;
@@ -778,7 +787,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-list {
-  background: url('../images/icons-sa18e0d0b9f.png') 0 -306px no-repeat;
+  background: url('../images/icons-s659808fe85.png') 0 -306px no-repeat;
   background-size: 50px 418px;
   display: inline-block;
   width: 16px;
@@ -787,7 +796,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-public {
-  background: url('../images/icons-sa18e0d0b9f.png') 0 -376px no-repeat;
+  background: url('../images/icons-s659808fe85.png') 0 -376px no-repeat;
   background-size: 50px 418px;
   display: inline-block;
   width: 17px;
@@ -796,7 +805,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-checked {
-  background: url('../images/icons-sa18e0d0b9f.png') 0 -158px no-repeat;
+  background: url('../images/icons-s659808fe85.png') 0 -158px no-repeat;
   background-size: 50px 418px;
   display: inline-block;
   width: 13px;
@@ -805,7 +814,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-euro {
-  background: url('../images/icons-sa18e0d0b9f.png') 0 -217px no-repeat;
+  background: url('../images/icons-s659808fe85.png') 0 -217px no-repeat;
   background-size: 50px 418px;
   display: inline-block;
   width: 12px;
@@ -814,7 +823,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-location {
-  background: url('../images/icons-sa18e0d0b9f.png') 0 -332px no-repeat;
+  background: url('../images/icons-s659808fe85.png') 0 -332px no-repeat;
   background-size: 50px 418px;
   display: inline-block;
   width: 12px;
@@ -823,7 +832,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-location-white {
-  background: url('../images/icons-sa18e0d0b9f.png') 0 -321px no-repeat;
+  background: url('../images/icons-s659808fe85.png') 0 -321px no-repeat;
   background-size: 50px 418px;
   display: inline-block;
   width: 8px;
@@ -832,7 +841,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-doc, .list-downloads--mini li:before {
-  background: url('../images/icons-sa18e0d0b9f.png') 0 -167px no-repeat;
+  background: url('../images/icons-s659808fe85.png') 0 -167px no-repeat;
   background-size: 50px 418px;
   display: inline-block;
   width: 14px;
@@ -848,7 +857,7 @@ th {
 .training-video-audio .breadcrumb .icons-home-gray,
 .training-cross-media .breadcrumb .icons-home-gray,
 .press .breadcrumb .icons-home-gray {
-  background: url('../images/icons-sa18e0d0b9f.png') 0 -265px no-repeat;
+  background: url('../images/icons-s659808fe85.png') 0 -265px no-repeat;
   background-size: 50px 418px;
   display: inline-block;
   width: 12px;
@@ -857,7 +866,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-home-gray {
-  background: url('../images/icons-sa18e0d0b9f.png') 0 -252px no-repeat;
+  background: url('../images/icons-s659808fe85.png') 0 -252px no-repeat;
   background-size: 50px 418px;
   display: inline-block;
   width: 12px;
@@ -866,7 +875,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-download, .btn-download:after {
-  background: url('../images/icons-sa18e0d0b9f.png') 0 -201px no-repeat;
+  background: url('../images/icons-s659808fe85.png') 0 -201px no-repeat;
   background-size: 50px 418px;
   display: inline-block;
   width: 14px;
@@ -875,7 +884,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-download-white, .btn-download:hover:after {
-  background: url('../images/icons-sa18e0d0b9f.png') 0 -185px no-repeat;
+  background: url('../images/icons-s659808fe85.png') 0 -185px no-repeat;
   background-size: 50px 418px;
   display: inline-block;
   width: 14px;
@@ -884,7 +893,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-print {
-  background: url('../images/icons-sa18e0d0b9f.png') 0 -362px no-repeat;
+  background: url('../images/icons-s659808fe85.png') 0 -362px no-repeat;
   background-size: 50px 418px;
   display: inline-block;
   width: 16px;
@@ -893,7 +902,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-checkbox, input[type="checkbox"] + label::before {
-  background: url('../images/icons-sa18e0d0b9f.png') 0 -144px no-repeat;
+  background: url('../images/icons-s659808fe85.png') 0 -144px no-repeat;
   background-size: 50px 418px;
   display: inline-block;
   width: 14px;
@@ -902,7 +911,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-checkbox-checked, input[type="checkbox"]:checked + label::before {
-  background: url('../images/icons-sa18e0d0b9f.png') 0 -130px no-repeat;
+  background: url('../images/icons-s659808fe85.png') 0 -130px no-repeat;
   background-size: 50px 418px;
   display: inline-block;
   width: 14px;
@@ -911,7 +920,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-radio, input[type="radio"] + label::before {
-  background: url('../images/icons-sa18e0d0b9f.png') 0 -404px no-repeat;
+  background: url('../images/icons-s659808fe85.png') 0 -404px no-repeat;
   background-size: 50px 418px;
   display: inline-block;
   width: 14px;
@@ -920,7 +929,7 @@ th {
 
 /* line 31, ../../app/scss/includes/_mixins.scss */
 .icons-radio-checked, input[type="radio"]:checked + label::before {
-  background: url('../images/icons-sa18e0d0b9f.png') 0 -390px no-repeat;
+  background: url('../images/icons-s659808fe85.png') 0 -390px no-repeat;
   background-size: 50px 418px;
   display: inline-block;
   width: 14px;
@@ -1116,109 +1125,109 @@ button {
   content: '\e800';
 }
 
-/* '¯áÇ' */
+/* '' */
 /* line 58, ../../app/scss/includes/_fontello.scss */
 .icon-left-small:before, #cboxPrevious:before {
   content: '\e801';
 }
 
-/* '¯áü' */
+/* '' */
 /* line 59, ../../app/scss/includes/_fontello.scss */
 .icon-menu:before {
   content: '\e802';
 }
 
-/* '¯áé' */
+/* '' */
 /* line 60, ../../app/scss/includes/_fontello.scss */
 .icon-search:before {
   content: '\e803';
 }
 
-/* '¯áâ' */
+/* '' */
 /* line 61, ../../app/scss/includes/_fontello.scss */
 .icon-down-small:before {
   content: '\e804';
 }
 
-/* '¯áä' */
+/* '' */
 /* line 62, ../../app/scss/includes/_fontello.scss */
 .icon-up-small:before {
   content: '\e805';
 }
 
-/* '¯áà' */
+/* '' */
 /* line 63, ../../app/scss/includes/_fontello.scss */
 .icon-right-small:before, #cboxNext:before {
   content: '\e806';
 }
 
-/* '¯áå' */
+/* '' */
 /* line 64, ../../app/scss/includes/_fontello.scss */
 .icon-plus:before {
   content: '\e807';
 }
 
-/* '¯áç' */
+/* '' */
 /* line 65, ../../app/scss/includes/_fontello.scss */
 .icon-minus:before {
   content: '\e808';
 }
 
-/* '¯áê' */
+/* '' */
 /* line 66, ../../app/scss/includes/_fontello.scss */
 .icon-linkedin:before {
   content: '\e80a';
 }
 
-/* '¯áè' */
+/* '' */
 /* line 67, ../../app/scss/includes/_fontello.scss */
 .icon-facebook:before {
   content: '\e80b';
 }
 
-/* '¯áï' */
+/* '' */
 /* line 68, ../../app/scss/includes/_fontello.scss */
 .icon-twitter:before {
   content: '\e80c';
 }
 
-/* '¯áî' */
+/* '' */
 /* line 69, ../../app/scss/includes/_fontello.scss */
 .icon-gplus:before {
   content: '\e80d';
 }
 
-/* '¯áì' */
+/* '' */
 /* line 70, ../../app/scss/includes/_fontello.scss */
 .icon-pinterest-circled:before {
   content: '\e80e';
 }
 
-/* '¯áÄ' */
+/* '' */
 /* line 71, ../../app/scss/includes/_fontello.scss */
 .icon-vimeo:before {
   content: '\e80f';
 }
 
-/* '¯áÅ' */
+/* '' */
 /* line 72, ../../app/scss/includes/_fontello.scss */
 .icon-instagramm:before {
   content: '\e810';
 }
 
-/* '¯áÉ' */
+/* '' */
 /* line 73, ../../app/scss/includes/_fontello.scss */
 .icon-youtube-play:before {
   content: '\e811';
 }
 
-/* '¯áæ' */
+/* '' */
 /* line 74, ../../app/scss/includes/_fontello.scss */
 .icon-heart:before {
   content: '\e813';
 }
 
-/* '¯áô' */
+/* '' */
 /***************** btns blue ****************/
 /* line 2, ../../app/scss/includes/_helpers.scss */
 .btn-like {
@@ -1772,14 +1781,15 @@ select {
 /* line 81, ../../app/scss/includes/_popins.scss */
 .cboxPhoto {
   display: block;
+  margin: auto;
 }
 
-/* line 84, ../../app/scss/includes/_popins.scss */
+/* line 85, ../../app/scss/includes/_popins.scss */
 #cboxCurrent {
   display: none !important;
 }
 
-/* line 88, ../../app/scss/includes/_popins.scss */
+/* line 89, ../../app/scss/includes/_popins.scss */
 #cboxPrevious {
   padding: 0;
   position: absolute;
@@ -1788,7 +1798,7 @@ select {
   margin-top: -20px;
 }
 
-/* line 99, ../../app/scss/includes/_popins.scss */
+/* line 100, ../../app/scss/includes/_popins.scss */
 #cboxNext {
   padding: 0;
   position: absolute;
@@ -4148,7 +4158,7 @@ body.is-open {
   border-color: transparent;
 }
 
-/***Communiqu├®s press****/
+/***Communiqués press****/
 /* line 306, ../../app/fragments/components/tabs-accordion-press/_tabs-accordion-press.scss */
 .list-communique-press .item-communique {
   padding: 20px 0;
@@ -5279,26 +5289,31 @@ body.is-open {
 }
 
 /* line 49, ../../app/fragments/content/block-training-gallery/_block-training-gallery.scss */
-.block-gallery__item,
 .block-gallery__item {
   display: block;
   position: absolute;
 }
-
-/* line 54, ../../app/fragments/content/block-training-gallery/_block-training-gallery.scss */
-.block-gallery__item > img,
+/* line 53, ../../app/fragments/content/block-training-gallery/_block-training-gallery.scss */
 .block-gallery__item > img {
   display: block;
   width: 100%;
   height: auto;
 }
+/* line 59, ../../app/fragments/content/block-training-gallery/_block-training-gallery.scss */
+.block-gallery__item > .icons-btn-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -25px;
+}
 
-/* line 60, ../../app/fragments/content/block-training-gallery/_block-training-gallery.scss */
+/* line 67, ../../app/fragments/content/block-training-gallery/_block-training-gallery.scss */
 .block-gallery__stamp {
   background-color: #000;
 }
 
-/* line 63, ../../app/fragments/content/block-training-gallery/_block-training-gallery.scss */
+/* line 70, ../../app/fragments/content/block-training-gallery/_block-training-gallery.scss */
 .block-gallery__grid.is-dragging {
   -webkit-transition: none;
           transition: none;
