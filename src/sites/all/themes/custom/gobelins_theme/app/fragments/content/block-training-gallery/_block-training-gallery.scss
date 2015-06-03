@@ -61,3 +61,11 @@
 .block-gallery__stamp {
   background-color: #000;
 }
+.block-gallery__grid.is-dragging {
+  transition: none;
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: -o-grab;
+  cursor: -ms-grab;
+  cursor: grab;
+}

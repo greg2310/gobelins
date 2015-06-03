@@ -103,9 +103,18 @@
    * Bind events.
    */
   Plugin.prototype.bind = function() {
+    this.$element.on('touchstart.' + pluginName, this.startDrag.bind(this));
+    this.$element.on('touchmove.' + pluginName, this.drag.bind(this));
+    this.$element.on('touchend.' + pluginName, this.stopDrag.bind(this));
     this.$left.on('click.' + pluginName, this.prev.bind(this));
     this.$right.on('click.' + pluginName, this.next.bind(this));
     $(window).on('resize.' + pluginName, this.resize.bind(this));
+    this.$stamp.on('touchstart.' + pluginName, function(event){
+      event.stopPropagation();
+    });
+    this.$stamp.on('touchmove.' + pluginName, function(event){
+      event.stopPropagation();
+    });
   };
 
   /**
@@ -114,6 +123,79 @@
   Plugin.prototype.init = function() {
     this.buildGrid();
     this.resize();
+  };
+  
+  /**
+   * Start dragging.
+   */
+  Plugin.prototype.startDrag = function(event) {
+    var gridPosition = this.$grid.position();
+    var userPosition = {
+      x: event.originalEvent.changedTouches[0].pageX,
+      y: event.originalEvent.changedTouches[0].pageY
+    };
+    
+    this.previousPosition = userPosition;
+    this.$grid.addClass('is-dragging');
+    this.relativeStartPosition = {
+      left: gridPosition.left - userPosition.x,
+      top: gridPosition.top - userPosition.y
+    };
+  };
+  
+  /**
+   * Drag callback.
+   */
+  Plugin.prototype.drag = function(event) {
+    var gridPosition, distance, pull;
+    var userPosition = {
+      x: event.originalEvent.changedTouches[0].pageX,
+      y: event.originalEvent.changedTouches[0].pageY
+    };
+    
+    // Calculate direction.
+    if (!this.dragDirection) {
+      if (Math.abs(this.previousPosition.x - userPosition.x) > Math.abs(this.previousPosition.y - userPosition.y)) {
+        if (this.previousPosition.x > userPosition.x) {
+          this.dragDirection = 0; //'left';
+        } else {
+          this.dragDirection = 2; //'right';
+        }
+      } else {
+        if (this.previousPosition.y > userPosition.y) {
+          this.dragDirection = 1; //'top';
+        } else {
+          this.dragDirection = 3; //'bottom';
+        }
+      }
+    }
+    
+    // Drag if direction is horizontal.
+    if (this.dragDirection % 2 === 0) {
+      event.preventDefault();
+      gridPosition = this.relativeStartPosition.left + userPosition.x;
+      distance = this.previousPosition.x - userPosition.x;
+      pull = - distance / 5; // "Elastic" effect when dragging too far.
+      this.gridPosition = Math.max(Math.min(gridPosition, pull), - this.totalCols * this.currentColWidth + this.width + pull);
+      this.$grid.css({left: this.gridPosition + 'px'});
+    }
+  };
+  
+  /**
+   * Stop dragging.
+   */
+  Plugin.prototype.stopDrag = function() {
+    if (this.dragDirection !== null) {
+      this.dragDirection = null;
+      this.$grid.removeClass('is-dragging');
+      
+      // Calculate slider position.
+      if (this.dragDirection % 2 === 0) {
+        event.preventDefault();
+        this.currentColumn = Math.round(Math.abs(this.gridPosition / this.currentColWidth));
+        this.move();
+      }
+    }
   };
     
   /**
@@ -170,7 +252,7 @@
     for (i = 1; i < this.items[index].width; i++) {
       if (this.gridColIndex + i >= this.totalCols ||
           this.grid[this.gridColIndex + i][this.gridLineIndex]) {
-         empty = false;
+        empty = false;
       }
     }
     
@@ -323,15 +405,15 @@
    */
   Plugin.prototype.resize = function() {
     this.columnNumber = this.getColumns();
-    var colWidth = this.$element.width() / this.columnNumber;
-    var lineHeight = this.lineHeight / this.colWidth * colWidth;
-    var percentage = colWidth / this.colWidth;
+    this.width = this.$element.width();
+    this.currentColWidth = this.width / this.columnNumber;
+    this.currentLineHeight = this.lineHeight / this.colWidth * this.currentColWidth;
     
     this.$grid.css({
-      height: this.totalLines * lineHeight
+      height: this.totalLines * this.currentLineHeight
     });
     this.$stamp.css({
-      fontSize: percentage + 'em'
+      fontSize: (this.currentColWidth / this.colWidth) + 'em'
     });
     this.move();
   };
