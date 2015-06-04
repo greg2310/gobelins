@@ -222,6 +222,9 @@
         searchIndex--;
       }
       this.items.move(searchIndex, index + 1);
+      this.items.map(function(value, index){
+        value.index = index;
+      });
       if(this.items[searchIndex]) {
         // Start new build.
         this.buildGridRecursive(0);
