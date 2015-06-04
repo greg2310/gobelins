@@ -371,33 +371,33 @@
         
   
     <div class="block-press-details l-row">
-  <div class="tabs-accordion-press">
+  <nav class="tabs-accordion-press">
   <div class="l-row__inner clearfix">
    <ul class="tabs-title">
-     <li class="js-contenttoggle--tabs-accordion" data-content-selector="#ta-content1" data-trigger-selector=".ta-trigger1">
-       <a href="#tab1" class="ta-trigger1">Actualites</a>
+     <li class="is-open">
+       <a href="#tab1" >Actualites</a>
      </li>
-     <li class="js-contenttoggle--tabs-accordion" data-content-selector="#ta-content2" data-trigger-selector=".ta-trigger2">
-       <a href="#tab2" class="ta-trigger2">Communiqués de presse</a>
+     <li>
+       <a href="#tab2">Communiqués de presse</a>
      </li>
-     <li class="js-contenttoggle--tabs-accordion" data-content-selector="#ta-content3" data-trigger-selector=".ta-trigger3">
-       <a href="#tab3" class="ta-trigger3">Kit média</a>
+     <li>
+       <a href="#tab3">Kit média</a>
      </li>
-      <li class="js-contenttoggle--tabs-accordion" data-content-selector="#ta-content4" data-trigger-selector=".ta-trigger4">
-       <a href="#tab4" class="ta-trigger4">Gobelins dans la presse</a>
+      <li>
+       <a href="#tab4">Gobelins dans la presse</a>
      </li>
    </ul>
   </div>
-  <div class="tabs-container">
-   
-    <div class="accordion-title">
-      <a href="#tab1" class="ta-trigger1">Actualites</a>
-    </div>
-    <div class="content" id="ta-content1">
-      <div class="l-row__inner clearfix">
-        <div class="bloc-content small">
-          <h2 class="title-h2"> Actualités </h2>
-          <div class="filter-press">
+ </nav> 
+
+
+
+  <div class="content-press">
+  <div class="l-row">
+    <div class="l-row__inner clearfix">
+      <div class="bloc-content small">
+        <h2 class="title-h2"> Actualités </h2>
+        <div class="filter-press">
  Filtrer par
  <div class="form-item">
   <label for="rubrique">Rubriques</label>
@@ -421,7 +421,7 @@
   </span>
  </div>
 </div>
-          <div class="list-actus-press">
+        <div class="list-actus-press">
  <div class="list-actus-press__line">
   <div class="list-actus-press__item-actus">
    <div class="item-actus__image">
@@ -530,8 +530,8 @@
   </div>         
  </div>
 </div>
-        </div>
-        <div class="block-agenda-press">
+      </div>
+      <div class="block-agenda-press">
   <p class="title">Agenda</p>
   <div class="select-month">
    <span class="icon-left-small"></span>
@@ -558,8 +558,8 @@
   
   </div>
 </div>
-      </div>
-      <div class="list-downloads l-row">
+    </div>
+    <div class="list-downloads l-row">
   <div class="l-row__inner">
     <h2 class="title-h2">documents utiles</h2>
     <div class="grid-container">
@@ -596,7 +596,7 @@
     </div>
   </div>
 </div>
-      <div class="list-rapid-access l-row">
+    <div class="list-rapid-access l-row">
   <div class="l-row__inner">
     <h2 class="title-h2">Accès rapide</h2>
     <div class="grid-container">
@@ -636,15 +636,13 @@
     </div>
   </div>
 </div>  
-    </div>
-    <div class="accordion-title">
-      <a href="#tab2" class="ta-trigger2">Communiqués de presse</a>
-    </div>
-    <div class="content is-hidden" id="ta-content2">
-      <div class="l-row__inner clearfix">
-        <div class="bloc-content small">
-          <h2 class="title-h2">Communiqués de presse</h2>
-          <div class="filter-press">
+  </div> 
+  
+  <div class="content is-hidden" id="ta-content2">
+    <div class="l-row__inner clearfix">
+      <div class="bloc-content small">
+        <h2 class="title-h2">Communiqués de presse</h2>
+        <div class="filter-press">
  Filtrer par
  <div class="form-item">
   <label for="rubrique">Rubriques</label>
@@ -669,7 +667,7 @@
  </div>
 </div>
 
-          <div class="list-communique-press">
+        <div class="list-communique-press">
   <div class="list-communique-press__item-communique">
     
       <div class="item-communique__image">
@@ -689,7 +687,7 @@
 </div>
 
 
-          <div class="list-communique-press">
+        <div class="list-communique-press">
   <div class="list-communique-press__item-communique">
     
       <div class="item-communique__image">
@@ -709,7 +707,7 @@
 </div>
 
 
-          <div class="list-communique-press">
+        <div class="list-communique-press">
   <div class="list-communique-press__item-communique">
     
       <div class="item-communique__image">
@@ -729,7 +727,7 @@
 </div>
 
 
-          <div class="list-communique-press">
+        <div class="list-communique-press">
   <div class="list-communique-press__item-communique">
     
       <div class="item-communique__image">
@@ -749,7 +747,7 @@
 </div>
 
 
-          <div class="list-communique-press">
+        <div class="list-communique-press">
   <div class="list-communique-press__item-communique">
     
       <div class="item-communique__image">
@@ -770,15 +768,15 @@
 
 
 
-          <div class="pagination">
+        <div class="pagination">
  <ul class="pager">
    <li class="previous off"><span class="icon-left-small">Précédent</span></li>
    <li class="number-page">Page 1 sur 3</li>
    <li class="next"><a class="icon-right-small" href="#">Suivant</a></li>
  </ul>
 </div>
-        </div>
-        <div class="block-agenda-press">
+      </div>
+      <div class="block-agenda-press">
   <p class="title">Agenda</p>
   <div class="select-month">
    <span class="icon-left-small"></span>
@@ -805,8 +803,8 @@
   
   </div>
 </div>
-      </div>
-      <div class="list-downloads l-row">
+    </div>
+    <div class="list-downloads l-row">
   <div class="l-row__inner">
     <h2 class="title-h2">documents utiles</h2>
     <div class="grid-container">
@@ -843,7 +841,7 @@
     </div>
   </div>
 </div>
-      <div class="list-rapid-access l-row">
+    <div class="list-rapid-access l-row">
   <div class="l-row__inner">
     <h2 class="title-h2">Accès rapide</h2>
     <div class="grid-container">
@@ -883,15 +881,15 @@
     </div>
   </div>
 </div>  
-    </div>
-    <div class="accordion-title">
-      <a href="#tab3" class="ta-trigger3">Kit média</a>
-    </div>
-    <div class="content is-hidden" id="ta-content3">
-      <div class="l-row__inner clearfix">
-        <div class="bloc-content">
-          <h2 class="title-h2 center">Kit média</h2>
-           <p class="introduction-kit-media">N’hésitez pas à nous contacter si vous souhaitez accéder à des informations ciblées ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo.</p>
+  </div>
+  <div class="accordion-title">
+    <a href="#tab3" class="ta-trigger3">Kit média</a>
+  </div>
+  <div class="content is-hidden" id="ta-content3">
+    <div class="l-row__inner clearfix">
+      <div class="bloc-content">
+        <h2 class="title-h2 center">Kit média</h2>
+         <p class="introduction-kit-media">N’hésitez pas à nous contacter si vous souhaitez accéder à des informations ciblées ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo.</p>
  <div class="presentation-kit-media">
     <div class="block-training-presentation__description">
      <p>La formation « Concepteur et réalisateur de films d’animation » est reconnue mondialement pour son excellence en matière d'animation de personnages mais aussi pour son enseignement équilibré entre compétences techniques et artistiques ainsi que pour son haut niveau de professionnalisme de étudiants sortants. Ce cursus en 4 ans permet de maîtriser l’ensemble des techniques d’animation à la fois traditionnelles et numériques (2D et 3D), de la pré-production à la post-production avec des méthodes professionnelles pratiquées en studio de cinéma d’animation. </p>
@@ -904,7 +902,7 @@
      </figure>
     </div>
  </div>
-          <div class="block-doc-download">
+        <div class="block-doc-download">
   <h2 class="title-h2">Documents utiles</h2>
   <div class="item-downloads item-downloads--press">
     <a href="#" class="item-downloads__img">
@@ -939,9 +937,9 @@
  </div> 
 
 
-          <div class="block-contact-press">
-            <h2 class="title-h2">Contact presse</h2>
-            
+        <div class="block-contact-press">
+          <h2 class="title-h2">Contact presse</h2>
+          
 <div class="block-contact-press__infos-contact">
   <figure>
     <img src="images/picture-contact.png" alt="" />
@@ -955,7 +953,7 @@
   <a class="btn-mail" href="#">Contactez-nous</a>
 </div>
 
-            
+          
 <div class="block-contact-press__infos-contact">
   <figure>
     <img src="images/picture-contact.png" alt="" />
@@ -969,11 +967,11 @@
   <a class="btn-mail" href="#">Contactez-nous</a>
 </div>
 
-          </div>
         </div>
       </div>
-      
-      <div class="l-row social-network-press">
+    </div>
+    
+    <div class="l-row social-network-press">
   <div class="l-row__inner clearfix">
     <div class="list-shared-icons">
       <h2 class="title-h2">Retrouvez Gobelins sur les réseaux sociaux</h2>
@@ -988,9 +986,9 @@
     </div>
   </div>
 </div>    
-        
-        
-      <div class="list-news l-row">
+      
+      
+    <div class="list-news l-row">
   <div class="l-row__inner">
     <h2 class="title-h2">actualités & évènements</h2>
     <div class="grid-container">
@@ -1038,17 +1036,17 @@
     <a href="#" class="link-more">voir toutes</a>
   </div>
 </div> 
-     
-    </div>
-    
-    <div class="accordion-title">
-      <a href="#tab4" class="ta-trigger4">Gobelins dans la presse</a>
-    </div>
-    <div class="content is-hidden" id="ta-content4">
-      <div class="l-row__inner clearfix">
-        <div class="bloc-content small">
-          <h2 class="title-h2"> Gobelins dans la presse</h2>
-          <div class="filter-press">
+   
+  </div>
+  
+  <div class="accordion-title">
+    <a href="#tab4" class="ta-trigger4">Gobelins dans la presse</a>
+  </div>
+  <div class="content is-hidden" id="ta-content4">
+    <div class="l-row__inner clearfix">
+      <div class="bloc-content small">
+        <h2 class="title-h2"> Gobelins dans la presse</h2>
+        <div class="filter-press">
  Filtrer par
  <div class="form-item">
   <label for="rubrique">Rubriques</label>
@@ -1072,7 +1070,7 @@
   </span>
  </div>
 </div>
-          <div class="list-communique-press">
+        <div class="list-communique-press">
   <div class="list-communique-press__item-communique">
     
    
@@ -1090,8 +1088,8 @@
 </div>
 
 
-        </div>
-        <div class="block-agenda-press">
+      </div>
+      <div class="block-agenda-press">
   <p class="title">Agenda</p>
   <div class="select-month">
    <span class="icon-left-small"></span>
@@ -1118,8 +1116,8 @@
   
   </div>
 </div>
-      </div>
-      <div class="list-downloads l-row">
+    </div>
+    <div class="list-downloads l-row">
   <div class="l-row__inner">
     <h2 class="title-h2">documents utiles</h2>
     <div class="grid-container">
@@ -1156,7 +1154,7 @@
     </div>
   </div>
 </div>
-      <div class="list-rapid-access l-row">
+    <div class="list-rapid-access l-row">
   <div class="l-row__inner">
     <h2 class="title-h2">Accès rapide</h2>
     <div class="grid-container">
@@ -1196,11 +1194,9 @@
     </div>
   </div>
 </div> 
-    </div>
-    
-
-
   </div>
+  
+
 
 </div>
 </div>

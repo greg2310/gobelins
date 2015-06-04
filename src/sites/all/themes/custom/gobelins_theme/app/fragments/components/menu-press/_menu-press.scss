@@ -1,0 +1,39 @@
+.tabs-accordion-press{  
+  .tabs-title{
+    background-color:$color__bg-gray--light;
+    display:table;
+    table-layout:fixed;
+    width:100%;
+
+    @media screen and (max-width: 767px) {
+      display:none;
+    }
+
+    li{
+      display:table-cell;
+      width:50%;
+      vertical-align:middle;
+      text-align:center;
+      text-transform:uppercase;
+      font-family:$font__platform--medium;
+      letter-spacing:1px;
+
+      a{
+        padding:12px 0;
+        display:block;
+        text-decoration:none;
+        color:#676767;
+        &:hover{
+          border-color:transparent;
+        }
+      }
+      &.is-open{
+        background-color:#fff;
+        a{
+          color:$color__slideshow--training;
+        } 
+      }
+    }
+  }  
+}
+  
