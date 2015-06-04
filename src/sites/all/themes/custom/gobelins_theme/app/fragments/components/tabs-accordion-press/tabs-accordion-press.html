@@ -16,74 +16,86 @@
    </ul>
   </div>
   <div class="tabs-container">
-   <div class="l-row__inner clearfix">
+   
     <div class="accordion-title">
       <a href="#tab1" class="ta-trigger1">Actualites</a>
     </div>
     <div class="content" id="ta-content1">
-     <div class="bloc-content small">
-      <h2 class="title-h2">
-       Actualités
-      </h2>
-      <%= include('block-filter-press') %>
-      <%= include('block-actu-press') %>
-     </div>
-     <%= include('block-agenda-press') %>
-     
+      <div class="l-row__inner clearfix">
+        <div class="bloc-content small">
+          <h2 class="title-h2"> Actualités </h2>
+          <%= include('block-filter-press') %>
+          <%= include('block-actu-press') %>
+        </div>
+        <%= include('block-agenda-press') %>
+      </div>
+      <%= include('list-downloads') %>
+      <%= include('block-rapid-access') %>  
     </div>
     <div class="accordion-title">
       <a href="#tab2" class="ta-trigger2">Communiqués de presse</a>
     </div>
     <div class="content is-hidden" id="ta-content2">
-     <div class="bloc-content small">
-       <h2 class="title-h2">
-        Communiqués de presse
-       </h2>
-       <%= include('block-filter-press') %>
-       
-       <%= include('block-communique-press', {isPicture :'true'}) %>
-       <%= include('block-communique-press', {isPicture :'true'}) %>
-       <%= include('block-communique-press', {isPicture :'true'}) %>
-       <%= include('block-communique-press', {isPicture :'true'}) %>
-       <%= include('block-communique-press', {isPicture :'true'}) %>
-       
-       <%= include('block-pagination') %>
-     </div>
-     <%= include('block-agenda-press') %>
+      <div class="l-row__inner clearfix">
+        <div class="bloc-content small">
+          <h2 class="title-h2">Communiqués de presse</h2>
+          <%= include('block-filter-press') %>
+
+          <%= include('block-communique-press', {isPicture :'true'}) %>
+          <%= include('block-communique-press', {isPicture :'true'}) %>
+          <%= include('block-communique-press', {isPicture :'true'}) %>
+          <%= include('block-communique-press', {isPicture :'true'}) %>
+          <%= include('block-communique-press', {isPicture :'true'}) %>
+
+          <%= include('block-pagination') %>
+        </div>
+        <%= include('block-agenda-press') %>
+      </div>
+      <%= include('list-downloads') %>
+      <%= include('block-rapid-access') %>  
     </div>
     <div class="accordion-title">
       <a href="#tab3" class="ta-trigger3">Kit média</a>
     </div>
     <div class="content is-hidden" id="ta-content3">
-     <div class="bloc-content">
-       <h2 class="title-h2 center">Kit média</h2>
-       <%= include('block-kit-media') %>
-       <%= include('block-doc-download') %>
-       <div class="block-contact-press">
-        <h2 class="title-h2">Contact presse</h2>
-        <%= include('block-contact-press') %>
-        <%= include('block-contact-press') %>
-      </div>  
-       
-       
-     </div>
+      <div class="l-row__inner clearfix">
+        <div class="bloc-content">
+          <h2 class="title-h2 center">Kit média</h2>
+          <%= include('block-kit-media') %>
+          <%= include('block-doc-download') %>
+          <div class="block-contact-press">
+            <h2 class="title-h2">Contact presse</h2>
+            <%= include('block-contact-press') %>
+            <%= include('block-contact-press') %>
+          </div>
+        </div>
+      </div>
+      
+      <%= include('widget-shared-icons-press') %>
+        
+        
+      <%= include('list-news') %> 
+     
     </div>
     
     <div class="accordion-title">
-     <a href="#tab4" class="ta-trigger4">Gobelins dans la presse</a>
+      <a href="#tab4" class="ta-trigger4">Gobelins dans la presse</a>
     </div>
     <div class="content is-hidden" id="ta-content4">
-     <div class="bloc-content small">
-       <h2 class="title-h2"> Gobelins dans la presse</h2>
-       <%= include('block-filter-press') %>
-       <%= include('block-communique-press', {isNewspaper :'true'}) %>
-      
-       
-     </div>
-     <%= include('block-agenda-press') %>
-     
-      
+      <div class="l-row__inner clearfix">
+        <div class="bloc-content small">
+          <h2 class="title-h2"> Gobelins dans la presse</h2>
+          <%= include('block-filter-press') %>
+          <%= include('block-communique-press', {isNewspaper :'true'}) %>
+        </div>
+        <%= include('block-agenda-press') %>
+      </div>
+      <%= include('list-downloads') %>
+      <%= include('block-rapid-access') %> 
     </div>
-   </div>
+    
+
+
   </div>
- </div>
+
+</div>

@@ -121,3 +121,24 @@
     color:$color__blue-gobelins;
   }
 }
+
+
+/**** Bloc réseaux sociaux espace presse***/
+
+.social-network-press{
+  background:$color__bg-gray--light;
+  text-align:center;
+  li{
+    width:auto;
+    margin-right:0;
+  }
+  [class^="icon-"]{
+    font-size:1.5rem;
+    border-radius:50px;
+    padding:15px;
+    &:hover{
+      color:$color__bg-gray--light;
+      background:$color__blue-light;
+    }
+  }
+}

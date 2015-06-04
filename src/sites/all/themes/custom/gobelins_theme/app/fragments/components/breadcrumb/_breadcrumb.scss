@@ -2,6 +2,8 @@
   font-size:0.875rem;
   background:#fff;
   padding:0;
+  position:relative;
+  z-index:1;
   
   @media screen and (min-width: $width__l + 1px) {
     width:auto;

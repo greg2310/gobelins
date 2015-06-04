@@ -68,11 +68,8 @@
     border-bottom:2px solid $color__border-gray--light;
   }
   .content{
-    padding:40px 0;
-
-    .title-h2.center{
-      text-align:center;
-    }
+    padding:40px 0;    
+    
 
     @media screen and (max-width: 767px) {
       padding:0 40px 40px;
@@ -80,6 +77,13 @@
   }
 
   .bloc-content{
+    .title-h2{
+      text-align:left;
+      
+      &.center{
+        text-align:center;
+      }
+    }
     .filter-press{
       font-family: 'Platform-Medium';
       text-transform:uppercase;
@@ -370,6 +374,7 @@
   float:left;
   width:73%;
   padding-right:40px;
+  margin-bottom:40px;
 }
  
 
