@@ -20,6 +20,9 @@
     margin:0 auto 20px;
     width:130px;
     border-bottom: 2px solid $color__border-gray--light;
+    &:hover{
+      border-color:transparent;
+    }
     @media screen and (max-width: $width__m) {
       display:inline-block;
       vertical-align:middle;

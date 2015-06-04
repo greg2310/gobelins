@@ -70,10 +70,8 @@
   .content{
     padding:40px 0;
 
-    &#ta-content3{
-      .title-h2{
-        text-align:center;
-      }
+    .title-h2.center{
+      text-align:center;
     }
 
     @media screen and (max-width: 767px) {
@@ -103,7 +101,8 @@
         }
       }
     }
-
+    
+    /**Kit media**/
     .introduction-kit-media{
       font-family: 'Platform-Medium';
       letter-spacing:1px;
@@ -115,10 +114,11 @@
       text-align:center;
     }
 
-    .presentation{
+    .presentation-kit-media{
       padding:45px 0 25px 0;
       border-top:1px solid $color__bg-gray;
       border-bottom:1px solid $color__bg-gray;
+      margin-bottom:50px;
     }
     
     .block-training-presentation__description{
@@ -211,6 +211,7 @@
       .item-communique__image{
         display:inline-block;
         width:25%;
+        margin-right:20px;
         vertical-align:top;
         &:hover{
           opacity: 0.8;
@@ -226,8 +227,10 @@
       .item-communique__description{
         display:inline-block;
         width:71%;
-        margin-left:20px;
         vertical-align:top;
+        &.full{
+          width:100%;
+        }
         h3{
           font-family: 'Platform-Medium';
           font-size:1.125rem;
@@ -241,11 +244,27 @@
             }
           }
         }
+        
+        .name-newspaper{
+          font-size:1rem;
+          display:inline-block;
+          &:after{
+            content:',';
+            color:$color__border-gray;
+            display:inline-block;
+            padding-left:2px;
+          }
+          a:hover{
+            color:$color__blue-gobelins;
+            border-color:transparent;
+          }
+        }
 
         .date{
           color:$color__border-gray;
           font-size:1rem;
           padding-bottom:10px;
+          display:inline-block;
         }
 
         .intro{
@@ -345,4 +364,114 @@
 
   }
 }
+
+/** Bloc download document***/
+.block-doc-download{
+  float:left;
+  width:73%;
+  padding-right:40px;
+}
+ 
+
+.item-downloads.item-downloads--press{
+  padding:15px 0 15px 0;
+  text-align:left;
+  border-left:0;
+  
+  &+.item-downloads{
+    border-left:0;
+  }
+  
+  
+  .title-h2{
+    text-align:left;
+    line-height:normal;
+    font-family: 'Platform-light';
+    letter-spacing:1px;
+    font-size:2rem;
+    margin:0 0 15px 0;		
+    text-transform:uppercase;		
+  }
+  
+  .item-downloads__img{
+    display:inline-block;
+    width:8%;
+    vertical-align:top;
+    &:hover{
+      border-color:transparent;
+    }
+    img{
+      max-width:100%;
+    }
+  }
+  
+  .item-downloads__details{
+    display:inline-block;
+    margin-left:20px;
+  }
+  
+  h3{
+    min-height:0;
+  }
+  
+}
+
+
+/***Bloc contact press***/
+
+.block-contact-press{
+  margin-left:73%;
+  .title-h2{
+    text-align:left;
+    margin:0 0 15px 0;		
+    line-height:normal;
+    font-family: 'Platform-light';
+    letter-spacing:1px;
+    font-size:2rem;
+    text-transform:uppercase;		
+  }
+  
+  .btn-action{
+    vertical-align:middle;
+    margin-left:30%;
+    .btn-mail{
+      color:#1A1A1A;
+      &:hover{
+        background:$color__blue-gobelins;
+        color:$color__bg-white;
+      }
+		}
+	}
+		
+}
+	
+	
+.block-contact-press__infos-contact{
+	margin-top:30px;
+  
+	figure{
+    margin:0;
+    img{
+      float:left;
+      border-radius: 50%;
+      height: auto;
+      width:25%;
+    }
+    figcaption{
+      margin-left:25%;
+      height:75px;
+      vertical-align:middle;
+      padding-left:15px;
+      font-family: 'Neuzeit';
+
+    }
+  }
+
+  .name{
+    display:block;
+    padding-bottom:5px;
+  }
+
+}
+
 

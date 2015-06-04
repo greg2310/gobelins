@@ -40,11 +40,12 @@
         Communiqués de presse
        </h2>
        <%= include('block-filter-press') %>
-       <%= include('block-communique-press') %>
-       <%= include('block-communique-press') %>
-       <%= include('block-communique-press') %>
-       <%= include('block-communique-press') %>
-       <%= include('block-communique-press') %>
+       
+       <%= include('block-communique-press', {isPicture :'true'}) %>
+       <%= include('block-communique-press', {isPicture :'true'}) %>
+       <%= include('block-communique-press', {isPicture :'true'}) %>
+       <%= include('block-communique-press', {isPicture :'true'}) %>
+       <%= include('block-communique-press', {isPicture :'true'}) %>
        
        <%= include('block-pagination') %>
      </div>
@@ -55,20 +56,16 @@
     </div>
     <div class="content is-hidden" id="ta-content3">
      <div class="bloc-content">
-       <h2 class="title-h2">Kit média</h2>
-       <p class="introduction-kit-media">N’hésitez pas à nous contacter si vous souhaitez accéder à des informations ciblées ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo.</p>
-       <div class="presentation">
-        <div class="block-training-presentation__description">
-         <p>La formation « Concepteur et réalisateur de films d’animation » est reconnue mondialement pour son excellence en matière d'animation de personnages mais aussi pour son enseignement équilibré entre compétences techniques et artistiques ainsi que pour son haut niveau de professionnalisme de étudiants sortants. Ce cursus en 4 ans permet de maîtriser l’ensemble des techniques d’animation à la fois traditionnelles et numériques (2D et 3D), de la pré-production à la post-production avec des méthodes professionnelles pratiquées en studio de cinéma d’animation. </p>
-         <p>Nos étudiants appréhendent dès la première année toutes les étapes de conception/réalisation d’un film d’animation afin de les amener progressivement à acquérir les compétences attendues pour travailler sur un long métrage dans le domaine de leur choix. Le travail en équipe tient une place importante dans la pédagogie.</p>
-        </div>
-        <div class="block-training-presentation__media">
-         <figure>
-          <img src="images/img11.jpg" alt="" />
-          <figcaption>Présentation Gobelins vidéo lorem ipsum</figcaption>
-         </figure>
-        </div>
-       </div>
+       <h2 class="title-h2 center">Kit média</h2>
+       <%= include('block-kit-media') %>
+       <%= include('block-doc-download') %>
+       <div class="block-contact-press">
+        <h2 class="title-h2">Contact presse</h2>
+        <%= include('block-contact-press') %>
+        <%= include('block-contact-press') %>
+      </div>  
+       
+       
      </div>
     </div>
     
@@ -79,11 +76,12 @@
      <div class="bloc-content small">
        <h2 class="title-h2"> Gobelins dans la presse</h2>
        <%= include('block-filter-press') %>
-       <%= include('block-communique-press-gobelins') %>
+       <%= include('block-communique-press', {isNewspaper :'true'}) %>
       
        
      </div>
      <%= include('block-agenda-press') %>
+     
       
     </div>
    </div>
