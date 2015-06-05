@@ -12,30 +12,52 @@
     if (screen.width > 480){
       width = 910;
     }
-    
+
     baseOptions = {
-      width: width,
-      transition: 'none',
-      title: false
-    };
-    
-    // HTML content popin.
-    $('.js-popin--content').colorbox({
       inline: true,
-      width: width,
-      transition: 'none',
-      title: false
-    });
-    
-    // Video popin.
-    $('.js-popin--video').colorbox({
-      inline: true,
-      className:'is-video',
       width: width,
       maxHeight: '90%',
       transition: 'none',
-      title: false
+      title: false,
+      returnFocus: false
+    };
+
+    var processPopins = function(context, group) {
+      var groupOptions = {};
+      if (group) {
+        groupOptions['rel'] = group;
+      }
+
+      // HTML content popin.
+      $('.js-popin--content', context)
+        .not('.is-colorbox-processed')
+        .addClass('is-colorbox-processed')
+        .colorbox($.extend({className:'is-content'}, groupOptions, baseOptions));
+
+      // Video popin.
+      $('.js-popin--video', context)
+        .not('.is-colorbox-processed')
+        .addClass('is-colorbox-processed')
+        .colorbox($.extend({className:'is-video'}, groupOptions, baseOptions));
+
+      // Gallery popin.
+      $('.js-popin--gallery', context)
+        .not('.is-colorbox-processed')
+        .addClass('is-colorbox-processed')
+        .colorbox($.extend({className:'is-gallery'}, groupOptions, baseOptions));
+    };
+
+    // Generate grouped popins first.
+    $('.js-popin--group').each(function(){
+      processPopins(this, ++groupId);
     });
+
+    // Generate other popins after.
+    $('body').each(function(){
+      processPopins(this);
+    });
+
+    // Resize iframe.
     $(document).on('cbox_complete', function(){
       var $iframes = $('#cboxLoadedContent iframe');
       $iframes.each(function(index){
@@ -46,19 +68,6 @@
         $iframe.height($iframe.width() / ratio);
       });
       $iframes.length && $.colorbox.resize();
-    });
-    
-    // Gallery popin.
-    $('.js-popin--gallery').each(function(){
-      $(this).find('.js-popin--gallery__item').colorbox({
-        rel: ++groupId,
-        className:'is-video',
-        width: width,
-        maxHeight: '90%',
-        transition: 'none',
-        title: false,
-        returnFocus: false
-      });
     });
   });
 
