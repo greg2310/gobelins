@@ -10,5 +10,6 @@
   require('./app/popins.js');
   require('./app/trainings-pro.js');
   require('./app/gototop.js');
+  require('./app/sticky-menu.js');
 
 })();
