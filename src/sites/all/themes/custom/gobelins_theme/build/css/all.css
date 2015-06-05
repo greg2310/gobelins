@@ -1536,13 +1536,15 @@ input[type="submit"]:hover,
 
 /***************** reset ****************/
 /* line 264, ../../app/scss/includes/_helpers.scss */
-.btn-remove {
+.btn-remove,
+#edit-reset {
   color: #666666;
   font-size: 0.875rem;
   padding: 0;
 }
-/* line 269, ../../app/scss/includes/_helpers.scss */
-.btn-remove:before {
+/* line 270, ../../app/scss/includes/_helpers.scss */
+.btn-remove:before,
+#edit-reset:before {
   content: "\2715";
   display: inline-block;
   padding-right: 5px;
@@ -1551,7 +1553,7 @@ input[type="submit"]:hover,
 }
 
 /**/
-/* line 279, ../../app/scss/includes/_helpers.scss */
+/* line 280, ../../app/scss/includes/_helpers.scss */
 .search-message {
   color: #fff;
   font-size: 2rem;
@@ -1560,12 +1562,12 @@ input[type="submit"]:hover,
 }
 
 /*list style*/
-/* line 288, ../../app/scss/includes/_helpers.scss */
+/* line 289, ../../app/scss/includes/_helpers.scss */
 .ul-styled li, .tabs-accordion .content ul li, .item-trainings__description .info__detailes li, .training-summary__description ul li {
   padding-left: 10px;
   position: relative;
 }
-/* line 292, ../../app/scss/includes/_helpers.scss */
+/* line 293, ../../app/scss/includes/_helpers.scss */
 .ul-styled li:before, .tabs-accordion .content ul li:before, .item-trainings__description .info__detailes li:before, .training-summary__description ul li:before {
   content: '\2022';
   position: absolute;
@@ -1754,42 +1756,47 @@ select {
 }
 
 /* line 61, ../../app/scss/includes/_popins.scss */
-#colorbox.is-video #cboxClose {
+#colorbox.is-video #cboxClose,
+#colorbox.is-gallery #cboxClose {
   top: -30px;
   right: 0;
 }
-/* line 65, ../../app/scss/includes/_popins.scss */
-#colorbox.is-video #cboxClose:before {
+/* line 66, ../../app/scss/includes/_popins.scss */
+#colorbox.is-video #cboxClose:before,
+#colorbox.is-gallery #cboxClose:before {
   color: #fff;
 }
-/* line 69, ../../app/scss/includes/_popins.scss */
-#colorbox.is-video #cboxClose:hover:before {
+/* line 70, ../../app/scss/includes/_popins.scss */
+#colorbox.is-video #cboxClose:hover:before,
+#colorbox.is-gallery #cboxClose:hover:before {
   color: #0045e5;
 }
 
-/* line 73, ../../app/scss/includes/_popins.scss */
-#colorbox.is-video .popin--text {
+/* line 74, ../../app/scss/includes/_popins.scss */
+#colorbox.is-video .popin--text,
+#colorbox.is-gallery .popin--text {
   padding: 25px 30px 0;
 }
 
-/* line 76, ../../app/scss/includes/_popins.scss */
-#colorbox.is-video .training-summary__title {
+/* line 78, ../../app/scss/includes/_popins.scss */
+#colorbox.is-video .training-summary__title,
+#colorbox.is-gallery .training-summary__title {
   padding-top: 0;
 }
 
 /*popin--gallery*/
-/* line 81, ../../app/scss/includes/_popins.scss */
+/* line 84, ../../app/scss/includes/_popins.scss */
 .cboxPhoto {
   display: block;
   margin: auto;
 }
 
-/* line 85, ../../app/scss/includes/_popins.scss */
+/* line 88, ../../app/scss/includes/_popins.scss */
 #cboxCurrent {
   display: none !important;
 }
 
-/* line 89, ../../app/scss/includes/_popins.scss */
+/* line 91, ../../app/scss/includes/_popins.scss */
 #cboxPrevious {
   padding: 0;
   position: absolute;
@@ -1798,13 +1805,19 @@ select {
   margin-top: -20px;
 }
 
-/* line 100, ../../app/scss/includes/_popins.scss */
+/* line 101, ../../app/scss/includes/_popins.scss */
 #cboxNext {
   padding: 0;
   position: absolute;
   top: 50%;
   right: -50px;
   margin-top: -20px;
+}
+
+/* line 111, ../../app/scss/includes/_popins.scss */
+#colorbox.is-gallery img {
+  margin: auto;
+  display: block;
 }
 
 /* Layout blocks partials */
@@ -5615,7 +5628,7 @@ body.is-open {
   }
 }
 /* line 30, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
-.filter-trainings.professionnal .btn-remove:hover {
+.filter-trainings.professionnal #edit-reset:hover {
   text-decoration: underline;
 }
 /* line 35, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
@@ -6445,7 +6458,7 @@ body.is-open {
   }
 }
 /* line 30, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
-.filter-trainings.professionnal .btn-remove:hover {
+.filter-trainings.professionnal #edit-reset:hover {
   text-decoration: underline;
 }
 /* line 35, ../../app/fragments/content/filter-trainings-pro/_filter-trainings-pro.scss */
