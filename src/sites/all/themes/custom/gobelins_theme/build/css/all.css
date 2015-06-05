@@ -1491,7 +1491,7 @@ input[type="submit"]:hover,
   display: inline-block;
 }
 
-/* line 226, ../../app/scss/includes/_helpers.scss */
+/* line 227, ../../app/scss/includes/_helpers.scss */
 .link-more-training {
   text-transform: uppercase;
   font-family: "Platform-Medium";
@@ -1505,8 +1505,25 @@ input[type="submit"]:hover,
   display: inline-block;
 }
 
-/***************** titles ****************/
 /* line 240, ../../app/scss/includes/_helpers.scss */
+.btn-inscription {
+  background: #1a1a1a;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 0.875rem;
+  font-family: "Platform-Medium";
+  letter-spacing: 1px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 30px;
+}
+/* line 250, ../../app/scss/includes/_helpers.scss */
+.btn-inscription:hover {
+  border-color: transparent;
+}
+
+/***************** titles ****************/
+/* line 257, ../../app/scss/includes/_helpers.scss */
 .title-h1 {
   font-size: 3.375rem;
   font-family: "Platform-Light";
@@ -1517,7 +1534,7 @@ input[type="submit"]:hover,
   color: #323232;
 }
 
-/* line 249, ../../app/scss/includes/_helpers.scss */
+/* line 266, ../../app/scss/includes/_helpers.scss */
 .title-h2 {
   font-size: 2rem;
   font-family: "Platform-Light";
@@ -1528,21 +1545,21 @@ input[type="submit"]:hover,
   color: #323232;
 }
 @media screen and (max-width: 1140px) {
-  /* line 249, ../../app/scss/includes/_helpers.scss */
+  /* line 266, ../../app/scss/includes/_helpers.scss */
   .title-h2 {
     margin-bottom: 20px;
   }
 }
 
 /***************** reset ****************/
-/* line 264, ../../app/scss/includes/_helpers.scss */
+/* line 281, ../../app/scss/includes/_helpers.scss */
 .btn-remove,
 #edit-reset {
   color: #666666;
   font-size: 0.875rem;
   padding: 0;
 }
-/* line 270, ../../app/scss/includes/_helpers.scss */
+/* line 287, ../../app/scss/includes/_helpers.scss */
 .btn-remove:before,
 #edit-reset:before {
   content: "\2715";
@@ -1553,7 +1570,7 @@ input[type="submit"]:hover,
 }
 
 /**/
-/* line 280, ../../app/scss/includes/_helpers.scss */
+/* line 297, ../../app/scss/includes/_helpers.scss */
 .search-message {
   color: #fff;
   font-size: 2rem;
@@ -1562,12 +1579,12 @@ input[type="submit"]:hover,
 }
 
 /*list style*/
-/* line 289, ../../app/scss/includes/_helpers.scss */
+/* line 306, ../../app/scss/includes/_helpers.scss */
 .ul-styled li, .tabs-accordion .content ul li, .item-trainings__description .info__detailes li, .training-summary__description ul li {
   padding-left: 10px;
   position: relative;
 }
-/* line 293, ../../app/scss/includes/_helpers.scss */
+/* line 310, ../../app/scss/includes/_helpers.scss */
 .ul-styled li:before, .tabs-accordion .content ul li:before, .item-trainings__description .info__detailes li:before, .training-summary__description ul li:before {
   content: '\2022';
   position: absolute;
@@ -3539,7 +3556,7 @@ body.is-open {
     display: block;
   }
 }
-@media screen and (max-width: 1140px) and (min-width: 768px) {
+@media screen and (max-width: 1140px) and (min-width: 769px) {
   /* line 47, ../../app/fragments/components/widgets/_widget-shared-icons.scss */
   .footer__info .list-shared-icons h3 {
     display: inline-block;
@@ -6953,95 +6970,118 @@ body.is-open {
   line-height: normal;
 }
 
-/* line 1, ../../app/fragments/content/block-content-article/_block-content-article.scss */
-.block-training-presentation {
-  background-color: #f2f2f2;
+/* line 1, ../../app/fragments/content/block-detail-actu/_block-detail-actu.scss */
+.block-detail-actu {
+  background: #fff;
 }
-/* line 4, ../../app/fragments/content/block-content-article/_block-content-article.scss */
-.block-training-presentation .l-row__inner {
-  display: table;
+/* line 3, ../../app/fragments/content/block-detail-actu/_block-detail-actu.scss */
+.block-detail-actu .l-row__inner {
+  padding: 0 180px;
 }
-@media screen and (max-width: 1140px) {
-  /* line 4, ../../app/fragments/content/block-content-article/_block-content-article.scss */
-  .block-training-presentation .l-row__inner {
-    display: block;
-  }
-}
-/* line 12, ../../app/fragments/content/block-content-article/_block-content-article.scss */
-.block-training-presentation .block-sharing {
-  width: 50px;
-  display: table-cell;
-  vertical-align: top;
-}
-@media screen and (max-width: 1140px) {
-  /* line 12, ../../app/fragments/content/block-content-article/_block-content-article.scss */
-  .block-training-presentation .block-sharing {
-    display: block;
-    float: left;
-  }
-}
-@media screen and (max-width: 767px) {
-  /* line 12, ../../app/fragments/content/block-content-article/_block-content-article.scss */
-  .block-training-presentation .block-sharing {
-    float: none;
-    width: auto;
-    margin-bottom: 20px;
-  }
-}
-
-/* line 28, ../../app/fragments/content/block-content-article/_block-content-article.scss */
-.block-training-presentation__description {
-  display: table-cell;
-  vertical-align: top;
-  padding: 0 45px;
-  font-family: "Neuzeit";
-}
-@media screen and (max-width: 1140px) {
-  /* line 28, ../../app/fragments/content/block-content-article/_block-content-article.scss */
-  .block-training-presentation__description {
-    display: block;
-    margin: 0 125px;
-    padding: 0;
-  }
-}
-@media screen and (max-width: 767px) {
-  /* line 28, ../../app/fragments/content/block-content-article/_block-content-article.scss */
-  .block-training-presentation__description {
-    margin: 0;
-  }
-}
-/* line 43, ../../app/fragments/content/block-content-article/_block-content-article.scss */
-.block-training-presentation__description .title-h2 {
+/* line 6, ../../app/fragments/content/block-detail-actu/_block-detail-actu.scss */
+.block-detail-actu .title-h2 {
   text-align: left;
-  margin-bottom: 25px;
+  text-transform: none;
+  line-height: normal;
 }
-/* line 47, ../../app/fragments/content/block-content-article/_block-content-article.scss */
-.block-training-presentation__description p {
+/* line 12, ../../app/fragments/content/block-detail-actu/_block-detail-actu.scss */
+.block-detail-actu .block-sharing {
+  display: table-cell;
+  vertical-align: top;
+  width: 50px;
+}
+/* line 17, ../../app/fragments/content/block-detail-actu/_block-detail-actu.scss */
+.block-detail-actu .block-sharing ul {
+  border: 1px solid #e5e5e5;
+}
+/* line 23, ../../app/fragments/content/block-detail-actu/_block-detail-actu.scss */
+.block-detail-actu .btn-inscription {
+  display: inline-block;
   margin-bottom: 20px;
 }
 
-/* line 51, ../../app/fragments/content/block-content-article/_block-content-article.scss */
-.block-training-presentation__media {
-  display: table-cell;
-  vertical-align: top;
-  width: 435px;
+/* line 29, ../../app/fragments/content/block-detail-actu/_block-detail-actu.scss */
+.block-detail-actu_category-title {
+  font-family: 'Platform-Medium';
+  color: #666666;
+  font-size: 0.825rem;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
-/* line 56, ../../app/fragments/content/block-content-article/_block-content-article.scss */
-.block-training-presentation__media img {
+
+/* line 38, ../../app/fragments/content/block-detail-actu/_block-detail-actu.scss */
+.block-detail-actu__media {
+  margin: 0;
+  width: 100%;
+  margin-bottom: 25px;
+}
+/* line 43, ../../app/fragments/content/block-detail-actu/_block-detail-actu.scss */
+.block-detail-actu__media img {
   width: 100%;
   height: auto;
 }
 @media screen and (max-width: 1140px) {
-  /* line 51, ../../app/fragments/content/block-content-article/_block-content-article.scss */
-  .block-training-presentation__media {
+  /* line 38, ../../app/fragments/content/block-detail-actu/_block-detail-actu.scss */
+  .block-detail-actu__media {
     display: block;
     width: auto;
     margin: 30px 125px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 51, ../../app/fragments/content/block-content-article/_block-content-article.scss */
-  .block-training-presentation__media {
+  /* line 38, ../../app/fragments/content/block-detail-actu/_block-detail-actu.scss */
+  .block-detail-actu__media {
     margin: 30px 0;
   }
+}
+/* line 57, ../../app/fragments/content/block-detail-actu/_block-detail-actu.scss */
+.block-detail-actu__media figcaption {
+  font-size: 0.875rem;
+}
+
+/* line 62, ../../app/fragments/content/block-detail-actu/_block-detail-actu.scss */
+.block-detail-actu__description {
+  display: table-cell;
+  vertical-align: top;
+  padding: 0 45px;
+  font-family: "Neuzeit";
+}
+@media screen and (max-width: 1140px) {
+  /* line 62, ../../app/fragments/content/block-detail-actu/_block-detail-actu.scss */
+  .block-detail-actu__description {
+    display: block;
+    margin: 0 125px;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 62, ../../app/fragments/content/block-detail-actu/_block-detail-actu.scss */
+  .block-detail-actu__description {
+    margin: 0;
+  }
+}
+/* line 77, ../../app/fragments/content/block-detail-actu/_block-detail-actu.scss */
+.block-detail-actu__description .title-h2 {
+  text-align: left;
+  margin-bottom: 25px;
+}
+/* line 81, ../../app/fragments/content/block-detail-actu/_block-detail-actu.scss */
+.block-detail-actu__description p {
+  margin-bottom: 20px;
+}
+
+/* line 86, ../../app/fragments/content/block-detail-actu/_block-detail-actu.scss */
+.block-detail-actu_category-date {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 20px;
+}
+
+/* line 92, ../../app/fragments/content/block-detail-actu/_block-detail-actu.scss */
+.block-detail-actu_back-news {
+  color: #333333;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: 'Platform-medium';
+  letter-spacing: 1px;
 }
