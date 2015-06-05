@@ -1125,109 +1125,109 @@ button {
   content: '\e800';
 }
 
-/* '¯áÇ' */
+/* '' */
 /* line 58, ../../app/scss/includes/_fontello.scss */
 .icon-left-small:before, #cboxPrevious:before {
   content: '\e801';
 }
 
-/* '¯áü' */
+/* '' */
 /* line 59, ../../app/scss/includes/_fontello.scss */
 .icon-menu:before {
   content: '\e802';
 }
 
-/* '¯áé' */
+/* '' */
 /* line 60, ../../app/scss/includes/_fontello.scss */
 .icon-search:before {
   content: '\e803';
 }
 
-/* '¯áâ' */
+/* '' */
 /* line 61, ../../app/scss/includes/_fontello.scss */
 .icon-down-small:before {
   content: '\e804';
 }
 
-/* '¯áä' */
+/* '' */
 /* line 62, ../../app/scss/includes/_fontello.scss */
 .icon-up-small:before {
   content: '\e805';
 }
 
-/* '¯áà' */
+/* '' */
 /* line 63, ../../app/scss/includes/_fontello.scss */
 .icon-right-small:before, #cboxNext:before {
   content: '\e806';
 }
 
-/* '¯áå' */
+/* '' */
 /* line 64, ../../app/scss/includes/_fontello.scss */
 .icon-plus:before {
   content: '\e807';
 }
 
-/* '¯áç' */
+/* '' */
 /* line 65, ../../app/scss/includes/_fontello.scss */
 .icon-minus:before {
   content: '\e808';
 }
 
-/* '¯áê' */
+/* '' */
 /* line 66, ../../app/scss/includes/_fontello.scss */
 .icon-linkedin:before {
   content: '\e80a';
 }
 
-/* '¯áè' */
+/* '' */
 /* line 67, ../../app/scss/includes/_fontello.scss */
 .icon-facebook:before {
   content: '\e80b';
 }
 
-/* '¯áï' */
+/* '' */
 /* line 68, ../../app/scss/includes/_fontello.scss */
 .icon-twitter:before {
   content: '\e80c';
 }
 
-/* '¯áî' */
+/* '' */
 /* line 69, ../../app/scss/includes/_fontello.scss */
 .icon-gplus:before {
   content: '\e80d';
 }
 
-/* '¯áì' */
+/* '' */
 /* line 70, ../../app/scss/includes/_fontello.scss */
 .icon-pinterest-circled:before {
   content: '\e80e';
 }
 
-/* '¯áÄ' */
+/* '' */
 /* line 71, ../../app/scss/includes/_fontello.scss */
 .icon-vimeo:before {
   content: '\e80f';
 }
 
-/* '¯áÅ' */
+/* '' */
 /* line 72, ../../app/scss/includes/_fontello.scss */
 .icon-instagramm:before {
   content: '\e810';
 }
 
-/* '¯áÉ' */
+/* '' */
 /* line 73, ../../app/scss/includes/_fontello.scss */
 .icon-youtube-play:before {
   content: '\e811';
 }
 
-/* '¯áæ' */
+/* '' */
 /* line 74, ../../app/scss/includes/_fontello.scss */
 .icon-heart:before {
   content: '\e813';
 }
 
-/* '¯áô' */
+/* '' */
 /***************** btns blue ****************/
 /* line 2, ../../app/scss/includes/_helpers.scss */
 .btn-like {
@@ -1517,7 +1517,7 @@ input[type="submit"]:hover,
   text-decoration: none;
   padding: 10px 30px;
 }
-/* line 250, ../../app/scss/includes/_helpers.scss */
+/* line 251, ../../app/scss/includes/_helpers.scss */
 .btn-inscription:hover {
   border-color: transparent;
 }
@@ -2077,17 +2077,17 @@ select {
 
 /* Menu sticky. */
 /* line 94, ../../app/fragments/layout/header/_header.scss */
-.sticky-wrapper {
+.header__sticky-wrapper {
   height: 144px !important;
 }
 @media screen and (max-width: 1140px) {
   /* line 94, ../../app/fragments/layout/header/_header.scss */
-  .sticky-wrapper {
+  .header__sticky-wrapper {
     height: 98px !important;
   }
 }
 /* line 101, ../../app/fragments/layout/header/_header.scss */
-.sticky-wrapper.is-sticky {
+.header__sticky-wrapper.is-sticky {
   height: 80px !important;
 }
 
@@ -2926,6 +2926,7 @@ body:after {
 }
 
 /* line 44, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+.sticky-menu__wrapper,
 .header {
   left: 0;
   -webkit-transition: left 300ms;
@@ -2933,92 +2934,95 @@ body:after {
 }
 
 @media screen and (max-width: 1140px) {
-  /* line 49, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+  /* line 50, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
   .aside-tab-mob__wrapper {
     display: block;
     left: -268px;
   }
 
-  /* line 53, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+  /* line 54, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
   .aside-tab-mob {
     width: 268px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 58, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+  /* line 59, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
   .aside-tab-mob__wrapper {
     display: block;
     left: -410px;
   }
 
-  /* line 62, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+  /* line 63, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
   .aside-tab-mob {
     width: 410px;
   }
 }
 /* Menu opened styles. */
-/* line 68, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+/* line 69, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
 body.is-open {
   overflow-x: hidden;
 }
 
 @media screen and (max-width: 1140px) {
-  /* line 74, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+  /* line 75, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
   .is-open:after {
     left: 268px;
     opacity: 0.5;
     bottom: 0;
     right: 0;
   }
-  /* line 80, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+  /* line 81, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
   .is-open .aside-tab-mob__wrapper {
     left: 0;
     width: 283px;
   }
-  /* line 84, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+  /* line 85, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
   .is-open .main-wrapper {
     left: 268px;
   }
-  /* line 87, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+  /* line 88, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+  .is-open .sticky-menu__wrapper,
   .is-open .header {
     position: fixed;
     left: 268px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 95, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+  /* line 97, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
   .is-open:after {
     left: 410px;
   }
-  /* line 98, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+  /* line 100, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
   .is-open .aside-tab-mob__wrapper {
     left: 0;
     width: 425px;
   }
-  /* line 102, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+  /* line 104, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
   .is-open .main-wrapper {
     left: 410px;
   }
-  /* line 105, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+  /* line 107, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+  .is-open .sticky-menu__wrapper,
   .is-open .header {
     position: fixed;
     left: 410px;
   }
 }
 @media screen and (max-width: 1140px) and (min-width: 768px) {
-  /* line 113, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+  /* line 116, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
   .is-open__lev2:after {
     left: 768px;
   }
-  /* line 116, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+  /* line 119, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
   .is-open__lev2 .aside-tab-mob__wrapper {
     width: 783px;
   }
-  /* line 119, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+  /* line 122, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
   .is-open__lev2 .main-wrapper {
     left: 768px;
   }
-  /* line 122, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+  /* line 125, ../../app/fragments/components/aside-tab-mob/_aside-tab-mob.scss */
+  .is-open__lev2 .sticky-menu__wrapper,
   .is-open__lev2 .header {
     position: fixed;
     left: 768px;
@@ -3642,7 +3646,7 @@ body.is-open {
   color: #0045e5;
 }
 
-/**** Bloc r├®seaux sociaux espace presse***/
+/**** Bloc réseaux sociaux espace presse***/
 /* line 128, ../../app/fragments/components/widgets/_widget-shared-icons.scss */
 .social-network-press {
   background: #f2f2f2;
@@ -3973,7 +3977,7 @@ body.is-open {
   text-align: center;
 }
 
-/** page actualit├®s***/
+/** page actualités***/
 /* line 19, ../../app/fragments/components/content-press/_content-press.scss */
 .list-actus-press {
   width: 76%;
@@ -3991,7 +3995,7 @@ body.is-open {
   border-top: none;
 }
 
-/*** Bloc actualit├®s***/
+/*** Bloc actualités***/
 /* line 34, ../../app/fragments/components/content-press/_content-press.scss */
 .list-actus-press__item-actus {
   display: inline-block;
@@ -4109,7 +4113,7 @@ body.is-open {
   color: #333333;
 }
 
-/*** Page Communiqu├®s press****/
+/*** Page Communiqués press****/
 /* line 150, ../../app/fragments/components/content-press/_content-press.scss */
 .list-communique-press {
   width: 76%;
@@ -4481,6 +4485,96 @@ body.is-open {
 /* line 12, ../../app/fragments/components/gototop/_gototop.scss */
 .gototop:hover {
   box-shadow: 0 0 3px #000;
+}
+
+/* line 1, ../../app/fragments/components/sticky-menu/_sticky-menu.scss */
+.sticky-menu__wrapper {
+  width: 100%;
+  z-index: 9;
+}
+
+/* line 6, ../../app/fragments/components/sticky-menu/_sticky-menu.scss */
+.sticky-menu {
+  background-color: #fff;
+  padding: 0;
+  height: 68px;
+  position: relative;
+}
+
+/* line 12, ../../app/fragments/components/sticky-menu/_sticky-menu.scss */
+.sticky-menu__content {
+  height: 68px;
+  padding-top: 10px;
+}
+
+/* line 16, ../../app/fragments/components/sticky-menu/_sticky-menu.scss */
+.sticky-menu__logo {
+  margin-right: 50px;
+  vertical-align: middle;
+}
+
+/* line 20, ../../app/fragments/components/sticky-menu/_sticky-menu.scss */
+.sticky-menu__container {
+  padding: 12px 0;
+  height: 52px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/* line 26, ../../app/fragments/components/sticky-menu/_sticky-menu.scss */
+.sticky-menu__link {
+  font-family: "Platform-Light";
+  font-size: 90%;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323232;
+  margin-right: 50px;
+  display: inline-block;
+  border: none;
+}
+/* line 37, ../../app/fragments/components/sticky-menu/_sticky-menu.scss */
+.sticky-menu__link:hover, .sticky-menu__link.is-active {
+  color: #0045e5;
+  text-decoration: none;
+}
+
+/* line 43, ../../app/fragments/components/sticky-menu/_sticky-menu.scss */
+.sticky-menu__buttons {
+  float: right;
+}
+/* line 46, ../../app/fragments/components/sticky-menu/_sticky-menu.scss */
+.sticky-menu__buttons .btn-invert, .sticky-menu__buttons .btn-mail {
+  padding: 11px 27px;
+  background-color: #000;
+}
+/* line 50, ../../app/fragments/components/sticky-menu/_sticky-menu.scss */
+.sticky-menu__buttons .btn-invert:hover, .sticky-menu__buttons .btn-mail:hover {
+  background-color: #0045e5;
+  color: #fff;
+  border: 1px solid #0045e5;
+}
+/* line 57, ../../app/fragments/components/sticky-menu/_sticky-menu.scss */
+.sticky-menu__buttons .btn-like--mini {
+  padding: 11px 13px;
+  margin-left: 6px;
+}
+
+/* line 62, ../../app/fragments/components/sticky-menu/_sticky-menu.scss */
+.sticky-menu__scroll {
+  width: 0;
+  height: 3px;
+  background-color: #0045e5;
+  display: none;
+}
+
+/* line 69, ../../app/fragments/components/sticky-menu/_sticky-menu.scss */
+.is-sticky .sticky-menu__logo {
+  display: none;
+}
+/* line 72, ../../app/fragments/components/sticky-menu/_sticky-menu.scss */
+.is-sticky .sticky-menu__scroll {
+  display: block;
 }
 
 /* Content partials */

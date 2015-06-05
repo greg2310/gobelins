@@ -11,10 +11,11 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   require('./app/popins.js');
   require('./app/trainings-pro.js');
   require('./app/gototop.js');
+  require('./app/sticky-menu.js');
 
 })();
 
-},{"./app/aside-gallery.js":2,"./app/block-gallery.js":3,"./app/gototop.js":4,"./app/menu.js":5,"./app/popins.js":6,"./app/sliders.js":7,"./app/tabs-accordion.js":8,"./app/trainings-pro.js":9}],2:[function(require,module,exports){
+},{"./app/aside-gallery.js":2,"./app/block-gallery.js":3,"./app/gototop.js":4,"./app/menu.js":5,"./app/popins.js":6,"./app/sliders.js":7,"./app/sticky-menu.js":8,"./app/tabs-accordion.js":9,"./app/trainings-pro.js":10}],2:[function(require,module,exports){
 (function(){
   'use strict';
 
@@ -87,7 +88,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   });
 })();
 
-},{"../../../bower_components/jquery-contenttoggle/jquery.contenttoggle.js":13,"../jstemplates/aside-gallery__ajax.js":10,"jquery":"jquery"}],3:[function(require,module,exports){
+},{"../../../bower_components/jquery-contenttoggle/jquery.contenttoggle.js":14,"../jstemplates/aside-gallery__ajax.js":11,"jquery":"jquery"}],3:[function(require,module,exports){
 (function(){
   'use strict';
 
@@ -520,7 +521,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   });
 })();
 
-},{"../plugins/array.move.js":11,"jquery":"jquery","modernizr":"modernizr"}],4:[function(require,module,exports){
+},{"../plugins/array.move.js":12,"jquery":"jquery","modernizr":"modernizr"}],4:[function(require,module,exports){
 (function(){
   'use strict';
 
@@ -578,7 +579,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
      var $body = $('body');
      var $subMenu = $('.js-contentToggle--nav-lev3');
      var $mobileSubMenu = $('.js-contentToggle--nav-mob');
-     
+
      /********** Menu sub-menu. **********/
     $subMenu.contentToggle({
       contentSelector: '.js-contentToggle__content-lev3',
@@ -601,20 +602,22 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
         }
       }
     });
-    
-    
+
+
     /********** Menu hover. **********/
     $('.main-menu--desktop').find('.lev1').hover(function(){
       $(this).siblings().children('a').stop().animate({'opacity' : '0.5'}, 300);
     }, function(){
       $(this).siblings().children('a').stop().animate({'opacity' : '1'}, 300);
     });
-    
-    
+
+
     /********** Menu sticky. **********/
-    $('.js-header-sticky').sticky();
-    
-    
+    $('.js-header-sticky').sticky({
+      wrapperClassName: 'header__sticky-wrapper'
+    });
+
+
     /********** Menu mobile sub-menu. **********/
     $mobileSubMenu.contentToggle({
       globalClose: true,
@@ -632,8 +635,8 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
     $('.js-menu-lev2-close').click(function(){
       $(this).closest('.js-contentToggle--nav-mob').trigger('close');
     });
-    
-    
+
+
     /********** Menu mobile. **********/
     $('body').contentToggle({
       defaultState: 'close',
@@ -642,11 +645,11 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
       contentSelector: '.js-aside-move',
       toggleProperties: {}
     });
-    
+
   });
 })();
 
-},{"../../../bower_components/jquery-contenttoggle/jquery.contenttoggle.js":13,"../../../bower_components/sticky/jquery.sticky.js":15,"jquery":"jquery"}],6:[function(require,module,exports){
+},{"../../../bower_components/jquery-contenttoggle/jquery.contenttoggle.js":14,"../../../bower_components/sticky/jquery.sticky.js":16,"jquery":"jquery"}],6:[function(require,module,exports){
 (function(){
   'use strict';
 
@@ -722,7 +725,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
 
 })();
 
-},{"../../../bower_components/colorbox/jquery.colorbox.js":12,"jquery":"jquery"}],7:[function(require,module,exports){
+},{"../../../bower_components/colorbox/jquery.colorbox.js":13,"jquery":"jquery"}],7:[function(require,module,exports){
 (function(){
   'use strict';
 
@@ -831,7 +834,86 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
     $sliders.on('translate.owl.carousel', translateCallback);
   });
 })();
-},{"../../../bower_components/owl.carousel/dist/owl.carousel.js":14,"jquery":"jquery"}],8:[function(require,module,exports){
+},{"../../../bower_components/owl.carousel/dist/owl.carousel.js":15,"jquery":"jquery"}],8:[function(require,module,exports){
+(function(){
+  'use strict';
+
+  /* require plugins */
+  var $ = require('jquery');
+
+  $(function(){
+    var $window = $(window);
+    var $root = $('html, body');
+    var $container = $('.js-sticky-menu__container');
+    var $scroll = $('.js-sticky-menu__scroll');
+    var $sections = $('.js-sticky-menu__section');
+    var $titles = $('.js-sticky-menu__title');
+    var offset = $('.js-header-sticky').height() + $container.height();
+    var positions = [];
+    var $links = $();
+
+    $('.js-sticky-menu').sticky({
+      wrapperClassName: 'sticky-menu__sticky-wrapper',
+      topSpacing: 80
+    });
+
+    $titles.each(function(index){
+      var $link;
+      var $title = $titles.eq(index);
+      var title = $title.data('title');
+
+      if (!title) {
+        title = $title.text();
+      }
+
+      $link = $(document.createElement('a'))
+        .addClass('sticky-menu__link')
+        .attr('href', '#')
+        .text(title)
+        .appendTo($container)
+        .on('click', function(event){
+          event.preventDefault();
+          $root.animate({scrollTop: positions[index].top});
+        });
+      $links = $links.add($link);
+    });
+
+    window.setTimeout(function(){
+      // Initializes positions.
+      $sections.each(function(index){
+        var $section = $sections.eq(index);
+        positions[index] = {
+          top: $section.offset().top - offset,
+          height: $section.outerHeight()
+        };
+      });
+    }, 0);
+
+
+    $window.on('scroll', function(){
+      var scrollTop = $window.scrollTop();
+      var activeIndex = null;
+
+      // Find active link.
+      positions.forEach(function(position, index){
+        if (scrollTop >= position.top && scrollTop < position.top + position.height) {
+          activeIndex = index;
+        }
+      });
+
+      // Set active link.
+      $links.removeClass('is-active');
+      if (activeIndex !== null) {
+        $links.eq(activeIndex).addClass('is-active');
+      }
+
+      // Update scroll bar.
+      $scroll.width((scrollTop / ($root.height() - $window.height()) * 100) + '%');
+    });
+  });
+})();
+
+},{"jquery":"jquery"}],9:[function(require,module,exports){
 (function(){
   'use strict';
 
@@ -850,7 +932,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   });
 })();
 
-},{"../../../bower_components/jquery-contenttoggle/jquery.contenttoggle.js":13,"jquery":"jquery"}],9:[function(require,module,exports){
+},{"../../../bower_components/jquery-contenttoggle/jquery.contenttoggle.js":14,"jquery":"jquery"}],10:[function(require,module,exports){
 (function(){
   'use strict';
 
@@ -904,7 +986,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
    
 })();
 
-},{"jquery":"jquery"}],10:[function(require,module,exports){
+},{"jquery":"jquery"}],11:[function(require,module,exports){
 var _ = require('underscore');
 exports["aside-gallery__ajax.html"] = function(obj){
 var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
@@ -927,7 +1009,7 @@ __p+='';
 }
 return __p;
 };
-},{"underscore":"underscore"}],11:[function(require,module,exports){
+},{"underscore":"underscore"}],12:[function(require,module,exports){
 Array.prototype.move = function (oldIndex, newIndex) {
   if (newIndex >= this.length) {
     var k = newIndex - this.newIndex;
@@ -939,7 +1021,7 @@ Array.prototype.move = function (oldIndex, newIndex) {
   return this; // for testing purposes
 };
 
-},{}],12:[function(require,module,exports){
+},{}],13:[function(require,module,exports){
 /*!
 	Colorbox 1.6.1
 	license: MIT
@@ -2046,7 +2128,7 @@ Array.prototype.move = function (oldIndex, newIndex) {
 
 }(jQuery, document, window));
 
-},{}],13:[function(require,module,exports){
+},{}],14:[function(require,module,exports){
 (function($){
   'use strict';
 
@@ -2212,7 +2294,10 @@ Array.prototype.move = function (oldIndex, newIndex) {
     // Bind native events on triggers.
     this.$triggers.on(eventName + namespaces, function(event){
       event.preventDefault();
-      event.timeStamp && this.toggle(null, event);
+      if (!event.originalEvent.mozInputSource ||
+          event.originalEvent.mozInputSource !== MouseEvent.MOZ_SOURCE_KEYBOARD) {
+        this.toggle(null, event);
+      }
     }.bind(this));
     this.$triggers.on('keydown' + namespaces, function(event){
       if (event.keyCode == ENTER_KEY_CODE || event.keyCode == SPACE_KEY_CODE) {
@@ -2411,7 +2496,7 @@ Array.prototype.move = function (oldIndex, newIndex) {
   };
 })(jQuery);
 
-},{}],14:[function(require,module,exports){
+},{}],15:[function(require,module,exports){
 /**
  * Owl carousel
  * @version 2.0.0
@@ -5638,7 +5723,7 @@ Array.prototype.move = function (oldIndex, newIndex) {
 
 })(window.Zepto || window.jQuery, window, document);
 
-},{}],15:[function(require,module,exports){
+},{}],16:[function(require,module,exports){
 // Sticky Plugin v1.0.0 for jQuery
 // =============
 // Author: Anthony Garand
