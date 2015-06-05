@@ -5,10 +5,10 @@
   var $ = require('jquery');
   var Modernizr = require('modernizr');
   require('../plugins/array.move.js');
-  
+
   /* Plugin name. */
   var pluginName = 'blockGallery';
-  
+
   /* Plugin default options. */
   var defaultOptions = {
     columns: {
@@ -17,14 +17,14 @@
       1120: 5
     }
   };
-  
+
   /**
    * Constructor.
    */
   function Plugin(element, options) {
     // Merge specific and default options.
     this.options = $.extend({}, defaultOptions, options);
-    
+
     // Initialize the main element.
     this.$element = (element instanceof $)? element: $(element);
 
@@ -33,21 +33,21 @@
     this.bind  && this.bind();
     this.init  && this.init();
   }
-  
+
   /**
    * Setup plugin.
    * e.g. Get DOM elements, setup data...
    */
   Plugin.prototype.setup = function() {
     var data, totalBlocks, max, $style, style, i;
-    
+
     /* DOM elements. */
     this.$grid = this.$element.find('.js-block_gallery__grid');
     this.$left = this.$element.find('.js-block_gallery__left');
     this.$right = this.$element.find('.js-block_gallery__right');
     this.$items = this.$element.find('.js-block_gallery__item');
     this.$stamp = this.$element.find('.js-block_gallery__stamp');
-    
+
     /* Data initialization. */
     data = this.$element.data();
     this.totalCols = data.totalCols;
@@ -60,7 +60,7 @@
       col: 0,
       line: 0
     };
-    
+
     /* Get items data. */
     this.$items.each(function(index){
       var $el = this.$items.eq(index);
@@ -76,7 +76,7 @@
       max.line = Math.max(max.line, data.height);
     }.bind(this));
     this.totalLines = Math.ceil(totalBlocks / this.totalCols);
-    
+
     /* Write styles. */
     style = '';
     $.each(this.options.columns, function(breakpoint, colNumber){
@@ -124,7 +124,7 @@
     this.buildGrid();
     this.resize();
   };
-  
+
   /**
    * Start dragging.
    */
@@ -134,7 +134,7 @@
       x: event.originalEvent.changedTouches[0].pageX,
       y: event.originalEvent.changedTouches[0].pageY
     };
-    
+
     this.previousPosition = userPosition;
     this.$grid.addClass('is-dragging');
     this.relativeStartPosition = {
@@ -142,7 +142,7 @@
       top: gridPosition.top - userPosition.y
     };
   };
-  
+
   /**
    * Drag callback.
    */
@@ -152,7 +152,7 @@
       x: event.originalEvent.changedTouches[0].pageX,
       y: event.originalEvent.changedTouches[0].pageY
     };
-    
+
     // Calculate direction.
     if (!this.dragDirection) {
       if (Math.abs(this.previousPosition.x - userPosition.x) > Math.abs(this.previousPosition.y - userPosition.y)) {
@@ -169,7 +169,7 @@
         }
       }
     }
-    
+
     // Drag if direction is horizontal.
     if (this.dragDirection % 2 === 0) {
       event.preventDefault();
@@ -180,7 +180,7 @@
       this.$grid.css({left: this.gridPosition + 'px'});
     }
   };
-  
+
   /**
    * Stop dragging.
    */
@@ -188,22 +188,22 @@
     if (this.dragDirection !== null) {
       this.dragDirection = null;
       this.$grid.removeClass('is-dragging');
-      
+
       // Calculate slider position.
       if (this.dragDirection % 2 === 0) {
         event.preventDefault();
-        this.currentColumn = Math.round(Math.abs(this.gridPosition / this.currentColWidth));
+        this.currentColumn = Math.round(- this.gridPosition / this.currentColWidth);
         this.move();
       }
     }
   };
-    
+
   /**
    * Optionally move an item up and (re)build the grid.
    */
   Plugin.prototype.buildGrid = function(index) {
     var i, searchIndex;
-    
+
     // Initialize data.
     this.gridColIndex = 0;
     this.gridLineIndex = 0;
@@ -214,7 +214,7 @@
     this.items.map(function(value){
       value.processed = false;
     });
-    
+
     if (index) {
       // Rebuild case.
       searchIndex = index - 1;
@@ -237,20 +237,20 @@
       this.buildGridRecursive(0);
     }
   };
-  
+
   /**
    * Build the grid.
    */
   Plugin.prototype.buildGridRecursive = function(index) {
     var i, searchIndex;
     var empty = true;
-    
+
     // Check if item has been already processed.
     if (this.items[index].processed) {
       this.processItem(index + 1);
       return;
     }
-    
+
     // Check if there is enough place at the current position.
     for (i = 1; i < this.items[index].width; i++) {
       if (this.gridColIndex + i >= this.totalCols ||
@@ -258,7 +258,7 @@
         empty = false;
       }
     }
-    
+
     if (empty) {
       this.insertItem(index);
       this.processItem(index + 1);
@@ -280,25 +280,25 @@
       }
     }
   };
-  
+
   /**
    * Insert item into the grid.
    */
   Plugin.prototype.insertItem = function(index) {
     var i, j;
-    
+
     // Update item data.
     this.items[index].processed = true;
     this.items[index].$el.attr('data-col', this.gridColIndex);
     this.items[index].$el.attr('data-line', this.gridLineIndex);
-    
+
     // Fill grid.
     for (i = 0; i < this.items[index].width; i++) {
       for (j = 0; j < this.items[index].height; j++) {
         this.grid[this.gridColIndex + i][this.gridLineIndex + j] = this.items[index];
       }
     }
-    
+
     // Search next empty block.
     while (this.grid[this.gridColIndex][this.gridLineIndex]) {
       this.gridColIndex++;
@@ -308,7 +308,7 @@
       }
     }
   };
-  
+
   /**
    * Process item if exists or finilize grid.
    */
@@ -321,14 +321,14 @@
       this.checkGrid();
     }
   };
-  
+
   /**
    * Check if the grid is well formed.
    */
   Plugin.prototype.checkGrid = function() {
     var index;
     var i = 0;
-    
+
     // Check if an item is overflowing.
     while (!index && this.grid[i]) {
       if (this.grid[i][this.totalLines]) {
@@ -336,13 +336,13 @@
       }
       i++;
     }
-    
+
     if (index) {
       // Move the item up and rebuild the grid.
       this.buildGrid(index);
     }
   };
-  
+
   /**
    * Go to previous slide.
    */
@@ -355,7 +355,7 @@
     }
     return columns;
   };
-  
+
   /**
    * Go to previous slide.
    */
@@ -365,7 +365,7 @@
       this.move();
     }
   };
-  
+
   /**
    * Go to next slide.
    */
@@ -375,18 +375,20 @@
       this.move();
     }
   };
-  
+
   /**
    * Go to slide.
    */
   Plugin.prototype.move = function() {
     if (this.currentColumn >= this.totalCols - this.columnNumber) {
       this.currentColumn = this.totalCols - this.columnNumber;
+    } else if (this.currentColumn < 0) {
+      this.currentColumn = 0;
     }
     this.$grid.css({left: (- this.currentColumn * 100 / this.columnNumber) + '%'});
     this.updatePager();
   };
-  
+
   /**
    * Update pager state.
    */
@@ -402,7 +404,7 @@
       this.$right.removeClass('is-disabled');
     }
   };
-  
+
   /**
    * Resize callback.
    */
@@ -411,7 +413,7 @@
     this.width = this.$element.width();
     this.currentColWidth = this.width / this.columnNumber;
     this.currentLineHeight = this.lineHeight / this.colWidth * this.currentColWidth;
-    
+
     this.$grid.css({
       height: this.totalLines * this.currentLineHeight
     });
