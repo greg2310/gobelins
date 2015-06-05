@@ -3,15 +3,17 @@
 <!--[if IE 9]>         <html class="no-js lt-ie10 ie9" lang=""> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" lang=""> <!--<![endif]-->
   <head>
-    <%= include('head', {title: 'Espace presse'}) %>
+    <%= include('head', {title: 'Espace presse communique'}) %>
   </head>
   <body class="press">
     <%= include(
       '1-column',
       {
         content      : [
-          'menu-press',
-          'block-communique-press'
+          {template: 'menu-press', params: {isActivecommunique :'true'} },
+          'block-communique-press',
+          'list-downloads',
+          'block-rapid-access' 
           
         ],
         contentTop   : ['breadcrumb', 'block-banner-press'],

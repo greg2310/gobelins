@@ -1,109 +1,33 @@
-<div class="list-actus-press">
- <div class="list-actus-press__line">
-  <div class="list-actus-press__item-actus">
-   <div class="item-actus__image">
-    <a href="#"><img alt="" src="images/actu-press-1.jpg"></a>
-   </div>
-   <div class="item-actus__description">
-     <p class="name-rubrique">Cinéma D'animation</p>
-     <h3><a href="#">Les étudiants de GOBELINS réinventent le mythe de La Petite Robe Noire</a></h3>
-     <p class="intro"> Apprenez à maîtriser le flux de production : préparer votre matériel, prise de vues, le flash de reportage</p>
-   </div>
+<div class="l-row content-press">
+  <div class="l-row__inner clearfix">
+    <div class="list-actus-press">
+      <h2 class="title-h2"> Actualités </h2>
+      <%= include('block-filter-press') %>
+     <div class="list-actus-press__line">
+        <%= include ('block-actu-press_item') %>
+        <%= include ('block-actu-press_item') %>
+        <%= include ('block-actu-press_item') %>
+     </div>
+     
+     <div class="list-actus-press__line">
+        <%= include ('block-actu-press_item') %>
+        <%= include ('block-actu-press_item') %>
+        <%= include ('block-actu-press_item') %>
+     </div>
+     
+     <div class="list-actus-press__line">
+        <%= include ('block-actu-press_item') %>
+        <%= include ('block-actu-press_item') %>
+        <%= include ('block-actu-press_item') %>
+     </div>
+     
+     <div class="list-actus-press__line">
+        <%= include ('block-actu-press_item') %>
+        <%= include ('block-actu-press_item') %>
+        <%= include ('block-actu-press_item') %>
+     </div>
+     <%= include ('block-pagination') %>
+    </div>
+     <%= include ('block-agenda-press') %>
   </div>
-  
-  <div class="list-actus-press__item-actus">
-   <div class="item-actus__image">
-    <a href="#"><img alt="" src="images/actu-press-2.jpg"></a>
-   </div>
-   <div class="item-actus__description">
-     <p class="name-rubrique">Photographie</p>
-     <h3><a href="#">Inauguration de la presse à Noisy</a></h3>
-     <p class="intro"> Apprenez à maîtriser le flux de production : préparer votre matériel, prise de vues, le flash de reportage</p>
-   </div>
-  </div>
-  
-  
-  <div class="list-actus-press__item-actus">
-   <div class="item-actus__image">
-    <a href="#"><img alt="" src="images/actu-press-3.jpg"></a>
-   </div>
-   <div class="item-actus__description">
-     <p class="name-rubrique">Cinéma D'animation</p>
-     <h3><a href="#">Prix picto de la Jeune Photographie de Mode 2014</a></h3>
-     <p class="intro"> Apprenez à maîtriser le flux de production : préparer votre matériel, prise de vues, le flash de reportage</p>
-   </div>
-  </div>         
- </div>
- 
- <div class="list-actus-press__line">
-  <div class="list-actus-press__item-actus">
-   <div class="item-actus__image">
-    <a href="#"><img alt="" src="images/actu-press-1.jpg"></a>
-   </div>
-   <div class="item-actus__description">
-     <p class="name-rubrique">Cinéma D'animation</p>
-     <h3><a href="#">Les étudiants de GOBELINS réinventent le mythe de La Petite Robe Noire</a></h3>
-     <p class="intro"> Apprenez à maîtriser le flux de production : préparer votre matériel, prise de vues, le flash de reportage</p>
-   </div>
-  </div>
-  
-  <div class="list-actus-press__item-actus">
-   <div class="item-actus__image">
-    <a href="#"><img alt="" src="images/actu-press-2.jpg"></a>
-   </div>
-   <div class="item-actus__description">
-     <p class="name-rubrique">Photographie</p>
-     <h3><a href="#">Inauguration de la presse à Noisy</a></h3>
-     <p class="intro"> Apprenez à maîtriser le flux de production : préparer votre matériel, prise de vues, le flash de reportage</p>
-   </div>
-  </div>
-  
-  
-  <div class="list-actus-press__item-actus">
-   <div class="item-actus__image">
-    <a href="#"><img alt="" src="images/actu-press-3.jpg"></a>
-   </div>
-   <div class="item-actus__description">
-     <p class="name-rubrique">Cinéma D'animation</p>
-     <h3><a href="#">Prix picto de la Jeune Photographie de Mode 2014</a></h3>
-     <p class="intro"> Apprenez à maîtriser le flux de production : préparer votre matériel, prise de vues, le flash de reportage</p>
-   </div>
-  </div>         
- </div>
- 
- <div class="list-actus-press__line">
-  <div class="list-actus-press__item-actus">
-   <div class="item-actus__image">
-    <a href="#"><img alt="" src="images/actu-press-1.jpg"></a>
-   </div>
-   <div class="item-actus__description">
-     <p class="name-rubrique">Cinéma D'animation</p>
-     <h3><a href="#">Les étudiants de GOBELINS réinventent le mythe de La Petite Robe Noire</a></h3>
-     <p class="intro"> Apprenez à maîtriser le flux de production : préparer votre matériel, prise de vues, le flash de reportage</p>
-   </div>
-  </div>
-  
-  <div class="list-actus-press__item-actus">
-   <div class="item-actus__image">
-    <a href="#"><img alt="" src="images/actu-press-2.jpg"></a>
-   </div>
-   <div class="item-actus__description">
-     <p class="name-rubrique">Photographie</p>
-     <h3><a href="#">Inauguration de la presse à Noisy</a></h3>
-     <p class="intro"> Apprenez à maîtriser le flux de production : préparer votre matériel, prise de vues, le flash de reportage</p>
-   </div>
-  </div>
-  
-  
-  <div class="list-actus-press__item-actus">
-   <div class="item-actus__image">
-    <a href="#"><img alt="" src="images/actu-press-3.jpg"></a>
-   </div>
-   <div class="item-actus__description">
-     <p class="name-rubrique">Cinéma D'animation</p>
-     <h3><a href="#">Prix picto de la Jeune Photographie de Mode 2014</a></h3>
-     <p class="intro"> Apprenez à maîtriser le flux de production : préparer votre matériel, prise de vues, le flash de reportage</p>
-   </div>
-  </div>         
- </div>
-</div>
+</div>  

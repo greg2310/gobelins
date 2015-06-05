@@ -223,6 +223,7 @@
   }
 }
 
+
 .link-more-training{
   text-transform:uppercase;
   font-family:$font__platform--medium;
@@ -234,6 +235,22 @@
   letter-spacing:1px;
   margin-top:10px;
   display:inline-block;
+}
+
+.btn-inscription {
+  background: #1a1a1a;
+  text-transform: uppercase;
+  color: $color__bg-white;
+  font-size: 0.875rem;
+  font-family: "Platform-Medium";
+  letter-spacing: 1px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 30px;
+
+  &:hover{
+    border-color:transparent;
+  }
 }
 
 /***************** titles ****************/
@@ -261,7 +278,8 @@
 }
 
 /***************** reset ****************/
-.btn-remove{
+.btn-remove,
+#edit-reset{
   color:$color__border-gray;
   font-size:0.875rem;
   padding:0;

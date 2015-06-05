@@ -1,0 +1,18 @@
+<div class="l-row content-press">
+  <div class="l-row__inner clearfix">
+    <div class="list-communique-press">
+      <h2 class="title-h2">Gobelins dans la presse</h2>
+      <%= include('block-filter-press') %>
+      <%= include('block-communique-press_item', {isNewspaper :'true'}) %>
+      <%= include('block-communique-press_item', {isNewspaper :'true'}) %>
+      <%= include('block-communique-press_item', {isNewspaper :'true'}) %>
+      <%= include('block-communique-press_item', {isNewspaper :'true'}) %>
+      
+
+      <%= include('block-pagination') %>
+    </div>
+    <%= include('block-agenda-press') %>
+  </div>  
+</div>
+
+

@@ -6,7 +6,7 @@
   $(function(){
    // Afficher masquer themes dans les filtres
     $('.close-themes').click(function(){
-     $('.filter-training-field').find('.list-themes').parent('.form-item').slideToggle( "slow" );
+     $('.filter-training-field').find('.list-themes').slideToggle( "slow" );
      
      if($(this).hasClass('icon-minus')){
       $(this).removeClass('icon-minus');
