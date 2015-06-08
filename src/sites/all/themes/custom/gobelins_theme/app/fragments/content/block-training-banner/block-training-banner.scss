@@ -76,6 +76,10 @@
     float:right;
     color:$color__text;
     font-family:$font__neuzeit;
+    
+    @media screen and (max-width: $width__m - 1px){
+      display:none;
+    }
   }
 }
 .training-summary__duration{
@@ -122,20 +126,58 @@
   display:table;
   width:100%;
   table-layout:fixed;
+  position:relative;
+  
+  @media screen and (max-width: $width__m - 1px) and (min-width: $width__xs){
+    &:after{
+      content:"";
+      position:absolute;
+      bottom:0;
+      top:0;
+      width:1px;
+      background-color:$color__border-gray--light;
+      right:50%;
+    }
+  }
   
   .col1{
     width:44%;
     display:table-cell;
     padding:0 20px 25px 30px;
+    
+    @media screen and (max-width: $width__m - 1px) and (min-width: $width__xs) {
+      width:50%;
+      display:block;
+      float:left;
+    }
+    @media screen and (max-width: $width__xs - 1px){
+      display:block;
+      width:auto;
+    }
   }
   .col2,
   .col3{
     width:28%;
     display:table-cell;
     border-left:1px solid $color__border-gray--light;
+    
+    @media screen and (max-width: $width__m - 1px) and (min-width: $width__xs) {
+      width:50%;
+      display:block;
+      float:left;
+      border-left:none;
+    }
+    @media screen and (max-width: $width__xs - 1px){
+      display:block;
+      width:auto;
+    }
   }
   .col2{
     padding:0 20px;
+    
+    @media screen and (max-width: $width__xs - 1px){
+      border-top:1px solid $color__border-gray--light;
+    }
   }
   .col3-1,
   .col3-2{
@@ -143,9 +185,18 @@
   }
   .col3-1{
     padding-bottom:20px;
+    
+    @media screen and (max-width: $width__m - 1px){
+      border-top:1px solid $color__border-gray--light;
+      margin-top:20px;
+    }
   }
   .col3-2{
     border-top:1px solid $color__border-gray--light;
+    
+    @media screen and (max-width: $width__m - 1px){
+      padding-bottom:20px;
+    }
   }
   
   .sub-title{

@@ -8,7 +8,7 @@
   display:inline-block;
   font-size:0.875rem;
   transition: background-color, color $animation__params, border-color $animation__params;
-
+  
   & > span{
     margin-left:3px;
     color:$color__border-gray--light;
@@ -20,7 +20,7 @@
     border-color:$color__bg-white;
     color:$color__text-dark;
     text-decoration:none;
-
+    
     .text-highlight{
       color:$color__blue-gobelins;
     }
@@ -30,7 +30,7 @@
   }
   @media screen and (max-width: 767px){
     padding:8px 5px;
-
+    
     & > span{
       margin-left:0;
     }
@@ -40,7 +40,8 @@
 .btn-like--mini,
 .btn-higlight,
 .btn-download,
-.btn-more{
+.btn-more,
+.btn-agenda{
   border:1px solid $color__training--search--border;
   background-color:#fff;
   color:$color__blue-gobelins;
@@ -52,7 +53,7 @@
   font-family:$font__platform--medium;
   display:inline-block;
   text-align:center;
-
+  
   &:hover{
     background-color: $color__blue-gobelins;
     border-color: $color__blue-gobelins;
@@ -144,7 +145,7 @@
   letter-spacing:1px;
   padding:12px 20px;
   transition: background-color $animation__params;
-
+  
   &:hover{
     background-color:$color__bg-white;
     color:$color__text-dark;
@@ -154,7 +155,7 @@
 }
 .btn-mail {
   @extend .btn-invert;
-
+  
   &:after{
     content: '\e800';
     font-family:"fontello";
@@ -164,28 +165,16 @@
 
 /***************** btns transparent ****************/
 .btn-agenda{
-  display:inline-block;
-  border:1px solid #CBCBCB;
   background-color:transparent;
-  color:$color__blue-gobelins;
-  text-decoration:none;
-  text-transform:uppercase;
-  font-family:$font__platform--medium;
-  font-size:0.875rem;
-  letter-spacing:1px;
-  padding:12px 20px;
-  transition: background-color $animation__params;
-
+  
   &:before{
     content:"";
     @extend .icons-calendar;
     vertical-align:middle;
     margin-top:-2px;
   }
-
-  &:hover{
-    background-color:#fff;
-    text-decoration:none;
+  &:hover:before{
+    @extend .icons-calendar-white;
   }
 }
 
@@ -202,7 +191,7 @@
 .link-localisation{
   color:#fff;
   display:inline-block;
-
+  
   .icon-location{
     font-size:0.8rem;
     padding-left:8px;
@@ -211,7 +200,8 @@
 .link-more{
   text-transform:uppercase;
   font-family:$font__platform--medium;
-
+  display:inline-block;
+  
   &:after{
     content: '\e806';
     font-family: 'fontello';
@@ -220,6 +210,11 @@
     vertical-align: top;
     width:20px;
     display:inline-block;
+  }
+  
+  &:hover{
+    color:$color__blue-gobelins;
+    border-color:$color__blue-gobelins;
   }
 }
 
@@ -235,7 +230,7 @@
   letter-spacing:1px;
   margin-top:10px;
   display:inline-block;
-}
+} 
 
 .btn-inscription {
   background: #1a1a1a;
@@ -271,7 +266,7 @@
   margin-bottom:30px;
   text-transform:uppercase;
   color:$color__text-dark;
-
+  
   @media screen and (max-width: $width__m) {
     margin-bottom:20px;
   }
@@ -283,7 +278,7 @@
   color:$color__border-gray;
   font-size:0.875rem;
   padding:0;
-
+  
   &:before{
     content:"\2715";
     display:inline-block;
@@ -299,6 +294,13 @@
   font-size:2rem;
   padding:0 0 20px;
   font-family:$font__platform--light;
+}
+
+.text-higlight{
+  font-family:$font__platform--light;
+  font-size:1.25rem;
+  letter-spacing:1px;
+  color:$color__blue-gobelins;
 }
 
 /*list style*/

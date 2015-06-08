@@ -1,5 +1,6 @@
 .block-contact-training{
 	background:$color__bg-white;
+  
 	.title-h2,
 	.infos-contact,
 	.btn-action{
@@ -13,117 +14,144 @@
 		text-align:left;
 		margin-left:0;
 		line-height:normal;
-  font-family: 'Platform-Medium';
-  letter-spacing:1px;
-  font-size:1.125rem;
-  display:inline-block;
-  vertical-align:middle;
-  margin:0;
+    font-family: 'Platform-Medium';
+    letter-spacing:1px;
+    font-size:1.125rem;
+    display:inline-block;
+    vertical-align:middle;
+    margin:0;
 		
 		span{
 			display:block;
 			font-size:0.875rem;
-   color:$color__text;
-   text-transform:lowercase;
-   font-family:arial;
-   letter-spacing:0;
-   &:first-letter{
-    text-transform:capitalize;
-   }
+      color:$color__text;
+      text-transform:lowercase;
+      font-family:arial;
+      letter-spacing:0;
+      
+      &:first-letter{
+        text-transform:capitalize;
+      }
 		}
 		
 		@media screen and (max-width: $width__m) {
 			width:100%;
-   margin-bottom:25px;
+      margin-bottom:25px;
 		}
   
-  @media screen and (max-width: $width__xs - 1px) {
-   text-align:center;
-   font-size:1rem;
-   font-family:"Platform-Medium";
-   color:$color__slideshow--training;
-   
-   span{
-    text-transform:lowercase;
-    font-family:"Platform-Light";
-    margin-top:12px;
-   }
-  }
+    @media screen and (max-width: $width__xs - 1px) {
+      text-align:center;
+      font-size:1rem;
+      font-family:"Platform-Medium";
+      color:$color__slideshow--training;
+     
+      span{
+        text-transform:lowercase;
+        font-family:"Platform-Light";
+        margin-top:12px;
+      }
+    }
 	}
-	
-	
+
 	.infos-contact{
 		@media screen and (max-width: $width__m) {
 			width:65%;
 			margin-left:0;
-   vertical-align:middle;
+      vertical-align:middle;
 		}
   
-  @media screen and (max-width: $width__xs - 1px) {
-   width:100%;
-  }
+    @media screen and (max-width: $width__xs - 1px) {
+     width:100%;
+    }
 		figure{
 			display:table;
 			margin:0;
-   @media screen and (max-width: $width__xs - 1px) {
-    display:block;
-    text-align:center;
-   }
+      
+      @media screen and (max-width: $width__xs - 1px) {
+        display:block;
+        text-align:center;
+      }
 			img{
 				float:left;
-    border-radius: 50%;
-    height: auto;
-    @media screen and (max-width: $width__xs - 1px) {
-     float:none;
-    }
+        border-radius: 50%;
+        height: auto;
+        
+        @media screen and (max-width: $width__xs - 1px) {
+          float:none;
+        }
 			}
 			figcaption{
 				display:table-cell;
 				height:75px;
 				vertical-align:middle;
 				padding-left:15px;
-    @media screen and (max-width: $width__xs - 1px) {
-     display:block;
-     height:auto;
-     margin:12px 0;
-     line-height:35px;
-    }
+        
+        @media screen and (max-width: $width__xs - 1px) {
+          display:block;
+          height:auto;
+          margin:12px 0;
+          line-height:35px;
+        }
 			}
 			
 			.tel,
 			.name{
 				display:block;
-    padding-bottom:5px;
+        padding-bottom:5px;
 			}
 			
 			.tel{
 				color:$color__blue-gobelins;
 				font-size:1.5rem;
 			}
-			
 		}
-		
 	}
 	.btn-action{
 		text-align:right;
 		width:31%;
-  vertical-align:middle;
-  margin-left:0;
-  @media screen and (max-width: $width__m) {
-   width:34%;
-  }
+    vertical-align:middle;
+    margin-left:0;
+    
+    @media screen and (max-width: $width__m) {
+      width:34%;
+    }
   
-  @media screen and (max-width: $width__xs - 1px) {
-   width:100%;
-   text-align:center;
-  }
-		.btn-mail{
-			/*color:$color__text-dark;*/
-   color:$color__blue-gobelins;
-   &:hover{
-    background:$color__blue-gobelins;
-    color:$color__bg-white;
-   }
+    @media screen and (max-width: $width__xs - 1px) {
+      width:100%;
+      text-align:center;
+    }
+    .btn-mail{
+      color:$color__blue-gobelins;
+      
+      &:hover{
+        background:$color__blue-gobelins;
+        color:$color__bg-white;
+      }
 		}
 	}
+}
+.block-contact-training--with-map{
+  .infos-contact{
+    background:#fff;
+    border-bottom:2px solid $color__border-gray--light;
+    padding:20px 30px;
+    font-family:$font__neuzeit;
+    
+    figure{
+      margin:0 0 30px;
+    }
+    img, 
+    figcaption{
+      display:inline-block;
+      vertical-align:middle;
+    }
+    img{
+      width:100px;
+      height:auto;
+      border-radius:50%;
+    }
+    .tel{
+      display:block;     
+    }
+  }
 }
