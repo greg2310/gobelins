@@ -77,7 +77,7 @@
         .appendTo($container)
         .on('click', function(event){
           event.preventDefault();
-          $root.animate({scrollTop: positions[index].top});
+          $root.animate({scrollTop: positions[index].top + 1});
         });
       $links = $links.add($link);
     });
