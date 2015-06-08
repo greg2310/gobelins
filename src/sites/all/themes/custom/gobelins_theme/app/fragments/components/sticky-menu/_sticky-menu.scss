@@ -73,3 +73,13 @@
     display: block;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .sticky-menu__logo {
+    margin-right: 20px;
+  }
+  .sticky-menu__link {
+    font-size: 80%;
+    margin-right: 20px;
+  }
+}
