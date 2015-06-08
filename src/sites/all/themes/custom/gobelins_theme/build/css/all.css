@@ -1125,109 +1125,109 @@ button {
   content: '\e800';
 }
 
-/* '¯áÇ' */
+/* '' */
 /* line 58, ../../app/scss/includes/_fontello.scss */
 .icon-left-small:before, #cboxPrevious:before {
   content: '\e801';
 }
 
-/* '¯áü' */
+/* '' */
 /* line 59, ../../app/scss/includes/_fontello.scss */
 .icon-menu:before {
   content: '\e802';
 }
 
-/* '¯áé' */
+/* '' */
 /* line 60, ../../app/scss/includes/_fontello.scss */
 .icon-search:before {
   content: '\e803';
 }
 
-/* '¯áâ' */
+/* '' */
 /* line 61, ../../app/scss/includes/_fontello.scss */
 .icon-down-small:before {
   content: '\e804';
 }
 
-/* '¯áä' */
+/* '' */
 /* line 62, ../../app/scss/includes/_fontello.scss */
 .icon-up-small:before {
   content: '\e805';
 }
 
-/* '¯áà' */
+/* '' */
 /* line 63, ../../app/scss/includes/_fontello.scss */
 .icon-right-small:before, #cboxNext:before {
   content: '\e806';
 }
 
-/* '¯áå' */
+/* '' */
 /* line 64, ../../app/scss/includes/_fontello.scss */
 .icon-plus:before {
   content: '\e807';
 }
 
-/* '¯áç' */
+/* '' */
 /* line 65, ../../app/scss/includes/_fontello.scss */
 .icon-minus:before {
   content: '\e808';
 }
 
-/* '¯áê' */
+/* '' */
 /* line 66, ../../app/scss/includes/_fontello.scss */
 .icon-linkedin:before {
   content: '\e80a';
 }
 
-/* '¯áè' */
+/* '' */
 /* line 67, ../../app/scss/includes/_fontello.scss */
 .icon-facebook:before {
   content: '\e80b';
 }
 
-/* '¯áï' */
+/* '' */
 /* line 68, ../../app/scss/includes/_fontello.scss */
 .icon-twitter:before {
   content: '\e80c';
 }
 
-/* '¯áî' */
+/* '' */
 /* line 69, ../../app/scss/includes/_fontello.scss */
 .icon-gplus:before {
   content: '\e80d';
 }
 
-/* '¯áì' */
+/* '' */
 /* line 70, ../../app/scss/includes/_fontello.scss */
 .icon-pinterest-circled:before {
   content: '\e80e';
 }
 
-/* '¯áÄ' */
+/* '' */
 /* line 71, ../../app/scss/includes/_fontello.scss */
 .icon-vimeo:before {
   content: '\e80f';
 }
 
-/* '¯áÅ' */
+/* '' */
 /* line 72, ../../app/scss/includes/_fontello.scss */
 .icon-instagramm:before {
   content: '\e810';
 }
 
-/* '¯áÉ' */
+/* '' */
 /* line 73, ../../app/scss/includes/_fontello.scss */
 .icon-youtube-play:before {
   content: '\e811';
 }
 
-/* '¯áæ' */
+/* '' */
 /* line 74, ../../app/scss/includes/_fontello.scss */
 .icon-heart:before {
   content: '\e813';
 }
 
-/* '¯áô' */
+/* '' */
 /***************** btns blue ****************/
 /* line 2, ../../app/scss/includes/_helpers.scss */
 .btn-like {
@@ -3646,7 +3646,7 @@ body.is-open {
   color: #0045e5;
 }
 
-/**** Bloc r├®seaux sociaux espace presse***/
+/**** Bloc réseaux sociaux espace presse***/
 /* line 128, ../../app/fragments/components/widgets/_widget-shared-icons.scss */
 .social-network-press {
   background: #f2f2f2;
@@ -3977,7 +3977,7 @@ body.is-open {
   text-align: center;
 }
 
-/** page actualit├®s***/
+/** page actualités***/
 /* line 19, ../../app/fragments/components/content-press/_content-press.scss */
 .list-actus-press {
   width: 76%;
@@ -3995,7 +3995,7 @@ body.is-open {
   border-top: none;
 }
 
-/*** Bloc actualit├®s***/
+/*** Bloc actualités***/
 /* line 34, ../../app/fragments/components/content-press/_content-press.scss */
 .list-actus-press__item-actus {
   display: inline-block;
@@ -4143,7 +4143,7 @@ body.is-open {
   text-align: left;
 }
 
-/*** Page Communiqu├®s press****/
+/*** Page Communiqués press****/
 /* line 173, ../../app/fragments/components/content-press/_content-press.scss */
 .list-communique-press {
   width: 76%;
@@ -4607,6 +4607,18 @@ body.is-open {
   display: block;
 }
 
+@media screen and (max-width: 767px) {
+  /* line 78, ../../app/fragments/components/sticky-menu/_sticky-menu.scss */
+  .sticky-menu__logo {
+    margin-right: 20px;
+  }
+
+  /* line 81, ../../app/fragments/components/sticky-menu/_sticky-menu.scss */
+  .sticky-menu__link {
+    font-size: 80%;
+    margin-right: 20px;
+  }
+}
 /* Content partials */
 /* line 1, ../../app/fragments/content/list-trainings/_list-trainings.scss */
 .list-trainings {
