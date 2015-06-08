@@ -37,7 +37,7 @@
   width:30%;
   vertical-align:top;
   &:first-child{
-    margin-left:0;
+    margin-right:0;
   }
   .item-actus__image{
     img{
@@ -128,17 +128,40 @@
   margin-bottom:50px;
 }
 
-.block-training-presentation__description{
+.presentation-kit-media__description{
   padding-left:0;
+  display: table-cell;
+  font-family: "Neuzeit";
+  padding-right: 50px;
+  vertical-align: top;
 }
 
-.block-training-presentation__media{
+.presentation-kit-media__media{
+  display: table-cell;
+  vertical-align: top;
+  width: 45%;
+  text-align:right;
+  figure{
+    margin:0;
+    width:100%;
+    display:inline-block;
+    img{
+      width:100%;
+    }
+    &.bloc-2{
+      width:46%;
+      &:first-child{
+        margin-right:30px;
+      }
+    }
+  }
   figcaption{
     font-family: 'Platform-Medium';
     letter-spacing:1px;
     font-size:1.125rem;
     padding-top:10px;
     color:$color__slideshow--training;
+    text-align:left;
   }
 }
 

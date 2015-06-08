@@ -4001,7 +4001,7 @@ body.is-open {
 }
 /* line 39, ../../app/fragments/components/content-press/_content-press.scss */
 .list-actus-press__item-actus:first-child {
-  margin-left: 0;
+  margin-right: 0;
 }
 /* line 43, ../../app/fragments/components/content-press/_content-press.scss */
 .list-actus-press__item-actus .item-actus__image img {
@@ -4096,62 +4096,92 @@ body.is-open {
 }
 
 /* line 131, ../../app/fragments/components/content-press/_content-press.scss */
-.block-training-presentation__description {
+.presentation-kit-media__description {
   padding-left: 0;
+  display: table-cell;
+  font-family: "Neuzeit";
+  padding-right: 50px;
+  vertical-align: top;
 }
 
-/* line 136, ../../app/fragments/components/content-press/_content-press.scss */
-.block-training-presentation__media figcaption {
+/* line 139, ../../app/fragments/components/content-press/_content-press.scss */
+.presentation-kit-media__media {
+  display: table-cell;
+  vertical-align: top;
+  width: 45%;
+  text-align: right;
+}
+/* line 144, ../../app/fragments/components/content-press/_content-press.scss */
+.presentation-kit-media__media figure {
+  margin: 0;
+  width: 100%;
+  display: inline-block;
+}
+/* line 148, ../../app/fragments/components/content-press/_content-press.scss */
+.presentation-kit-media__media figure img {
+  width: 100%;
+}
+/* line 151, ../../app/fragments/components/content-press/_content-press.scss */
+.presentation-kit-media__media figure.bloc-2 {
+  width: 46%;
+}
+/* line 153, ../../app/fragments/components/content-press/_content-press.scss */
+.presentation-kit-media__media figure.bloc-2:first-child {
+  margin-right: 30px;
+}
+/* line 158, ../../app/fragments/components/content-press/_content-press.scss */
+.presentation-kit-media__media figcaption {
   font-family: 'Platform-Medium';
   letter-spacing: 1px;
   font-size: 1.125rem;
   padding-top: 10px;
   color: #333333;
+  text-align: left;
 }
 
 /*** Page Communiqu├®s press****/
-/* line 150, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 173, ../../app/fragments/components/content-press/_content-press.scss */
 .list-communique-press {
   width: 76%;
   float: left;
   padding-right: 40px;
 }
 
-/* line 156, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 179, ../../app/fragments/components/content-press/_content-press.scss */
 .list-communique-press__item-communique {
   padding: 20px 0;
   border-top: 1px solid #e7e8e8;
 }
-/* line 159, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 182, ../../app/fragments/components/content-press/_content-press.scss */
 .list-communique-press__item-communique .item-communique__image {
   display: inline-block;
   width: 25%;
   margin-right: 20px;
   vertical-align: top;
 }
-/* line 164, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 187, ../../app/fragments/components/content-press/_content-press.scss */
 .list-communique-press__item-communique .item-communique__image:hover {
   opacity: 0.8;
 }
-/* line 167, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 190, ../../app/fragments/components/content-press/_content-press.scss */
 .list-communique-press__item-communique .item-communique__image a:hover {
   border-color: transparent;
 }
-/* line 170, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 193, ../../app/fragments/components/content-press/_content-press.scss */
 .list-communique-press__item-communique .item-communique__image:first-child {
   border-top: none;
 }
-/* line 175, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 198, ../../app/fragments/components/content-press/_content-press.scss */
 .list-communique-press__item-communique .item-communique__description {
   display: inline-block;
   width: 71%;
   vertical-align: top;
 }
-/* line 179, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 202, ../../app/fragments/components/content-press/_content-press.scss */
 .list-communique-press__item-communique .item-communique__description.full {
   width: 100%;
 }
-/* line 182, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 205, ../../app/fragments/components/content-press/_content-press.scss */
 .list-communique-press__item-communique .item-communique__description h3 {
   font-family: 'Platform-Medium';
   font-size: 1.125rem;
@@ -4159,53 +4189,53 @@ body.is-open {
   letter-spacing: 1px;
   padding-bottom: 5px;
 }
-/* line 189, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 212, ../../app/fragments/components/content-press/_content-press.scss */
 .list-communique-press__item-communique .item-communique__description h3 a:hover {
   color: #0045e5;
   border-color: transparent;
 }
-/* line 196, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 219, ../../app/fragments/components/content-press/_content-press.scss */
 .list-communique-press__item-communique .item-communique__description .name-newspaper {
   font-size: 1rem;
   display: inline-block;
 }
-/* line 199, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 222, ../../app/fragments/components/content-press/_content-press.scss */
 .list-communique-press__item-communique .item-communique__description .name-newspaper:after {
   content: ',';
   color: #666666;
   display: inline-block;
   padding-left: 2px;
 }
-/* line 205, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 228, ../../app/fragments/components/content-press/_content-press.scss */
 .list-communique-press__item-communique .item-communique__description .name-newspaper a:hover {
   color: #0045e5;
   border-color: transparent;
 }
-/* line 211, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 234, ../../app/fragments/components/content-press/_content-press.scss */
 .list-communique-press__item-communique .item-communique__description .date {
   color: #666666;
   font-size: 1rem;
   padding-bottom: 10px;
   display: inline-block;
 }
-/* line 218, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 241, ../../app/fragments/components/content-press/_content-press.scss */
 .list-communique-press__item-communique .item-communique__description .intro {
   color: #666666;
   font-size: 0.875rem;
   font-family: 'Neuzeit';
 }
-/* line 222, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 245, ../../app/fragments/components/content-press/_content-press.scss */
 .list-communique-press__item-communique .item-communique__description .intro a:hover {
   color: #323232;
   border-color: transparent;
 }
 
 /** Agenda press***/
-/* line 233, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 256, ../../app/fragments/components/content-press/_content-press.scss */
 .block-agenda-press {
   margin-left: 76%;
 }
-/* line 235, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 258, ../../app/fragments/components/content-press/_content-press.scss */
 .block-agenda-press .title {
   font-family: 'Platform-Medium';
   text-transform: uppercase;
@@ -4214,7 +4244,7 @@ body.is-open {
   color: #323232;
   letter-spacing: 1px;
 }
-/* line 244, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 267, ../../app/fragments/components/content-press/_content-press.scss */
 .block-agenda-press .select-month {
   padding: 20px 0;
   text-transform: uppercase;
@@ -4223,7 +4253,7 @@ body.is-open {
   text-align: center;
   border-bottom: 1px solid #e7e8e8;
 }
-/* line 251, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 274, ../../app/fragments/components/content-press/_content-press.scss */
 .block-agenda-press .select-month .icon-left-small, .block-agenda-press .select-month #cboxPrevious,
 .block-agenda-press .select-month .icon-right-small,
 .block-agenda-press .select-month #cboxNext {
@@ -4231,34 +4261,34 @@ body.is-open {
   font-size: 1.125rem;
   cursor: pointer;
 }
-/* line 256, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 279, ../../app/fragments/components/content-press/_content-press.scss */
 .block-agenda-press .select-month .icon-left-small:hover, .block-agenda-press .select-month #cboxPrevious:hover,
 .block-agenda-press .select-month .icon-right-small:hover,
 .block-agenda-press .select-month #cboxNext:hover {
   color: #0045e5;
   border-color: transparent;
 }
-/* line 262, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 285, ../../app/fragments/components/content-press/_content-press.scss */
 .block-agenda-press .select-month .icon-left-small, .block-agenda-press .select-month #cboxPrevious {
   left: 0;
 }
-/* line 266, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 289, ../../app/fragments/components/content-press/_content-press.scss */
 .block-agenda-press .select-month .icon-right-small, .block-agenda-press .select-month #cboxNext {
   right: 0;
 }
-/* line 270, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 293, ../../app/fragments/components/content-press/_content-press.scss */
 .block-agenda-press .select-month .month {
   font-family: 'Platform-Light';
   font-size: 2rem;
   display: inline-block;
   vertical-align: middle;
 }
-/* line 279, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 302, ../../app/fragments/components/content-press/_content-press.scss */
 .block-agenda-press .list-events .item-event {
   padding: 20px 0;
   border-bottom: 1px solid #e7e8e8;
 }
-/* line 282, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 305, ../../app/fragments/components/content-press/_content-press.scss */
 .block-agenda-press .list-events .item-event .date {
   color: #0045e5;
   font-size: 1.625rem;
@@ -4267,7 +4297,7 @@ body.is-open {
   border-bottom: 1px solid #0045e5;
   display: inline-block;
 }
-/* line 291, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 314, ../../app/fragments/components/content-press/_content-press.scss */
 .block-agenda-press .list-events .item-event .detail {
   font-family: 'Platform-Medium';
   color: #333333;
@@ -4276,14 +4306,14 @@ body.is-open {
   padding-bottom: 15px;
   display: block;
 }
-/* line 298, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 321, ../../app/fragments/components/content-press/_content-press.scss */
 .block-agenda-press .list-events .item-event .detail:hover {
   color: #0045e5;
   border-color: transparent;
 }
 
 /** Bloc download document***/
-/* line 310, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 333, ../../app/fragments/components/content-press/_content-press.scss */
 .block-doc-download {
   float: left;
   width: 73%;
@@ -4291,46 +4321,46 @@ body.is-open {
   margin-bottom: 40px;
 }
 
-/* line 318, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 341, ../../app/fragments/components/content-press/_content-press.scss */
 .item-downloads.item-downloads--press {
   padding: 15px 0 15px 0;
   text-align: left;
   border-left: 0;
 }
-/* line 323, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 346, ../../app/fragments/components/content-press/_content-press.scss */
 .item-downloads.item-downloads--press + .item-downloads {
   border-left: 0;
 }
-/* line 327, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 350, ../../app/fragments/components/content-press/_content-press.scss */
 .item-downloads.item-downloads--press .item-downloads__img {
   display: inline-block;
   width: 8%;
   vertical-align: top;
 }
-/* line 331, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 354, ../../app/fragments/components/content-press/_content-press.scss */
 .item-downloads.item-downloads--press .item-downloads__img:hover {
   border-color: transparent;
 }
-/* line 334, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 357, ../../app/fragments/components/content-press/_content-press.scss */
 .item-downloads.item-downloads--press .item-downloads__img img {
   max-width: 100%;
 }
-/* line 339, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 362, ../../app/fragments/components/content-press/_content-press.scss */
 .item-downloads.item-downloads--press .item-downloads__details {
   display: inline-block;
   margin-left: 20px;
 }
-/* line 344, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 367, ../../app/fragments/components/content-press/_content-press.scss */
 .item-downloads.item-downloads--press h3 {
   min-height: 0;
 }
 
 /***Bloc contact press***/
-/* line 353, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 376, ../../app/fragments/components/content-press/_content-press.scss */
 .block-contact-press {
   margin-left: 73%;
 }
-/* line 355, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 378, ../../app/fragments/components/content-press/_content-press.scss */
 .block-contact-press .title-h2 {
   text-align: left;
   margin: 0 0 15px 0;
@@ -4340,37 +4370,37 @@ body.is-open {
   font-size: 2rem;
   text-transform: uppercase;
 }
-/* line 365, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 388, ../../app/fragments/components/content-press/_content-press.scss */
 .block-contact-press .btn-action {
   vertical-align: middle;
   margin-left: 30%;
 }
-/* line 368, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 391, ../../app/fragments/components/content-press/_content-press.scss */
 .block-contact-press .btn-action .btn-mail {
   color: #1A1A1A;
 }
-/* line 370, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 393, ../../app/fragments/components/content-press/_content-press.scss */
 .block-contact-press .btn-action .btn-mail:hover {
   background: #0045e5;
   color: #fff;
 }
 
-/* line 380, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 403, ../../app/fragments/components/content-press/_content-press.scss */
 .block-contact-press__infos-contact {
   margin-top: 30px;
 }
-/* line 383, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 406, ../../app/fragments/components/content-press/_content-press.scss */
 .block-contact-press__infos-contact figure {
   margin: 0;
 }
-/* line 385, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 408, ../../app/fragments/components/content-press/_content-press.scss */
 .block-contact-press__infos-contact figure img {
   float: left;
   border-radius: 50%;
   height: auto;
   width: 25%;
 }
-/* line 391, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 414, ../../app/fragments/components/content-press/_content-press.scss */
 .block-contact-press__infos-contact figure figcaption {
   margin-left: 25%;
   height: 75px;
@@ -4378,7 +4408,7 @@ body.is-open {
   padding-left: 15px;
   font-family: 'Neuzeit';
 }
-/* line 401, ../../app/fragments/components/content-press/_content-press.scss */
+/* line 424, ../../app/fragments/components/content-press/_content-press.scss */
 .block-contact-press__infos-contact .name {
   display: block;
   padding-bottom: 5px;
