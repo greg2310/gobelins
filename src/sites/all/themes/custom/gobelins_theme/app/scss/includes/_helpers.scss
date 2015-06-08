@@ -8,7 +8,7 @@
   display:inline-block;
   font-size:0.875rem;
   transition: background-color, color $animation__params, border-color $animation__params;
-  
+
   & > span{
     margin-left:3px;
     color:$color__border-gray--light;
@@ -20,7 +20,7 @@
     border-color:$color__bg-white;
     color:$color__text-dark;
     text-decoration:none;
-    
+
     .text-highlight{
       color:$color__blue-gobelins;
     }
@@ -30,7 +30,7 @@
   }
   @media screen and (max-width: 767px){
     padding:8px 5px;
-    
+
     & > span{
       margin-left:0;
     }
@@ -52,7 +52,7 @@
   font-family:$font__platform--medium;
   display:inline-block;
   text-align:center;
-  
+
   &:hover{
     background-color: $color__blue-gobelins;
     border-color: $color__blue-gobelins;
@@ -144,7 +144,7 @@
   letter-spacing:1px;
   padding:12px 20px;
   transition: background-color $animation__params;
-  
+
   &:hover{
     background-color:$color__bg-white;
     color:$color__text-dark;
@@ -154,7 +154,7 @@
 }
 .btn-mail {
   @extend .btn-invert;
-  
+
   &:after{
     content: '\e800';
     font-family:"fontello";
@@ -175,14 +175,14 @@
   letter-spacing:1px;
   padding:12px 20px;
   transition: background-color $animation__params;
-  
+
   &:before{
     content:"";
     @extend .icons-calendar;
     vertical-align:middle;
     margin-top:-2px;
   }
-  
+
   &:hover{
     background-color:#fff;
     text-decoration:none;
@@ -202,7 +202,7 @@
 .link-localisation{
   color:#fff;
   display:inline-block;
-  
+
   .icon-location{
     font-size:0.8rem;
     padding-left:8px;
@@ -211,7 +211,7 @@
 .link-more{
   text-transform:uppercase;
   font-family:$font__platform--medium;
-  
+
   &:after{
     content: '\e806';
     font-family: 'fontello';
@@ -247,11 +247,11 @@
   text-align: center;
   text-decoration: none;
   padding: 10px 30px;
+
   &:hover{
     border-color:transparent;
   }
-
-} 
+}
 
 /***************** titles ****************/
 .title-h1{
@@ -271,7 +271,7 @@
   margin-bottom:30px;
   text-transform:uppercase;
   color:$color__text-dark;
-  
+
   @media screen and (max-width: $width__m) {
     margin-bottom:20px;
   }
@@ -283,7 +283,7 @@
   color:$color__border-gray;
   font-size:0.875rem;
   padding:0;
-  
+
   &:before{
     content:"\2715";
     display:inline-block;
