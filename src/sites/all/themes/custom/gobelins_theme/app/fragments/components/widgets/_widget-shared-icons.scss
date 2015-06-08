@@ -131,6 +131,7 @@
   li{
     width:auto;
     margin-right:0;
+    
   }
   [class^="icon-"]{
     font-size:1.5rem;
@@ -139,6 +140,24 @@
     &:hover{
       color:$color__bg-gray--light;
       background:$color__blue-light;
+    }
+  }
+}
+
+.list-shared-icons_item{
+  display:inline-block;
+  
+  @media screen and (max-width: $width__m){
+    display:block;
+    li{
+      margin:30px 25px 30px 0;
+    }
+  }
+  
+  @media screen and (max-width: $width__xs - 1px){
+  
+    li{
+      margin-right:12px;
     }
   }
 }

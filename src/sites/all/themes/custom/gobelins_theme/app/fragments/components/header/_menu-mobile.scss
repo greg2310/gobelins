@@ -50,6 +50,9 @@
         width:460px;
         table-layout:fixed;
         color:$color__text-dark;
+        &:hover{
+          border-color:transparent;
+        }
         
         @media screen and (max-width: 767px) {
           width:330px;

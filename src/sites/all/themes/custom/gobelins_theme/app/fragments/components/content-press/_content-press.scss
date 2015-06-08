@@ -20,6 +20,12 @@
   width:76%;
   float:left;
   padding-right:40px;
+  
+  @media screen and (max-width: $width__m){
+    width:100%;
+    padding-right:0;
+    float:none;
+  }
 }
 
 .list-actus-press__line{
@@ -33,7 +39,7 @@
  /*** Bloc actualités***/
 .list-actus-press__item-actus{
   display:inline-block;
-  margin-left:35px;
+  margin-left:4%;
   width:30%;
   vertical-align:top;
   &:first-child{
@@ -100,7 +106,8 @@
       margin-right:10px;
     }
     select{
-      font-family:arial;
+      font-family
+      :arial;
       font-size:0.825rem;
     }
     &:first-child{
@@ -119,6 +126,9 @@
   max-width:55%;
   margin:auto;
   text-align:center;
+  @media screen and (max-width: $width__m){
+    max-width:none;
+  }
 }
 
 .presentation-kit-media{
@@ -134,6 +144,16 @@
   font-family: "Neuzeit";
   padding-right: 50px;
   vertical-align: top;
+  
+  @media screen and (max-width: $width__m){
+    display:block;
+    padding:0 50px;
+    margin-bottom:30px;
+  }
+  
+  @media screen and (max-width: $width__xs - 1px){
+    padding:0;
+  }
 }
 
 .presentation-kit-media__media{
@@ -141,6 +161,15 @@
   vertical-align: top;
   width: 45%;
   text-align:right;
+  @media screen and (max-width: $width__m){
+    display:block;
+    padding:0 100px;
+    width:100%;
+  }
+  
+  @media screen and (max-width: $width__xs - 1px){
+    padding:0;
+  }
   figure{
     margin:0;
     width:100%;
@@ -165,8 +194,6 @@
   }
 }
 
-
-  
   
 /*** Page Communiqués press****/
 
@@ -255,6 +282,10 @@
 /** Agenda press***/
 .block-agenda-press{
   margin-left:76%;
+  @media screen and (max-width: $width__m){
+    margin-left:0;
+    margin-top:20px;
+  }
   .title{
     font-family: 'Platform-Medium';
     text-transform:uppercase;
@@ -302,6 +333,11 @@
     .item-event{
       padding:20px 0;
       border-bottom:1px solid $color__border__gray;
+      position:relative;
+      @media screen and (max-width: $width__m){
+        padding:8px 0;
+      }
+      
       .date{
         color:$color__blue-gobelins;
         font-size:1.625rem;
@@ -309,6 +345,18 @@
         margin-bottom:12px;
         border-bottom:1px solid $color__blue-gobelins;
         display:inline-block;
+        @media screen and (max-width: $width__m){
+          margin-bottom:8px;
+        }
+        
+      }
+      
+      @media screen and (max-width: $width__m){
+        .btn-agenda{
+          position:absolute;
+          right:0;
+          top:30px;
+        }
       }
 
       .detail{
@@ -318,6 +366,9 @@
         letter-spacing:1px;
         padding-bottom:15px;
         display:block;
+        @media screen and (max-width: $width__m){
+          max-width:70%;
+        }
         &:hover{
           color:$color__blue-gobelins;
           border-color:transparent;
@@ -335,6 +386,11 @@
   width:73%;
   padding-right:40px;
   margin-bottom:40px;
+  @media screen and (max-width: $width__m){
+    width:100%;
+    padding-right:0;
+    float:none;
+  }
 }
 
 
@@ -357,15 +413,31 @@
     img{
       max-width:100%;
     }
+    
+    @media screen and (max-width: $width__m){
+      width:18%;
+      vertical-align:middle;
+    }
   }
 
   .item-downloads__details{
     display:inline-block;
-    margin-left:20px;
+    padding-left:20px;
+    margin-left:0;
+    @media screen and (max-width: $width__m){
+      width:81%;
+    }
+    
+    @media screen and (max-width: $width__xs - 1px){
+      width:80%;
+    }
   }
 
   h3{
     min-height:0;
+    @media screen and (max-width: $width__m){
+      margin-left:0;
+    }
   }
 
 }
@@ -374,58 +446,98 @@
 /***Bloc contact press***/
 
 .block-contact-press{
-margin-left:73%;
-.title-h2{
-  text-align:left;
-  margin:0 0 15px 0;		
-  line-height:normal;
-  font-family: 'Platform-light';
-  letter-spacing:1px;
-  font-size:2rem;
-  text-transform:uppercase;		
-}
+    margin-left:73%;
+    @media screen and (max-width: $width__m){
+      margin-left:0;
+    }
+    .title-h2{
+      text-align:left;
+      margin:0 0 15px 0;		
+      line-height:normal;
+      font-family: 'Platform-light';
+      letter-spacing:1px;
+      font-size:2rem;
+      text-transform:uppercase;		
+    }
 
-.btn-action{
-  vertical-align:middle;
-  margin-left:30%;
-  .btn-mail{
-    color:#1A1A1A;
-    &:hover{
-      background:$color__blue-gobelins;
-      color:$color__bg-white;
+    .btn-action{
+      margin-left:25%; 
+      margin-top:15px;
+      padding-left:15px;
+       @media screen and (min-width: $width__xs + 1px) and (max-width: $width__m){
+        display:inline-block;
+        width:30%;
+        text-align:right;
+        margin-left:0;
+      }
+      @media screen and (max-width: $width__xs - 1px){
+        padding:0;
+      }
+    .btn-mail{
+      color:#1A1A1A;
+      &:hover{
+        background:$color__blue-gobelins;
+        color:$color__bg-white;
+      }
     }
   }
-}
-  
 }
 
 
 .block-contact-press__infos-contact{
   margin-top:30px;
+}
 
-  figure{
-    margin:0;
-    img{
-      float:left;
-      border-radius: 50%;
-      height: auto;
-      width:25%;
-    }
-    figcaption{
-      margin-left:25%;
-      height:75px;
-      vertical-align:middle;
-      padding-left:15px;
-      font-family: 'Neuzeit';
-
-    }
+.block-contact-press__picture{
+  float:left;
+  border-radius: 50%;
+  height: auto;
+  width:25%;
+  vertical-align:top;
+  img{
+    max-width:100%;
   }
-
-.name{
-  display:block;
-  padding-bottom:5px;
+  
+  @media screen and (min-width: $width__xs + 1px) and (max-width: $width__m){
+    float:none;
+    width:10%;
+    display:inline-block;
+    vertical-align:middle;
+  }
+  
+  @media screen and (max-width: $width__xs - 1px){
+    width:20%;
+  }
+}  
+ 
+.block-contact-press__picture--details{
+  padding-left:15px;
+  font-family: 'Neuzeit';
+  margin-left:25%;
+  
+  @media screen and (min-width: $width__xs + 1px) and (max-width: $width__m){
+    display:inline-block;
+    width:58%;
+    margin-left:0;
+    vertical-align:middle;
+  }
+  
+  
+  @media screen and (max-width: $width__xs - 1px){
+    padding:0;
+  }
+  
+  
+  
+  .name{
+    display:block;
+    padding-bottom:5px;
   }
 
 }
+
+
+
+
 
 
