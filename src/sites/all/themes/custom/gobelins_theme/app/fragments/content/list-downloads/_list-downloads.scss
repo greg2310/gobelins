@@ -10,6 +10,10 @@
   @media screen and (max-width: $width__m) {
     text-align:left;
   }
+  
+  @media screen and (max-width: $width__xs - 1px){
+    padding:30px 30px 40px;
+  }
    
   & + .item-downloads{
     border-left:1px solid $color__border-gray--light;

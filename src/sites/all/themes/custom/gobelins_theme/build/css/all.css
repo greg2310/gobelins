@@ -4884,42 +4884,78 @@ body.is-open {
 .list-news a {
   color: #323232;
 }
+@media screen and (max-width: 767px) {
+  /* line 11, ../../app/fragments/content/list-news/_list-news.scss */
+  .list-news .title-h2 {
+    font-size: 1.5rem;
+  }
+  /* line 15, ../../app/fragments/content/list-news/_list-news.scss */
+  .list-news .grid-container {
+    margin-bottom: 30px;
+  }
+}
 
-/* line 10, ../../app/fragments/content/list-news/_list-news.scss */
+/* line 20, ../../app/fragments/content/list-news/_list-news.scss */
 .item-news {
   padding: 0 20px 30px;
 }
+@media screen and (max-width: 767px) {
+  /* line 20, ../../app/fragments/content/list-news/_list-news.scss */
+  .item-news {
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  /* line 26, ../../app/fragments/content/list-news/_list-news.scss */
+  .item-news:first-child {
+    padding-top: 0;
+  }
+}
 
-/* line 13, ../../app/fragments/content/list-news/_list-news.scss */
+/* line 31, ../../app/fragments/content/list-news/_list-news.scss */
 .item-news__image {
   margin-bottom: 15px;
 }
-/* line 16, ../../app/fragments/content/list-news/_list-news.scss */
+@media screen and (max-width: 767px) {
+  /* line 31, ../../app/fragments/content/list-news/_list-news.scss */
+  .item-news__image {
+    width: 30%;
+    float: left;
+  }
+}
+/* line 38, ../../app/fragments/content/list-news/_list-news.scss */
 .item-news__image img, .item-news__image a {
   display: block;
   width: 100%;
   height: auto;
 }
-/* line 21, ../../app/fragments/content/list-news/_list-news.scss */
+/* line 43, ../../app/fragments/content/list-news/_list-news.scss */
 .item-news__image a:hover {
   border-color: transparent;
 }
 
-/* line 25, ../../app/fragments/content/list-news/_list-news.scss */
+/* line 47, ../../app/fragments/content/list-news/_list-news.scss */
 .item-news__description {
   margin-bottom: 5px;
   font-family: "Neuzeit";
   min-height: 6.5rem;
 }
+@media screen and (max-width: 767px) {
+  /* line 47, ../../app/fragments/content/list-news/_list-news.scss */
+  .item-news__description {
+    margin-left: 30%;
+    padding-left: 20px;
+  }
+}
 
-/* line 30, ../../app/fragments/content/list-news/_list-news.scss */
+/* line 57, ../../app/fragments/content/list-news/_list-news.scss */
 .item-news__date {
   font-size: 0.875rem;
   margin-bottom: 5px;
   font-family: Arial;
 }
 
-/* line 35, ../../app/fragments/content/list-news/_list-news.scss */
+/* line 62, ../../app/fragments/content/list-news/_list-news.scss */
 .item-news__type {
   text-transform: uppercase;
   font-family: "Platform-Medium";
@@ -4927,7 +4963,18 @@ body.is-open {
   position: relative;
   padding-left: 20px;
 }
-/* line 42, ../../app/fragments/content/list-news/_list-news.scss */
+@media screen and (max-width: 767px) {
+  /* line 62, ../../app/fragments/content/list-news/_list-news.scss */
+  .item-news__type {
+    margin-left: 30%;
+    padding-left: 40px;
+  }
+  /* line 71, ../../app/fragments/content/list-news/_list-news.scss */
+  .item-news__type:before {
+    left: 20px !important;
+  }
+}
+/* line 76, ../../app/fragments/content/list-news/_list-news.scss */
 .item-news__type:before {
   content: '';
   display: block;
@@ -4941,37 +4988,37 @@ body.is-open {
   background-color: #0045e5;
 }
 
-/* line 56, ../../app/fragments/content/list-news/_list-news.scss */
+/* line 90, ../../app/fragments/content/list-news/_list-news.scss */
 .training-animation .item-news__type:before {
   background-color: #00e196;
 }
 
-/* line 59, ../../app/fragments/content/list-news/_list-news.scss */
+/* line 93, ../../app/fragments/content/list-news/_list-news.scss */
 .training-graphic-design .item-news__type:before {
   background-color: #3af2ce;
 }
 
-/* line 62, ../../app/fragments/content/list-news/_list-news.scss */
+/* line 96, ../../app/fragments/content/list-news/_list-news.scss */
 .training-web-design .item-news__type:before {
   background-color: #6300ff;
 }
 
-/* line 65, ../../app/fragments/content/list-news/_list-news.scss */
+/* line 99, ../../app/fragments/content/list-news/_list-news.scss */
 .training-photography .item-news__type:before {
   background-color: #ffe042;
 }
 
-/* line 68, ../../app/fragments/content/list-news/_list-news.scss */
+/* line 102, ../../app/fragments/content/list-news/_list-news.scss */
 .training-game .item-news__type:before {
   background-color: #1840e8;
 }
 
-/* line 71, ../../app/fragments/content/list-news/_list-news.scss */
+/* line 105, ../../app/fragments/content/list-news/_list-news.scss */
 .training-video-audio .item-news__type:before {
   background-color: red;
 }
 
-/* line 74, ../../app/fragments/content/list-news/_list-news.scss */
+/* line 108, ../../app/fragments/content/list-news/_list-news.scss */
 .training-cross-media .item-news__type:before {
   background-color: #e90b51;
 }
@@ -4995,23 +5042,29 @@ body.is-open {
     text-align: left;
   }
 }
-/* line 14, ../../app/fragments/content/list-downloads/_list-downloads.scss */
+@media screen and (max-width: 767px) {
+  /* line 4, ../../app/fragments/content/list-downloads/_list-downloads.scss */
+  .item-downloads {
+    padding: 30px 30px 40px;
+  }
+}
+/* line 18, ../../app/fragments/content/list-downloads/_list-downloads.scss */
 .item-downloads + .item-downloads {
   border-left: 1px solid #e5e5e5;
 }
-/* line 18, ../../app/fragments/content/list-downloads/_list-downloads.scss */
+/* line 22, ../../app/fragments/content/list-downloads/_list-downloads.scss */
 .item-downloads .item-downloads__img {
   display: block;
   margin: 0 auto 20px;
   width: 130px;
   border-bottom: 2px solid #e5e5e5;
 }
-/* line 23, ../../app/fragments/content/list-downloads/_list-downloads.scss */
+/* line 27, ../../app/fragments/content/list-downloads/_list-downloads.scss */
 .item-downloads .item-downloads__img:hover {
   border-color: transparent;
 }
 @media screen and (max-width: 1140px) {
-  /* line 18, ../../app/fragments/content/list-downloads/_list-downloads.scss */
+  /* line 22, ../../app/fragments/content/list-downloads/_list-downloads.scss */
   .item-downloads .item-downloads__img {
     display: inline-block;
     vertical-align: middle;
@@ -5020,20 +5073,20 @@ body.is-open {
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 18, ../../app/fragments/content/list-downloads/_list-downloads.scss */
+  /* line 22, ../../app/fragments/content/list-downloads/_list-downloads.scss */
   .item-downloads .item-downloads__img {
     width: 24%;
     vertical-align: top;
   }
 }
-/* line 38, ../../app/fragments/content/list-downloads/_list-downloads.scss */
+/* line 42, ../../app/fragments/content/list-downloads/_list-downloads.scss */
 .item-downloads .item-downloads__img img {
   display: block;
   width: 100%;
   height: auto;
 }
 @media screen and (max-width: 1140px) {
-  /* line 46, ../../app/fragments/content/list-downloads/_list-downloads.scss */
+  /* line 50, ../../app/fragments/content/list-downloads/_list-downloads.scss */
   .item-downloads .item-downloads__details {
     display: inline-block;
     width: 84%;
@@ -5041,20 +5094,20 @@ body.is-open {
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 54, ../../app/fragments/content/list-downloads/_list-downloads.scss */
+  /* line 58, ../../app/fragments/content/list-downloads/_list-downloads.scss */
   .item-downloads .item-downloads__details {
     width: 68%;
     margin-left: 5%;
     vertical-align: top;
   }
 }
-/* line 64, ../../app/fragments/content/list-downloads/_list-downloads.scss */
+/* line 68, ../../app/fragments/content/list-downloads/_list-downloads.scss */
 .item-downloads h3 {
   margin-bottom: 20px;
   min-height: 3em;
 }
 @media screen and (max-width: 1140px) {
-  /* line 64, ../../app/fragments/content/list-downloads/_list-downloads.scss */
+  /* line 68, ../../app/fragments/content/list-downloads/_list-downloads.scss */
   .item-downloads h3 {
     display: inline-block;
     vertical-align: middle;
@@ -5063,7 +5116,7 @@ body.is-open {
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 64, ../../app/fragments/content/list-downloads/_list-downloads.scss */
+  /* line 68, ../../app/fragments/content/list-downloads/_list-downloads.scss */
   .item-downloads h3 {
     width: 100%;
     vertical-align: top;
@@ -5071,18 +5124,18 @@ body.is-open {
   }
 }
 @media screen and (max-width: 1140px) {
-  /* line 83, ../../app/fragments/content/list-downloads/_list-downloads.scss */
+  /* line 87, ../../app/fragments/content/list-downloads/_list-downloads.scss */
   .item-downloads .btn-download {
     float: right;
     margin-left: 15px;
   }
-  /* line 86, ../../app/fragments/content/list-downloads/_list-downloads.scss */
+  /* line 90, ../../app/fragments/content/list-downloads/_list-downloads.scss */
   .item-downloads .btn-download .extension {
     display: none;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 93, ../../app/fragments/content/list-downloads/_list-downloads.scss */
+  /* line 97, ../../app/fragments/content/list-downloads/_list-downloads.scss */
   .item-downloads .btn-download {
     width: auto;
     margin-left: 0;
@@ -5090,12 +5143,12 @@ body.is-open {
   }
 }
 
-/* line 101, ../../app/fragments/content/list-downloads/_list-downloads.scss */
+/* line 105, ../../app/fragments/content/list-downloads/_list-downloads.scss */
 .list-downloads--mini li {
   padding: 20px 30px 20px 60px;
   position: relative;
 }
-/* line 105, ../../app/fragments/content/list-downloads/_list-downloads.scss */
+/* line 109, ../../app/fragments/content/list-downloads/_list-downloads.scss */
 .list-downloads--mini li:before {
   content: "";
   position: absolute;
@@ -5103,7 +5156,7 @@ body.is-open {
   left: 30px;
   margin-top: -9px;
 }
-/* line 114, ../../app/fragments/content/list-downloads/_list-downloads.scss */
+/* line 118, ../../app/fragments/content/list-downloads/_list-downloads.scss */
 .list-downloads--mini li + li {
   border-top: 1px solid #e5e5e5;
 }
