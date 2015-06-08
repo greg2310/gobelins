@@ -1797,15 +1797,17 @@ select {
   top: 50%;
   left: -50px;
   margin-top: -20px;
+  overflow: hidden;
 }
 
-/* line 99, ../../app/scss/includes/_popins.scss */
+/* line 100, ../../app/scss/includes/_popins.scss */
 #cboxNext {
   padding: 0;
   position: absolute;
   top: 50%;
   right: -50px;
   margin-top: -20px;
+  overflow: hidden;
 }
 
 /* Layout blocks partials */
@@ -6465,7 +6467,7 @@ body.is-open {
 .block-contact-training {
   background: #fff;
 }
-/* line 3, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
+/* line 4, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
 .block-contact-training .title-h2,
 .block-contact-training .infos-contact,
 .block-contact-training .btn-action {
@@ -6474,7 +6476,7 @@ body.is-open {
   width: 33%;
   margin-left: 20px;
 }
-/* line 12, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
+/* line 13, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
 .block-contact-training .title-h2 {
   text-align: left;
   margin-left: 0;
@@ -6486,7 +6488,7 @@ body.is-open {
   vertical-align: middle;
   margin: 0;
 }
-/* line 23, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
+/* line 24, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
 .block-contact-training .title-h2 span {
   display: block;
   font-size: 0.875rem;
@@ -6495,26 +6497,26 @@ body.is-open {
   font-family: arial;
   letter-spacing: 0;
 }
-/* line 30, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
+/* line 32, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
 .block-contact-training .title-h2 span:first-letter {
   text-transform: capitalize;
 }
 @media screen and (max-width: 1140px) {
-  /* line 12, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
+  /* line 13, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
   .block-contact-training .title-h2 {
     width: 100%;
     margin-bottom: 25px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 12, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
+  /* line 13, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
   .block-contact-training .title-h2 {
     text-align: center;
     font-size: 1rem;
     font-family: "Platform-Medium";
     color: #333333;
   }
-  /* line 46, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
+  /* line 48, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
   .block-contact-training .title-h2 span {
     text-transform: lowercase;
     font-family: "Platform-Light";
@@ -6522,7 +6524,7 @@ body.is-open {
   }
 }
 @media screen and (max-width: 1140px) {
-  /* line 55, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
+  /* line 56, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
   .block-contact-training .infos-contact {
     width: 65%;
     margin-left: 0;
@@ -6530,36 +6532,36 @@ body.is-open {
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 55, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
+  /* line 56, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
   .block-contact-training .infos-contact {
     width: 100%;
   }
 }
-/* line 65, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
+/* line 66, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
 .block-contact-training .infos-contact figure {
   display: table;
   margin: 0;
 }
 @media screen and (max-width: 767px) {
-  /* line 65, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
+  /* line 66, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
   .block-contact-training .infos-contact figure {
     display: block;
     text-align: center;
   }
 }
-/* line 72, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
+/* line 74, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
 .block-contact-training .infos-contact figure img {
   float: left;
   border-radius: 50%;
   height: auto;
 }
 @media screen and (max-width: 767px) {
-  /* line 72, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
+  /* line 74, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
   .block-contact-training .infos-contact figure img {
     float: none;
   }
 }
-/* line 80, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
+/* line 83, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
 .block-contact-training .infos-contact figure figcaption {
   display: table-cell;
   height: 75px;
@@ -6567,7 +6569,7 @@ body.is-open {
   padding-left: 15px;
 }
 @media screen and (max-width: 767px) {
-  /* line 80, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
+  /* line 83, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
   .block-contact-training .infos-contact figure figcaption {
     display: block;
     height: auto;
@@ -6575,18 +6577,18 @@ body.is-open {
     line-height: 35px;
   }
 }
-/* line 93, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
+/* line 97, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
 .block-contact-training .infos-contact figure .tel,
 .block-contact-training .infos-contact figure .name {
   display: block;
   padding-bottom: 5px;
 }
-/* line 99, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
+/* line 103, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
 .block-contact-training .infos-contact figure .tel {
   color: #0045e5;
   font-size: 1.5rem;
 }
-/* line 107, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
+/* line 109, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
 .block-contact-training .btn-action {
   text-align: right;
   width: 31%;
@@ -6594,27 +6596,54 @@ body.is-open {
   margin-left: 0;
 }
 @media screen and (max-width: 1140px) {
-  /* line 107, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
+  /* line 109, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
   .block-contact-training .btn-action {
     width: 34%;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 107, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
+  /* line 109, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
   .block-contact-training .btn-action {
     width: 100%;
     text-align: center;
   }
 }
-/* line 120, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
+/* line 123, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
 .block-contact-training .btn-action .btn-mail {
-  /*color:$color__text-dark;*/
   color: #0045e5;
 }
-/* line 123, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
+/* line 126, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
 .block-contact-training .btn-action .btn-mail:hover {
   background: #0045e5;
   color: #fff;
+}
+
+/* line 134, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
+.block-contact-training--with-map .infos-contact {
+  background: #fff;
+  border-bottom: 2px solid #e5e5e5;
+  padding: 20px 30px;
+  font-family: "Neuzeit";
+}
+/* line 140, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
+.block-contact-training--with-map .infos-contact figure {
+  margin: 0 0 30px;
+}
+/* line 143, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
+.block-contact-training--with-map .infos-contact img,
+.block-contact-training--with-map .infos-contact figcaption {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 148, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
+.block-contact-training--with-map .infos-contact img {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
+/* line 153, ../../app/fragments/content/block-contact-training/block-contact-training.scss */
+.block-contact-training--with-map .infos-contact .tel {
+  display: block;
 }
 
 /* line 1, ../../app/fragments/content/slide-witness/_slide-witness.scss */
