@@ -11,7 +11,7 @@
   overflow:hidden;
   background:transparent;
   padding: 0;
-  
+
   &:hover:before {
     color: $color__blue-gobelins;
   }
@@ -34,7 +34,7 @@
 .popin--text{
   display:none;
   padding:50px 40px;
-  
+
   p{
     margin-bottom:20px;
   }
@@ -58,33 +58,36 @@
   padding: 0;
   margin: 0;
 }
-#colorbox.is-video #cboxClose {
+#colorbox.is-video #cboxClose,
+#colorbox.is-gallery #cboxClose {
   top: -30px;
   right: 0;
-  
+
   &:before {
     color: #fff;
   }
-  
+
   &:hover:before {
     color: $color__blue-gobelins;
   }
 }
-#colorbox.is-video .popin--text {
+#colorbox.is-video .popin--text,
+#colorbox.is-gallery .popin--text {
   padding: 25px 30px 0;
 }
-#colorbox.is-video .training-summary__title {
+#colorbox.is-video .training-summary__title,
+#colorbox.is-gallery .training-summary__title {
   padding-top: 0;
 }
 
 /*popin--gallery*/
 .cboxPhoto {
   display: block;
+  margin: auto;
 }
 #cboxCurrent {
   display: none !important;
 }
-
 #cboxPrevious {
   @extend [class^="icon-"];
   @extend .icon-left-small;
@@ -96,7 +99,6 @@
   margin-top: -20px;
   overflow:hidden;
 }
-
 #cboxNext {
   @extend [class^="icon-"];
   @extend .icon-right-small;
@@ -107,4 +109,8 @@
   right: -50px;
   margin-top: -20px;
   overflow:hidden;
+}
+#colorbox.is-gallery img {
+  margin: auto;
+  display: block;
 }

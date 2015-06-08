@@ -10,7 +10,7 @@
      var $body = $('body');
      var $subMenu = $('.js-contentToggle--nav-lev3');
      var $mobileSubMenu = $('.js-contentToggle--nav-mob');
-     
+
      /********** Menu sub-menu. **********/
     $subMenu.contentToggle({
       contentSelector: '.js-contentToggle__content-lev3',
@@ -33,20 +33,22 @@
         }
       }
     });
-    
-    
+
+
     /********** Menu hover. **********/
     $('.main-menu--desktop').find('.lev1').hover(function(){
       $(this).siblings().children('a').stop().animate({'opacity' : '0.5'}, 300);
     }, function(){
       $(this).siblings().children('a').stop().animate({'opacity' : '1'}, 300);
     });
-    
-    
+
+
     /********** Menu sticky. **********/
-    $('.js-header-sticky').sticky();
-    
-    
+    $('.js-header-sticky').sticky({
+      wrapperClassName: 'header__sticky-wrapper'
+    });
+
+
     /********** Menu mobile sub-menu. **********/
     $mobileSubMenu.contentToggle({
       globalClose: true,
@@ -64,8 +66,8 @@
     $('.js-menu-lev2-close').click(function(){
       $(this).closest('.js-contentToggle--nav-mob').trigger('close');
     });
-    
-    
+
+
     /********** Menu mobile. **********/
     $('body').contentToggle({
       defaultState: 'close',
@@ -74,6 +76,6 @@
       contentSelector: '.js-aside-move',
       toggleProperties: {}
     });
-    
+
   });
 })();

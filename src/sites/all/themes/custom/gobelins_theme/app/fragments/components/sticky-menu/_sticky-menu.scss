@@ -1,0 +1,85 @@
+.sticky-menu__wrapper {
+  width: 100%;
+  z-index: 9;
+}
+
+.sticky-menu {
+  background-color: $color__bg-white;
+  padding: 0;
+  height: 68px;
+  position: relative;
+}
+.sticky-menu__content {
+  height: 68px;
+  padding-top: 10px;
+}
+.sticky-menu__logo {
+  margin-right: 50px;
+  vertical-align: middle;
+}
+.sticky-menu__container {
+  padding: 12px 0;
+  height: 52px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.sticky-menu__link {
+  font-family: $font__platform--light;
+  font-size: 90%;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $color__text-dark;
+  margin-right: 50px;
+  display: inline-block;
+  border: none;
+
+  &:hover,
+  &.is-active {
+    color: $color__blue-gobelins;
+    text-decoration: none;
+  }
+}
+.sticky-menu__buttons {
+  float: right;
+
+  .btn-invert {
+    padding: 11px 27px;
+    background-color: #000;
+
+    &:hover{
+      background-color: $color__blue-gobelins;
+      color: #fff;
+      border:1px solid $color__blue-gobelins;
+    }
+  }
+
+  .btn-like--mini {
+    padding: 11px 13px;
+    margin-left: 6px;
+  }
+}
+.sticky-menu__scroll {
+  width: 0;
+  height: 3px;
+  background-color: $color__blue-gobelins;
+  display: none;
+}
+.is-sticky {
+  .sticky-menu__logo {
+    display: none;
+  }
+  .sticky-menu__scroll {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sticky-menu__logo {
+    margin-right: 20px;
+  }
+  .sticky-menu__link {
+    font-size: 80%;
+    margin-right: 20px;
+  }
+}

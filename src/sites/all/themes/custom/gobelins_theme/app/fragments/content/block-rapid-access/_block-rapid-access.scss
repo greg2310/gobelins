@@ -1,61 +1,61 @@
 .list-rapid-access {
   background-color:$color__bg-gray--light;
   padding-top:0;
+}
 
-  .item-rapid-access{
-    background-color:#fff;
-    border-bottom: 2px solid $color__border-gray--light;
-    padding:30px 20px 40px;
-    text-align:center;
-    font-family:$font__neuzeit;
-    height:300px;
-    cursor:pointer;
-   transition:background-color 0.2s ease-out 0s;
+.item-rapid-access{
+  background-color:#fff;
+  border-bottom: 2px solid $color__border-gray--light;
+  padding:30px 20px 40px;
+  text-align:center;
+  font-family:$font__neuzeit;
+  height:300px;
+  cursor:pointer;
+  transition:background-color 0.2s ease-out 0s;
+  
+  @media screen and (max-width: $width__m){
+    text-align:left;
+    height:auto;
+    padding:30px 40px;
+    cursor:auto;
+  } 
     
-    @media screen and (max-width: $width__m){
-      text-align:left;
-      height:auto;
-      padding:30px 40px;
-      cursor:auto;
-    } 
+  & + .item-rapid-access{
+    border-left:1px solid $color__border-gray--light;
+  }
     
-    & + .item-rapid-access{
-      border-left:1px solid $color__border-gray--light;
-    }
-    
-    @media screen and (min-width: $width__m){
-    
-      &:hover{
-        background:$color__blue-gobelins;
-        .item-rapid-access__img{
-          .off{
-            display:none;
-          }
-          .on{
-            display:inline-block;
-          }
-        }
-        h3{
-          color:$color__bg-white;
-        }
-        
-        .description{
+  @media screen and (min-width: $width__m){
+    &:hover{
+      background:$color__blue-gobelins;
+      .item-rapid-access__img{
+        .off{
           display:none;
         }
-        
-        .btn-higlight{
+        .on{
           display:inline-block;
-          background:$color__blue-gobelins;
-          color:$color__bg-white;
-          &:hover{
-            background:$color__bg-white;
-            color:$color__blue-gobelins;
-          }
+        }
+      }
+      h3{
+        color:$color__bg-white;
+      }
+      
+      .description{
+        display:none;
+      }
+      
+      .btn-higlight{
+        display:inline-block;
+        background:$color__blue-gobelins;
+        color:$color__bg-white;
+        &:hover{
+          background:$color__bg-white;
+          color:$color__blue-gobelins;
         }
       }
     }
+  }
     
-    .item-rapid-access__img{
+  .item-rapid-access__img{
     display:table-cell;
     text-align:center;
     height:115px;
@@ -66,66 +66,66 @@
       vertical-align:top;
       width:198px;
     }
-    
+  
     @media screen and (max-width: $width__xs - 1px){
-     display:none;
+      display:none;
     }
-      
-    img{
+    
+    .off{
       display:inline-block;
-        max-width:100%;
-      &.on{
-     display:none;
-      }
+      max-width:100%;
     }
-    
+    .on{
+      display:none;
     }
-    
-    @media screen and (max-width: $width__m){
-      .item-rapid-access__description{
-        display:inline-block;
-        text-align:left;
-        vertical-align:top;
-        width:66%;
-      }
+    &:hover{
+      border-color:transparent;
     }
-    
-    @media screen and (max-width: $width__xs - 1px){
-     .item-rapid-access__description{
-      width:100%;
-     }
+  }
+  
+  @media screen and (max-width: $width__m){
+    .item-rapid-access__description{
+      display:inline-block;
+      text-align:left;
+      vertical-align:top;
+      width:66%;
     }
-    
-    
-    h3{
+  }
+  
+  @media screen and (max-width: $width__xs - 1px){
+   .item-rapid-access__description{
+    width:100%;
+   }
+  }
+  
+  h3{
     margin:15px 0;
     text-transform:uppercase;
     color:$color__slideshow--training;
     font-family:$font__platform--medium;
     letter-spacing:1px;
     line-height:normal;
-    
+  
     @media screen and (max-width: $width__m){
        margin:0 0 20px 0;
     }
-    
-    }
+  
+  }
    
    
-    .btn-higlight{
-      display:none;
-      margin-top:15px;
-      @media screen and (max-width: $width__m){
+  .btn-higlight{
+    display:none;
+    margin-top:15px;
+    @media screen and (max-width: $width__m){
+      display:inline-block;
+      &:after{
+        content: '\e806';
+        font-family: 'fontello';
+        font-size: 20px;
+        margin-left: 6px;
+        vertical-align: top;
+        width:20px;
         display:inline-block;
-        &:after{
-          content: '\e806';
-          font-family: 'fontello';
-          font-size: 20px;
-          margin-left: 6px;
-          vertical-align: top;
-          width:20px;
-          display:inline-block;
-        }
       }
     }
   }

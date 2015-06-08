@@ -1,0 +1,431 @@
+.content-press{
+  background-color:#fff; 
+  border-bottom:2px solid $color__border-gray--light;
+  .title-h2{
+    text-align:left;
+    line-height:normal;
+    font-family: 'Platform-light';
+    letter-spacing:1px;
+    font-size:2rem;
+    margin:0 0 15px 0;		
+    text-transform:uppercase;
+    &.center{
+      text-align:center;
+    }		
+  }
+}
+
+/** page actualités***/
+.list-actus-press{
+  width:76%;
+  float:left;
+  padding-right:40px;
+}
+
+.list-actus-press__line{
+  border-top:1px solid $color__bg-gray;
+  padding:30px 0;
+  &:nth-child(3){
+    border-top:none;
+  }
+}
+
+ /*** Bloc actualités***/
+.list-actus-press__item-actus{
+  display:inline-block;
+  margin-left:35px;
+  width:30%;
+  vertical-align:top;
+  &:first-child{
+    margin-left:0;
+  }
+  .item-actus__image{
+    img{
+      width:100%;
+      &:hover{
+        opacity: 0.8;
+      }
+    }
+
+    a{
+      &:hover{
+        border-color:transparent;
+      }
+    }
+  }
+  
+  .item-actus__description{
+    .name-rubrique{
+      font-size:0.825rem;
+      font-family: 'Platform-Medium';
+      letter-spacing:1px;
+      text-transform:uppercase;
+      color:$color__border-gray;
+      padding-top:12px;
+    }
+
+    h3{
+      font-family: 'Platform-Medium';
+      font-size:1.125rem;
+      color:$color__text-dark;
+      letter-spacing:1px;
+      line-height:normal;
+      padding-top:5px;
+      a{
+        color:inherit;
+        font-size:inherit;
+      }
+    }
+  
+    .intro{
+      font-size:0.875rem;
+      color:$color__border-gray;
+      font-family: 'Neuzeit';
+      padding-top:7px;
+    }
+  }    
+}
+
+/***Bloc filter****/
+.block-filter-press{
+  font-family: 'Platform-Medium';
+  text-transform:uppercase;
+  letter-spacing:1px;
+  .form-item{
+    display:inline-block;
+    margin-left:40px;
+    label{
+      font-family: 'Neuzeit';
+      text-transform:none;
+      margin-right:10px;
+    }
+    select{
+      font-family:arial;
+      font-size:0.825rem;
+    }
+    &:first-child{
+      margin-left:10px;
+    }
+  }
+}
+  
+/** page Kit media**/
+.introduction-kit-media{
+  font-family: 'Platform-Medium';
+  letter-spacing:1px;
+  font-size:1.375rem;
+  color:$color__bg-gray--darck;
+  padding-bottom:30px;
+  max-width:55%;
+  margin:auto;
+  text-align:center;
+}
+
+.presentation-kit-media{
+  padding:45px 0 25px 0;
+  border-top:1px solid $color__bg-gray;
+  border-bottom:1px solid $color__bg-gray;
+  margin-bottom:50px;
+}
+
+.presentation-kit-media__description{
+  padding-left:0;
+  display: table-cell;
+  font-family: "Neuzeit";
+  padding-right: 50px;
+  vertical-align: top;
+}
+
+.presentation-kit-media__media{
+  display: table-cell;
+  vertical-align: top;
+  width: 45%;
+  text-align:right;
+  figure{
+    margin:0;
+    width:100%;
+    display:inline-block;
+    img{
+      width:100%;
+    }
+    &.bloc-2{
+      width:46%;
+      &:first-child{
+        margin-right:30px;
+      }
+    }
+  }
+  figcaption{
+    font-family: 'Platform-Medium';
+    letter-spacing:1px;
+    font-size:1.125rem;
+    padding-top:10px;
+    color:$color__slideshow--training;
+    text-align:left;
+  }
+}
+
+
+  
+  
+/*** Page Communiqués press****/
+
+.list-communique-press{
+  width:76%;
+  float:left;
+  padding-right:40px;
+}
+
+.list-communique-press__item-communique{
+  padding:20px 0;
+  border-top:1px solid $color__border__gray;
+  .item-communique__image{
+    display:inline-block;
+    width:25%;
+    margin-right:20px;
+    vertical-align:top;
+    &:hover{
+      opacity: 0.8;
+    }
+    a:hover{
+      border-color:transparent;
+    }
+    &:first-child{
+      border-top:none;
+    }
+  }
+
+  .item-communique__description{
+    display:inline-block;
+    width:71%;
+    vertical-align:top;
+    &.full{
+      width:100%;
+    }
+    h3{
+      font-family: 'Platform-Medium';
+      font-size:1.125rem;
+      color:$color__slideshow--training;
+      letter-spacing:1px;
+      padding-bottom:5px;
+      a{
+        &:hover{
+          color:$color__blue-gobelins;
+          border-color:transparent;
+        }
+      }
+    }
+    
+    .name-newspaper{
+      font-size:1rem;
+      display:inline-block;
+      &:after{
+        content:',';
+        color:$color__border-gray;
+        display:inline-block;
+        padding-left:2px;
+      }
+      a:hover{
+        color:$color__blue-gobelins;
+        border-color:transparent;
+      }
+    }
+
+    .date{
+      color:$color__border-gray;
+      font-size:1rem;
+      padding-bottom:10px;
+      display:inline-block;
+    }
+
+    .intro{
+      color:$color__border-gray;
+      font-size:0.875rem;
+      font-family: 'Neuzeit';
+      a:hover{
+        color:$color__text-dark;
+        border-color:transparent;
+      }
+    }
+
+  }
+}
+
+
+/** Agenda press***/
+.block-agenda-press{
+  margin-left:76%;
+  .title{
+    font-family: 'Platform-Medium';
+    text-transform:uppercase;
+    border-bottom:2px solid $color__border__dark;
+    padding-bottom:7px;
+    color:$color__text-dark;
+    letter-spacing:1px;
+  }
+
+  .select-month{
+    padding:20px 0;
+    text-transform:uppercase;
+    color:$color__text-dark;
+    position:relative;
+    text-align:center;
+    border-bottom:1px solid $color__border__gray;
+    .icon-left-small,
+    .icon-right-small{
+      position:absolute;
+      font-size:1.125rem;
+      cursor:pointer;
+      &:hover{
+        color:$color__blue-gobelins;
+        border-color:transparent;
+      }
+    }
+
+    .icon-left-small{
+      left:0;
+    }
+
+    .icon-right-small{
+      right:0;
+    }
+
+    .month{
+      font-family: 'Platform-Light';
+      font-size:2rem;
+      display:inline-block;
+      vertical-align:middle;
+    }
+  }
+
+  .list-events{
+    .item-event{
+      padding:20px 0;
+      border-bottom:1px solid $color__border__gray;
+      .date{
+        color:$color__blue-gobelins;
+        font-size:1.625rem;
+        font-family: 'Platform-Light';
+        margin-bottom:12px;
+        border-bottom:1px solid $color__blue-gobelins;
+        display:inline-block;
+      }
+
+      .detail{
+        font-family: 'Platform-Medium';
+        color:$color__slideshow--training;
+        font-size:1.112rem;
+        letter-spacing:1px;
+        padding-bottom:15px;
+        display:block;
+        &:hover{
+          color:$color__blue-gobelins;
+          border-color:transparent;
+        }
+      }
+
+    }
+
+  }
+}
+
+/** Bloc download document***/
+.block-doc-download{
+  float:left;
+  width:73%;
+  padding-right:40px;
+  margin-bottom:40px;
+}
+
+
+.item-downloads.item-downloads--press{
+  padding:15px 0 15px 0;
+  text-align:left;
+  border-left:0;
+
+  &+.item-downloads{
+    border-left:0;
+  }
+
+  .item-downloads__img{
+    display:inline-block;
+    width:8%;
+    vertical-align:top;
+    &:hover{
+      border-color:transparent;
+    }
+    img{
+      max-width:100%;
+    }
+  }
+
+  .item-downloads__details{
+    display:inline-block;
+    margin-left:20px;
+  }
+
+  h3{
+    min-height:0;
+  }
+
+}
+
+
+/***Bloc contact press***/
+
+.block-contact-press{
+margin-left:73%;
+.title-h2{
+  text-align:left;
+  margin:0 0 15px 0;		
+  line-height:normal;
+  font-family: 'Platform-light';
+  letter-spacing:1px;
+  font-size:2rem;
+  text-transform:uppercase;		
+}
+
+.btn-action{
+  vertical-align:middle;
+  margin-left:30%;
+  .btn-mail{
+    color:#1A1A1A;
+    &:hover{
+      background:$color__blue-gobelins;
+      color:$color__bg-white;
+    }
+  }
+}
+  
+}
+
+
+.block-contact-press__infos-contact{
+  margin-top:30px;
+
+  figure{
+    margin:0;
+    img{
+      float:left;
+      border-radius: 50%;
+      height: auto;
+      width:25%;
+    }
+    figcaption{
+      margin-left:25%;
+      height:75px;
+      vertical-align:middle;
+      padding-left:15px;
+      font-family: 'Neuzeit';
+
+    }
+  }
+
+.name{
+  display:block;
+  padding-bottom:5px;
+  }
+
+}
+
+

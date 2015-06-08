@@ -7,13 +7,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>formation pro</title>
 <meta name="description" content="">
-<meta name="viewport" id="testViewport" content="width=1024, initial-scale=0">
+<meta name="viewport" id="testViewport" content="width=1024">
 <link rel="stylesheet" href="css/all.css" media="all"/>
 <link rel="stylesheet" href="css/print.css" media="print"/>
 <script src="js/modernizr.js"></script>
 
 <script>
-  
+
   if (screen.width < 481) {
     var mvp = document.getElementById('testViewport');
     mvp.setAttribute('content','width=480');
@@ -395,7 +395,7 @@
   
 
   
-    <div class="block-training-presentation l-row">
+    <div class="block-training-presentation l-row js-sticky-menu__section" data-title="Présentation">
   <div class="l-row__inner clearfix">
     <div class="block-sharing">
   <ul class="clearfix">
@@ -423,8 +423,7 @@
     <div class="owl-carousel js-slider--3">
       
   
-    
-<div class="item">
+    <div class="item">
 	<p class="new">
 		New
 	</p>
@@ -459,8 +458,7 @@
   
 
   
-    
-<div class="item">
+    <div class="item">
 	<p class="new">
 		New
 	</p>
@@ -495,8 +493,7 @@
   
 
   
-    
-<div class="item">
+    <div class="item">
 	<p class="new">
 		New
 	</p>
@@ -531,8 +528,7 @@
   
 
   
-    
-<div class="item">
+    <div class="item">
 	<p class="new">
 		New
 	</p>
@@ -567,8 +563,7 @@
   
 
   
-    
-<div class="item">
+    <div class="item">
 	<p class="new">
 		New
 	</p>
@@ -603,8 +598,7 @@
   
 
   
-    
-<div class="item">
+    <div class="item">
 	<p class="new">
 		New
 	</p>
@@ -639,8 +633,7 @@
   
 
   
-    
-<div class="item">
+    <div class="item">
 	<p class="new">
 		New
 	</p>
@@ -675,8 +668,7 @@
   
 
   
-    
-<div class="item">
+    <div class="item">
 	<p class="new">
 		New
 	</p>
@@ -722,192 +714,234 @@
   <div class="l-row__inner clearfix">
 	  <h2 class="title-h2">45 formations Professionnelles en cinéma d’animation</h2>
 	  <div class="filter-trainings professionnal">
-    
-    <form action="action" class="filter-trainings__form">
-      <div class="filter-training-field">
-        <p class="title">Durée</p>
-        <div class="form-item">
-          <span class="styled-select">
-            <select>
-              <option>durée 1</option>
-              <option>durée2</option> 
-              <option>durée3</option>
-            </select>
-          </span>
-        </div>
+  <form action="action" id="views-exposed-form-professional-domains-professional-domain" class="filter-trainings__form">
+    <div class="filter-training-field">
+      <p class="title">Durée</p>
+      <div class="form-item">
+        <span class="styled-select">
+          <select>
+            <option>durée 1</option>
+            <option>durée2</option> 
+            <option>durée3</option>
+          </select>
+        </span>
       </div>
-       <div class="filter-training-field">
-        <p class="title">Conditions</p>
-        <div class="form-item">
-          <input type="radio" name="conditions" id="radio1" /> 
-          <label for="radio1">Éligible CPF</label>
-        </div>
-        <div class="form-item">
-          <input type="radio" name="conditions" id="radio2" /> 
-          <label for="radio2">Formations AFDAS</label>
-        </div>
-        <div class="form-item">
-          <input type="radio" name="conditions" id="radio3" /> 
-          <label for="radio3">Formations diplomantes/certifiantes</label>
-        </div>
-		<div class="form-item">
-          <input type="radio" name="conditions" id="radio4" /> 
-          <label for="radio4">Reconversion</label>
-        </div>
+    </div>
+    <div class="filter-training-field">
+      <p class="title">Conditions</p>
+      <div class="form-item">
+        <input type="radio" name="conditions" id="radio1" /> 
+        <label for="radio1">Éligible CPF</label>
       </div>
-       <div class="filter-training-field">
-			<p class="title">Thématiques <span class="close-themes icon-minus"></span></p>
-			<div class="form-item">
-				<ul class="list-themes">
-					<li>
-						<input type="checkbox" name="" id="checkbox1" /> 
-						<label for="checkbox1">Storyboard</label>
-					</li>
-					<li>
-						<input type="checkbox" name="" id="checkbox2" /> 
-						<label for="checkbox2">Lumière</label>
-					</li>
-					<li>
-						<input type="checkbox" name="" id="checkbox3" /> 
-						<label for="checkbox3">Captation</label>
-					</li>
-					<li>
-						<input type="checkbox" name="" id="checkbox4" /> 
-						<label for="checkbox4">Marionnette</label>
-					</li>
-					<li>
-						<input type="checkbox" name="" id="checkbox5" /> 
-						<label for="checkbox5">Décor</label>
-					</li>
-					
-					<li>
-						<input type="checkbox" name="" id="checkbox6" /> 
-						<label for="checkbox6">Tracking</label>
-					</li>
-								
-					<li>
-						<input type="checkbox" name="" id="checkbox7" /> 
-						<label for="checkbox7">Expression</label>
-					</li>
-					
-					<li>
-						<input type="checkbox" name="" id="checkbox8" /> 
-						<label for="checkbox8">Marionnette</label>
-					</li>
-				
-				</ul>
+      <div class="form-item">
+        <input type="radio" name="conditions" id="radio2" /> 
+        <label for="radio2">Formations AFDAS</label>
+      </div>
+      <div class="form-item">
+        <input type="radio" name="conditions" id="radio3" /> 
+        <label for="radio3">Formations diplomantes/certifiantes</label>
+      </div>
+      <div class="form-item">
+        <input type="radio" name="conditions" id="radio4" /> 
+        <label for="radio4">Reconversion</label>
+      </div>
+    </div>
+    <div class="filter-training-field">
+      <p class="title">Thématiques <span class="close-themes icon-minus"></span></p>
+      
+      <div id="edit-field-thematics-tid" class="list-themes">
+        <div class="form-item">
+          <input type="checkbox" name="" id="checkbox1" /> 
+          <label for="checkbox1">Storyboard</label>
+        </div>
+        <div class="form-item">
+          <input type="checkbox" name="" id="checkbox2" /> 
+          <label for="checkbox2">Lumière</label>
+        </div>
+        <div class="form-item">
+          <input type="checkbox" name="" id="checkbox3" /> 
+          <label for="checkbox3">Captation</label>
+        </div>
+        <div class="form-item">
+          <input type="checkbox" name="" id="checkbox4" /> 
+          <label for="checkbox4">Marionnette</label>
+        </div>
+        <div class="form-item">
+          <input type="checkbox" name="" id="checkbox5" /> 
+          <label for="checkbox5">Décor</label>
+        </div>
+        <div class="form-item">
+          <input type="checkbox" name="" id="checkbox6" /> 
+          <label for="checkbox6">Tracking</label>
+        </div>
+        <div class="form-item">
+          <input type="checkbox" name="" id="checkbox7" /> 
+          <label for="checkbox7">Expression</label>
+        </div>
+          
+        <div class="form-item">
+          <input type="checkbox" name="" id="checkbox8" /> 
+          <label for="checkbox8">Marionnette</label>
+        </div>
 
-			</div>
+      </div>
 
-		</div>
-      <button type="reset" class="btn-remove">Réinitialiser</button>
-    </form>
+    </div>
+    <button type="reset" id="edit-reset" class="btn-remove">Réinitialiser</button>
+  </form>
 
 </div>  
       <div class="results-filter-training">
-   
-  <div class="option-filter">
+  <div class="results-filter-training__option-filter">
     Tri Par
     <a class="date active" href="#">Durée</a>
     <a class="price" href="#">Prix</a>
   </div>
-  <div class="list-results-training item-trainings--animation">
+  <div class="results-filter-training__list item-trainings--animation">
     <div class="list-item">
-      <div class="item-result__detail">
-        <h3>Animateur 3D</h3>
-        <p class="item-trainings__type">7 semaines</p>
-        <p class="ref">AD01</p>
-      </div>
-      <div class="item-result__info">
-        <span class="price-training">12200 €</span>
-        <a href="#" class="btn-higlight">Voir</a>
-        <a href="#" class="btn-like--mini"><span class="icon-heart"></span></a>
-      </div>
-    </div>
-    
-    <div class="list-item">
-      <div class="item-result__detail">
-        <h3>3ds Max</h3>
-        <p class="subtitle">Une entrée dans le monde de 3ds Max</p>
-        <p class="item-trainings__type">5 jours</p>
-        <p class="ref">AD01</p>
-      </div>
-      <div class="item-result__info">
-        <span class="price-training">4969 €</span>
-        <a href="#" class="btn-higlight">Voir</a>
-        <a href="#" class="btn-like--mini"><span class="icon-heart"></span></a>
-      </div>
-    </div>
-    
-    <div class="list-item">
-      <div class="item-result__detail">
-        <h3>Nuke de A à Z</h3>
-        <p class="subtitle">Une entrée dans le monde de 3ds Max</p>
-        <p class="item-trainings__type">7 semaines</p>
-        <p class="ref">AD01</p>
-      </div>
-      <div class="item-result__info">
-        <span class="price-training">12200 €</span>
-        <a href="#" class="btn-higlight">Voir</a>
-        <a href="#" class="btn-like--mini"><span class="icon-heart"></span></a>
-      </div>
-    </div>
-    
-    <div class="list-item">
-      <div class="item-result__detail">
-        <h3>Houdini effets spéciaux<span class="new">New</span></h3>
-        <p class="subtitle">Une entrée dans le monde de 3ds Max</p>
-        <p class="item-trainings__type">7 semaines</p>
-        <p class="ref">AD01</p>
-      </div>
-      <div class="item-result__info">
-        <span class="price-training">12200 €</span>
-        <a href="#" class="btn-higlight">Voir</a>
-        <a href="#" class="btn-like--mini"><span class="icon-heart"></span></a>
-      </div>
-    </div>
-    
-    <div class="list-item">
-      <div class="item-result__detail">
-        <h3>Animateur 3D</h3>
-        <p class="item-trainings__type">7 semaines</p>
-        <p class="ref">AD01</p>
-      </div>
-      <div class="item-result__info">
-        <span class="price-training">12200 €</span>
-        <a href="#" class="btn-higlight">Voir</a>
-        <a href="#" class="btn-like--mini"><span class="icon-heart"></span></a>
-      </div>
-    </div>
-    
-    <div class="list-item">
-      <div class="item-result__detail">
-        <h3>Animateur 3D<span class="new">New</span></h3>
-        <p class="item-trainings__type">7 semaines</p>
-        <p class="ref">AD01</p>
-      </div>
-      <div class="item-result__info">
-        <span class="price-training">12200 €</span>
-        <a href="#" class="btn-higlight">Voir</a>
-        <a href="#" class="btn-like--mini"><span class="icon-heart"></span></a>
-      </div>
-    </div>
-    
-    <div class="list-item">
-      <div class="item-result__detail">
-        <h3>Animateur 3D</h3>
-        <p class="item-trainings__type">7 semaines</p>
-        <p class="ref">AD01</p>
-      </div>
-      <div class="item-result__info">
-        <span class="price-training">12200 €</span>
-        <a href="#" class="btn-higlight">Voir</a>
-        <a href="#" class="btn-like--mini"><span class="icon-heart"></span></a>
-      </div>
-    </div>
-    
+  <div class="list-item__detail">
+    <h3>Animateur 3D
+      
+        <span class="new">New</span>
+      
+    </h3>
+      
+    <p class="item-trainings__type">7 semaines</p>
+    <p class="ref">AD01</p>
   </div>
-  <div class="other-training">
+  <div class="list-item__info">
+    <span class="price-training">12200 €</span>
+    <a href="#" class="btn-higlight">Voir</a>
+    <a href="#" class="btn-like--mini"><span class="icon-heart"></span></a>
+  </div>
+</div>
+ 
+    <div class="list-item">
+  <div class="list-item__detail">
+    <h3>Animateur 3D
+      
+    </h3>
+      
+    <p class="item-trainings__type">7 semaines</p>
+    <p class="ref">AD01</p>
+  </div>
+  <div class="list-item__info">
+    <span class="price-training">12200 €</span>
+    <a href="#" class="btn-higlight">Voir</a>
+    <a href="#" class="btn-like--mini"><span class="icon-heart"></span></a>
+  </div>
+</div>
+    
+    <div class="list-item">
+  <div class="list-item__detail">
+    <h3>Animateur 3D
+      
+        <span class="new">New</span>
+      
+    </h3>
+    
+      <p class="subtitle">Une entrée dans le monde de 3ds Max</p>
+      
+    <p class="item-trainings__type">7 semaines</p>
+    <p class="ref">AD01</p>
+  </div>
+  <div class="list-item__info">
+    <span class="price-training">12200 €</span>
+    <a href="#" class="btn-higlight">Voir</a>
+    <a href="#" class="btn-like--mini"><span class="icon-heart"></span></a>
+  </div>
+</div>
+
+    <div class="list-item">
+  <div class="list-item__detail">
+    <h3>Animateur 3D
+      
+    </h3>
+    
+      <p class="subtitle">Une entrée dans le monde de 3ds Max</p>
+      
+    <p class="item-trainings__type">7 semaines</p>
+    <p class="ref">AD01</p>
+  </div>
+  <div class="list-item__info">
+    <span class="price-training">12200 €</span>
+    <a href="#" class="btn-higlight">Voir</a>
+    <a href="#" class="btn-like--mini"><span class="icon-heart"></span></a>
+  </div>
+</div>
+
+    <div class="list-item">
+  <div class="list-item__detail">
+    <h3>Animateur 3D
+      
+        <span class="new">New</span>
+      
+    </h3>
+      
+    <p class="item-trainings__type">7 semaines</p>
+    <p class="ref">AD01</p>
+  </div>
+  <div class="list-item__info">
+    <span class="price-training">12200 €</span>
+    <a href="#" class="btn-higlight">Voir</a>
+    <a href="#" class="btn-like--mini"><span class="icon-heart"></span></a>
+  </div>
+</div>
+ 
+    <div class="list-item">
+  <div class="list-item__detail">
+    <h3>Animateur 3D
+      
+    </h3>
+      
+    <p class="item-trainings__type">7 semaines</p>
+    <p class="ref">AD01</p>
+  </div>
+  <div class="list-item__info">
+    <span class="price-training">12200 €</span>
+    <a href="#" class="btn-higlight">Voir</a>
+    <a href="#" class="btn-like--mini"><span class="icon-heart"></span></a>
+  </div>
+</div>
+    
+    <div class="list-item">
+  <div class="list-item__detail">
+    <h3>Animateur 3D
+      
+        <span class="new">New</span>
+      
+    </h3>
+      
+    <p class="item-trainings__type">7 semaines</p>
+    <p class="ref">AD01</p>
+  </div>
+  <div class="list-item__info">
+    <span class="price-training">12200 €</span>
+    <a href="#" class="btn-higlight">Voir</a>
+    <a href="#" class="btn-like--mini"><span class="icon-heart"></span></a>
+  </div>
+</div>
+
+    <div class="list-item">
+  <div class="list-item__detail">
+    <h3>Animateur 3D
+      
+    </h3>
+    
+      <p class="subtitle">Une entrée dans le monde de 3ds Max</p>
+      
+    <p class="item-trainings__type">7 semaines</p>
+    <p class="ref">AD01</p>
+  </div>
+  <div class="list-item__info">
+    <span class="price-training">12200 €</span>
+    <a href="#" class="btn-higlight">Voir</a>
+    <a href="#" class="btn-like--mini"><span class="icon-heart"></span></a>
+  </div>
+</div>
+
+  </div>
+  <div class="results-filter-training__other-training">
     <a href="#">Voir les  10 autres formations en cinéma d’animation</a>
   </div>
 </div>
@@ -921,13 +955,13 @@
   <div class="l-row__inner">
     <h2 class="title-h2">EN TANT QUE PROFESSIONNEL, <span>VOUS SOUHAITEZ TROUVER LA FORMATION QUI VOUS CONVIENT ?</span></h2>
     <div class="infos-contact">
-      <figure>
-        <img src="images/picture-contact.png" alt="" />
-        <figcaption>
-          <span class="name">Contactez Lucette Berbinan</span>
-          <span class="tel">01 40 79 92 20</span>
-        </figcaption>
-      </figure>     
+	    <figure>
+	      <img src="images/picture-contact.png" alt="" />
+	      <figcaption>
+	        <span class="name">Contactez Lucette Berbinan</span>
+	        <span class="tel">01 40 79 92 20</span>
+	      </figcaption>
+	    </figure>     
     </div>
     <div class="btn-action">
       <a class="btn-mail" href="#">Contactez-nous</a>

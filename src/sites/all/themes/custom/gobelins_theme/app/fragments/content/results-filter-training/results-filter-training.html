@@ -1,107 +1,20 @@
 <div class="results-filter-training">
-   
-  <div class="option-filter">
+  <div class="results-filter-training__option-filter">
     Tri Par
     <a class="date active" href="#">Durée</a>
     <a class="price" href="#">Prix</a>
   </div>
-  <div class="list-results-training item-trainings--animation">
-    <div class="list-item">
-      <div class="item-result__detail">
-        <h3>Animateur 3D</h3>
-        <p class="item-trainings__type">7 semaines</p>
-        <p class="ref">AD01</p>
-      </div>
-      <div class="item-result__info">
-        <span class="price-training">12200 €</span>
-        <a href="#" class="btn-higlight">Voir</a>
-        <a href="#" class="btn-like--mini"><span class="icon-heart"></span></a>
-      </div>
-    </div>
-    
-    <div class="list-item">
-      <div class="item-result__detail">
-        <h3>3ds Max</h3>
-        <p class="subtitle">Une entrée dans le monde de 3ds Max</p>
-        <p class="item-trainings__type">5 jours</p>
-        <p class="ref">AD01</p>
-      </div>
-      <div class="item-result__info">
-        <span class="price-training">4969 €</span>
-        <a href="#" class="btn-higlight">Voir</a>
-        <a href="#" class="btn-like--mini"><span class="icon-heart"></span></a>
-      </div>
-    </div>
-    
-    <div class="list-item">
-      <div class="item-result__detail">
-        <h3>Nuke de A à Z</h3>
-        <p class="subtitle">Une entrée dans le monde de 3ds Max</p>
-        <p class="item-trainings__type">7 semaines</p>
-        <p class="ref">AD01</p>
-      </div>
-      <div class="item-result__info">
-        <span class="price-training">12200 €</span>
-        <a href="#" class="btn-higlight">Voir</a>
-        <a href="#" class="btn-like--mini"><span class="icon-heart"></span></a>
-      </div>
-    </div>
-    
-    <div class="list-item">
-      <div class="item-result__detail">
-        <h3>Houdini effets spéciaux<span class="new">New</span></h3>
-        <p class="subtitle">Une entrée dans le monde de 3ds Max</p>
-        <p class="item-trainings__type">7 semaines</p>
-        <p class="ref">AD01</p>
-      </div>
-      <div class="item-result__info">
-        <span class="price-training">12200 €</span>
-        <a href="#" class="btn-higlight">Voir</a>
-        <a href="#" class="btn-like--mini"><span class="icon-heart"></span></a>
-      </div>
-    </div>
-    
-    <div class="list-item">
-      <div class="item-result__detail">
-        <h3>Animateur 3D</h3>
-        <p class="item-trainings__type">7 semaines</p>
-        <p class="ref">AD01</p>
-      </div>
-      <div class="item-result__info">
-        <span class="price-training">12200 €</span>
-        <a href="#" class="btn-higlight">Voir</a>
-        <a href="#" class="btn-like--mini"><span class="icon-heart"></span></a>
-      </div>
-    </div>
-    
-    <div class="list-item">
-      <div class="item-result__detail">
-        <h3>Animateur 3D<span class="new">New</span></h3>
-        <p class="item-trainings__type">7 semaines</p>
-        <p class="ref">AD01</p>
-      </div>
-      <div class="item-result__info">
-        <span class="price-training">12200 €</span>
-        <a href="#" class="btn-higlight">Voir</a>
-        <a href="#" class="btn-like--mini"><span class="icon-heart"></span></a>
-      </div>
-    </div>
-    
-    <div class="list-item">
-      <div class="item-result__detail">
-        <h3>Animateur 3D</h3>
-        <p class="item-trainings__type">7 semaines</p>
-        <p class="ref">AD01</p>
-      </div>
-      <div class="item-result__info">
-        <span class="price-training">12200 €</span>
-        <a href="#" class="btn-higlight">Voir</a>
-        <a href="#" class="btn-like--mini"><span class="icon-heart"></span></a>
-      </div>
-    </div>
-    
+  <div class="results-filter-training__list item-trainings--animation">
+    <%= include('results-filter-training__item', {isNew :'true'})%> 
+    <%= include('results-filter-training__item')%>    
+    <%= include('results-filter-training__item', {isNew :'true', isSubtitle :'true'} )%>
+    <%= include('results-filter-training__item', {isSubtitle :'true'} )%>
+    <%= include('results-filter-training__item', {isNew :'true'})%> 
+    <%= include('results-filter-training__item')%>    
+    <%= include('results-filter-training__item', {isNew :'true'})%>
+    <%= include('results-filter-training__item', {isSubtitle :'true'})%>
   </div>
-  <div class="other-training">
+  <div class="results-filter-training__other-training">
     <a href="#">Voir les  10 autres formations en cinéma d’animation</a>
   </div>
 </div>

@@ -7,13 +7,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Homepage</title>
 <meta name="description" content="">
-<meta name="viewport" id="testViewport" content="width=1024, initial-scale=0">
+<meta name="viewport" id="testViewport" content="width=1024">
 <link rel="stylesheet" href="css/all.css" media="all"/>
 <link rel="stylesheet" href="css/print.css" media="print"/>
 <script src="js/modernizr.js"></script>
 
 <script>
-  
+
   if (screen.width < 481) {
     var mvp = document.getElementById('testViewport');
     mvp.setAttribute('content','width=480');
@@ -480,7 +480,7 @@
   
 
   
-    <div class="block-training-presentation l-row">
+    <div class="block-training-presentation l-row js-sticky-menu__section" data-title="Présentation">
   <div class="l-row__inner clearfix">
     <div class="block-sharing">
   <ul class="clearfix">
@@ -502,7 +502,7 @@
   
 
   
-    <div class="block-training-details l-row">
+    <div class="block-training-details l-row js-sticky-menu__section" data-title="Contenu">
   <div class="l-row__inner clearfix">
     <h2 class="title-h2">contenus de la formation</h2>
     <div class="tabs-accordion">
@@ -564,7 +564,7 @@
     </div>
   </div>
 </div>
-    
+
     <div class="item-downloads">
       <a href="#" class="item-downloads__img">
  <img src="images/img10.jpg" alt="formation Cinéma d'animation" />

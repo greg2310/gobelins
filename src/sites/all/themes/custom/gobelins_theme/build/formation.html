@@ -7,13 +7,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Formation</title>
 <meta name="description" content="">
-<meta name="viewport" id="testViewport" content="width=1024, initial-scale=0">
+<meta name="viewport" id="testViewport" content="width=1024">
 <link rel="stylesheet" href="css/all.css" media="all"/>
 <link rel="stylesheet" href="css/print.css" media="print"/>
 <script src="js/modernizr.js"></script>
 
 <script>
-  
+
   if (screen.width < 481) {
     var mvp = document.getElementById('testViewport');
     mvp.setAttribute('content','width=480');
@@ -402,6 +402,22 @@
 </div>
   
 
+  
+    <div class="sticky-menu__wrapper js-sticky-menu">
+  <div class="sticky-menu l-row">
+    <div class="sticky-menu__content l-row__inner">
+      <div class="sticky-menu__buttons no-display--mob">
+        <a href="#" class="btn-invert">Inscription</a>
+        <a href="#" class="btn-like--mini"><span class="icon-heart"></span></a>
+      </div>
+      <img class="sticky-menu__logo" width="30" height="52" src="images/logo-gallery.png" alt="logo gobelins"/>
+      <div class="sticky-menu__container js-sticky-menu__container"></div>
+    </div>
+    <div class="sticky-menu__scroll js-sticky-menu__scroll"></div>
+  </div>
+</div>
+  
+
 
 
         </section>
@@ -410,7 +426,7 @@
       <section class="l-content-main">
         
   
-    <div class="block-training-presentation l-row">
+    <div class="block-training-presentation l-row js-sticky-menu__section" data-title="Présentation">
   <div class="l-row__inner clearfix">
     <div class="block-sharing">
   <ul class="clearfix">
@@ -432,86 +448,88 @@
   
 
   
-    <div class="block-training-gallery l-row">
-  <div class="block-gallery__wrapper js-block_gallery js-popin--gallery" data-total-cols="10"  data-col-width="280" data-line-height="210">
-  
+    <div class="block-training-gallery l-row js-sticky-menu__section" data-title="Galerie">
+  <div class="block-gallery__wrapper js-block_gallery js-popin--group" data-total-cols="10"  data-col-width="280" data-line-height="210">
+
     <div class="block-gallery__grid js-block_gallery__grid">
       <div class="block-gallery__item js-block_gallery__item" data-width="1" data-height="2" data-col="0" data-line="0"></div>
-      
-      <a class="block-gallery__item js-block_gallery__item js-popin--gallery__item" href="images/gallery/280x420-1.jpg" title="titre image gallery" data-width="1" data-height="2">
+
+      <a class="block-gallery__item js-block_gallery__item js-popin--gallery" href="#js-popin--image-1" title="titre image gallery" data-width="1" data-height="2">
         <img src="images/gallery/280x420-1.jpg" alt="titre image gallery">
       </a>
       <a class="block-gallery__item js-block_gallery__item js-popin--video" href="#js-popin--video-1" title="titre image gallery" data-width="1" data-height="1">
         <img src="images/gallery/280x210-1.jpg" alt="titre image gallery">
+        <span class="icons-btn-play"></span>
       </a>
-      <a class="block-gallery__item js-block_gallery__item js-popin--gallery__item" href="images/gallery/280x210-2.jpg" title="titre image gallery" data-width="1" data-height="1">
+      <a class="block-gallery__item js-block_gallery__item js-popin--gallery" href="#js-popin--image-2" title="titre image gallery" data-width="1" data-height="1">
         <img src="images/gallery/280x210-2.jpg" alt="titre image gallery">
       </a>
-      <a class="block-gallery__item js-block_gallery__item js-popin--gallery__item" href="images/gallery/560x420-1.jpg" title="titre image gallery" data-width="2" data-height="2">
+      <a class="block-gallery__item js-block_gallery__item js-popin--gallery" href="#js-popin--image-3" title="titre image gallery" data-width="2" data-height="2">
         <img src="images/gallery/560x420-1.jpg" alt="titre image gallery">
       </a>
-      <a class="block-gallery__item js-block_gallery__item js-popin--gallery__item" href="images/gallery/280x210-3.jpg" title="titre image gallery" data-width="1" data-height="1">
+      <a class="block-gallery__item js-block_gallery__item js-popin--gallery" href="#js-popin--image-1" title="titre image gallery" data-width="1" data-height="1">
         <img src="images/gallery/280x210-3.jpg" alt="titre image gallery">
       </a>
-      <a class="block-gallery__item js-block_gallery__item js-popin--gallery__item" href="images/gallery/280x210-4.jpg" title="titre image gallery" data-width="1" data-height="1">
+      <a class="block-gallery__item js-block_gallery__item js-popin--gallery" href="#js-popin--image-2" title="titre image gallery" data-width="1" data-height="1">
         <img src="images/gallery/280x210-4.jpg" alt="titre image gallery">
       </a>
-      <a class="block-gallery__item js-block_gallery__item js-popin--gallery__item" href="images/gallery/560x420-2.jpg" title="titre image gallery" data-width="2" data-height="2">
+      <a class="block-gallery__item js-block_gallery__item js-popin--gallery" href="#js-popin--image-3" title="titre image gallery" data-width="2" data-height="2">
         <img src="images/gallery/560x420-2.jpg" alt="titre image gallery">
       </a>
       <a class="block-gallery__item js-block_gallery__item js-popin--video" href="#js-popin--video-2" title="titre image gallery" data-width="1" data-height="1">
         <img src="images/gallery/280x210-5.jpg" alt="titre image gallery">
+        <span class="icons-btn-play"></span>
       </a>
-      <a class="block-gallery__item js-block_gallery__item js-popin--gallery__item" href="images/gallery/280x210-6.jpg" title="titre image gallery" data-width="1" data-height="1">
+      <a class="block-gallery__item js-block_gallery__item js-popin--gallery" href="#js-popin--image-1" title="titre image gallery" data-width="1" data-height="1">
         <img src="images/gallery/280x210-6.jpg" alt="titre image gallery">
       </a>
-      <a class="block-gallery__item js-block_gallery__item js-popin--gallery__item" href="images/gallery/280x210-7.jpg" title="titre image gallery" data-width="1" data-height="1">
+      <a class="block-gallery__item js-block_gallery__item js-popin--gallery" href="#js-popin--image-2" title="titre image gallery" data-width="1" data-height="1">
         <img src="images/gallery/280x210-7.jpg" alt="titre image gallery">
       </a>
-      <a class="block-gallery__item js-block_gallery__item js-popin--gallery__item" href="images/gallery/280x210-8.jpg" title="titre image gallery" data-width="1" data-height="1">
+      <a class="block-gallery__item js-block_gallery__item js-popin--gallery" href="#js-popin--image-3" title="titre image gallery" data-width="1" data-height="1">
         <img src="images/gallery/280x210-8.jpg" alt="titre image gallery">
       </a>
-      <a class="block-gallery__item js-block_gallery__item js-popin--gallery__item" href="images/gallery/280x420-1.jpg" title="titre image gallery" data-width="1" data-height="2">
+      <a class="block-gallery__item js-block_gallery__item js-popin--gallery" href="#js-popin--image-1" title="titre image gallery" data-width="1" data-height="2">
         <img src="images/gallery/280x420-1.jpg" alt="titre image gallery">
       </a>
-      <a class="block-gallery__item js-block_gallery__item js-popin--gallery__item" href="images/gallery/560x420-2.jpg" title="titre image gallery" data-width="2" data-height="2">
+      <a class="block-gallery__item js-block_gallery__item js-popin--gallery" href="#js-popin--image-2" title="titre image gallery" data-width="2" data-height="2">
         <img src="images/gallery/560x420-2.jpg" alt="titre image gallery">
       </a>
-      <a class="block-gallery__item js-block_gallery__item js-popin--gallery__item" href="images/gallery/280x210-5.jpg" title="titre image gallery" data-width="1" data-height="1">
+      <a class="block-gallery__item js-block_gallery__item js-popin--gallery" href="#js-popin--image-3" title="titre image gallery" data-width="1" data-height="1">
         <img src="images/gallery/280x210-5.jpg" alt="titre image gallery">
       </a>
-      <a class="block-gallery__item js-block_gallery__item js-popin--gallery__item" href="images/gallery/280x210-6.jpg" title="titre image gallery" data-width="1" data-height="1">
+      <a class="block-gallery__item js-block_gallery__item js-popin--gallery" href="#js-popin--image-1" title="titre image gallery" data-width="1" data-height="1">
         <img src="images/gallery/280x210-6.jpg" alt="titre image gallery">
       </a>
-      <a class="block-gallery__item js-block_gallery__item js-popin--gallery__item" href="images/gallery/280x210-7.jpg" title="titre image gallery" data-width="1" data-height="1">
+      <a class="block-gallery__item js-block_gallery__item js-popin--gallery" href="#js-popin--image-2" title="titre image gallery" data-width="1" data-height="1">
         <img src="images/gallery/280x210-7.jpg" alt="titre image gallery">
       </a>
-      <a class="block-gallery__item js-block_gallery__item js-popin--gallery__item" href="images/gallery/280x210-8.jpg" title="titre image gallery" data-width="1" data-height="1">
+      <a class="block-gallery__item js-block_gallery__item js-popin--gallery" href="#js-popin--image-3" title="titre image gallery" data-width="1" data-height="1">
         <img src="images/gallery/280x210-8.jpg" alt="titre image gallery">
       </a>
-      <a class="block-gallery__item js-block_gallery__item js-popin--gallery__item" href="images/gallery/280x210-1.jpg" title="titre image gallery" data-width="1" data-height="1">
+      <a class="block-gallery__item js-block_gallery__item js-popin--gallery" href="#js-popin--image-1" title="titre image gallery" data-width="1" data-height="1">
         <img src="images/gallery/280x210-1.jpg" alt="titre image gallery">
       </a>
-      <a class="block-gallery__item js-block_gallery__item js-popin--gallery__item" href="images/gallery/280x210-2.jpg" title="titre image gallery" data-width="1" data-height="1">
+      <a class="block-gallery__item js-block_gallery__item js-popin--gallery" href="#js-popin--image-2" title="titre image gallery" data-width="1" data-height="1">
         <img src="images/gallery/280x210-2.jpg" alt="titre image gallery">
-      </a>
-      <a class="block-gallery__item js-block_gallery__item js-popin--gallery__item" href="images/gallery/560x420-1.jpg" title="titre image gallery" data-width="2" data-height="2">
+      </a> <!-- 19 -->
+      <a class="block-gallery__item js-block_gallery__item js-popin--gallery" href="#js-popin--image-3" title="titre image gallery" data-width="2" data-height="2">
         <img src="images/gallery/560x420-1.jpg" alt="titre image gallery">
-      </a>
-      <a class="block-gallery__item js-block_gallery__item js-popin--gallery__item" href="images/gallery/280x210-3.jpg" title="titre image gallery" data-width="1" data-height="1">
+      </a> <!-- 20 -->
+      <a class="block-gallery__item js-block_gallery__item js-popin--gallery" href="#js-popin--image-1" title="titre image gallery" data-width="1" data-height="1">
         <img src="images/gallery/280x210-3.jpg" alt="titre image gallery">
       </a>
-      <a class="block-gallery__item js-block_gallery__item js-popin--gallery__item" href="images/gallery/280x210-4.jpg" title="titre image gallery" data-width="1" data-height="1">
+      <a class="block-gallery__item js-block_gallery__item js-popin--gallery" href="#js-popin--image-2" title="titre image gallery" data-width="1" data-height="1">
         <img src="images/gallery/280x210-4.jpg" alt="titre image gallery">
       </a>
-      <a class="block-gallery__item js-block_gallery__item js-popin--gallery__item" href="images/gallery/280x210-5.jpg" title="titre image gallery" data-width="1" data-height="1">
+      <a class="block-gallery__item js-block_gallery__item js-popin--gallery" href="#js-popin--image-3" title="titre image gallery" data-width="1" data-height="1">
         <img src="images/gallery/280x210-5.jpg" alt="titre image gallery">
       </a>
-      <a class="block-gallery__item js-block_gallery__item js-popin--gallery__item" href="images/gallery/280x210-6.jpg" title="titre image gallery" data-width="1" data-height="1">
+      <a class="block-gallery__item js-block_gallery__item js-popin--gallery" href="#js-popin--image-1" title="titre image gallery" data-width="1" data-height="1">
         <img src="images/gallery/280x210-6.jpg" alt="titre image gallery">
       </a>
     </div>
-    
+
     <div class="block-gallery__item block-gallery__stamp js-block_gallery__stamp" data-width="1" data-height="2" data-col="0" data-line="0">
       <div class="block-gallery__stamp--content">
         <h2>Galerie des travaux</h2>
@@ -523,10 +541,43 @@
         </div>
       </div>
     </div>
-    
+
   </div>
-  
+
   <div class="is-hidden">
+    <div id="js-popin--image-1">
+      <img src="images/gallery/280x420-1.jpg" alt="titre image gallery"/>
+      <div class="popin--text">
+        <h3 class="popin--text-img__title">Storyboarder 1</h3>
+        <p>Il crée le storyboard (mise en image du scénario) du film. Le storyboard est une représentation du scénario en une suite d’images dessinées correspondant au découpage plan par plan. Il contient les indications sur les effets optiques, sonores ou spéciaux, les dialogues, les mouvements de caméra, les angles de vue, la numération des plans, le rythme et la durée de l’action.
+        Le métier de storyboarder implique une connaissance très fine de tous les aspects </p>
+      </div>
+      <div class="training-summary__title">
+        <p class="training-summary__duration"><span>Cinéma d'animation</span></p>
+      </div>
+    </div>
+    <div id="js-popin--image-2">
+      <img src="images/gallery/280x210-2.jpg" alt="titre image gallery"/>
+      <div class="popin--text">
+        <h3 class="popin--text-img__title">Storyboarder 2</h3>
+        <p>Il crée le storyboard (mise en image du scénario) du film. Le storyboard est une représentation du scénario en une suite d’images dessinées correspondant au découpage plan par plan. Il contient les indications sur les effets optiques, sonores ou spéciaux, les dialogues, les mouvements de caméra, les angles de vue, la numération des plans, le rythme et la durée de l’action.
+        Le métier de storyboarder implique une connaissance très fine de tous les aspects </p>
+      </div>
+      <div class="training-summary__title">
+        <p class="training-summary__duration"><span>Cinéma d'animation</span></p>
+      </div>
+    </div>
+    <div id="js-popin--image-3">
+      <img src="images/gallery/560x420-1.jpg" alt="titre image gallery"/>
+      <div class="popin--text">
+        <h3 class="popin--text-img__title">Storyboarder 3</h3>
+        <p>Il crée le storyboard (mise en image du scénario) du film. Le storyboard est une représentation du scénario en une suite d’images dessinées correspondant au découpage plan par plan. Il contient les indications sur les effets optiques, sonores ou spéciaux, les dialogues, les mouvements de caméra, les angles de vue, la numération des plans, le rythme et la durée de l’action.
+        Le métier de storyboarder implique une connaissance très fine de tous les aspects </p>
+      </div>
+      <div class="training-summary__title">
+        <p class="training-summary__duration"><span>Cinéma d'animation</span></p>
+      </div>
+    </div>
     <div id="js-popin--video-1">
       <iframe width="1100" height="648" src="https://www.youtube.com/embed/vFART6ZMeEA" frameborder="0" allowfullscreen></iframe>
       <div class="popin--text">
@@ -554,7 +605,7 @@
   
 
   
-    <div class="block-training-details l-row">
+    <div class="block-training-details l-row js-sticky-menu__section" data-title="Contenu">
   <div class="l-row__inner clearfix">
     <h2 class="title-h2">contenus de la formation</h2>
     <div class="tabs-accordion">
@@ -616,7 +667,7 @@
     </div>
   </div>
 </div>
-    
+
     <div class="item-downloads">
       <a href="#" class="item-downloads__img">
  <img src="images/img10.jpg" alt="formation Cinéma d'animation" />

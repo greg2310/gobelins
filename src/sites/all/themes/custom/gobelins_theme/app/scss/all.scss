@@ -38,9 +38,11 @@
 @import "../fragments/components/widgets/widget-shared-icons";
 @import "../fragments/components/slideshow-training/slideshow-training";
 @import "../fragments/components/block-slider/block-slider";
-@import "../fragments/components/tabs-accordion-press/tabs-accordion-press";
+@import "../fragments/components/menu-press/menu-press";
+@import "../fragments/components/content-press/content-press";
 @import "../fragments/components/block-pagination/block-pagination";
 @import "../fragments/components/gototop/gototop";
+@import "../fragments/components/sticky-menu/sticky-menu";
 
 /* Content partials */
 @import "../fragments/content/list-trainings/list-trainings";
@@ -65,5 +67,4 @@
 @import "../fragments/content/slide-speaker/slide-speaker";
 @import "../fragments/content/slide-project/slide-project";
 @import "../fragments/content/block-banner-press/block-banner-press";
-@import "../fragments/content/block-press-details/block-press-details";
-@import "../fragments/content/block-training-info-practice/block-training-info-practice";
+@import "../fragments/content/block-detail-actu/block-detail-actu";

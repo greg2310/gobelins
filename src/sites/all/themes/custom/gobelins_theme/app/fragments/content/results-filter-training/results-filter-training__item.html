@@ -1,14 +1,17 @@
 <div class="list-item">
-  <div class="item-result__detail">
+  <div class="list-item__detail">
     <h3>Animateur 3D
       <% if (typeof isNew != 'undefined' && isNew) { %>
         <span class="new">New</span>
       <% } %>
     </h3>
+    <% if (typeof isSubtitle != 'undefined' && isSubtitle) { %>
+      <p class="subtitle">Une entrée dans le monde de 3ds Max</p>
+    <% } %>  
     <p class="item-trainings__type">7 semaines</p>
     <p class="ref">AD01</p>
   </div>
-  <div class="item-result__info">
+  <div class="list-item__info">
     <span class="price-training">12200 €</span>
     <a href="#" class="btn-higlight">Voir</a>
     <a href="#" class="btn-like--mini"><span class="icon-heart"></span></a>
