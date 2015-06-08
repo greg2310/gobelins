@@ -2776,14 +2776,13 @@ select {
 .main-menu--search label {
   text-transform: uppercase;
   float: left;
-  width: 45%;
   vertical-align: top;
   font-family: 'Platform-Medium';
   letter-spacing: 1px;
   padding-top: 10px;
   color: #323232;
 }
-/* line 21, ../../app/fragments/components/header/_menu__search.scss */
+/* line 20, ../../app/fragments/components/header/_menu__search.scss */
 .main-menu--search label a {
   color: #0045e5;
 }
@@ -2797,18 +2796,18 @@ select {
     float: none;
   }
 }
-/* line 33, ../../app/fragments/components/header/_menu__search.scss */
+/* line 32, ../../app/fragments/components/header/_menu__search.scss */
 .main-menu--search .form-item {
   margin-left: 50%;
   margin-bottom: 0;
 }
 @media screen and (max-width: 1140px) {
-  /* line 33, ../../app/fragments/components/header/_menu__search.scss */
+  /* line 32, ../../app/fragments/components/header/_menu__search.scss */
   .main-menu--search .form-item {
     margin-left: 0;
   }
 }
-/* line 40, ../../app/fragments/components/header/_menu__search.scss */
+/* line 39, ../../app/fragments/components/header/_menu__search.scss */
 .main-menu--search input[type="text"] {
   background: #f2f2f2 url(../images/icons/icon-search.png) no-repeat 15px center;
   border: 1px solid #e5e5e5;
@@ -2821,19 +2820,19 @@ select {
   font-size: 0.875rem;
 }
 @media screen and (max-width: 1140px) {
-  /* line 40, ../../app/fragments/components/header/_menu__search.scss */
+  /* line 39, ../../app/fragments/components/header/_menu__search.scss */
   .main-menu--search input[type="text"] {
     display: block;
     width: 100%;
     margin-bottom: 20px;
   }
 }
-/* line 58, ../../app/fragments/components/header/_menu__search.scss */
+/* line 57, ../../app/fragments/components/header/_menu__search.scss */
 .main-menu--search button {
   vertical-align: middle;
 }
 @media screen and (max-width: 1140px) {
-  /* line 58, ../../app/fragments/components/header/_menu__search.scss */
+  /* line 57, ../../app/fragments/components/header/_menu__search.scss */
   .main-menu--search button {
     display: block;
     width: 100%;
@@ -4005,7 +4004,7 @@ body.is-open {
 }
 /* line 39, ../../app/fragments/components/content-press/_content-press.scss */
 .list-actus-press__item-actus:first-child {
-  margin-right: 0;
+  margin-left: 0;
 }
 /* line 43, ../../app/fragments/components/content-press/_content-press.scss */
 .list-actus-press__item-actus .item-actus__image img {
