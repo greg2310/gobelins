@@ -1,7 +1,9 @@
 .pagination{
  border:1px solid $color__border__gray;
  margin:30px 0;
- 
+ @media screen and (max-width: $width__xs - 1px){
+  display:none;
+ }
  
  li{
   display:inline-block;
@@ -69,10 +71,28 @@
   padding:10px 0;
   width:71%;
   text-align:center;
-  @media screen and (max-width: $width__xs + 1px){
-    
-  }
+  
  }
 
+  &.mobile{
+    display:none;
+    @media screen and (max-width: $width__xs - 1px){
+      display:block;
+      border:none;
+      
+      .more-actu{
+        display:block;
+        border-top:1px solid $color__border__gray;
+        border-bottom:1px solid $color__border__gray;
+        text-align:center;
+        text-transform:uppercase;
+        font-family: "Platform-Medium";
+        font-size: 0.875rem;
+        letter-spacing: 1px;
+        color:$color__blue-gobelins;
+        padding:10px 0;
+      }
+    }
+  }
 
 }

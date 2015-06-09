@@ -5,8 +5,8 @@
     table-layout:fixed;
     width:100%;
 
-    @media screen and (max-width: 767px) {
-      display:none;
+    @media screen and (max-width: $width__xs - 1px) {
+      /*display:none;*/
     }
 
     li{

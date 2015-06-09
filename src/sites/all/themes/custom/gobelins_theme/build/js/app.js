@@ -842,17 +842,17 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   var $ = require('jquery');
 
   $(function(){
-    var getPositions;
+    var getPositions, scrollCallback;
     var $window = $(window);
     var $root = $('html, body');
     var $container = $('.js-sticky-menu__container');
     var $scroll = $('.js-sticky-menu__scroll');
     var $sections = $('.js-sticky-menu__section');
-    var offset = $('.js-header-sticky').height() + $container.height();
+    var offset = 80 + 68;
     var positions = [];
     var $links = $();
 
-    // Initializes positions.
+    // Sections positions.
     getPositions = function(){
       $sections.each(function(index){
         var $section = $sections.eq(index);
@@ -863,30 +863,8 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
       });
     };
 
-    $('.js-sticky-menu').sticky({
-      wrapperClassName: 'sticky-menu__sticky-wrapper',
-      topSpacing: 80
-    });
-
-    $sections.each(function(index){
-      var $link;
-      var title = $sections.eq(index).data('title');
-
-      $link = $(document.createElement('a'))
-        .addClass('sticky-menu__link')
-        .attr('href', '#')
-        .text(title)
-        .appendTo($container)
-        .on('click', function(event){
-          event.preventDefault();
-          $root.animate({scrollTop: positions[index].top});
-        });
-      $links = $links.add($link);
-    });
-
-    window.setTimeout(getPositions, 0);
-
-    $window.on('scroll', function(){
+    // Process function.
+    scrollCallback = function(){
       var scrollTop = $window.scrollTop();
       var activeIndex = null;
 
@@ -906,11 +884,40 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
 
       // Update scroll bar.
       $scroll.width((scrollTop / ($root.height() - $window.height()) * 100) + '%');
+    };
+
+    // Set menu styicky.
+    $('.js-sticky-menu').sticky({
+      wrapperClassName: 'sticky-menu__sticky-wrapper',
+      topSpacing: 80
     });
 
+    // Events.
+    $window.on('scroll', scrollCallback);
     if ($sections.length > 0) {
-      $window.on('scroll', getPositions);
+      $window.on('resize', getPositions);
     }
+    $window.on('load', function(){
+      getPositions();
+      scrollCallback();
+    });
+
+    // Initialization.
+    $sections.each(function(index){
+      var $link;
+      var title = $sections.eq(index).data('title');
+
+      $link = $(document.createElement('a'))
+        .addClass('sticky-menu__link')
+        .attr('href', '#')
+        .text(title)
+        .appendTo($container)
+        .on('click', function(event){
+          event.preventDefault();
+          $root.animate({scrollTop: positions[index].top + 1});
+        });
+      $links = $links.add($link);
+    });
   });
 })();
 

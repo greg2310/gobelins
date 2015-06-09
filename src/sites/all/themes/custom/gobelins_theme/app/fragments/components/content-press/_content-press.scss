@@ -34,6 +34,10 @@
   &:nth-child(3){
     border-top:none;
   }
+  @media screen and (max-width: $width__xs - 1px){
+     border-top:none;
+     padding:0;
+  }
 }
 
  /*** Bloc actualités***/
@@ -42,10 +46,22 @@
   margin-left:4%;
   width:30%;
   vertical-align:top;
+  
+  @media screen and (max-width: $width__xs - 1px){
+    width:100%;
+    margin:0;
+    padding:15px 0;
+    border-bottom:1px solid $color__bg-gray;
+  }
   &:first-child{
     margin-left:0;
   }
   .item-actus__image{
+    @media screen and (max-width: $width__xs - 1px){
+      display:inline-block;
+      vertical-align:top;
+      width:28%;
+    }
     img{
       width:100%;
       &:hover{
@@ -61,6 +77,15 @@
   }
   
   .item-actus__description{
+    @media screen and (max-width: $width__xs - 1px){
+      display:inline-block;
+      width:70%;
+      padding-left:20px;
+      vertical-align:top;
+      
+    }
+  
+  
     .name-rubrique{
       font-size:0.825rem;
       font-family: 'Platform-Medium';
@@ -68,6 +93,9 @@
       text-transform:uppercase;
       color:$color__border-gray;
       padding-top:12px;
+      @media screen and (max-width: $width__xs - 1px){
+        padding-top:0;
+      }
     }
 
     h3{
@@ -88,6 +116,9 @@
       color:$color__border-gray;
       font-family: 'Neuzeit';
       padding-top:7px;
+      @media screen and (max-width: $width__xs - 1px){
+        display:none;
+      }
     }
   }    
 }
