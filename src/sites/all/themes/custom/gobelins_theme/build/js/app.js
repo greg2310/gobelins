@@ -947,6 +947,13 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
   /* require plugins */
   var $ = require('jquery');
   $(function(){
+    
+    //Déplacer bloc filtrer par durée prix dans les résultats de recherche page formation pro
+    if($('.views-widget-sort-by').length > 0){
+      $('.views-widget-sort-by').insertBefore('.results-filter-training__list');
+      
+    }
+    
    // Afficher masquer themes dans les filtres
     $('.close-themes').click(function(){
      $('.filter-training-field').find('.list-themes').slideToggle( "slow" );

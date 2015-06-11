@@ -5624,7 +5624,7 @@ body.is-open {
   text-transform: uppercase;
   margin-bottom: 45px;
 }
-/* line 18, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+/* line 19, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-name:after {
   background-color: transparent;
   border: 8px solid #0045e5;
@@ -5639,87 +5639,87 @@ body.is-open {
   width: 4px;
 }
 
-/* line 32, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+/* line 33, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-animation .training-name:after {
   border-color: #00e196;
 }
 
-/* line 35, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+/* line 36, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-graphic-design .training-name:after {
   border-color: #3af2ce;
 }
 
-/* line 38, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+/* line 39, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-web-design .training-name:after {
   border-color: #6300ff;
 }
 
-/* line 41, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+/* line 42, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-photography .training-name:after {
   border-color: #ffe042;
 }
 
-/* line 44, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+/* line 45, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-game .training-name:after {
   border-color: #1840e8;
 }
 
-/* line 47, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+/* line 48, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-video-audio .training-name:after {
   border-color: red;
 }
 
-/* line 50, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+/* line 51, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-cross-media .training-name:after {
   border-color: #e90b51;
 }
 
-/* line 53, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+/* line 54, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-summary {
   background: #fff;
   font-family: "Neuzeit";
 }
 
-/* line 57, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+/* line 58, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-summary__title {
   padding: 30px 30px 25px 30px;
   color: #323232;
 }
-/* line 61, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+/* line 62, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-summary__title p {
   font-family: "Platform-Medium";
   letter-spacing: 1px;
 }
-/* line 65, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+/* line 66, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-summary__title p span {
   text-transform: uppercase;
 }
-/* line 69, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+/* line 70, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-summary__title h1 {
   font-size: 2.5rem;
   font-family: "Platform-Light";
   line-height: 1em;
   margin-bottom: 10px;
 }
-/* line 75, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+/* line 76, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-summary__title .ref {
   float: right;
   color: #656565;
   font-family: "Neuzeit";
 }
 @media screen and (max-width: 1139px) {
-  /* line 75, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+  /* line 76, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
   .training-summary__title .ref {
     display: none;
   }
 }
 
-/* line 85, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+/* line 86, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-summary__duration {
   padding-left: 25px;
   position: relative;
 }
-/* line 89, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+/* line 90, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-summary__duration:before {
   background-color: #0045e5;
   border-radius: 50%;
@@ -5733,42 +5733,42 @@ body.is-open {
   width: 10px;
 }
 
-/* line 102, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+/* line 103, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-animation .training-summary__duration:before {
   background-color: #00e196;
 }
 
-/* line 105, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+/* line 106, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-graphic-design .training-summary__duration:before {
   background-color: #3af2ce;
 }
 
-/* line 108, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+/* line 109, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-web-design .training-summary__duration:before {
   background-color: #6300ff;
 }
 
-/* line 111, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+/* line 112, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-photography .training-summary__duration:before {
   background-color: #ffe042;
 }
 
-/* line 114, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+/* line 115, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-game .training-summary__duration:before {
   background-color: #1840e8;
 }
 
-/* line 117, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+/* line 118, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-video-audio .training-summary__duration:before {
   background-color: red;
 }
 
-/* line 120, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+/* line 121, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-cross-media .training-summary__duration:before {
   background-color: #e90b51;
 }
 
-/* line 124, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+/* line 125, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-summary__description {
   border-top: 1px solid #e5e5e5;
   display: table;
@@ -5777,7 +5777,7 @@ body.is-open {
   position: relative;
 }
 @media screen and (max-width: 1139px) and (min-width: 768px) {
-  /* line 132, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+  /* line 133, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
   .training-summary__description:after {
     content: "";
     position: absolute;
@@ -5788,14 +5788,14 @@ body.is-open {
     right: 50%;
   }
 }
-/* line 143, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+/* line 144, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-summary__description .col1 {
   width: 44%;
   display: table-cell;
   padding: 0 20px 25px 30px;
 }
 @media screen and (max-width: 1139px) and (min-width: 768px) {
-  /* line 143, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+  /* line 144, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
   .training-summary__description .col1 {
     width: 50%;
     display: block;
@@ -5803,13 +5803,13 @@ body.is-open {
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 143, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+  /* line 144, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
   .training-summary__description .col1 {
     display: block;
     width: auto;
   }
 }
-/* line 158, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+/* line 159, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-summary__description .col2,
 .training-summary__description .col3 {
   width: 28%;
@@ -5817,7 +5817,7 @@ body.is-open {
   border-left: 1px solid #e5e5e5;
 }
 @media screen and (max-width: 1139px) and (min-width: 768px) {
-  /* line 158, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+  /* line 159, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
   .training-summary__description .col2,
   .training-summary__description .col3 {
     width: 50%;
@@ -5827,50 +5827,50 @@ body.is-open {
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 158, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+  /* line 159, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
   .training-summary__description .col2,
   .training-summary__description .col3 {
     display: block;
     width: auto;
   }
 }
-/* line 175, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+/* line 176, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-summary__description .col2 {
   padding: 0 20px;
 }
 @media screen and (max-width: 767px) {
-  /* line 175, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+  /* line 176, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
   .training-summary__description .col2 {
     border-top: 1px solid #e5e5e5;
   }
 }
-/* line 182, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+/* line 183, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-summary__description .col3-1,
 .training-summary__description .col3-2 {
   padding: 0 20px;
 }
-/* line 186, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+/* line 187, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-summary__description .col3-1 {
   padding-bottom: 20px;
 }
 @media screen and (max-width: 1139px) {
-  /* line 186, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+  /* line 187, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
   .training-summary__description .col3-1 {
     border-top: 1px solid #e5e5e5;
     margin-top: 20px;
   }
 }
-/* line 194, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+/* line 195, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-summary__description .col3-2 {
   border-top: 1px solid #e5e5e5;
 }
 @media screen and (max-width: 1139px) {
-  /* line 194, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+  /* line 195, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
   .training-summary__description .col3-2 {
     padding-bottom: 20px;
   }
 }
-/* line 202, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
+/* line 203, ../../app/fragments/content/block-training-banner/block-training-banner.scss */
 .training-summary__description .sub-title {
   font-family: "Platform-Medium";
   letter-spacing: 1px;
@@ -6557,17 +6557,36 @@ body.is-open {
     margin-left: 0;
   }
 }
-
 /* line 8, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
-.results-filter-training__option-filter {
+.results-filter-training .results-filter-training__option-filter,
+.results-filter-training .views-widget-sort-by {
   text-transform: uppercase;
   color: #333333;
-  margin-bottom: 15px;
   font-family: 'Neuzeit';
 }
-/* line 13, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
-.results-filter-training__option-filter .date,
-.results-filter-training__option-filter .price {
+/* line 14, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.results-filter-training .results-filter-training__option-filter .form-item-sort-by,
+.results-filter-training .views-widget-sort-by .form-item-sort-by {
+  margin-bottom: 15px;
+}
+/* line 16, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.results-filter-training .results-filter-training__option-filter .form-item-sort-by > .form-item,
+.results-filter-training .views-widget-sort-by .form-item-sort-by > .form-item {
+  display: inline-block;
+  margin-left: 15px;
+  margin-bottom: 0;
+  vertical-align: top;
+}
+/* line 21, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.results-filter-training .results-filter-training__option-filter .form-item-sort-by > .form-item > .form-item,
+.results-filter-training .views-widget-sort-by .form-item-sort-by > .form-item > .form-item {
+  display: inline-block;
+  margin: 0;
+  vertical-align: top;
+}
+/* line 26, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.results-filter-training .results-filter-training__option-filter .form-item-sort-by > .form-item > .form-item a,
+.results-filter-training .views-widget-sort-by .form-item-sort-by > .form-item > .form-item a {
   text-transform: capitalize;
   color: #666666;
   font-family: "Neuzeit";
@@ -6575,45 +6594,55 @@ body.is-open {
   margin-left: 15px;
   text-decoration: none;
 }
-/* line 21, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
-.results-filter-training__option-filter .date.active,
-.results-filter-training__option-filter .price.active {
+/* line 33, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.results-filter-training .results-filter-training__option-filter .form-item-sort-by > .form-item > .form-item a.active,
+.results-filter-training .views-widget-sort-by .form-item-sort-by > .form-item > .form-item a.active {
   border-bottom: 2px solid #1a1a1a;
   color: #333333;
 }
+/* line 36, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.results-filter-training .results-filter-training__option-filter .form-item-sort-by > .form-item > .form-item a.active:hover,
+.results-filter-training .views-widget-sort-by .form-item-sort-by > .form-item > .form-item a.active:hover {
+  border-color: inherit;
+}
+/* line 40, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+.results-filter-training .results-filter-training__option-filter .form-item-sort-by > .form-item > .form-item a:hover,
+.results-filter-training .views-widget-sort-by .form-item-sort-by > .form-item > .form-item a:hover {
+  border-color: transparent;
+}
 
-/* line 27, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 49, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training__list {
   border-bottom: 2px solid #d9d9d9;
   margin-bottom: 25px;
   border-top: 2px solid #00e196;
 }
-/* line 31, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 53, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training__list .list-item {
   display: block;
   background-color: #fff;
   margin-top: 2px;
   padding: 15px;
 }
-/* line 36, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 58, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training__list .list-item:first-child {
   margin-top: 0;
 }
-/* line 41, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 63, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training__list .list-item__detail {
   width: 64%;
   display: inline-block;
   vertical-align: top;
 }
 @media screen and (max-width: 767px) {
-  /* line 41, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+  /* line 63, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
   .results-filter-training__list .list-item__detail {
     width: 100%;
     padding-bottom: 22px;
     border-bottom: 1px solid #e6e6e6;
   }
 }
-/* line 50, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 72, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training__list .list-item__detail h3 {
   color: #333333;
   font-size: 1.125rem;
@@ -6621,7 +6650,7 @@ body.is-open {
   letter-spacing: 1px;
   position: relative;
 }
-/* line 57, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 79, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training__list .list-item__detail .new {
   display: inline-block;
   background: #0045e5;
@@ -6634,28 +6663,28 @@ body.is-open {
   margin: 4px 0 0 10px;
   vertical-align: top;
 }
-/* line 69, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 91, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training__list .list-item__detail p {
   display: inline-block;
   margin-top: 10px;
   font-family: 'Neuzeit';
 }
 @media screen and (max-width: 767px) {
-  /* line 74, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+  /* line 96, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
   .results-filter-training__list .list-item__detail p.item-trainings__type {
     display: inline-block;
   }
 }
-/* line 79, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 101, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training__list .list-item__detail .ref {
   margin-left: 20px;
 }
-/* line 82, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 104, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training__list .list-item__detail .subtitle {
   display: block;
   margin: 0;
 }
-/* line 88, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 110, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training__list .list-item__info {
   width: 35%;
   display: inline-block;
@@ -6663,13 +6692,13 @@ body.is-open {
   text-align: right;
 }
 @media screen and (max-width: 767px) {
-  /* line 88, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+  /* line 110, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
   .results-filter-training__list .list-item__info {
     width: 100%;
     margin-top: 20px;
   }
 }
-/* line 97, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 119, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training__list .list-item__info .price-training {
   color: #666666;
   margin-right: 20px;
@@ -6677,23 +6706,23 @@ body.is-open {
   letter-spacing: 1px;
 }
 @media screen and (max-width: 767px) {
-  /* line 97, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+  /* line 119, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
   .results-filter-training__list .list-item__info .price-training {
     float: left;
     padding-top: 10px;
     margin-left: -5px;
   }
 }
-/* line 108, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 130, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training__list .list-item__info .btn-like--mini {
   margin-left: 10px;
 }
 
-/* line 114, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 136, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training__other-training {
   background: #1a1a1a;
 }
-/* line 116, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 138, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .results-filter-training__other-training a {
   text-transform: uppercase;
   color: #fff;
@@ -6707,72 +6736,72 @@ body.is-open {
 }
 
 /***Color training***/
-/* line 131, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 153, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .training-animation .item-trainings__type:before {
   background-color: #00e196;
 }
 
-/* line 135, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 157, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .training-graphic-design .item-trainings__type:before {
   background-color: #3af2ce;
 }
 
-/* line 139, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 161, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .training-web-design .item-trainings__type:before {
   background-color: #6300ff;
 }
 
-/* line 143, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 165, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .training-photography .item-trainings__type:before {
   background-color: #ffe042;
 }
 
-/* line 147, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 169, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .training-game .item-trainings__type:before {
   background-color: #1840e8;
 }
 
-/* line 151, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 173, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .training-video-audio .item-trainings__type:before {
   background-color: red;
 }
 
-/* line 155, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 177, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .training-cross-media .item-trainings__type:before {
   background-color: #e90b51;
 }
 
-/* line 159, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 181, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .training-animation .results-filter-training__list {
   border-top-color: #00e196;
 }
 
-/* line 163, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 185, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .training-graphic-design .results-filter-training__list {
   border-top-color: #3af2ce;
 }
 
-/* line 167, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 189, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .training-web-design .results-filter-training__list {
   border-top-color: #6300ff;
 }
 
-/* line 171, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 193, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .training-photography .results-filter-training__list {
   border-top-color: #ffe042;
 }
 
-/* line 175, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 197, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .training-game .results-filter-training__list {
   border-top-color: #1840e8;
 }
 
-/* line 179, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 201, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .training-video-audio .results-filter-training__list {
   border-top-color: red;
 }
 
-/* line 183, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
+/* line 205, ../../app/fragments/content/results-filter-training/_results-filter-training.scss */
 .training-cross-media .results-filter-training__list {
   border-top-color: #e90b51;
 }
